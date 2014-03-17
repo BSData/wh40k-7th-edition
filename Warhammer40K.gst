@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="3d1a4963-0629-4025-a90b-76ab3d63c5c5" revision="21" battleScribeVersion="1.13b" name="Warhammer 40,000 6th Edition" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="3d1a4963-0629-4025-a90b-76ab3d63c5c5" revision="23" battleScribeVersion="1.13b" name="Warhammer 40,000 6th Edition" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <forceTypes>
     <forceType id="5374616e6461726423232344415441232323" name="Primary Detachment" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1">
       <categories>
@@ -332,6 +332,27 @@
           <modifiers/>
         </category>
         <category id="486561767920537570706f727423232344415441232323" name="Heavy Support" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1">
+          <modifiers/>
+        </category>
+      </categories>
+    </forceType>
+    <forceType id="a7295a01-3873-7c81-2b46-a9db103d3783" name="Primary Knight Detachment" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1">
+      <categories>
+        <category id="04258a5b-7639-5cdb-af1f-ebcb15fe1a2d" name="Knights" minSelections="3" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1">
+          <modifiers/>
+        </category>
+      </categories>
+    </forceType>
+    <forceType id="ab4cb601-e407-74c9-23ea-9e3f5f335a6d" name="Allied Knight Detachment" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1">
+      <categories>
+        <category id="04258a5b-7639-5cdb-af1f-ebcb15fe1a2d" name="Knights" minSelections="1" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1">
+          <modifiers/>
+        </category>
+      </categories>
+    </forceType>
+    <forceType id="ae551255-c95a-9f68-fa97-dc51978c64a6" name="Legion of the Damned Detachment" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1">
+      <categories>
+        <category id="456c6974657323232344415441232323" name="Elite" minSelections="1" maxSelections="4" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1">
           <modifiers/>
         </category>
       </categories>
