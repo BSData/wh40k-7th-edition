@@ -1,4 +1,5 @@
-##WH 40k datafiles##
+Warhammer 40,000
+================
 
 ####Contents####
 
