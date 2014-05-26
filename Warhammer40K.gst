@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="3d1a4963-0629-4025-a90b-76ab3d63c5c5" revision="24" battleScribeVersion="1.14b" name="Warhammer 40,000 6th Edition" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" revision="0" battleScribeVersion="1.14b" name="Warhammer 40,000 7th Edition" authorName="BSData organisation" authorUrl="https://github.com/BSData/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <forceTypes>
     <forceType id="5374616e6461726423232344415441232323" name="Primary Detachment" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
       <categories>
@@ -389,7 +389,6 @@
         <characteristic id="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A"/>
         <characteristic id="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="LD"/>
         <characteristic id="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save"/>
-        <characteristic id="9ca713ea-39ce-4340-8871-d7c2312c1476" name="Pg"/>
       </characteristics>
     </profileType>
     <profileType id="725a358c-765b-498c-8de5-399fc0c0725f" name="Vehicle">
@@ -399,7 +398,6 @@
         <characteristic id="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side"/>
         <characteristic id="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear"/>
         <characteristic id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type"/>
-        <characteristic id="9ca713ea-39ce-4340-8871-d7c2312c1476" name="Pg"/>
         <characteristic id="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP"/>
       </characteristics>
     </profileType>
@@ -411,7 +409,6 @@
         <characteristic id="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear"/>
         <characteristic id="d0944b5d-ba54-4d6c-ad42-ca283a77d582" name="Structure Points"/>
         <characteristic id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type"/>
-        <characteristic id="9ca713ea-39ce-4340-8871-d7c2312c1476" name="Pg"/>
         <characteristic id="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP"/>
       </characteristics>
     </profileType>
@@ -426,7 +423,6 @@
         <characteristic id="a558b3ef-04d0-440e-a312-bac3255bf592" name="I"/>
         <characteristic id="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A"/>
         <characteristic id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type"/>
-        <characteristic id="9ca713ea-39ce-4340-8871-d7c2312c1476" name="Pg"/>
         <characteristic id="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP"/>
       </characteristics>
     </profileType>
@@ -442,7 +438,6 @@
         <characteristic id="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A"/>
         <characteristic id="d0944b5d-ba54-4d6c-ad42-ca283a77d582" name="Structure Points"/>
         <characteristic id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type"/>
-        <characteristic id="9ca713ea-39ce-4340-8871-d7c2312c1476" name="Pg"/>
         <characteristic id="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP"/>
       </characteristics>
     </profileType>
@@ -452,7 +447,6 @@
         <characteristic id="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength"/>
         <characteristic id="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP"/>
         <characteristic id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type"/>
-        <characteristic id="9ca713ea-39ce-4340-8871-d7c2312c1476" name="Pg"/>
       </characteristics>
     </profileType>
     <profileType id="57aa5e90-5ee3-4059-8456-88bcc053dffa" name="Monstrous Creature">
@@ -466,13 +460,11 @@
         <characteristic id="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A"/>
         <characteristic id="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="LD"/>
         <characteristic id="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save"/>
-        <characteristic id="9ca713ea-39ce-4340-8871-d7c2312c1476" name="Pg"/>
       </characteristics>
     </profileType>
     <profileType id="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Wargear Item">
       <characteristics>
         <characteristic id="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description"/>
-        <characteristic id="9ca713ea-39ce-4340-8871-d7c2312c1476" name="Pg"/>
       </characteristics>
     </profileType>
     <profileType id="068ce92f-2e44-41b7-8f5a-e87b096aaa92" name="Vehicle (Transport)">
@@ -482,10 +474,6 @@
         <characteristic id="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side"/>
         <characteristic id="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear"/>
         <characteristic id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type"/>
-        <characteristic id="6ef34aff-7c28-41dc-9341-b83301efc0f5" name="Transport Capacity"/>
-        <characteristic id="2fc5d197-0c39-4745-9a83-02fc5d080ec1" name="Fire Points"/>
-        <characteristic id="03931f31-ffab-4c06-b2df-d1064f4e309c" name="Access Points"/>
-        <characteristic id="9ca713ea-39ce-4340-8871-d7c2312c1476" name="Pg"/>
         <characteristic id="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP"/>
       </characteristics>
     </profileType>
@@ -500,8 +488,6 @@
         <characteristic id="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A"/>
         <characteristic id="5466410f-5eb0-42d4-8c9a-50294d26a768" name="Ld"/>
         <characteristic id="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save"/>
-        <characteristic id="6ef34aff-7c28-41dc-9341-b83301efc0f5" name="Transport Capacity"/>
-        <characteristic id="9ca713ea-39ce-4340-8871-d7c2312c1476" name="Pg"/>
       </characteristics>
     </profileType>
     <profileType id="4b0136c4-e036-49fd-9352-6e082921866d" name="Vehicle (Super Heavy Transport)">
@@ -512,10 +498,6 @@
         <characteristic id="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear"/>
         <characteristic id="d0944b5d-ba54-4d6c-ad42-ca283a77d582" name="Structure Points"/>
         <characteristic id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type"/>
-        <characteristic id="6ef34aff-7c28-41dc-9341-b83301efc0f5" name="Transport Capacity"/>
-        <characteristic id="2fc5d197-0c39-4745-9a83-02fc5d080ec1" name="Fire Points"/>
-        <characteristic id="03931f31-ffab-4c06-b2df-d1064f4e309c" name="Access Points"/>
-        <characteristic id="9ca713ea-39ce-4340-8871-d7c2312c1476" name="Pg"/>
         <characteristic id="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP"/>
       </characteristics>
     </profileType>
