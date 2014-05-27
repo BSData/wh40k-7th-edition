@@ -364,7 +364,7 @@
         <characteristic id="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" />
         <characteristic id="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" />
         <characteristic id="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" />
-        <characteristic id="d0944b5d-ba54-4d6c-ad42-ca283a77d582" name="Structure Points" />
+        
         <characteristic id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" />
         <characteristic id="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" />
       </characteristics>
@@ -393,7 +393,7 @@
         <characteristic id="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" />
         <characteristic id="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" />
         <characteristic id="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" />
-        <characteristic id="d0944b5d-ba54-4d6c-ad42-ca283a77d582" name="Structure Points" />
+        
         <characteristic id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" />
         <characteristic id="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" />
       </characteristics>
@@ -453,7 +453,7 @@
         <characteristic id="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" />
         <characteristic id="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" />
         <characteristic id="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" />
-        <characteristic id="d0944b5d-ba54-4d6c-ad42-ca283a77d582" name="Structure Points" />
+        
         <characteristic id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" />
         <characteristic id="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" />
       </characteristics>
