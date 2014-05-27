@@ -344,7 +344,7 @@
         <characteristic id="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" />
         <characteristic id="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" />
         <characteristic id="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" />
-        <characteristic id="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="LD" />
+        <characteristic id="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" />
         <characteristic id="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" />
       </characteristics>
     </profileType>
@@ -415,7 +415,7 @@
         <characteristic id="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" />
         <characteristic id="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" />
         <characteristic id="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" />
-        <characteristic id="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="LD" />
+        <characteristic id="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" />
         <characteristic id="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" />
       </characteristics>
     </profileType>
@@ -443,7 +443,7 @@
         <characteristic id="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" />
         <characteristic id="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" />
         <characteristic id="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" />
-        <characteristic id="5466410f-5eb0-42d4-8c9a-50294d26a768" name="Ld" />
+        <characteristic id="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" />
         <characteristic id="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" />
       </characteristics>
     </profileType>
