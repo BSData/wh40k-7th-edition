@@ -370,18 +370,7 @@
       </characteristics>
     </profileType>
     <profileType id="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Walker">
-      <characteristics>
-        <characteristic id="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" />
-        <characteristic id="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" />
-        <characteristic id="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" />
-        <characteristic id="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" />
-        <characteristic id="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" />
-        <characteristic id="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" />
-        <characteristic id="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" />
-        <characteristic id="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" />
-        <characteristic id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" />
-        <characteristic id="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" />
-      </characteristics>
+      <characteristics><characteristic id="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" /><characteristic id="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" /><characteristic id="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" /><characteristic id="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" /><characteristic id="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" /><characteristic id="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" /><characteristic id="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" /><characteristic id="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" /><characteristic id="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" /><characteristic id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" /></characteristics>
     </profileType>
     <profileType id="536757ae-79d7-42c6-bc3e-01e87bed2151" name="Walker (Super Heavy)">
       <characteristics>
