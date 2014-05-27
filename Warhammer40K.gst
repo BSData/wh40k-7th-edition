@@ -354,8 +354,8 @@
         <characteristic id="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" />
         <characteristic id="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" />
         <characteristic id="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" />
-        <characteristic id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" />
         <characteristic id="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" />
+        <characteristic id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" />
       </characteristics>
     </profileType>
     <profileType id="6e574719-7781-4bd0-8229-ebeb9337e645" name="Vehicle (Super Heavy)">
