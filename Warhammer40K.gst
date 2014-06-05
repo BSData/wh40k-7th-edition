@@ -286,6 +286,9 @@
         <category id="6ea02a0d-5000-6203-6f5c-42180443847e" name="Primary Knight Detachment" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="0.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
           <modifiers/>
         </category>
+        <category id="c888f08a-6cea-4a01-8126-d374a9231554" name="Lords of War" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
       </categories>
       <forceTypes/>
     </forceType>
