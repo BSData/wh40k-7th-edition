@@ -6408,7 +6408,7 @@ Immediatly after determining Warlord Traits, tell your opponent which units are 
                 </entry>
               </entries>
               <entryGroups>
-                <entryGroup id="819a6589-2df0-f54b-0f56-27c68eea0e7c" name="Weapon" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+                <entryGroup id="819a6589-2df0-f54b-0f56-27c68eea0e7c" name="Weapon" defaultEntryId="2454a76a-3ccc-ca9b-5cb6-ae8da19a39a9" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
                   <entries>
                     <entry id="2454a76a-3ccc-ca9b-5cb6-ae8da19a39a9" name="Storm Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
                       <entries/>
@@ -6842,7 +6842,7 @@ Immediatly after determining Warlord Traits, tell your opponent which units are 
                   </profiles>
                   <links/>
                 </entry>
-                <entry id="47ea8d4a-db83-07bd-5538-6d3976c7b2a1" name="Pair of Lightning Claw" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="10" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="BRB" page="60">
+                <entry id="47ea8d4a-db83-07bd-5538-6d3976c7b2a1" name="Pair of Lightning Claw" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="10" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="BRB" page="60">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -6882,7 +6882,7 @@ Immediatly after determining Warlord Traits, tell your opponent which units are 
               </modifiers>
               <links/>
             </entryGroup>
-            <entryGroup id="d3125817-89e2-4d10-c678-8bd3429e500e" name="Assault Weapons" minSelections="0" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+            <entryGroup id="d3125817-89e2-4d10-c678-8bd3429e500e" name="Special Weapons" minSelections="0" maxSelections="0" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
               <entries>
                 <entry id="e0c8a078-a245-e2c1-b058-9cd424b88045" name="Flamer" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
                   <entries/>
@@ -6940,7 +6940,12 @@ Immediatly after determining Warlord Traits, tell your opponent which units are 
                 </entry>
               </entries>
               <entryGroups/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="58153ee2-b9b6-32e2-1703-e69210584fd9" incrementChildId="7fed39dc-4eab-6fae-389b-d7935b0ec9ee" incrementField="selections" incrementValue="5.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <links/>
             </entryGroup>
             <entryGroup id="90394970-c80e-fcc3-f96c-b02706c8a48c" name="Exchange for" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
@@ -24253,6 +24258,14 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <description>So long as the vehicle dosen&apos;t move flat out or pop smoke, it may fire an additional weapon than normal and may fire at a different target.</description>
       <modifiers/>
     </rule>
+    <rule id="2de4b722-e518-092c-7cb0-e88333e9eee3" name="Precision Shots" hidden="false" book="BRB" page="169">
+      <description>Shooting rolls of 6 become Precision Shots and may be allocated to an engaged model of your choice within range and line of sight. (No snap shots; Look Out, Sir is still allowed.)</description>
+      <modifiers/>
+    </rule>
+    <rule id="8dbde421-6cc8-72aa-0ec2-fc999e6f4dba" name="Precision Strikes" hidden="false" book="BRB" page="169">
+      <description>Melee hit rolls of 6 become Precision Strikes and may be allocated to an engaged model of your choice. (Look Out, Sir is still allowed.)</description>
+      <modifiers/>
+    </rule>
     <rule id="7efe725d-80ba-52f2-0b7a-3ac65b79e496" name="Preferred Enemy (Chaos Space Marines)" hidden="false" book="BRB" page="169">
       <description>Reroll all failed to hit and to wound rolls of 1 against the chosen enemy in both shooting and assault.</description>
       <modifiers/>
@@ -24313,14 +24326,6 @@ If held in reserve, the unit gains outflank.</description>
     </rule>
     <rule id="610ff1cd-1978-12cb-d0ce-29ca4dc5da1f" name="Zealot" hidden="false" book="BRB" page="174">
       <description>Unit this Character is joined to has Fearless and Hatred (Everything)</description>
-      <modifiers/>
-    </rule>
-    <rule id="8dbde421-6cc8-72aa-0ec2-fc999e6f4dba" name="Precision Strikes" hidden="false" book="BRB" page="169">
-      <description>Melee hit rolls of 6 become Precision Strikes and may be allocated to an engaged model of your choice. (Look Out, Sir is still allowed.)</description>
-      <modifiers/>
-    </rule>
-    <rule id="2de4b722-e518-092c-7cb0-e88333e9eee3" name="Precision Shots" hidden="false" book="BRB" page="169">
-      <description>Shooting rolls of 6 become Precision Shots and may be allocated to an engaged model of your choice within range and line of sight. (No snap shots; Look Out, Sir is still allowed.)</description>
       <modifiers/>
     </rule>
   </sharedRules>
