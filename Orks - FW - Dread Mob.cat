@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5733e530-c108-d528-8e85-0aea9a10bff8" revision="8" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Orks: IA08 - Dread Mob (2013 pdf) v8" authorName="VT" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5733e530-c108-d528-8e85-0aea9a10bff8" revision="9" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Orks: IA08 - Dread Mob (2013 pdf) v9" authorName="VT" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="d6f0c7fe-1095-49fa-ef27-65aa1adb8569" name="Attak Fightas" points="0.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="Imperial Armour - Aeronautica" page="42">
       <entries>
@@ -461,7 +461,7 @@
                 </link>
               </links>
             </entry>
-            <entry id="c8093559-f5c1-d4ee-cb1b-046dbd8ed8f8" name="No Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+            <entry id="c8093559-f5c1-d4ee-cb1b-046dbd8ed8f8" name="regular" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups>
                 <entryGroup id="31467938-2feb-fe12-529e-f576da841a53" name="Must Choose 1" defaultEntryId="e734075c-424f-986b-8caa-675c61ae53b5" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
@@ -801,6 +801,12 @@
               <conditionGroups/>
             </modifier>
             <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Bike (Character)" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="0aea13ce-b69e-457a-a2d7-e5b46b1bb9d1" childId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
                 <condition parentId="0aea13ce-b69e-457a-a2d7-e5b46b1bb9d1" childId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" field="selections" type="equal to" value="1.0"/>
               </conditions>
@@ -2044,7 +2050,7 @@
     </entry>
     <entry id="847f5cd4-8266-99ae-cf04-cb1fa3a5c548" name="Deff Dread Mob" points="0.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="Codex: Orks &amp; Dred_Mob.pdf" page="0">
       <entries>
-        <entry id="33cf85fe-4717-54fa-6f6f-fe0b6ef854e0" name="Deff Dread" points="75.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="model" minSelections="1" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+        <entry id="33cf85fe-4717-54fa-6f6f-fe0b6ef854e0" name="Deff Dread" points="80.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="model" minSelections="1" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
           <entries>
             <entry id="c44ce6a9-8312-9d45-e5df-20d1eb48c14a" name="Power Klaw" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="2" maxSelections="2" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries/>
@@ -3744,7 +3750,11 @@
       <modifiers/>
       <rules/>
       <profiles/>
-      <links/>
+      <links>
+        <link id="d55bd80d-bd3f-4498-068a-827b7b89f385" targetId="5cd704ba-04d7-96c1-17fe-be4fb093117c" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
     <entry id="19bc902f-607c-8f95-2466-e037df83074f" name="Kustom Battle Fortress" points="355.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="Imperial Armour Apocalypse 2013" page="110">
       <entries/>
@@ -7872,6 +7882,9 @@
     <rule id="8fce20c7-4989-1f17-1aee-8605459d2a61" name="Containment Failure" hidden="false" book="In-box" page="0">
       <modifiers/>
     </rule>
+    <rule id="5cd704ba-04d7-96c1-17fe-be4fb093117c" name="Cowardly Grots!" hidden="false" book="Codex: Orks" page="0">
+      <modifiers/>
+    </rule>
     <rule id="e60281e5-ed41-0d9d-ea4f-beb543420eaf" name="Crushing Weight" hidden="false" book="Imperial Armour Apocalypse 2013" page="6">
       <modifiers/>
     </rule>
@@ -8052,7 +8065,7 @@
     <rule id="476f0ac8-7242-0e5d-0c83-f0b4df0df212" name="Minelayer" hidden="false" book="GW pdf downloads" page="0">
       <modifiers/>
     </rule>
-    <rule id="b2bcc5eb-8b54-d781-9bc4-d98238313546" name="Mob Rule" hidden="false" book="Codex: Orks" page="31">
+    <rule id="b2bcc5eb-8b54-d781-9bc4-d98238313546" name="Mob Rule" hidden="false" book="Codex: Orks" page="0">
       <modifiers/>
     </rule>
     <rule id="9f95090c-c4e6-1d41-b3f0-820ae80c7935" name="Monstrous Transport" hidden="false" book="Imperial Armour Apocalypse 2013" page="118">
@@ -8113,9 +8126,6 @@
       <modifiers/>
     </rule>
     <rule id="d87aea2f-f05a-bb96-70f1-133077fc7af2" name="Screaming Death" hidden="false" book="40k Apocalypse 2nd Ed" page="0">
-      <modifiers/>
-    </rule>
-    <rule id="5e811d64-b1f3-2f4c-0cae-52fe296badb0" name="Sentry Defence System" hidden="false" book="In-box" page="0">
       <modifiers/>
     </rule>
     <rule id="b5a46d1d-b929-2d2e-9068-c6a34dbc14c3" name="Shokk Attack Gun" hidden="false" book="Codex: Orks" page="0">
@@ -8217,7 +8227,7 @@
     <rule id="5ccb7ea6-84b4-1c34-d329-defa50209e31" name="Vortex" hidden="false" book="In-box" page="0">
       <modifiers/>
     </rule>
-    <rule id="3c4b757d-bd20-642e-9324-7e9012713139" name="Waaagh!" hidden="false" book="Codex: Orks" page="31">
+    <rule id="3c4b757d-bd20-642e-9324-7e9012713139" name="Waaagh!" hidden="false" book="Codex: Orks" page="0">
       <modifiers/>
     </rule>
     <rule id="7e145c78-371a-7883-6bf0-6abdb9a3878e" name="Waaagh!plane" hidden="false" book="Death from the Skies" page="0">
@@ -8356,7 +8366,7 @@
       <characteristics>
         <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="+2"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="-"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Two-Handed"/>
       </characteristics>
       <modifiers/>
@@ -8501,7 +8511,7 @@
       <characteristics>
         <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Bomb 1, 3&quot; Blast, Armourbane, Skreamin&apos; Descent, One use only"/>
       </characteristics>
       <modifiers/>
@@ -8550,7 +8560,7 @@
     </profile>
     <profile id="16810f86-6c39-5263-3689-7d6f49f8dd4d" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Burna Bomb" hidden="false" book="Codex: Orks" page="0">
       <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Bomb"/>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Bomb 1, 5&quot; Blast, Ignores Cover, One use only"/>
@@ -8706,7 +8716,7 @@
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="f04b7dab-6c97-e7aa-69f1-f17e02bf9919" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Da Rippa" hidden="false" book="Dred_Mob.pdf" page="0">
+    <profile id="f04b7dab-6c97-e7aa-69f1-f17e02bf9919" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Da Rippa (Zhadsnark&apos;s)" hidden="false" book="Dred_Mob.pdf" page="0">
       <characteristics>
         <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="x2"/>
@@ -8824,7 +8834,7 @@
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="4bbe336e-b953-7ed7-f0ea-77ccd8fbbca4" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Dok&apos;s Tools" hidden="false" book="Dred_Mob.pdf" page="0">
+    <profile id="4bbe336e-b953-7ed7-f0ea-77ccd8fbbca4" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Dok&apos;s Tools" hidden="false" book="Codex: Orks" page="0">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Confers Feel No Pain to unit."/>
       </characteristics>
@@ -8847,7 +8857,7 @@
     </profile>
     <profile id="f8b7d6ab-57de-4759-01b3-d37c7a935c83" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Extra Armour" hidden="false" book="Codex: Orks" page="0">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description"/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Count Crew Stunned results as Crew Shaken instead."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -9495,7 +9505,7 @@
     </profile>
     <profile id="6e1e636f-8114-d76a-7ae4-67c4b5822b70" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Mega Armour" hidden="false" book="Codex: Orks" page="0">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="2+ Armour Sv. Bulky and Slow &amp; Purposeful."/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="2+ Armour Sv, Bulky, Slow &amp; Purposeful."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -9568,7 +9578,7 @@
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="c0eff1d5-cadd-e3dd-37c1-aba29f3b0981" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Mek&apos;s Tools" hidden="false" book="Codex: Orks faq 1.0" page="0">
+    <profile id="c0eff1d5-cadd-e3dd-37c1-aba29f3b0981" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Mek&apos;s Tools" hidden="false" book="Codex: Orks" page="0">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="In each of your Shooting phases, instead of firing, a model with Mek&apos;s Tools may choose to repair a single friendly vehicle if in base contact or embarked upon it. On a 5+ roll, repair one of the following: Weapon Destroyed, Immobilised, Hull Point. This is effective immediately."/>
       </characteristics>
@@ -9957,9 +9967,9 @@
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="d48d4b34-4cb3-0801-6bbc-c367c58df69b" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Squig Hound" hidden="false" book="Codex: Orks" page="50">
+    <profile id="d48d4b34-4cb3-0801-6bbc-c367c58df69b" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Squig Hound" hidden="false" book="Codex: Orks" page="0">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Remove D3 Gretchin to re-roll moral test."/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Each time a unit with a squig hound fails a Morale check it suffers D6 Strength 3 AP- hits and must then re-roll the failed Morale check. If the re-roll is failed, it cannot be re-rolled again, and the squig hound will not inflict any further hits."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -10006,7 +10016,7 @@
     </profile>
     <profile id="be4d897b-bfa6-1a33-8a65-5f94b91f0039" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Supa Shoota" hidden="false" book="Codex: Orks" page="0">
       <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="30"/>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 3"/>
@@ -10099,7 +10109,7 @@
     </profile>
     <profile id="7607b307-2ca0-0717-7997-51223b7f8011" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Warboss Gazbag&apos;s Blitzbike" hidden="false" book="Codex: Orks" page="0">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Changes unit type to Bike. Has a 4+ Armour Save. When turbo-boosting, this model can move up to 18&quot; instead of 12&quot; and counts its cover save as being 1 point higher than normal until the start of its next turn."/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Unit type Bike, +1T, 4+ Armour Sv. When turbo-boosting, this model can move up to 18&quot; instead of 12&quot; and counts its cover save as being 1 point higher than normal until the start of its next turn. Equipped with twin-linked kustom dakkablastas."/>
       </characteristics>
       <modifiers/>
     </profile>
