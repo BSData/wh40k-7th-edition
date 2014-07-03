@@ -281,13 +281,19 @@
             </entry>
           </entries>
           <entryGroups>
-            <entryGroup id="10546b10-0338-bb27-2db1-11436e49f643" name="May Choose 1 Gift" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+            <entryGroup id="10546b10-0338-bb27-2db1-11436e49f643" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers>
                 <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
                     <condition parentId="09ee244d-c467-c54a-8d1e-19ed87fb288a" childId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="roster" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -550,6 +556,42 @@
               <modifiers/>
               <links>
                 <link id="2fd7c3c1-af53-e518-e390-0155f25ba8e5" targetId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" linkType="entry">
+                  <modifiers>
+                    <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="roster" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+              </links>
+            </entryGroup>
+            <entryGroup id="0c72701c-22d5-4b42-9652-8be102382a35" name="Orkimedes&apos; Kustom Gubbinz" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="roster" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <links>
+                <link id="0adc9a26-1af2-784b-2afc-8ba91db2bcb5" targetId="599efb0d-5ca0-a20b-e052-05073a2a2c6c" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="c7f993e2-59ab-6d02-8db1-acec1639c9c7" targetId="c574a454-71f8-c18f-d43f-6af72311ee11" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="4c996c8e-fa7b-bdd2-f98e-f67dcfda2d2b" targetId="de54d4cd-6483-9424-6f35-200c3e61a859" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="815c7789-e6cb-1c33-815f-2365c1f3ec8a" targetId="216c3599-d3f7-eae7-674a-c9535b05a44c" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="5b8b8908-aeed-6c77-36ba-03d82e7a7584" targetId="e5f3e3d6-49b9-6d71-1a03-8cd2af8554f8" linkType="entry">
                   <modifiers/>
                 </link>
               </links>
@@ -1092,10 +1134,17 @@
             </entry>
           </entries>
           <entryGroups>
-            <entryGroup id="31a40f72-be40-1879-d2e0-49f88fa80277" name="May Choose 1 Gift" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+            <entryGroup id="31a40f72-be40-1879-d2e0-49f88fa80277" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="roster" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <links>
                 <link id="bb7dd4b5-656a-74fd-fac4-c38bb76a8109" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
                   <modifiers/>
@@ -1619,6 +1668,35 @@
               <modifiers/>
               <links/>
             </entryGroup>
+            <entryGroup id="92e3a837-e7ea-275b-d42b-1e9d5497469f" name="Orkimedes&apos; Kustom Gubbinz" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="roster" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <links>
+                <link id="58aadd2c-7baa-d3fb-c7d1-75ad98423855" targetId="599efb0d-5ca0-a20b-e052-05073a2a2c6c" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="c65a5032-de27-04b6-e147-c2940a6132ad" targetId="c574a454-71f8-c18f-d43f-6af72311ee11" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="54a1bbb1-43fc-11ed-91f4-6e3beeb8d656" targetId="de54d4cd-6483-9424-6f35-200c3e61a859" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="0c415af6-39aa-d6fe-7196-87e7cabdff38" targetId="216c3599-d3f7-eae7-674a-c9535b05a44c" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="b478c464-1618-bd97-16e5-f3a8e6532809" targetId="e5f3e3d6-49b9-6d71-1a03-8cd2af8554f8" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
+            </entryGroup>
           </entryGroups>
           <modifiers/>
           <rules/>
@@ -1922,10 +2000,17 @@
             </entry>
           </entries>
           <entryGroups>
-            <entryGroup id="0371fa6e-5e5d-9e1e-9487-0ee66846e6f4" name="May Choose 1 Gift" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+            <entryGroup id="0371fa6e-5e5d-9e1e-9487-0ee66846e6f4" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="roster" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <links>
                 <link id="0c2083c9-8586-eda0-85ad-dd30b574e40a" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
                   <modifiers/>
@@ -2407,6 +2492,35 @@
               <entryGroups/>
               <modifiers/>
               <links/>
+            </entryGroup>
+            <entryGroup id="9d068fa9-f8f0-fc73-b912-3cdafd2e4b90" name="Orkimedes&apos; Kustom Gubbinz" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="roster" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <links>
+                <link id="a8aba3b2-5df3-27d8-e249-2544935bc097" targetId="599efb0d-5ca0-a20b-e052-05073a2a2c6c" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="8fa388a1-90e0-a449-d8df-29c708c67eaa" targetId="c574a454-71f8-c18f-d43f-6af72311ee11" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="a9cb319f-60ff-bcdd-7c7d-46a422c7c1b3" targetId="de54d4cd-6483-9424-6f35-200c3e61a859" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="a4cd3bf9-4183-9fb7-ba79-524ed00a7587" targetId="216c3599-d3f7-eae7-674a-c9535b05a44c" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="b1012bcf-228b-73d6-b4f7-5e675fcf73f4" targetId="e5f3e3d6-49b9-6d71-1a03-8cd2af8554f8" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
             </entryGroup>
           </entryGroups>
           <modifiers/>
@@ -11466,115 +11580,6 @@
         </link>
       </links>
     </entry>
-    <entry id="f0025216-01c2-34ab-5454-9d677693c505" name="Mad Dok Grotsnik, Da Painboss" points="160.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" book="Codex: Orks" page="0">
-      <entries>
-        <entry id="2c225b78-8a65-deed-bb73-202cc944e333" name="Cybork Body" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="3adb0d24-61d8-3f89-38a1-652c514c2d70" targetId="ac2aad6c-f419-14d9-394c-6a62db6597cd" linkType="profile">
-              <modifiers/>
-            </link>
-            <link id="fb08d942-5b0e-65c9-3a6e-584a2be3cdfe" targetId="257e406b-e006-275d-b110-5675b4dcbe8b" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="4094818b-6a6d-eccb-d8e6-2a0dc92fd75d" name="&apos;Urty Syringe" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="20e4c310-cccb-4fb3-bbdb-ff29cc9023bc" targetId="1f62a304-6e8c-c06e-32c9-1812e6e28a62" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="23f321ef-58ee-2e85-4a48-b0b49e6df63d" name="Dok&apos;s Tools" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="50cfc728-ec1e-444d-c1b7-8ce994561242" targetId="4bbe336e-b953-7ed7-f0ea-77ccd8fbbca4" linkType="profile">
-              <modifiers/>
-            </link>
-            <link id="a3e0f629-f7b6-54b8-b7a2-c625aadb1b15" targetId="1a39557d-f118-167d-1363-0d5ceefa789f" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="fcc70467-5bea-656d-9515-0734a6aa86af" name="Power Klaw" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="0fc6e0f3-6622-b128-2248-385ba5ccc6b0" targetId="99be63a3-ddc8-c52f-272b-fbca86291f9d" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="7dae6392-25d1-5028-3ccb-bba69464ef85" name="Slugga" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="74af1976-8d35-4009-0d45-6910a693bb4d" targetId="b5161c22-8241-12a3-4fb0-e8a08b7eea87" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-      </entries>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="c0a35a29-64bd-abe6-c628-6c676630a0cc" targetId="d63fce70-5222-5847-bf71-5b672a824578" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="e368c871-4f00-51e0-ad46-397e7c02a038" targetId="efc0f034-c92b-3279-9ccd-413c8bd50609" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="62389041-51b9-75a8-fa6d-dd549df83d03" targetId="2b4f220f-06c3-dd73-c9f2-a9a0ff17860e" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="c807e19d-63be-e00d-0b03-2c3d226524a4" targetId="806f3f6a-03d4-bf6d-545c-899c8e3ff182" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="dcd8288a-7ffc-6b80-6a9c-4d0fb83a0264" targetId="3a63aad4-b9a1-cdfa-0e6b-4a4a7351b77e" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="921c81f1-bd72-9da2-3096-2149c43f0020" targetId="97799367-52fb-a5d0-a7e9-0c936fddddc8" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="2409ed8f-ec2a-cdcd-32b6-0a3ee34c741e" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="6d22ef9e-ef3b-09e6-64e4-61caaf11f159" targetId="c91f51e9-35ac-0c2e-9210-0bc6b815a090" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="e0d9ed8c-59e6-a1e1-744a-67a15dd532ca" targetId="b2bcc5eb-8b54-d781-9bc4-d98238313546" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="5ead0208-0cfa-6af2-e14a-43966e467b5c" targetId="92e3a95b-9df5-a19f-4932-3a0650a8daf2" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="b2f6044c-3f91-7ca5-f0b0-054ccc81d493" targetId="cf911112-d237-5b26-6843-9a04f852c720" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
     <entry id="f680a21e-9ded-c37c-f124-9f831ad88472" name="Mek" points="15.0" categoryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="0" collective="false" hidden="false" book="Codex: Orks" page="0">
       <entries>
         <entry id="41432941-f45f-8bed-bace-c1f06d4539cd" name="Mek&apos;s Tools" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
@@ -13755,6 +13760,1028 @@
         </link>
       </links>
     </entry>
+    <entry id="be395edd-44e9-332e-a47c-4c522af759cd" name="&quot;Green Tide&quot;" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <entries>
+        <entry id="932f5ba7-b43d-6b47-0fa4-61298d10c75b" name="Boyz" points="0.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="unit" minSelections="10" maxSelections="10" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="Codex: Orks" page="0">
+          <entries>
+            <entry id="f53cd472-3398-5d11-9dd3-01ca16fb320e" name="&apos;Eavy Armour for Mob" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="increment" field="points" value="4.0" repeat="true" numRepeats="1" incrementParentId="932f5ba7-b43d-6b47-0fa4-61298d10c75b" incrementChildId="32eaf4ee-1d43-6e67-1e7b-9c3351172779" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="3253cc34-b9e9-04f3-d43f-1805e21f884f" targetId="bd8e7c2b-6aee-35b7-6f19-41a4a09c92f1" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups>
+            <entryGroup id="32eaf4ee-1d43-6e67-1e7b-9c3351172779" name="Mob" defaultEntryId="aa45b8b3-b723-05ea-2d5d-0581a72368b6" minSelections="10" maxSelections="30" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+              <entries>
+                <entry id="aa45b8b3-b723-05ea-2d5d-0581a72368b6" name="Boy w/ Slugga" points="6.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="30" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries>
+                    <entry id="04a9e021-c3bb-e597-b96e-7eb63fb71fe3" name="Stikkbombs" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="5689a1eb-d249-1acf-665e-a3f2f70d336f" targetId="10ac3ee4-c530-de10-eed0-253b125b7cf0" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                    <entry id="ccc19b54-c665-64d8-4775-497143b8cd43" name="Choppa" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="1dbf31b8-ea56-ec80-8505-cb4c8136a49c" targetId="b5a15a10-378a-f59e-80a7-090b5c95a19d" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                    <entry id="7bb9dd06-9264-74be-a2de-663eeb7fe0f4" name="Slugga" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="87e1db4c-d127-8455-e7bb-1961cb9e15e0" targetId="b5161c22-8241-12a3-4fb0-e8a08b7eea87" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="c692cd2e-bcdd-0876-65ba-90f5553ad7f4" targetId="eb659805-d021-ab73-c776-3017ac5c3d26" linkType="profile">
+                      <modifiers>
+                        <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="4+" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="932f5ba7-b43d-6b47-0fa4-61298d10c75b" childId="f53cd472-3398-5d11-9dd3-01ca16fb320e" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="1488bb71-c5b9-f061-23ca-9a20b52f6aa2" name="Boss Nob" points="16.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries>
+                    <entry id="9d0b0577-9d36-4208-e81f-9fafd11d0721" name="Bosspole" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="d127b8c5-2e69-27b0-23a3-afd937fa3c4a" targetId="0aab2fa5-3bfe-1360-2436-d99e79889668" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                    <entry id="dfddd183-2753-7695-7e69-8b01c3a6e77d" name="Stikkbombs" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="2f51e3ff-9334-2e89-851b-3b776b7a4682" targetId="10ac3ee4-c530-de10-eed0-253b125b7cf0" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                  </entries>
+                  <entryGroups>
+                    <entryGroup id="5700af2c-05db-7299-f775-b63ec7dca26c" name="Must Choose 1" defaultEntryId="f3927cac-79c2-0abf-5ba8-237afd52f05c" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+                      <entries>
+                        <entry id="1af01829-d7f8-7aad-37ab-04c7c6d01378" name="Power Klaw" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="e7e50ebf-f472-fe2b-5ae6-77b9118cddf4" targetId="99be63a3-ddc8-c52f-272b-fbca86291f9d" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="508fdae5-b6b3-9798-5aaf-62b0a307e81b" name="Big Choppa" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="0bbd5341-59fe-a13b-e764-e1010f8ec8fd" targetId="70db740f-9262-4e28-3c7f-e7ce115dd532" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="f3927cac-79c2-0abf-5ba8-237afd52f05c" name="Choppa" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="85b212af-22e7-a7d4-50d9-c7264dff6792" targetId="b5a15a10-378a-f59e-80a7-090b5c95a19d" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <links/>
+                    </entryGroup>
+                    <entryGroup id="647a790b-f625-77d2-547d-b50c794bab6f" name="Must Choose 1" defaultEntryId="592c9639-db52-665b-3eb6-0af498881f1f" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+                      <entries>
+                        <entry id="592c9639-db52-665b-3eb6-0af498881f1f" name="Slugga" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="572616e9-c5b9-04fb-a9b6-8d28a335980a" targetId="b5161c22-8241-12a3-4fb0-e8a08b7eea87" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="00109a87-0967-bdcf-0a2f-21365c9682b4" name="Shoota" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="290f48be-c17e-ff1f-e8c3-d1b1723d20a4" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="e0fc4ff7-c78b-e009-bc7a-daf54ba25f42" name="Kombi-weapon w/ Rokkit Launcha" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="778cccdd-bbd3-be1c-e634-40e80ab5c7b9" targetId="b9acf151-1b3a-6d61-fc07-074c4ed705f2" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="058d9ade-9ea7-53fe-4d16-6dba3d6c07dc" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="f60f8dad-7ab6-c90b-1c01-59aac0599405" targetId="3a5e5b32-bf2f-ad9b-4d15-4070f6ccf6bf" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="109c93c5-a061-39fb-2001-bbc8523be1f8" name="Kombi-weapon w/ Skorcha" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="846741eb-f208-3a80-47c3-c3b5588ebcc6" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="747e47ae-c162-cfe9-c402-dc66551f31ae" targetId="2eabaf9f-1f6d-260f-981d-18187b1a3a31" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="84fe4cec-bdc9-64c7-48fc-f7e58c9f95ff" targetId="b9acf151-1b3a-6d61-fc07-074c4ed705f2" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="e944b850-7391-358a-f0e1-e4155e3225f9" name="Twin-linked Shoota" points="3.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="731cded9-dc58-b628-3f4c-2872cc02bcb2" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <links/>
+                    </entryGroup>
+                  </entryGroups>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="22fa1c57-8057-70bb-c5ac-ecd5b4d324f5" targetId="47abc561-469a-0e41-00e8-5d9ea56484bc" linkType="profile">
+                      <modifiers>
+                        <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="4+" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="932f5ba7-b43d-6b47-0fa4-61298d10c75b" childId="f53cd472-3398-5d11-9dd3-01ca16fb320e" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="b92554f3-a8b5-dd25-e8bd-69343e938325" name="Boy w/ Shoota" points="7.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="0" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries>
+                    <entry id="c7eb5fa8-22db-b1b2-46f4-5e65f1ed5821" name="Stikkbombs" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="c6d7d9d0-14c2-2cba-3ff9-17e006d89d21" targetId="10ac3ee4-c530-de10-eed0-253b125b7cf0" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                    <entry id="a6dde39c-6248-d742-1d0f-7682622f789d" name="Choppa" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="6790459d-2380-409e-5a90-844cc43e0c2e" targetId="b5a15a10-378a-f59e-80a7-090b5c95a19d" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                    <entry id="2d517f43-ac05-3315-9258-1128a854db6e" name="Shoota" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="58863e5e-a34f-e181-8738-d8aa55594bda" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="30.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="32eaf4ee-1d43-6e67-1e7b-9c3351172779" childId="aa45b8b3-b723-05ea-2d5d-0581a72368b6" field="selections" type="equal to" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="1dc6bfa2-adfd-8df2-d16b-b0d09f5dbdb8" targetId="eb659805-d021-ab73-c776-3017ac5c3d26" linkType="profile">
+                      <modifiers>
+                        <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="4+" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="932f5ba7-b43d-6b47-0fa4-61298d10c75b" childId="f53cd472-3398-5d11-9dd3-01ca16fb320e" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
+              <entryGroups>
+                <entryGroup id="1f0f982b-2830-294e-ac08-41c9da2abdf3" name="Special Weapons" minSelections="0" maxSelections="0" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+                  <entries>
+                    <entry id="85f767f8-70d8-6bf8-636d-c6b27cd5d103" name="Boy w/ Rokkit Launcha" points="11.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries>
+                        <entry id="1edcf575-4606-e76b-e4bd-575af65456cb" name="Rokkit Launcha" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="f51931f6-b240-90e2-ee44-3b04330d077a" targetId="076b7eee-123d-6d81-3099-053319f2ada6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="f038a740-0ad1-44f6-60f7-c42853688973" name="Choppa" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="f221ce06-7f1f-c443-32dc-35391360a029" targetId="b5a15a10-378a-f59e-80a7-090b5c95a19d" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="f64ecd6b-b8f5-a909-827e-2e61631b7402" name="Stikkbombs" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="b1fe2386-0ddf-d5cc-4b62-2445b071733e" targetId="10ac3ee4-c530-de10-eed0-253b125b7cf0" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="3563b6e5-c174-dcf8-3b78-5fcc618c4bd0" targetId="eb659805-d021-ab73-c776-3017ac5c3d26" linkType="profile">
+                          <modifiers>
+                            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="4+" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions>
+                                <condition parentId="932f5ba7-b43d-6b47-0fa4-61298d10c75b" childId="f53cd472-3398-5d11-9dd3-01ca16fb320e" field="selections" type="equal to" value="1.0"/>
+                              </conditions>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
+                        </link>
+                      </links>
+                    </entry>
+                    <entry id="0ddad10d-d8ab-e185-298c-06d9006b7e4a" name="Boy w/ Big Shoota" points="11.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                      <entries>
+                        <entry id="691981f9-fe2f-7092-acb6-ae13978209b6" name="Big Shoota" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="b95feca5-f7ae-d410-54d0-f3a3bf41b07f" targetId="57448769-bae8-59d4-3cee-5c9f2f7a0db1" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="5aacfc86-2c2b-5e5e-03e7-a2fadcad5650" name="Choppa" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="b8f00411-bb52-2eec-e8ac-e19110eff6f5" targetId="b5a15a10-378a-f59e-80a7-090b5c95a19d" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="7739c43f-a5c9-efdf-99e4-e4a859e5b63d" name="Stikkbombs" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="17ed5d09-8683-0cb1-d2df-b00d63b788e1" targetId="10ac3ee4-c530-de10-eed0-253b125b7cf0" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="a5f5a6f1-5d0e-e1d3-50e5-5ddd8b68f65e" targetId="eb659805-d021-ab73-c776-3017ac5c3d26" linkType="profile">
+                          <modifiers>
+                            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="4+" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions>
+                                <condition parentId="932f5ba7-b43d-6b47-0fa4-61298d10c75b" childId="f53cd472-3398-5d11-9dd3-01ca16fb320e" field="selections" type="equal to" value="1.0"/>
+                              </conditions>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
+                        </link>
+                      </links>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers>
+                    <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="932f5ba7-b43d-6b47-0fa4-61298d10c75b" incrementChildId="32eaf4ee-1d43-6e67-1e7b-9c3351172779" incrementField="selections" incrementValue="10.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <links/>
+                </entryGroup>
+              </entryGroups>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="def3757c-e8eb-6550-51ad-6f43926773de" targetId="efc0f034-c92b-3279-9ccd-413c8bd50609" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="5e7342bd-15dd-c86f-32cb-a63c8321d815" targetId="b2bcc5eb-8b54-d781-9bc4-d98238313546" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="4a1bc3cf-f938-9256-b221-e85a46936827" targetId="2b4f220f-06c3-dd73-c9f2-a9a0ff17860e" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="5cd43cad-3e18-b4ec-84df-9954647832b3" name="Warboss" points="60.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="Codex: Orks" page="0">
+          <entries>
+            <entry id="7b2117f7-f945-ee70-89d7-68d2f8b2857e" name="Stikkbombs" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="f81c4d95-04e2-640a-3bba-a4d436988c81" targetId="10ac3ee4-c530-de10-eed0-253b125b7cf0" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups>
+            <entryGroup id="800509d8-f697-1e44-4b57-61e1897023ab" name="May Choose Any Runts, Squigs &amp; Know-wots" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+              <entries>
+                <entry id="1d95a524-4c93-6635-888c-de70c2f032cc" name="Cybork Body" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="59d082b6-1f26-e717-c759-20c9a30e7f5f" targetId="ac2aad6c-f419-14d9-394c-6a62db6597cd" linkType="profile">
+                      <modifiers/>
+                    </link>
+                    <link id="4713db24-877a-3cb8-2a71-ac67224d209c" targetId="257e406b-e006-275d-b110-5675b4dcbe8b" linkType="rule">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="29343f94-ec36-2d58-0e4e-14f76fcb11d7" name="Bosspole" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="c32c6bb7-3850-59c3-9b27-4e9d704e04e6" targetId="0aab2fa5-3bfe-1360-2436-d99e79889668" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="65ce40d2-e2dd-a67d-37dd-47372e5d0d82" name="Attack Squig" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="3f7969ba-47e7-ddd9-5df5-489ebb4ca5a8" targetId="c6b8fd97-d6d7-53b1-d49f-82e6acf62efb" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="6cc627d8-d23d-0b24-4e80-a3e701528aff" name="Ammo Runt" points="3.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="4a40c92d-7645-0ec4-2818-25a6069af535" targetId="e0bccf3a-fd54-3b72-fc1c-ad120fe3d00f" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="87114752-fdcc-eb58-ddc7-d3302153a564" name="Gitfinda" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="78b68f79-a4dd-4bdd-8f01-70de9cc54e72" targetId="27f66081-8d1e-025b-3b02-6c5ef7810043" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+            <entryGroup id="2fb0f373-878f-c2cd-c092-514b4f5fd675" name="Must Choose 1" defaultEntryId="f0c7e0d1-785a-9122-9622-f48e3bf05a1a" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+              <entries>
+                <entry id="cd3843ad-60d6-4244-f694-ed9da1cef114" name="&apos;Eavy Armour" points="4.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups>
+                    <entryGroup id="99ef1236-1a5a-4d20-2f5b-c6c0870c92ea" name="Must Choose 1" defaultEntryId="5d929ebe-ad44-6124-bf6c-0faae572bde6" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+                      <entries>
+                        <entry id="5d929ebe-ad44-6124-bf6c-0faae572bde6" name="Choppa" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="77a9eb9a-d413-1a19-0e6c-a0a2f0cb26ae" targetId="b5a15a10-378a-f59e-80a7-090b5c95a19d" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="393b7bc5-0d6c-8df2-b516-b37af5653302" name="Power Klaw" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="ff8239e4-6fef-61ec-7c26-e8d61424d11c" targetId="99be63a3-ddc8-c52f-272b-fbca86291f9d" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="8f980845-cf04-18af-bc53-166d6f93a815" name="Big Choppa" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="332d79e2-b0b4-1974-9f3b-5e4c49f72144" targetId="70db740f-9262-4e28-3c7f-e7ce115dd532" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <links/>
+                    </entryGroup>
+                    <entryGroup id="16383464-9473-f024-c159-0f169460caa0" name="Must Choose 1" defaultEntryId="65a77b25-0af8-467a-b4f4-cd456ebc9225" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+                      <entries>
+                        <entry id="65a77b25-0af8-467a-b4f4-cd456ebc9225" name="Slugga" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="af176331-1f0d-1626-e613-857218e95a34" targetId="b5161c22-8241-12a3-4fb0-e8a08b7eea87" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="017c3047-8f62-93ee-5f6e-a78fd4c566f4" name="Shoota" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="4ede5adf-595b-53d3-f060-2b30394324b6" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="8f02bf27-14e7-262c-33d9-dcc7767bc756" name="Twin-linked Shoota" points="3.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="23227509-a151-2dd3-f851-73ea0abb429c" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="fa9bd12a-a30f-af3a-88ba-f296689e1ba2" name="Kombi-weapon w/ Rokkit Launcha" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="f8a30eef-5298-1899-566f-cd6b0e17932f" targetId="b9acf151-1b3a-6d61-fc07-074c4ed705f2" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="1af8237b-1c31-c308-842b-5cf58c89a921" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="e19039b7-90c5-eca4-d1f5-17ea01d478ca" targetId="3a5e5b32-bf2f-ad9b-4d15-4070f6ccf6bf" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="7752574d-27b4-6bb0-6a18-166c826d6e51" name="Kombi-weapon w/ Skorcha" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="1bc1aaaf-51a2-9aba-0f11-5e4ef469d519" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="4db20217-5c4f-fdb7-2a83-7850db943f1f" targetId="2eabaf9f-1f6d-260f-981d-18187b1a3a31" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="36fdeb89-a765-202c-3d28-ce6a9682455e" targetId="b9acf151-1b3a-6d61-fc07-074c4ed705f2" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <links/>
+                    </entryGroup>
+                  </entryGroups>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="d92cfdd7-aa4a-2c4b-2fc3-53058ca1212d" targetId="bd8e7c2b-6aee-35b7-6f19-41a4a09c92f1" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="7b34caa0-4af6-bb17-0512-f142cd489ea8" name="Mega Armour" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups>
+                    <entryGroup id="d820f953-05be-5d86-6cc1-463c9fcee80c" name="Must Choose 1" defaultEntryId="5cbe55a6-9e13-673b-ba83-4c98c1492131" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+                      <entries>
+                        <entry id="8ec70b32-662d-5ea2-b75b-23478498aa1c" name="Shoota" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="527a4855-50d2-3eab-ab3c-5936272d1182" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="5cbe55a6-9e13-673b-ba83-4c98c1492131" name="Twin-linked Shoota" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="9ff3f3ed-8600-9867-1a06-d3006eebe1c7" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="3b1167c8-5d21-8edf-3940-d942f36be9ef" name="Kombi-weapon w/ Rokkit Launcha" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="ae500ab4-224f-6313-1b47-52b86f8abfc3" targetId="b9acf151-1b3a-6d61-fc07-074c4ed705f2" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="50e3850b-5d7f-2152-10bb-f18188859330" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="87a23107-cf99-1af0-52ba-27c88026d154" targetId="3a5e5b32-bf2f-ad9b-4d15-4070f6ccf6bf" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="3cc226c6-7346-7063-fed0-f1ffbdd710e2" name="Kombi-weapon w/ Skorcha" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="1886714a-4ec7-546a-f3ed-ea2948b2d786" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="faecec7a-96c1-882c-1052-2414b298b844" targetId="2eabaf9f-1f6d-260f-981d-18187b1a3a31" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="36664c26-a213-9059-5085-52a3f43c4ada" targetId="b9acf151-1b3a-6d61-fc07-074c4ed705f2" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <links/>
+                    </entryGroup>
+                    <entryGroup id="0b87cc0a-2ea8-2350-4f46-b607ba397c26" name="Must Choose 1" defaultEntryId="e5b708cc-7746-503d-a67a-530ba326b784" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+                      <entries>
+                        <entry id="e5b708cc-7746-503d-a67a-530ba326b784" name="Power Klaw" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="d8e78203-9a65-df3d-b125-f34ceea2692e" targetId="99be63a3-ddc8-c52f-272b-fbca86291f9d" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="e03d4533-d1fb-6a81-2e58-6e851d6d59a6" name="Big Choppa" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="5dcd41d6-fc53-b06c-4520-bcc702756211" targetId="70db740f-9262-4e28-3c7f-e7ce115dd532" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <links/>
+                    </entryGroup>
+                  </entryGroups>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="5b45c657-f5dc-9eba-697e-51c3c4e8f99a" targetId="6e1e636f-8114-d76a-7ae4-67c4b5822b70" linkType="profile">
+                      <modifiers/>
+                    </link>
+                    <link id="0ba4a61b-43fc-969f-a257-410853491bd7" targetId="89022042-3a2b-3829-d0e9-09512a95dbd7" linkType="rule">
+                      <modifiers/>
+                    </link>
+                    <link id="0dea887c-90e2-69e9-b063-ab45c7810828" targetId="32b0b507-82e7-5304-1a9c-b69fb2f5ae98" linkType="rule">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="f0c7e0d1-785a-9122-9622-f48e3bf05a1a" name="regular" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups>
+                    <entryGroup id="77530f6b-259a-1ab6-00ce-439b917ffacb" name="Must Choose 1" defaultEntryId="1eba2b9b-4219-d30d-124c-ca09a6b46b48" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+                      <entries>
+                        <entry id="1eba2b9b-4219-d30d-124c-ca09a6b46b48" name="Choppa" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="64f2f6b2-b55e-25b6-0c1d-55a07fc0e7f2" targetId="b5a15a10-378a-f59e-80a7-090b5c95a19d" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="506d7804-b5d4-3781-5b54-aa93df95e4df" name="Power Klaw" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="b8c8c1e9-aa99-b9a7-8582-26c0d1f8633d" targetId="99be63a3-ddc8-c52f-272b-fbca86291f9d" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="d0805fbe-5e55-f5e9-76ad-2df6a68f9fb1" name="Big Choppa" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="6fa0eceb-0307-93b2-b041-df35dcf799bd" targetId="70db740f-9262-4e28-3c7f-e7ce115dd532" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <links/>
+                    </entryGroup>
+                    <entryGroup id="9f7a54df-86da-963b-d900-92ed81d3f420" name="Must Choose 1" defaultEntryId="e7523c1a-b9f4-13aa-2df5-a2457ce2ae38" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+                      <entries>
+                        <entry id="e7523c1a-b9f4-13aa-2df5-a2457ce2ae38" name="Slugga" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="da141226-c54d-2537-5468-f75c500c3664" targetId="b5161c22-8241-12a3-4fb0-e8a08b7eea87" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="65024c9f-727c-904b-0ccd-e687c7785565" name="Shoota" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="5f6d4b34-c48b-a8a6-46b6-d0981a9c72c3" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="db6164a9-61ca-eb7d-15ca-0e1efe50b22c" name="Twin-linked Shoota" points="3.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="b7569cd6-4ea0-d39e-07af-a3a627df69d7" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="f0ea83ad-795c-6692-5b03-3efec11971e9" name="Kombi-weapon w/ Rokkit Launcha" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="3889bd3a-9709-fabd-974a-fd774d67cccf" targetId="b9acf151-1b3a-6d61-fc07-074c4ed705f2" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="4627b2a5-d13e-b685-05e3-7b277fda28a9" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="6eedec37-c4f2-486d-8bf6-ab2a823fb9a7" targetId="3a5e5b32-bf2f-ad9b-4d15-4070f6ccf6bf" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="fbed9455-524d-583c-6569-f8e62d32ed6c" name="Kombi-weapon w/ Skorcha" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="c1d5a38a-bd79-311f-40d3-324db12d7771" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="799e3583-a077-24c8-3c6a-bb1b309b3665" targetId="2eabaf9f-1f6d-260f-981d-18187b1a3a31" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="5a418715-2dec-2792-43f7-891ccaeb7291" targetId="b9acf151-1b3a-6d61-fc07-074c4ed705f2" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers/>
+                      <links/>
+                    </entryGroup>
+                  </entryGroups>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+            <entryGroup id="73671d3d-44f9-25a3-4fcb-696f98a2f538" name="Orkimedes&apos; Kustom Gubbinz" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <links>
+                <link id="491c9522-d608-910e-04ac-0ec3186d78fc" targetId="599efb0d-5ca0-a20b-e052-05073a2a2c6c" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="30829d18-18a0-a8f3-34c9-689d8d32f33b" targetId="c574a454-71f8-c18f-d43f-6af72311ee11" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="ed7f96a1-123a-f9a4-c1af-c399cd213678" targetId="de54d4cd-6483-9424-6f35-200c3e61a859" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="1174616f-ee0c-95c5-5f35-32ac01ca6db7" targetId="216c3599-d3f7-eae7-674a-c9535b05a44c" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="9aedcf67-a5e1-8870-b774-c165d92bf0e2" targetId="e5f3e3d6-49b9-6d71-1a03-8cd2af8554f8" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="565241a1-7bea-0054-6fb3-ef32a7c3f228" targetId="efc0f034-c92b-3279-9ccd-413c8bd50609" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="7f98ee6f-c58c-b3d9-8e60-f39dfba78464" targetId="b2bcc5eb-8b54-d781-9bc4-d98238313546" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="24f85057-8738-fe43-c1fb-4b94208f7a7a" targetId="2b4f220f-06c3-dd73-c9f2-a9a0ff17860e" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="ca9c3e1c-6139-35d0-090e-0fa514eb9fbd" targetId="3a63aad4-b9a1-cdfa-0e6b-4a4a7351b77e" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="cf522bbd-4d86-bae0-3b1b-93446ff6c94d" targetId="375f7f5f-99b7-cc4c-242d-7382b544b68f" linkType="profile">
+              <modifiers>
+                <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="4+" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="5cd43cad-3e18-b4ec-84df-9954647832b3" childId="cd3843ad-60d6-4244-f694-ed9da1cef114" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="5cd43cad-3e18-b4ec-84df-9954647832b3" childId="7b34caa0-4af6-bb17-0512-f142cd489ea8" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+            <link id="12411477-ae96-4010-f28e-cd0db8c5407e" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="59988dc8-2f32-cb62-57b3-0803ae5b0634" targetId="3c4b757d-bd20-642e-9324-7e9012713139" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="fa3e836e-f344-f05d-4ca3-5dd600ba6f4a" targetId="c91f51e9-35ac-0c2e-9210-0bc6b815a090" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="202be13e-cf78-9e79-fe22-d262aeea22ef" targetId="951f8363-9657-7f64-fa87-0f542b3b246d" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="289b71b9-1f5d-0c39-1520-f8dff34756e6" targetId="e26b2446-8e7f-8037-3b9c-4db2424312be" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="b38e75c5-9969-f654-3d7a-3e968fa087e6" targetId="e50ede20-ee64-b903-4c7e-63b4928349e6" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="c7d244cf-2fa2-888a-ea66-0ee869daf4b8" targetId="cd29a59a-dfb3-8a77-7331-7658d575c42d" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="b4e448b6-e484-3f6f-5778-9291a4896b75" targetId="afb0365f-84ca-20de-65e9-edc890f35661" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
   </entries>
   <rules/>
   <links>
@@ -13866,6 +14893,9 @@
       <modifiers/>
     </link>
     <link id="3e9ec03b-faa6-6cab-eb52-788f6143a2bb" targetId="f3cbb845-ba76-2247-3a64-9543aba69382" linkType="entry">
+      <modifiers/>
+    </link>
+    <link id="f6c2f469-9437-ed90-abf6-a47c17a1f747" targetId="65c7b9e1-975e-a63b-858d-75d5f48eca90" linkType="entry">
       <modifiers/>
     </link>
   </links>
@@ -14872,45 +15902,6 @@
         </link>
       </links>
     </entry>
-    <entry id="30cc6165-7121-a4c0-1262-e729b435b68f" name="Gift: Da Dead Shiny Shoota" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="c338e05d-8fbc-513c-af2c-15733e2360cb" targetId="e8959489-2121-afe1-147a-54a02f8b80a5" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="e5fba0d8-31d4-0aad-4436-e927b6dc3709" targetId="5f53dcfe-5a3a-2e85-b1c2-a88bfa8bd277" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="e1874b1b-7ca5-7fe1-5329-a0e073b0c230" name="Gift: Da Finkin&apos; Kap" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="eb80b05c-62a0-57e2-e5a6-908410ed0537" targetId="94b1df7c-15b5-66c2-86e9-b98f59dd8294" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="e8082e4a-deaa-4284-de95-d0b0bb9be10b" name="Gift: Da Lucky Stikk" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="0ca2058c-51f0-8d97-596b-f35c87c579e8" targetId="e6c47545-3219-fa42-c30c-81ceeea3a2ca" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
     <entry id="071b6461-f9bd-1d27-adac-c28223922c79" name="Dakkajet" points="70.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="model" minSelections="3" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="Codex: Orks" page="0">
       <entries>
         <entry id="a6a35e70-1efc-9fb4-dce2-757e200cd28d" name="Twin-linked Supa Shoota" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="2" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
@@ -15371,6 +16362,57 @@
         </link>
       </links>
     </entry>
+    <entry id="30cc6165-7121-a4c0-1262-e729b435b68f" name="Gift: Da Dead Shiny Shoota" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="c338e05d-8fbc-513c-af2c-15733e2360cb" targetId="e8959489-2121-afe1-147a-54a02f8b80a5" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="e5fba0d8-31d4-0aad-4436-e927b6dc3709" targetId="5f53dcfe-5a3a-2e85-b1c2-a88bfa8bd277" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="e1874b1b-7ca5-7fe1-5329-a0e073b0c230" name="Gift: Da Finkin&apos; Kap" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="eb80b05c-62a0-57e2-e5a6-908410ed0537" targetId="94b1df7c-15b5-66c2-86e9-b98f59dd8294" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="25030daf-4eef-f5b8-4515-9860fe363438" name="Gift: Da Fixer Upperz" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="0fee4474-9103-82f0-bcc4-b8508b12a199" targetId="77f90741-e2ae-b719-fd80-f601bbfd7e1a" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="e8082e4a-deaa-4284-de95-d0b0bb9be10b" name="Gift: Da Lucky Stikk" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="0ca2058c-51f0-8d97-596b-f35c87c579e8" targetId="e6c47545-3219-fa42-c30c-81ceeea3a2ca" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="c0773bfa-69cd-5e61-7d16-35180db73f6e" name="Gift: Headwoppa&apos;s Killchoppa" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
       <entries/>
       <entryGroups/>
@@ -15382,6 +16424,136 @@
           <modifiers/>
         </link>
         <link id="39f28de9-290f-b1bd-4921-7d4d77ba0b94" targetId="5c514e4f-6ea1-6d00-1009-fa57d50fcbd4" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" name="Gift: Warboss Gazbag&apos;s Blitzbike" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
+      <entries>
+        <entry id="d9e3a446-20fb-7b2b-63d9-ac3feed1803e" name="Twin-linked Kustom Dakkablastas" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="8ef2ebdd-84c8-7109-89de-9afcc7fdeb5d" targetId="b5d84351-3d9e-4edc-a2cc-88529c0f5cc0" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="b45d4e6f-4366-ffd9-fcd4-cafae751b3d4" targetId="7607b307-2ca0-0717-7997-51223b7f8011" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="de54d4cd-6483-9424-6f35-200c3e61a859" name="Gubbinz: Big Bosspole" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="55d2eac3-fdc7-2748-10ef-9b00fcb1529e" targetId="eb706423-4a5e-7930-47fa-a6ba60b42101" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="599efb0d-5ca0-a20b-e052-05073a2a2c6c" name="Gubbinz: Choppa of Ragnarork" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="5ef1883a-d99e-1d5b-4648-95713407842b" targetId="89b15a6c-80f2-ce86-7e66-b779d8b5f7e6" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="2b23c259-1975-8236-c958-fde784344726" targetId="08abff1d-f5be-ae8a-3256-44b686feab74" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="c574a454-71f8-c18f-d43f-6af72311ee11" name="Gubbinz: Da Killa Klaw" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="8f7863f7-b2c7-583b-1f22-893893f81a44" targetId="f16890d5-514b-4c15-ae47-1e0630827270" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="b2d9a7aa-9270-d043-b90f-f0ccd777fdf7" targetId="7b5fdf15-3ae0-c72c-9ffe-2f7f5a7a213f" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="e5f3e3d6-49b9-6d71-1a03-8cd2af8554f8" name="Gubbinz: Da Supa-Cybork" points="50.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="ba5f7a27-0c2a-1dce-0979-b1934e629026" targetId="d8f74782-7b02-a39d-97df-5f496d5f7bfc" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="1315e0de-7856-1bc7-3916-1b0fa4edfe60" targetId="6937b5a7-e808-7a66-650c-22ee0921044c" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="0bedc65f-a42b-9775-0066-94fddb0d2d51" targetId="5c931240-087a-3624-74d9-41572b0c32fd" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="7be5a212-e480-be8f-4baf-9e2e944db54c" targetId="e45bac6e-634e-e66e-4394-49d88b42f182" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="216c3599-d3f7-eae7-674a-c9535b05a44c" name="Gubbinz: Kill-dakka" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="fc6b348c-7391-97ec-0972-819550085e2d" targetId="19b38ffb-c139-e772-3673-a270d3732216" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="5860ab45-d79f-7b0c-dba7-ae1574802379" targetId="babe0c20-c900-003e-8f5a-dd6a0a131950" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="dac5a448-f7c1-6eb5-77ab-cf78bc790ef2" targetId="ddd9b99f-b278-6a45-e1d1-1756d0ea3dc7" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="9668a487-260c-6e07-7e3f-6cce61ef6e22" targetId="9c9df531-6667-ddb8-4311-e9f9355348f9" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="c68ea1b7-e37f-4967-ce95-506b29838ad6" targetId="97abee56-36fc-bfd3-be0d-c003915cfc0b" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="d2757f3f-5c03-ac0a-f1d7-204304cb1e9a" targetId="13c64972-90eb-5644-27bb-36e552c45660" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="f64bc225-32c0-5240-0af4-edaafb1bc732" targetId="a204ea94-91df-4e20-927f-c711c647e6a7" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="fabc01fe-56c9-d819-a574-1c362bc702cd" name="Gubbinz: Mega Force Field" points="75.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="593a90d0-7232-c69e-d901-c889f6f991d3" targetId="43b9d5bd-4beb-e7d6-4c96-c051aa7a4ac2" linkType="profile">
           <modifiers/>
         </link>
       </links>
@@ -16656,7 +17828,7 @@
                     </link>
                   </links>
                 </entry>
-                <entry id="d84daaa1-86ac-18af-8da6-8f8267d208b7" name="Kombi-weapon w/ Skorcha" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                <entry id="d84daaa1-86ac-18af-8da6-8f8267d208b7" name="Kombi-weapon w/ Skorcha" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="true" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -16759,7 +17931,7 @@
         </entryGroup>
         <entryGroup id="5218c6be-c6ec-e871-c1c8-440996198e36" name="Boss" defaultEntryId="56ec3dd4-b575-51a7-7392-3ffb9ebafa5e" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
           <entries>
-            <entry id="56ec3dd4-b575-51a7-7392-3ffb9ebafa5e" name="Boss Meganob" points="40.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+            <entry id="56ec3dd4-b575-51a7-7392-3ffb9ebafa5e" name="Boss Meganob w/ Twin-linked Shoota" points="40.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
               <entries>
                 <entry id="8d1ddfda-90bf-7562-cf59-639f9bcb5e9c" name="Stikkbombs" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
                   <entries/>
@@ -16815,64 +17987,20 @@
                     </link>
                   </links>
                 </entry>
-              </entries>
-              <entryGroups>
-                <entryGroup id="d731ea24-f6cd-eb3f-baae-ce3a77fe35a1" name="Must Choose 1" defaultEntryId="7a4569b5-ef69-7198-d12c-eb3c32bfc274" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
-                  <entries>
-                    <entry id="7a4569b5-ef69-7198-d12c-eb3c32bfc274" name="Twin-linked Shoota" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links>
-                        <link id="1d375ad4-aad7-00b9-3c51-e2690bc925de" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
-                          <modifiers/>
-                        </link>
-                      </links>
-                    </entry>
-                    <entry id="74ebd272-808b-7402-02ba-6ef2ce0f7af3" name="Kombi-weapon w/ Rokkit Launcha" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links>
-                        <link id="63c81505-f470-fd72-4887-dbecd2642770" targetId="b9acf151-1b3a-6d61-fc07-074c4ed705f2" linkType="profile">
-                          <modifiers/>
-                        </link>
-                        <link id="c98b5af4-6a61-86aa-806b-2bffe8309401" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
-                          <modifiers/>
-                        </link>
-                        <link id="482911fb-1ea4-5eff-31d2-5e0e232ad18d" targetId="3a5e5b32-bf2f-ad9b-4d15-4070f6ccf6bf" linkType="profile">
-                          <modifiers/>
-                        </link>
-                      </links>
-                    </entry>
-                    <entry id="7da61b9c-e361-b67d-d3f1-4ee00e17ab7e" name="Kombi-weapon w/ Skorcha" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links>
-                        <link id="32ec8883-231d-65f6-3de6-b7cbc27ca70f" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
-                          <modifiers/>
-                        </link>
-                        <link id="ffa950f5-a839-8408-2bcf-ca6165606f90" targetId="2eabaf9f-1f6d-260f-981d-18187b1a3a31" linkType="profile">
-                          <modifiers/>
-                        </link>
-                        <link id="e3288a36-a963-472a-58e7-e91588ff2fb8" targetId="b9acf151-1b3a-6d61-fc07-074c4ed705f2" linkType="profile">
-                          <modifiers/>
-                        </link>
-                      </links>
-                    </entry>
-                  </entries>
+                <entry id="e44539f8-3e68-e88b-3cbc-58da159306c9" name="Twin-linked Shoota" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
                   <entryGroups/>
                   <modifiers/>
-                  <links/>
-                </entryGroup>
-              </entryGroups>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="6ea1832c-e988-6b40-e2c8-9e956a20af04" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
+              <entryGroups/>
               <modifiers/>
               <rules/>
               <profiles/>
@@ -16945,6 +18073,176 @@
               <profiles/>
               <links>
                 <link id="eb771c64-437d-8b1f-4107-f25fd2c5fd27" targetId="d4502e4e-1b7f-4871-f95c-e9fe67c07c4a" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="7f744bbc-ae97-8d39-0da5-bcae591aec23" name="Boss Meganob w/ Kombi- Rokkit Launcha" points="45.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries>
+                <entry id="3f9ed6e9-920b-dc02-0a7d-46dedaa9494a" name="Stikkbombs" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="edf925d7-489f-0149-c3fc-bb8bb8554cb0" targetId="10ac3ee4-c530-de10-eed0-253b125b7cf0" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="60b1c85f-578d-8200-43bc-6985b07bb8ed" name="Mega Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="4e140375-fef6-26cf-254c-91dce6ffab88" targetId="89022042-3a2b-3829-d0e9-09512a95dbd7" linkType="rule">
+                      <modifiers/>
+                    </link>
+                    <link id="6042d928-96b7-4240-ae23-ae224a59c550" targetId="6e1e636f-8114-d76a-7ae4-67c4b5822b70" linkType="profile">
+                      <modifiers/>
+                    </link>
+                    <link id="09de39a2-bc3a-afd6-c691-ffb1e9af2bc7" targetId="32b0b507-82e7-5304-1a9c-b69fb2f5ae98" linkType="rule">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="9bc6dd2c-d146-0c3a-53b0-e7e6bbdee380" name="Bosspole" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="1bbd4730-4bd6-a654-7259-89695795037f" targetId="0aab2fa5-3bfe-1360-2436-d99e79889668" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="5c227238-56e7-a972-1313-326d1c5e419e" name="Power Klaw" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="d4a1a4f5-444a-0069-7708-0ff14cb857f0" targetId="99be63a3-ddc8-c52f-272b-fbca86291f9d" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="b388c90b-0aa1-e174-6f62-975e5e884456" name="Kombi-weapon w/ Rokkit Launcha" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="c369fe30-0a07-f5e5-5b97-d5ef2e1d786d" targetId="b9acf151-1b3a-6d61-fc07-074c4ed705f2" linkType="profile">
+                      <modifiers/>
+                    </link>
+                    <link id="3dd961a5-7b53-8412-e1cb-9aee01b36d16" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                      <modifiers/>
+                    </link>
+                    <link id="55e7ce25-884b-5399-6df6-613daa56af59" targetId="3a5e5b32-bf2f-ad9b-4d15-4070f6ccf6bf" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="d23f6975-a4ff-cb2d-6d43-15149ebebe0b" targetId="d4502e4e-1b7f-4871-f95c-e9fe67c07c4a" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="51a2b969-35bb-0cb6-51cf-f59e94b03ed6" name="Boss Meganob w/ Kombi- Skorcha" points="45.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries>
+                <entry id="b0ac24a6-be27-6331-db72-59f8162187ee" name="Stikkbombs" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="dd9fdf6c-0c07-f9e2-9c2e-69855156bb49" targetId="10ac3ee4-c530-de10-eed0-253b125b7cf0" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="de83a7c5-512c-243c-73e6-306090940d03" name="Mega Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="d1b82fc7-fe0a-afe7-dbaa-d2dac65f9999" targetId="89022042-3a2b-3829-d0e9-09512a95dbd7" linkType="rule">
+                      <modifiers/>
+                    </link>
+                    <link id="7da9019e-5a87-c6db-f9aa-2fc2ae87aa4e" targetId="6e1e636f-8114-d76a-7ae4-67c4b5822b70" linkType="profile">
+                      <modifiers/>
+                    </link>
+                    <link id="a17d8c87-efcf-8a8b-9626-cba2e041d28e" targetId="32b0b507-82e7-5304-1a9c-b69fb2f5ae98" linkType="rule">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="86ccdada-4325-e801-7162-85035134664b" name="Bosspole" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="544c7102-61b4-2501-7a97-91afc98cc964" targetId="0aab2fa5-3bfe-1360-2436-d99e79889668" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="a187d589-bd63-a62d-67e7-44f3c90e1804" name="Power Klaw" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="cb8b4213-daa5-6e24-2f4a-1ee15d27a808" targetId="99be63a3-ddc8-c52f-272b-fbca86291f9d" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="acd1868d-6a87-e60c-6b90-ac144ee633e6" name="Kombi-weapon w/ Skorcha" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="abfc287e-3a16-6fa9-a3f0-899539977d9f" targetId="0a9ae162-febf-d5b0-e8ca-6c7256d016c6" linkType="profile">
+                      <modifiers/>
+                    </link>
+                    <link id="884e617b-db46-ae66-c432-fe184e8216c0" targetId="2eabaf9f-1f6d-260f-981d-18187b1a3a31" linkType="profile">
+                      <modifiers/>
+                    </link>
+                    <link id="b01ed328-edb3-c789-fef6-814367261c26" targetId="b9acf151-1b3a-6d61-fc07-074c4ed705f2" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="fc5a0fd2-1a15-560c-23a6-5b4770642a81" targetId="d4502e4e-1b7f-4871-f95c-e9fe67c07c4a" linkType="profile">
                   <modifiers/>
                 </link>
               </links>
@@ -18606,10 +19904,17 @@
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="b08a598b-d555-ac99-8e1f-ebd7275e5ace" name="May Choose 1 Gift" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+        <entryGroup id="b08a598b-d555-ac99-8e1f-ebd7275e5ace" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="roster" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="768dba5b-bc69-3fa9-c6e2-1cb65d209971" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
               <modifiers/>
@@ -19133,6 +20438,35 @@
           <modifiers/>
           <links/>
         </entryGroup>
+        <entryGroup id="23f29bca-1515-6dd2-2bf2-d14964ac1a2a" name="Orkimedes&apos; Kustom Gubbinz" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="roster" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <links>
+            <link id="61695914-55f8-cdd9-d898-977dc317d40c" targetId="599efb0d-5ca0-a20b-e052-05073a2a2c6c" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="e5d5e310-5a31-a3f9-0fc4-ff1b782a071f" targetId="c574a454-71f8-c18f-d43f-6af72311ee11" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="2d6148b3-f3b7-6f7c-5156-ebb2b75d93f2" targetId="de54d4cd-6483-9424-6f35-200c3e61a859" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="459626f8-4454-f1b2-a921-83ca0961cb3c" targetId="216c3599-d3f7-eae7-674a-c9535b05a44c" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="10dcc100-ac35-c55b-3c77-feea5370cabf" targetId="e5f3e3d6-49b9-6d71-1a03-8cd2af8554f8" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
       </entryGroups>
       <modifiers/>
       <rules/>
@@ -19204,31 +20538,6 @@
           <modifiers/>
         </link>
         <link id="abaaa9c7-f7b1-450b-bb21-be508568738e" targetId="c91f51e9-35ac-0c2e-9210-0bc6b815a090" linkType="entry">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" name="Gift: Warboss Gazbag&apos;s Blitzbike" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
-      <entries>
-        <entry id="d9e3a446-20fb-7b2b-63d9-ac3feed1803e" name="Twin-linked Kustom Dakkablastas" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="8ef2ebdd-84c8-7109-89de-9afcc7fdeb5d" targetId="b5d84351-3d9e-4edc-a2cc-88529c0f5cc0" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-      </entries>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="b45d4e6f-4366-ffd9-fcd4-cafae751b3d4" targetId="7607b307-2ca0-0717-7997-51223b7f8011" linkType="profile">
           <modifiers/>
         </link>
       </links>
@@ -19522,25 +20831,24 @@
           <modifiers/>
         </link>
         <link id="c84b9032-c84f-1a61-04ff-b04401ae0290" targetId="daee95ca-0a91-d12f-deb5-a7787ad6339a" linkType="rule">
-          <modifiers>
-            <modifier type="hide" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <modifiers/>
         </link>
         <link id="d397c6ce-024f-44a9-407b-01e1863cf064" targetId="20e69192-b955-ff48-b77b-87915082995b" linkType="rule">
           <modifiers/>
         </link>
         <link id="a83f2261-df7d-a28c-34ca-565490a62d60" targetId="e6902b47-4128-e455-191c-881c4bdd5e1a" linkType="rule">
           <modifiers>
-            <modifier type="hide" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
+            <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="force type" childId="2fadceb5-5601-9e03-9a46-41c3aa1a24c5" field="selections" type="instance of" value="0.0"/>
+                    <condition parentId="roster" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </link>
@@ -19622,119 +20930,111 @@
         </link>
       </links>
     </entry>
-    <entry id="fabc01fe-56c9-d819-a574-1c362bc702cd" name="Gubbinz: Mega Force Field" points="75.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
-      <entries/>
+    <entry id="65c7b9e1-975e-a63b-858d-75d5f48eca90" name="Mad Dok Grotsnik, Da Painboss" points="160.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" book="Codex: Orks" page="0">
+      <entries>
+        <entry id="0b58829f-417d-9b8d-e3bd-23147e1b83ce" name="Cybork Body" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="3e5a050c-efbe-6f85-e4e4-81568157bb22" targetId="ac2aad6c-f419-14d9-394c-6a62db6597cd" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="22f2c856-17ef-76b3-3646-e3b9f53468ef" targetId="257e406b-e006-275d-b110-5675b4dcbe8b" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="303b5f50-d7cc-9d9b-f14e-0c8da08b6120" name="&apos;Urty Syringe" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="297291f0-0f4d-685c-c903-450b6caee505" targetId="1f62a304-6e8c-c06e-32c9-1812e6e28a62" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="98306fd5-0bfd-6b4b-d878-7e1f68fece3c" name="Dok&apos;s Tools" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="4795cbc6-4546-bc9a-923e-fa24ff7ad28c" targetId="4bbe336e-b953-7ed7-f0ea-77ccd8fbbca4" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="407da039-a9c7-defa-50d6-ffadda4f60cd" targetId="1a39557d-f118-167d-1363-0d5ceefa789f" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="c6b3dccc-fda6-a539-0823-153efa7196c4" name="Power Klaw" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="d7211cd1-c9e0-8ee9-97de-46177f25d00b" targetId="99be63a3-ddc8-c52f-272b-fbca86291f9d" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="a702c6ca-5c9d-1dfe-3f05-eff09e984dee" name="Slugga" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="a41614ea-5a7f-a573-b04d-99bd4f6e7850" targetId="b5161c22-8241-12a3-4fb0-e8a08b7eea87" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
       <entryGroups/>
       <modifiers/>
       <rules/>
       <profiles/>
       <links>
-        <link id="593a90d0-7232-c69e-d901-c889f6f991d3" targetId="43b9d5bd-4beb-e7d6-4c96-c051aa7a4ac2" linkType="profile">
+        <link id="75d2869c-60f7-10e9-4798-53702358378d" targetId="d63fce70-5222-5847-bf71-5b672a824578" linkType="rule">
           <modifiers/>
         </link>
-      </links>
-    </entry>
-    <entry id="25030daf-4eef-f5b8-4515-9860fe363438" name="Gift: Da Fixer Upperz" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="0fee4474-9103-82f0-bcc4-b8508b12a199" targetId="77f90741-e2ae-b719-fd80-f601bbfd7e1a" linkType="profile">
+        <link id="7f943b03-3999-254c-e061-1ebbd2a1e75a" targetId="efc0f034-c92b-3279-9ccd-413c8bd50609" linkType="rule">
           <modifiers/>
         </link>
-      </links>
-    </entry>
-    <entry id="de54d4cd-6483-9424-6f35-200c3e61a859" name="Gubbinz: Big Bosspole" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="55d2eac3-fdc7-2748-10ef-9b00fcb1529e" targetId="eb706423-4a5e-7930-47fa-a6ba60b42101" linkType="profile">
+        <link id="63d3b47a-1e65-ba74-cd36-e0d1f8c562a8" targetId="2b4f220f-06c3-dd73-c9f2-a9a0ff17860e" linkType="rule">
           <modifiers/>
         </link>
-      </links>
-    </entry>
-    <entry id="216c3599-d3f7-eae7-674a-c9535b05a44c" name="Gubbinz: Kill-dakka" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="fc6b348c-7391-97ec-0972-819550085e2d" targetId="19b38ffb-c139-e772-3673-a270d3732216" linkType="profile">
+        <link id="08508516-8f25-6dc4-701f-5d2c81fea887" targetId="806f3f6a-03d4-bf6d-545c-899c8e3ff182" linkType="rule">
           <modifiers/>
         </link>
-        <link id="5860ab45-d79f-7b0c-dba7-ae1574802379" targetId="babe0c20-c900-003e-8f5a-dd6a0a131950" linkType="profile">
+        <link id="9b4d642c-37b5-4dd3-f41d-b94749da9a07" targetId="3a63aad4-b9a1-cdfa-0e6b-4a4a7351b77e" linkType="rule">
           <modifiers/>
         </link>
-        <link id="dac5a448-f7c1-6eb5-77ab-cf78bc790ef2" targetId="ddd9b99f-b278-6a45-e1d1-1756d0ea3dc7" linkType="rule">
+        <link id="19b92ccf-675b-ff05-a78f-09686acb5119" targetId="97799367-52fb-a5d0-a7e9-0c936fddddc8" linkType="profile">
           <modifiers/>
         </link>
-        <link id="9668a487-260c-6e07-7e3f-6cce61ef6e22" targetId="9c9df531-6667-ddb8-4311-e9f9355348f9" linkType="profile">
+        <link id="d6674555-9916-d935-77af-6660bebb9073" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
           <modifiers/>
         </link>
-        <link id="c68ea1b7-e37f-4967-ce95-506b29838ad6" targetId="97abee56-36fc-bfd3-be0d-c003915cfc0b" linkType="profile">
+        <link id="823cefd4-8cf1-7e52-0cfd-0c491099cc73" targetId="c91f51e9-35ac-0c2e-9210-0bc6b815a090" linkType="entry">
           <modifiers/>
         </link>
-        <link id="d2757f3f-5c03-ac0a-f1d7-204304cb1e9a" targetId="13c64972-90eb-5644-27bb-36e552c45660" linkType="profile">
+        <link id="356303ab-7257-6a03-08b3-024c7ef34cfb" targetId="b2bcc5eb-8b54-d781-9bc4-d98238313546" linkType="rule">
           <modifiers/>
         </link>
-        <link id="f64bc225-32c0-5240-0af4-edaafb1bc732" targetId="a204ea94-91df-4e20-927f-c711c647e6a7" linkType="profile">
+        <link id="f9808ffe-a360-fa49-e339-cb638f80e85b" targetId="92e3a95b-9df5-a19f-4932-3a0650a8daf2" linkType="rule">
           <modifiers/>
         </link>
-      </links>
-    </entry>
-    <entry id="e5f3e3d6-49b9-6d71-1a03-8cd2af8554f8" name="Gubbinz: Da Supa-Cybork" points="50.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="ba5f7a27-0c2a-1dce-0979-b1934e629026" targetId="d8f74782-7b02-a39d-97df-5f496d5f7bfc" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="1315e0de-7856-1bc7-3916-1b0fa4edfe60" targetId="6937b5a7-e808-7a66-650c-22ee0921044c" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="0bedc65f-a42b-9775-0066-94fddb0d2d51" targetId="5c931240-087a-3624-74d9-41572b0c32fd" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="7be5a212-e480-be8f-4baf-9e2e944db54c" targetId="e45bac6e-634e-e66e-4394-49d88b42f182" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="c574a454-71f8-c18f-d43f-6af72311ee11" name="Gubbinz: Da Killa Klaw" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="8f7863f7-b2c7-583b-1f22-893893f81a44" targetId="f16890d5-514b-4c15-ae47-1e0630827270" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="b2d9a7aa-9270-d043-b90f-f0ccd777fdf7" targetId="7b5fdf15-3ae0-c72c-9ffe-2f7f5a7a213f" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="599efb0d-5ca0-a20b-e052-05073a2a2c6c" name="Gubbinz: Choppa of Ragnarork" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="5ef1883a-d99e-1d5b-4648-95713407842b" targetId="89b15a6c-80f2-ce86-7e66-b779d8b5f7e6" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="2b23c259-1975-8236-c958-fde784344726" targetId="08abff1d-f5be-ae8a-3256-44b686feab74" linkType="rule">
+        <link id="54e1e73c-7128-7120-eb94-a01873b8d72c" targetId="cf911112-d237-5b26-6843-9a04f852c720" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -19742,6 +21042,9 @@
   </sharedEntries>
   <sharedEntryGroups/>
   <sharedRules>
+    <rule id="1ef4199a-ab72-8c75-d6c3-ed8f131827c3" name="&apos;Ard &apos;Itterz" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <modifiers/>
+    </rule>
     <rule id="2b4f220f-06c3-dd73-c9f2-a9a0ff17860e" name="&apos;Ere We Go!" hidden="false" book="Codex: Orks" page="0">
       <modifiers/>
     </rule>
@@ -19755,6 +21058,9 @@
       <modifiers/>
     </rule>
     <rule id="c6a44270-0d8c-9bd9-f700-f4076257c67e" name="Automated Repairs" hidden="false" book="Warzone Damnos" page="54">
+      <modifiers/>
+    </rule>
+    <rule id="5881d5a1-85ef-7495-6994-4d6c19301e1e" name="Banner of da Great Waaagh!" hidden="false" book="Waaagh! Ghazghkull" page="0">
       <modifiers/>
     </rule>
     <rule id="d34c6ce0-879d-8b23-f6e2-3ff0b5591cfb" name="Battle Boss" hidden="false" book="Grot_Tanks.pdf" page="0">
@@ -19781,6 +21087,9 @@
     <rule id="7ca7a8ce-884a-fb35-8671-af23fa6ee068" name="Bomb-squig" hidden="false" book="Codex: Orks" page="42">
       <modifiers/>
     </rule>
+    <rule id="0fd28dca-ff5c-f8f7-d0dc-fcc0c44f8d4e" name="Boss Mob" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <modifiers/>
+    </rule>
     <rule id="6becc748-a69c-7720-e5f0-7e811f63ed5d" name="Boss of Da Waaagh!" hidden="false" book="Codex: Orks" page="0">
       <modifiers/>
     </rule>
@@ -19791,6 +21100,9 @@
       <modifiers/>
     </rule>
     <rule id="90aaae98-96d5-a8ab-0243-c3caffc518f2" name="Bully Boyz" hidden="false" book="Imperial Armour VIII - Raid on Kastorel-Novem" page="210">
+      <modifiers/>
+    </rule>
+    <rule id="aeb764a3-bd40-ae4d-e160-7cff3fc55bd7" name="Bullyboyz" hidden="false" book="Waaagh! Ghazghkull" page="0">
       <modifiers/>
     </rule>
     <rule id="10a89258-0ff9-5966-74c9-64c81889ccd0" name="Buzzgob&apos;s Kustom Stompa: &apos;da Big Lugga&apos;" hidden="false" book="Dred_Mob.pdf" page="0">
@@ -19850,6 +21162,12 @@
     <rule id="fadd85f7-3d4c-c9df-4b87-ca45c3c3ff94" name="Da Right Boss for da Plan" hidden="false" book="Waaagh! Ghazghkull" page="0">
       <modifiers/>
     </rule>
+    <rule id="7b5fdf15-3ae0-c72c-9ffe-2f7f5a7a213f" name="Dead Killy" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <modifiers/>
+    </rule>
+    <rule id="90d2f8e1-99bd-2a63-5fda-0c74dd397082" name="Dead on Target... ish" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <modifiers/>
+    </rule>
     <rule id="5c514e4f-6ea1-6d00-1009-fa57d50fcbd4" name="Decapitating Strike" hidden="false" book="Codex: Orks" page="0">
       <modifiers/>
     </rule>
@@ -19890,6 +21208,9 @@
       <modifiers/>
     </rule>
     <rule id="1a39557d-f118-167d-1363-0d5ceefa789f" name="Feel No Pain" hidden="false" book="Warhammer 40k rulebook" page="35">
+      <modifiers/>
+    </rule>
+    <rule id="6937b5a7-e808-7a66-650c-22ee0921044c" name="Feel No Pain (5+)" hidden="false" book="Warhammer 40k rulebook" page="35">
       <modifiers/>
     </rule>
     <rule id="257e406b-e006-275d-b110-5675b4dcbe8b" name="Feel No Pain (6+)" hidden="false" book="Warhammer 40k rulebook" page="35">
@@ -19943,10 +21264,16 @@
     <rule id="efc0f034-c92b-3279-9ccd-413c8bd50609" name="Furious Charge" hidden="false" book="Warhammer 40k rulebook" page="27">
       <modifiers/>
     </rule>
+    <rule id="fd7f4504-57fc-802c-dddb-e0c92d0ee751" name="Ghazghkull&apos;s Leftenuntz" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <modifiers/>
+    </rule>
     <rule id="27bfa0f0-99b3-07f0-4d55-b3018862e55d" name="Glory Hogs" hidden="false" book="Codex: Orks" page="0">
       <modifiers/>
     </rule>
     <rule id="010317da-c96f-476b-8425-a1288206cf8e" name="Go, go, go!" hidden="false" book="Imperial Armour - Aeronautica" page="43">
+      <modifiers/>
+    </rule>
+    <rule id="08abff1d-f5be-ae8a-3256-44b686feab74" name="Grand Destiny" hidden="false" book="Waaagh! Ghazghkull" page="0">
       <modifiers/>
     </rule>
     <rule id="e50ede20-ee64-b903-4c7e-63b4928349e6" name="Green Tide" hidden="false" book="40k Apocalypse 2nd Ed" page="0">
@@ -20006,10 +21333,16 @@
     <rule id="800ebf88-9201-37ba-b73a-7254d780ad3e" name="Keep Firin&apos;" hidden="false" book="Imperial Armour Apocalypse 2013" page="121">
       <modifiers/>
     </rule>
+    <rule id="ddd9b99f-b278-6a45-e1d1-1756d0ea3dc7" name="Kill-dakka" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <modifiers/>
+    </rule>
     <rule id="d416f325-5b2c-a9be-479d-fda5fb209e95" name="Killa Reputation" hidden="false" book="Codex: Orks" page="62">
       <modifiers/>
     </rule>
     <rule id="e36279fc-08d1-f253-3daa-75c102020917" name="Klawfrenzy" hidden="false" book="40k Apocalypse Reload" page="23">
+      <modifiers/>
+    </rule>
+    <rule id="e6ce4fb6-db08-3825-5719-00ba0a30d282" name="Know Yer Limitz" hidden="false" book="Waaagh! Ghazghkull" page="0">
       <modifiers/>
     </rule>
     <rule id="494df1af-5bc3-dbfb-3550-0564794084e1" name="Kommanda" hidden="false" book="Dred_Mob.pdf" page="0">
@@ -20180,7 +21513,7 @@
     <rule id="5cf5df38-5421-a452-0ddb-9aaa626dabac" name="Skilled Rider" hidden="false" book="Warhammer 40k rulebook" page="0">
       <modifiers/>
     </rule>
-    <rule id="153fa74e-bd23-635b-1e34-9ad6c123b58c" name="Skreamin&apos; Descent" hidden="false" book="Death from the Skies" page="0">
+    <rule id="153fa74e-bd23-635b-1e34-9ad6c123b58c" name="Skreamin&apos; Descent" hidden="false" book="Codex: Orks" page="0">
       <modifiers/>
     </rule>
     <rule id="48916643-2f54-dfcd-f165-4d47d6afb04b" name="Skyfire" hidden="false" book="Warhammer 40k rulebook" page="42">
@@ -20198,6 +21531,9 @@
     <rule id="6524baa5-2aef-da8a-52c0-79837628b9e5" name="Snazzgun" hidden="false" book="Codex: Orks" page="56">
       <modifiers/>
     </rule>
+    <rule id="e39f918b-2e88-1c19-c405-50027098feda" name="Sneaky Gitz" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <modifiers/>
+    </rule>
     <rule id="8694be98-1cbf-00cf-30d7-f8f76b516cc0" name="Sonic Boom" hidden="false" book="In-box" page="0">
       <modifiers/>
     </rule>
@@ -20205,6 +21541,9 @@
       <modifiers/>
     </rule>
     <rule id="dbc390f5-773f-c1ca-040e-af01c87b060b" name="Squash &apos;em Flat, Lads" hidden="false" book="40k Apocalypse 2nd Ed" page="0">
+      <modifiers/>
+    </rule>
+    <rule id="cd29a59a-dfb3-8a77-7331-7658d575c42d" name="Stampede" hidden="false" book="Waaagh! Ghazghkull" page="0">
       <modifiers/>
     </rule>
     <rule id="3a2d9724-077e-a95d-f9d3-155df6eb2f91" name="Stampede (Apoc)" hidden="false" book="40k Apocalypse 2nd Ed" page="0">
@@ -20229,6 +21568,9 @@
       <modifiers/>
     </rule>
     <rule id="ff74e077-2909-8d73-20f8-6d5a18e9bc7b" name="Strike Force" hidden="false" book="Apocalypse" page="0">
+      <modifiers/>
+    </rule>
+    <rule id="12873e27-9ce3-2402-6788-7b7a5e899b7c" name="Strike from da Shadows" hidden="false" book="Waaagh! Ghazghkull" page="0">
       <modifiers/>
     </rule>
     <rule id="deb5bfb5-551b-6485-032d-726b3380d365" name="Strikedown" hidden="false" book="Warhammer 40k rulebook" page="0">
@@ -20306,6 +21648,9 @@
     <rule id="5ccb7ea6-84b4-1c34-d329-defa50209e31" name="Vortex" hidden="false" book="In-box" page="0">
       <modifiers/>
     </rule>
+    <rule id="4c7f89de-0820-ece2-ef17-8270e6965d70" name="Vulcha Skwad" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <modifiers/>
+    </rule>
     <rule id="3c4b757d-bd20-642e-9324-7e9012713139" name="Waaagh!" hidden="false" book="Codex: Orks" page="0">
       <modifiers/>
     </rule>
@@ -20315,10 +21660,16 @@
     <rule id="4119a0d4-19f0-98f3-f4c2-bf351c2461b2" name="Waaagh! Energy" hidden="false" book="Codex: Orks" page="0">
       <modifiers/>
     </rule>
-    <rule id="7e145c78-371a-7883-6bf0-6abdb9a3878e" name="Waaagh!plane" hidden="false" book="Death from the Skies" page="0">
+    <rule id="951f8363-9657-7f64-fa87-0f542b3b246d" name="Waaagh! Horde" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <modifiers/>
+    </rule>
+    <rule id="7e145c78-371a-7883-6bf0-6abdb9a3878e" name="Waaagh!plane" hidden="false" book="Codex: Orks" page="0">
       <modifiers/>
     </rule>
     <rule id="9c5413ca-39ce-c0f1-99e9-9f17b3351766" name="Wall of Spikes" hidden="false" book="40k Apocalypse 2nd Ed" page="0">
+      <modifiers/>
+    </rule>
+    <rule id="36fd8bde-62aa-c292-dc10-814bd36c78d1" name="Wall of Steel" hidden="false" book="Waaagh! Ghazghkull" page="0">
       <modifiers/>
     </rule>
     <rule id="e0387285-c637-31a0-e2d3-6b870c40f53a" name="Warlord" hidden="false" book="Warhammer 40k rulebook" page="0">
@@ -20351,7 +21702,7 @@
     <rule id="e1d946f4-7a63-9dd4-83ee-30f9113863ff" name="Warlord Trait: Prophet of the Waaagh!" hidden="false" book="Codex: Orks" page="0">
       <modifiers/>
     </rule>
-    <rule id="e6902b47-4128-e455-191c-881c4bdd5e1a" name="Warlord Trait: Waaagh! Ghazghkull" hidden="false" book="Waaagh! Ghazghkull" page="0">
+    <rule id="e6902b47-4128-e455-191c-881c4bdd5e1a" name="Warlord Trait: Waaagh! Ghazghkull" hidden="true" book="Waaagh! Ghazghkull" page="0">
       <description>1 Supa-shootist
 2 Waaagh!-mongerer
 3 Madboy
@@ -20370,69 +21721,6 @@
       <modifiers/>
     </rule>
     <rule id="099b219f-0a6f-9ae1-4e23-b1ae0bb04270" name="Zzap" hidden="false" book="Codex: Orks" page="0">
-      <modifiers/>
-    </rule>
-    <rule id="7b5fdf15-3ae0-c72c-9ffe-2f7f5a7a213f" name="Dead Killy" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <modifiers/>
-    </rule>
-    <rule id="08abff1d-f5be-ae8a-3256-44b686feab74" name="Grand Destiny" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <modifiers/>
-    </rule>
-    <rule id="ddd9b99f-b278-6a45-e1d1-1756d0ea3dc7" name="Kill-dakka" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <modifiers/>
-    </rule>
-    <rule id="6937b5a7-e808-7a66-650c-22ee0921044c" name="Feel No Pain (5+)" hidden="false" book="Warhammer 40k rulebook" page="35">
-      <modifiers/>
-    </rule>
-    <rule id="0fd28dca-ff5c-f8f7-d0dc-fcc0c44f8d4e" name="Boss Mob" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <description></description>
-      <modifiers/>
-    </rule>
-    <rule id="5881d5a1-85ef-7495-6994-4d6c19301e1e" name="Banner of da Great Waaagh!" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <description></description>
-      <modifiers/>
-    </rule>
-    <rule id="fd7f4504-57fc-802c-dddb-e0c92d0ee751" name="Ghazghkull&apos;s Leftenuntz" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <description></description>
-      <modifiers/>
-    </rule>
-    <rule id="aeb764a3-bd40-ae4d-e160-7cff3fc55bd7" name="Bullyboyz" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <description></description>
-      <modifiers/>
-    </rule>
-    <rule id="90d2f8e1-99bd-2a63-5fda-0c74dd397082" name="Dead on Target... ish" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <description></description>
-      <modifiers/>
-    </rule>
-    <rule id="1ef4199a-ab72-8c75-d6c3-ed8f131827c3" name="&apos;Ard &apos;Itterz" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <description></description>
-      <modifiers/>
-    </rule>
-    <rule id="4c7f89de-0820-ece2-ef17-8270e6965d70" name="Vulcha Skwad" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <description></description>
-      <modifiers/>
-    </rule>
-    <rule id="e6ce4fb6-db08-3825-5719-00ba0a30d282" name="Know Yer Limitz" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <description></description>
-      <modifiers/>
-    </rule>
-    <rule id="36fd8bde-62aa-c292-dc10-814bd36c78d1" name="Wall of Steel" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <description></description>
-      <modifiers/>
-    </rule>
-    <rule id="e39f918b-2e88-1c19-c405-50027098feda" name="Sneaky Gitz" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <description></description>
-      <modifiers/>
-    </rule>
-    <rule id="12873e27-9ce3-2402-6788-7b7a5e899b7c" name="Strike from da Shadows" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <description></description>
-      <modifiers/>
-    </rule>
-    <rule id="951f8363-9657-7f64-fa87-0f542b3b246d" name="Waaagh! Horde" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <description></description>
-      <modifiers/>
-    </rule>
-    <rule id="cd29a59a-dfb3-8a77-7331-7658d575c42d" name="Stampede" hidden="false" book="Waaagh! Ghazghkull" page="0">
       <modifiers/>
     </rule>
   </sharedRules>
@@ -20573,6 +21861,12 @@
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, 3D6&quot; Blast"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="eb706423-4a5e-7930-47fa-a6ba60b42101" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Big Bosspole" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <characteristics>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Any unit with the Orks Faction joined by the bearer has Fearless."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -20960,6 +22254,15 @@
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="89b15a6c-80f2-ce86-7e66-b779d8b5f7e6" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Choppa of da Ragnarork" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="+2"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Grand Destiny, Two-handed"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="b5a15a10-378a-f59e-80a7-090b5c95a19d" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Close Combat Weapon" hidden="false" book="Warhammer 40k rulebook" page="0">
       <characteristics>
         <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
@@ -21017,6 +22320,15 @@
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="f16890d5-514b-4c15-ae47-1e0630827270" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Da Killa Klaw" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="x2"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Dead Killy, Specialist Weapon, Unwieldy"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="e6c47545-3219-fa42-c30c-81ceeea3a2ca" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Da Lucky Stikk" hidden="false" book="Codex: Orks" page="0">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="All models in the bearer’s unit add +1 to the Weapon Skill characteristic on their profile (this is not cumulative with the bonus from a Waaagh! banner). In addition, the bearer can choose to re-roll any failed To Hit or To Wound rolls or saving throws that they make. However, should three or more of the re-rolls generate failed results in the same turn, the model is immediately removed as a casualty with no saving throws of any kind allowed."/>
@@ -21038,6 +22350,12 @@
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 3, Gets Hot!"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="d8f74782-7b02-a39d-97df-5f496d5f7bfc" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Da Supa-Cybork" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <characteristics>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Feel no Pain (5+), Eternal Warrior and Relentless."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -21681,6 +22999,60 @@
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="97abee56-36fc-bfd3-be0d-c003915cfc0b" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Kill-dakka (1 - Heavy)" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy D3+1"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="babe0c20-c900-003e-8f5a-dd6a0a131950" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Kill-dakka (2 - Burny)" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Template"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="a204ea94-91df-4e20-927f-c711c647e6a7" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Kill-dakka (3 - Shooty)" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 3"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="19b38ffb-c139-e772-3673-a270d3732216" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Kill-dakka (4 - Zappy)" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="2D6"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1, Zzap"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="9c9df531-6667-ddb8-4311-e9f9355348f9" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Kill-dakka (5 - Blasty)" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1, 3&quot; Blast"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="13c64972-90eb-5644-27bb-36e552c45660" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Kill-dakka (6 - Bubbly)" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="*"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="*"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1, 5&quot; Blast"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="c798f715-ec69-02f8-aaf3-ff7bc3171cf2" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Killa Kan" hidden="false" book="Codex: Orks" page="0">
       <characteristics>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="2"/>
@@ -21996,6 +23368,12 @@
     <profile id="6e1e636f-8114-d76a-7ae4-67c4b5822b70" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Mega Armour" hidden="false" book="Codex: Orks" page="0">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="2+ Armour Sv, Bulky, Slow &amp; Purposeful."/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="43b9d5bd-4beb-e7d6-4c96-c051aa7a4ac2" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Mega Force Field" hidden="false" book="Waaagh! Ghazghkull" page="0">
+      <characteristics>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Bearer &amp; all models within 6&quot; receive a 4+ Invul Sv against shooting attacks. If the bearer is embarked in a vehicle, then the vehicle receives a 4+ Invul Sv against shooting attacks instead."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -23073,96 +24451,6 @@
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="2D6"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Zzap, Gets Hot"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="89b15a6c-80f2-ce86-7e66-b779d8b5f7e6" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Choppa of da Ragnarork" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
-        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="+2"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Grand Destiny, Two-handed"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="f16890d5-514b-4c15-ae47-1e0630827270" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Da Killa Klaw" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
-        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="x2"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Dead Killy, Specialist Weapon, Unwieldy"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="43b9d5bd-4beb-e7d6-4c96-c051aa7a4ac2" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Mega Force Field" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Bearer &amp; all models within 6&quot; receive a 4+ Invul Sv against shooting attacks. If the bearer is embarked in a vehicle, then the vehicle receives a 4+ Invul Sv against shooting attacks instead."/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="d8f74782-7b02-a39d-97df-5f496d5f7bfc" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Da Supa-Cybork" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Feel no Pain (5+), Eternal Warrior and Relentless."/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="eb706423-4a5e-7930-47fa-a6ba60b42101" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Big Bosspole" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Any unit with the Orks Faction joined by the bearer has Fearless."/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="97abee56-36fc-bfd3-be0d-c003915cfc0b" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Kill-dakka (1 - Heavy)" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24"/>
-        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy D3+1"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="babe0c20-c900-003e-8f5a-dd6a0a131950" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Kill-dakka (2 - Burny)" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Template"/>
-        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="a204ea94-91df-4e20-927f-c711c647e6a7" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Kill-dakka (3 - Shooty)" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24"/>
-        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 3"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="19b38ffb-c139-e772-3673-a270d3732216" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Kill-dakka (4 - Zappy)" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24"/>
-        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="2D6"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1, Zzap"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="9c9df531-6667-ddb8-4311-e9f9355348f9" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Kill-dakka (5 - Blasty)" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24"/>
-        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1, 3&quot; Blast"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="13c64972-90eb-5644-27bb-36e552c45660" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Kill-dakka (6 - Bubbly)" hidden="false" book="Waaagh! Ghazghkull" page="0">
-      <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24"/>
-        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="*"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="*"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1, 5&quot; Blast"/>
       </characteristics>
       <modifiers/>
     </profile>
