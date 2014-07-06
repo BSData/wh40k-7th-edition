@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cfd140ee-a538-8913-1fbc-d95113dd1178" revision="25" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Tyrant&apos;s Legion: IA09 - Defenders of Badab (2013 pdf) v25" authorName="k" authorUrl="http://catalogue.randomhit.org/viewtopic.php?f=5&amp;t=276" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cfd140ee-a538-8913-1fbc-d95113dd1178" revision="26" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Tyrant&apos;s Legion: IA09 - Defenders of Badab (2013 pdf)" authorName="k" authorUrl="http://catalogue.randomhit.org/viewtopic.php?f=5&amp;t=276" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="ece4aee3-54aa-7d84-8778-0aa20a3ad56f" name="&apos;Blood Pride&apos; Battle Squadron" points="75.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="Imperial Armour IX - The Badab War pt1" page="198">
       <entries/>
@@ -307,6 +307,18 @@
         </link>
       </links>
     </entry>
+    <entry id="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" name="Allow Secessionist Allies" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="a43460e7-ea27-e8ab-ae75-0ac873bc2158" targetId="efb52a05-643d-66c4-91b9-2d41104f4f54" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="92b78b56-26f5-db6e-3bca-e95d0c898d16" name="Arch-Centurion Carnac Commodus" points="105.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" book="FW Charcterupdate PDF" page="30">
       <entries>
         <entry id="3a50b350-8cd6-2b7d-db3d-9f4ca2c7cbba" name="Blood Biter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
@@ -357,7 +369,7 @@
         <link id="9699b1f3-57d2-6dfd-a056-0940aec7eada" targetId="4c5467f8-eaa6-a9ae-c35f-41f9ce1fa1ce" linkType="entry">
           <modifiers/>
         </link>
-        <link id="a204b385-00e5-8998-890c-1b0d85a7858a" targetId="a81b8d6e-e41a-1044-b808-3ef506707ad5" linkType="entry">
+        <link id="a204b385-00e5-8998-890c-1b0d85a7858a" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
           <modifiers>
             <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
@@ -387,7 +399,7 @@
         </link>
       </links>
     </entry>
-    <entry id="78aaa4e3-934c-bcdf-65ae-924d16416b20" name="Armenneus Valthex, Astral Claws *" points="145.0" categoryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" book="FW Charcterupdate PDF" page="29">
+    <entry id="78aaa4e3-934c-bcdf-65ae-924d16416b20" name="Armenneus Valthex, Astral Claws *" points="145.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" book="FW Charcterupdate PDF" page="29">
       <entries>
         <entry id="6163a0d6-d86e-4336-1a33-f36e46904886" name="Indynabula Array" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" book="" page="0">
           <entries>
@@ -453,6 +465,12 @@
         <modifier type="set" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
             <condition parentId="roster" childId="10d4932a-3fe9-d44e-cf59-61d9d0778bdb" field="selections" type="greater than" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -6248,7 +6266,7 @@
       <profiles/>
       <links/>
     </entry>
-    <entry id="fb6d6019-8df8-ba2f-24be-d17d7f6c9c89" name="Captain Corien Sumatris, Astral Claws *" points="165.0" categoryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="FW Charcterupdate PDF" page="28">
+    <entry id="fb6d6019-8df8-ba2f-24be-d17d7f6c9c89" name="Captain Corien Sumatris, Astral Claws *" points="165.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="FW Charcterupdate PDF" page="28">
       <entries>
         <entry id="4758decc-cc25-edb9-2971-958861e76e05" name="Spectre Pattern Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="" page="0">
           <entries/>
@@ -6300,7 +6318,14 @@
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -6342,7 +6367,7 @@
         </link>
       </links>
     </entry>
-    <entry id="22f89404-7265-1475-f859-698a4a78506a" name="Chief Librarian Ahazra Redth, Mantis Warriors *" points="165.0" categoryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" book="FW Charcterupdate PDF" page="21">
+    <entry id="22f89404-7265-1475-f859-698a4a78506a" name="Chief Librarian Ahazra Redth, Mantis Warriors *" points="165.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" book="FW Charcterupdate PDF" page="21">
       <entries>
         <entry id="73b288c5-5a03-bb8f-9096-83b60c016f09" name="Talisman of Sundered Souls" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" book="" page="0">
           <entries/>
@@ -6438,7 +6463,14 @@
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -6865,7 +6897,7 @@
       <modifiers>
         <modifier type="set" field="maxInRoster" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="a81b8d6e-e41a-1044-b808-3ef506707ad5" field="selections" type="equal to" value="1.0"/>
+            <condition parentId="roster" childId="92b78b56-26f5-db6e-3bca-e95d0c898d16" field="selections" type="equal to" value="1.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -7063,7 +7095,7 @@
         </link>
       </links>
     </entry>
-    <entry id="e750989b-7691-40ba-7e4f-9a0762563972" name="High Chaplain Thulsa Kane, Executioners *" points="190.0" categoryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" book="FW Charcterupdate PDF" page="22">
+    <entry id="e750989b-7691-40ba-7e4f-9a0762563972" name="High Chaplain Thulsa Kane, Executioners *" points="190.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" book="FW Charcterupdate PDF" page="22">
       <entries>
         <entry id="f0777e5b-a935-3a72-8886-6f147bb32857" name="The Aenigmata Ferrum" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" book="" page="0">
           <entries/>
@@ -7106,7 +7138,14 @@
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -10657,7 +10696,7 @@
         </link>
       </links>
     </entry>
-    <entry id="43579587-6000-e114-65ca-3a33f1430a00" name="Malakim Phoros, Lamenters *" points="175.0" categoryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" book="FW Charcterupdate PDF" page="0">
+    <entry id="43579587-6000-e114-65ca-3a33f1430a00" name="Malakim Phoros, Lamenters *" points="175.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" book="FW Charcterupdate PDF" page="0">
       <entries>
         <entry id="ef3d9adc-938a-4134-efc3-b8b21c4ffef2" name="Catechist" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" hidden="false" page="0">
           <entries/>
@@ -11769,7 +11808,14 @@
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
