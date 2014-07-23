@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="46bdb03f-e12a-42a6-9f9d-ed9cffca589b" revision="30" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="1" battleScribeVersion="1.14b" name="Blood Angels: Codex (2010)" authorName="" authorContact="" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="46bdb03f-e12a-42a6-9f9d-ed9cffca589b" revision="31" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="1" battleScribeVersion="1.14b" name="Blood Angels: Codex (2010)" authorName="" authorContact="" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="84e9839d-b282-4921-815c-f525a1c7649d" name="Assault Squad" points="0.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
@@ -1560,7 +1560,14 @@
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="e40e2c77-0e1b-d3d0-93d8-a68d381b803c" field="selections" type="greater than" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="56441b93-2894-b4fe-298e-4100de4bdcda" name="Assault Vehicle" hidden="false">
           <modifiers/>
@@ -2963,7 +2970,14 @@ Tycho can also reroll a single fail to wound in each assault phase.</description
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="e40e2c77-0e1b-d3d0-93d8-a68d381b803c" field="selections" type="greater than" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="cbdb3703-06ca-b616-a28d-57154eeff626" name="The Red Thirst" hidden="false" page="0">
           <description>Codex: Blood Angels</description>
@@ -3095,7 +3109,14 @@ Tycho can also reroll a single fail to wound in each assault phase.</description
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="e40e2c77-0e1b-d3d0-93d8-a68d381b803c" field="selections" type="greater than" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="94a819ba-1426-fae6-2012-d4b0468e778f" name="Orbital Bombardment" hidden="false">
           <modifiers/>
@@ -4159,6 +4180,240 @@ Tycho can also reroll a single fail to wound in each assault phase.</description
       </profiles>
       <links/>
     </entry>
+    <entry id="e9683624-42f5-048c-9cf7-ae832937b916" name="Fellblade" points="540.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="IA2 - 2nd" page="105">
+      <entries>
+        <entry id="4579bf4c-6d4a-77aa-ec1b-d3f80681413e" name="Turret-mounted twin-linked Fellblade accelerator cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="e6ec41ad-9a22-5900-fd58-d5faa56e7cc6" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Fellblade Cannon (HE)" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="100&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Massive Blast (7&quot;)"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="a4946131-4344-5fa6-c51e-a0e605d1427d" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Fellblade Cannon (AP)" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="100&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Armourbane, Blast"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="1b629fe2-bafa-5826-81ed-e474ffaa3662" name="Hull-mounted Demolisher Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="4b05bfee-f105-9911-b18f-a6e91c9eea49" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Demolisher Cannon" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="10"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Large Blast"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="f2315cbb-c77b-9090-2895-7f1b610d0cea" name="Searchlights" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="922db709-70ea-cf6d-144d-f1fa522956af" name="Smoke launchers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="201ab6cd-beab-0781-05c1-b8039121039b" name="Two Sponsons" defaultEntryId="ac1f1842-1f85-d8fa-85d9-692e6e3ecab8" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="ac1f1842-1f85-d8fa-85d9-692e6e3ecab8" name="Quad Lascannons" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="d3aba3c3-bb65-3fb1-8155-a14350ea2884" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Quad Lascannon" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="48&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 2, Twin-linked"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="50e57ed6-ca49-6296-fedf-754836e87043" name="Laser Destroyers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="c5b97193-90c9-68d2-c03f-1ba0275763ce" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Laser Destroyer" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Twin-linked"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="42543641-ec48-6eea-f02d-c5114a3f003e" name="Hull-mounted weapon" defaultEntryId="449f55d8-245d-a832-a2ba-9acf2a09c13f" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="449f55d8-245d-a832-a2ba-9acf2a09c13f" name="Twin-linked Heavy Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="ec827190-cf1d-741f-bb57-a3f4db1f4f7b" targetId="f4b79743-bcaa-0a58-fb1e-4bc44cb02986" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="e607c097-bb84-734c-d6c7-fea4b40c61a5" name="Twin-linked Heavy Flamer" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="ae28b8d9-8880-eaf6-2d5d-34782fb10186" targetId="ac41f035-ce1b-7f96-8db0-da37b915316f" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="59b7deaf-4958-2283-42f5-70d8ab21d8ac" name="Pintle-mounted Weapon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="51c0396b-bf5f-2105-6620-10ad37cb0600" name="Heavy Bolter" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="79fd004c-a998-b8a4-35a9-368142002fef" targetId="f4b79743-bcaa-0a58-fb1e-4bc44cb02986" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="af8d2309-ca33-9b2b-cefd-5b10877453c8" name="Heavy Flamer" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="6b2c8120-af7d-9044-ee85-b32d1f2776eb" targetId="ac41f035-ce1b-7f96-8db0-da37b915316f" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="bfe38196-f96b-ff0d-0e45-b9a708a2dfe0" name="Multi-melta" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="4d9721b5-d2ea-456a-e039-34e9bd1bc4f0" targetId="25c3c4f6-dd91-1f3e-f20d-6be89c94bb94" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="c765b3d7-ce71-12f6-197a-408a0c9f6bff" name="Options" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="87f2a93e-3e95-944e-c111-ae7f940d72e9" name="Hunter-killer missile" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="03a49d7a-1242-6b33-63c5-798c83522832" targetId="a298e4a9-3b3a-b954-a313-40b064952d8e" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="78191bf2-a0e5-d5be-8dca-b524918c0255" name="Armoured Ceramite" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="4822a0e7-88ad-4c0b-4843-13372be0542b" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Armoured Ceramite" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Melta-weapons do not roll an additional D6 against this Vehicle."/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles>
+        <profile id="ccade774-603f-a2fb-f417-b5952f7f0a3e" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Fellblade" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="14"/>
+            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="13"/>
+            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="12"/>
+            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="12"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Super-heavy"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
     <entry id="1653d337-454c-a808-27cc-953c5498e17d" name="Fire Raptor Gunship (FW)" points="225.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="IA2 - 2nd" page="139">
       <entries/>
       <entryGroups>
@@ -4250,7 +4505,14 @@ Tycho can also reroll a single fail to wound in each assault phase.</description
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="e40e2c77-0e1b-d3d0-93d8-a68d381b803c" field="selections" type="greater than" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="72e544cb-8767-e817-f0ce-a6eb1d28e9e2" name="Deep Strike" hidden="false">
           <modifiers/>
@@ -7457,7 +7719,14 @@ Tycho can also reroll a single fail to wound in each assault phase.</description
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="e40e2c77-0e1b-d3d0-93d8-a68d381b803c" field="selections" type="greater than" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles>
         <profile id="9a5fb132-f0e8-4cb4-2597-b805f8adb842" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Sicaran Battle Tank" hidden="false">
@@ -8585,7 +8854,14 @@ Lascannon/MM automatically target the nearest enemy Vehicle or MC.</description>
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="e40e2c77-0e1b-d3d0-93d8-a68d381b803c" field="selections" type="greater than" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="c18b1c87-fb3c-feb4-fec3-2809d0c198d9" name="Extremely Bulky" hidden="false">
           <modifiers/>
@@ -9921,7 +10197,14 @@ Lascannon/MM automatically target the nearest enemy Vehicle or MC.</description>
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="e40e2c77-0e1b-d3d0-93d8-a68d381b803c" field="selections" type="greater than" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles>
         <profile id="3afbbe5d-57c5-9c1d-24fa-24ef9efc2233" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Whirlwind Scorpius" hidden="false">
@@ -9942,215 +10225,25 @@ Lascannon/MM automatically target the nearest enemy Vehicle or MC.</description>
         </link>
       </links>
     </entry>
-    <entry id="e9683624-42f5-048c-9cf7-ae832937b916" name="Fellblade" points="540.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="IA2 - 2nd" page="105">
-      <entries>
-        <entry id="4579bf4c-6d4a-77aa-ec1b-d3f80681413e" name="Turret-mounted twin-linked Fellblade accelerator cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="e6ec41ad-9a22-5900-fd58-d5faa56e7cc6" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Fellblade Cannon (HE)" hidden="false">
-              <characteristics>
-                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="100&quot;"/>
-                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
-                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
-                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Massive Blast (7&quot;)"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-            <profile id="a4946131-4344-5fa6-c51e-a0e605d1427d" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Fellblade Cannon (AP)" hidden="false">
-              <characteristics>
-                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="100&quot;"/>
-                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
-                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Armourbane, Blast"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-        <entry id="1b629fe2-bafa-5826-81ed-e474ffaa3662" name="Hull-mounted Demolisher Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="4b05bfee-f105-9911-b18f-a6e91c9eea49" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Demolisher Cannon" hidden="false">
-              <characteristics>
-                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
-                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="10"/>
-                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Large Blast"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-        <entry id="f2315cbb-c77b-9090-2895-7f1b610d0cea" name="Searchlights" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links/>
-        </entry>
-        <entry id="922db709-70ea-cf6d-144d-f1fa522956af" name="Smoke launchers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links/>
-        </entry>
-      </entries>
+    <entry id="2d154c62-edd2-f124-9107-2e9846a102a0" name="Forgeworld Models" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
       <entryGroups>
-        <entryGroup id="201ab6cd-beab-0781-05c1-b8039121039b" name="Two Sponsons" defaultEntryId="ac1f1842-1f85-d8fa-85d9-692e6e3ecab8" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="0026cb95-d74a-aa0d-dd3c-e1bd434cb408" name="Hide/Show" defaultEntryId="bc3979a4-94ba-150c-1d56-26a4b838a5e9" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
-            <entry id="ac1f1842-1f85-d8fa-85d9-692e6e3ecab8" name="Quad Lascannons" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="e40e2c77-0e1b-d3d0-93d8-a68d381b803c" name="Hide" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
               <rules/>
-              <profiles>
-                <profile id="d3aba3c3-bb65-3fb1-8155-a14350ea2884" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Quad Lascannon" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="48&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 2, Twin-linked"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
+              <profiles/>
               <links/>
             </entry>
-            <entry id="50e57ed6-ca49-6296-fedf-754836e87043" name="Laser Destroyers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="c5b97193-90c9-68d2-c03f-1ba0275763ce" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Laser Destroyer" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Twin-linked"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-        <entryGroup id="42543641-ec48-6eea-f02d-c5114a3f003e" name="Hull-mounted weapon" defaultEntryId="449f55d8-245d-a832-a2ba-9acf2a09c13f" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="449f55d8-245d-a832-a2ba-9acf2a09c13f" name="Twin-linked Heavy Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="bc3979a4-94ba-150c-1d56-26a4b838a5e9" name="Show" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
               <rules/>
               <profiles/>
-              <links>
-                <link id="ec827190-cf1d-741f-bb57-a3f4db1f4f7b" targetId="f4b79743-bcaa-0a58-fb1e-4bc44cb02986" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="e607c097-bb84-734c-d6c7-fea4b40c61a5" name="Twin-linked Heavy Flamer" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="ae28b8d9-8880-eaf6-2d5d-34782fb10186" targetId="ac41f035-ce1b-7f96-8db0-da37b915316f" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-        <entryGroup id="59b7deaf-4958-2283-42f5-70d8ab21d8ac" name="Pintle-mounted Weapon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="51c0396b-bf5f-2105-6620-10ad37cb0600" name="Heavy Bolter" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="79fd004c-a998-b8a4-35a9-368142002fef" targetId="f4b79743-bcaa-0a58-fb1e-4bc44cb02986" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="af8d2309-ca33-9b2b-cefd-5b10877453c8" name="Heavy Flamer" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="6b2c8120-af7d-9044-ee85-b32d1f2776eb" targetId="ac41f035-ce1b-7f96-8db0-da37b915316f" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="bfe38196-f96b-ff0d-0e45-b9a708a2dfe0" name="Multi-melta" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="4d9721b5-d2ea-456a-e039-34e9bd1bc4f0" targetId="25c3c4f6-dd91-1f3e-f20d-6be89c94bb94" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-        <entryGroup id="c765b3d7-ce71-12f6-197a-408a0c9f6bff" name="Options" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="87f2a93e-3e95-944e-c111-ae7f940d72e9" name="Hunter-killer missile" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="03a49d7a-1242-6b33-63c5-798c83522832" targetId="a298e4a9-3b3a-b954-a313-40b064952d8e" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="78191bf2-a0e5-d5be-8dca-b524918c0255" name="Armoured Ceramite" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="4822a0e7-88ad-4c0b-4843-13372be0542b" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Armoured Ceramite" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Melta-weapons do not roll an additional D6 against this Vehicle."/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
               <links/>
             </entry>
           </entries>
@@ -10161,19 +10254,7 @@ Lascannon/MM automatically target the nearest enemy Vehicle or MC.</description>
       </entryGroups>
       <modifiers/>
       <rules/>
-      <profiles>
-        <profile id="ccade774-603f-a2fb-f417-b5952f7f0a3e" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Fellblade" hidden="false">
-          <characteristics>
-            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
-            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="14"/>
-            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="13"/>
-            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="12"/>
-            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="12"/>
-            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Super-heavy"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
+      <profiles/>
       <links/>
     </entry>
   </entries>
