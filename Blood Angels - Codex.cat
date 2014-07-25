@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="46bdb03f-e12a-42a6-9f9d-ed9cffca589b" revision="31" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="1" battleScribeVersion="1.14b" name="Blood Angels: Codex (2010)" authorName="" authorContact="" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="46bdb03f-e12a-42a6-9f9d-ed9cffca589b" revision="32" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="1" battleScribeVersion="1.14b" name="Blood Angels: Codex (2010)" authorName="" authorContact="" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="84e9839d-b282-4921-815c-f525a1c7649d" name="Assault Squad" points="0.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
@@ -3720,6 +3720,91 @@ Tycho can also reroll a single fail to wound in each assault phase.</description
       </profiles>
       <links/>
     </entry>
+    <entry id="2e6eeb55-95bf-908f-e29b-daefedbf9af8" name="Deathstorm Drop Pod (FW)" points="75.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="IA2 - 2nd" page="161">
+      <entries>
+        <entry id="f68841bd-f466-6dfc-d22e-502681a5382c" name="Drop Pod Assault-rule" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="0e00cc78-d193-1864-2e11-6e5290328605" name="Wargear" defaultEntryId="848cba8e-0df4-ee12-536d-5b85d89b07c2" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="848cba8e-0df4-ee12-536d-5b85d89b07c2" name="Five Whirlwind launchers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="150a6aac-57ad-a46a-f6b2-feb70617555b" targetId="172d479b-5e22-8656-ca2c-50f29de6356a" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="38ca22be-6b6c-507b-2d36-aa74dcd59859" targetId="421797ac-0d0c-5038-ec1a-9dd0f3110eaa" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="ec495c27-a3a1-b645-a04e-87914dce230c" name="Five Assault Cannons" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="87d8ce30-9c01-bc6f-ba78-d4be551b8b05" targetId="38f13ee4-ebe7-49a1-fd99-8052ee9bff34" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="e40e2c77-0e1b-d3d0-93d8-a68d381b803c" field="selections" type="greater than" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="e6bb3940-8abc-bd33-aa9b-f1c088f66961" name="Deep Strike" hidden="false" page="0">
+          <modifiers/>
+        </rule>
+        <rule id="253cdbdf-93c7-6ba6-611e-0d9c7ff59472" name="Immobile" hidden="false" page="0">
+          <modifiers/>
+        </rule>
+        <rule id="ef69ecd9-6ce7-d43d-0ebe-806bf1e4bf61" name="Inertial Guidance System" hidden="false" page="0">
+          <modifiers/>
+        </rule>
+        <rule id="d8dae486-09c8-5198-38b8-4a113855ef87" name="Automated Weapons" hidden="false" page="0">
+          <description>Upon landing, each unit within 12&quot; suffers D3 attacks per weapon it&apos;s in range of.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="94eced96-dbfa-a43f-d6dd-589f3b9681fc" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Deathstorm Drop Pod" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="2"/>
+            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="12"/>
+            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="12"/>
+            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="12"/>
+            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="3"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Open-topped)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
     <entry id="8acb98b1-23e2-44ac-8823-9dc1aab3d86c" name="Devastator Squad" points="0.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
         <entry id="6b777466-0b22-4e03-ae83-ba101715a2a9" name="Devastator Sergeant" points="26.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -4636,6 +4721,38 @@ Tycho can also reroll a single fail to wound in each assault phase.</description
           <modifiers/>
         </profile>
       </profiles>
+      <links/>
+    </entry>
+    <entry id="2d154c62-edd2-f124-9107-2e9846a102a0" name="Forgeworld Models" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="0026cb95-d74a-aa0d-dd3c-e1bd434cb408" name="Hide/Show" defaultEntryId="bc3979a4-94ba-150c-1d56-26a4b838a5e9" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="e40e2c77-0e1b-d3d0-93d8-a68d381b803c" name="Hide" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="bc3979a4-94ba-150c-1d56-26a4b838a5e9" name="Show" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
       <links/>
     </entry>
     <entry id="4053ba00-5450-49ae-abe2-fb1d316fad86" name="Furioso Dreadnought" points="0.0" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -6181,6 +6298,142 @@ Tycho can also reroll a single fail to wound in each assault phase.</description
       <entries/>
       <entryGroups/>
       <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="31629949-d70e-2f38-7f0b-7fefb3c01b21" name="Rapier Weapons Battery (FW)" points="0.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="IA2 - 2nd" page="202">
+      <entries>
+        <entry id="cec4d7cd-39b2-b2dd-beec-17a7abe0d048" name="Rapier with Crew" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="9d5b9a01-bf70-4ee4-21cb-407d71bfef2b" name="Two Space Marine Crew" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="5e892704-a28e-e45c-abaf-76c1a42950de" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="80f03591-c5c2-2a59-81b9-f41009c987f2" targetId="f405ecd9-31f9-3118-9c07-3743fdee2fdd" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="ce6f5e41-cf54-e9d6-dc42-b49e076d77c3" name="And They Shall Know No Fear" hidden="false">
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="01ee1418-d420-1116-30bf-a01081f9f974" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Space Marine Crew" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry"/>
+                    <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
+                    <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+                    <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
+                    <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="4"/>
+                    <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="1"/>
+                    <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
+                    <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="1"/>
+                    <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="8"/>
+                    <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups>
+            <entryGroup id="10b2d8e2-8994-c904-42b8-02936dd5e288" name="Weapon" defaultEntryId="df9965dd-cf21-cfa3-5e98-11dda92bfa91" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="df9965dd-cf21-cfa3-5e98-11dda92bfa91" name="Quad Heavy Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles>
+                    <profile id="eece2c9f-0f7e-442b-477d-39768e759a07" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Quad Heavy Bolter" hidden="false">
+                      <characteristics>
+                        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
+                        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
+                        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 6, Twin-linked"/>
+                      </characteristics>
+                      <modifiers/>
+                    </profile>
+                  </profiles>
+                  <links/>
+                </entry>
+                <entry id="aed63efc-14a2-75e3-89a1-b581df58fc26" name="Laser Destroyer" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules>
+                    <rule id="49b72baa-d0ef-c6c3-1933-64822e539fb0" name="Explosive Demise" hidden="false">
+                      <description>When the Rapier loses it last wound, roll a D6.
+On a 1 you must place a Large Blast on it and all models take a S3 hit.</description>
+                      <modifiers/>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="910241f6-48e4-1376-1885-1302980e5873" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Laser Destroyer" hidden="false">
+                      <characteristics>
+                        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
+                        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
+                        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Twin-linked"/>
+                      </characteristics>
+                      <modifiers/>
+                    </profile>
+                  </profiles>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <rules>
+            <rule id="adefde1d-7fe8-cd4a-5969-c60acd2ba386" name="Extremely Bulky" hidden="false">
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="8b7d2da3-f264-e1e3-a80d-dd592aed137d" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Rapier Carier" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Artillery"/>
+                <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="-"/>
+                <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="-"/>
+                <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="-"/>
+                <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="7"/>
+                <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="2"/>
+                <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="-"/>
+                <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="-"/>
+                <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="-"/>
+                <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="e40e2c77-0e1b-d3d0-93d8-a68d381b803c" field="selections" type="greater than" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links/>
@@ -10321,154 +10574,51 @@ Lascannon/MM automatically target the nearest enemy Vehicle or MC.</description>
         </link>
       </links>
     </entry>
-    <entry id="2d154c62-edd2-f124-9107-2e9846a102a0" name="Forgeworld Models" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="0026cb95-d74a-aa0d-dd3c-e1bd434cb408" name="Hide/Show" defaultEntryId="bc3979a4-94ba-150c-1d56-26a4b838a5e9" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="e40e2c77-0e1b-d3d0-93d8-a68d381b803c" name="Hide" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="bc3979a4-94ba-150c-1d56-26a4b838a5e9" name="Show" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
+    <entry id="f2a7dfbf-dd5d-8c96-cd67-d607d35497f2" name="Cypher, Lord of the Fallen" points="190.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="fad92aac-2456-af6c-25e7-9a8a707a7fbe" name="Krak and Frag grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
           <entryGroups/>
           <modifiers/>
+          <rules/>
+          <profiles/>
           <links/>
-        </entryGroup>
-      </entryGroups>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="31629949-d70e-2f38-7f0b-7fefb3c01b21" name="Rapier Weapons Battery (FW)" points="0.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="IA2 - 2nd" page="202">
-      <entries>
-        <entry id="cec4d7cd-39b2-b2dd-beec-17a7abe0d048" name="Rapier with Crew" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="9d5b9a01-bf70-4ee4-21cb-407d71bfef2b" name="Two Space Marine Crew" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="5e892704-a28e-e45c-abaf-76c1a42950de" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="80f03591-c5c2-2a59-81b9-f41009c987f2" targetId="f405ecd9-31f9-3118-9c07-3743fdee2fdd" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <rules>
-                <rule id="ce6f5e41-cf54-e9d6-dc42-b49e076d77c3" name="And They Shall Know No Fear" hidden="false">
-                  <modifiers/>
-                </rule>
-              </rules>
-              <profiles>
-                <profile id="01ee1418-d420-1116-30bf-a01081f9f974" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Space Marine Crew" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry"/>
-                    <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
-                    <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
-                    <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
-                    <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="4"/>
-                    <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="1"/>
-                    <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
-                    <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="1"/>
-                    <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="8"/>
-                    <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups>
-            <entryGroup id="10b2d8e2-8994-c904-42b8-02936dd5e288" name="Weapon" defaultEntryId="df9965dd-cf21-cfa3-5e98-11dda92bfa91" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="df9965dd-cf21-cfa3-5e98-11dda92bfa91" name="Quad Heavy Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles>
-                    <profile id="eece2c9f-0f7e-442b-477d-39768e759a07" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Quad Heavy Bolter" hidden="false">
-                      <characteristics>
-                        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
-                        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
-                        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 6, Twin-linked"/>
-                      </characteristics>
-                      <modifiers/>
-                    </profile>
-                  </profiles>
-                  <links/>
-                </entry>
-                <entry id="aed63efc-14a2-75e3-89a1-b581df58fc26" name="Laser Destroyer" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules>
-                    <rule id="49b72baa-d0ef-c6c3-1933-64822e539fb0" name="Explosive Demise" hidden="false">
-                      <description>When the Rapier loses it last wound, roll a D6.
-On a 1 you must place a Large Blast on it and all models take a S3 hit.</description>
-                      <modifiers/>
-                    </rule>
-                  </rules>
-                  <profiles>
-                    <profile id="910241f6-48e4-1376-1885-1302980e5873" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Laser Destroyer" hidden="false">
-                      <characteristics>
-                        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
-                        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
-                        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Twin-linked"/>
-                      </characteristics>
-                      <modifiers/>
-                    </profile>
-                  </profiles>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-          </entryGroups>
+        </entry>
+        <entry id="dc1b6c45-65c3-227f-3ff4-5085679413c5" name="Cypher&apos;s Relics" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
           <modifiers/>
-          <rules>
-            <rule id="adefde1d-7fe8-cd4a-5969-c60acd2ba386" name="Extremely Bulky" hidden="false">
-              <modifiers/>
-            </rule>
-          </rules>
+          <rules/>
           <profiles>
-            <profile id="8b7d2da3-f264-e1e3-a80d-dd592aed137d" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Rapier Carier" hidden="false">
+            <profile id="3a2ff908-3827-22a2-f661-5a4c5c1c63ae" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Blazing Weapons" hidden="false">
               <characteristics>
-                <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Artillery"/>
-                <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="-"/>
-                <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="-"/>
-                <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="-"/>
-                <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="7"/>
-                <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="2"/>
-                <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="-"/>
-                <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="-"/>
-                <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="-"/>
-                <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Cypher can fire both of his weapons, even before or after running.
+He also fires Overwatch on full ballistic skill.
+In addition, half (rounded up) of his Melee attacks are resolved at S4, AP5 and the remaining at S7, AP2."/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="85abea79-ea68-7f39-4917-d073c3091a5c" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Cypher&apos;s Bolt Pistol" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="16&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Pistol"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="58dc198a-16c7-77e0-e0ee-b5a4f3308827" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Cypher&apos;s Plasma Pistol" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Pistol"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="15a7b1fd-1610-7f11-ebe9-017094897674" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Cypher&apos;s Sword" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Confers Eternal Warrior and Shrouded."/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -10477,97 +10627,45 @@ On a 1 you must place a Large Blast on it and all models take a S3 hit.</descrip
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="e40e2c77-0e1b-d3d0-93d8-a68d381b803c" field="selections" type="greater than" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="2e6eeb55-95bf-908f-e29b-daefedbf9af8" name="Deathstorm Drop Pod (FW)" points="75.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="IA2 - 2nd" page="161">
-      <entries>
-        <entry id="f68841bd-f466-6dfc-d22e-502681a5382c" name="Drop Pod Assault-rule" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links/>
-        </entry>
-      </entries>
-      <entryGroups>
-        <entryGroup id="0e00cc78-d193-1864-2e11-6e5290328605" name="Wargear" defaultEntryId="848cba8e-0df4-ee12-536d-5b85d89b07c2" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="848cba8e-0df4-ee12-536d-5b85d89b07c2" name="Five Whirlwind launchers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="150a6aac-57ad-a46a-f6b2-feb70617555b" targetId="172d479b-5e22-8656-ca2c-50f29de6356a" linkType="profile">
-                  <modifiers/>
-                </link>
-                <link id="38ca22be-6b6c-507b-2d36-aa74dcd59859" targetId="421797ac-0d0c-5038-ec1a-9dd0f3110eaa" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="ec495c27-a3a1-b645-a04e-87914dce230c" name="Five Assault Cannons" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="87d8ce30-9c01-bc6f-ba78-d4be551b8b05" targetId="38f13ee4-ebe7-49a1-fd99-8052ee9bff34" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-      </entryGroups>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="e40e2c77-0e1b-d3d0-93d8-a68d381b803c" field="selections" type="greater than" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <rules>
-        <rule id="e6bb3940-8abc-bd33-aa9b-f1c088f66961" name="Deep Strike" hidden="false" page="0">
+        <rule id="f6c8eda7-bbb9-c84a-f15c-06747df64e7f" name="Fleet" hidden="false">
           <modifiers/>
         </rule>
-        <rule id="253cdbdf-93c7-6ba6-611e-0d9c7ff59472" name="Immobile" hidden="false" page="0">
+        <rule id="339dee58-57c7-28dc-aafc-80df70a6c825" name="Hit &amp; Run" hidden="false">
           <modifiers/>
         </rule>
-        <rule id="ef69ecd9-6ce7-d43d-0ebe-806bf1e4bf61" name="Inertial Guidance System" hidden="false" page="0">
+        <rule id="485a1c70-3dd3-81ce-a490-84c1be6bee15" name="Independant Character" hidden="false">
           <modifiers/>
         </rule>
-        <rule id="d8dae486-09c8-5198-38b8-4a113855ef87" name="Automated Weapons" hidden="false" page="0">
-          <description>Upon landing, each unit within 12&quot; suffers D3 attacks per weapon it&apos;s in range of.</description>
+        <rule id="43e62dc0-8d62-c4be-6c12-e9e9055b444b" name="Infiltrate" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="d33c4573-ef49-bdd7-7926-1fefa364a50d" name="And They Shall Know No Fear" hidden="false" page="0">
+          <modifiers/>
+        </rule>
+        <rule id="a5569eff-19ec-3eb3-d4d3-e4cf2d7e2cd3" name="Divine Protection" hidden="false">
+          <description>Slaying Cypher only awards VP&apos;s if there is an enemy model within D6&quot; when he loses his last Wound.</description>
+          <modifiers/>
+        </rule>
+        <rule id="6526468c-2095-12f1-1473-5be062b42d32" name="Shadowy Herald of Strife" hidden="false">
+          <description>Cypher cannot be selected as the Warlord of an army. In addition, the Leadership characteristic of the Warlord of an army that includes Cypher suffers a -1 penalty.</description>
           <modifiers/>
         </rule>
       </rules>
       <profiles>
-        <profile id="94eced96-dbfa-a43f-d6dd-589f3b9681fc" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Deathstorm Drop Pod" hidden="false" page="0">
+        <profile id="07739fca-55a2-710b-0b97-aecb0bb5311f" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Cypher" hidden="false">
           <characteristics>
-            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="2"/>
-            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="12"/>
-            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="12"/>
-            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="12"/>
-            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="3"/>
-            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Open-topped)"/>
+            <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
+            <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="7"/>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="10"/>
+            <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
+            <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="4"/>
+            <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="3"/>
+            <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="8"/>
+            <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="3"/>
+            <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="10"/>
+            <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
           </characteristics>
           <modifiers/>
         </profile>
