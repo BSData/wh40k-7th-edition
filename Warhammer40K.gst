@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" revision="2" battleScribeVersion="1.14b" name="Warhammer 40,000 7th Edition" authorName="BSData organisation" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" revision="3" battleScribeVersion="1.14b" name="Warhammer 40,000 7th Edition" authorName="BSData organisation" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <forceTypes>
     <forceType id="5374616e6461726423232344415441232323" name="Combined Arms Detachment" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
       <categories>
@@ -474,6 +474,35 @@
           <modifiers/>
         </category>
         <category id="848a6ff2-0def-4c72-8433-ff7da70e6bc7" name="HQ" minSelections="2" maxSelections="6" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
+      </categories>
+      <forceTypes/>
+    </forceType>
+    <forceType id="c6d1b232-16f5-9f9c-9c71-b3ee81a68903" name="Company of the Great Wolf Detachment" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+      <categories>
+        <category id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Force Org Slot" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
+        <category id="c888f08a-6cea-4a01-8126-d374a9231554" name="Lords of War" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
+        <category id="d713cda3-5d0f-40d8-b621-69233263ec2a" name="Fortification" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
+        <category id="067796a2-59cf-c578-2a75-6dff6681bd21" name="Heavy Support" minSelections="0" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
+        <category id="c274d0b0-5866-44bc-9810-91c136ae7438" name="Fast Attack" minSelections="0" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
+        <category id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" name="Elites" minSelections="2" maxSelections="8" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
+        <category id="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" name="Troops" minSelections="0" maxSelections="3" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
+        <category id="848a6ff2-0def-4c72-8433-ff7da70e6bc7" name="HQ" minSelections="1" maxSelections="4" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
           <modifiers/>
         </category>
       </categories>
