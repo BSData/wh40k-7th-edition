@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5e29cf46-0edb-4f2a-8b49-7691fba3e163" revision="35" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Orks: Codex (2014)" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5e29cf46-0edb-4f2a-8b49-7691fba3e163" revision="36" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Orks: Codex (2014)" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="5edc5c69-e061-4f06-7f5d-2f11b8002b2f" name="&quot;Blitz Brigade&quot;" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Waaagh! Ghazghkull" page="0">
       <entries>
@@ -12290,6 +12290,9 @@
             <link id="64abb94e-7d86-2e1e-4ef8-17d42caaaf76" targetId="f34c8090-4e32-bd27-df37-1b714a4288d2" linkType="rule">
               <modifiers/>
             </link>
+            <link id="93a5f6a6-37a8-df74-df9c-4491c6c22102" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
+              <modifiers/>
+            </link>
           </links>
         </entry>
         <entry id="c6137555-9b9a-1b5f-32a2-e6856fbdb75b" name="Nobz" points="0.0" categoryId="(No Category)" type="unit" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Orks" page="0">
@@ -24154,6 +24157,32 @@
     <link id="83db0b64-db6e-0bd8-5e66-683027e6b03f" targetId="d9f84ca5-9280-f052-de9e-4ee0952bd82d" linkType="entry" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
       <modifiers/>
     </link>
+    <link id="cd4d6d49-1a19-191b-3118-2e95784eee81" targetId="906a5f96-4c50-0fd6-c525-cd611e4ee811" linkType="rule">
+      <modifiers>
+        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="416c6c696564204465746163686d656e7423232344415441232323" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="5374616e6461726423232344415441232323" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </link>
+    <link id="76f2e6df-7fe1-c621-75a5-a47c5c540587" targetId="852d2433-a276-7db9-d635-062c2691cb3e" linkType="rule">
+      <modifiers>
+        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="5374616e6461726423232344415441232323" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+    </link>
   </links>
   <sharedEntries>
     <entry id="8ea5c639-80eb-bf9f-0194-8033746e1f42" name="Battlewagon" points="110.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Orks" page="0">
@@ -25112,7 +25141,7 @@
       <rules/>
       <profiles/>
       <links>
-        <link id="8ce5d607-bce0-95cf-1202-cfa554b77dba" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
+        <link id="8ce5d607-bce0-95cf-1202-cfa554b77dba" targetId="614ed064-a013-8318-bec2-2e073cc14c3e" linkType="entry">
           <modifiers/>
         </link>
         <link id="fd732325-e60e-ce79-aa8f-5e1e251e04d2" targetId="f63eae13-a4e3-062d-1c26-dc589b7d327f" linkType="profile">
@@ -25466,6 +25495,38 @@
         <link id="547643db-28b4-cfae-9e8f-6f613d3c5a25" targetId="4ef69611-d89c-409b-2955-acb043e1cf2f" linkType="rule">
           <modifiers/>
         </link>
+        <link id="88a803df-69da-339c-ca1b-3fe3b7f12110" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="direct parent" childId="7dace465-da76-6239-b76c-a3c097a6230b" field="selections" type="instance of" value="0.0"/>
+                    <condition parentId="roster" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </link>
+        <link id="a30ae3ca-6bf2-a715-058d-c4f964263dee" targetId="614ed064-a013-8318-bec2-2e073cc14c3e" linkType="entry">
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition parentId="direct parent" childId="72d5b5f1-34da-bde1-3e25-d870df097623" field="selections" type="instance of" value="0.0"/>
+                    <condition parentId="roster" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </link>
       </links>
     </entry>
     <entry id="158c2f35-99a9-c67c-b738-60ad06edce40" name="Boss Snikrot, the Green Ghost" points="60.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Orks" page="0">
@@ -25531,6 +25592,9 @@
           <modifiers/>
         </link>
         <link id="96523ee3-079a-b25e-c3b0-94858ad4f818" targetId="4ef69611-d89c-409b-2955-acb043e1cf2f" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="914e9f25-6b3f-ba58-cdb9-4203094ae5b7" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -27239,6 +27303,9 @@
           <profiles/>
           <links>
             <link id="8129379a-4938-a2b6-922c-5c8345a410bf" targetId="4568d8d2-45d3-a595-6eee-67f3e0267a26" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="4c5d98a7-ad97-7b41-584d-a9c005fc03b5" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -29546,6 +29613,9 @@
             <link id="0508d539-ac76-6376-223e-24ec2ef0785c" targetId="2b4f220f-06c3-dd73-c9f2-a9a0ff17860e" linkType="rule">
               <modifiers/>
             </link>
+            <link id="aa4db10e-4fbc-5d38-6442-a0217ba92ff7" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
+              <modifiers/>
+            </link>
           </links>
         </entry>
         <entry id="c80a3b84-0fc6-4224-66a1-7bb6017f1229" name="Gretchin" points="0.0" categoryId="(No Category)" type="model" minSelections="10" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -29654,6 +29724,9 @@
               <modifiers/>
             </link>
             <link id="fdb43053-ef21-b58e-6e7b-8103b982c09c" targetId="4f3e5d21-7348-f25b-ae11-dddb6da51267" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="9cfaff80-e70d-0507-2bc8-1f951263d033" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -31054,6 +31127,9 @@
     <rule id="defb89bb-4557-e9ae-c22a-4a017c2dad09" name="Hit and Run" hidden="false" book="Warhammer 40k rulebook" page="0">
       <modifiers/>
     </rule>
+    <rule id="852d2433-a276-7db9-d635-062c2691cb3e" name="Ideal Mission Commander" hidden="true" book="Warhammer 40k rulebook">
+      <modifiers/>
+    </rule>
     <rule id="85eb165a-d3cc-3732-26b4-9e6b59ba1057" name="Incompetent" hidden="false" book="Warzone Armageddon" page="0">
       <modifiers/>
     </rule>
@@ -31136,6 +31212,9 @@
       <modifiers/>
     </rule>
     <rule id="bbeb7a10-8f6d-d718-e6af-d8a58101b182" name="Nest of Vipers" hidden="false" book="Codex: Orks" page="61">
+      <modifiers/>
+    </rule>
+    <rule id="906a5f96-4c50-0fd6-c525-cd611e4ee811" name="Objective Secured" hidden="true" book="Warhammer 40k rulebook">
       <modifiers/>
     </rule>
     <rule id="d63fce70-5222-5847-bf71-5b672a824578" name="One Scalpel Short of a Medpack" hidden="false" book="Codex: Orks" page="0">
@@ -31804,7 +31883,7 @@
         <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Bomb 1, 3&quot; Blast, Armourbane, Skreamin&apos; Descent, One use only"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Bomb 1, 5&quot; Blast, Armourbane, Skreamin&apos; Descent, One use only"/>
       </characteristics>
       <modifiers/>
     </profile>
