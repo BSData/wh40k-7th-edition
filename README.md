@@ -1,6 +1,8 @@
 Warhammer 40,000
 ================
 
+__Notice__: _However we don't support the 6th Edition, all the files in their last revisions for 6th are available [here](https://github.com/BSData/wh40k/releases/tag/v3.1.4). Downloading .bsr file (green button) and importing it in BattleScribe_ __won't__ _mess with 7th ed files._
+
 ####Contents####
 
 * [Overview][]
