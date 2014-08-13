@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a1d51a68-4b57-eb7d-f7e2-23bf0c22e374" revision="70" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Space Marines: Codex (2013)" authorName="Rob Marti" authorContact="rob@marticlan.info" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a1d51a68-4b57-eb7d-f7e2-23bf0c22e374" revision="71" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Space Marines: Codex (2013)" authorName="Rob Marti" authorContact="rob@marticlan.info" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="37d77532-71bd-d98c-c39b-8e7bff912321" name="Allied Detachment Chapter Tactics" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
@@ -5317,8 +5317,10 @@
           <conditions/>
           <conditionGroups/>
         </modifier>
-        <modifier type="increment" field="maxInRoster" value="1.0" repeat="true" numRepeats="1" incrementParentId="roster" incrementChildId="89f15d1b-0a29-469f-af66-74745a8e4ee3" incrementField="selections" incrementValue="1.0">
-          <conditions/>
+        <modifier type="set" field="maxInRoster" value="3.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="89f15d1b-0a29-469f-af66-74745a8e4ee3" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="89f15d1b-0a29-469f-af66-74745a8e4ee3" field="selections" type="greater than" value="0.0"/>
+          </conditions>
           <conditionGroups/>
         </modifier>
         <modifier type="increment" field="maxInRoster" value="1.0" repeat="true" numRepeats="1" incrementParentId="roster" incrementChildId="7509ce3c-c505-fb5c-ad95-d7d27ee2313b" incrementField="selections" incrementValue="1.0">
