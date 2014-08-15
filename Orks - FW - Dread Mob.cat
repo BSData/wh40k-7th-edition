@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5733e530-c108-d528-8e85-0aea9a10bff8" revision="12" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Orks: IA08 - Dread Mob (2013 pdf)" authorName="VT" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5733e530-c108-d528-8e85-0aea9a10bff8" revision="14" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Orks: IA08 - Dread Mob (2013 pdf)" authorName="VT" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="d6f0c7fe-1095-49fa-ef27-65aa1adb8569" name="Attak Fightas" points="0.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour - Aeronautica" page="42">
       <entries>
@@ -1363,6 +1363,24 @@
                 <condition parentId="6909faa9-bc4f-283e-8f36-97e626765569" childId="d4bd9eb5-662a-d2b3-a81c-01b6d082482e" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Tank, Open-topped" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="6909faa9-bc4f-283e-8f36-97e626765569" childId="6a1a2edd-6f0b-80ff-7ad5-85813b1f7e90" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Tank" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition parentId="6909faa9-bc4f-283e-8f36-97e626765569" childId="d4bd9eb5-662a-d2b3-a81c-01b6d082482e" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="6909faa9-bc4f-283e-8f36-97e626765569" childId="6a1a2edd-6f0b-80ff-7ad5-85813b1f7e90" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </link>
