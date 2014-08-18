@@ -13331,7 +13331,7 @@
         </link>
       </links>
     </entry>
-    <entry id="23949fe9-6984-4d6b-83d9-06eeb7120383" name="Wracks (Troops)" points="0.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="0" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Eldar 2010" page="38">
+    <entry id="23949fe9-6984-4d6b-83d9-06eeb7120383" name="Wracks (Troops)" points="0.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="0" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Eldar 2010" page="38">
       <entries>
         <entry id="8bdc7ada-0068-47b0-af66-6cc0a0d51935" name="Acothyst" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -14027,11 +14027,17 @@
         </entryGroup>
       </entryGroups>
       <modifiers>
-        <modifier type="set" field="maxInRoster" value="-1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="39ade440-03af-42fc-9bee-45e0a8d081b1" field="selections" type="greater than" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
+        <modifier type="set" field="maxInForce" value="-1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="91c87481-8919-b838-9b8d-3fc7f4b81018" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="63084dd1-5cc0-4542-a794-6cdcae9d4a82" field="selections" type="greater than" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules/>
