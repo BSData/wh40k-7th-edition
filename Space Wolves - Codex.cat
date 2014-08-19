@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="21e36b7e-84ee-2ec0-53f2-2c32fd8bd981" revision="4" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Space Wolves: Codex (2014)" books="" authorName="k" authorContact="" authorUrl="http://catalogue.randomhit.org/viewtopic.php?f=5&amp;t=244" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="21e36b7e-84ee-2ec0-53f2-2c32fd8bd981" revision="5" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Space Wolves: Codex (2014)" books="" authorName="k" authorContact="" authorUrl="http://catalogue.randomhit.org/viewtopic.php?f=5&amp;t=244" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="bb9b8beb-6b7d-a571-f99d-6cb94dd920ff" name="&quot;Great Company&quot;" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Wolves">
       <entries>
@@ -11845,15 +11845,21 @@
         </link>
       </links>
     </entry>
-    <entry id="279a86d5-6953-3765-e415-31b3c5c749cc" name="Company of the Great Wolf Detachment" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Champions of Fenris" page="0">
+    <entry id="279a86d5-6953-3765-e415-31b3c5c749cc" name="Champions of Fenris Options" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Champions of Fenris" page="0">
       <entries/>
       <entryGroups/>
       <modifiers>
         <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="3bfe125e-5674-06d5-082f-f7f577ea26fc" field="selections" type="instance of" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="3bfe125e-5674-06d5-082f-f7f577ea26fc" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="f27ddc58-26a0-c164-64d5-75065a3d9620" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules/>
@@ -17718,21 +17724,6 @@
         </link>
       </links>
     </entry>
-    <entry id="59f0787f-cc31-d045-f036-005d69b70dde" name="The Wolves Unleashed Detachment" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Codex: Space Wolves" page="0">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="3bfe125e-5674-06d5-082f-f7f577ea26fc" field="selections" type="instance of" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
     <entry id="8d2353b0-5f5b-42cd-ab74-9e84494197f6" name="Thunderwolf Cavalry" points="0.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Wolves" page="76">
       <entries>
         <entry id="1df3c2b4-207e-3b83-822f-965817f4b8ad" name="Melta Bombs" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="6" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -19943,32 +19934,20 @@
     <link id="a4db90b6-c5a3-5241-5b6b-cc1d59618fb7" targetId="fc5f9d0e-0fc5-c70f-7d70-a56c343fa788" linkType="rule">
       <modifiers>
         <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition parentId="force type" childId="59f0787f-cc31-d045-f036-005d69b70dde" field="selections" type="equal to" value="1.0"/>
-                <condition parentId="force type" childId="11c0369c-edc5-0912-3e24-0f09c27c419f" field="selections" type="instance of" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition parentId="force type" childId="11c0369c-edc5-0912-3e24-0f09c27c419f" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
     </link>
     <link id="53e3d5a0-5c95-7295-8df4-a64e9559f9ea" targetId="c62f740d-756f-c28c-556f-49484634f4c2" linkType="rule">
       <modifiers>
         <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition parentId="force type" childId="59f0787f-cc31-d045-f036-005d69b70dde" field="selections" type="equal to" value="1.0"/>
-                <condition parentId="force type" childId="11c0369c-edc5-0912-3e24-0f09c27c419f" field="selections" type="instance of" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition parentId="force type" childId="11c0369c-edc5-0912-3e24-0f09c27c419f" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
     </link>
@@ -29568,62 +29547,6 @@
           </modifiers>
         </link>
         <link id="cd4fcb95-12e9-bcd2-93c6-bd53370e02d5" targetId="fae59646-63c3-2c2c-610f-882a7f6eaf00" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="beb5362a-abbb-d0cd-2c63-e3d2d025759a" name="Warlord, Champions of Fenris" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Warhammer 40k rulebook" page="0">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="76b4c661-c8d3-d818-22d5-f87e83b84a1b" targetId="fd9a46fc-9ffa-a505-9e99-786705f483bb" linkType="rule">
-          <modifiers>
-            <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="force type" childId="3bfe125e-5674-06d5-082f-f7f577ea26fc" field="selections" type="instance of" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </link>
-        <link id="14a01fe0-a95b-5282-ec00-37d56572be39" targetId="d011630f-b1ce-5fa0-58a1-1f3f3c8f3ebc" linkType="rule">
-          <modifiers>
-            <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="force type" childId="3bfe125e-5674-06d5-082f-f7f577ea26fc" field="selections" type="instance of" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </link>
-        <link id="3b8a5eaf-452d-c8d9-2037-c7e05d9c497d" targetId="33c662ba-71c4-144e-e181-3b0534d8f9af" linkType="rule">
-          <modifiers>
-            <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="force type" childId="3bfe125e-5674-06d5-082f-f7f577ea26fc" field="selections" type="instance of" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </link>
-        <link id="9f284f35-177d-d392-f65c-dd3349f3f5af" targetId="e0387285-c637-31a0-e2d3-6b870c40f53a" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="f45e7ad4-4e0c-170a-fba8-00cb280ae853" targetId="fdade37d-f60f-a773-6346-2a7b37b5ec45" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="eec3897d-d54a-e4bd-7877-4ae4bcbc3125" targetId="d3f6cbeb-f4ea-58e9-22a0-038837d39829" linkType="rule">
-          <modifiers>
-            <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </link>
-        <link id="cd66a4e0-b56b-ae13-7d9c-d99cfee31796" targetId="fae59646-63c3-2c2c-610f-882a7f6eaf00" linkType="rule">
           <modifiers/>
         </link>
       </links>
