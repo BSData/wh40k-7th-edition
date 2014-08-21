@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="21e36b7e-84ee-2ec0-53f2-2c32fd8bd981" revision="5" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Space Wolves: Codex (2014)" books="" authorName="k" authorContact="" authorUrl="http://catalogue.randomhit.org/viewtopic.php?f=5&amp;t=244" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="21e36b7e-84ee-2ec0-53f2-2c32fd8bd981" revision="6" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Space Wolves: Codex (2014)" books="" authorName="k" authorContact="" authorUrl="http://catalogue.randomhit.org/viewtopic.php?f=5&amp;t=244" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="bb9b8beb-6b7d-a571-f99d-6cb94dd920ff" name="&quot;Great Company&quot;" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Wolves">
       <entries>
@@ -3777,6 +3777,32 @@
           <modifiers/>
         </link>
         <link id="e93192f7-14aa-29bf-bc69-3f72ee1d063f" targetId="cfc6fd36-2d37-0ca0-5873-3387b1f4ad74" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="7d700a53-65fa-3ac9-3c30-e6ff76103322" name="&apos;Armoured Vanguard Squadron&apos;" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="War Zone: Damocles" page="42">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="42ebc5d2-9b64-0ae8-94a0-27013008c00d" name="Squadron" minSelections="3" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="12e00ede-10cb-9899-77c7-4836a42f2abc" targetId="052b19e9-aaaa-a58c-68f9-8ec6f1446bbe" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="bcd1e3eb-c40f-a134-4fa6-f63c0fb30113" targetId="ba334c12-536f-c524-e5d4-35d496a39e3b" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="26b8199f-56fa-f9ac-bf38-cebe4834cb3d" targetId="a100ad6d-a7bd-b2fa-8714-6eb555d53fb2" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -8839,26 +8865,65 @@
             </entry>
             <entry id="4df13feb-0136-b256-3b08-4cb81464b528" name="Wolf Guard Terminators" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Wolves" page="68">
               <entries>
-                <entry id="d8e21f18-c8a7-10b4-9b90-847b10461848" name="Cyclone Missile Launcher" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="d8e21f18-c8a7-10b4-9b90-847b10461848" name="Cyclone Missile Launcher" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers>
-                    <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                    <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions/>
                       <conditionGroups>
-                        <conditionGroup type="or">
+                        <conditionGroup type="and">
                           <conditions>
-                            <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="2bbd8f07-ffab-dbd4-b18d-1ac4cbb8d082" field="selections" type="less than" value="9.0"/>
-                            <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="f4f42ab2-c69f-9f76-1472-874d398e397f" field="selections" type="equal to" value="1.0"/>
-                            <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="a7e5ec86-db13-d73d-7b9d-77c73e5abc80" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="2bbd8f07-ffab-dbd4-b18d-1ac4cbb8d082" field="selections" type="equal to" value="9.0"/>
+                            <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="a7e5ec86-db13-d73d-7b9d-77c73e5abc80" field="selections" type="equal to" value="0.0"/>
+                            <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="d9dd9734-cb1e-6209-f85c-98a4d4ddb7d8" field="selections" type="equal to" value="0.0"/>
+                            <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="f4f42ab2-c69f-9f76-1472-874d398e397f" field="selections" type="equal to" value="0.0"/>
                           </conditions>
                           <conditionGroups/>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
-                    <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="4df13feb-0136-b256-3b08-4cb81464b528" incrementChildId="d9dd9734-cb1e-6209-f85c-98a4d4ddb7d8" incrementField="selections" incrementValue="1.0">
+                    <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions/>
-                      <conditionGroups/>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="2bbd8f07-ffab-dbd4-b18d-1ac4cbb8d082" field="selections" type="less than" value="4.0"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="2bbd8f07-ffab-dbd4-b18d-1ac4cbb8d082" field="selections" type="equal to" value="9.0"/>
+                                <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="d9dd9734-cb1e-6209-f85c-98a4d4ddb7d8" field="selections" type="equal to" value="1.0"/>
+                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="f4f42ab2-c69f-9f76-1472-874d398e397f" field="selections" type="equal to" value="1.0"/>
+                                    <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="a7e5ec86-db13-d73d-7b9d-77c73e5abc80" field="selections" type="equal to" value="1.0"/>
+                                  </conditions>
+                                  <conditionGroups/>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="2bbd8f07-ffab-dbd4-b18d-1ac4cbb8d082" field="selections" type="less than" value="9.0"/>
+                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="f4f42ab2-c69f-9f76-1472-874d398e397f" field="selections" type="equal to" value="1.0"/>
+                                    <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="d9dd9734-cb1e-6209-f85c-98a4d4ddb7d8" field="selections" type="equal to" value="1.0"/>
+                                    <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="a7e5ec86-db13-d73d-7b9d-77c73e5abc80" field="selections" type="equal to" value="1.0"/>
+                                  </conditions>
+                                  <conditionGroups/>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <rules/>
@@ -8874,25 +8939,6 @@
                 </entry>
               </entries>
               <entryGroups>
-                <entryGroup id="0f225209-673b-2145-c7e6-f948da60acb0" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <links>
-                    <link id="7dd00d69-c0ce-dffc-93e3-3c74e455cdc6" targetId="5352e828-66c4-837a-3d88-606e87be25f2" linkType="entry">
-                      <modifiers/>
-                    </link>
-                    <link id="07520d7a-287e-f58d-6deb-40fa5522acd5" targetId="838cc1a0-1c83-a413-5e99-d10376c1e037" linkType="entry">
-                      <modifiers/>
-                    </link>
-                    <link id="3d3699e1-495f-d554-f1b8-0708cbb1e952" targetId="e35423d2-7fd4-f655-43f0-23d8bd0679e1" linkType="entry">
-                      <modifiers/>
-                    </link>
-                    <link id="7d14875d-4151-7186-f763-9062e8f4d333" targetId="fa53d0f0-97b1-05f8-2398-c8b835c63b4b" linkType="entry">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entryGroup>
                 <entryGroup id="73c64e93-ddd8-b4a6-83df-466c8dffe79b" name="Wolf Guard Terminator Leader" defaultEntryId="c5a64fd9-4df6-f7e7-7e71-2d342f26ea7f" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries>
                     <entry id="c5a64fd9-4df6-f7e7-7e71-2d342f26ea7f" name="WG Terminator Leader" points="33.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -9006,7 +9052,14 @@
                             <entry id="a7e5ec86-db13-d73d-7b9d-77c73e5abc80" name="Assault Cannon" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                               <entries/>
                               <entryGroups/>
-                              <modifiers/>
+                              <modifiers>
+                                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                                  <conditions>
+                                    <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="2bbd8f07-ffab-dbd4-b18d-1ac4cbb8d082" field="selections" type="less than" value="4.0"/>
+                                  </conditions>
+                                  <conditionGroups/>
+                                </modifier>
+                              </modifiers>
                               <rules/>
                               <profiles/>
                               <links>
@@ -9018,7 +9071,14 @@
                             <entry id="f4f42ab2-c69f-9f76-1472-874d398e397f" name="Heavy Flamer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                               <entries/>
                               <entryGroups/>
-                              <modifiers/>
+                              <modifiers>
+                                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                                  <conditions>
+                                    <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="2bbd8f07-ffab-dbd4-b18d-1ac4cbb8d082" field="selections" type="less than" value="4.0"/>
+                                  </conditions>
+                                  <conditionGroups/>
+                                </modifier>
+                              </modifiers>
                               <rules/>
                               <profiles/>
                               <links>
@@ -9266,7 +9326,7 @@
                     </entry>
                   </entries>
                   <entryGroups>
-                    <entryGroup id="d9dd9734-cb1e-6209-f85c-98a4d4ddb7d8" name="Heavy Weapon" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                    <entryGroup id="d9dd9734-cb1e-6209-f85c-98a4d4ddb7d8" name="Heavy Weapon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                       <entries>
                         <entry id="1ce97de1-29c6-1108-0982-30100503faae" name="WG Terminator w/ Heavy Flamer" points="43.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                           <entries>
@@ -9351,22 +9411,61 @@
                       </entries>
                       <entryGroups/>
                       <modifiers>
-                        <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                        <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                           <conditions/>
                           <conditionGroups>
-                            <conditionGroup type="or">
+                            <conditionGroup type="and">
                               <conditions>
-                                <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="2bbd8f07-ffab-dbd4-b18d-1ac4cbb8d082" field="selections" type="less than" value="9.0"/>
-                                <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="a7e5ec86-db13-d73d-7b9d-77c73e5abc80" field="selections" type="equal to" value="1.0"/>
-                                <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="f4f42ab2-c69f-9f76-1472-874d398e397f" field="selections" type="equal to" value="1.0"/>
+                                <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="2bbd8f07-ffab-dbd4-b18d-1ac4cbb8d082" field="selections" type="equal to" value="9.0"/>
+                                <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="f4f42ab2-c69f-9f76-1472-874d398e397f" field="selections" type="equal to" value="0.0"/>
+                                <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="a7e5ec86-db13-d73d-7b9d-77c73e5abc80" field="selections" type="equal to" value="0.0"/>
+                                <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="d8e21f18-c8a7-10b4-9b90-847b10461848" field="selections" type="equal to" value="0.0"/>
                               </conditions>
                               <conditionGroups/>
                             </conditionGroup>
                           </conditionGroups>
                         </modifier>
-                        <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="4df13feb-0136-b256-3b08-4cb81464b528" incrementChildId="d8e21f18-c8a7-10b4-9b90-847b10461848" incrementField="selections" incrementValue="1.0">
+                        <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                           <conditions/>
-                          <conditionGroups/>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="2bbd8f07-ffab-dbd4-b18d-1ac4cbb8d082" field="selections" type="less than" value="4.0"/>
+                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="2bbd8f07-ffab-dbd4-b18d-1ac4cbb8d082" field="selections" type="equal to" value="9.0"/>
+                                    <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="d8e21f18-c8a7-10b4-9b90-847b10461848" field="selections" type="equal to" value="1.0"/>
+                                  </conditions>
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditions>
+                                        <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="f4f42ab2-c69f-9f76-1472-874d398e397f" field="selections" type="equal to" value="1.0"/>
+                                        <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="a7e5ec86-db13-d73d-7b9d-77c73e5abc80" field="selections" type="equal to" value="1.0"/>
+                                      </conditions>
+                                      <conditionGroups/>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </conditionGroup>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="2bbd8f07-ffab-dbd4-b18d-1ac4cbb8d082" field="selections" type="less than" value="9.0"/>
+                                  </conditions>
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditions>
+                                        <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="d8e21f18-c8a7-10b4-9b90-847b10461848" field="selections" type="equal to" value="1.0"/>
+                                        <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="a7e5ec86-db13-d73d-7b9d-77c73e5abc80" field="selections" type="equal to" value="1.0"/>
+                                        <condition parentId="4df13feb-0136-b256-3b08-4cb81464b528" childId="f4f42ab2-c69f-9f76-1472-874d398e397f" field="selections" type="equal to" value="1.0"/>
+                                      </conditions>
+                                      <conditionGroups/>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                       <links/>
@@ -18510,26 +18609,65 @@
     </entry>
     <entry id="b644a899-4226-4b28-a533-6a648bf93e46" name="Wolf Guard Terminators" points="0.0" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Wolves" page="68">
       <entries>
-        <entry id="4524db08-4b1f-2257-cf2f-c1c2ff3611b7" name="Cyclone Missile Launcher" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="4524db08-4b1f-2257-cf2f-c1c2ff3611b7" name="Cyclone Missile Launcher" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" field="selections" type="less than" value="9.0"/>
-                    <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d10f2553-c755-ecd1-5925-69248d50ff16" field="selections" type="equal to" value="1.0"/>
-                    <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d87062d2-e38a-0704-1a9e-f94442740523" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" field="selections" type="equal to" value="9.0"/>
+                    <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d10f2553-c755-ecd1-5925-69248d50ff16" field="selections" type="equal to" value="0.0"/>
+                    <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d87062d2-e38a-0704-1a9e-f94442740523" field="selections" type="equal to" value="0.0"/>
+                    <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="cde26c19-7ab2-2c2a-fe78-a7d8990ceff5" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="b644a899-4226-4b28-a533-6a648bf93e46" incrementChildId="cde26c19-7ab2-2c2a-fe78-a7d8990ceff5" incrementField="selections" incrementValue="1.0">
+            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
-              <conditionGroups/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" field="selections" type="less than" value="4.0"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" field="selections" type="equal to" value="9.0"/>
+                        <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="cde26c19-7ab2-2c2a-fe78-a7d8990ceff5" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d87062d2-e38a-0704-1a9e-f94442740523" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d10f2553-c755-ecd1-5925-69248d50ff16" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" field="selections" type="less than" value="9.0"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d87062d2-e38a-0704-1a9e-f94442740523" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="cde26c19-7ab2-2c2a-fe78-a7d8990ceff5" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d10f2553-c755-ecd1-5925-69248d50ff16" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <rules/>
@@ -18658,7 +18796,14 @@
                     <entry id="d10f2553-c755-ecd1-5925-69248d50ff16" name="Assault Cannon" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                       <entries/>
                       <entryGroups/>
-                      <modifiers/>
+                      <modifiers>
+                        <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" field="selections" type="less than" value="4.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
                       <rules/>
                       <profiles/>
                       <links>
@@ -18670,7 +18815,14 @@
                     <entry id="d87062d2-e38a-0704-1a9e-f94442740523" name="Heavy Flamer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                       <entries/>
                       <entryGroups/>
-                      <modifiers/>
+                      <modifiers>
+                        <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" field="selections" type="less than" value="4.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
                       <rules/>
                       <profiles/>
                       <links>
@@ -18918,7 +19070,7 @@
             </entry>
           </entries>
           <entryGroups>
-            <entryGroup id="cde26c19-7ab2-2c2a-fe78-a7d8990ceff5" name="Heavy Weapon" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entryGroup id="cde26c19-7ab2-2c2a-fe78-a7d8990ceff5" name="Heavy Weapon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
                 <entry id="08ba066c-4314-fc61-edbc-ab9beb734608" name="WG Terminator w/ Heavy Flamer" points="43.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries>
@@ -19003,22 +19155,61 @@
               </entries>
               <entryGroups/>
               <modifiers>
-                <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
-                        <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" field="selections" type="less than" value="9.0"/>
-                        <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d87062d2-e38a-0704-1a9e-f94442740523" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d10f2553-c755-ecd1-5925-69248d50ff16" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" field="selections" type="equal to" value="9.0"/>
+                        <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="4524db08-4b1f-2257-cf2f-c1c2ff3611b7" field="selections" type="equal to" value="0.0"/>
+                        <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d10f2553-c755-ecd1-5925-69248d50ff16" field="selections" type="equal to" value="0.0"/>
+                        <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d87062d2-e38a-0704-1a9e-f94442740523" field="selections" type="equal to" value="0.0"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="b644a899-4226-4b28-a533-6a648bf93e46" incrementChildId="4524db08-4b1f-2257-cf2f-c1c2ff3611b7" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions/>
-                  <conditionGroups/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" field="selections" type="less than" value="4.0"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" field="selections" type="equal to" value="9.0"/>
+                            <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="4524db08-4b1f-2257-cf2f-c1c2ff3611b7" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d10f2553-c755-ecd1-5925-69248d50ff16" field="selections" type="equal to" value="1.0"/>
+                                <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d87062d2-e38a-0704-1a9e-f94442740523" field="selections" type="equal to" value="1.0"/>
+                              </conditions>
+                              <conditionGroups/>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" field="selections" type="less than" value="9.0"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d10f2553-c755-ecd1-5925-69248d50ff16" field="selections" type="equal to" value="1.0"/>
+                                <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="4524db08-4b1f-2257-cf2f-c1c2ff3611b7" field="selections" type="equal to" value="1.0"/>
+                                <condition parentId="b644a899-4226-4b28-a533-6a648bf93e46" childId="d87062d2-e38a-0704-1a9e-f94442740523" field="selections" type="equal to" value="1.0"/>
+                              </conditions>
+                              <conditionGroups/>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <links/>
@@ -20107,13 +20298,19 @@
       <entries>
         <entry id="cfa6676e-e2d6-5fab-8196-4ac94095e363" name="Wolf Guard Terminators" points="0.0" categoryId="(No Category)" type="unit" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Wolves" page="68">
           <entries>
-            <entry id="5d241000-7172-9f60-9bda-19785c69e677" name="Cyclone Missile Launcher" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="5d241000-7172-9f60-9bda-19785c69e677" name="Cyclone Missile Launcher" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="cfa6676e-e2d6-5fab-8196-4ac94095e363" childId="3380e2c6-c7be-e417-c526-3222602075c1" field="selections" type="less than" value="9.0"/>
+                    <condition parentId="cfa6676e-e2d6-5fab-8196-4ac94095e363" childId="3380e2c6-c7be-e417-c526-3222602075c1" field="selections" type="equal to" value="9.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="cfa6676e-e2d6-5fab-8196-4ac94095e363" childId="3380e2c6-c7be-e417-c526-3222602075c1" field="selections" type="at least" value="4.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -22065,26 +22262,65 @@
       <entries>
         <entry id="bf640936-0223-5052-ec6f-3732ca872ea5" name="Wolf Guard Terminators" points="0.0" categoryId="(No Category)" type="unit" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Wolves" page="68">
           <entries>
-            <entry id="1ca45277-04d7-7711-0fc5-16584c7f2d7f" name="Cyclone Missile Launcher" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="1ca45277-04d7-7711-0fc5-16584c7f2d7f" name="Cyclone Missile Launcher" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
-                        <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="b86a502d-6a5c-579a-dc90-d6581231cf99" field="selections" type="less than" value="9.0"/>
-                        <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="44544aa7-1770-4b1d-7747-46e0c6d15184" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="e1b4ca2b-f528-3190-78d9-349686883149" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="b86a502d-6a5c-579a-dc90-d6581231cf99" field="selections" type="equal to" value="9.0"/>
+                        <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="9d1c5b47-f860-e473-a26e-b2eb194c5050" field="selections" type="equal to" value="0.0"/>
+                        <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="44544aa7-1770-4b1d-7747-46e0c6d15184" field="selections" type="equal to" value="0.0"/>
+                        <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="e1b4ca2b-f528-3190-78d9-349686883149" field="selections" type="equal to" value="0.0"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="bf640936-0223-5052-ec6f-3732ca872ea5" incrementChildId="9d1c5b47-f860-e473-a26e-b2eb194c5050" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions/>
-                  <conditionGroups/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="b86a502d-6a5c-579a-dc90-d6581231cf99" field="selections" type="less than" value="4.0"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="b86a502d-6a5c-579a-dc90-d6581231cf99" field="selections" type="equal to" value="9.0"/>
+                            <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="9d1c5b47-f860-e473-a26e-b2eb194c5050" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="44544aa7-1770-4b1d-7747-46e0c6d15184" field="selections" type="equal to" value="1.0"/>
+                                <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="e1b4ca2b-f528-3190-78d9-349686883149" field="selections" type="equal to" value="1.0"/>
+                              </conditions>
+                              <conditionGroups/>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="b86a502d-6a5c-579a-dc90-d6581231cf99" field="selections" type="less than" value="9.0"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="9d1c5b47-f860-e473-a26e-b2eb194c5050" field="selections" type="equal to" value="1.0"/>
+                                <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="e1b4ca2b-f528-3190-78d9-349686883149" field="selections" type="equal to" value="1.0"/>
+                                <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="44544aa7-1770-4b1d-7747-46e0c6d15184" field="selections" type="equal to" value="1.0"/>
+                              </conditions>
+                              <conditionGroups/>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <rules/>
@@ -22213,7 +22449,14 @@
                         <entry id="e1b4ca2b-f528-3190-78d9-349686883149" name="Assault Cannon" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                           <entries/>
                           <entryGroups/>
-                          <modifiers/>
+                          <modifiers>
+                            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions>
+                                <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="b86a502d-6a5c-579a-dc90-d6581231cf99" field="selections" type="less than" value="4.0"/>
+                              </conditions>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
                           <rules/>
                           <profiles/>
                           <links>
@@ -22225,7 +22468,14 @@
                         <entry id="44544aa7-1770-4b1d-7747-46e0c6d15184" name="Heavy Flamer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                           <entries/>
                           <entryGroups/>
-                          <modifiers/>
+                          <modifiers>
+                            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions>
+                                <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="b86a502d-6a5c-579a-dc90-d6581231cf99" field="selections" type="less than" value="4.0"/>
+                              </conditions>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
                           <rules/>
                           <profiles/>
                           <links>
@@ -22473,7 +22723,7 @@
                 </entry>
               </entries>
               <entryGroups>
-                <entryGroup id="9d1c5b47-f860-e473-a26e-b2eb194c5050" name="Heavy Weapon" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entryGroup id="9d1c5b47-f860-e473-a26e-b2eb194c5050" name="Heavy Weapon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries>
                     <entry id="6913c512-c6f5-cdcc-1fc1-8f4cbb51b115" name="WG Terminator w/ Heavy Flamer" points="43.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                       <entries>
@@ -22558,22 +22808,61 @@
                   </entries>
                   <entryGroups/>
                   <modifiers>
-                    <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                    <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions/>
                       <conditionGroups>
-                        <conditionGroup type="or">
+                        <conditionGroup type="and">
                           <conditions>
-                            <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="b86a502d-6a5c-579a-dc90-d6581231cf99" field="selections" type="less than" value="9.0"/>
-                            <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="44544aa7-1770-4b1d-7747-46e0c6d15184" field="selections" type="equal to" value="1.0"/>
-                            <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="e1b4ca2b-f528-3190-78d9-349686883149" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="b86a502d-6a5c-579a-dc90-d6581231cf99" field="selections" type="equal to" value="9.0"/>
+                            <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="44544aa7-1770-4b1d-7747-46e0c6d15184" field="selections" type="equal to" value="0.0"/>
+                            <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="1ca45277-04d7-7711-0fc5-16584c7f2d7f" field="selections" type="equal to" value="0.0"/>
+                            <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="e1b4ca2b-f528-3190-78d9-349686883149" field="selections" type="equal to" value="0.0"/>
                           </conditions>
                           <conditionGroups/>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
-                    <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="bf640936-0223-5052-ec6f-3732ca872ea5" incrementChildId="1ca45277-04d7-7711-0fc5-16584c7f2d7f" incrementField="selections" incrementValue="1.0">
+                    <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions/>
-                      <conditionGroups/>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="b86a502d-6a5c-579a-dc90-d6581231cf99" field="selections" type="less than" value="4.0"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="b86a502d-6a5c-579a-dc90-d6581231cf99" field="selections" type="equal to" value="9.0"/>
+                                <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="1ca45277-04d7-7711-0fc5-16584c7f2d7f" field="selections" type="equal to" value="1.0"/>
+                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="e1b4ca2b-f528-3190-78d9-349686883149" field="selections" type="equal to" value="1.0"/>
+                                    <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="44544aa7-1770-4b1d-7747-46e0c6d15184" field="selections" type="equal to" value="1.0"/>
+                                  </conditions>
+                                  <conditionGroups/>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="b86a502d-6a5c-579a-dc90-d6581231cf99" field="selections" type="less than" value="9.0"/>
+                              </conditions>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="1ca45277-04d7-7711-0fc5-16584c7f2d7f" field="selections" type="equal to" value="1.0"/>
+                                    <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="e1b4ca2b-f528-3190-78d9-349686883149" field="selections" type="equal to" value="1.0"/>
+                                    <condition parentId="bf640936-0223-5052-ec6f-3732ca872ea5" childId="44544aa7-1770-4b1d-7747-46e0c6d15184" field="selections" type="equal to" value="1.0"/>
+                                  </conditions>
+                                  <conditionGroups/>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <links/>
@@ -26686,7 +26975,7 @@
         </link>
       </links>
     </entry>
-    <entry id="ba334c12-536f-c524-e5d4-35d496a39e3b" name="Razorback" points="55.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Wolves" page="73">
+    <entry id="ba334c12-536f-c524-e5d4-35d496a39e3b" name="Razorback" points="55.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Wolves" page="73">
       <entries>
         <entry id="8bfe36b0-dc37-9c29-0c11-6957a34f14e9" name="Searchlight" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -27006,7 +27295,7 @@
         </link>
       </links>
     </entry>
-    <entry id="052b19e9-aaaa-a58c-68f9-8ec6f1446bbe" name="Rhino" points="35.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Wolves" page="72">
+    <entry id="052b19e9-aaaa-a58c-68f9-8ec6f1446bbe" name="Rhino" points="35.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Wolves" page="72">
       <entries>
         <entry id="7d177dca-4e63-54c2-a96b-ecf04ce38d6c" name="Storm Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -35784,6 +36073,9 @@
       <modifiers/>
     </rule>
     <rule id="cf911112-d237-5b26-6843-9a04f852c720" name="Rampage" hidden="false" book="Warhammer 40k rulebook" page="0">
+      <modifiers/>
+    </rule>
+    <rule id="a100ad6d-a7bd-b2fa-8714-6eb555d53fb2" name="Rapid Assault" hidden="false" book="War Zone: Damocles" page="42">
       <modifiers/>
     </rule>
     <rule id="2256a8a4-7979-14fe-a0bd-17792584e8cd" name="Rapid Fire" hidden="false" page="0">
