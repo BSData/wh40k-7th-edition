@@ -30,13 +30,13 @@ __Notice__: _However we don't support the 6th Edition, all the files in their la
 * _Great, thank you! Now you have two options:_
 
   1. [Report it on Appspot][] - it's anonymous and no account is needed - on downside, you will need to manually check the progress of your issue.
-  2. [Open Issue directly][] - you need GitHub account and then can track progress (get notifications on it!), comment (ie answer our questions) and help us better!
+  2. [Open Issue directly][] (green ```New Issue``` in upper-right)- you need GitHub account and then can track progress (get notifications on it!), comment (ie answer our questions) and help us better!
 
 * __I'd just like to contact you.__
 * _Cool, the easiest way is through issues mentioned above. We are a community and that's the only place we all have access to. We don't have any group e-mail. So if you want to stay anonymous, contact us by_ reporting bug _on Appspot (point 1 above)._
 
 [Report it on Appspot]: http://battlescribedata.appspot.com/#/repo/wh40k
-[Open Issue directly]: https://github.com/BSData/wh40k/issues/new
+[Open Issue directly]: https://github.com/BSData/wh40k/issues
 
 ##Links##
 
