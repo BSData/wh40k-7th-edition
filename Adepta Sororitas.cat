@@ -1008,6 +1008,9 @@
           <description>One use only. This Act of Faith can be used in either player’s Assault phase. If successful, all models in the Canoness’ unit gain the Hatred special rule until the end of the current phase.</description>
           <modifiers/>
         </rule>
+        <rule id="dad27573-a8c9-f870-58a9-fefa80cabd79" name="Stubborn" hidden="false">
+          <modifiers/>
+        </rule>
       </rules>
       <profiles/>
       <links>
@@ -2189,7 +2192,15 @@
       </entries>
       <entryGroups/>
       <modifiers/>
-      <rules/>
+      <rules>
+        <rule id="ac8f6b6e-6cce-b58e-2ff5-f41ebaeaa87b" name="Warlord Trait: Beacon of Faith" hidden="false">
+          <description>All friendly models that are within 12&quot; of the Warlord use the Warlord’s Leadership value when taking Act of Faith or War Hymns Leadership tests, unless their own is higher.</description>
+          <modifiers/>
+        </rule>
+        <rule id="ecc6f048-0200-76af-1137-f8a25cf695fe" name="Fearless" hidden="false">
+          <modifiers/>
+        </rule>
+      </rules>
       <profiles>
         <profile id="fa44676d-6c3d-9315-b758-ec6aa3ce6247" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Saint Celestine" hidden="false" book="Codex: Adepta Sororitas" page="0">
           <characteristics>
@@ -2202,7 +2213,7 @@
             <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="7"/>
             <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="5"/>
             <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="10"/>
-            <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="2+"/>
+            <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="2+/4++"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -2226,11 +2237,14 @@
         <link id="7e5dff52-fb63-9e4d-187e-0fde873809ca" targetId="5dd63d7c-e5c8-4d50-b3fd-d17804983b6b" linkType="rule">
           <modifiers/>
         </link>
+        <link id="5d0ee041-f5ff-0672-22cd-209fed2d8cd9" targetId="6d3f2230-86ac-8ae9-caaf-086dc960e681" linkType="rule">
+          <modifiers/>
+        </link>
       </links>
     </entry>
     <entry id="2a6a699d-e100-43a6-9c9c-79be03a3ae1b" name="Seraphim Squad" points="15.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
-        <entry id="df6a3d8b-c3ca-4d6e-af72-63a17cb0e332" name="Seraphim" points="15.0" categoryId="(No Category)" type="model" minSelections="4" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="df6a3d8b-c3ca-4d6e-af72-63a17cb0e332" name="Seraphim" points="15.0" categoryId="(No Category)" type="model" minSelections="5" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -2284,7 +2298,17 @@
                   <entryGroups/>
                   <modifiers/>
                   <rules/>
-                  <profiles/>
+                  <profiles>
+                    <profile id="be72d648-65bb-f8d8-95b1-4b21c1771a43" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Plasma Pistol" hidden="false">
+                      <characteristics>
+                        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;"/>
+                        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
+                        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Pistol, Gets Hot!"/>
+                      </characteristics>
+                      <modifiers/>
+                    </profile>
+                  </profiles>
                   <links/>
                 </entry>
               </entries>
@@ -2312,7 +2336,11 @@
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="116a9c48-681c-3d42-baaa-046906929527" targetId="b70cf088-457d-fd4d-74f7-cd77f4d54925" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
             <entry id="7818e69f-7cce-8948-6341-beb06f2a6511" name="Two Inferno Pistols" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
@@ -2320,7 +2348,11 @@
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="8eb4db5d-cdc8-8e49-9469-a57c49a6d3de" targetId="56b65b2b-86d0-5e8c-dde9-fd04118700d7" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
@@ -2875,7 +2907,7 @@
             <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
             <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="3"/>
             <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="9"/>
-            <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="5+"/>
+            <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="5+/4++"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -3739,9 +3771,6 @@ Unless stated otherwise, a unit can only attempt to use an Act of Faith once per
     <rule id="c6c4b6f2-028b-a7ba-3367-f9803dce4c0d" name="Hit &amp; Run" hidden="false" book="40k BRB" page="0">
       <modifiers/>
     </rule>
-    <rule id="41299860-0ea8-a062-82d9-22e8b67d9f84" name="Hit &amp; Run" hidden="false" page="0">
-      <modifiers/>
-    </rule>
     <rule id="5dd63d7c-e5c8-4d50-b3fd-d17804983b6b" name="Independent Character" hidden="false" book="40k BRB" page="0">
       <modifiers/>
     </rule>
@@ -3797,7 +3826,7 @@ The Righteousness of the Emperor: The Ministorum Priest and his unit re-roll fai
         <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Rapid-fire"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Rapi Fire"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -4089,6 +4118,186 @@ The Righteousness of the Emperor: The Ministorum Priest and his unit re-roll fai
         <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="2"/>
         <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="9"/>
         <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="b70cf088-457d-fd4d-74f7-cd77f4d54925" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Hand Flamer" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Template"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="3"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="6"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Pistol"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="56b65b2b-86d0-5e8c-dde9-fd04118700d7" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Inferno Pistol" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="6&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Pistol, Melta"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="498d8eb2-fe1c-9891-c375-97bb32570f6d" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Arco-flail" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="User"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="-"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Specialist Weapon"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="6162c849-0604-7652-549e-78a32a575955" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Autogun" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="3"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="-"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Rapid Fire"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="55f9eaa8-1da1-9fd9-40f6-7631ecca6b7b" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Bolt Pistol" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Pistol"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="0547d061-96b1-5737-924c-e2e061b3f830" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Condemnor Boltgun" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="-"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1, Psi-shock, One Use Only"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="f4a45b6e-9b83-dc9c-e977-e6ac70730a2c" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Eviscerator" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="x2"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Armourbane, Two-handed"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="c93367c9-e506-dc68-5123-8459440c57c8" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Exorcist missile launcher" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="48&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy D6"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="c344c881-cadc-969e-e73c-3a63eb59158f" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Flamer" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Template"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="35e0ddae-7791-4967-406a-f9412137947a" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Heavy Bolter" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 3"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="d9a38448-3da0-124c-8839-f92ad002a9f6" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Laspistol" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="3"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="-"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Pistol"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="78dd4612-5873-457e-e421-6ebd3aae3ffa" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Mace of Valaan" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="+2"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Chaos Bane, Concussive, Master-crafted"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="631f20ca-3ce4-1112-2669-616401475b4b" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Melta bomb" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Armourbane, Unwieldy"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="00746dcd-90f5-5a95-ec7d-3f3d06161d4f" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Meltagun" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1, Melta"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="ae272b95-6b20-85e0-0bbf-4f60c6f9ba31" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Multi-melta" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Melta"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="ebe6a4e9-3ba0-0f47-b55f-999103da11eb" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Neural whip" hidden="false" book="">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="User"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Neural Shock, Specialist Weapon"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="f89e54f0-a33d-0168-4d19-c16fa9deaf91" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Plasma Pistol" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Pistol, Gets Hot!"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="ac549254-1eea-2908-e397-16b725919ead" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Plasma gun" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Rapid Fire, Gets Hot!"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="a3ad7f3a-0fcb-c529-2039-75b5c5841bd1" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Shotgun" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="3"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="-"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 2"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="c54bd388-cced-2d00-6dad-e3a016725345" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Storm Bolter" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 2"/>
       </characteristics>
       <modifiers/>
     </profile>
