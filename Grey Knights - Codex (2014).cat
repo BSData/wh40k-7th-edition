@@ -2963,20 +2963,7 @@ However, for every dice re-rolled using this rule, your opponent can re-roll one
         <entryGroup id="de820b77-9c0a-065b-1124-e1b0afde6a0d" name="Paladins" defaultEntryId="02de3be9-8a63-446e-9cc4-495b925bf958" minSelections="3" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="02de3be9-8a63-446e-9cc4-495b925bf958" name="Paladin" points="55.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="373a9498-67c7-572f-1806-6d368d600ade" name="Storm Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="fb9c9d43-954c-80c9-c159-71db637eeb0c" targetId="487d141d-f136-ff65-41e0-438c617e86d1" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
+              <entries/>
               <entryGroups/>
               <modifiers/>
               <rules/>
@@ -2991,6 +2978,9 @@ However, for every dice re-rolled using this rule, your opponent can re-roll one
                 <link id="afc5079b-1196-59bc-f290-fcd5d69a7943" targetId="c8744815-f73d-f5d5-c688-59d38d0355f7" linkType="profile">
                   <modifiers/>
                 </link>
+                <link id="d04b07b2-1607-fd62-64cb-9e9621a38e0d" targetId="78d99afe-9250-ad13-261f-ea05b8dc584c" linkType="entry">
+                  <modifiers/>
+                </link>
               </links>
             </entry>
             <entry id="38b7f035-6105-8e56-0e65-d546a7ab618e" name="Apothecary" points="75.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -2999,13 +2989,13 @@ However, for every dice re-rolled using this rule, your opponent can re-roll one
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
-                  <rules>
-                    <rule id="1a327324-d3ea-5d81-b3c3-0fb63f66417f" name="Feel No Pain" hidden="false">
-                      <modifiers/>
-                    </rule>
-                  </rules>
+                  <rules/>
                   <profiles/>
-                  <links/>
+                  <links>
+                    <link id="cf7c96b7-98ef-b221-1f8f-ee32b000cd06" targetId="ea48191f-6117-55d3-9561-b43fe2993ba4" linkType="rule">
+                      <modifiers/>
+                    </link>
+                  </links>
                 </entry>
               </entries>
               <entryGroups/>
@@ -3027,12 +3017,18 @@ However, for every dice re-rolled using this rule, your opponent can re-roll one
                 </link>
               </links>
             </entry>
-            <entry id="2440759d-5225-358f-17c0-2ff8ee4d49f5" name="Paladin (Special Weapon)" points="55.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="2440759d-5225-358f-17c0-2ff8ee4d49f5" name="Paladin (special weapon)" points="55.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers>
                 <modifier type="increment" field="maxSelections" value="2.0" repeat="true" numRepeats="1" incrementParentId="7b3014fb-e19d-5d25-564e-72bf8841fc8f" incrementChildId="de820b77-9c0a-065b-1124-e1b0afde6a0d" incrementField="selections" incrementValue="5.0">
                   <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="de820b77-9c0a-065b-1124-e1b0afde6a0d" childId="f1791d26-c4b4-cdc5-bb1e-6c5461d5ebf4" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
@@ -3048,55 +3044,14 @@ However, for every dice re-rolled using this rule, your opponent can re-roll one
                 <link id="b3bf1036-f4be-c797-602c-7b2eaa0b7a26" targetId="c8744815-f73d-f5d5-c688-59d38d0355f7" linkType="profile">
                   <modifiers/>
                 </link>
+                <link id="940e57c9-9562-6eb2-bfd0-3b187f0f0596" targetId="2a2e5af3-262f-3849-1b4c-9372e20bf38e" linkType="entry group">
+                  <modifiers/>
+                </link>
               </links>
             </entry>
-            <entry id="6e92fc11-2491-59f0-d1d7-933cf63204b1" name="Paladin (Banner)" points="55.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="ba188fc2-ee0b-b2a4-305a-a253b8562ddd" name="Storm Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="d60c96e1-89c1-b15c-29f7-3659c455b585" targetId="487d141d-f136-ff65-41e0-438c617e86d1" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
-              <entryGroups>
-                <entryGroup id="3448ca0b-eb42-0b48-4349-af7bc8d336b5" name="Banner:" defaultEntryId="ce7d846e-b569-d159-72b0-3f796ff4f6bd" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries>
-                    <entry id="ce7d846e-b569-d159-72b0-3f796ff4f6bd" name="Brotherhood banner" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="1c446525-3f8e-85ba-06a0-953d18cd68f3" name="The Nemesis Banner" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles>
-                        <profile id="bfc99de7-7f97-d2b8-ee7b-7a278734cca3" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Nemesis Banner" hidden="false">
-                          <characteristics>
-                            <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Friendly Grey Knight-units within 12&quot; are Fearless and gain +1A. Furthermore, all models with the Daemon rule treat all terrain within 12&quot; as Dangerous Terrain."/>
-                          </characteristics>
-                          <modifiers/>
-                        </profile>
-                      </profiles>
-                      <links/>
-                    </entry>
-                  </entries>
-                  <entryGroups/>
-                  <modifiers/>
-                  <links/>
-                </entryGroup>
-              </entryGroups>
+            <entry id="6e92fc11-2491-59f0-d1d7-933cf63204b1" name="Paladin (banner)" points="55.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
               <modifiers/>
               <rules/>
               <profiles/>
@@ -3105,6 +3060,40 @@ However, for every dice re-rolled using this rule, your opponent can re-roll one
                   <modifiers/>
                 </link>
                 <link id="a658f98a-73b6-b90e-a43d-7af58be78aaa" targetId="c8744815-f73d-f5d5-c688-59d38d0355f7" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="b9cc0caa-b72d-403f-b50b-8b5139a4c345" targetId="78d99afe-9250-ad13-261f-ea05b8dc584c" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="394826b9-e94f-c767-d40c-f0caa12a9b5d" targetId="2f649eec-fbdb-07af-2779-15a6426445d6" linkType="entry group">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="f1791d26-c4b4-cdc5-bb1e-6c5461d5ebf4" name="Paladin (banner+special)" points="55.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="de820b77-9c0a-065b-1124-e1b0afde6a0d" childId="6e92fc11-2491-59f0-d1d7-933cf63204b1" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="8bcd4450-89df-316b-e749-3c6c13a1e4d7" targetId="e66be415-ce04-7cf9-f43c-d329e22082b6" linkType="entry group">
+                  <modifiers/>
+                </link>
+                <link id="bbb0f1eb-7823-4f2f-9624-caa61ce9d4b5" targetId="c8744815-f73d-f5d5-c688-59d38d0355f7" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="dc20be1a-2b13-b415-e0bf-cb6eff1eb02e" targetId="2a2e5af3-262f-3849-1b4c-9372e20bf38e" linkType="entry group">
+                  <modifiers/>
+                </link>
+                <link id="32afd4ad-2daf-19a7-ddfc-c7b0e5a645c3" targetId="2f649eec-fbdb-07af-2779-15a6426445d6" linkType="entry group">
                   <modifiers/>
                 </link>
               </links>
@@ -5755,7 +5744,7 @@ These effects last until the Warlord&apos;s next turn.</description>
     </entry>
   </sharedEntries>
   <sharedEntryGroups>
-    <entryGroup id="c8044828-6f9b-456a-c22d-e5fa1855058a" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="c8044828-6f9b-456a-c22d-e5fa1855058a" name="Dedicated Transport:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="b8186e08-6556-6ca2-936f-b976197f054f" name="Razorback" points="55.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries>
@@ -6068,7 +6057,7 @@ These effects last until the Warlord&apos;s next turn.</description>
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="0c91ed75-7d5c-4a7b-f0d0-4dab2c77929f" name="Dedicated Transport (Land Raider)" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="0c91ed75-7d5c-4a7b-f0d0-4dab2c77929f" name="Dedicated Transport (Land Raider):" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
       <modifiers/>
@@ -6084,7 +6073,7 @@ These effects last until the Warlord&apos;s next turn.</description>
         </link>
       </links>
     </entryGroup>
-    <entryGroup id="cfc6be9c-984b-dccb-11d4-193ca22edb59" name="Dreadnought Weapons" defaultEntryId="350c5e5d-31fd-1db4-dc59-f08db986b5e4" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="cfc6be9c-984b-dccb-11d4-193ca22edb59" name="Dreadnought Weapon:" defaultEntryId="350c5e5d-31fd-1db4-dc59-f08db986b5e4" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="c70ea865-6ed0-7a67-853f-f5ae82c3ec42" name="Twin-linked Autocannon" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -6375,7 +6364,7 @@ These effects last until the Warlord&apos;s next turn.</description>
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="c2b6af78-871d-a1b3-9681-9c75f1d2ed34" name="Melee Weapons" defaultEntryId="b6e5aa9c-c575-cde5-0b20-25a963297c7d" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="c2b6af78-871d-a1b3-9681-9c75f1d2ed34" name="Melee Weapon:" defaultEntryId="b6e5aa9c-c575-cde5-0b20-25a963297c7d" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="8b29e7bc-c78c-8da8-291f-94b04046ab08" name="Nemesis Daemon hammer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -6459,7 +6448,7 @@ These effects last until the Warlord&apos;s next turn.</description>
     </entryGroup>
     <entryGroup id="a379341b-540f-47ab-b7f5-920cd79c04b5" name="Relics of Titan" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
-        <entry id="1c00e468-370d-8e8e-fed2-a67c97051ee7" name="Bone Shard of Solor" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entry id="1c00e468-370d-8e8e-fed2-a67c97051ee7" name="Bone Shard of Solor" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -6474,7 +6463,7 @@ These effects last until the Warlord&apos;s next turn.</description>
           </profiles>
           <links/>
         </entry>
-        <entry id="8a741c09-351c-d185-c4cf-f68ea5bcaa87" name="Cuirass of Sacrifice (Replace TDA)" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entry id="8a741c09-351c-d185-c4cf-f68ea5bcaa87" name="Cuirass of Sacrifice (Replace TDA)" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -6489,7 +6478,7 @@ These effects last until the Warlord&apos;s next turn.</description>
           </profiles>
           <links/>
         </entry>
-        <entry id="fa94e2c3-cd0c-c3d2-8a00-e010f41e4081" name="Domina Liber Daemonica" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entry id="fa94e2c3-cd0c-c3d2-8a00-e010f41e4081" name="Domina Liber Daemonica" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -6504,7 +6493,7 @@ These effects last until the Warlord&apos;s next turn.</description>
           </profiles>
           <links/>
         </entry>
-        <entry id="8f0a396e-6f6d-19a5-838a-7c3c8719e59b" name="The Fury of Deimos (Replace Storm Bolter)" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entry id="8f0a396e-6f6d-19a5-838a-7c3c8719e59b" name="The Fury of Deimos (Replace Storm Bolter)" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -6522,7 +6511,7 @@ These effects last until the Warlord&apos;s next turn.</description>
           </profiles>
           <links/>
         </entry>
-        <entry id="f7fc7ada-dc4c-63f9-c0bd-ef7cf22122f8" name="The Soul Glaive (Replace Melee weapon)" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entry id="f7fc7ada-dc4c-63f9-c0bd-ef7cf22122f8" name="The Soul Glaive (Replace Melee weapon)" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -6616,7 +6605,7 @@ If this attempt is succesfully manifested on this character, or his unit, then t
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="2a2e5af3-262f-3849-1b4c-9372e20bf38e" name="Terminator Ranged Weapon" defaultEntryId="1b6c4b95-3741-f502-5979-864a00c5c70e" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="2a2e5af3-262f-3849-1b4c-9372e20bf38e" name="Terminator Ranged Weapon:" defaultEntryId="1b6c4b95-3741-f502-5979-864a00c5c70e" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="1b6c4b95-3741-f502-5979-864a00c5c70e" name="Storm bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -6665,6 +6654,43 @@ If this attempt is succesfully manifested on this character, or his unit, then t
               <modifiers/>
             </link>
           </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <links/>
+    </entryGroup>
+    <entryGroup id="2f649eec-fbdb-07af-2779-15a6426445d6" name="Banner choice:" defaultEntryId="9a4b746b-c475-e8b7-074d-4912b5374827" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="9a4b746b-c475-e8b7-074d-4912b5374827" name="Brotherhood banner" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="97027e82-22a0-4458-bc0f-ed83272130f2" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Brotherhood banner" hidden="false" book="Codex: Grey Knights" page="90">
+              <characteristics>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Friendly Grey Knight-units within 12&quot; re-roll failed Morale and Pinning and gain +1A."/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="8055ee42-f44c-4c1c-b5a5-5463f6979fdd" name="The Nemesis Banner" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="821ed5ee-483f-80b5-da9a-fe3b38b8de4e" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Nemesis Banner" hidden="false" book="Codex: Grey Knights" page="92">
+              <characteristics>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Friendly Grey Knight-units within 12&quot; are Fearless and gain +1A. Furthermore, all models with the Daemon rule treat all terrain within 12&quot; as Dangerous Terrain."/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
         </entry>
       </entries>
       <entryGroups/>
@@ -6904,6 +6930,9 @@ Blade Shield: re-roll all failed Saving throws.</description>
       <modifiers/>
     </rule>
     <rule id="4dfe0307-b64b-9536-3b08-c6f01a3f7998" name="Vortex" hidden="false" book="Apocalypse" page="0">
+      <modifiers/>
+    </rule>
+    <rule id="ea48191f-6117-55d3-9561-b43fe2993ba4" name="Feel No Pain" hidden="false">
       <modifiers/>
     </rule>
   </sharedRules>
