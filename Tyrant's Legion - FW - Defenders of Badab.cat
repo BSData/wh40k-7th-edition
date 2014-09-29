@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cfd140ee-a538-8913-1fbc-d95113dd1178" revision="28" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Tyrant&apos;s Legion: IA09 - Defenders of Badab (2013 pdf)" authorName="k" authorUrl="http://catalogue.randomhit.org/viewtopic.php?f=5&amp;t=276" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cfd140ee-a538-8913-1fbc-d95113dd1178" revision="29" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Tyrant&apos;s Legion: IA09 - Defenders of Badab (2013 pdf)" authorName="k" authorUrl="http://catalogue.randomhit.org/viewtopic.php?f=5&amp;t=276" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="ece4aee3-54aa-7d84-8778-0aa20a3ad56f" name="&apos;Blood Pride&apos; Battle Squadron" points="75.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour IX - The Badab War pt1" page="198">
       <entries/>
@@ -307,7 +307,7 @@
         </link>
       </links>
     </entry>
-    <entry id="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" name="Allow Secessionist Allies" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" name="Allow Secessionist Allies" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
       <modifiers/>
@@ -377,7 +377,7 @@
                 <conditionGroup type="and">
                   <conditions>
                     <condition parentId="roster" childId="f6c2dc4d-7e90-7e9d-8a06-ec1a3917616a" field="selections" type="equal to" value="0.0"/>
-                    <condition parentId="force type" childId="5374616e6461726423232344415441232323" field="selections" type="instance of" value="0.0"/>
+                    <condition parentId="force type" childId="f54c9de6-8ec3-d4e9-bf19-580c6473cec5" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -470,7 +470,7 @@
         </modifier>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="force type" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -4246,6 +4246,9 @@
                     <link id="e8dad47a-3dcd-663d-2e2a-67d89830d22f" targetId="fc228af1-00f4-2dcd-3f27-fdbcb1788c42" linkType="entry">
                       <modifiers/>
                     </link>
+                    <link id="bd32653f-39c9-0492-0eca-ead730b0c338" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
+                      <modifiers/>
+                    </link>
                   </links>
                 </entry>
               </entries>
@@ -4479,6 +4482,9 @@
                         <link id="f9d9ad6d-fc64-5197-6ece-0bbc59160ca4" targetId="ba81593f-8d47-1a01-c19a-865c5c164074" linkType="entry group">
                           <modifiers/>
                         </link>
+                        <link id="dd91f341-27db-8ed8-8076-c411a0b64db7" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
+                          <modifiers/>
+                        </link>
                       </links>
                     </entry>
                     <entry id="7578d08c-08be-3579-f368-bf7dbed35fed" name="Veteran Sergeant" points="10.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Marines" page="142">
@@ -4511,6 +4517,9 @@
                           <modifiers/>
                         </link>
                         <link id="e7ae8f08-7026-67a6-5fa8-6147a50a9592" targetId="ba81593f-8d47-1a01-c19a-865c5c164074" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="4c1d4eee-6062-2056-d37a-3c252875be1c" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
                           <modifiers/>
                         </link>
                       </links>
@@ -5272,6 +5281,18 @@
                     </link>
                   </links>
                 </entry>
+                <entry id="6c5972ad-2598-9eda-c1ed-196b2ad5d78c" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="8dc83668-4ee0-01d0-caa1-4fd41ab93269" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers/>
@@ -5363,6 +5384,18 @@
                     </link>
                   </links>
                 </entry>
+                <entry id="ddb0a6ac-2c4a-f30c-0785-08c3e734330d" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="52768f3f-d5bd-d6cb-13b0-0088263781a4" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers/>
@@ -5390,6 +5423,9 @@
               </modifiers>
             </link>
             <link id="5b239bda-aa7b-1491-9a11-c36beb901fcc" targetId="97ae2454-a144-37b1-558b-63373a323053" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="af76167e-98d5-54ac-5317-e832190a863d" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -5862,6 +5898,9 @@
               <modifiers/>
             </link>
             <link id="f11e3fc5-76de-d507-d710-925d379beb03" targetId="0406069c-6454-b87c-5b8c-9ca280633a1b" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="723159d6-fe36-ffaf-24f9-f13a57d531f7" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -6794,7 +6833,7 @@
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="force type" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -6879,67 +6918,11 @@
           </links>
         </entry>
       </entries>
-      <entryGroups>
-        <entryGroup id="64ce1170-be3d-24e4-4513-7c9bd93b1e20" name="Psychic Power" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="962a4a2b-09e3-aa8e-a4d5-a5ac8deb74dd" name="Pyromancy" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Warhammer 40k rulebook" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="12dce590-1e91-85ca-b3ed-7df96c70444e" targetId="90d61707-d019-1a02-64ce-ae28e9a9c897" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="e93364a3-1dab-948f-6c2d-94d6f6046305" name="Telepathy" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Warhammer 40k rulebook" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="225515f6-7ae4-eb94-0c2b-d628aa608cd8" targetId="90d61707-d019-1a02-64ce-ae28e9a9c897" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="3852370b-8168-6bc9-7d91-b5ff412f66a3" name="Divination" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Warhammer 40k rulebook" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="fd376eb4-5a16-40e0-4c73-d54184818b08" targetId="90d61707-d019-1a02-64ce-ae28e9a9c897" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="731c2077-12ae-c8cc-af9e-9f464c3d2036" name="Biomancy" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Warhammer 40k rulebook" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="153b18ef-2604-6443-21ec-607a1a9076a5" targetId="90d61707-d019-1a02-64ce-ae28e9a9c897" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-      </entryGroups>
+      <entryGroups/>
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="force type" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -6978,6 +6961,18 @@
           <modifiers/>
         </link>
         <link id="a70ca2eb-04e3-629d-910a-6e3565082049" targetId="2c9390b8-69e4-4a78-b226-cd2627b68eeb" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="9880739e-fbe5-fe20-d9b8-940d86b0d41d" targetId="281e230f-4363-bb46-ff31-2cad750bdbb5" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="a6d14177-444b-0f09-2631-cb4180262d62" targetId="116a1015-ae2b-c01a-35a8-9106cf0aa0a2" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="37db2b90-c9c5-8d0d-d673-6c8256a32db6" targetId="5b55b0ce-44dc-1567-1f5c-c9d1c0994fbf" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="5ee259d9-7e29-dea4-554e-79a443eccfca" targetId="8cb13dba-746f-aff9-e02a-15c3de806d22" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -7073,6 +7068,18 @@
                     </link>
                   </links>
                 </entry>
+                <entry id="6920aa6a-fd06-68ab-c89e-77a6a0e2bcc4" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="7e6dde9e-24db-0978-d455-efa9ff19b648" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers/>
@@ -7093,6 +7100,9 @@
               <modifiers/>
             </link>
             <link id="05dd8d8f-7374-885c-fb96-089fadb2c3ac" targetId="79887373-61dc-1be3-619e-fcb5579f7dcb" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="69f6d8b3-5b1f-2021-2ca4-cc65e28849ee" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -7357,6 +7367,30 @@
                     </link>
                   </links>
                 </entry>
+                <entry id="85f6bbb4-807e-ebb8-6423-133b101ad3ea" name="Space Marine w/ Power Lance" points="30.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="72b1f438-6ab5-30f1-4044-7b0943cf8da3" targetId="e9cfe9f3-9259-1e61-7c53-9f6147e5bee9" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="4372a20a-862c-5ea3-936a-01062aa6ef06" targetId="7ab5f26a-60a3-389b-98a4-d3901530a941" linkType="profile">
+                      <modifiers/>
+                    </link>
+                    <link id="c5e23241-7a0a-bf1f-30a8-effab934bd8e" targetId="4d83d8bb-e7e1-12aa-6024-c1f3adf67eb0" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="886c454d-f86d-49fd-4742-c28a84bce007" targetId="d0be273a-bd57-0d3b-bcd3-2125f3c093cd" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="b64ea658-099d-6f9e-ef00-e4d5829d5851" targetId="b339ffca-d7d9-a0d9-32a6-375580666733" linkType="entry group">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers/>
@@ -7491,6 +7525,18 @@
                 </link>
               </links>
             </entry>
+            <entry id="6fc0bf9e-812e-20b6-0765-bef2b4cdf970" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="f7522c8c-ece8-f91e-4c2f-ff53ff83e1af" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
           </entries>
           <entryGroups/>
           <modifiers/>
@@ -7566,6 +7612,9 @@
         <link id="9daf7452-5ef4-805c-4f9d-bb1b50c06c58" targetId="e9cfe9f3-9259-1e61-7c53-9f6147e5bee9" linkType="entry">
           <modifiers/>
         </link>
+        <link id="269fa591-3d79-e86b-c99e-857728105d10" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
+          <modifiers/>
+        </link>
       </links>
     </entry>
     <entry id="e750989b-7691-40ba-7e4f-9a0762563972" name="High Chaplain Thulsa Kane, Executioners *" points="190.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="FW Charcterupdate PDF" page="22">
@@ -7614,7 +7663,7 @@
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="force type" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -7657,7 +7706,7 @@
         </link>
       </links>
     </entry>
-    <entry id="b80f3066-deda-344d-baaf-f3676bf425d4" name="Legion Auxilia" points="13.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="1" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Tyrants-Legion.pdf" page="0">
+    <entry id="b80f3066-deda-344d-baaf-f3676bf425d4" name="Legion Auxilia" points="13.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="unit" minSelections="0" maxSelections="-1" minInForce="1" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Tyrants-Legion.pdf" page="0">
       <entries>
         <entry id="f9815a9a-d19f-89f8-a7fd-2a02a7a67519" name="Frag Grenades for Squad" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -7772,6 +7821,18 @@
                         </link>
                       </links>
                     </entry>
+                    <entry id="2b7d93a7-dc17-7396-5b8f-630066beabf4" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="7f090816-e09e-7811-6e22-e18fd0068bb4" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
                   </entries>
                   <entryGroups/>
                   <modifiers/>
@@ -7866,6 +7927,18 @@
                         </link>
                       </links>
                     </entry>
+                    <entry id="c9f11337-75b3-4dc1-0c61-67109aa67015" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="1e10ecb2-bb32-8288-eb45-f921f103d212" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
                   </entries>
                   <entryGroups/>
                   <modifiers>
@@ -7891,6 +7964,9 @@
               <modifiers/>
             </link>
             <link id="77e6b4ad-24cf-d6d6-0308-56a49b1b032d" targetId="0406069c-6454-b87c-5b8c-9ca280633a1b" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="6894bc67-afcc-8a8e-698f-7cc2548c237c" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -8499,6 +8575,18 @@
                         </link>
                       </links>
                     </entry>
+                    <entry id="7a84b5af-5a91-5a5f-e7b2-86da2d126692" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="4ecc2bc9-8f88-f917-dfc2-8b0bef7dd398" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
                   </entries>
                   <entryGroups/>
                   <modifiers/>
@@ -8598,6 +8686,18 @@
                       <profiles/>
                       <links>
                         <link id="bd15c18d-3fc3-c7e3-bf06-25c211063b78" targetId="96c16e5c-9c96-c572-55b7-bb1737883ba7" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                    <entry id="2a99c7b9-59d6-d711-b27c-a9c61b9f2396" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="6e359e3d-8c00-b07d-600a-d0f37413fb76" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
                           <modifiers/>
                         </link>
                       </links>
@@ -8725,6 +8825,18 @@
                         </link>
                       </links>
                     </entry>
+                    <entry id="9c7ac28e-79e0-d217-4440-a68f55c6678c" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="064ef416-4d61-e3ab-0486-73073671df73" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
                   </entries>
                   <entryGroups/>
                   <modifiers/>
@@ -8824,6 +8936,18 @@
                       <profiles/>
                       <links>
                         <link id="77613223-8b4f-6375-22f7-3fbb159dd165" targetId="96c16e5c-9c96-c572-55b7-bb1737883ba7" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                    <entry id="59c15d62-8bac-105b-b43f-497d989fb62f" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="44b6c96e-7d24-eab4-b735-716e565be9be" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
                           <modifiers/>
                         </link>
                       </links>
@@ -9037,6 +9161,18 @@
                     </link>
                   </links>
                 </entry>
+                <entry id="0a13c0dc-827f-a1f1-6669-16e792d08f1e" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="c206961d-e220-7aa9-1e86-fe3f32d72f22" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers/>
@@ -9057,6 +9193,9 @@
               <modifiers/>
             </link>
             <link id="34ca78ff-11fd-778c-11e7-76fc89071d6c" targetId="570eecba-3ba6-5b0e-59ac-f9ded866ad7c" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="74d3cb7b-e870-7844-4ff8-6eb68d7c6867" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -9321,6 +9460,18 @@
                     </link>
                   </links>
                 </entry>
+                <entry id="0b656140-33a3-09e3-e499-11707045a53d" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="fe0d867a-e811-a1ac-01f8-8a0bda54aac7" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers/>
@@ -9341,6 +9492,9 @@
               <modifiers/>
             </link>
             <link id="905e0a72-228b-31f7-c20e-55271e962a7e" targetId="79887373-61dc-1be3-619e-fcb5579f7dcb" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="f6fe143e-9083-7774-10e4-fda949dcb42c" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -9601,6 +9755,30 @@
                       <modifiers/>
                     </link>
                     <link id="a1985909-6bbf-8b4a-f7db-d2193b637fd3" targetId="b339ffca-d7d9-a0d9-32a6-375580666733" linkType="entry group">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="b5c82ba2-fb0f-952f-61ce-aed518d57203" name="Space Marine w/ Power Lance" points="30.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="5bc0969e-e3b6-988d-f61e-fa37c3583961" targetId="e9cfe9f3-9259-1e61-7c53-9f6147e5bee9" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="2ead68ad-fd38-dd16-f443-ce80b6e3878b" targetId="7ab5f26a-60a3-389b-98a4-d3901530a941" linkType="profile">
+                      <modifiers/>
+                    </link>
+                    <link id="a3e0341f-3f15-e906-bec4-9e9009a4a95a" targetId="4d83d8bb-e7e1-12aa-6024-c1f3adf67eb0" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="69892484-68b3-af17-931a-6aa900049dcd" targetId="d0be273a-bd57-0d3b-bcd3-2125f3c093cd" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="954dcc8c-470d-1880-3878-a88c96971e49" targetId="b339ffca-d7d9-a0d9-32a6-375580666733" linkType="entry group">
                       <modifiers/>
                     </link>
                   </links>
@@ -9979,6 +10157,18 @@
                     </link>
                   </links>
                 </entry>
+                <entry id="18e757f0-f916-a197-750c-7b65432f26ee" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="522513d1-2546-bac0-0143-6094c119c238" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers/>
@@ -10148,6 +10338,18 @@
                     </link>
                   </links>
                 </entry>
+                <entry id="2b94afc6-bebc-bc42-7e91-0f20c4932470" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="30bf12f1-121d-95e4-9d3e-98c076c88bc4" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers/>
@@ -10165,6 +10367,9 @@
               <modifiers/>
             </link>
             <link id="fbfc9d52-a9d2-a99b-7a55-90e4909ca4dd" targetId="817d1d89-a150-658d-837c-02417b24437b" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="fa9f0b86-8f35-ffad-7ff3-ab0ca768d8f1" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -10387,6 +10592,27 @@
                     </link>
                   </links>
                 </entry>
+                <entry id="ce89efea-2834-65cf-b9a2-f236383133c3" name="Space Marine w/ Power Lance" points="30.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="d423944f-03e3-e276-fcc5-92eca4bef9ca" targetId="e9cfe9f3-9259-1e61-7c53-9f6147e5bee9" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="58f10d36-0d78-6cf8-03c8-ffa8888eb588" targetId="7ab5f26a-60a3-389b-98a4-d3901530a941" linkType="profile">
+                      <modifiers/>
+                    </link>
+                    <link id="48994cd8-2127-c499-763f-d5d534ec91f9" targetId="4d83d8bb-e7e1-12aa-6024-c1f3adf67eb0" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="6c109bcb-a054-c61c-5ad6-4318026dfefa" targetId="d0be273a-bd57-0d3b-bcd3-2125f3c093cd" linkType="entry">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers>
@@ -10503,7 +10729,7 @@
           <modifiers>
             <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="force type" childId="5374616e6461726423232344415441232323" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="f54c9de6-8ec3-d4e9-bf19-580c6473cec5" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -11271,6 +11497,9 @@
                 <link id="024d06a0-7fce-a1e1-e07f-09ed8ee515f8" targetId="0b415c15-81b4-5a3f-b0ae-1e460d13a958" linkType="entry">
                   <modifiers/>
                 </link>
+                <link id="06561920-bce7-d08c-d59f-4a3958a14991" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
+                  <modifiers/>
+                </link>
               </links>
             </entry>
           </entries>
@@ -11528,6 +11757,18 @@
                             </link>
                           </links>
                         </entry>
+                        <entry id="380336bf-8415-dbdb-8e01-209e37a4714a" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="803cc81b-de26-cab7-522c-e4830f062045" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
                       </entries>
                       <entryGroups/>
                       <modifiers/>
@@ -11769,6 +12010,18 @@
                             </link>
                           </links>
                         </entry>
+                        <entry id="3c9eb7f0-d1b3-0592-fd85-c1a25563a503" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="346612ac-2e56-9762-e7de-0d6f738a5020" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
                       </entries>
                       <entryGroups/>
                       <modifiers/>
@@ -11835,6 +12088,18 @@
                             </link>
                           </links>
                         </entry>
+                        <entry id="8330e003-3258-57ba-c1c2-f80c56d2febc" name="Power Lance" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="069e2a04-5178-80c9-b5a0-d70da9923efe" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
                       </entries>
                       <entryGroups/>
                       <modifiers/>
@@ -11859,6 +12124,9 @@
                       <modifiers/>
                     </link>
                     <link id="19eaf13b-97b7-dea0-0afe-d76bf36b1b1e" targetId="4d83d8bb-e7e1-12aa-6024-c1f3adf67eb0" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="75bf9383-54fb-e448-9568-537369bc36bf" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
                       <modifiers/>
                     </link>
                   </links>
@@ -12284,7 +12552,7 @@
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="force type" childId="50593f45-ce4b-2a06-83ae-a1c2ddcda0da" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -12490,6 +12758,18 @@
                     </link>
                   </links>
                 </entry>
+                <entry id="1bfdf2ca-bf9f-9537-db12-3e768da894af" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="1b028f93-1634-05e0-17d9-0ad510db0d6f" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers/>
@@ -12593,6 +12873,18 @@
                     </link>
                   </links>
                 </entry>
+                <entry id="9a4a0db2-d475-3553-6c22-6cc5627536cb" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="516ffd17-da18-52b9-0329-182a07f0c5d4" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers/>
@@ -12635,6 +12927,9 @@
               <modifiers/>
             </link>
             <link id="5edcb172-95fa-1069-dab8-659412eddb09" targetId="817d1d89-a150-658d-837c-02417b24437b" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="6da70a89-bc94-4ea5-ee81-cdbd9da95b35" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -12989,6 +13284,34 @@
                     </link>
                   </links>
                 </entry>
+                <entry id="222819e3-1e4c-c994-d313-3352633d2472" name="Marauder w/ Power Lance" points="25.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="0f8e1aa4-6fcf-0dfa-912d-5500044385ae" targetId="0b415c15-81b4-5a3f-b0ae-1e460d13a958" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="48678f1e-7636-f03f-843b-1bda7b4ce2e2" targetId="a9b4c407-d4bc-97fb-479c-98bfe3ffc569" linkType="profile">
+                      <modifiers>
+                        <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="4+" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="828a749c-3372-a05a-9b92-3953d70e5c1c" childId="dbe06a4f-9da7-7dc2-e7d6-a8a8b608e7bd" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                    </link>
+                    <link id="043fca0d-f6f0-7d8d-6cf2-08ced01b0e49" targetId="d0be273a-bd57-0d3b-bcd3-2125f3c093cd" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="7f300360-38cf-25ce-9b3f-1fbbc4c5262a" targetId="f2c773dd-0705-81de-d50f-03d3564e6b41" linkType="entry">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers/>
@@ -13258,6 +13581,18 @@
                 </link>
               </links>
             </entry>
+            <entry id="2d2cc197-48b1-c069-ce8e-307fbfd8dab1" name="Power Lance" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="0371ea82-d20d-faff-b2b9-935a2142cb59" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
           </entries>
           <entryGroups/>
           <modifiers/>
@@ -13427,6 +13762,18 @@
                 </link>
               </links>
             </entry>
+            <entry id="298df80b-d9cc-abba-f846-e3016c66fd2a" name="Power Lance" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="24839107-790e-1216-5801-1454e0c5ccac" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
           </entries>
           <entryGroups/>
           <modifiers/>
@@ -13579,6 +13926,79 @@
     </link>
     <link id="6d92b620-6e25-cb20-d698-f1a8a56f2290" targetId="cfb30f13-db3e-23c6-2779-94ee0728cbf4" linkType="entry">
       <modifiers/>
+    </link>
+    <link id="5788e933-48e8-e848-38bd-d666a03f54f8" targetId="75f46c65-7f3d-f7a2-0075-2cbdf9092ce1" linkType="rule">
+      <modifiers>
+        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="1ac30c14-b42d-637f-fe93-7b29d5ca3d6b" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+    </link>
+    <link id="54932737-505f-7c6d-5318-b3671baa3cbe" targetId="979d1cc0-9ed5-22e8-101c-802e25393947" linkType="rule">
+      <modifiers>
+        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="1ac30c14-b42d-637f-fe93-7b29d5ca3d6b" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+    </link>
+    <link id="1828c284-6377-2bed-dd00-28f9b788191b" targetId="852d2433-a276-7db9-d635-062c2691cb3e" linkType="rule">
+      <modifiers>
+        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="4a305c84-80cf-9722-7d7f-5ecd9dd2f6de" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="5374616e6461726423232344415441232323" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="1ac30c14-b42d-637f-fe93-7b29d5ca3d6b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </link>
+    <link id="328b49e4-573d-4dd6-3b87-9182275097e0" targetId="596d8220-53fd-c63e-e0fc-d67cf1cf8977" linkType="rule">
+      <modifiers>
+        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="4a305c84-80cf-9722-7d7f-5ecd9dd2f6de" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+    </link>
+    <link id="a53bb662-1d7f-0dff-8b15-d0f8a3a989f6" targetId="906a5f96-4c50-0fd6-c525-cd611e4ee811" linkType="rule">
+      <modifiers>
+        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="5374616e6461726423232344415441232323" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="416c6c696564204465746163686d656e7423232344415441232323" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </link>
+    <link id="e277f021-6467-5007-5516-3c94add2790b" targetId="dfa2c1f9-0c3c-c276-6fd3-abdc60fc2657" linkType="rule">
+      <modifiers>
+        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="4a305c84-80cf-9722-7d7f-5ecd9dd2f6de" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </link>
   </links>
   <sharedEntries>
@@ -14915,6 +15335,18 @@
                     </link>
                   </links>
                 </entry>
+                <entry id="d7152743-0bcd-1a4b-f0ec-294277c3b7c8" name="Power Lance" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="fc71a489-5576-57c3-902f-48ed8fbe909f" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers/>
@@ -14935,6 +15367,9 @@
               <modifiers/>
             </link>
             <link id="a82e2fb3-ea44-5510-6118-d7eec1662495" targetId="b5672079-703e-521c-e23e-c0790050f0cd" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="1d5aaf91-a2b6-7734-993d-3c3e7c1a424e" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -14988,6 +15423,18 @@
                   <profiles/>
                   <links>
                     <link id="c7879f04-79e8-1930-a829-cfb96b4030a0" targetId="9a68ab1d-97b3-0a2a-9687-818093abcde3" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="940c2c8a-df9c-502a-c146-adc26194addf" name="Power Lance" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="7910d100-343b-b3d5-29c9-808d8c9e0869" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
                       <modifiers/>
                     </link>
                   </links>
@@ -17081,6 +17528,18 @@
         </link>
       </links>
     </entry>
+    <entry id="d0be273a-bd57-0d3b-bcd3-2125f3c093cd" name="Power Lance" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="a9bf541d-c393-3482-0085-5cea2dc42e47" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="f2cf889c-9f9b-b1a7-35b7-1fb93613add3" name="Power Maul" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
       <entries/>
       <entryGroups/>
@@ -17790,6 +18249,18 @@
                         </link>
                       </links>
                     </entry>
+                    <entry id="989117ce-55b5-c03e-473b-90482995d372" name="Power Lance" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="2e3fbc80-89f6-fb41-62ce-34ad39d9ffee" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
                   </entries>
                   <entryGroups/>
                   <modifiers/>
@@ -18040,6 +18511,9 @@
                   </modifiers>
                 </link>
                 <link id="62548d66-5168-4d94-299d-b03ec6825d66" targetId="4d83d8bb-e7e1-12aa-6024-c1f3adf67eb0" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="3db24508-c6b2-f4df-675b-50a9270bed16" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
                   <modifiers/>
                 </link>
               </links>
@@ -18313,6 +18787,18 @@
                         </link>
                       </links>
                     </entry>
+                    <entry id="d3326e8f-848b-801c-6d93-4165c2b084eb" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="b80372f4-bc27-335f-3c28-46610778e710" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
                   </entries>
                   <entryGroups/>
                   <modifiers/>
@@ -18387,6 +18873,9 @@
                   <modifiers/>
                 </link>
                 <link id="c79c61e8-f322-c42e-b401-3e1280d80a47" targetId="38736be4-1290-6172-fb90-c5022a9bcfd2" linkType="entry group">
+                  <modifiers/>
+                </link>
+                <link id="76a99e70-2d54-319b-7402-a09ff4363928" targetId="f3aee269-2f69-f57e-eaea-6a91ac502357" linkType="entry">
                   <modifiers/>
                 </link>
               </links>
@@ -19488,6 +19977,26 @@
       <links>
         <link id="bd0b095a-2974-51e9-2f49-95d2002336e1" targetId="e0387285-c637-31a0-e2d3-6b870c40f53a" linkType="rule">
           <modifiers/>
+        </link>
+        <link id="a19301ac-278d-4c0e-3e21-ee7b191c0065" targetId="c9d28c63-1a53-8878-f2a2-146ed01dc705" linkType="rule">
+          <modifiers>
+            <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4a305c84-80cf-9722-7d7f-5ecd9dd2f6de" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+        <link id="6d98091d-5fd0-5a73-931a-4a3b3d7334fe" targetId="7fd4900f-cbd2-08dc-6966-d4fcfd445a28" linkType="rule">
+          <modifiers>
+            <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="1ac30c14-b42d-637f-fe93-7b29d5ca3d6b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -21079,6 +21588,18 @@
             </link>
           </links>
         </entry>
+        <entry id="38a204bf-0cf0-ba16-d559-2e8b3eb13765" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="de77f90c-eb60-cdd0-96bd-d1efaec4aa98" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
       </entries>
       <entryGroups/>
       <modifiers/>
@@ -21350,6 +21871,18 @@
             </link>
           </links>
         </entry>
+        <entry id="b1be07ad-3b7d-b0ca-9915-2e8e0b970aaf" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="1ec3aae6-86d6-9865-8655-d993a5c72e30" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
       </entries>
       <entryGroups/>
       <modifiers/>
@@ -21573,6 +22106,18 @@
             </link>
           </links>
         </entry>
+        <entry id="61730001-815f-267e-acfa-d13b2e8949a6" name="Power Lance" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="5120f914-c1b4-9541-b332-af8a01912757" targetId="e2cb3390-4f4e-b03a-549d-a0d613d769f2" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
       </entries>
       <entryGroups/>
       <modifiers/>
@@ -21762,6 +22307,12 @@ As such &amp; with the consent of your opponents, they may add colour to friendl
     <rule id="90311584-d42b-5056-1554-0c859a6db9ab" name="Deep Strike" hidden="false" book="Warhammer 40k rulebook" page="36">
       <modifiers/>
     </rule>
+    <rule id="75f46c65-7f3d-f7a2-0075-2cbdf9092ce1" name="Defending Battle Force" hidden="true" book="Planetstrike">
+      <modifiers/>
+    </rule>
+    <rule id="979d1cc0-9ed5-22e8-101c-802e25393947" name="Defensive Strategy" hidden="true" book="Planetstrike">
+      <modifiers/>
+    </rule>
     <rule id="d4b3d116-b57e-46c1-e3b8-2d6261b65ecb" name="Drop Pod Assault" hidden="false" book="Codex: Space Marines" page="99">
       <modifiers/>
     </rule>
@@ -21855,6 +22406,9 @@ As such &amp; with the consent of your opponents, they may add colour to friendl
     <rule id="0dbae433-e710-f54b-6f9a-7f7718535ee6" name="Honour or Death" hidden="false" book="Codex: Space Marines" page="53">
       <modifiers/>
     </rule>
+    <rule id="852d2433-a276-7db9-d635-062c2691cb3e" name="Ideal Mission Commander" hidden="true" book="Warhammer 40k rulebook">
+      <modifiers/>
+    </rule>
     <rule id="721b6bb8-6e4a-46a7-25e3-a9f9fe9c86d8" name="Immobile" hidden="false" book="Warhammer 40k rulebook" page="0">
       <modifiers/>
     </rule>
@@ -21886,6 +22440,9 @@ As such &amp; with the consent of your opponents, they may add colour to friendl
       <modifiers/>
     </rule>
     <rule id="049f2c72-cf5d-6968-af00-7883c98e3024" name="Interceptor" hidden="false" book="Warhammer 40k rulebook" page="42">
+      <modifiers/>
+    </rule>
+    <rule id="596d8220-53fd-c63e-e0fc-d67cf1cf8977" name="Invading Battle Force" hidden="true" book="Planetstrike">
       <modifiers/>
     </rule>
     <rule id="e4675f80-82d0-040f-4569-d027a34d5fed" name="Invincible Behemoth" hidden="false" book="40k Apocalypse 2nd Ed" page="66">
@@ -21982,6 +22539,12 @@ As such &amp; with the consent of your opponents, they may add colour to friendl
       <modifiers/>
     </rule>
     <rule id="10cc798c-0cef-41d4-dd97-37a0fbac9fae" name="Night Vision" hidden="false" book="Warhammer 40k rulebook" page="40">
+      <modifiers/>
+    </rule>
+    <rule id="906a5f96-4c50-0fd6-c525-cd611e4ee811" name="Objective Secured" hidden="true" book="Warhammer 40k rulebook">
+      <modifiers/>
+    </rule>
+    <rule id="dfa2c1f9-0c3c-c276-6fd3-abdc60fc2657" name="Offensive Strategy" hidden="true" book="Planetstrike">
       <modifiers/>
     </rule>
     <rule id="e11cb4d3-9861-3a42-19c9-fc940a2c95ec" name="Orbital" hidden="false" book="Codex: Space Marines" page="79">
@@ -22285,6 +22848,24 @@ As such &amp; with the consent of your opponents, they may add colour to friendl
       <modifiers/>
     </rule>
     <rule id="cb373448-ff2e-5e6a-56c0-0fd606d9f630" name="Warlord Trait: Mechanised Infantry" hidden="false" book="IA1 2nd Ed" page="274">
+      <modifiers/>
+    </rule>
+    <rule id="c9d28c63-1a53-8878-f2a2-146ed01dc705" name="Warlord Trait: Planetstrike Attacker" hidden="true" book="Planetstrike">
+      <description>1 Siege Breaker
+2 Burner of Worlds
+3 Fortress Destroyer
+4 Master of Timing
+5 Lord of Precision
+6 Strategic Attacker</description>
+      <modifiers/>
+    </rule>
+    <rule id="7fd4900f-cbd2-08dc-6966-d4fcfd445a28" name="Warlord Trait: Planetstrike Defender" hidden="true" book="Planetstrike">
+      <description>1 Protector of Worlds
+2 Fortress Commander
+3 Lord of the Ambush
+4 Prescient Defender
+5 Counterfire Master
+6 Strategic Defender</description>
       <modifiers/>
     </rule>
     <rule id="d617d069-c009-b809-1015-27350fe84241" name="Warlord Trait: Scion of a Wealthy House" hidden="false" book="Tyrants-Legion.pdf" page="0">
@@ -24893,6 +25474,15 @@ As such &amp; with the consent of your opponents, they may add colour to friendl
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="x2"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Specialist Weapon, Unwieldy"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="e2cb3390-4f4e-b03a-549d-a0d613d769f2" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Power Lance" hidden="false" book="Warhammer 40k rulebook" page="0">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="+1/User*"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3/4*"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee"/>
       </characteristics>
       <modifiers/>
     </profile>
