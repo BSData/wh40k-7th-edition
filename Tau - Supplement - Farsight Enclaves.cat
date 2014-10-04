@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ec1815bd-6777-19db-ef11-022f7d4aff2f" revision="13" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Tau Empire: Supplement - Farsight Enclaves (2013)" authorName="Amadeusz Sadowski" authorContact="amis.tau.92@gmail.com" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ec1815bd-6777-19db-ef11-022f7d4aff2f" revision="14" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Tau Empire: Supplement - Farsight Enclaves (2013)" authorName="Amadeusz Sadowski" authorContact="amis.tau.92@gmail.com" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="fb367433-58d4-8e73-798d-a739f074020a" name="Air Superiority Wing" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Apocalypse" page="0">
       <entries>
@@ -4685,6 +4685,9 @@ I play Tau and love all the Forge World models, contact me if something would ne
       <modifiers/>
     </link>
     <link id="8ea2f1dd-2666-3083-7d0e-8d5306d5a63f" targetId="3367a5f7-742d-419a-ba07-fa09356eb836" linkType="entry" categoryId="c888f08a-6cea-4a01-8126-d374a9231554">
+      <modifiers/>
+    </link>
+    <link id="6f0a82f1-92c2-9833-26dc-203f6c7aabe5" targetId="9f924d51-59e9-e56e-6aba-0ada8e1622f2" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
       <modifiers/>
     </link>
   </links>
@@ -10640,7 +10643,9 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
           <modifiers/>
           <rules>
             <rule id="dd89a5b6-9c3f-ff09-2452-7d0fcdf17c5a" name="Cluster Fire" hidden="false" page="0">
-              <description>Very Bulky models, as well as those with the Bike/Jetbike/Beasts/Cavalry type, suffer two hits each from this weapon at an increased Strength of 7. Extremely Bulky and Artillerr/Monstrous Creature/Vehicle (any type) models and specifically targeted buildings and fortifications suffer 3 hits each if they are hit by the weapon at an increased Strength of 8.</description>
+              <description>Very Bulky models, as well as those with the Bike/Jetbike/Beasts/Cavalry type, suffer two hits each from this weapon at an increased Strength of 7. Extremely Bulky and Artillery/Monstrous Creature/Flying Monstrous Creature/ Vehicle (any type) models and specifically targeted buildings and fortifications suffer 3 hits each if they are hit by the weapon at an increased Strength of 8.
+
+Note: The Pulse submunitions cannon cannot benefit from the Storm of Fire special rule (see page 35 of Codex: Tau Empire).</description>
               <modifiers/>
             </rule>
           </rules>
@@ -10649,25 +10654,12 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
               <characteristics>
                 <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="60&quot;"/>
                 <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
-                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
                 <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Large Blast, Cluster Fire(*)"/>
               </characteristics>
               <modifiers/>
             </profile>
           </profiles>
-          <links/>
-        </entry>
-        <entry id="6acbddf6-b452-684a-282f-6c2a1badab06" name="Integrated shield generator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="c03485af-4a3a-4b57-a8df-ef15d6f2ff29" name="Integrated shield generator" hidden="false" page="0">
-              <description>This provides a 5+ Invulnerable save, which increases to a 4+ Invulnerable save against shooting attacks.</description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
           <links/>
         </entry>
         <entry id="42a51180-f8e5-342e-8df8-229f9fee56d5" name="XV107 battlesuit" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -10692,62 +10684,38 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
               <description>Declare an attempt to use the nova reactor at the start of the model&apos;s Movement phase. Roll a D6. On a result of 1-2, the R&apos;varna fails and suffers a wound (no saves of any kind may be taken). On a 3+, one of the following abilities may be used, its effects lasting until the start of the controlling player&apos;s next Movement phase.
 
 Nova shield
-Noth of the model&apos;s Invulnerable saves are increased to 3+ against both shooting and close combat attacks.
+The model’s Invulnerable saves are increased to 3+.
 
 Volley Fire
-The model&apos;s pulse submunition cannon can each be fired twice. Even though these weapons are fired twice, each still only counts as firing single weapon.
+The model’s pulse submunitions cannon can each be fired twice. Even though these weapons are fired twice, each still only counts as firing a single weapon. If this option is chosen then the R’varna may not fire its weapons at all in the subsequent turn. 
 
 Electromagnetic Shockwave
 All models within 6&quot; of the R&apos;varna base, enemy and friendly, suffer an immediate single Strength 2 AP 5 hit with the Haywire type.
 
 Flank Speed
-The models gains the Fleet special rule and when making a Run move, the controlling player rolls 2D6 to determine the distance moved instead of just one.</description>
+The models gains the Fleet special rule and when making a Run move, the controlling player rolls 2D6 to determine the distance moved instead of just a D6.</description>
               <modifiers/>
             </rule>
           </rules>
           <profiles/>
           <links/>
         </entry>
+        <entry id="9de7851e-5902-da00-9790-03c6e244c7b5" name="Riptide Shield Generator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="0dea4aa1-833b-9041-351d-68d250c8dbcf" targetId="7751a914-5eab-3447-f553-3989f3a9d667" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
       </entries>
       <entryGroups>
         <entryGroup id="b3b2676f-3213-9b9d-c18f-78c88bb1de5a" name="Support Systems - max 2" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
-            <entry id="370c18c1-7dce-2af7-299f-9e158438d780" name="Advanced targeting system" points="3.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="544eac97-964c-b28e-6cb6-3a3af4949a10" targetId="02c91765-6330-2a40-f727-e7f6525780e9" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="aac79718-d056-ea8a-2db6-d15346ad8c36" name="Counterfire defence system" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="6310fcae-e86b-7c2d-8cca-c5c96dc87d2a" targetId="eb30f158-03f8-5093-af21-7ffea4b7d1a1" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="39f34fff-9240-4571-e597-fb871d4e020a" name="Early warning override" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="485b74eb-9553-719f-ea5f-a0372c9847af" targetId="9ea45941-5974-ce39-edcc-2b08753df675" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
             <entry id="0838e87f-f66e-e6e8-9c2f-9877a7b9d98f" name="Positional relay" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
@@ -10756,30 +10724,6 @@ The models gains the Fleet special rule and when making a Run move, the controll
               <profiles/>
               <links>
                 <link id="166d6df4-ae36-8906-a00b-121a0d46dd8f" targetId="4399fd29-0e42-7362-a9bf-e1231412fe4e" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="31b8c0aa-6cb2-d0cd-7111-bb5b392444e1" name="Target lock" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="f69dcb1e-e9d6-38ca-efaa-1f1d7c4c71e1" targetId="b6466a4f-626b-798c-6e32-acee6a2cf16d" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="d851e2e4-430c-fedd-cdaf-a621619bd2e6" name="Drone controller" points="8.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="d6a189a8-e5c1-bad1-5798-bd429f9af226" targetId="fe930f18-98cc-e7e3-5ae0-71a2707d94f3" linkType="profile">
                   <modifiers/>
                 </link>
               </links>
@@ -10796,18 +10740,6 @@ The models gains the Fleet special rule and when making a Run move, the controll
                 </link>
               </links>
             </entry>
-            <entry id="5071de0f-266f-8b5f-b4e3-1017df99e608" name="Velocity tracker" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="f238bd02-5e48-424b-d7ee-4c1cf1a45424" targetId="7ea009f0-d5ce-75c9-6932-17d8950d1d32" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
           </entries>
           <entryGroups/>
           <modifiers/>
@@ -10815,12 +10747,7 @@ The models gains the Fleet special rule and when making a Run move, the controll
         </entryGroup>
       </entryGroups>
       <modifiers/>
-      <rules>
-        <rule id="1499c316-2c25-a029-3b34-e39a2c99ebba" name="FW Experimental Rules" hidden="false" page="0">
-          <description>http://www.forgeworld.co.uk/Downloads/Product/PDF/R/Rvarna.pdf</description>
-          <modifiers/>
-        </rule>
-      </rules>
+      <rules/>
       <profiles>
         <profile id="0a9275c9-eda3-e249-d8cf-9af4d88c1f8c" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="XV107 R&apos;varna Battlesuit" hidden="false" page="0">
           <characteristics>
@@ -12765,6 +12692,346 @@ The models gains the Fleet special rule and when making a Run move, the controll
           <modifiers/>
         </link>
         <link id="edd7afc4-4411-bd8b-6675-eaf3dd327711" targetId="0d1767ba-6f50-97ba-62c7-e907f1248826" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="9f924d51-59e9-e56e-6aba-0ada8e1622f2" name="XV109 Y&apos;vahra Battlesuit [FW]" points="230.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="http://www.forgeworld.co.uk/Downloads/Product/PDF/X/Tau-XV109.pdf">
+      <entries>
+        <entry id="6661d6ed-32f0-b29b-9db7-06659131f582" name="Y&apos;vahra battlesuit" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="db3febad-43be-2375-f82d-622f0cbcb892" targetId="31fbbe6a-8a4e-346e-2dc4-ab2dc1613f82" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="3648ad7a-b6c5-fd4a-f56f-f196735db9e3" targetId="7d9c750a-732d-c50a-5099-74a7939af875" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="3abb49bd-e1c1-497c-6f7a-6cffdc2fe6bc" name="Ionic discharge cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="5feae555-d344-c723-3b1e-230df78f16c6" name="Haywire Burst" hidden="false">
+              <description>For each successful hit this weapon inflicts on a vehicle, roll for a single Haywire hit as well as resolving the attack from the weapon’s profile.</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="e932b416-2ba6-8b19-d479-22a291ce88fa" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Ionic discharge cannon" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 3, Blind, Haywire Burst"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="2dc5b64e-b804-a237-1da2-65750b8bef2c" name="Phased plasma-flamer" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="0e882e42-8ca3-dc3c-b483-13467d71e712" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Phased plasma-flamer (single canister)" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Template"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Torrent (6&quot;)"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="cb8f2df6-a7b1-3b6c-f443-cc495039b091" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Phased plasma-flamer (full rotation)" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Template"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 2, Torrent (6&quot;)"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="29fbfb95-cd7e-4a8c-6685-f476b90016c8" name="Ravelin shield generator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="239c46d3-fdc7-2f0c-31be-ddee6a049ef4" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Ravelin shield generator" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The Ravelin shield generator provides a 5+ Invulnerable save, increasing to 4+ against any attacks originating from within 12&quot; of the Y’vahra battlesuit or in close combat."/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="be50da24-09bc-93b9-d1b8-8b5b60cd9aaa" name="Vectored thruster array" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="b20be289-4503-0acd-1468-b73912305def" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Vectored thruster array" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="At the beginning of any of the controlling player’s Movement phases, a Y’vahra battlesuit may choose to move as though it was a Swooping Monstrous Creature for that phase. As this move represents a long bounding leap rather than true flight, the Y’vahra battlesuit does not gain the Vector Strike special rule while moving in this fashion. This special movement may not be used in two consecutive turns."/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="8c6bf00c-d6bd-08df-6a30-70a1ed7c27f4" name="Flechette dispersal pods" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="d0b9f9d7-8fae-3fed-7e3b-317cc23904a4" name="Flechette dispersal pods" hidden="false">
+              <description>Whenever the battlesuit enters play from Deep Strike or uses the vectored thruster array to move like a Swooping Monstrous Creature, when it finishes moving it may choose a single unengaged enemy unit within 6&quot; to suffer a flechette attack using the following profile. This attack takes place at the end of the Movement phase and does not count as the suit firing a weapon that turn.</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="a5ba86b0-6bdc-ab13-abaa-ecd01d77181c" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Flechette dispersal pods" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="6&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault D6, Shred"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="40410414-9386-1443-e7c2-0e81d4f64c54" name="Support Systems - max 2" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="dc22de63-bb45-365e-1bcc-e9b39c4ee56d" name="Advanced targeting system" points="3.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="dfacc922-667c-5ed7-8c70-c8b69bc04f69" targetId="02c91765-6330-2a40-f727-e7f6525780e9" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="e63b0509-69de-ca09-2126-20d3c44508e6" name="Counterfire defence system" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="82170cf8-a1f9-e5d2-b957-24840d5cdef0" targetId="eb30f158-03f8-5093-af21-7ffea4b7d1a1" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="3b6847f7-b6bb-e92f-5e8b-faab5fd11de3" name="Early warning override" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="4c1a4029-6c00-40d7-d392-1ad5ad863740" targetId="9ea45941-5974-ce39-edcc-2b08753df675" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="98c8dece-ff1b-50d1-00ae-4e69b63f5c89" name="Positional relay" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="66a92d36-1160-0b10-bcbe-d6eaf96c8f1c" targetId="4399fd29-0e42-7362-a9bf-e1231412fe4e" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="4e751abf-9fad-db0d-7366-392f54f3a508" name="Target lock" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="ec53c7cd-86f8-6663-283c-2d9ad0f8c2ee" targetId="b6466a4f-626b-798c-6e32-acee6a2cf16d" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="ccc2d5c5-15d2-a265-56ef-355718a9cad6" name="Drone controller" points="8.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="16833c08-2af8-beba-3072-54902008400a" targetId="fe930f18-98cc-e7e3-5ae0-71a2707d94f3" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="718021ea-60d7-64fa-b526-71ae76b31ff4" name="Stimulant injector" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="aabd3db0-c61d-cd41-2c05-d98cc7b22fef" targetId="bc5aa4ef-eb4c-21b7-1d88-514fb7654741" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="953b3886-a33b-27d0-76cb-68b7063c402c" name="Velocity tracker" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="a7e4977b-ccf4-dba3-c321-d9a4c784e383" targetId="7ea009f0-d5ce-75c9-6932-17d8950d1d32" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="d878a97c-03e9-1a0c-18c5-b7eb49841c52" name="Drones" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="3373fa4c-e11b-474e-44b4-7883a6c47e55" name="Shielded Missile Drone" points="25.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries>
+                <entry id="b0f9ca7e-cf7d-b834-a159-36f8b7254582" name="Missile pod" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="c6c10c72-927c-44b0-3bb0-97aa1dace1df" targetId="428e5b42-e515-7ea7-fb87-13459a889761" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="36fc664b-d984-2f6f-d573-4f01034d7862" name="Shield generator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="9c41b8eb-6092-e278-4448-cdadfeb1d8c4" targetId="f2d0aa1c-0a8f-1745-2ad5-db28bf7d7538" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="3278abef-1db8-00c5-ade2-91dca9046861" targetId="3cd32551-1477-84d2-1a37-82492a4fadc7" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="5cc1bea2-fba8-4cd9-2134-9d775fbd820f" name="Shield Drone" points="12.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries>
+                <entry id="68615e02-a142-e460-0c96-9159b368caf8" name="Shield generator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="0caa7faf-c617-50c4-10f0-ed8a0371fc75" targetId="f2d0aa1c-0a8f-1745-2ad5-db28bf7d7538" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="27e641ec-93fb-eccb-b1e4-f679c6eea2e8" targetId="c47b9bf3-cebd-bbe1-85d9-6b1554582607" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="39401096-9588-1f2d-62f9-bf3902685194" name="Nova Reactor - Y&apos;vahra Class" hidden="false">
+          <description>The Y’vahra class utilises a variant installation of the Riptide’s powerful if dangerous Nova reactor. Using the reactor follows the same rules as for a Riptide (see Codex: Tau Empire). Declare an attempt to use the Nova reactor if desired at the start of the model’s Movement phase. Roll a D6. On a result of 1-2, the Y’vahra fails and suffers a wound (no saves of any kind may be taken). On a 3+, one of the following abilities may be used, its effects lasting until the start of the owning player’s next Movement phase:
+
+Nova Barricade
+The model’s Invulnerable save is increased to 3+ against close combat attacks.
+
+Overcharged Ionic Burst 
+The ionic discharge cannon is treated as Heavy 3+D3 for the duration of this effect.
+
+Escape Thrust 
+At the start of the Movement phase, the model may be removed from play and placed in Ongoing Reserves. It may do this even if in close combat, in which case any previously engaged models consolidate as normal.
+
+Vector Evasion 
+The model gains the Jink special rule, and when Thrusting or Swooping gains a 4+ Cover save as if it had moved Flat Out.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="75a85d6c-b148-f0a8-a3cb-b6a92e6f8c9f" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="XV109 - Y&apos;vahra Shas&apos;vre" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Jetpack Monstrous Creature"/>
+            <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="2"/>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+            <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="6"/>
+            <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="6"/>
+            <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="4"/>
+            <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="2"/>
+            <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="3"/>
+            <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="9"/>
+            <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="2+"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="911688a4-f686-b204-ec78-d31602603d05" targetId="78ddae03-5da8-9e14-15b3-6a24882e5b8f" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="396989bf-9897-a0e7-7eae-b57aff08fb74" targetId="8c301ab2-994e-8dff-3330-7969f98e125c" linkType="rule">
           <modifiers/>
         </link>
       </links>
