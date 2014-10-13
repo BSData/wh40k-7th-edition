@@ -2381,7 +2381,7 @@
     </entry>
     <entry id="58153ee2-b9b6-32e2-1703-e69210584fd9" name="Company Veterans Squad" points="0.0" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
-        <entry id="7fed39dc-4eab-6fae-389b-d7935b0ec9ee" name="Veterans (inc Sgt)" points="18.0" categoryId="(No Category)" type="upgrade" minSelections="5" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="7fed39dc-4eab-6fae-389b-d7935b0ec9ee" name="Veterans (with Sgt)" points="18.0" categoryId="(No Category)" type="upgrade" minSelections="5" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -2443,19 +2443,7 @@
             </link>
           </links>
         </entry>
-        <entry id="b4949ed1-a86d-419a-1495-359b397a563e" name="Power Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="8d7b2ada-088d-d1fc-829e-2f2718c967cb" targetId="7378e53b-4daf-2474-c71e-cae7dcf7da90" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="4e647d79-67a0-de27-f14c-dfb556066d0d" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="BRB" page="56">
+        <entry id="4e647d79-67a0-de27-f14c-dfb556066d0d" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" book="BRB" page="56">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -2467,7 +2455,7 @@
             </link>
           </links>
         </entry>
-        <entry id="3c0fd26b-cea3-d95c-c7aa-27bdbbd4c8eb" name="Boltgun" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="BRB" page="56">
+        <entry id="3c0fd26b-cea3-d95c-c7aa-27bdbbd4c8eb" name="Boltgun" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" book="BRB" page="56">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -2762,6 +2750,10 @@
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
+                <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="58153ee2-b9b6-32e2-1703-e69210584fd9" incrementChildId="7fed39dc-4eab-6fae-389b-d7935b0ec9ee" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
               </modifiers>
               <links/>
             </entryGroup>
@@ -2819,7 +2811,7 @@
               </modifiers>
               <links/>
             </entryGroup>
-            <entryGroup id="90394970-c80e-fcc3-f96c-b02706c8a48c" name="Exchange for" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entryGroup id="90394970-c80e-fcc3-f96c-b02706c8a48c" name="Exchange" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
                 <entry id="50f90b20-9d17-d88c-a4cc-61ce4a4c6a53" name="Boltgun for Chain Sword" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="BRB" page="60">
                   <entries/>
@@ -2878,6 +2870,10 @@
               <conditions/>
               <conditionGroups/>
             </modifier>
+            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="47910258-feee-9304-19f8-b2cb16a603a8" incrementChildId="90394970-c80e-fcc3-f96c-b02706c8a48c" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <links/>
         </entryGroup>
@@ -2899,6 +2895,9 @@
           <modifiers/>
         </link>
         <link id="ef3a1074-9ce2-ef27-960e-ac3c25ec72c8" targetId="b5471d70-0c4d-8ccf-7c6d-86836279515c" linkType="entry group">
+          <modifiers/>
+        </link>
+        <link id="2f018b62-9be1-5647-22ba-9f8ab1eac2a1" targetId="09db019a-e157-5a29-c0ac-06349b6d7994" linkType="entry">
           <modifiers/>
         </link>
       </links>
