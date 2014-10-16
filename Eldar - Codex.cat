@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="96cb9a0c-277b-20f8-c454-4ef85899ae1b" revision="27" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Eldar: Codex (2013)" authorName="Magc8Ball" authorContact="jason@titaniumspork.org" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="96cb9a0c-277b-20f8-c454-4ef85899ae1b" revision="29" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Eldar: Codex (2013)" authorName="Magc8Ball" authorContact="jason@titaniumspork.org" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="c1b3594a-2e16-4638-80c7-d34eeb0df10c" name="Asurmen, The Hand of Asuryan" points="220.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Eldar (2013)" page="56">
       <entries>
@@ -814,7 +814,7 @@ and Lance special rules.</description>
       <profiles/>
       <links/>
     </entry>
-    <entry id="862db5c9-d17f-3a5e-c99c-9b529978c99e" name="Cobra" points="675.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour: Apocalypse " page="93">
+    <entry id="862db5c9-d17f-3a5e-c99c-9b529978c99e" name="Cobra *" points="675.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour: Apocalypse " page="93">
       <entries>
         <entry id="4ef0c7db-1d89-7f25-dfe8-15f3cfca7d29" name="D-Impaler" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -2594,7 +2594,7 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
         </link>
       </links>
     </entry>
-    <entry id="88cada53-ce2c-e603-ab64-96df06c2a2de" name="Fire Storm (IA:Aero)" points="180.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="88cada53-ce2c-e603-ab64-96df06c2a2de" name="Fire Storm *" points="180.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="(IA:Aero)" page="0">
       <entries>
         <entry id="3ab21f63-e3f1-cd95-4aba-52e4a8ad97ff" name="Vectored engines" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -2708,7 +2708,14 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="3f93581d-24a9-3dd7-5862-a043b9691ae5" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles>
         <profile id="b4edc5d0-3380-4407-4db8-49e383aa0a07" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Fire Storm" hidden="false" page="0">
@@ -3511,7 +3518,7 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
       </profiles>
       <links/>
     </entry>
-    <entry id="6e221c15-d7a7-c444-a6b4-452f20429bdf" name="Hornet Squadron (IA: A 6E)" points="0.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="6e221c15-d7a7-c444-a6b4-452f20429bdf" name="Hornet Squadron *" points="0.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book=" (IA: A 6E)" page="0">
       <entries>
         <entry id="2cbefe2a-78dd-c26d-3cc6-5a38e57a85ba" name="Hornet" points="70.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries>
@@ -3685,7 +3692,14 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="d14bf953-0a2e-3af9-a270-7961c3076c2a" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="6dbfea59-d241-6c06-4b7f-c6f7cf77d0b0" name="Scout" hidden="false" page="0">
           <modifiers/>
@@ -4032,7 +4046,7 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
         </link>
       </links>
     </entry>
-    <entry id="92ba34c6-f5cc-2678-14a8-863813bf811c" name="Iryllith, Shade of Twilight" points="220.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="IA: 11 (PDF Update 2)" page="142">
+    <entry id="92ba34c6-f5cc-2678-14a8-863813bf811c" name="Iryllith, Shade of Twilight *" points="220.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="IA: 11 (PDF Update 2)" page="142">
       <entries>
         <entry id="03879c08-df1a-2ecc-a888-c7169be21634" name="Spear of Starlight" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -4063,7 +4077,14 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="41af9020-45b1-3872-2479-95562b531a47" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="36a68b86-26a6-f1ae-92c1-7f08d07bd309" name="Hit &amp; Run" hidden="false" book="Warhammer 40K Rulebook" page="38">
           <modifiers/>
@@ -4380,7 +4401,7 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
         </link>
       </links>
     </entry>
-    <entry id="bd05247b-7aa3-c8c8-0842-07e33855d833" name="Lynx" points="420.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour: Apocalypse " page="97">
+    <entry id="bd05247b-7aa3-c8c8-0842-07e33855d833" name="Lynx *" points="420.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour: Apocalypse " page="97">
       <entries/>
       <entryGroups>
         <entryGroup id="637f5711-c4df-591c-c1b6-32eedccb6409" name="Auxiliary Weapon" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -4701,7 +4722,7 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
         </link>
       </links>
     </entry>
-    <entry id="4b17abf2-5d7d-b3b3-e4b6-9f527c5d26ee" name="Nightwing Interceptor (IA: Aero)" points="145.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="4b17abf2-5d7d-b3b3-e4b6-9f527c5d26ee" name="Nightwing Interceptor" points="145.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book=" (IA: Aero)" page="0">
       <entries>
         <entry id="4a2ceef6-6423-5861-cd7a-bdc6195df7ca" name="2 Bright Lances" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -4741,7 +4762,14 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="d14bf953-0a2e-3af9-a270-7961c3076c2a" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="6557615d-5808-901e-728f-79ae35c94eda" name="Deep Strike" hidden="false" page="0">
           <modifiers/>
@@ -4774,7 +4802,7 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
       </profiles>
       <links/>
     </entry>
-    <entry id="75f28e37-3324-b9b1-ad6c-d82f09649af4" name="Phantom Titan" points="2500.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Apocalype" page="147">
+    <entry id="75f28e37-3324-b9b1-ad6c-d82f09649af4" name="Phantom Titan *" points="2500.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Apocalype" page="147">
       <entries>
         <entry id="3032d47d-21a5-224a-6158-b8de3a2be0ac" name="Phantom Cloudburst Missile Launcher" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -4957,7 +4985,7 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
         </link>
       </links>
     </entry>
-    <entry id="f1d41481-d3bb-bfaa-dcea-19f140e98f71" name="Phoenix Bomber (IA: Aero)" points="225.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="f1d41481-d3bb-bfaa-dcea-19f140e98f71" name="Phoenix Bomber *" points="225.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book=" (IA: Aero)" page="0">
       <entries>
         <entry id="a363df89-c2ec-238d-cfff-a1411b9c800e" name="2 Shuriken Cannons" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -5084,7 +5112,14 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="3f93581d-24a9-3dd7-5862-a043b9691ae5" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="d15eca76-a05d-cfb6-7d5f-ad65d5a9e5dc" name="Deep Strike" hidden="false" page="0">
           <modifiers/>
@@ -5299,7 +5334,7 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
         </link>
       </links>
     </entry>
-    <entry id="745e7178-4eb0-a490-7290-5b6c9f50e50e" name="Revenant Titan" points="900.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Escalation" page="0">
+    <entry id="745e7178-4eb0-a490-7290-5b6c9f50e50e" name="Revenant Titan *" points="900.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Escalation" page="0">
       <entries>
         <entry id="a4e95b5c-eaa9-5687-b558-8e89591f9a95" name="Revenant Missile Launcher" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -5397,7 +5432,7 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
         </link>
       </links>
     </entry>
-    <entry id="c4dcc825-bef9-e217-9cc6-4e8ae117cfa7" name="Scorpion" points="650.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour: Apocalypse " page="94">
+    <entry id="c4dcc825-bef9-e217-9cc6-4e8ae117cfa7" name="Scorpion *" points="650.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour: Apocalypse " page="94">
       <entries>
         <entry id="43a75b0c-8d73-7306-3960-b3d240cff4fc" name="Twin-Linked Pulsar" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -5572,7 +5607,7 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
         </link>
       </links>
     </entry>
-    <entry id="a2f7af93-f9d4-aaa1-fe01-35d9b661ed8d" name="Shadow Spectres" points="0.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Forge World Update" page="0">
+    <entry id="a2f7af93-f9d4-aaa1-fe01-35d9b661ed8d" name="Shadow Spectres *" points="0.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Forge World Update" page="0">
       <entries>
         <entry id="9c3a8a71-72fd-ddd7-9537-13c617081f49" name="Haywire grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -5774,7 +5809,14 @@ to either suffer 1 Wound and pass the Psychic test, or not suffer a Wound and in
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="d14bf953-0a2e-3af9-a270-7961c3076c2a" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="1a9770bc-1e2f-c11d-8db6-92936c5851a0" name="Spectre Holo-Field" hidden="false" book="" page="38">
           <modifiers/>
@@ -7946,7 +7988,7 @@ additional Attacks equal to the number of Phoenix Lords within 6&quot; of him.</
         </link>
       </links>
     </entry>
-    <entry id="05ac3968-6213-89d1-a921-e46a6bbc5945" name="Vampire Raider" points="730.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour: Apocalypse" page="95">
+    <entry id="05ac3968-6213-89d1-a921-e46a6bbc5945" name="Vampire Raider *" points="730.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour: Apocalypse" page="95">
       <entries>
         <entry id="dc4fdb31-edf1-4cff-f0a1-d72646789679" name="Scatter Laser" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -8644,7 +8686,7 @@ additional Attacks equal to the number of Phoenix Lords within 6&quot; of him.</
         </link>
       </links>
     </entry>
-    <entry id="37db1f9c-6102-7395-8af1-d671342b7ac1" name="Warp Hunter (IA: A 6E)" points="145.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="37db1f9c-6102-7395-8af1-d671342b7ac1" name="Warp Hunter *" points="145.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book=" (IA: A 6E)" page="0">
       <entries>
         <entry id="8de1521c-f181-df1a-0300-6e584eb36a90" name="D-Flail" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -8731,7 +8773,14 @@ additional Attacks equal to the number of Phoenix Lords within 6&quot; of him.</
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="3f93581d-24a9-3dd7-5862-a043b9691ae5" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles>
         <profile id="15fdc231-fb29-4774-1685-07d90b8bb971" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Warp Hunter" hidden="false" page="0">
@@ -8968,7 +9017,7 @@ additional Attacks equal to the number of Phoenix Lords within 6&quot; of him.</
         </link>
       </links>
     </entry>
-    <entry id="851474dd-4c2b-7d0d-3e56-4f0eb2474cb0" name="Wasp Assault Walker Squadron (IA 11)" points="0.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="851474dd-4c2b-7d0d-3e56-4f0eb2474cb0" name="Wasp Assault Walker Squadron *" points="0.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book=" (IA 11)" page="0">
       <entries>
         <entry id="9dd9cef3-7803-cacc-4ff5-0903fdf5e194" name="Wasp Assault Walker" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries>
@@ -9053,7 +9102,14 @@ additional Attacks equal to the number of Phoenix Lords within 6&quot; of him.</
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="d14bf953-0a2e-3af9-a270-7961c3076c2a" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="12a5421b-af63-2dde-ceb0-67530aa0f5da" name="Deep Strike" hidden="false" page="0">
           <modifiers/>
@@ -10376,7 +10432,7 @@ models would add 5&quot; to their moves and charge range, and +5 to each model&a
       <profiles/>
       <links/>
     </entry>
-    <entry id="ba524843-3dfa-77ec-1dc8-655c269d9350" name="Wraithseer (IA:A 6E)" points="185.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="ba524843-3dfa-77ec-1dc8-655c269d9350" name="Wraithseer *" points="185.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="(IA:A 6E)" page="0">
       <entries>
         <entry id="c80300ab-1843-c62a-9284-7c9364f44135" name="Ghostspear" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -10529,7 +10585,14 @@ models would add 5&quot; to their moves and charge range, and +5 to each model&a
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="41af9020-45b1-3872-2479-95562b531a47" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="a8c80f90-85bd-b4e3-cae4-05a41176f671" name="Fearless" hidden="false" page="0">
           <modifiers/>
@@ -10568,6 +10631,47 @@ models would add 5&quot; to their moves and charge range, and +5 to each model&a
           <modifiers/>
         </profile>
       </profiles>
+      <links/>
+    </entry>
+    <entry id="5022830b-9513-b629-e3c3-555145ddaf71" name="Show FW models" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="41af9020-45b1-3872-2479-95562b531a47" name="1. HQ" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="584290ec-d664-d721-4479-ad9fc8aba71b" name="2. Elites" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="d14bf953-0a2e-3af9-a270-7961c3076c2a" name="3. Fast Attack" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="3f93581d-24a9-3dd7-5862-a043b9691ae5" name="4. Heavy Support" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
       <links/>
     </entry>
   </entries>
