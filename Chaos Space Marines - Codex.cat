@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="76" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Chaos Space Marines: Codex (2012)" authorName="SincerelyNoob, JJ, Magc8Ball, Grarg, NebSeele" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="77" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Chaos Space Marines: Codex (2012)" authorName="SincerelyNoob, JJ, Magc8Ball, Grarg, NebSeele" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="e04e4fdc-f3f4-b49a-79ac-b87f3e31d401" name="[FW] Arkos the Faithless (IA: Apoc 2013)" points="130.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="IA Apoc 2013" page="153">
       <entries>
@@ -1209,10 +1209,17 @@ On a roll of a 2-5, it remains wrecked but the controlling player may attempt to
         </link>
       </links>
     </entry>
-    <entry id="5865a53b-12a8-5ee7-eb29-f065aee8d392" name="[FW] Chaos Dreadclaw Drop Pod" points="0.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="5865a53b-12a8-5ee7-eb29-f065aee8d392" name="[FW] Chaos Dreadclaw Drop Pod" points="0.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="3dd1fae4-8af3-bcef-9a8b-7acdc3aa9986" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -1866,11 +1873,7 @@ On a roll of a 2-5, it remains wrecked but the controlling player may attempt to
                   <modifiers/>
                 </profile>
               </profiles>
-              <links>
-                <link id="5c1b402c-713d-1071-70c6-d9d24889be73" targetId="3b274b36-947f-e4d9-9144-bccbd8c7c3ca" linkType="rule">
-                  <modifiers/>
-                </link>
-              </links>
+              <links/>
             </entry>
             <entry id="2469df60-cdba-6f8c-308c-f38e5f72b705" name="Chaos Space Marine crew" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
@@ -2493,6 +2496,18 @@ On a roll of a 2-5, it remains wrecked but the controlling player may attempt to
           <profiles/>
           <links/>
         </entry>
+        <entry id="137b04dd-de51-6aff-c728-1829816ae54a" name="Maelific Ammo" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="becda0ae-5d1b-8e35-524a-3dab64cf3c30" targetId="12257a6f-0d61-5535-fcbb-fc7593d3e190" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
       </entries>
       <entryGroups>
         <entryGroup id="7b1a068b-20bb-b6d0-fdc2-9b1be8653888" name="Sonic Blaster Arm" defaultEntryId="8ca24a6b-893f-a4da-72b9-3e2747aebfc1" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -2729,6 +2744,18 @@ On a roll of a 2-5, it remains wrecked but the controlling player may attempt to
           <rules/>
           <profiles/>
           <links/>
+        </entry>
+        <entry id="4772f5b6-a3da-0176-15b9-ff2db3c0a4d2" name="Maelific Ammo" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="03b9f9e1-11cd-4141-6040-8c95ca53800d" targetId="12257a6f-0d61-5535-fcbb-fc7593d3e190" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
         </entry>
       </entries>
       <entryGroups>
@@ -19555,6 +19582,762 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
           <modifiers/>
         </link>
       </links>
+    </entry>
+    <entry id="27af0260-faef-fd8d-1769-465c4c0ca6f3" name="[FW] Chaos Infernal Relic Achilles" points="330.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries>
+        <entry id="2d908947-a012-87b5-183b-9c7b8029ac98" name="Searchlight" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="fb73ea85-e249-d333-6d01-5eeff8268641" name="Smoke Launchers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="32274f3c-ef3d-290a-90b3-046462870633" name="Hull Mounted Quad Mortar" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="ab6bd53f-8f4b-48a7-f2f7-a0a125a621a0" name="Shell Shock" hidden="false">
+              <description>Pinning tests caused by these attacks are made at a -1 Ld penalty.</description>
+              <modifiers/>
+            </rule>
+            <rule id="3902d4e2-199a-80f5-8442-cf8966adc3a6" name="Fuelled by Hate" hidden="false">
+              <description>For each HP lost, the strength and AP of the Quad Mortar improve by +1 and the Shell Shock pinning modifier reduced by -1.</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="33d52c14-417f-5a62-101c-f8c27bd1a176" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Hull Mounted Quad Mortar" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot; - 40&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 4, Barrage, Pinning
+Blast (3&quot;), Shell Shock, Fuelled by Hate"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="0804f567-76ed-f0ab-c838-73f318de6e04" name="Sponson Mounted Twin-linked Multi-Melta" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="c0b0e79a-d273-3dd7-b389-0a403b92df09" targetId="d5441a7b-85df-4a78-f7e4-3bb1655320e1" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="5ae2d60e-a368-0031-9680-8b1c38927ff4" name="Extra Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="a1e97ece-4e3c-915f-86f0-823d1ca317f0" name="Armoured Ceramite" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="64e3b299-a9e1-6eef-3b8c-318043139ab7" targetId="c688cac8-ae66-21c8-a6e0-f63906a995ea" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="b05a2920-5851-80af-ffb6-893b639636f3" name="Maelific Ammunition" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="215d6b56-1606-abe5-18ee-6a72478a6363" targetId="12257a6f-0d61-5535-fcbb-fc7593d3e190" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="2939afc5-af79-ee41-dde6-9e4227e8ef5f" name="Upgrade Options" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="17797b2c-a5fd-4d3e-800a-fe013e0b81a4" name="Dirge Casters" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="e7ea77cb-2d9b-9206-779a-b2d4ddbb1f55" targetId="c8605a67-70e7-89e0-f747-abb01e50e43c" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="c8373a69-ea72-f6e7-728d-1e51ae13a0f9" name="Dozer Blades" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="defaf43b-358f-2474-344d-b491f58b1489" name="Warpflame Gargoyles" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="e5ac8896-667a-0f75-69bc-17f0656e9291" targetId="39727fe9-2186-da1f-121a-ba156ae612eb" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="2b70ef2b-93ff-9752-85c7-10bb9f3160d1" name="Havoc Launcher" points="12.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="b7137bce-89c1-2d5c-5250-744ffb925d86" targetId="bdf8b5a5-7f79-c8bb-3059-5ad2266b4d0d" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="1c404164-78d5-6276-4d91-dd99d71f9832" name="Destroyer Blades" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="475ce8e8-c607-051b-eda6-4fe35a4d7059" targetId="04bef005-b1b6-f9b2-8127-86cbfa3525da" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="c6d31264-4de5-1037-8740-a8092f98ab57" name="Daemonic Possession" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="f434d77b-e2ad-d2da-115a-faaeaa1bcff1" targetId="41d92af2-6429-c745-dbae-fef1ccbe7878" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="7453c7c1-6c93-5a94-564f-b15e244b5317" name="Pintle Mounted Weapons" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="1dacdf12-c0a8-8f01-a670-1994bacd6280" name="Combi-weapon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="6d4b6410-be24-b0de-1a2b-f391fec32bda" targetId="e4d19ad2-1cb9-c9f4-0d63-3298483883ce" linkType="entry group">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="3618d199-96ee-2d91-d017-bab64725bba3" name="Heavy Bolter" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="b1532a8c-75fb-921d-fb60-cbaa3d09afb4" targetId="f7064d90-79e5-29d0-cce9-ed6d02781e87" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="eacc087e-4677-5a67-d57d-88bd5b0f04a6" name="Heavy Flamer" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="672ad902-2a26-ffff-dd2b-b7003ce98422" targetId="55d0de57-c29f-6976-8380-83dfd9524c36" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="0d74ca29-d21c-7973-877d-7f04ddc39337" name="Multi-Melta" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="eddc6d47-9285-262a-85f2-cdd1e7039d55" targetId="d5441a7b-85df-4a78-f7e4-3bb1655320e1" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="3dd1fae4-8af3-bcef-9a8b-7acdc3aa9986" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="b9491289-5cb2-44ce-c391-c944643d8b15" name="Transport Capacity: Achilles" hidden="false">
+          <description>Can transport 6 models</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="3d36eebb-20d0-ea22-ab5b-79f212cec2c5" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Chaos Infernal Relic Achilles" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="14"/>
+            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="14"/>
+            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="14"/>
+            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="4"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Tank, Transport)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="cb0e6277-371f-48c9-2291-2d8951c417a7" targetId="7050b6c0-56e6-f142-9579-83b73560e74c" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="54c923de-3872-499e-97ad-4218e429d205" name="[FW] Chaos Land Raider Proteus" points="200.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries>
+        <entry id="8464ca7f-ac56-b071-be35-c00c81d329af" name="Searchlight" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="ac1d6aae-a413-e175-1a4f-6760fe6aaf55" name="Smoke Launcher" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="cf7b202b-34a0-5566-4e2a-224db11def45" name="Sponson-mounted Twin-linked Lascannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="3a1dfa44-bdbd-53a7-032e-075161c09fa4" targetId="df8b12e5-1e02-5356-b449-9ae888997e91" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="d6bd6247-0fde-b3b5-418d-93e529384ac3" name="Maelific Ammunition" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="63cfda37-e3fc-9639-1f31-995caadc2069" targetId="12257a6f-0d61-5535-fcbb-fc7593d3e190" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="297758d4-eb53-9b24-ba81-a33db467fb3d" name="Ark of Unnameable Horror" points="50.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="a0e7e360-b2ed-a631-0a91-6523654e5ac8" name="Ark of Unnameable Horror" hidden="false">
+              <description>Any enemy shooting against the Proteus must take a Pinning test. If it passes, it may fire as normal. If it fails, it goes to ground and may not fire.
+
+Does not apply to weapons firing without LoS, Fearless units or units without as Ld Characteristic.</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="180b7d54-3787-24b6-8699-2d86aebd379c" name="Upgrade Options" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="d674a5de-7b60-f117-6820-ad9d39c1566b" name="Dirge Casters" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="6c72d609-8d48-8b37-9509-b1c2826e3446" targetId="c8605a67-70e7-89e0-f747-abb01e50e43c" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="daeef33e-85d0-c761-2831-a01e6204e1ff" name="Dozer Blades" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="da23c7b2-c976-6d45-6281-8bf84bb6909e" name="Warpflame Gargoyles" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="9ef12509-911a-a2b1-0885-4a97b15ad26c" targetId="39727fe9-2186-da1f-121a-ba156ae612eb" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="b12cfff4-936e-df5f-f0fb-a120a91e84ec" name="Havoc Launcher" points="12.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="52f104d6-4f66-e9ad-4463-0b7a5439e3e5" targetId="bdf8b5a5-7f79-c8bb-3059-5ad2266b4d0d" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="f8f92569-77b0-5c65-ed97-9c30869c455e" name="Destroyer Blades" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="53e59f58-ff1e-357b-bb58-75562fa5fea4" targetId="04bef005-b1b6-f9b2-8127-86cbfa3525da" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="6a98fbea-4620-edd3-b2e1-5a6503d1f249" name="Daemonic Possession" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="4582889b-e930-99ff-137a-db20e76d4729" targetId="41d92af2-6429-c745-dbae-fef1ccbe7878" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="cac5cafa-7533-6d4d-9711-eaa380288461" name="Armoured Ceramite" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="16ff08dd-3b32-d20b-ca83-c8667fae8516" targetId="c688cac8-ae66-21c8-a6e0-f63906a995ea" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="e983b670-2c32-8acf-126d-97d311dc3de9" name="Extra Armour" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="77735466-2117-beef-f866-1a59ed394344" name="Pintle Mounted Weapons" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="9ca1c7f5-8596-693c-225e-1a1d38a4f554" name="Combi-weapon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="777a07cd-d990-e938-a60c-9d824b44ec92" targetId="e4d19ad2-1cb9-c9f4-0d63-3298483883ce" linkType="entry group">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="ba61bedf-b5cb-f550-e191-9cb228673d56" name="Heavy Bolter" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="5f4d4661-706e-3d7d-8ec2-1ad27a1e9cbb" targetId="f7064d90-79e5-29d0-cce9-ed6d02781e87" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="ca9d21f0-5af1-4786-ae34-445ddb75c326" name="Heavy Flamer" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="bee634b6-e114-9444-6354-668a239e37c4" targetId="55d0de57-c29f-6976-8380-83dfd9524c36" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="a1cc2f89-08cd-8de3-4176-3fae322a050e" name="Multi-Melta" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="91ceb80e-d33b-bf23-89e7-289cbc36d64a" targetId="d5441a7b-85df-4a78-f7e4-3bb1655320e1" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="3e66dd2e-6dbb-d63c-459b-1c380f1ec0a8" name="Hull-mounted weapon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="9c562c68-81d7-2d2a-f730-17601e385a6c" name="Twin-linked Heavy Bolter" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="6e7228bb-8379-0a8b-8c59-a86ca945640a" targetId="f7064d90-79e5-29d0-cce9-ed6d02781e87" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="b920c100-9dcd-9e26-f8bf-ea05e33e8278" name="Twin-linked Heavy Flamer" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="c7ccfb65-be97-c97f-a595-94a4d0056160" targetId="55d0de57-c29f-6976-8380-83dfd9524c36" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="3dd1fae4-8af3-bcef-9a8b-7acdc3aa9986" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="80d47607-ca6d-9bcf-a672-ad6a3b0abea3" name="Transport Capacity: Proteus" hidden="false">
+          <description>Can carry 10 models, 8 if Ark of Unnameable Horror is selected</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="12a1fa92-2bdb-7163-1be4-88a9cc20b414" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Chaos Land Raider Proteus" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="14"/>
+            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="14"/>
+            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="14"/>
+            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="4"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Tank, Transport)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="3fb25be2-4372-43c4-7d95-d57e1e0dca45" targetId="4bf37f51-e484-ff05-0545-f477a09d1f6b" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="711280e1-8354-c394-7c58-d8dcea82ccfb" name="[FW] Chaos Relic Sicarian" points="135.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries>
+        <entry id="bb892119-574b-1bd7-9fc3-109cc74e500a" name="Searchlight" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="c2385c45-57db-176e-48b3-c270b2e2965b" name="Smoke Launcher" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="9b5b42c3-f685-73df-9a9b-d5970dfece30" name="Twin-Linked Accelerator Autocannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="c81850e5-10d3-989e-23f2-335ae546ce7a" name="Rapid Tracking" hidden="false">
+              <description>Targets may not jink against shots from this weapon.</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="6af3c53b-8caf-2bee-1da0-e26c640245a0" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Accelerator Autocannon" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="48&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 6, Rending, Rapid Tracking"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="9e654a05-6cf9-cb45-dffe-594870cdbbef" name="Heavy Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="d3e57771-54fe-b714-3b37-62ac4251464c" targetId="f7064d90-79e5-29d0-cce9-ed6d02781e87" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="faf6cb99-7b37-c8ea-7175-ccb8e04923b6" name="Maelific Ammunition" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="f4b45249-db45-2c79-922b-1ed231a0de2b" name="Upgrade Options" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="15677c60-e590-d530-3aca-b78a06142fdf" name="Dirge Casters" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="4c330cb7-9031-7354-e0d4-58d1e8a792e6" targetId="c8605a67-70e7-89e0-f747-abb01e50e43c" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="8c1eadac-9301-4e48-f7df-4ec08f690aea" name="Dozer Blades" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="897ed45c-c075-12f3-47e8-23de23672f56" name="Warpflame Gargoyles" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="18c8d8c7-3f89-0c03-946b-db8706df69d0" targetId="39727fe9-2186-da1f-121a-ba156ae612eb" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="5e5fc6eb-a6bb-a331-3471-05459c6f9dc4" name="Havoc Launcher" points="12.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="4f6d68ef-77f6-ab7d-1ba0-293c8f4bb8de" targetId="bdf8b5a5-7f79-c8bb-3059-5ad2266b4d0d" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="03af0a3f-7d85-f477-d453-0d841c6aac91" name="Destroyer Blades" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="584873b0-8808-a67c-eaa5-548fdcbd5096" targetId="04bef005-b1b6-f9b2-8127-86cbfa3525da" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="6396a0a0-0d64-e7fc-488a-f48b905eae71" name="Daemonic Possession" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="3a02ad1c-28b6-4bb8-02da-07c26ac235f1" targetId="41d92af2-6429-c745-dbae-fef1ccbe7878" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="83d07cfd-7b42-8807-176a-75fd5fee5ab1" name="Armoured Ceramite" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="63f49c11-6e69-f716-9c18-f6e7f2a41a9d" targetId="c688cac8-ae66-21c8-a6e0-f63906a995ea" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="2fe5d733-5699-602b-dee0-ed6e039aed72" name="Extra Armour" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="23986421-625e-4aea-070b-af358bc5a1b0" name="Pintle-Mounted Combi-weapon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="9341bae1-81ac-a020-924e-359b11bf2d0f" targetId="e4d19ad2-1cb9-c9f4-0d63-3298483883ce" linkType="entry group">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="d2dd0de3-5e83-3db4-9b3c-267a748fed35" name="Sponson Weapons" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="f40c0179-4016-0b45-be07-04ba88ac2b26" name="Heavy Bolters" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="6393752c-7203-440c-2cde-813106efb6a0" targetId="f7064d90-79e5-29d0-cce9-ed6d02781e87" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="b537afcc-6c73-db30-cbad-6991b19dddb1" name="Lascannons" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="87c30db0-7f77-a40c-fc8d-b0bc18b36554" targetId="df8b12e5-1e02-5356-b449-9ae888997e91" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="3dd1fae4-8af3-bcef-9a8b-7acdc3aa9986" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles>
+        <profile id="1138ddda-f058-e2bc-c4b5-7e4a649e2d06" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Chaos Relic Sicarian Battle Tank" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="13"/>
+            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="12"/>
+            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="12"/>
+            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="3"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Tank, Fast)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
     </entry>
   </entries>
   <rules/>
