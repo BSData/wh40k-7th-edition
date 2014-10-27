@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="88" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="89" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="e04e4fdc-f3f4-b49a-79ac-b87f3e31d401" name="[FW] Arkos the Faithless (IA: Apoc 2013)" points="130.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="IA Apoc 2013" page="153">
       <entries>
@@ -23058,6 +23058,9 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
         <link id="ec63af4f-a129-155f-6885-12259b3cb03d" targetId="767879b7-ee12-d3c5-5523-498a308a5850" linkType="entry group">
           <modifiers/>
         </link>
+        <link id="46d99cee-c043-dbbd-b1d2-67a425a51c1d" targetId="9be57471-9796-716e-1145-bd67dedf8425" linkType="entry group">
+          <modifiers/>
+        </link>
       </links>
     </entry>
     <entry id="ec5d28a5-45ee-3773-9ddb-3dfc4a77b0d7" name="Dimensional Key" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -23896,6 +23899,12 @@ At the end of a phase that the Black Mace caused an unsaved wound, all non vehic
         <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
             <condition parentId="roster" childId="3dd1fae4-8af3-bcef-9a8b-7acdc3aa9986" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="direct parent" childId="09243f44-531e-9560-4eee-88482d38ddbe" field="selections" type="equal to" value="1.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
