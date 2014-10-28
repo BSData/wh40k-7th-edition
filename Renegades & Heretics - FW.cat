@@ -4487,7 +4487,14 @@
             <entryGroup id="c11ade4d-ba5d-d85f-acee-bb5d36f4c217" name="Chaos Demagogue Devotion" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="force type" childId="416c6c696564204465746163686d656e7423232344415441232323" field="selections" type="instance of" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <links>
                 <link id="f11056aa-e820-7261-50ef-f5949dfe0b0d" targetId="a419c452-c5ea-5e65-941c-2bc0449be4f4" linkType="entry">
                   <modifiers/>
@@ -4515,13 +4522,19 @@
             <entryGroup id="e94c9151-6216-720a-767c-7a652ed17f32" name="Chaos Covenant" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups>
-                <entryGroup id="ee20c9a5-499b-083d-9ec8-ff85b1511100" name="Warlord Option (Master of Renegades)" defaultEntryId="daec4cd2-9828-d30f-0bc6-106bae7b933b" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entryGroup id="ee20c9a5-499b-083d-9ec8-ff85b1511100" name="Warlord Covenant (Master of Renegades)" defaultEntryId="daec4cd2-9828-d30f-0bc6-106bae7b933b" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries/>
                   <entryGroups/>
                   <modifiers>
                     <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions>
                         <condition parentId="eca0943d-4131-fdcd-a0a1-37f11f97bfc8" childId="f3aee269-2f69-f57e-eaea-6a91ac502357" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="force type" childId="416c6c696564204465746163686d656e7423232344415441232323" field="selections" type="instance of" value="0.0"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -4584,7 +4597,7 @@
                     </link>
                   </links>
                 </entryGroup>
-                <entryGroup id="0c3bb60a-bc01-a8db-bdd6-85084fef3b17" name="Standard Option" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entryGroup id="0c3bb60a-bc01-a8db-bdd6-85084fef3b17" name="Standard Covenant" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries>
                     <entry id="ca283102-2eef-a6d0-6782-0b7668c092c5" name="Covenant of Khorne" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                       <entries/>
@@ -17882,7 +17895,14 @@
     <entry id="f3aee269-2f69-f57e-eaea-6a91ac502357" name="Warlord" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Warhammer 40k rulebook" page="0">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="416c6c696564204465746163686d656e7423232344415441232323" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
