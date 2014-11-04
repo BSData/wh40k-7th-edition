@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4d97de7d-c308-474b-130f-45249f75d138" revision="2" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Astra Militarum: IA04.2 - Elysian Detachment D-99 (2014)" books="" authorName="k" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4d97de7d-c308-474b-130f-45249f75d138" revision="3" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Astra Militarum: IA04.2 - Elysian Detachment D-99 (2014)" books="" authorName="k" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="91231c96-4b08-d558-16cb-89e92faedc25" name="Cerastus Knight-Acheron" points="415.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Acheron.pdf">
       <entries>
@@ -7872,7 +7872,7 @@
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="9799a261-2430-f0a5-7fe7-8f683a562fb8" name="Armament" defaultEntryId="c581e44b-bf04-75fc-dd1c-732ba0c4c9f9" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="9799a261-2430-f0a5-7fe7-8f683a562fb8" name="Armament" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="2eaf7cc5-2f4d-6b7e-242b-c49a805f756a" name="Twin-linked Punisher Gatling Cannon" points="50.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
@@ -7886,27 +7886,12 @@
                 </link>
               </links>
             </entry>
-            <entry id="c581e44b-bf04-75fc-dd1c-732ba0c4c9f9" name="Twin-linked Multilaser &amp; 2x Hellstrike Missiles" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="19104860-f722-f2ae-06ce-2a7af684f8fd" targetId="f8a78f8e-00e5-69d0-a33e-a4e530daaa3e" linkType="profile">
-                  <modifiers/>
-                </link>
-                <link id="3fc7b7be-b374-8afb-89d8-019060110294" targetId="8899a382-6e97-dfc4-af4c-750effbe8d0b" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
           </entries>
           <entryGroups>
             <entryGroup id="6b6ba1d2-7f84-2dfc-8574-1bbfc01816c2" name="or" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
               <entryGroups>
-                <entryGroup id="c595b51e-9ead-ea59-6359-c8a85e5df330" name="choose" defaultEntryId="4b930d2d-1ca2-4b46-f5e1-5e653322d755" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entryGroup id="c595b51e-9ead-ea59-6359-c8a85e5df330" name="choose" defaultEntryId="4b930d2d-1ca2-4b46-f5e1-5e653322d755" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries>
                     <entry id="bf122f1c-8306-e20d-afd4-5c8094a6afa8" name="2x Multiple Rocket Pods" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                       <entries/>
@@ -7970,10 +7955,17 @@
                     </entry>
                   </entries>
                   <entryGroups/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="aa358cdf-087a-1441-a54f-78b1d3076478" childId="2eaf7cc5-2f4d-6b7e-242b-c49a805f756a" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <links/>
                 </entryGroup>
-                <entryGroup id="ffd61061-9fa7-71f7-ab94-5ad2b53144ed" name="plus" defaultEntryId="40d06a9d-9535-a8ea-f0c2-96c8ebc08557" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entryGroup id="ffd61061-9fa7-71f7-ab94-5ad2b53144ed" name="plus" defaultEntryId="40d06a9d-9535-a8ea-f0c2-96c8ebc08557" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries>
                     <entry id="40d06a9d-9535-a8ea-f0c2-96c8ebc08557" name="Twin-linked Multilaser" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                       <entries/>
@@ -8040,7 +8032,14 @@
                     </entry>
                   </entries>
                   <entryGroups/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="aa358cdf-087a-1441-a54f-78b1d3076478" childId="2eaf7cc5-2f4d-6b7e-242b-c49a805f756a" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <links/>
                 </entryGroup>
               </entryGroups>
@@ -8050,28 +8049,16 @@
           </entryGroups>
           <modifiers>
             <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition parentId="aa358cdf-087a-1441-a54f-78b1d3076478" childId="c581e44b-bf04-75fc-dd1c-732ba0c4c9f9" field="selections" type="equal to" value="0.0"/>
-                    <condition parentId="aa358cdf-087a-1441-a54f-78b1d3076478" childId="2eaf7cc5-2f4d-6b7e-242b-c49a805f756a" field="selections" type="equal to" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition parentId="aa358cdf-087a-1441-a54f-78b1d3076478" childId="2eaf7cc5-2f4d-6b7e-242b-c49a805f756a" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
             </modifier>
             <modifier type="set" field="minSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition parentId="aa358cdf-087a-1441-a54f-78b1d3076478" childId="c581e44b-bf04-75fc-dd1c-732ba0c4c9f9" field="selections" type="equal to" value="0.0"/>
-                    <condition parentId="aa358cdf-087a-1441-a54f-78b1d3076478" childId="2eaf7cc5-2f4d-6b7e-242b-c49a805f756a" field="selections" type="equal to" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition parentId="aa358cdf-087a-1441-a54f-78b1d3076478" childId="2eaf7cc5-2f4d-6b7e-242b-c49a805f756a" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
             </modifier>
           </modifiers>
           <links/>
@@ -8090,7 +8077,7 @@
         <link id="76aa9920-26d1-6162-6643-3b6ee8cdd984" targetId="9089f807-7d81-6208-1427-8c7982d513e9" linkType="rule">
           <modifiers/>
         </link>
-        <link id="1e9dbed3-470e-a170-2617-811e0ca8f917" targetId="eb278fe6-f70b-d58d-8d8d-192b68bd4798" linkType="profile">
+        <link id="1e9dbed3-470e-a170-2617-811e0ca8f917" targetId="42e6e8fa-e634-a65e-8cd3-b7edf6bb8cfb" linkType="profile">
           <modifiers/>
         </link>
         <link id="651537fd-c476-348e-1092-ca9ced0470c1" targetId="90311584-d42b-5056-1554-0c859a6db9ab" linkType="rule">
@@ -10971,7 +10958,7 @@
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="eb278fe6-f70b-d58d-8d8d-192b68bd4798" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Vulture Gunship" hidden="false" book="Imperial Armour IV 2nd Ed" page="108">
+    <profile id="42e6e8fa-e634-a65e-8cd3-b7edf6bb8cfb" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="D-99 Vulture Gunship" hidden="false" book="Imperial Armour IV 2nd Ed" page="108">
       <characteristics>
         <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
         <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="12"/>
