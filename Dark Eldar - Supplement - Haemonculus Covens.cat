@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6303bb5e-fe42-dc4c-ed07-f0cc23d27b56" revision="7" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Dark Eldar: Supplement - Haemonculus Covens" books="" authorName="BSData on GitHub" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6303bb5e-fe42-dc4c-ed07-f0cc23d27b56" revision="8" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Dark Eldar: Supplement - Haemonculus Covens" books="" authorName="BSData on GitHub" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="0a58081f-88b3-78eb-ac0c-976f4d014335" name="Covenite Coterie Detachment" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
@@ -13,13 +13,6 @@
         </modifier>
       </modifiers>
       <rules>
-        <rule id="a7c5f791-7257-cdbe-cfd1-d008b06fdcbe" name="Covenite Coterie Detachment" hidden="false">
-          <modifiers/>
-        </rule>
-        <rule id="a65a52a6-2ea8-d04f-dcac-06f4ff16f4b8" name="Seeker of Torment" hidden="false">
-          <description>If this Detachment is chosen as your Primary Detachment, you can re-roll the result when rolling on the Warlord Traits Table on page 48</description>
-          <modifiers/>
-        </rule>
         <rule id="ac1276c2-5fd3-eacf-7753-f74b24fc566e" name="Freakish Spectacle " hidden="false">
           <description>Enemy units within 12&quot; of one or more models from the Detachment suffer a -1 penalty to their Leadership value. </description>
           <modifiers/>
@@ -111,10 +104,17 @@
         </link>
       </links>
     </entry>
-    <entry id="bc42d659-ec0a-f3e8-b735-8754674cd02e" name="Primary Detachment" points="0.0" categoryId="7fc5b655-812e-45ed-98ff-db8847d356da" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="bc42d659-ec0a-f3e8-b735-8754674cd02e" name="Primary Detachment" points="0.0" categoryId="7fc5b655-812e-45ed-98ff-db8847d356da" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="c0c8e9b2-6e42-846d-f19b-b0f23cdd96f6" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="39f8da0f-4f2f-bb70-730c-7b25a88dc158" name="Warlord Traits" hidden="false">
           <description>D6	Warlord Trait
@@ -132,11 +132,7 @@
         </rule>
       </rules>
       <profiles/>
-      <links>
-        <link id="4c7f09e5-2116-6560-1495-9cf07da30555" targetId="9addafac-476c-1d71-2a6a-1f863bd67388" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
+      <links/>
     </entry>
     <entry id="1b4dda19-b44f-4135-90ef-3fced269c89c" name="Talos" points="0.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="">
       <entries/>
@@ -160,16 +156,16 @@
   </entries>
   <rules/>
   <links>
-    <link id="a77ab51d-d2f0-65b5-cff1-a21bdf0385c0" targetId="33fb4049-6365-787a-91e3-90a8535106ef" linkType="entry">
+    <link id="a77ab51d-d2f0-65b5-cff1-a21bdf0385c0" targetId="33fb4049-6365-787a-91e3-90a8535106ef" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
       <modifiers/>
     </link>
-    <link id="5dffd9f4-5e0f-e3e0-cd9c-309d4cc3befb" targetId="6658f62d-76d6-88a7-7d87-b5eaba09d76a" linkType="entry">
+    <link id="5dffd9f4-5e0f-e3e0-cd9c-309d4cc3befb" targetId="6658f62d-76d6-88a7-7d87-b5eaba09d76a" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
       <modifiers/>
     </link>
-    <link id="7785dc4d-0c87-d471-7987-b911196a0acf" targetId="0f862b05-7f17-df41-8e59-58bfe3f06629" linkType="entry">
+    <link id="7785dc4d-0c87-d471-7987-b911196a0acf" targetId="0f862b05-7f17-df41-8e59-58bfe3f06629" linkType="entry" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
       <modifiers/>
     </link>
-    <link id="7c9896c2-e73b-d471-69cf-d9c105c63ad2" targetId="4d11910e-4e70-a74a-6e46-3b640c135605" linkType="entry">
+    <link id="7c9896c2-e73b-d471-69cf-d9c105c63ad2" targetId="4d11910e-4e70-a74a-6e46-3b640c135605" linkType="entry" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
       <modifiers/>
     </link>
     <link id="42c5b32e-417c-0477-0cb0-7090d5a13b22" targetId="65201d65-0f70-d499-2d84-4d6be148acf3" linkType="entry">
