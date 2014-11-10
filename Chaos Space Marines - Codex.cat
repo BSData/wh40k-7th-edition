@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="98" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="99" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="e04e4fdc-f3f4-b49a-79ac-b87f3e31d401" name="[FW] Arkos the Faithless (IA: Apoc 2013)" points="130.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="IA Apoc 2013" page="153">
       <entries>
@@ -12827,7 +12827,7 @@ The unit must immediately disembark their transport before turning into the spaw
                 </link>
               </links>
             </entry>
-            <entry id="4d278092-a868-8f7d-90d4-a2a5ba21e39e" name="Power Weapon" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="4d278092-a868-8f7d-90d4-a2a5ba21e39e" name="Power Weapon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -14038,15 +14038,65 @@ The unit must immediately disembark their transport before turning into the spaw
             </entry>
             <entry id="9ae05cca-c09b-dcde-4ec6-1678ed8eb8b7" name="Heavy Weapon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="ea43513d-eae7-f93a-0b2b-c26b9661a26d" childId="0efa9937-4cdf-8f44-d321-b474d023be34" field="selections" type="less than" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <entryGroups>
+                <entryGroup id="dddf61a4-9106-83f1-1ead-566040d507c1" name="Heavy Weapons" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                  <entries>
+                    <entry id="f41c9dcb-f792-7e5b-88d5-8ed51514f1ba" name="Heavy Flamer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="8c8adb8e-03cd-b5d1-bc32-038b450a4f23" targetId="55d0de57-c29f-6976-8380-83dfd9524c36" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                    <entry id="c4a5eeb9-1900-cc03-3850-c66f65f0fe21" name="Reaper Autocannon" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="372e2871-ee83-df6f-21fb-80b5400fd5db" targetId="4302374c-8225-ec0f-b1ea-b4d8fed05e74" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition parentId="ea43513d-eae7-f93a-0b2b-c26b9661a26d" childId="d11591d1-84c4-239c-7718-2351663067af" field="selections" type="less than" value="4.0"/>
+                            <condition parentId="ea43513d-eae7-f93a-0b2b-c26b9661a26d" childId="5631ed90-a0df-fdda-0d93-d9a89f3c4152" field="selections" type="less than" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition parentId="ea43513d-eae7-f93a-0b2b-c26b9661a26d" childId="d11591d1-84c4-239c-7718-2351663067af" field="selections" type="equal to" value="9.0"/>
+                            <condition parentId="ea43513d-eae7-f93a-0b2b-c26b9661a26d" childId="5631ed90-a0df-fdda-0d93-d9a89f3c4152" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <links/>
+                </entryGroup>
+              </entryGroups>
+              <modifiers/>
               <rules/>
               <profiles/>
               <links/>
@@ -14203,26 +14253,6 @@ The unit must immediately disembark their transport before turning into the spaw
                     </link>
                   </links>
                 </entry>
-                <entry id="0efa9937-4cdf-8f44-d321-b474d023be34" name="Heavy Weapon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers>
-                    <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="ea43513d-eae7-f93a-0b2b-c26b9661a26d" incrementChildId="15de0774-d7f8-6f6c-869e-c5018665c12f" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition parentId="ea43513d-eae7-f93a-0b2b-c26b9661a26d" childId="9ae05cca-c09b-dcde-4ec6-1678ed8eb8b7" field="selections" type="greater than" value="1.0"/>
-                          </conditions>
-                          <conditionGroups/>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
               </entries>
               <entryGroups/>
               <modifiers/>
@@ -14296,37 +14326,6 @@ The unit must immediately disembark their transport before turning into the spaw
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="15de0774-d7f8-6f6c-869e-c5018665c12f" name="Heavy Weapons" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="f32bee92-9332-52ad-2743-d0877f8dce5c" name="Heavy Flamer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="6e54692c-fbe0-a974-d3ed-4cdeb890b616" targetId="55d0de57-c29f-6976-8380-83dfd9524c36" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="def929bc-fddb-6277-f270-d23130932d02" name="Reaper Autocannon" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="b97252d8-5991-8a4b-53f0-fc49fa88e3f7" targetId="4302374c-8225-ec0f-b1ea-b4d8fed05e74" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
         <entryGroup id="fe1862ba-e6de-b836-b142-b81c348efdaf" name="Marks of Chaos" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="61ebaa59-399d-0afb-ab5e-0a6f9ca96b9a" name="Mark of Khorne" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -14773,7 +14772,7 @@ The unit must immediately disembark their transport before turning into the spaw
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="6275a066-fd36-4d9c-a332-929f93fd42ed" name="Special Weapon instead of boltgun" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="6275a066-fd36-4d9c-a332-929f93fd42ed" name="Heavy Weapon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="0faf16d6-3ade-4a13-959f-dd4767cfefdd" name="Plasma Gun" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
@@ -14864,7 +14863,14 @@ The unit must immediately disembark their transport before turning into the spaw
             </entry>
           </entries>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="852f8b69-37a6-4330-b4b7-3172a9dce5e3" childId="aac7f51f-868a-46bc-8f36-51d0a63dd6e8" field="selections" type="less than" value="5.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links/>
         </entryGroup>
         <entryGroup id="55c2e5b6-e375-dee5-208b-99a391423780" name="Special Gears (4)" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -15086,7 +15092,26 @@ The unit must immediately disembark their transport before turning into the spaw
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="96a24b9f-0bc4-44e2-bc79-bd5690dc73dc" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition parentId="force type" childId="96a24b9f-0bc4-44e2-bc79-bd5690dc73dc" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="f03040f6-c518-3af5-aff3-813f24c753fe" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles>
         <profile id="7978da37-ab7c-ad22-bcd6-f1548da5dd7e" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Chosen" hidden="false" page="0">
@@ -15370,7 +15395,7 @@ The unit must immediately disembark their transport before turning into the spaw
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="09effc0f-3693-3195-04db-a1b4c53c110a" name="Special Weapon instead of boltgun" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="09effc0f-3693-3195-04db-a1b4c53c110a" name="Heavy Weapon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="93b3c75e-e284-fe99-9580-d1adaa3e121e" name="Plasma Gun" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
@@ -15430,7 +15455,14 @@ The unit must immediately disembark their transport before turning into the spaw
             </entry>
           </entries>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="4ff1ec06-1663-ea7f-db42-0af53d12bebb" childId="55582bd6-ec7a-006a-b0d2-c9cbd56fbbcd" field="selections" type="less than" value="5.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links/>
         </entryGroup>
         <entryGroup id="309e8b66-5ee8-c852-0f5b-2919246afed4" name="Icon (only one model)" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -15644,7 +15676,7 @@ The unit must immediately disembark their transport before turning into the spaw
         </entryGroup>
       </entryGroups>
       <modifiers>
-        <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
             <condition parentId="force type" childId="96a24b9f-0bc4-44e2-bc79-bd5690dc73dc" field="selections" type="equal to" value="0.0"/>
           </conditions>
@@ -19217,7 +19249,38 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="98dcfa57-c2b9-4426-9890-bae406cf2d6c" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="ea81437d-8a08-4e43-a57f-04c09a786cd3" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+            <conditionGroup type="and">
+              <conditions>
+                <condition parentId="roster" childId="f03040f6-c518-3af5-aff3-813f24c753fe" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="98dcfa57-c2b9-4426-9890-bae406cf2d6c" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="ea81437d-8a08-4e43-a57f-04c09a786cd3" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -19369,7 +19432,7 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
       </entries>
       <entryGroups/>
       <modifiers>
-        <modifier type="set" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
           <conditionGroups>
             <conditionGroup type="and">
@@ -19886,7 +19949,38 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition parentId="force type" childId="e2028a5d-9087-436a-aeb3-81eff0890a82" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="6780f462-a3ee-49f8-a775-f45d298bc761" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="e2028a5d-9087-436a-aeb3-81eff0890a82" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="6780f462-a3ee-49f8-a775-f45d298bc761" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+            <conditionGroup type="and">
+              <conditions>
+                <condition parentId="roster" childId="f03040f6-c518-3af5-aff3-813f24c753fe" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles>
         <profile id="961e4089-9f24-c1d8-b36e-2263c49ebd18" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Noise Marine" hidden="false" page="0">
@@ -20096,7 +20190,7 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
         </entryGroup>
       </entryGroups>
       <modifiers>
-        <modifier type="set" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
           <conditionGroups>
             <conditionGroup type="and">
@@ -20487,7 +20581,38 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="733ea40a-ea0b-4bd1-ab2a-c26ab92ba55c" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="48e2ca7d-ff5f-4361-b624-d3ecd5494df3" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+            <conditionGroup type="and">
+              <conditions>
+                <condition parentId="roster" childId="f03040f6-c518-3af5-aff3-813f24c753fe" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="733ea40a-ea0b-4bd1-ab2a-c26ab92ba55c" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="48e2ca7d-ff5f-4361-b624-d3ecd5494df3" field="selections" type="at least" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -20715,7 +20840,7 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
         </entryGroup>
       </entryGroups>
       <modifiers>
-        <modifier type="set" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
           <conditionGroups>
             <conditionGroup type="and">
@@ -20857,20 +20982,7 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
     <entry id="9caa1d96-d1cd-48fc-a82d-b7c4808f591d" name="Possessed" points="0.0" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
         <entry id="856516ae-35dc-40c4-90ab-ab5b405a2a75" name="Possessed" points="26.0" categoryId="(No Category)" type="model" minSelections="5" maxSelections="20" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries>
-            <entry id="a4631446-0dd3-484e-3354-4b78c34a7e42" name="Veterans of the Long War" points="2.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="5c0dd89f-751b-7520-8789-a23c97d82e16" targetId="fd9a1651-2e3e-e050-0aac-87937ab7e2c0" linkType="rule">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-          </entries>
+          <entries/>
           <entryGroups>
             <entryGroup id="646d239b-4957-18bd-c316-f361a97041dc" name="Marks of Chaos" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
@@ -20970,6 +21082,27 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
           </profiles>
           <links>
             <link id="f3be37e9-97a9-c690-9add-bda594c89296" targetId="ae970133-d0be-0936-0b4b-009985e0be18" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="561a757c-c40f-db0b-b6ef-7afb54d1bb21" name="Veterans of the Long War" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="increment" field="points" value="2.0" repeat="true" numRepeats="1" incrementParentId="9caa1d96-d1cd-48fc-a82d-b7c4808f591d" incrementChildId="856516ae-35dc-40c4-90ab-ab5b405a2a75" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="points" value="2.0" repeat="true" numRepeats="1" incrementParentId="9caa1d96-d1cd-48fc-a82d-b7c4808f591d" incrementChildId="ccebd5d5-fdf0-4e89-a96e-f6aeb1b4086e" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="b017eb4e-4b88-b7ed-1aa4-0f5caf4ed1cb" targetId="fd9a1651-2e3e-e050-0aac-87937ab7e2c0" linkType="rule">
               <modifiers/>
             </link>
           </links>
@@ -22169,7 +22302,38 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="1dfaeb1c-9e84-48ab-9a37-f45818ebf9a0" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="8754ce03-9311-8e0f-76b3-eb635930c8eb" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+            <conditionGroup type="and">
+              <conditions>
+                <condition parentId="roster" childId="f03040f6-c518-3af5-aff3-813f24c753fe" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="1dfaeb1c-9e84-48ab-9a37-f45818ebf9a0" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="8754ce03-9311-8e0f-76b3-eb635930c8eb" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles>
         <profile id="e3c21ef6-0ce1-d798-770c-d2aba635018a" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Thousand Son" hidden="false" page="0">
@@ -22354,7 +22518,7 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
       </entries>
       <entryGroups/>
       <modifiers>
-        <modifier type="set" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
           <conditionGroups>
             <conditionGroup type="and">
