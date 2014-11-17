@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="101" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="103" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.14b" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="e04e4fdc-f3f4-b49a-79ac-b87f3e31d401" name="[FW] Arkos the Faithless (IA: Apoc 2013)" points="130.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="IA Apoc 2013" page="153">
       <entries>
@@ -12356,7 +12356,7 @@ The unit must immediately disembark their transport before turning into the spaw
       <entryGroups/>
       <modifiers/>
       <rules>
-        <rule id="57db7ad9-81ce-540b-3b41-5a12c90bb9bf" name="Land Raider: Capacity" hidden="false" page="0">
+        <rule id="57db7ad9-81ce-540b-3b41-5a12c90bb9bf" name="Transport Capacity: Land Raider" hidden="false" page="0">
           <description>May transport 10 Models</description>
           <modifiers/>
         </rule>
@@ -16607,9 +16607,9 @@ The nominated unit has Fearless and +1 Strength for the entire game.</descriptio
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="b2aec150-e7a1-7fd7-ccc2-e44f3f098025" name="Main Weapon" defaultEntryId="a54a1705-6f37-b741-d462-fa97c12bbf18" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="b2aec150-e7a1-7fd7-ccc2-e44f3f098025" name="Main Weapons" defaultEntryId="a54a1705-6f37-b741-d462-fa97c12bbf18" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
-            <entry id="e74208e2-b0c9-1a38-0403-b851b635c421" name="Hades Autocannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="e74208e2-b0c9-1a38-0403-b851b635c421" name="Two Hades Autocannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -16621,7 +16621,7 @@ The nominated unit has Fearless and +1 Strength for the entire game.</descriptio
                 </link>
               </links>
             </entry>
-            <entry id="a54a1705-6f37-b741-d462-fa97c12bbf18" name="Ectoplasma Cannons" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="a54a1705-6f37-b741-d462-fa97c12bbf18" name="Two Ectoplasma Cannons" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -20359,7 +20359,20 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
           <modifiers/>
         </link>
         <link id="49d07aa4-afb6-9908-ad7e-da1eb2bad8c9" targetId="10c2dc32-e122-a91a-2071-0dffec452951" linkType="profile">
-          <modifiers/>
+          <modifiers>
+            <modifier type="increment" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="ea16bdee-c67e-649a-da1a-cfe67328fa74" childId="1a64082d-f22f-7cf5-7c8b-764f7a777879" field="selections" type="at least" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="a558b3ef-04d0-440e-a312-bac3255bf592" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="ea16bdee-c67e-649a-da1a-cfe67328fa74" childId="283ad273-bc18-e02a-e1c1-d9ad2649c1f1" field="selections" type="at least" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -20429,7 +20442,12 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
             </entry>
           </entries>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="decrement" field="minSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="89190283-a7ce-8f46-e68d-45dd2f40b35e" incrementChildId="80ee6a4b-df77-dbbb-c95e-3a22b50e606b" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <rules/>
           <profiles/>
           <links/>
@@ -20511,7 +20529,11 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="11a62c7a-2752-f0a8-7bfd-4880adf26d31" targetId="530bb69e-c246-fccd-1688-f1cfba50c251" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
@@ -20543,52 +20565,161 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
             </link>
           </links>
         </entry>
-      </entries>
-      <entryGroups>
-        <entryGroup id="ef6143bb-32de-6cc3-de53-8c9b59c35c51" name="Special Weapons" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entry id="80ee6a4b-df77-dbbb-c95e-3a22b50e606b" name="Plague Marine with Special weapon" points="24.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries>
-            <entry id="f73fd44e-2d67-a71d-1b15-082e51fb1521" name="Flamer" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="e45d55fc-9fec-2ef7-c6ff-8e31f5f2c9dc" name="Plague knife" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
               <rules/>
               <profiles/>
               <links>
-                <link id="f82b4bb5-4710-5ce2-3288-39e8be272256" targetId="e6092425-3c3b-4340-c7da-ffd2d316f15f" linkType="profile">
+                <link id="665c23a8-2eac-adff-3bb1-3fa19a256481" targetId="bd64592a-ec34-5311-3fd4-d3b6b7f33e64" linkType="profile">
                   <modifiers/>
                 </link>
               </links>
             </entry>
-            <entry id="b87bb13e-9e89-3194-50a1-6513f9b4d163" name="Meltagun" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="6e93ef4f-bea5-f9ed-005a-67d515d055a3" name="Blight Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
               <rules/>
               <profiles/>
               <links>
-                <link id="c03dac82-00d9-d5fa-38c7-851d11965a51" targetId="72637f94-3016-db9c-6d86-c85dbd35503e" linkType="profile">
+                <link id="7dc3eaf1-6016-f111-71b3-e971bfd2339e" targetId="d5e66cbe-868f-c91c-5c3b-0e46d5cadaa5" linkType="profile">
                   <modifiers/>
                 </link>
               </links>
             </entry>
-            <entry id="1323d33c-9ab9-7f10-2bad-e5febf7aaefc" name="Plasma Gun" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="6f696eb7-dbad-de94-0066-436b800712a6" name="Krak Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
               <rules/>
               <profiles/>
               <links>
-                <link id="1a1bb318-4282-f5c1-f6cd-cd9023796401" targetId="926e8443-d55b-f5e2-4df3-a998ea8d5c4e" linkType="profile">
+                <link id="ebc5f186-9817-0172-ff37-dfcbba35c465" targetId="530bb69e-c246-fccd-1688-f1cfba50c251" linkType="profile">
                   <modifiers/>
                 </link>
               </links>
             </entry>
           </entries>
-          <entryGroups/>
+          <entryGroups>
+            <entryGroup id="693e5d3c-6811-eccc-3836-7d5bc33b929f" name="Special Weapon" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries>
+                <entry id="4ed5f6bb-1a7b-a68f-2474-4ef79a70c915" name="Flamer" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries>
+                    <entry id="2a4f63ce-9bc0-76f4-7ad8-fdaefc9852c0" name="Bolt pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="11e2eb08-f8aa-524c-918e-6a4c1dcda126" targetId="a243616a-65df-2af8-f12c-8657bdee994f" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="dba712f0-1f7a-6326-88c6-87d057f87c79" targetId="e6092425-3c3b-4340-c7da-ffd2d316f15f" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="535f18e5-c28a-5e1c-f774-d4bcd0230e4f" name="Meltagun" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries>
+                    <entry id="b5d67200-8afa-4a25-b94b-708b8fdb98db" name="Bolt pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="26728e25-ae0c-8cef-77c4-fee02bc8d1a1" targetId="a243616a-65df-2af8-f12c-8657bdee994f" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="efb650c2-79a0-4fca-b6fb-427cebc4eddd" targetId="72637f94-3016-db9c-6d86-c85dbd35503e" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="16eaffdd-c93d-0000-8dc4-1108358a1610" name="Plasma Gun" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries>
+                    <entry id="26a0e4af-fa3f-0c05-28a3-fefe807dfd65" name="Bolt pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="09a33a7d-f337-44ca-1337-982ae7b1d2e3" targetId="a243616a-65df-2af8-f12c-8657bdee994f" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="573951c1-3d8e-75b0-f2dd-f3d91c5dc86b" targetId="926e8443-d55b-f5e2-4df3-a998ea8d5c4e" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="a75c8e3a-f880-4397-23b8-3f316ab704ef" name="Plasma Pistol" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries>
+                    <entry id="bfd96947-1a7b-f125-36c6-40bab1a9a78e" name="Boltgun" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="057ebcbf-1701-4502-c87d-57d709498e13" targetId="8b2113df-55b3-2f62-0601-f729b5851ac0" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="6bfe1c5c-54df-71e7-9edc-826772fc3f03" targetId="62ea1bb0-5f89-ed51-362d-9af0930d582e" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
           <modifiers/>
+          <rules/>
+          <profiles/>
           <links/>
-        </entryGroup>
-      </entryGroups>
+        </entry>
+      </entries>
+      <entryGroups/>
       <modifiers>
         <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
@@ -20728,7 +20859,11 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="5ac19a15-0adb-a9d1-09ff-2d4618e837ec" targetId="530bb69e-c246-fccd-1688-f1cfba50c251" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
@@ -20813,40 +20948,161 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
             </link>
           </links>
         </entry>
-      </entries>
-      <entryGroups>
-        <entryGroup id="74667596-8c4e-7f87-e6a4-34c23c4252aa" name="Special Weapons" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entry id="e27638e3-16d6-09e0-66a0-94b58b30cbb9" name="Plague Marine with Special weapon" points="24.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries>
-            <entry id="4baa63bb-e0c8-5d3a-f249-96f5708cc3f4" name="Flamer" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="fd1a890b-b8fe-20a6-231d-545e4661eee3" name="Plague knife" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="d8a159bf-6445-a8df-249a-474ccfa5d296" targetId="bd64592a-ec34-5311-3fd4-d3b6b7f33e64" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
-            <entry id="dc674c60-294e-77ff-5517-036c118fe598" name="Meltagun" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="b2d1201b-9555-48c9-2b1e-b97846d2a590" name="Blight Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="0baa3d40-145c-3e2a-0ed0-9f6bd51118ce" targetId="d5e66cbe-868f-c91c-5c3b-0e46d5cadaa5" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
-            <entry id="767f9ee6-a3e6-ee35-f922-0172360ab2dc" name="Plasma Gun" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="8adfe156-7827-2802-1ab1-107eb937f471" name="Krak Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="2a523b99-3e36-ed2c-4c56-ae2c891e69b0" targetId="530bb69e-c246-fccd-1688-f1cfba50c251" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
-          <entryGroups/>
+          <entryGroups>
+            <entryGroup id="258a7764-f7dc-400e-f8a4-78542800a1bb" name="Special Weapon" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries>
+                <entry id="2e33063a-0c5a-3f41-5587-8e8df1ce09a8" name="Flamer" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries>
+                    <entry id="6593b6d0-8ff0-b33c-68ae-5e659b91db5d" name="Bolt pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="9b071915-b003-68fb-db43-beb548bd637b" targetId="a243616a-65df-2af8-f12c-8657bdee994f" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="4f7baf40-342e-29ae-32a7-77e4558d8444" targetId="e6092425-3c3b-4340-c7da-ffd2d316f15f" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="fde66bd8-945e-cf5e-ee2d-b933565ef58a" name="Meltagun" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries>
+                    <entry id="28c0fcbc-23f1-f69b-09d1-fb09cc0bc195" name="Bolt pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="ac816332-d1c8-cd22-65f1-ce3c0d417f11" targetId="a243616a-65df-2af8-f12c-8657bdee994f" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="d71a58eb-fd68-7d8b-940d-1857e4dec7f4" targetId="72637f94-3016-db9c-6d86-c85dbd35503e" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="c46c0212-e110-b7f1-887d-3ceb654b6d69" name="Plasma Gun" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries>
+                    <entry id="7fc36c52-10d2-d79c-b128-b3d470d2e8bc" name="Bolt pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="6a535ae4-8eb4-25aa-f145-8c8676fe8943" targetId="a243616a-65df-2af8-f12c-8657bdee994f" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="66aedf96-f3c0-b8bb-0210-5e52e6eddf47" targetId="926e8443-d55b-f5e2-4df3-a998ea8d5c4e" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="494240d6-2e26-719c-b884-25b6d6b2e3ef" name="Plasma Pistol" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries>
+                    <entry id="0dcfacbc-5453-94ed-b019-8ea55fac5e29" name="Boltgun" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="51e33914-0d09-81ce-da78-2bcf2fdc0495" targetId="8b2113df-55b3-2f62-0601-f729b5851ac0" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="9455b067-0c7e-0587-743c-1aecd047dc70" targetId="62ea1bb0-5f89-ed51-362d-9af0930d582e" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
           <modifiers/>
+          <rules/>
+          <profiles/>
           <links/>
-        </entryGroup>
-      </entryGroups>
+        </entry>
+      </entries>
+      <entryGroups/>
       <modifiers>
         <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
@@ -23414,6 +23670,10 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
       <modifiers/>
       <rules>
         <rule id="92846999-51a1-941a-0888-0cc343867253" name="Repair" hidden="false" page="0">
+          <modifiers/>
+        </rule>
+        <rule id="931f5d0a-7169-9c76-8305-adf81523f423" name="Transport Capacity: Rhino" hidden="false">
+          <description>Can transport 10 models. Terminators may not be transported.</description>
           <modifiers/>
         </rule>
       </rules>
