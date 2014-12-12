@@ -5912,14 +5912,14 @@
     </entry>
     <entry id="d0dae68b-f8af-7257-90be-3cfadebef568" name="Fire Raptor Gunship *" points="225.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
-        <entry id="9becbdd6-be3a-be02-fda1-32fba81ee84d" name="Four Wing-mounted Hellstrike Missles" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entry id="9becbdd6-be3a-be02-fda1-32fba81ee84d" name="Four Wing-mounted Stormstrike Missles" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules/>
           <profiles/>
           <links>
-            <link id="e326207d-3cbc-3ff5-fcad-7e46301ba6e9" targetId="3a31bd4f-6f42-d803-e62a-6e3b1e9ead4c" linkType="profile">
+            <link id="e326207d-3cbc-3ff5-fcad-7e46301ba6e9" targetId="13653528-474e-5bdb-ac66-b6c63625246a" linkType="profile">
               <modifiers/>
             </link>
           </links>
@@ -6008,9 +6008,11 @@
       </modifiers>
       <rules>
         <rule id="b3f5f88c-dc9b-aadc-49ba-da29dda5e4d0" name="Independent Turret Fire" hidden="false">
+          <description>When eglibible to fire a weapon,  turrets may fire at different targets and do not count towards number of weapons fired.</description>
           <modifiers/>
         </rule>
         <rule id="01c1707b-573d-50d9-d875-004ae4c819d5" name="Relic of the Armoury" hidden="false">
+          <description>One per army unless Interrogator-Chaplain is present.</description>
           <modifiers/>
         </rule>
       </rules>
@@ -6028,16 +6030,16 @@
         </profile>
       </profiles>
       <links>
-        <link id="55a24fda-7dbb-b271-fd24-1d0cf8db1526" targetId="01e84d3e-b6a8-6266-5548-d16770351601" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="693cb06c-91d9-58f7-c385-83041fd516c9" targetId="c03c1ce3-b2c1-d69b-30db-b6d95138e2d3" linkType="rule">
-          <modifiers/>
-        </link>
         <link id="9d52e129-1228-a4f9-19dc-7da798b9eb92" targetId="28b8dc3c-9647-8bae-7039-240a71e8e48d" linkType="rule">
           <modifiers/>
         </link>
         <link id="42f8d874-3709-bddf-4a61-483705f0b4bf" targetId="e0e4f215-7290-0b1b-1b3d-1c07e54e9f80" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="1e1bd1e8-ccee-aedd-18c1-bbb033c69b2b" targetId="c03c1ce3-b2c1-d69b-30db-b6d95138e2d3" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="ae4f8bb4-4a29-abcf-224e-da9ac96513f3" targetId="28b8dc3c-9647-8bae-7039-240a71e8e48d" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -18622,6 +18624,15 @@ If held in reserve, the unit gains Outflank.</description>
     <profile id="619a0136-86e6-1470-bd0e-d586455fd3b7" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Storm Shield" hidden="false" book="Codex: Dark Angels 6th" page="64">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Convers 3++, but can never count as having 2 close combat weapons"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="13653528-474e-5bdb-ac66-b6c63625246a" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Stormstrike Missiles" hidden="false" book="Imperial Armor 2: Second Edition" page="0">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Concussive, One use only"/>
       </characteristics>
       <modifiers/>
     </profile>
