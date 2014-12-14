@@ -4803,6 +4803,15 @@ If the vehicle has moved it can fire at 24&quot;, otherwise you may fire 48&quot
     <link id="210e5436-f9bb-3477-efea-8e527431d172" targetId="b63b03ff-b1d9-88ed-fb60-f353dd2831b9" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
       <modifiers/>
     </link>
+    <link id="bd628c42-de23-8fe2-3808-f2aff4eec06f" targetId="8ea47688-208f-67db-9678-a43a13f92c54" linkType="entry" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
+      <modifiers/>
+    </link>
+    <link id="cb828afc-8c3b-d775-c812-21a08721d33d" targetId="33a9afc7-130a-cfa3-8587-ae997fbf2c1d" linkType="entry" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
+      <modifiers/>
+    </link>
+    <link id="8d81b999-6cb4-84bb-b22c-f55c65fdd9be" targetId="4162e715-c0ad-65e8-70b4-b29647fd4a2a" linkType="entry" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
+      <modifiers/>
+    </link>
   </links>
   <sharedEntries>
     <entry id="f7fcd2ff-1ccf-971b-bd89-b12482276459" name="Assault Squad" points="0.0" categoryId="(No Category)" type="unit" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -5734,6 +5743,14 @@ If the vehicle has moved it can fire at 24&quot;, otherwise you may fire 48&quot
           <profiles/>
           <links/>
         </entry>
+        <entry id="e09411b2-9cc9-afeb-eb39-3b35fbb37c1f" name="Artificer Armour" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
       </entries>
       <entryGroups>
         <entryGroup id="4e1b049f-cc7b-bca3-4ad2-0d5cdae3e657" name="Weapons" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -5987,7 +6004,12 @@ If the vehicle has moved it can fire at 24&quot;, otherwise you may fire 48&quot
             <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="10"/>
             <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+/4++"/>
           </characteristics>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/4++" repeat="true" numRepeats="1" incrementParentId="ef13167b-40be-53be-41f2-b799eb504060" incrementChildId="e09411b2-9cc9-afeb-eb39-3b35fbb37c1f" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <links>
@@ -12817,7 +12839,7 @@ May only be taken in a secondary detachment if that detachment also includes a R
               <profiles/>
               <links/>
             </entry>
-            <entry id="31634bb0-c55c-407c-3900-9df340a230bb" name="Veteran Scout Sergeant" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="31634bb0-c55c-407c-3900-9df340a230bb" name="Veteran Scout Sergeant" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -14026,7 +14048,7 @@ May only be taken in a secondary detachment if that detachment also includes a R
             <link id="c563ec3e-a5cf-7cc8-b773-bd2e2a513c9d" targetId="cb4c08b8-78fe-b09a-cf59-883cd7e4cf59" linkType="entry">
               <modifiers/>
             </link>
-            <link id="b1bb523c-c17b-9382-ecf1-db9d4b75dfd0" targetId="fb484abd-ca76-e22d-8b03-7cc583d761eb" linkType="entry group">
+            <link id="b1bb523c-c17b-9382-ecf1-db9d4b75dfd0" targetId="425cfe5e-8781-88b8-bf94-1d42861f7cfb" linkType="entry group">
               <modifiers/>
             </link>
             <link id="9fd24b30-dd46-bfe4-3d66-dbb6b4e28cde" targetId="fb484abd-ca76-e22d-8b03-7cc583d761eb" linkType="entry group">
@@ -16982,7 +17004,7 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
         </link>
       </links>
     </entryGroup>
-    <entryGroup id="39122418-e417-e7e0-4a3a-4cbcf8cd6bfe" name="Vehicle Equipment" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="39122418-e417-e7e0-4a3a-4cbcf8cd6bfe" name="Vehicle Equipment" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="bbaaaf21-2878-d43c-e4d7-71dca302e374" name="Storm bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -17021,7 +17043,7 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="43172942-c700-fca4-a55b-709e4ef75d76" name="Vehicle Equipment (8)" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="43172942-c700-fca4-a55b-709e4ef75d76" name="Vehicle Equipment (8)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="c8eabdda-9951-fdf4-b19b-6a16e2b5206a" name="Dozer Blade" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
