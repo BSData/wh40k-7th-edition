@@ -12872,13 +12872,17 @@ Firefall     -             5        -        Heavy 1, Barrage, Large Blast (5&qu
           </profiles>
           <links/>
         </entry>
-        <entry id="977aff41-7b84-5158-7346-a46912501133" name="Sponson-mounted Twin-linked Lascannons" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entry id="977aff41-7b84-5158-7346-a46912501133" name="Sponson-mounted Twin-linked Multi-melta" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules/>
           <profiles/>
-          <links/>
+          <links>
+            <link id="e09b833e-2afd-8b0f-ef15-b1de60ecc509" targetId="7fb7ceb9-3505-265c-55e6-77e241ee54bc" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
         </entry>
       </entries>
       <entryGroups>
@@ -12890,7 +12894,11 @@ Firefall     -             5        -        Heavy 1, Barrage, Large Blast (5&qu
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="64a75b91-a7d4-0503-f1d9-0efb5de492ae" targetId="ee350a03-c47c-8a67-c1fc-dcd3eef7cec9" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
             <entry id="95c2ff86-874d-7b75-abae-669044e17458" name="Dozer Blade" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -12898,7 +12906,11 @@ Firefall     -             5        -        Heavy 1, Barrage, Large Blast (5&qu
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="705619d8-85e3-06fb-36d0-1d242f3034df" targetId="52510903-e807-324f-4419-55d653290436" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
@@ -12913,7 +12925,11 @@ Firefall     -             5        -        Heavy 1, Barrage, Large Blast (5&qu
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="d6fa018f-d077-0105-463e-18c8185dda8b" targetId="7fb7ceb9-3505-265c-55e6-77e241ee54bc" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
             <entry id="b9ed9616-0ceb-375c-794a-13264e1c148b" name="Storm Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -12921,7 +12937,11 @@ Firefall     -             5        -        Heavy 1, Barrage, Large Blast (5&qu
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="27a94d34-653a-4acb-00a2-2c1fafc6a916" targetId="1fa19a43-d532-0ff4-7acd-642e4350b585" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
@@ -26168,7 +26188,14 @@ All powers must be selected from the same discipline before the beginning of the
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="0b5e240d-44b6-161f-2e9f-ae04b01499c0" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="93c60c04-53e7-c052-82ce-48292ca6a8ea" name="Atomantic Shielding" hidden="false">
           <description>The model has a 5+ invulnerable save against shooting attacks and explosions, and 6+ against attacks suffered in close combat. In addition, if the model suffers a ‘Vehicle Explodes’ damage result, add +1&quot; to the radius of the
