@@ -1338,7 +1338,19 @@ The removed units may Deep Strike back into the game and the first placed model 
       <links/>
     </entry>
   </entries>
-  <rules/>
+  <rules>
+    <rule id="500e-9af0-8415-1b9d" name="Ever-living" hidden="true">
+      <description>Models in this Detachment with the Reanimation Protocols special rule receive a +1 bonus to Reanimation Protocols rolls. Models in this Detachment with the Living Metal rule ignore the effects of Crew Stunned and Crew Shaken (but still lose a Hull Point).</description>
+      <modifiers>
+        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="5035-9fad-cd58-1bce" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+    </rule>
+  </rules>
   <links>
     <link id="1f74d8ce-d67e-a118-32aa-98ccd9142ccf" targetId="32a88265-ce13-b174-e49b-6409eec23dcc" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
       <modifiers/>
