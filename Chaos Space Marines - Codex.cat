@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="126" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="127" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="d333bebf-fda1-d63f-3a91-f3c4a81166e1" name="[Apoc] Cult of Destruction" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -292,6 +292,18 @@ If the special Vector Strike is used, the squadron may not make another that tur
                 </link>
               </links>
             </entry>
+            <entry id="cf56-716b-210a-325f" name="Talon of Horus" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="cb27-6648-27e6-4d7c" targetId="d4d19aa8-8887-ea7e-858c-39af2061a35f" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
           </entries>
           <entryGroups/>
           <modifiers/>
@@ -299,9 +311,6 @@ If the special Vector Strike is used, the squadron may not make another that tur
           <profiles/>
           <links>
             <link id="ce53be63-13a6-ad7f-8931-f874fb2fb87e" targetId="b3b46233-86c7-6f7b-f11e-d08fc7b2a83d" linkType="profile">
-              <modifiers/>
-            </link>
-            <link id="1680e74d-1f22-79de-38ed-2d6243999649" targetId="d4d19aa8-8887-ea7e-858c-39af2061a35f" linkType="profile">
               <modifiers/>
             </link>
             <link id="476be1e5-bb92-da4d-3f13-a9df28614f2b" targetId="ae970133-d0be-0936-0b4b-009985e0be18" linkType="rule">
@@ -323,6 +332,17 @@ If the special Vector Strike is used, the squadron may not make another that tur
               <modifiers/>
             </link>
             <link id="c04cfbfa-3526-f529-8d45-c6540ea6ccb7" targetId="770f9e73-aef4-195b-3fe5-7a0087d74107" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="5de6-4e8b-c992-f7be" targetId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+            <link id="2f93-be06-a717-cfcf" targetId="bcdab90f-bf57-608d-59e9-baa48490914a" linkType="rule">
               <modifiers/>
             </link>
           </links>
@@ -2265,6 +2285,9 @@ If the special Vector Strike is used, the squadron may not make another that tur
             <link id="bfed7ec7-1657-9400-06a1-2c6bb2ef8788" targetId="26919b43-fcad-2527-f8b8-d8f9282f2ba6" linkType="rule">
               <modifiers/>
             </link>
+            <link id="55bb-1bdf-6b84-e297" targetId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" linkType="entry">
+              <modifiers/>
+            </link>
           </links>
         </entry>
         <entry id="27373fc2-d785-948b-ee54-349c540212e7" name="Cutist Unit" points="0.0" categoryId="(No Category)" type="unit" minSelections="6" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -2921,9 +2944,15 @@ If the special Vector Strike is used, the squadron may not make another that tur
             </entryGroup>
           </entryGroups>
           <modifiers>
-            <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="bf1ac7ac-9d69-bc18-72ad-bf40e96366e8" childId="ce5835cb-9df1-ebbc-3b32-20c027b3841b" field="selections" type="equal to" value="0.0"/>
+                <condition parentId="bf1ac7ac-9d69-bc18-72ad-bf40e96366e8" childId="ce5835cb-9df1-ebbc-3b32-20c027b3841b" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="decrement" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="bf1ac7ac-9d69-bc18-72ad-bf40e96366e8" childId="ce5835cb-9df1-ebbc-3b32-20c027b3841b" field="selections" type="at least" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -2942,6 +2971,22 @@ If the special Vector Strike is used, the squadron may not make another that tur
             </link>
             <link id="681e060b-2b60-77af-6061-fb27a6f1b366" targetId="2231f009-0a6e-e5f3-9976-c631d3ff7565" linkType="rule">
               <modifiers/>
+            </link>
+            <link id="dfc9-e277-7bc3-4804" targetId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="roster" childId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" field="selections" type="at least" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="roster" childId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
           </links>
         </entry>
@@ -3438,7 +3483,7 @@ If the special Vector Strike is used, the squadron may not make another that tur
             </link>
           </links>
         </entry>
-        <entry id="ce5835cb-9df1-ebbc-3b32-20c027b3841b" name="Ahriman the Exiled One" points="230.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entry id="ce5835cb-9df1-ebbc-3b32-20c027b3841b" name="Ahriman the Exiled One" points="230.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="ee4704b2-96b3-62db-4ea8-d5ddb3272bbc" name="The Black Staff of Ahriman" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -3497,6 +3542,16 @@ If the special Vector Strike is used, the squadron may not make another that tur
             </link>
             <link id="970f3d5a-6f98-81b7-c66e-7129abdb293e" targetId="f0122a16-1632-5d49-477a-c43f87dea546" linkType="rule">
               <modifiers/>
+            </link>
+            <link id="5a38-8f9b-b14d-f4dc" targetId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="roster" childId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" field="selections" type="at least" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
           </links>
         </entry>
@@ -13743,6 +13798,16 @@ All others deep strike within 6&quot; of the command vehicle. They do not scatte
             <link id="24f7-d83d-50f3-026b" targetId="5d714842-8b29-e982-0424-713338a6324b" linkType="rule">
               <modifiers/>
             </link>
+            <link id="c616-6a33-d1cc-a6a9" targetId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="roster" childId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
           </links>
         </entry>
         <entry id="35e4-ffa3-3ca4-e925" name="Chaos Bikers" points="0.0" categoryId="(No Category)" type="unit" minSelections="5" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -15224,9 +15289,22 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
     <entry id="4fe44be2-fd5b-fd90-08a0-6ed83559a323" name="Chaos Cultists" points="0.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
         <entry id="d8f2e7f2-b541-fd7f-4db1-7b8c44a4eff7" name="Cultist Champion" points="14.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
+          <entries>
+            <entry id="8bb8-0fc2-c573-d262" name="Champions Shotgun" points="2.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="953a-d322-f1ec-6045" targetId="818d57df-1978-6aba-ae9b-6812fd06a571" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
           <entryGroups>
-            <entryGroup id="22a340ae-2e44-19a7-40f8-e4341197201a" name="Champions Weapon" defaultEntryId="ff9567a0-8372-26bf-4783-4a1c87683ebe" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entryGroup id="22a340ae-2e44-19a7-40f8-e4341197201a" name="Champions Main Weapon" defaultEntryId="ff9567a0-8372-26bf-4783-4a1c87683ebe" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
                 <entry id="ff9567a0-8372-26bf-4783-4a1c87683ebe" name="Auto Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
@@ -15248,18 +15326,6 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
                   <profiles/>
                   <links>
                     <link id="222e7def-9304-7650-4b75-412c45417405" targetId="4b76a426-8f6c-49c8-a493-2209cc2465e4" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-                <entry id="d046e4fe-e3ee-fc16-96d2-8f8e907e99b2" name="Shotgun" points="2.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="9bf0c7af-b74e-b611-75b8-3cd1cc9624ab" targetId="818d57df-1978-6aba-ae9b-6812fd06a571" linkType="profile">
                       <modifiers/>
                     </link>
                   </links>
@@ -17357,7 +17423,7 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
     </entry>
     <entry id="b7d6202c-e044-443e-897c-28e42c16e913" name="Chaos Space Marines" points="0.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
-        <entry id="955b9e61-5adc-46e5-b0aa-6ee2da94a77d" name="Chaos Space Marine with Boltgun" points="13.0" categoryId="(No Category)" type="model" minSelections="4" maxSelections="19" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="955b9e61-5adc-46e5-b0aa-6ee2da94a77d" name="Boltgun loadout" points="13.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries>
             <entry id="0b12400f-e000-0c04-078c-8522790ae5d4" name="Boltgun" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
@@ -17399,6 +17465,14 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
               <conditionGroups/>
             </modifier>
             <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="b7d6202c-e044-443e-897c-28e42c16e913" incrementChildId="e804774d-3ce4-324b-1a9f-7d52fbbfa007" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="minSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="b7d6202c-e044-443e-897c-28e42c16e913" incrementChildId="c4dd-4d04-7b86-0860" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="b7d6202c-e044-443e-897c-28e42c16e913" incrementChildId="c4dd-4d04-7b86-0860" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -17565,7 +17639,7 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
             </link>
           </links>
         </entry>
-        <entry id="e7ef37a5-9871-f80e-90c3-da0532f07fdd" name="Chaos Space Marine with CCW" points="13.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="19" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="e7ef37a5-9871-f80e-90c3-da0532f07fdd" name="CCW loadout" points="13.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries>
             <entry id="25e96419-a2e3-f9a9-5dba-71429b04e82d" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
@@ -17599,6 +17673,10 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
               <conditionGroups/>
             </modifier>
             <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="b7d6202c-e044-443e-897c-28e42c16e913" incrementChildId="e804774d-3ce4-324b-1a9f-7d52fbbfa007" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="minSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="b7d6202c-e044-443e-897c-28e42c16e913" incrementChildId="c4dd-4d04-7b86-0860" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -17644,7 +17722,7 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
           </profiles>
           <links/>
         </entry>
-        <entry id="e804774d-3ce4-324b-1a9f-7d52fbbfa007" name="Chaos Marine with CCW and Boltgun" points="15.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="19" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="e804774d-3ce4-324b-1a9f-7d52fbbfa007" name="CCW and Boltgun loadout" points="15.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries>
             <entry id="fcfc4dbd-47d0-063e-ca10-abdb75f11c24" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
               <entries/>
@@ -17693,7 +17771,7 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
               <conditions/>
               <conditionGroups/>
             </modifier>
-            <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="b7d6202c-e044-443e-897c-28e42c16e913" incrementChildId="c4dd-4d04-7b86-0860" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -17737,6 +17815,14 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
               </modifiers>
             </profile>
           </profiles>
+          <links/>
+        </entry>
+        <entry id="c4dd-4d04-7b86-0860" name="Chaos Space Marines in the unit" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="4" maxSelections="19" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
           <links/>
         </entry>
       </entries>
@@ -17793,7 +17879,20 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
             </entry>
           </entries>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="b7d6202c-e044-443e-897c-28e42c16e913" childId="955b9e61-5adc-46e5-b0aa-6ee2da94a77d" field="selections" type="less than" value="1.0"/>
+                    <condition parentId="b7d6202c-e044-443e-897c-28e42c16e913" childId="e804774d-3ce4-324b-1a9f-7d52fbbfa007" field="selections" type="less than" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <links/>
         </entryGroup>
         <entryGroup id="12b1001b-b0ab-46e3-86d4-f60a662839c6" name="Heavy Weapon" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -17891,13 +17990,25 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
             <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition parentId="b7d6202c-e044-443e-897c-28e42c16e913" childId="955b9e61-5adc-46e5-b0aa-6ee2da94a77d" field="selections" type="at least" value="9.0"/>
-                    <condition parentId="b7d6202c-e044-443e-897c-28e42c16e913" childId="e7ef37a5-9871-f80e-90c3-da0532f07fdd" field="selections" type="at least" value="9.0"/>
-                    <condition parentId="b7d6202c-e044-443e-897c-28e42c16e913" childId="e804774d-3ce4-324b-1a9f-7d52fbbfa007" field="selections" type="at least" value="9.0"/>
+                    <condition parentId="b7d6202c-e044-443e-897c-28e42c16e913" childId="c4dd-4d04-7b86-0860" field="selections" type="at least" value="9.0"/>
+                    <condition parentId="b7d6202c-e044-443e-897c-28e42c16e913" childId="f7297a5b-2e1a-3e5b-c710-2153699b8ed3" field="selections" type="at least" value="1.0"/>
                   </conditions>
-                  <conditionGroups/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition parentId="b7d6202c-e044-443e-897c-28e42c16e913" childId="e804774d-3ce4-324b-1a9f-7d52fbbfa007" field="selections" type="at least" value="1.0"/>
+                            <condition parentId="b7d6202c-e044-443e-897c-28e42c16e913" childId="955b9e61-5adc-46e5-b0aa-6ee2da94a77d" field="selections" type="at least" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
