@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a1d51a68-4b57-eb7d-f7e2-23bf0c22e374" revision="109" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2013)" authorName="Thommy Abbott" authorContact="legiones.astartes@gmail.com" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a1d51a68-4b57-eb7d-f7e2-23bf0c22e374" revision="112" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2013)" authorName="Thommy Abbott" authorContact="legiones.astartes@gmail.com" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="ba186d42-94de-9258-eea8-9ff224149e35" name="1st Company Hammerfall Assault Force" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -6732,10 +6732,20 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
             <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
           </characteristics>
           <modifiers>
-            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2" repeat="false" numRepeats="1" incrementParentId="7509ce3c-c505-fb5c-ad95-d7d27ee2313b" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="7509ce3c-c505-fb5c-ad95-d7d27ee2313b" childId="758e9904-3561-cc5c-7ca5-f94dc8926c85" field="selections" type="equal to" value="1.0"/>
-              </conditions>
+            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+" repeat="false" numRepeats="1" incrementParentId="7509ce3c-c505-fb5c-ad95-d7d27ee2313b" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="7509ce3c-c505-fb5c-ad95-d7d27ee2313b" childId="758e9904-3561-cc5c-7ca5-f94dc8926c85" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="7509ce3c-c505-fb5c-ad95-d7d27ee2313b" childId="3b851e1f-25ae-f9dd-1919-3c68503518de" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="/3++" repeat="true" numRepeats="1" incrementParentId="7509ce3c-c505-fb5c-ad95-d7d27ee2313b" incrementChildId="b0096a13-d9b6-3a2b-9399-3b1c9e7878ce" incrementField="selections" incrementValue="1.0">
+              <conditions/>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -14947,7 +14957,7 @@ In addition, whilst Anton Narvaez is in play during a Zone Mortalis/Blood in the
             <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="4"/>
             <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="4"/>
             <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="5"/>
-            <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="3"/>
+            <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="4"/>
             <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="10"/>
             <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="2+/3++"/>
           </characteristics>
@@ -21885,11 +21895,19 @@ All powers must be selected from the same discipline before the beginning of the
           </profiles>
           <links/>
         </entry>
+        <entry id="36d7-064e-6a28-239f" name="Ceramite plating" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
       </entries>
       <entryGroups>
         <entryGroup id="1b2fcfb1-f2b0-cafc-e426-270e6f0eecae" name="Heavy guns" defaultEntryId="a224793c-835e-4da3-bdac-d5dfe1f32bc5" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
-            <entry id="a224793c-835e-4da3-bdac-d5dfe1f32bc5" name="Twin-linked Heavy Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="a224793c-835e-4da3-bdac-d5dfe1f32bc5" name="Twin-linked Heavy Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -21901,7 +21919,7 @@ All powers must be selected from the same discipline before the beginning of the
                 </link>
               </links>
             </entry>
-            <entry id="782fc8de-10c4-d7c2-0af3-4b978795e515" name="Twin-linked lascannon" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="782fc8de-10c4-d7c2-0af3-4b978795e515" name="Twin-linked lascannon" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -21951,16 +21969,10 @@ All powers must be selected from the same discipline before the beginning of the
       </entryGroups>
       <modifiers/>
       <rules>
-        <rule id="cd04a767-2677-5208-5aaf-653c311b0fc7" name="Aerial Assault" hidden="false" page="0">
-          <modifiers/>
-        </rule>
         <rule id="83952b4e-4be0-d29d-4d0b-fcbad1567546" name="Escort Craft" hidden="false" page="0">
           <modifiers/>
         </rule>
-        <rule id="3aa9d276-77fd-0735-8509-b60059f0f8c0" name="Hover Strike" hidden="false" page="0">
-          <modifiers/>
-        </rule>
-        <rule id="7bfdeb2f-d744-f5ce-7aaf-d367bbc67e5d" name="Supersonic" hidden="false" page="0">
+        <rule id="3aa9d276-77fd-0735-8509-b60059f0f8c0" name="Strafing Run" hidden="false" page="0">
           <modifiers/>
         </rule>
       </rules>
@@ -21972,13 +21984,7 @@ All powers must be selected from the same discipline before the beginning of the
             <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="11"/>
             <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="11"/>
             <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="2"/>
-            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Fast, Skimmer"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="f6792630-5575-56e0-1ce9-dcfc07ff9499" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Ceramite Plating" hidden="false" page="0">
-          <characteristics>
-            <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Flyer, Hover)"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -29897,7 +29903,11 @@ the bearer takes a Strength 4 AP2 hit.</description>
           <modifiers/>
           <rules/>
           <profiles/>
-          <links/>
+          <links>
+            <link id="3235-b0da-7c45-b39e" targetId="d0d68703-dc9f-9626-64c2-49e33b469807" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
         </entry>
         <entry id="b9c96c0f-85c9-cae6-cb7f-6d10b1cb4ed3" name="Lightning Claw" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -29941,7 +29951,11 @@ the bearer takes a Strength 4 AP2 hit.</description>
           <modifiers/>
           <rules/>
           <profiles/>
-          <links/>
+          <links>
+            <link id="64af-0e9c-6065-57cb" targetId="4effd3b4-8ed0-0fab-bd9d-d3ada6ca41e4" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
         </entry>
         <entry id="7ae00ca4-8140-b0c1-1266-a23fe3965112" name="Power Sword" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -29949,7 +29963,11 @@ the bearer takes a Strength 4 AP2 hit.</description>
           <modifiers/>
           <rules/>
           <profiles/>
-          <links/>
+          <links>
+            <link id="bc0f-d053-eb6d-d45c" targetId="71581f2d-4a4a-89b9-ea95-7cedc042efbc" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
         </entry>
         <entry id="5b4bb217-89cf-cd4c-e903-d774507c898d" name="Power Axe" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -30221,72 +30239,48 @@ the bearer takes a Strength 4 AP2 hit.</description>
           <entryGroups/>
           <modifiers/>
           <rules/>
-          <profiles>
-            <profile id="c80fcc2c-4149-fecd-676d-62a72bbc85eb" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Power Sword" hidden="false" book="BRB" page="61">
-              <characteristics>
-                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
-                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="User"/>
-                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
-                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee"/>
-              </characteristics>
+          <profiles/>
+          <links>
+            <link id="995e-c5fd-4bf7-0c6b" targetId="71581f2d-4a4a-89b9-ea95-7cedc042efbc" linkType="profile">
               <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
+            </link>
+          </links>
         </entry>
         <entry id="cec4e2c3-a905-bbbb-2a26-38f3abb7d30d" name="Power Axe" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules/>
-          <profiles>
-            <profile id="5291cfa7-0f5b-a6ec-3805-f6bfbdb6176a" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Power Axe" hidden="false" book="BRB" page="61">
-              <characteristics>
-                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
-                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="+1"/>
-                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Unwieldy"/>
-              </characteristics>
+          <profiles/>
+          <links>
+            <link id="8b4b-60ad-4cb9-cd1d" targetId="7a30edcf-768a-362a-e5f6-b99515b45fff" linkType="profile">
               <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
+            </link>
+          </links>
         </entry>
         <entry id="8a764661-c5a0-74b9-98ba-020d9d2d56f7" name="Power Maul" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules/>
-          <profiles>
-            <profile id="5521074c-a25f-f0ad-9a7a-0fb6f55d47cc" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Power Maul" hidden="false" book="BRB" page="61">
-              <characteristics>
-                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
-                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="+2"/>
-                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
-                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Concussive"/>
-              </characteristics>
+          <profiles/>
+          <links>
+            <link id="5b73-8215-42fd-416e" targetId="4effd3b4-8ed0-0fab-bd9d-d3ada6ca41e4" linkType="profile">
               <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
+            </link>
+          </links>
         </entry>
         <entry id="aa9f374b-fa94-8289-ad02-c23ea5fe5cd0" name="Power Lance" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules/>
-          <profiles>
-            <profile id="c67eae9c-15e5-896c-817e-4064e0f934ae" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Power Lance" hidden="false" book="BRB" page="61">
-              <characteristics>
-                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
-                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="+1 (Charge) / User"/>
-                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3 (Charge) / 4"/>
-                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee"/>
-              </characteristics>
+          <profiles/>
+          <links>
+            <link id="2946-c760-3def-7f3a" targetId="d0d68703-dc9f-9626-64c2-49e33b469807" linkType="profile">
               <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
+            </link>
+          </links>
         </entry>
       </entries>
       <entryGroups/>
