@@ -10467,19 +10467,7 @@ Subsequent turns the weapons then use their normal profile.</description>
           <conditionGroups/>
         </modifier>
       </modifiers>
-      <rules>
-        <rule id="93c60c04-53e7-c052-82ce-48292ca6a8ea" name="Atomantic Shielding" hidden="false">
-          <description>The model has a 5+ invulnerable save against shooting attacks and explosions, and 6+ against attacks suffered in close combat. In addition, if the model suffers a ‘Vehicle Explodes’ damage result, add +1&quot; to the radius of the
-blast.</description>
-          <modifiers/>
-        </rule>
-        <rule id="0a532248-f505-9dca-7640-c34fa2ad3199" name="Deredeo Pattern Dreadnought" hidden="false">
-          <description>The Helical array’s advanced augurs and sophisticated banks of combat-cogitators allow the Deredeo to track and destroy even the swiftest of targets with ease. However, due to the Helical array’s delicacy and ravenous consumption of power, the Deredeo must be immobile while the system is in operation.
-
-If the Deredeo chooses to neither move nor Run in its turn it may, if its controlling player wishes, gain the Skyfire and Interceptor special rules for that entire game turn (ie, both the controlling player’s turn and their opponent’s following player turn) for all of its weapons except its heavy bolters/ heavy flamers.</description>
-          <modifiers/>
-        </rule>
-      </rules>
+      <rules/>
       <profiles>
         <profile id="53e50491-fa6a-e80e-fa89-6e2fcfe28565" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Deredeo Pattern Dreadnought" hidden="false">
           <characteristics>
@@ -10511,6 +10499,12 @@ If the Deredeo chooses to neither move nor Run in its turn it may, if its contro
           <modifiers/>
         </link>
         <link id="2b41c9c3-5384-4450-7cd7-eda18c0af97d" targetId="f056a6c5-7822-4e16-c4a1-788b525ea9cc" linkType="entry group">
+          <modifiers/>
+        </link>
+        <link id="4d42-3363-b22f-4c07" targetId="6c03-9de7-c78c-43d6" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="12a1-85d9-3e49-8d86" targetId="0703-c601-e9bd-c8f2" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -31432,6 +31426,9 @@ Models that disembark using the Skies of Fury special rule cannot charge in the 
       <description>When a unit that contains at least one model with this special rule takes Morale checks or Pinning tests, they ignore any negative Leadership modifiers. If a unit is both Fearless and Stubborn, it uses the rules for Fearless instead.</description>
       <modifiers/>
     </rule>
+    <rule id="a6c3-7950-80e1-e099" name="Supersonic" hidden="false">
+      <modifiers/>
+    </rule>
     <rule id="997dbd38-5ed2-a844-4a3b-c6068502325b" name="Tank Hunters" hidden="false">
       <description>A unit that contains at least one model with this special rule re-rolls failed armour penetration rolls against vehicles (both with shooting and in close combat) and can choose to re-roll glancing hits, in an attempt to instead get a penetrating hit – but the second result must be kept.</description>
       <modifiers/>
@@ -31451,11 +31448,22 @@ You must accept the second roll , even if it is worse than the first.</descripti
 In addition, units containing one or more models with the Zealot special rule re-roll all failed To Hit rolls during the first round of each close combat – they do not get to re-roll failed To Hit rolls in subsequent rounds.</description>
       <modifiers/>
     </rule>
-    <rule id="a6c3-7950-80e1-e099" name="Supersonic" hidden="false">
+    <rule id="6c03-9de7-c78c-43d6" name="Atomantic Shielding" hidden="false">
+      <description>The Dreadnought has a 5+ invulnerable save against shooting attacks and explosions, and 6+ against attacks suffered in close combat. In addition, if the Dreadnought suffers a ‘Vehicle Explodes’ damage result, add +1&quot; to the radius of the blast.</description>
+      <modifiers/>
+    </rule>
+    <rule id="0703-c601-e9bd-c8f2" name="Helical Targeting Array" hidden="false">
+      <description>If the Dreadnought chooses to neither move nor Run in its turn it may, if its controlling player wishes, gain the Skyfire and Interceptor special rules for that entire game turn (ie, both the controlling player’s turn and their opponent’s following player turn) for all of its weapons except its heavy bolters/ heavy flamers</description>
       <modifiers/>
     </rule>
   </sharedRules>
   <sharedProfiles>
+    <profile id="d90e-89c5-9fa8-6cbf" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Armoured Ceramite" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="deaa33cb-d0a7-5bd2-c810-d77f2f26d12c" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Artificer Armour" hidden="false" page="0">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Confers a 2+ Sv"/>
@@ -31758,7 +31766,7 @@ In addition, units containing one or more models with the Zealot special rule re
         <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="8&quot;"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="3"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="-"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1, Blast, Don&apos;t suffer Initive penalty for charging through cover"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1, Blast, Don&apos;t suffer Initiative penalty for charging through cover"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -32286,12 +32294,6 @@ In addition, units containing one or more models with the Zealot special rule re
         <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="10"/>
         <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="3"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Tank"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="d90e-89c5-9fa8-6cbf" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Armoured Ceramite" hidden="false">
-      <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description"/>
       </characteristics>
       <modifiers/>
     </profile>
