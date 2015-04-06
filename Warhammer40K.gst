@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" revision="19" battleScribeVersion="1.15" name="Warhammer 40,000 7th Edition" authorName="BSData organisation" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" revision="20" battleScribeVersion="1.15" name="Warhammer 40,000 7th Edition" authorName="BSData organisation" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <forceTypes>
     <forceType id="5374616e6461726423232344415441232323" name="Combined Arms Detachment" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
       <categories>
@@ -794,7 +794,7 @@
               <conditions/>
               <conditionGroups/>
             </modifier>
-            <modifier type="increment" field="maxSelections" value="10.0" repeat="true" numRepeats="1" incrementParentId="bf93-7277-bf48-16f7" incrementField="selections" incrementValue="1.0">
+            <modifier type="increment" field="maxSelections" value="8.0" repeat="true" numRepeats="1" incrementParentId="bf93-7277-bf48-16f7" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups/>
             </modifier>
