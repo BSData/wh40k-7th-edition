@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d2336634-cdcd-4391-2b54-1dac0890820f" revision="23" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Black Legion (2013)" authorName=" BSData team (Final Version)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d2336634-cdcd-4391-2b54-1dac0890820f" revision="24" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Black Legion (2013)" authorName=" BSData team (Final Version)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="d333bebf-fda1-d63f-3a91-f3c4a81166e1" name="[Apoc] Cult of Destruction" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -18030,15 +18030,10 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
               <conditionGroups/>
             </modifier>
             <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition parentId="force type" childId="96a24b9f-0bc4-44e2-bc79-bd5690dc73dc" field="selections" type="less than" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition parentId="force type" childId="96a24b9f-0bc4-44e2-bc79-bd5690dc73dc" field="selections" type="at least" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
             </modifier>
             <modifier type="increment" field="points" value="6.0" repeat="true" numRepeats="1" incrementParentId="ea43513d-eae7-f93a-0b2b-c26b9661a26d" incrementChildId="d11591d1-84c4-239c-7718-2351663067af" incrementField="selections" incrementValue="1.0">
               <conditions/>
