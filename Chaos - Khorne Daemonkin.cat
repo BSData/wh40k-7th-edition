@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9b32-f1cf-7ad4-9ca1" revision="15" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="17" battleScribeVersion="1.15" name="Codex: Khorne Daemonkin" authorName="BSData Team (Original Author: NebSeele)" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9b32-f1cf-7ad4-9ca1" revision="16" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="17" battleScribeVersion="1.15" name="Codex: Khorne Daemonkin" authorName="BSData Team (Original Author: NebSeele)" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="49a9-ad27-f5f7-4717" name="Chaos Land Raider" points="230.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -1640,7 +1640,26 @@
           </entries>
           <entryGroups/>
           <modifiers/>
-          <links/>
+          <links>
+            <link id="154f-9023-710f-1be9" targetId="f37d-9f9a-86da-e0e7" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="6f2e-1f45-b659-850b" childId="ec50-e456-2e3c-2cf6" field="selections" type="at least" value="1.0"/>
+                        <condition parentId="6f2e-1f45-b659-850b" childId="c64b-1539-3938-1ba9" field="selections" type="at least" value="1.0"/>
+                        <condition parentId="6f2e-1f45-b659-850b" childId="1d35-ea4d-a89a-36e4" field="selections" type="at least" value="1.0"/>
+                        <condition parentId="6f2e-1f45-b659-850b" childId="12aa-0127-2660-2086" field="selections" type="at least" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </link>
+          </links>
         </entryGroup>
         <entryGroup id="581a-affe-771a-a297" name="Power Armour Weapons" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -1817,7 +1836,7 @@
                     </link>
                   </links>
                 </entry>
-                <entry id="8e3e-7845-c4e9-2ec9" name="Combi-Bolter" points="3.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entry id="8e3e-7845-c4e9-2ec9" name="Combi-Bolter" points="3.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -1927,16 +1946,6 @@
             </modifier>
           </modifiers>
           <links>
-            <link id="9501-c00b-526c-10b2" targetId="f37d-9f9a-86da-e0e7" linkType="entry">
-              <modifiers>
-                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="6f2e-1f45-b659-850b" childId="4c8d-389e-2297-a426" field="selections" type="at least" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-            </link>
             <link id="0802-8581-511a-a6fd" targetId="a523-7ac5-c347-11b5" linkType="entry">
               <modifiers/>
             </link>
@@ -3913,13 +3922,7 @@
           <entryGroups/>
           <modifiers/>
           <links>
-            <link id="160f-e136-39e1-199c" targetId="749d-24c7-da50-0fd0" linkType="entry">
-              <modifiers/>
-            </link>
             <link id="0047-1a2d-9641-fd12" targetId="fcaf-0f45-fbfc-2398" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="1a81-cf97-7a65-4ef9" targetId="0a31-f10b-2b86-fd9f" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -3961,6 +3964,12 @@
           <modifiers/>
         </link>
         <link id="feb4-2150-47c7-89d5" targetId="5ed1-5aee-1cb0-f2ee" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="cfa1-e275-a667-0627" targetId="4654-72cc-ab43-33cd" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="22c4-60c5-0ed6-fd3f" targetId="a523-7ac5-c347-11b5" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -5169,7 +5178,7 @@ Hull Point is still lost.</description>
       <profiles/>
       <links/>
     </entry>
-    <entry id="fcaf-0f45-fbfc-2398" name="The Blade of Endless Bloodshed" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="fcaf-0f45-fbfc-2398" name="The Blade of Endless Bloodshed" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
       <modifiers/>
