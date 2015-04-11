@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9b32-f1cf-7ad4-9ca1" revision="17" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="17" battleScribeVersion="1.15" name="Codex: Khorne Daemonkin" authorName="BSData Team (Original Author: NebSeele)" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9b32-f1cf-7ad4-9ca1" revision="18" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="17" battleScribeVersion="1.15" name="Codex: Khorne Daemonkin" authorName="BSData Team (Original Author: NebSeele)" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="49a9-ad27-f5f7-4717" name="Chaos Land Raider" points="230.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -1624,6 +1624,21 @@
             </link>
           </links>
         </entry>
+        <entry id="040f-cfe4-3662-e85c" name="Aura of Dark Glory" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="b6b8-77f9-33f4-7b85" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Aura of Dark Glory" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Confers a 5+ Invunerable save"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
       </entries>
       <entryGroups>
         <entryGroup id="4e1d-071c-76ed-9bcf" name="Armour" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -2157,7 +2172,14 @@
             <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="10"/>
             <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
           </characteristics>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+/4++" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="6f2e-1f45-b659-850b" childId="12eb-4d10-59f8-5a78" field="selections" type="at least" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <links>
@@ -2168,6 +2190,12 @@
           <modifiers/>
         </link>
         <link id="7482-ef3d-fdcf-e1ea" targetId="7783-1a0e-8e43-0840" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="f311-72b9-b539-5cb6" targetId="d022-a925-1ddb-d399" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="bcaf-d8bd-6031-275a" targetId="c573-9539-c944-eca6" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -2642,7 +2670,11 @@
                   <modifiers/>
                   <rules/>
                   <profiles/>
-                  <links/>
+                  <links>
+                    <link id="870e-327e-1297-7d7e" targetId="395d-ec6c-3086-c2d1" linkType="entry group">
+                      <modifiers/>
+                    </link>
+                  </links>
                 </entry>
               </entries>
               <entryGroups/>
@@ -2665,7 +2697,11 @@
                   <modifiers/>
                   <rules/>
                   <profiles/>
-                  <links/>
+                  <links>
+                    <link id="1f4d-eb29-ff49-6d2c" targetId="1b7f-4c12-ee09-1161" linkType="entry group">
+                      <modifiers/>
+                    </link>
+                  </links>
                 </entry>
                 <entry id="f365-68af-201f-47dc" name="Twin Lightning Claw" points="4.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries/>
@@ -2773,7 +2809,7 @@
                   <profiles/>
                   <links/>
                 </entry>
-                <entry id="daa6-f5b5-38de-1652" name="Power Fist" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entry id="daa6-f5b5-38de-1652" name="Power Fist" points="7.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -3230,7 +3266,20 @@
             <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="9"/>
             <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="-/5++"/>
           </characteristics>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+/5++" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="f276-5bd4-a0c1-dcd3" childId="8d57-e441-2f00-e3ef" field="selections" type="at least" value="1.0"/>
+                    <condition parentId="f276-5bd4-a0c1-dcd3" childId="f37d-9f9a-86da-e0e7" field="selections" type="at least" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <links>
@@ -4004,7 +4053,7 @@
         </link>
       </links>
     </entry>
-    <entry id="4654-72cc-ab43-33cd" name="Juggernaut of Khorne" points="45.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+    <entry id="4654-72cc-ab43-33cd" name="Juggernaut of Khorne" points="45.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
       <modifiers/>
@@ -5303,6 +5352,14 @@ Once per game at the start of the enemies psychic phase, you can declare that yo
       <profiles/>
       <links/>
     </entry>
+    <entry id="7783-1a0e-8e43-0840" name="Warlord" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="1" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
     <entry id="e654-a74a-083b-bd8f" name="Warp Talons" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="7d1f-0665-0a0e-0321" name="Warp Talon" points="34.0" categoryId="(No Category)" type="model" minSelections="4" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -5567,14 +5624,6 @@ Once per game at the start of the enemies psychic phase, you can declare that yo
         </link>
       </links>
     </entry>
-    <entry id="7783-1a0e-8e43-0840" name="Warlord" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="1" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="e1ff-729a-1ceb-1253" name="Artefacts of Slaughter" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -5684,28 +5733,6 @@ Once per game at the start of the enemies psychic phase, you can declare that yo
     </entryGroup>
     <entryGroup id="73cf-7220-b94b-0035" name="Gifts of Khorne" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
-        <entry id="2cd3-09ba-a61f-7238" name="Aura of Dark Glory" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="direct parent" childId="6f2e-1f45-b659-850b" field="selections" type="instance of" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules/>
-          <profiles>
-            <profile id="d5c0-f490-bb0b-6f08" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Aura of Dark Glory" hidden="false">
-              <characteristics>
-                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Confers a 5+ Invunerable save"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
         <entry id="74d2-6a80-1b54-a775" name="Collar of Khorne" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
@@ -6183,8 +6210,8 @@ Once per game at the start of the enemies psychic phase, you can declare that yo
     <rule id="c573-9539-c944-eca6" name="Blood for the Blood God!" hidden="false">
       <description>A Khorne Daemonkin army generates Blood Tithe points that the player keeps track of (up to a max of 8 Tithes). These Blood Tithes are earned by:
 
-• A unit containing this rule either being completely destroyed, or completely destroying an enemy unit.
-• A Character with this rule is either slain, or slays an enemy character in a challenge.
+1. A unit containing this rule either being completely destroyed, or completely destroying an enemy unit.
+2. A Character with this rule is either slain, or slays an enemy character in a challenge.
 
 At the start of the player turn, the player may choose to spend the Blood Tithes (Blood Tithe chart is found in Codex: Khorne Daemonkin). The remaining Blood Tithes are then lost as part of the purchase. The player may still continue to harvest Tithe after all purchases.</description>
       <modifiers/>
