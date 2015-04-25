@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a1d51a68-4b57-eb7d-f7e2-23bf0c22e374" revision="116" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2013)" authorName="Thommy Abbott" authorContact="legiones.astartes@gmail.com" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a1d51a68-4b57-eb7d-f7e2-23bf0c22e374" revision="117" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2013)" authorName="Thommy Abbott" authorContact="legiones.astartes@gmail.com" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="ba186d42-94de-9258-eea8-9ff224149e35" name="1st Company Hammerfall Assault Force" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -27778,6 +27778,84 @@ All powers must be selected from the same discipline before the beginning of the
           <modifiers/>
         </link>
         <link id="6450-edc6-6a6c-17aa" targetId="451a-3769-a668-e963" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="d3f7-acd5-a2b1-a5d4" name="Deimos Pattern Vindicator Tank Destroyer" points="130.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries>
+        <entry id="cdfb-5f5c-05ff-0294" name="Laser Destroyer Array" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="e797-c5fc-1eef-1bf1" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Laser Destroyer Array" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="48&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordance 1, Twin-linked"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="60b0-c035-5da8-85b6" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Power Capacitor" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Power Capacitor
+The vehicle’s internal volume, which is normally taken up with a munitions store for the more common Vindicator’s demolisher cannon, is instead occupied by a bulky reactor-charged power capacitor whose energy stores can be used to greatly increase the laser destroyer’s rate of fire. Stability is required for this overcharged firing however, and it is possible for the capacitor to overload the vehicle’s energy grid with disastrous consequences.
+
+Capacitor Fire: If the Vindicator Tank Destroyer has not moved this turn, the laser destroyer array becomes an Ordnance 2, Twin-linked weapon.
+
+Overcharged Fire: The owning player may declare an overcharged volley if the vehicle has not moved this turn, in which case the laser destroyer array becomes Ordnance 3, Twin-linked. However, after the weapon is fired in this mode, roll a D6. On a roll of a 1, the Vindicator suffers a single Hull Point of damage."/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="b210-8399-177a-49c8" name="Siege Shield" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="0b5e240d-44b6-161f-2e9f-ae04b01499c0" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles>
+        <profile id="46b1-6571-5cdf-5655" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Deimos Pattern Vindicator Tank Destroyer" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="13"/>
+            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="11"/>
+            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="10"/>
+            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="3"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Tank)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="3371-8172-79dd-1001" targetId="f0e6246d-137e-7921-4209-99318a073b42" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="5cfb-4e08-1998-be8e" targetId="b2b9d48b-7476-c812-d0c9-621c3c072d46" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="3785-4e91-e5a2-b52e" targetId="df3152e1-d571-da0c-817f-212813948f53" linkType="entry group">
+          <modifiers/>
+        </link>
+        <link id="1f6f-4731-c882-2aad" targetId="142f6556-47f7-29c2-d5ed-5c8a46b31d15" linkType="entry group">
           <modifiers/>
         </link>
       </links>
