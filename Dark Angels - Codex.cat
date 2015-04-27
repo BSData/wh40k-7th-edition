@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="49ec5c4a-e83d-298f-9f4d-27c1fa888842" revision="74" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Dark Angels: Codex (2013)" books="" authorName="LM, Thairne, Axis of Entropy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="49ec5c4a-e83d-298f-9f4d-27c1fa888842" revision="75" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Dark Angels: Codex (2013)" books="" authorName="LM, Thairne, Axis of Entropy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="85fcc0d3-b135-dd2b-83fa-2bcc97e4449e" name="Asmodai" points="140.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Angels 6th" page="55">
       <entries/>
@@ -5140,6 +5140,76 @@
           <modifiers/>
         </link>
         <link id="bc02fd8d-1dfa-a66e-49d2-9cb1ec5ab22e" targetId="db652490-3e76-2359-6686-b1ac2da84430" linkType="entry group">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="b413-6797-6650-a111" name="Deimos Pattern Vindicator Laser Destroyer *" points="130.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="http://www.forgeworld.co.uk/Downloads/Product/PDF/D/Deimos_Vindicator_Laser_Destroyer.pdf">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="9762-50e6-f64f-d0d0" name="May take" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="32d1-9da1-090f-8533" targetId="d51fa210-5086-0ef7-b11c-cd30499454f7" linkType="entry group">
+              <modifiers/>
+            </link>
+            <link id="12ff-d7c4-384e-5017" targetId="7760-af65-742c-ed86" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="roster" childId="61a02f94-5e73-0bcc-48f0-22910b91bb1c" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="ad010b15-b158-8a7a-bc3d-3479991735db" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="9a18-eeae-7631-5c28" name="Power Capacitator" hidden="false">
+          <description>The vehicle’s internal volume, which is normally taken up with a munitions store for the more common Vindicator’s demolisher cannon, is instead occupied by a bulky reactor-charged power capacitor whose energy stores can be used to greatly increase 
+the laser destroyer’s rate of fire. Stability is required for this overcharged firing however, and it is possible for the capacitor to overload the vehicle’s energy grid with disastrous consequences.</description>
+          <modifiers/>
+        </rule>
+        <rule id="ff9a-18f0-04e9-17f0" name="Capacitator Fire" hidden="false">
+          <description> If the Vindicator Tank Destroyer has not moved this turn, the laser destroyer array becomes an Ordnance 2, Twin-linked weapon</description>
+          <modifiers/>
+        </rule>
+        <rule id="0ecc-5664-3640-f752" name="Overcharged Fire" hidden="false">
+          <description>The owning player may declare an overcharged volley if the vehicle has not moved this turn, in which case the laser destroyer array becomes Ordnance 3, Twin-linked. However, after the weapon is fired in this mode, roll a D6. On a roll of a 1, the Vindicator suffers a single Hull Point of damage.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="28bf-7106-7236-8ffe" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Laser Destroyer Array" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="48"/>
+            <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
+            <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Twin-linked
+"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="ac43-35f8-616e-9ce9" targetId="33728e61-dd9a-8837-1804-29124b90498f" linkType="entry group">
+          <modifiers/>
+        </link>
+        <link id="a5ad-2c65-a45d-11b8" targetId="261b-5bb5-42b6-a0ef" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="a523-ef0a-38bd-207f" targetId="52f1905f-6c97-8eee-76b3-2dba0bc1ea4e" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -13181,21 +13251,6 @@ If the result is 5 or more you may either restore a Hull Point or repair a Weapo
     </entry>
     <entry id="42478a02-d484-5292-9f73-4cd657dfea7c" name="Vindicator" points="125.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Angels 6th" page="39">
       <entries>
-        <entry id="d03d9a64-8acd-4649-881c-ee0535596c3f" name="Siege Shield" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="1e82ec4d-d85f-9eda-e8e1-2aea9d64410f" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Siege Shield" hidden="false" book="Codex: Dark Angels 6th" page="65">
-              <characteristics>
-                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Automatically pass dangerous terrain"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
         <entry id="230ade87-49cc-c207-0b5c-6ad15f284275" name="Demolisher Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
@@ -13218,19 +13273,7 @@ If the result is 5 or more you may either restore a Hull Point or repair a Weapo
       <entryGroups/>
       <modifiers/>
       <rules/>
-      <profiles>
-        <profile id="796fdcf4-07e4-b966-5f0f-1175c6f75b74" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Vindicator" hidden="false" book="Codex: Dark Angels 6th" page="39">
-          <characteristics>
-            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
-            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="13"/>
-            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="11"/>
-            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="10"/>
-            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="3"/>
-            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Tank"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
+      <profiles/>
       <links>
         <link id="38e3b419-769c-f6c9-7104-47aac3d5364c" targetId="d51fa210-5086-0ef7-b11c-cd30499454f7" linkType="entry group">
           <modifiers/>
@@ -13256,6 +13299,12 @@ If the result is 5 or more you may either restore a Hull Point or repair a Weapo
               </conditionGroups>
             </modifier>
           </modifiers>
+        </link>
+        <link id="35cb-4236-ab7f-ba9e" targetId="7760-af65-742c-ed86" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="05b9-d5d9-1841-1aeb" targetId="261b-5bb5-42b6-a0ef" linkType="profile">
+          <modifiers/>
         </link>
       </links>
     </entry>
@@ -17862,6 +17911,21 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
         </link>
       </links>
     </entry>
+    <entry id="7760-af65-742c-ed86" name="Siege Shield" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles>
+        <profile id="a4da-e44a-36e5-8c98" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Siege Shield" hidden="false" book="Codex: Dark Angels 6th" page="65">
+          <characteristics>
+            <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Automatically pass dangerous terrain"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
     <entry id="52f1905f-6c97-8eee-76b3-2dba0bc1ea4e" name="Smoke Launchers and Searchlight" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="BRB 2014" page="98">
       <entries/>
       <entryGroups/>
@@ -21618,6 +21682,10 @@ Models with &quot;And They Shall Know No Fear&quot; and &quot;Fearless&quot; are
     <rule id="38b0dd07-d977-107a-9760-2302737021d6" name="Fleet" hidden="false">
       <modifiers/>
     </rule>
+    <rule id="3358-911e-5aae-4dd5" name="Force" hidden="false" book="BRB 2014" page="164">
+      <description>Psyker also has Force power: Warp Charge 1 Blessing, Psyker&apos;s unit&apos;s weapons with this rule gain Instant Death for a turn.</description>
+      <modifiers/>
+    </rule>
     <rule id="d05b437f-3564-ab80-9124-96a6977dbe30" name="Fortress of Shields" hidden="false" book="Codex: Dark Angels 6th" page="45">
       <description>Any model with the Inner Circle rule that is in base contact with at least two models with this rule gain +1 Toughness.</description>
       <modifiers/>
@@ -21846,10 +21914,6 @@ If held in reserve, the unit gains Outflank.</description>
     </rule>
     <rule id="610ff1cd-1978-12cb-d0ce-29ca4dc5da1f" name="Zealot" hidden="false" book="BRB 2014" page="174">
       <description>Unit this Character is joined to has Fearless and Hatred (Everything)</description>
-      <modifiers/>
-    </rule>
-    <rule id="3358-911e-5aae-4dd5" name="Force" hidden="false" book="BRB 2014" page="164">
-      <description>Psyker also has Force power: Warp Charge 1 Blessing, Psyker&apos;s unit&apos;s weapons with this rule gain Instant Death for a turn.</description>
       <modifiers/>
     </rule>
   </sharedRules>
@@ -22121,6 +22185,21 @@ If held in reserve, the unit gains Outflank.</description>
     <profile id="aeaeb6b8-e4ce-fd55-6d8a-fa81af948911" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Dozer blade" hidden="false" book="BRB 2014" page="98">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Treat front armour as one higher when ramming. Re-roll failed dangerous terrain tests."/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="889a-8fb9-49d8-4eb1" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Dreadnought" hidden="false" book="Codex: Dark Angels 6th" page="43">
+      <characteristics>
+        <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
+        <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+        <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="6"/>
+        <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="12"/>
+        <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="12"/>
+        <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="10"/>
+        <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
+        <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="2"/>
+        <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="3"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Walker)"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -23115,18 +23194,14 @@ If held in reserve, the unit gains Outflank.</description>
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="889a-8fb9-49d8-4eb1" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Dreadnought" hidden="false" book="Codex: Dark Angels 6th" page="43">
+    <profile id="261b-5bb5-42b6-a0ef" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Vindicator" hidden="false" book="Codex: Dark Angels 6th" page="39">
       <characteristics>
-        <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
         <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
-        <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="6"/>
-        <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="12"/>
-        <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="12"/>
+        <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="13"/>
+        <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="11"/>
         <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="10"/>
-        <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
-        <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="2"/>
         <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="3"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Walker)"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Tank"/>
       </characteristics>
       <modifiers/>
     </profile>
