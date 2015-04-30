@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" revision="24" battleScribeVersion="1.15" name="Warhammer 40,000 7th Edition" authorName="BSData organisation" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" revision="25" battleScribeVersion="1.15" name="Warhammer 40,000 7th Edition" authorName="BSData organisation" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <forceTypes>
     <forceType id="5374616e6461726423232344415441232323" name="Combined Arms Detachment" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
       <categories>
@@ -1001,6 +1001,16 @@
     <profileType id="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Wargear Item">
       <characteristics>
         <characteristic id="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description"/>
+      </characteristics>
+    </profileType>
+    <profileType id="286c-0cd4-7630-47d0" name="Building">
+      <characteristics>
+        <characteristic id="83f8-a458-93f9-3e46" name="Armour Value"/>
+        <characteristic id="0e9c-76b3-2877-614d" name="Transport Capacity"/>
+        <characteristic id="13de-08da-586d-f7c0" name="Access Points"/>
+        <characteristic id="0767-d18e-a48d-3b39" name="Fire Points"/>
+        <characteristic id="d1d7-bcc6-18cd-c948" name="Hull Points"/>
+        <characteristic id="ff97-f5f0-521b-eaf4" name="Building Type"/>
       </characteristics>
     </profileType>
   </profileTypes>
