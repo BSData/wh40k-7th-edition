@@ -2420,7 +2420,7 @@ Mirage is a blessing that targets the psyker, as well as any unit he has joined 
       <entryGroups>
         <entryGroup id="a18c85db-48cb-b669-33af-782e0aeedcf3" name="Min of 4 required" minSelections="4" maxSelections="8" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
-            <entry id="b8db75bb-181c-c541-e34c-eba6c037bd13" name="Space Marine Biker" points="21.0" categoryId="(No Category)" type="upgrade" minSelections="3" maxSelections="7" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="b8db75bb-181c-c541-e34c-eba6c037bd13" name="Space Marine Biker" points="21.0" categoryId="(No Category)" type="upgrade" minSelections="4" maxSelections="7" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -2455,14 +2455,14 @@ Mirage is a blessing that targets the psyker, as well as any unit he has joined 
         </entryGroup>
       </entryGroups>
       <modifiers>
-        <modifier type="show" field="maxInRoster" value="-1.0" repeat="false" numRepeats="1" incrementParentId="category" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+        <modifier type="show" field="maxInRoster" value="-1.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition parentId="force type" childId="688ceb09-35a6-6a99-ebb7-28875c5de49d" field="selections" type="greater than" value="0.0"/>
                 <condition parentId="force type" childId="6e6f629a-ed41-65ae-d9c8-1c91b017b444" field="selections" type="greater than" value="0.0"/>
-                <condition parentId="force type" childId="2fa112c3-ce71-4fb7-a94a-e74f5903e3cf" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="cd33263f-6b0d-4121-9249-bf8f3bdef81c" field="selections" type="greater than" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -28052,8 +28052,10 @@ All powers must be selected from the same discipline before the beginning of the
         </entryGroup>
       </entryGroups>
       <modifiers>
-        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="d135b2e3-d096-f91b-fc3c-0905d4b0b5e5" incrementField="selections" incrementValue="1.0">
-          <conditions/>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="d135b2e3-d096-f91b-fc3c-0905d4b0b5e5" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="d135b2e3-d096-f91b-fc3c-0905d4b0b5e5" field="selections" type="equal to" value="1.0"/>
+          </conditions>
           <conditionGroups/>
         </modifier>
       </modifiers>
