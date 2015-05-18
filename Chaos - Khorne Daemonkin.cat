@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9b32-f1cf-7ad4-9ca1" revision="25" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="17" battleScribeVersion="1.15" name="Codex: Khorne Daemonkin" authorName="BSData Team (Original Author: NebSeele)" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9b32-f1cf-7ad4-9ca1" revision="27" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="17" battleScribeVersion="1.15" name="Codex: Khorne Daemonkin" authorName="BSData Team (Original Author: NebSeele)" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="09fd-7e29-0ff2-82d5" name="Blood Tithe reference table" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -326,9 +326,566 @@ Tithe Costs/Bonus
     <link id="1cee-8d86-7fd1-3f3e" targetId="110a-2eb6-2988-3db0" linkType="entry" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
       <modifiers/>
     </link>
+    <link id="867b-d0e6-616e-814b" targetId="b8fc-9a78-208b-5643" linkType="entry" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
+      <modifiers/>
+    </link>
+    <link id="8a5c-9264-548b-a4fa" targetId="4b7a-adaf-c469-b2b6" linkType="entry" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
+      <modifiers/>
+    </link>
+    <link id="d341-18f6-514c-b75d" targetId="9078-23ca-af6a-d83a" linkType="entry" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
+      <modifiers/>
+    </link>
+    <link id="159f-39d2-d51a-f234" targetId="5ee2-070f-11bc-d0ed" linkType="entry" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
+      <modifiers/>
+    </link>
   </links>
   <sharedEntries>
-    <entry id="974a-ee2c-eca4-a66f" name="Berzerkers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="592e-e78f-02db-0fda" name="[FW] Blood Slaughterers of Khorne" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour 13" page="0">
+      <entries>
+        <entry id="5f57-0a14-ef96-931f" name="Blood Slaughterer of Khorne" points="130.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="6321-e6cd-2b74-5e87" name="Dreadnought Close Combat Weapon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="decrement" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="5f57-0a14-ef96-931f" childId="7363-e04b-b2e9-b1c4" field="selections" type="at least" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="5f57-0a14-ef96-931f" childId="7363-e04b-b2e9-b1c4" field="selections" type="at least" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="7363-e04b-b2e9-b1c4" name="Impaler" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="8a65-7815-6021-e284" name="Impaler" hidden="false" page="0">
+                  <description>Drags the target model into Close Combat. Counts as a shooting attack that hits on a 4+. If successfuly hit or penetrating (and the target survives), move the target 2D6&quot; straight towards the Blood Slaughterer.
+Cannot drag model through obstructions it cannot normally pass through and stops 1&quot; away from the obstruction.
+
+Super-heavies, Gargantuan Creatures and buildings cannot be dragged by the impaler.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="274d-eb1d-66af-8e7a" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Impaler" hidden="false" page="0">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1, Impaler"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="8f58-d85e-5643-98f9" name="Fury of Khorne" hidden="false" page="0">
+              <description>When charging into Assault, the Blood Slaughterer gains +D3 attacks instead.</description>
+              <modifiers/>
+            </rule>
+            <rule id="0efa-18d3-e135-9daa" name="Blind Fury" hidden="false" page="0">
+              <description>It must always move as fast as possible towards the closest visible enemy and must consolidate towards the closest visible enemy. If it chooses to run during the shooting phase, it must be towards the closest visible enemy. Does not apply if there are no visible enemies.</description>
+              <modifiers/>
+            </rule>
+            <rule id="639b-d790-d58c-1e82" name="Daemonic Resiliance" hidden="false">
+              <description>The unit ignores Crew shaken can Crew stunned results on a 2+.
+Hull Point is still lost.</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="209e-e11d-5499-482e" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Blood Slaughterer of Khorne" hidden="false" page="0">
+              <characteristics>
+                <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="5"/>
+                <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="1"/>
+                <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="6"/>
+                <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="13"/>
+                <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="12"/>
+                <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="10"/>
+                <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
+                <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="3"/>
+                <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="3"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Walker)"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links>
+            <link id="2707-d276-214b-57f3" targetId="82b9-a4fd-df5f-a607" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="bb6b-56cb-8f59-fe64" targetId="5ed1-5aee-1cb0-f2ee" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="1341-8f2f-20bf-3650" targetId="ab05-f523-f396-a65f" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="569f-6541-928f-fc20" targetId="cbac-bc11-c867-9700" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="d8c4-b119-9272-00df" targetId="c573-9539-c944-eca6" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="4e03-8966-518b-7826" name="[FW] Chaos Decimator Daemon Engine" points="220.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour 13" page="0">
+      <entries>
+        <entry id="b228-1f93-37b4-4f28" name="Searchlight" points="1.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="bc66-0f2f-046f-f3a7" targetId="ed19-ca98-b7f3-9d08" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="2826-ea96-89b6-662b" name="Smoke Launchers" points="3.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="1f56-3d56-ef9f-bb2a" targetId="c344-ce69-a5ae-913c" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="33b2-2f2e-d7cc-2d84" name="Weapons" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="25ed-d883-b692-a169" name="Butcher Cannon" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="9723-b68c-806b-a948" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Butcher Cannon" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 4"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="a0af-417c-6f72-597a" name="Storm Laser" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="e85b-dab8-8fcb-ee16" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Storm Laser" hidden="false" page="0">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy D3+2"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="b2de-57fe-0e95-0fe4" name="Soulburner Petard" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="fa22-304e-278f-00a1" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Soulburner Petard" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value=""/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Large Blast (5&quot;), Rending"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="6320-6471-efc6-54eb" name="Heavy Conversion Beamer" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="811d-b955-dd61-fb86" name="Firing Calibration" hidden="false" page="0">
+                  <description>The weapon may not be fired if the model has moved that turn, regardless of unit type, embarked in a vehicle, Relentless or Slow and Purposeful</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="1aaf-cd3c-017a-94c2" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Heavy Conversion Beam 0-18" hidden="false" page="0">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Up to 18&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="-"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Large Blast (5&quot;), Firing Calibration"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="19d2-99d5-2c22-c412" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Heavy Conversion Beam 18-42" hidden="false" page="0">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="18&quot;-42&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Large Blast (5&quot;), Firing Calibration"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="c04d-7952-d2f2-cf99" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Heavy Conversion Beam 42-72" hidden="false" page="0">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="42&quot;-72&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="10"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Large Blast (5&quot;), Firing Calibration"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="8697-2b8d-73fa-cfcd" name="Decimator Siege Claw" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="699c-4e7e-27d9-0a67" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Decimator Siege Claw" hidden="false" page="0">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="User"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Shred, Smash"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="25b5-7310-323e-225d" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="in-built Heavy Flamer" hidden="false" page="0">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Template"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="0ecf-60dd-1ed9-383b" name="Unholy Vigor" hidden="false" page="0">
+          <description>Whenever the Decimator suffers a Weapon Destroyed or Immobilized result, it can be ignored on a D6 roll of 5+
+If the Decimator is wrecked (but not exploded), place it on its back, side or leave a marker on the table to represent its position. 
+
+At the start of the controlling players subsequent turns, before movement, roll a D6. On a 6 the model returns to play (as close to the original location but 1&quot; away from an enemy) as though it has just Deep Struck in with all of its weapons and mobility restored and D3 Hull Points. On a 1, the Decimator is permamently wrecked.
+
+On a roll of a 2-5, it remains wrecked but the controlling player may attempt to roll for Unholy Vigor on their next turn.</description>
+          <modifiers/>
+        </rule>
+        <rule id="915a-30e9-8d46-3da7" name="Daemonic Resiliance" hidden="false">
+          <description>The unit ignores Crew shaken can Crew stunned results on a 2+.
+Hull Point is still lost.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="71f9-e539-5ff5-d219" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Chaos Decimator Daemon Engine" hidden="false" page="0">
+          <characteristics>
+            <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="3"/>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="3"/>
+            <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="8"/>
+            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="13"/>
+            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="12"/>
+            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="11"/>
+            <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="3"/>
+            <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="2"/>
+            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="3"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Walker)"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="increment" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1" repeat="true" numRepeats="1" incrementParentId="4e03-8966-518b-7826" incrementChildId="8697-2b8d-73fa-cfcd" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <links>
+        <link id="3436-c985-ebb4-584b" targetId="82b9-a4fd-df5f-a607" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="9860-bc33-d6ba-5193" targetId="5ed1-5aee-1cb0-f2ee" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="d264-a3cd-73f9-a8b0" targetId="c573-9539-c944-eca6" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="0d65-df72-f15a-d75f" targetId="cbac-bc11-c867-9700" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="fd4a-a735-0981-bfac" name="[FW] Kharybdis Assault Claw" points="260.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour 13">
+      <entries>
+        <entry id="abe7-0cc9-631b-80a6" name="Kharybdis Storm Launchers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="5" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="5a7e-10b4-d207-0104" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name=" Kharybdis Storm Launchers" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 2, Pinning, Twin-linked"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="0e94-2510-ccac-f7e9" name="Melta-ram" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="a1f3-21c4-4715-755f" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Melta-ram" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Although a Flyer, the Kharybdis may conduct Ram attacks as if it were a Tank while using Hover mode. It may not, however, Ram other Flyers or make such an attack on any turn in which it arrives from reserve. It also may not conduct a Ram on any turn on which it embarks or disembarks models or uses its Heat Blast attack."/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="701a-cdac-392c-d461" name="Inertial Guidance System" hidden="false">
+          <description>Should a Kharybdis scatter on top of impassable terrain or another model, then reduce the scatter distance by the minimum required to avoid the obstacle if desired.</description>
+          <modifiers/>
+        </rule>
+        <rule id="bd1e-8cc3-2c11-61bb" name="Independent Gun Spirits" hidden="false">
+          <description>Kharybdis may target different enemy units with each of their weapons.</description>
+          <modifiers/>
+        </rule>
+        <rule id="1a9b-8b60-ebf7-9d5a" name="Transport Capacity: Kharybdis" hidden="false">
+          <description>May Transport any of the following:
+A unit of up to 20 models
+A Single Ferrum Infernus Dreadnought
+A Single Emperors Children Sonic Dreadnought
+A Single Chaos Contemptor Dreadnought
+A Single Chaos Rapier Weapons Battery</description>
+          <modifiers/>
+        </rule>
+        <rule id="44bf-f306-c345-a5ee" name="Access Point: Kharybdis" hidden="false">
+          <description>One access point underneath the hull. In practice models disembark at ground level, measuring from the ground level of the main hull.</description>
+          <modifiers/>
+        </rule>
+        <rule id="0f57-e6d6-d71a-513f" name="Drop Pod Assault" hidden="false">
+          <description>A Kharybdis or Dreadclaw, and any unit they should transport, must always be held in reserve and always enters play using the Deep Strike rules, and counts as a Drop Pod for the wider use of the Drop Pod Assault rule for the army (applies to both the Kharybdis and Dreadclaw). 
+
+At the beginning of the controlling player’s first player turn, they must choose half of their Drop Pod units (rounding up) to make a Drop Pod Assault. These units arrive on their controlling player’s first player turn. The arrival of the remaining Drop Pods in the player’s force is rolled for as usual for the mission. A unit who Deep Strikes via Drop Pod may not assault in the turn it arrives. In the case of the Dreadclaw and Kharybdis, unlike other Drop Pods it is not immobile, however, after it has landed it is treated as a Flyer with Hover mode (which starts off as hovering after it has arrived via Deep Strike).</description>
+          <modifiers/>
+        </rule>
+        <rule id="c10c-8f4d-b696-9b3e" name="Heat Blast" hidden="false">
+          <description>When a model with this rule arrives via Deep Strike, or later when operating as a skimmer in Hover mode, it may if its controlling player wishes inflict a Heat Blast attack. If it does so, then models it is transporting may not disembark or embark on the turn this attack is used.
+
+Heat Blast (Deep Strike): Immediately after the model lands, measure a radius of 3&quot;+D3&quot; horizontally outwards from its main hull (do not count any landing struts, etc). All models caught in the blast suffer a Str 6 AP 5 hit with no cover saves. Vehicles are struck on their weakest Armour value. This is counted as a flamer-based attack.
+
+Heat Blast (Fire Sweep): If the controlling player wishes, any unit the model passes directly over (i.e., falls directly under its hull during its Movement phase) suffers D6 Str 5 AP 5 hits with no cover saves. Vehicles are struck on their weakest Armour value. This is counted as a flamer-based attack. Hits from this attack are distributed across a unit as the player suffering the attack wishes. Roll a D6 each time this attack is inflicted. On a result of a 1, the Drop Pod itself suffers a penetrating hit.</description>
+          <modifiers/>
+        </rule>
+        <rule id="2e17-2e0a-ac38-f43b" name="Infernal Relic" hidden="false">
+          <description>Only 1 Infernal Relic may be taken per primary detachment, unless a Technomancer is taken as a HQ. An Infernal Relic can be taken in an allied Detachment if a Technomancer is taken as the compulsory HQ.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="8bc7-8e59-450e-e0c6" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Kharybdis Assault Claw" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="12"/>
+            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="12"/>
+            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="12"/>
+            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="5"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Flyer, Transport, Hover)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="1f9c-a4d1-12b3-bcfe" targetId="9e83-b844-22a3-c943" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="e785-7b70-55bd-069f" targetId="f790-6d11-6c8f-fdc6" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="dbda-b8df-adb4-0218" targetId="c573-9539-c944-eca6" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="9ea3-41c6-119a-d2d9" name="An&apos;ggrath the Unbound" points="888.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="d11b-0673-91b9-a67e" name="Axe of Khorne" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="d843-5ea0-0b20-1a52" name="Decapitating Blow" hidden="false">
+              <description>Any roll of a 6 on the to-wound chart confers Instant Death</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="66ff-6243-5efe-cad3" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Axe of Khorne" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="User"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Decapitating Blow, Specialist Weapon"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="a03a-08f4-3b8f-40db" name="Icon of Chaos" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="c810-3476-de49-ec42" name="Bloodlash of Khorne" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="e880-db88-94b2-4211" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Bloodlash of Khorne" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&apos;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 2"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="a6d5-8ac2-58c7-3bb1" name="Daemonic Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="9bf9-8250-8fd0-c342" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Daemonic Armour" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Confers a 2+ armour save"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="5dac-e896-7181-cc2e" name="Blood Frenzy" hidden="false">
+          <description>An&apos;ggrath must charge if an enemy is in range at the start of the assault phase.</description>
+          <modifiers/>
+        </rule>
+        <rule id="2293-1bbe-cc61-c7e3" name="The Deathbringer" hidden="false">
+          <description>Counts as being equipped with assault grenades when charging. Receives an additional +D6 attacks on the charge. Passes Deny the Witch on a 2+</description>
+          <modifiers/>
+        </rule>
+        <rule id="f44d-2293-0b31-13ef" name="Daemon Lord" hidden="false">
+          <description>The invunerable save is 3+</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="ba7f-a0d5-902f-caac" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="An&apos;ggrath the Unbound - Demon Lord of Khorne" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Flying Gargantuan Creature"/>
+            <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="10"/>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+            <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="10"/>
+            <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="8"/>
+            <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="8"/>
+            <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="5"/>
+            <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="7"/>
+            <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="10"/>
+            <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="2+/3++"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="e57d-cfeb-a68d-d08b" targetId="82b9-a4fd-df5f-a607" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="07f3-a34d-9acb-f7f1" targetId="15dc-14e3-1f69-af15" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="81e0-0416-9f95-f314" targetId="5ed1-5aee-1cb0-f2ee" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="bcdd-f17f-0f8a-45c8" targetId="c573-9539-c944-eca6" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="466b-8488-a40f-5fdd" targetId="4909-64c4-f90e-a0f4" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="974a-ee2c-eca4-a66f" name="Berzerkers" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="4e29-a452-e9f7-e589" name="Bezerker Champion" points="29.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -4077,6 +4634,279 @@ Tithe Costs/Bonus
       <profiles/>
       <links/>
     </entry>
+    <entry id="9078-23ca-af6a-d83a" name="Fists of Khorne" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="62d3-6fe8-ed84-a6b7" name="Berzerkers" points="0.0" categoryId="(No Category)" type="unit" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="70f0-9e1a-0cfd-d1f5" name="Bezerker Champion" points="29.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="323a-053c-ad7a-e4b2" name="Melta Bombs" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="0f75-cebd-9696-b131" targetId="ab2c-8040-82c0-868f" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="7354-7d3c-5854-c6c4" name="Boltgun" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="5db0-c6fd-6cd9-03f3" targetId="5b7e-7b99-247b-e33b" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="434f-235f-4809-cca5" name="Power Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="1cb4-9479-0e45-ad41" targetId="6016-b3bf-c76d-1131" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="1293-f246-8cc6-54af" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Bezerker Champion" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
+                    <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="5"/>
+                    <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+                    <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
+                    <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="4"/>
+                    <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="1"/>
+                    <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
+                    <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="2"/>
+                    <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="9"/>
+                    <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links>
+                <link id="b001-0b64-db94-a310" targetId="4909-64c4-f90e-a0f4" linkType="rule">
+                  <modifiers/>
+                </link>
+                <link id="cc95-92df-80d5-be4a" targetId="39fb-08dd-b643-90e2" linkType="entry group">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="52fd-3092-c791-e034" name="Bezerkers in Unit" points="19.0" categoryId="(No Category)" type="upgrade" minSelections="19" maxSelections="19" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="adba-6d21-5f26-d8d5" name="Power Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="7bab-493e-f501-0184" targetId="6016-b3bf-c76d-1131" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="6b76-6c46-d5a7-d8aa" name="Frag Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="e76a-2ea2-556c-711c" targetId="edd6-56bb-266b-9468" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="ee0f-b2a5-b9f3-d031" name="Krak Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="ddc6-818b-1cfc-cab3" targetId="6291-83d2-1c97-1ab1" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="9eab-1b8e-9c07-b73c" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="eca2-e084-88ab-b471" targetId="223d-de43-75c0-33e3" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="379a-13c9-effb-5f16" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Bezerkers" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry"/>
+                    <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="5"/>
+                    <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+                    <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
+                    <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="4"/>
+                    <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="1"/>
+                    <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
+                    <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="1"/>
+                    <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="8"/>
+                    <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="c047-5143-0575-bfca" name="Equip CCW&apos;s" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="increment" field="minSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="62d3-6fe8-ed84-a6b7" incrementChildId="52fd-3092-c791-e034" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="62d3-6fe8-ed84-a6b7" incrementChildId="52fd-3092-c791-e034" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="decrement" field="minSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="62d3-6fe8-ed84-a6b7" incrementChildId="c122-a46e-4059-062d" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="62d3-6fe8-ed84-a6b7" incrementChildId="c122-a46e-4059-062d" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="17fd-039c-ecfe-4dfa" targetId="c772-0ca8-578b-4220" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="c122-a46e-4059-062d" name="Equip Chainaxes" points="3.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="62d3-6fe8-ed84-a6b7" incrementChildId="52fd-3092-c791-e034" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="62d3-6fe8-ed84-a6b7" incrementChildId="c047-5143-0575-bfca" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="573e-3f75-0d06-60e7" targetId="d005-7d2f-4e4d-648c" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="d03a-b8e8-0849-1da7" name="Replace Bolt Pistol with Plasma Pistol" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="37f7-36a2-4df4-3efe" targetId="c0a5-cdde-d016-ea2c" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="d2ad-2a36-345f-b1b8" name="Icon of Wrath" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="2542-61b1-f223-1dda" targetId="dcbf-169e-104d-a986" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="bbb3-23b6-f1f6-8500" targetId="15dc-14e3-1f69-af15" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="188a-445f-839d-12a5" targetId="d022-a925-1ddb-d399" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="6bfd-c8af-f77d-e08c" targetId="c573-9539-c944-eca6" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="2153-b138-4a75-2fbb" targetId="89ab-cf0e-76db-dda4" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="0c72-df78-1a1e-7dd0" targetId="f234-abe4-80f1-2c1e" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="cba4-5f47-3bf7-fb36" name="Meteroic Descent" hidden="false">
+          <description>If the formations Kharybdis lands on an enemy vehicle or building when it arrives via Deep Strike, do not roll for mishap (or correct for Inertia Guidance). Instead the enemy vehicle/building takes a single Str D AP 1 hit. 
+
+The Kharybdis is then placed as close to the initial landing location as safely possible, and is immediately immobilised.</description>
+          <modifiers/>
+        </rule>
+        <rule id="819a-3438-ad98-c8ad" name="Hungry for Blood" hidden="false">
+          <description>The bezerkers must begin the game inside the Kharybdis. The unit may charge on the same turn they disembark the Kharybdis.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="45ac-020c-3875-6cf2" targetId="fd4a-a735-0981-bfac" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+      </links>
+    </entry>
     <entry id="b065-f3b7-8d40-d39c" name="Flesh Hounds" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="79fc-13de-89e3-35ad" name="Flesh Hounds" points="16.0" categoryId="(No Category)" type="model" minSelections="5" maxSelections="20" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -4302,6 +5132,112 @@ Tithe Costs/Bonus
           </modifiers>
         </link>
         <link id="47b6-d781-9cd7-8b30" targetId="eedd-aa61-a631-3d3d" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="2593-9c44-18a5-5e0b" name="Greater Brass Scorpion of Khorne" points="700.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour 13" page="51">
+      <entries>
+        <entry id="5ae1-8cc7-b4f9-1c44" name="Scorpion Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="a579-ef0b-b0dd-c391" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Scorpion Cannon" hidden="false" book="Imperial Armour: Apocalypse (2013)" page="51">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 10"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="d67b-570c-6753-1068" name="Soulburner Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="ebdd-86f0-2e52-56df" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Soulburner Cannon" hidden="false" book="Imperial Armour: Apocalypse (2013)" page="51">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="10"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Large Blast, Ignores Cover"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="4b4c-90f9-f4d6-321b" name="Hellmaw Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="3c2f-4729-2c40-a3a4" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Hellmaw Cannon" hidden="false" book="Imperial Armour: Apocalypse (2013)" page="51">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Template"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="498e-30b8-b3cf-8770" name="Frenzied Charge" hidden="false" book="Imperial Armour: Apocalypse (2013)" page="51">
+          <description>when charging, roll 3D6 and add together for total charge distance.</description>
+          <modifiers/>
+        </rule>
+        <rule id="5f91-133c-6b6b-baa3" name="Runes of the Blood God" hidden="false" book="Imperial Armour: Apocalypse (2013)" page="51">
+          <description>Any psyker who targets the scorpion suffers perils of the warp irrespective of a pass or failure.</description>
+          <modifiers/>
+        </rule>
+        <rule id="048b-0e07-e7bc-55ef" name="Doomsday Reactor" hidden="false" book="Imperial Armour: Apocalypse (2013)" page="51">
+          <description>Adds +2 modifier when rolling on the Catastrophic damage table.</description>
+          <modifiers/>
+        </rule>
+        <rule id="5a40-606f-0df7-4151" name="Multi-legged Terror" hidden="false" book="Imperial Armour: Apocalypse (2013)" page="51">
+          <description>When making stomp attacks, the scorpion makes D3+2 stomps</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="b461-e960-86fa-ca33" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Greater Brass Scorpion of Khorne" hidden="false" book="Imperial Armour: Apocalypse (2013)" page="51">
+          <characteristics>
+            <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="3"/>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="3"/>
+            <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="10"/>
+            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="14"/>
+            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="13"/>
+            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="10"/>
+            <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="3"/>
+            <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="6"/>
+            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="9"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Super-heavy Walker"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="8caf-d654-789d-e691" targetId="82b9-a4fd-df5f-a607" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="aea1-8b92-96b2-5435" targetId="6894-0aec-385b-44e8" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="797a-fa96-d901-67ab" targetId="c573-9539-c944-eca6" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -4641,6 +5577,68 @@ Tithe Costs/Bonus
           <modifiers/>
         </link>
         <link id="25a0-29f6-7d21-e8c8" targetId="b81e-6eda-6e05-f55f" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="4b7a-adaf-c469-b2b6" name="Hellforged Hunting Pack" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="905f-6349-3545-9907" name="Daemon Engine Retinue" minSelections="8" maxSelections="8" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="5854-efd3-9cfa-b243" targetId="592e-e78f-02db-0fda" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="a5da-c261-9afc-696c" targetId="4e03-8966-518b-7826" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="bbf4-cbc8-06a4-748b" targetId="9a9a-0859-f2cc-5cad" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="9627-40c4-db82-c103" targetId="418a-1028-3d24-2fb8" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="2bc1-6286-4ffc-b0e0" targetId="afa2-7b58-5ac2-b775" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="b5b8-24cf-26a9-e0c2" targetId="bdfa-5d78-ed21-d806" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="ec9a-180e-bc1e-fd30" targetId="a07f-5847-57ed-c9c4" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="9fb9-35dc-4164-943d" name="Follow the Alpha Engine" hidden="false">
+          <description>If this formations brass scorpion makes a successful charge, all other models in the formation can re-roll subsequent failed charge rolls in the same Assault phase.</description>
+          <modifiers/>
+        </rule>
+        <rule id="cc0f-7d2c-9070-3320" name="Swift and Bloody Vengeance" hidden="false">
+          <description>Each time a model in this formation is destroyed, all other models gain +1 Attack</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="a77b-1f40-5fd2-3d6c" targetId="2593-9c44-18a5-5e0b" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+        <link id="d85d-f3dd-7c8e-6162" targetId="2a61-251e-80c3-60d9" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -6074,6 +7072,67 @@ Hull Point is still lost.</description>
       </profiles>
       <links/>
     </entry>
+    <entry id="5ee2-070f-11bc-d0ed" name="The Bloodied Horde" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="47a1-3792-8dc0-19aa" name="The Bloodied Horde Unleashed" hidden="false">
+          <description>All units in this formation must begin the game in Deep Strike Reserve. 
+
+When making reserve rolls, a single dice result counts for the entire formation. You may choose to make a single re-roll for this reserve roll.</description>
+          <modifiers/>
+        </rule>
+        <rule id="06ee-cda2-9244-759f" name="Daemonic Tide" hidden="false">
+          <description>Each time either a unit of Bloodletters or Bloodcrushers is destroyed, roll a D6. on a 4+ a new unit (consisting of the previous units upgrade costs and size) is created and placed into Ongoing reserves. They are counted as being part of the original formation and must start in Deep Strike.
+
+Victory points are awarded as normal.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="c9a9-7872-3386-48bc" targetId="7adf-5778-3dae-2dbb" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="minSelections" value="8.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="maxSelections" value="8.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+        <link id="135f-4870-2a6d-7ed1" targetId="11ca-05ea-d43d-f2b5" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="minSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+        <link id="05b9-164c-ce76-e018" targetId="4cc4-e447-a2ae-7a50" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="minSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+        <link id="4d58-0924-3619-32cf" targetId="2a61-251e-80c3-60d9" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="a523-7ac5-c347-11b5" name="The Brazen Rune" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
@@ -6088,6 +7147,59 @@ Once per game at the start of the enemies psychic phase, you can declare that yo
       </rules>
       <profiles/>
       <links/>
+    </entry>
+    <entry id="b8fc-9a78-208b-5643" name="The Goreguard" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="2e81-aeca-3686-40b4" name="Bloodthirster Retinue" minSelections="3" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="70c0-3c2f-af4d-cb0e" targetId="d2c8-3da1-917f-725e" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="e3c0-a0db-5bc9-7084" targetId="025a-8de9-b4f2-84cf" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="07b7-9743-fa79-567e" targetId="6aad-e340-5e43-970b" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="a087-85cf-759a-c279" name="Feel no Pain" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="65a3-99ef-bdaf-f1d5" name="The Chosen of An&apos;ggrath" hidden="false">
+          <description>All bloodthirsters in the formation that are within 18&quot; of An&apos;ggrath have Adamantium Will, Counter-Attack and gain an extra attack.</description>
+          <modifiers/>
+        </rule>
+        <rule id="b113-7f2a-1418-8de9" name="Terror Made Manifest" hidden="false">
+          <description>Enemy units that fail a Fear test caused by any model in this formation suffer 1 wound for each point the test was failed. No saves of any kind are allowed.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="9b37-686f-b2d2-52f5" targetId="9ea3-41c6-119a-d2d9" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+        <link id="7146-edec-c7d5-cc49" targetId="cbac-bc11-c867-9700" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
     <entry id="7d38-6f93-3b55-20e2" name="The Skull-helm of Khorne" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -7046,6 +8158,9 @@ At the end of the phase in which this is used, roll a D6. On a 1 the model immed
       <modifiers/>
     </rule>
     <rule id="2a61-251e-80c3-60d9" name="Rage" hidden="false">
+      <modifiers/>
+    </rule>
+    <rule id="cbac-bc11-c867-9700" name="Rampage" hidden="false" page="0">
       <modifiers/>
     </rule>
     <rule id="c50b-951f-9398-c958" name="Scout" hidden="false">
