@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4fe1-8588-ca35-920b" revision="4" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="20" battleScribeVersion="1.15" name="Cult Mechanicus: Codex (2015)" books="Codex: Cult Mechanicus" authorName="Axis of Entropy, Throtard" authorContact="axisofentropy@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4fe1-8588-ca35-920b" revision="5" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="20" battleScribeVersion="1.15" name="Cult Mechanicus: Codex (2015)" books="Codex: Cult Mechanicus" authorName="Axis of Entropy, Throtard" authorContact="axisofentropy@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="0307-11d2-873a-5d4d" name="Cohort Cybernetica" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus">
       <entries/>
       <entryGroups/>
       <modifiers/>
       <rules>
-        <rule id="fc72-0edc-5dec-7592" name="Adepto Cybernetica" hidden="false" book="Codex: Cult Mechanicus">
-          <description>The Tech-Priest Dominus of this formation counts as a Cybernetica Datasmith when using Battle Protocols special rule. As long as the Tech-Priest Dominus is alive, the Battle Protocols are activated instantly.</description>
+        <rule id="fc72-0edc-5dec-7592" name="Adept of the Cybernetica" hidden="false" book="Codex: Cult Mechanicus">
+          <description>The Tech-Priest Dominus of this Formation counts as a Cybernetica Datasmith for the purposes of the Battle Protocols special rule. As long as the Tech-Priest Dominus is alive, the Battle Protocols are activated instantly.</description>
           <modifiers/>
         </rule>
-        <rule id="8caa-a537-85a1-5cb7" name="Targeting Control" hidden="false" book="Codex: Cult Mechanicus">
-          <description>In the Shooting phase, any number of Cybernetica Datasmith and/or Tech-Priest Dominus can direct the fire of one Kastelan Robot, instead of shooting. For each model that doesn&apos;t shoot, one Kastelan Robot can fire at a different target than the rest of the unit.</description>
+        <rule id="8caa-a537-85a1-5cb7" name="Targeting Override" hidden="false" book="Codex: Cult Mechanicus">
+          <description>In the Shooting phase, any number of Cybernetica Datasmith and/or Tech-Priest Dominus can direct the fire of the Kastelan Robots, instead of shooting. For each model that does so, one Kastelan Robot can shoot at a different target to the rest of the unit.</description>
+          <modifiers/>
+        </rule>
+        <rule id="5401-d368-ce24-50e8" name="Restrictions" hidden="false">
+          <description>All models in this Formation must be fielded as a single unit, even though this is not normally allowed. The Formation’s Tech-Priest Dominus cannot leave this unit.
+
+This Formation counts as three units for the purposes of Canticles of the Omnissiah until it is completely destroyed, and counts as three units for the purposes of Victory Points when it is completely destroyed.</description>
           <modifiers/>
         </rule>
       </rules>
@@ -40,7 +46,7 @@
       <modifiers/>
       <rules>
         <rule id="16f6-5c4c-208b-bc1d" name="Elimination Volley" hidden="false">
-          <description>If any Kastelan Robot causes an unsaved Wound, Glancing Hits or Penetrating Hits to an enemy unit using a weapon with Luminagen special rule, all Kataphron Destroyer units in this formation that choose to shoot at the same target gain +1 BS and Ignore Cover special rule until the end of the phase.</description>
+          <description>If any Kastelan Robot causes an unsaved Wound, Glancing Hits or Penetrating Hits to an enemy unit using a weapon with Luminagen special rule, all Kataphron Destroyer units in this Formation that target the same enemy unit gain +1 BS and Ignore Cover special rule until the end of the phase.</description>
           <modifiers/>
         </rule>
       </rules>
@@ -59,12 +65,12 @@
       <entryGroups/>
       <modifiers/>
       <rules>
-        <rule id="d803-910d-1693-2f3a" name="Extremis Appearance" hidden="false">
-          <description>This formation must be left in Reserves at the start of the battle. Make one unique roll for Reserves (with the option to reroll if you want). If the roll is successful, the whole formation enters the battlefield using Deep Strike rules. Place the Tech-Priest Dominus, he doesn&apos;t scatter if it&apos;s located at 6&quot; or less of an Objective Marker. Breachers units don&apos;t scatter if they&apos;re situated at 6&quot; or less of the Tech-Priest Dominus.</description>
+        <rule id="d803-910d-1693-2f3a" name="Apparition Extremis" hidden="false">
+          <description>All units in this Formation must be placed in Deep Strike Reserve. Make one unique roll for Reserve for the entire Formation (with the option to re-roll if you want). If the roll is successful, all units in the Formation arrive from Reserve. First, place the Tech-Priest Dominus, he doesn&apos;t scatter if it&apos;s located at 6&quot; or less of an Objective Marker. Breachers units don&apos;t scatter if they&apos;re situated at 6&quot; or less of the Tech-Priest Dominus.</description>
           <modifiers/>
         </rule>
-        <rule id="3c30-73ab-a14e-dd1a" name="Inhuman Greediness" hidden="false">
-          <description>If any Breacher units in this Formation are at 6&quot; or less of any Objective Marker, they gain Counter-attack and Zealot.</description>
+        <rule id="3c30-73ab-a14e-dd1a" name="Inhuman Avarice" hidden="false">
+          <description>If any Breachers units in this Formation are at 6&quot; or less of any Objective Marker, they gain Counter-attack and Zealot.</description>
           <modifiers/>
         </rule>
       </rules>
@@ -82,19 +88,22 @@
         <link id="a0e0-b8ae-4ead-7e6a" targetId="008a-05d9-53cb-f96d" linkType="rule">
           <modifiers/>
         </link>
+        <link id="bab4-a8be-5851-1766" targetId="077d-5975-2441-52b3" linkType="rule">
+          <modifiers/>
+        </link>
       </links>
     </entry>
-    <entry id="8375-42ec-fb8e-79b2" name="Numonous Conclave" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus">
+    <entry id="8375-42ec-fb8e-79b2" name="Numinous Conclave" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus">
       <entries/>
       <entryGroups/>
       <modifiers/>
       <rules>
-        <rule id="2963-42d8-1ac3-d9b1" name="Corpuscarii give" hidden="false">
-          <description>If there is any Fulgurite unit is at 6&quot; or less, the Corpuscarii Gauntlets are Assault 3. If the Corpuscarri causes any unsaved Wound, the enemy unit is considered &quot;Electrified&quot; until the end of the Assault phase.</description>
+        <rule id="2963-42d8-1ac3-d9b1" name="The Corpuscarii Giveth" hidden="false">
+          <description>If there is any Fulgurite unit of the same Formation at 6&quot; or less, the Corpuscarii Gauntlets are Assault 3. If the Corpuscarii causes any unsaved Wound, the enemy unit is considered &quot;Electrified&quot; until the end of the Assault phase.</description>
           <modifiers/>
         </rule>
-        <rule id="ec23-2b8f-b699-8937" name="Fulgurite take" hidden="false">
-          <description>Fulgurite Electro-priests in this formation reroll to Wound using the Electroleech staves if there is any &quot;Electrified&quot; unit locked in combat.</description>
+        <rule id="ec23-2b8f-b699-8937" name="The Fulgurites Taketh Away" hidden="false">
+          <description>Fulgurite Electro-priests in this Formation re-roll to Wound using their electroleech staves if there is any &quot;Electrified&quot; unit locked in close combat.</description>
           <modifiers/>
         </rule>
         <rule id="5bef-1edd-0b9f-19ad" name="Crusader" hidden="false" book="BRB 2014" page="163">
@@ -587,11 +596,11 @@
       <modifiers/>
       <rules>
         <rule id="19a8-4bb2-43d3-626b" name="Kastelan Battle Protocols" hidden="false" book="Codex: Cult Mechanicus">
-          <description>Always begins the battle with Aegis Protocol active. As long as the unit have at least one Cybernetica Datasmith, you can change to a new Battle Protocol at the end of your turn. The new Battle Protocol becomes active at the start of your next turn.
+          <description>Kastelan Robots always begin the battle with Aegis Protocol active. As long as the unit have at least one Cybernetica Datasmith, you can change to a new Battle Protocol at the end of your turn. The new Battle Protocol becomes active at the start of your next turn.
 
-- Conqueror Protocol: Can&apos;t shoot, doubles their Attack characteristic.
-- Aegis Protocol: Feel No Pain
-- Protector Protocol: Can&apos;t move, fires carapace-mounted weapon twice.</description>
+· Conqueror Protocol: Kastelan Robots can&apos;t shoot, but have their Attack characteristic doubled.
+· Aegis Protocol: Kastelan Robots have Feel No Pain special rule.
+· Protector Protocol: Kastelan Robots can&apos;t move, run or assault, but fire the carapace-mounted weapon twice.</description>
           <modifiers/>
         </rule>
       </rules>
@@ -937,10 +946,10 @@
       </entryGroups>
       <modifiers/>
       <rules>
-        <rule id="82f0-bea6-ee4c-7edd" name="Master of Machines" hidden="false" book="Codex: Cult Mechanicus">
+        <rule id="82f0-bea6-ee4c-7edd" name="Master of the Machines" hidden="false" book="Codex: Cult Mechanicus" page="59">
           <description>Instead of firing one of his weapons, and rolling 2+ in a D6, a Tech-Priest Dominus can:
-- Repair a HP, Weapon Destroyed or Immobilised to a single friendly vehicle in base contact or embarked upon.
-- Restore a Wound lost earlier in the battle to himself, or to any model of Skitarii or Cult Mechanicus faction in his unit.</description>
+· Restore a HP, or repair a Weapon Destroyed or Immobilised result to a single friendly vehicle in base contact or embarked upon.
+· Restore a Wound lost earlier in the battle to himself, or to any model of Skitarii or Cult Mechanicus faction in his unit.</description>
           <modifiers/>
         </rule>
       </rules>
@@ -1063,13 +1072,35 @@
   <sharedEntryGroups>
     <entryGroup id="4cb5-2fdf-b8d4-9a81" name="Arcana Mechanicum" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
-        <entry id="5025-a203-67e4-a379" name="Pseudogenetor de Anzión" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus" page="78">
+        <entry id="d62f-a958-4f38-3178" name="The Scryerskull Perspicatus" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus" page="78">
+          <entries/>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="0f78-98c6-a901-24e7" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="category" childId="0909-cd10-dc33-e5ef" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <rules/>
+          <profiles>
+            <profile id="2970-6861-b1fc-1c0d" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Scryerskull Perspicatus" hidden="false" book="Codex: Cult Mechanicus" page="78">
+              <characteristics>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="At the start of each of your turns, a model with the Scryerskull Perspicatus can choose either to identify a single Mysterious Objective or to scry an enemy vehicle anywhere on the battlefield. If you choose to scry a vehicle, any friendly units with the Cult Mechanicus or Skitarii Faction re-roll failed armour penetration rolls against that vehicle, and can choose to re-roll glancing hits scored on it in an attempt to instead get a penetrating hit, until the start of your next turn."/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="d90c-ca5a-e71e-580d" name="Anzion’s Pseudogenetor" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus" page="78">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules/>
           <profiles>
-            <profile id="bf3a-1afa-c8d0-8832" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Pseudogenetor de Anzión" hidden="false" book="Codex: Cult Mechanicus" page="78">
+            <profile id="0fed-9fe3-2dc8-8316" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Anzion’s Pseudogenetor" hidden="false" book="Codex: Cult Mechanicus" page="78">
               <characteristics>
                 <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
                 <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
@@ -1078,92 +1109,92 @@
               </characteristics>
               <modifiers/>
             </profile>
-            <profile id="3814-9d2d-437a-a3f8" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Pseudogenetor de Anzión" hidden="false" book="Codex: Cult Mechanicus" page="77">
+            <profile id="753b-7e68-b893-aff1" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Anzion’s Pseudogenetor" hidden="false" book="Codex: Cult Mechanicus" page="77">
               <characteristics>
-                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="A model equipped with this item makes 1D6 additional attacks using the weapon profile."/>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="A model equipped with this relic makes D6 additional attacks using the Anzion&apos;s Pseudorgenetor profile, in addition to any close combat attacls it makes."/>
               </characteristics>
               <modifiers/>
             </profile>
           </profiles>
           <links/>
         </entry>
-        <entry id="ddb0-2980-c7f6-62c7" name="Perspicatus Scryerskull" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus" page="78">
+        <entry id="a99d-e845-269d-da1a" name="Autocaduceus of Arkhan Land" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus" page="78">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="0f78-98c6-a901-24e7" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="category" childId="0909-cd10-dc33-e5ef" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <rules/>
           <profiles>
-            <profile id="f3fa-5f0c-e2b6-f14c" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Perspicatus Scryerskull" hidden="false" book="Codex: Cult Mechanicus" page="78">
+            <profile id="e4c7-6844-c3b8-f407" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Autocaduceus of Arkhan Land" hidden="false" book="Codex: Cult Mechanicus" page="78">
               <characteristics>
-                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="At the start of your turn, a model equipped with this item can identify one Mysterious Objective or analyze one enemy vehicle. If you analyze an enemy vehicle, all friendly units from Skitarii and Cult Mechanicus factions can repeat failed Armour Penetration Rolls against it, and you can reroll Glancing Hits trying to make Penetrating Hits, until your next turn."/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-        <entry id="46d2-4de6-a2d1-8c53" name="Autocaduceo de Arkham" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus" page="78">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="0307-653c-1cc2-b0da" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Autocaduceo de Arkham" hidden="false" book="Codex: Cult Mechanicus" page="78">
-              <characteristics>
-                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The bearer and his unit gains It Will Not Die rule."/>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The bearer and his unit have It Will Not Die special rule."/>
               </characteristics>
               <modifiers/>
             </profile>
           </profiles>
           <links>
-            <link id="02ed-7a6a-624e-5d56" targetId="3eb2-65bb-c605-72ae" linkType="rule">
+            <link id="dbe0-4a51-5603-37c6" targetId="3eb2-65bb-c605-72ae" linkType="rule">
               <modifiers/>
             </link>
           </links>
         </entry>
-        <entry id="85b3-1ad9-d89f-0d14" name="Atavío de Tecnomártir" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus" page="78">
+        <entry id="3286-6e62-b8e0-ef8b" name="Raiment of Technomartyr" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus" page="78">
           <entries/>
           <entryGroups/>
           <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="1ea0-15df-14c0-03ca" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Atavío de Tecnomártir" hidden="false" book="Codex: Cult Mechanicus" page="78">
-              <characteristics>
-                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="2+ armour save. All weapons carried by models of Skitarii and Cult Mechanicus factions gain Cognis rule"/>
-              </characteristics>
+          <rules>
+            <rule id="4455-0a65-ac00-58bf" name="Cognis" hidden="false" book="Codex: Cult Mechanicus">
+              <description>Snap shots at BS 2 instead of 1. If a Flamer weapon fires Overwatch using the Wall of Death rule (BRB 2014, page 173), it automatically inflicts 3 hits rather than D3.</description>
               <modifiers/>
-            </profile>
-          </profiles>
-          <links>
-            <link id="3715-5413-dfc8-7e4b" targetId="2d96-9b42-26ae-68c5" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="e98c-f0ed-8f43-4e64" name="Guantelete Descreador" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus" page="78">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
+            </rule>
+          </rules>
           <profiles>
-            <profile id="3993-59b6-5953-2ddf" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Guantelete Descreador" hidden="false" book="Codex: Cult Mechanicus" page="78">
+            <profile id="ee6d-acf7-63b2-05ec" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Raiment of Technomartyr" hidden="false" book="Codex: Cult Mechanicus" page="78">
               <characteristics>
-                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The model can use the Gauntlet instead of attack in the Assault phase. Choose a vehicle (friendly or not) in base contact. If it is an enemy model, make an unique roll to Hit. If you hit (or it&apos;s a friendly vehicle) roll 1D6:  1 The opponent chooses if the vehicle recovers or loses 1 HP 2-3 You chooses if the vehicle recovers or loses 1 HP 4-5 You chooses if the vehicle recovers or loses 1D3 HP 6 You chooses if the vehicle recovers or loses 1D6 HP  No vehicle can have more HP than its starting value. "/>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="2+ armour save. All ranged weapons carried by models with the Cult Mechanicus or Skitarii Faction in the bearer’s unit have the Cognis Weapons special rule."/>
               </characteristics>
               <modifiers/>
             </profile>
           </profiles>
           <links/>
         </entry>
-        <entry id="0225-d4d0-2f43-cf43" name="Máscara del Alpha Dominus" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus" page="78">
+        <entry id="932a-388f-9787-320a" name="Mask of the Alpha Dominus" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus" page="78">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <rules/>
           <profiles>
-            <profile id="07eb-c292-fae8-7c04" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Máscara del Alpha Dominus" hidden="false" book="Codex: Cult Mechanicus" page="78">
+            <profile id="c72a-d0b8-16fa-008f" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Mask of the Alpha Dominus" hidden="false" book="Codex: Cult Mechanicus" page="78">
               <characteristics>
-                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The bearer can change Battle Protocols of one friendly Kastelan Robot Maniple or one Cohort Cybernetica formation with a model at 12&quot; or less of him. The new Battle Protocol is instantly activated. However, the unit or formation affected can&apos;t use the previous Battle Protocol for the rest of the battle."/>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The bearer can use the Mask of the Alpha Dominus at any time to instantly change the Battle Protocol of a friendly Kastelan Robot Maniple or Cohort Cybernetica Formation within 12&quot; of the bearer. The new Battle Protocol becomes active immediately. However, the unit or Formation cannot use the Battle Protocol that they changed from for the rest of the battle."/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="aae9-d127-3d35-6630" name="Uncreator Gauntlet" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus" page="78">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="48ae-a467-6350-55e0" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Uncreator Gauntlet" hidden="false" book="Codex: Cult Mechanicus" page="78">
+              <characteristics>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="A model equipped with the Uncreator Gauntlet can use it in the Fight sub-phase instead of making its normal close combat attacks. To do so, nominate a vehicle model (friend or foe) in base contact with the bearer. If you choose an enemy vehicle, roll To Hit with a single Attack. If the attack hits, or if you chose a friendly vehicle, roll a D6 and consult the following table:
+
+·1: Your opponent chooses for the vehicle to regain o lose 1 HP*.
+·2-3: Choose for the vehicle  to regain o lose 1 HP*.
+·4-5: Choose for the vehicle  to regain o lose D3 HP*.
+·6: Choose for the vehicle  to regain o lose D6 HP*.
+
+* Invulnerable saves can be attempted against each Hull Point lost in this manner."/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -1212,22 +1243,49 @@
       <modifiers/>
     </rule>
     <rule id="5920-d714-7c25-d8a7" name="Armourbane" hidden="false" book="BRB 2014" page="157">
-      <description>If a model has this special rule, or is attacking with a Melee weapon that has this special
-rule, it rolls an additional D6 for armour penetration in close combat.
-If a model makes a shooting attack with a weapon that has this special rule, it rolls an
-additional D6 for armour penetration. In either case, this special rule has no effect against
-non-vehicle models.</description>
+      <description>If a model has this special rule, or is attacking with a Melee weapon that has this special rule, it rolls an additional D6 for armour penetration in close combat.
+If a model makes a shooting attack with a weapon that has this special rule, it rolls an additional D6 for armour penetration. In either case, this special rule has no effect against non-vehicle models.</description>
       <modifiers/>
     </rule>
     <rule id="1e1e-1f40-91a0-6725" name="Burst Pistol" hidden="false" book="Codex: Cult Mechanicus">
       <description>Pistol that fires five shots</description>
       <modifiers/>
     </rule>
-    <rule id="ebd3-71c4-e554-1948" name="Canticles of the Omnissiah" hidden="false" book="Codex: Cult Mechanicus">
-      <modifiers/>
-    </rule>
-    <rule id="2d96-9b42-26ae-68c5" name="Cognis" hidden="false" book="Codex: Cult Mechanicus">
-      <description>Snap shots at Ballistic Skill 2 instead of 1. If a Flamer weapon fires Overwatch using the Wall of Death rule (BRB 2014, page 173), it automatically inflicts 3 hits rather than D3.</description>
+    <rule id="ebd3-71c4-e554-1948" name="Canticles of the Omnissiah (CotO)" hidden="false" book="Codex: Cult Mechanicus">
+      <description>At the start of each of your turns, you can choose one Canticle of the Omnissiah from the list below. The effects of each Canticle last until the start of your next turn. Unless otherwise stated, each Canticle can only be used once during the game.
+
+Furthermore, the strength of each Canticle will vary according to the number of units performing it. At the start of your turn, add up the number of friendly units on the battlefield that have the Canticles of the Omnissiah special rule and apply the appropriate level of effect. Do not include units that are currently Falling Back in this total. Once a Canticle has been activated it remains at that level of effect until the beginning of your next turn, even if the number of units performing it changes during that turn.
+
+INCANTATION OF THE IRON SOUL
+· 1-3 units: Friendly units with the CotO special rule gain Stubborn special rule.
+· 4-7 units: Friendly units with the CotO special rule gain Stubborn special rule and must re-roll failed Morale, Fear and Pinning tests.
+· 8+ units: Friendly units with the CotO special rule gain Fearless special rule.
+
+LITANY OF THE ELECTROMANCER
+· 1-3 units: Enemy units suffer one I10 S4 AP- hit for each model with the CotO special rule locked in close combat.
+· 4-7 units: Enemy units suffer two I10 S4 AP- hit for each model with the CotO special rule locked in close combat.
+· 8+ units: Enemy units suffer three I10 S4 AP- hit for each model with the CotO special rule locked in close combat.
+
+CHANT OF THE REMORSELESS FIST
+· 1-3 units: Friendly units with the CotO special rule re-roll failed To Hit rolls of 1 when making melee attacks.
+· 4-7 units: Friendly units with the CotO special rule re-roll failed To Hit rolls of 1 and 2 when making melee attacks.
+· 8+ units: Friendly units with the CotO special rule re-roll failed To Hit rolls when making melee attacks.
+
+SHROUDPSALM
+· 1-3 units: Friendly units with the CotO special rule gain Stealth special rule.
+· 4-7 units: Friendly units with the CotO special rule gain Shrouded special rule.
+· 8+ units: Friendly units with the CotO special rule gain Stealth and Shrouded special rule.
+
+INVOCATION OF MACHINE-MIGHT
+· 1-3 units: Friendly units with the CotO special rule add 1 to their Strength.
+· 4-7 units: Friendly units with the CotO special rule add 2 to their Strength.
+· 8+ units: Friendly units with the CotO special rule add 3 to their Strength.
+
+BENEDICTION OF OMNISCIENCE
+· 1-3 units: Friendly units with the CotO special rule re-roll failed To Hit rolls of 1 when making shooting attacks.
+· 4-7 units: Friendly units with the CotO special rule re-roll failed To Hit rolls of 1 and 2 when making shooting attacks.
+· 8+ units: Friendly units with the CotO special rule re-roll failed To Hit rolls when making shooting attacks.
+</description>
       <modifiers/>
     </rule>
     <rule id="d0b3-74d5-1122-0473" name="Cognis Flamewall" hidden="false" book="Codex: Cult Mechanicus">
@@ -1247,12 +1305,49 @@ If, when charged, the unit was already locked in combat, the Counter-attack spec
       <description>When a model equipped with a weapon that has this special rule makes Melee attacks, it makes an additional attack with this weapon at the Initiative 10 step. This does not grant the model an additional Pile In move.</description>
       <modifiers/>
     </rule>
-    <rule id="e36c-bc59-eac1-9344" name="Deflagrate" hidden="false" book="Codex: Cult Mechanicus">
-      <description>After normal attacks from this weapon are resolved, count the number of Wounds removed from the target unit; immediately resolve the same number of automatic hits at S6 AP5. The models of the target unit must still be within range for these additional attacks to happen. The wounds lost because of this special rule do not cause additional attacks.</description>
+    <rule id="077d-5975-2441-52b3" name="Deep Strike" hidden="false" page="0">
+      <description>In order for a unit to be able to Deep Strike, all models in the unit must have the Deep Strike special rule and the unit must start the game in Reserve. When placing the unit in Reserve, you must tell your opponent that it will be arriving by Deep Strike (sometimes called Deep Strike Reserve). Some units must arrive by Deep Strike. They always begin the game in Reserve and always arrive by Deep Strike.
+
+Arriving by Deep Strike
+Roll for the arrival of all Deep Striking units as specified in the rules for Reserves and then deploy them as follows:
+
+• First, place one model from the unit anywhere on the table, in the position where you would like it to arrive, and roll for scatter to determine the model’s final position. If a vehicle scatters when arriving via Deep Strike, do not change its facing – it must continue to face the same direction as it did before you rolled for scatter.
+
+• Next, the unit’s remaining models are arranged around the first one. Models must be placed in base contact with the first model and begin to form a circle around it. When the first circle is complete, a further concentric circle must be placed with each model touching the circle inside it. Each circle must include as many models as will fit.
+
+• Models deploying via Deep Strike treat all difficult terrain as dangerous terrain. 
+
+In the Movement phase during which they arrive, Deep Striking units may not move any further, other than to disembark from a Deep Striking Transport vehicle if they are in one.
+
+Units Deep Striking into ruins are placed on the ground floor. Deep Striking units count non-ruined buildings (except for their battlements) as impassable terrain.
+
+In that turn’s Shooting phase, these units can fire (or Run, Turbo-boost or move Flat Out) as normal, and count as having moved in the previous Movement phase. Vehicles, except for Walkers, count as having moved at Combat Speed (even Immobilised vehicles). This can affect the number of weapons they can fire with their full Ballistic Skill.
+
+In that turn’s Assault phase, however, these units cannot charge. This also applies to units that have disembarked from Transports that arrived by Deep Strike that turn.
+
+Deep Strike and Transports
+Units do not confer the Deep Strike special rule onto a Transport vehicle they are embarked inside. A Transport vehicle with Deep Strike may Deep Strike regardless of whether its passengers have Deep Strike or not.
+
+Deep Strike Mishaps
+Deep Striking onto a crowded battlefield can be dangerous, as one may miss the intended objective or even materialise inside solid rock! If any of the models in a Deep Striking unit cannot be deployed, because at least one model would land partially or fully off the table, in impassable terrain, on top of a friendly model, or on top of or within 1&quot; of an enemy model, something has gone wrong. The controlling player must roll on the Deep Strike Mishap table and apply the results. If the unfortunate unit is also a Transport, the Deep Strike Mishap result applies to both the unit and anything embarked within it.
+
+Deep Strike Mishap Table
+D6 - Effect
+
+1 - Terrible Accident! Teleporting units are lost in the Warp, deep striking jump units are shot down, or some other suitably dramatic event occurs. The entire unit is destroyed!
+
+2-3 - Misplaced. The coordinates were inaccurate or the enemy has jammed your instruments. Your opponent may deploy the unit anywhere on the table (excluding impassable terrain, but including difficult terrain, which of course counts as dangerous for Deep Striking units), in a valid Deep Strike formation, but without rolling for scatter. Units embarked on a misplaced Transport can
+disembark during their Movement phase as normal.
+
+4-6 - Delayed. Because of mechanical failure or enemy action, the reinforcements are delayed. The unit is placed in Ongoing Reserves.</description>
       <modifiers/>
     </rule>
-    <rule id="6763-5dc8-892f-a63e" name="Electroclasm" hidden="false" book="Codex: Cult Mechanicus">
-      <description>If a 6 is rolled To Wound with a Electroleech Stave, that attack has the Instant Death special rule.</description>
+    <rule id="e36c-bc59-eac1-9344" name="Deflagrate" hidden="false" book="Codex: Cult Mechanicus">
+      <description>After normal attacks by this weapon have been resolved, count the number of unsaved Wounds caused on the target unit. Immediately resolve a number of additional automatic Strength 6 AP5 hits on the same unit equal to the number of unsaved Wounds. Models in the target unit must still be in range in order for these additional hits to take effect. Any further Wounds caused as a result of this special rule do not cause any further hits.</description>
+      <modifiers/>
+    </rule>
+    <rule id="6763-5dc8-892f-a63e" name="Electroleech" hidden="false" book="Codex: Cult Mechanicus">
+      <description>Any To Wound roll of 6 made by an electroleech stave has the Instant Death special rule.</description>
       <modifiers/>
     </rule>
     <rule id="1f6a-c5e2-c8de-7767" name="Fearless" hidden="false" book="BRB 2014" page="163">
@@ -1296,7 +1391,7 @@ If a model with this special rule charges a building or vehicle, the hit is reso
       <modifiers/>
     </rule>
     <rule id="d8ed-b20e-7ec5-e0d4" name="Heavy Battle Servitors" hidden="false" book="Codex: Cult Mechanicus">
-      <description>Models with this special rule can&apos;t run, but can shoot up to two weapons in the Shooting phase. These models count as stationary when firing Heavy or Salvo weapons, even if they moved in the previous Movement phase. They are also allowed to charge in the same turn they fire Heavy, Rapid Fire or Salvo weapons.</description>
+      <description>Models with this special rule cannot make Run moves, but can fire up to two weapons in each Shooting phase. Furthermore, models with this special rule count as stationary when firing Heavy or Salvo weapons, even if they moved in the previous Movement phase, and are allowed to charge in the same turn they fire Rapid Fire, Heavy or Salvo weapons.</description>
       <modifiers/>
     </rule>
     <rule id="6c9a-3387-2b66-664a" name="Independant Character" hidden="false" book="BRB 2014" page="166">
@@ -1335,7 +1430,7 @@ For example, Crimson Fists Tactical Squad Hemanez is suffering the effects of th
       <modifiers/>
     </rule>
     <rule id="e56a-41e8-f23f-25b8" name="Iron Grasp" hidden="false" book="Codex: Cult Mechanicus">
-      <description>A model equipped with this weapon can perform 1 Grasp Attack instead of his melee attacks. If it does, roll to Hit as normal but solve the Attack at double model&apos;s Strength (to a maximum of 10) and AP2.</description>
+      <description>When a model equipped with a hydraulic claw makes its close combat attacks, it can choose instead to make a single Grasp Attack. If it does so, roll To Hit as normal, but resolve the Attack at double the model’s Strength (to a maximum of 10) and AP2.</description>
       <modifiers/>
     </rule>
     <rule id="3eb2-65bb-c605-72ae" name="It Will Not Die" hidden="false" book="BRB 2014" page="167">
@@ -1356,9 +1451,7 @@ Also units may re-roll charge range until end of turn.</description>
       <modifiers/>
     </rule>
     <rule id="9d0d-60e0-d993-9e80" name="Torrent" hidden="false" book="BRB 2014" page="174">
-      <description>A weapon with this special rule is treated like any other Template weapon, but when
-firing it in the Shooting phase, place the template so that the narrow end is within 12&quot; of
-the weapon and the wide end is no closer to the weapon than the narrow end.</description>
+      <description>A weapon with this special rule is treated like any other Template weapon, but when firing it in the Shooting phase, place the template so that the narrow end is within 12&quot; of the weapon and the wide end is no closer to the weapon than the narrow end.</description>
       <modifiers/>
     </rule>
     <rule id="a507-1662-8e89-3f65" name="Two-Handed" hidden="false" book="BRB 2014" page="174">
@@ -1450,7 +1543,7 @@ In addition, units containing one or more models with the Zealot special rule re
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="e7bd-985a-500d-37a0" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Digital Weapons" hidden="false" book="Codex: Skitarii" page="76">
+    <profile id="e7bd-985a-500d-37a0" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Digital Weapons" hidden="false" book="Codex: Cult Mechanicus" page="76">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Each Assault phase, model may re-roll single failed To Wound roll."/>
       </characteristics>
@@ -1461,7 +1554,7 @@ In addition, units containing one or more models with the Zealot special rule re
         <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="+2"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Two-Handed, Concussive, Electroclasm"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Two-Handed, Concussive, Electroleech"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -1509,7 +1602,7 @@ In addition, units containing one or more models with the Zealot special rule re
     </profile>
     <profile id="ff86-e6df-c87d-b353" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Gamma Pistol" hidden="false" book="Codex: Cult Mechanicus">
       <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12"/>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Pistol, Armourbane"/>
@@ -1518,7 +1611,7 @@ In addition, units containing one or more models with the Zealot special rule re
     </profile>
     <profile id="5f6c-e763-a1b2-b7d9" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Heavy Arc Rifle" hidden="false" book="Codex: Cult Mechanicus">
       <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36"/>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 2, Haywire"/>
@@ -1527,7 +1620,7 @@ In addition, units containing one or more models with the Zealot special rule re
     </profile>
     <profile id="3430-aa8e-6e44-9bb6" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Heavy Grav-cannon " hidden="false" book="Codex: Cult Mechanicus">
       <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="30"/>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="30&quot;"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="*"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Salvo 4/6, Concussive, Graviton"/>
@@ -1557,13 +1650,13 @@ In addition, units containing one or more models with the Zealot special rule re
         <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Template"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1, Torrent, (Flamer)"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1, Torrent"/>
       </characteristics>
       <modifiers/>
     </profile>
     <profile id="4cd3-1c16-ef14-0b72" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Infoslave Skull" hidden="false" book="Codex: Cult Mechanicus" page="76">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="+1 Leadership and Acute Senses"/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="+1 Leadership and Acute Senses special rule."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -1634,20 +1727,20 @@ In addition, units containing one or more models with the Zealot special rule re
       <characteristics>
         <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="6"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Burst Pistol"/>
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="ca21-a3e0-1ead-8460" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Mechadendrite Harness" hidden="false">
+    <profile id="ca21-a3e0-1ead-8460" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Mechadendrite Harness" hidden="false" book="Codex: Cult Mechanicus">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The wearer can fire with all ranged weapons in the Shooting Phase. In addition, the model is equipped with a Dataspike."/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The wearer can fire with all of its ranged weapons in the Shooting Phase. In addition, the model is equipped with a Dataspike."/>
       </characteristics>
       <modifiers/>
     </profile>
     <profile id="a2d5-83a4-5d10-91e3" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Phosphor Blaster" hidden="false" book="Codex: Cult Mechanicus">
       <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24"/>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Rapid Fire, Luminagen"/>
@@ -1665,7 +1758,7 @@ In addition, units containing one or more models with the Zealot special rule re
     </profile>
     <profile id="93f4-81fc-c95c-e696" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Plasma Culverin" hidden="false" book="Codex: Cult Mechanicus">
       <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24"/>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 2, Blast, Gets Hot"/>
@@ -1696,15 +1789,15 @@ In addition, units containing one or more models with the Zealot special rule re
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="e9a2-44f1-1774-a026" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Scryerskull" hidden="false">
+    <profile id="e9a2-44f1-1774-a026" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Scryerskull" hidden="false" book="Codex: Cult Mechanicus">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="At the start of the player&apos;s turn, this model can identify one Mysterious Objective from the battlefield."/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="At the start of each of your turns, this model can identify a single Mysterious Objective anywhere on the battlefield."/>
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="01c6-c42c-349e-3dfa" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Stasis Field" hidden="false" page="77">
+    <profile id="01c6-c42c-349e-3dfa" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Stasis Field" hidden="false" book="Codex: Cult Mechanicus" page="77">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="As long as this model has Gone to Ground, it adquires a 2++ invulnerable save, but its WS and BS are reduced to 0."/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="While a model equipped with a stasis field has Gone to Ground, it gains a 2++ invulnerable save, but its Weapon Skill and Ballistic Skill characteristics are reduced to 0."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -1725,7 +1818,7 @@ In addition, units containing one or more models with the Zealot special rule re
     </profile>
     <profile id="1f97-aee8-b583-538d" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Torsion Cannon" hidden="false" book="Codex: Cult Mechanicus">
       <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24"/>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Gravitic Contortion"/>
@@ -1743,7 +1836,7 @@ In addition, units containing one or more models with the Zealot special rule re
     </profile>
     <profile id="d01a-5ba1-6232-d272" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Voltagheist Field" hidden="false" book="Codex: Cult Mechanicus">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="5++ Invulnerable Save. Hammer of Wrath at S4. Model counts as having assault grenades in the Assault phase."/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="5++ Invulnerable Save. Hammer of Wrath special rule, resolved at Strength 4. Model counts as having assault grenades in the Assault phase."/>
       </characteristics>
       <modifiers/>
     </profile>
