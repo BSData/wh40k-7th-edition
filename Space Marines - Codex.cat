@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a1d51a68-4b57-eb7d-f7e2-23bf0c22e374" revision="121" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2013)" authorName="Thommy Abbott" authorContact="legiones.astartes@gmail.com" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a1d51a68-4b57-eb7d-f7e2-23bf0c22e374" revision="122" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2013)" authorName="Thommy Abbott" authorContact="legiones.astartes@gmail.com" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="ba186d42-94de-9258-eea8-9ff224149e35" name="1st Company Hammerfall Assault Force" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -24490,12 +24490,20 @@ All powers must be selected from the same discipline before the beginning of the
           </profiles>
           <links/>
         </entry>
-        <entry id="36d0-ea87-4b94-ce78" name="Any model may swap boltgun for chainsword" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entry id="36d0-ea87-4b94-ce78" name="Any model may swap boltgun for chainsword" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="1ab77828-1c34-ae84-272a-530f5022336c" incrementField="selections" incrementValue="1.0">
-              <conditions/>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="1ab77828-1c34-ae84-272a-530f5022336c" field="selections" type="less than" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="1ab77828-1c34-ae84-272a-530f5022336c" field="selections" type="less than" value="1.0"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
