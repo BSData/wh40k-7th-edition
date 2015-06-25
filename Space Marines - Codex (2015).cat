@@ -12050,7 +12050,7 @@ All powers must be selected from the same discipline before the beginning of the
         <entry id="eee24a67-b01f-8d45-0cca-4ea76a4abe61" name="Space Marine Rapier Weapons Battery" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups>
-            <entryGroup id="421abe61-755b-f766-220b-44b9d7f34398" name="Primary Weapon" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entryGroup id="421abe61-755b-f766-220b-44b9d7f34398" name="Primary Weapon" defaultEntryId="6b992f73-0fc0-fc27-f42d-e66986560d83" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
                 <entry id="6b992f73-0fc0-fc27-f42d-e66986560d83" name="Quad Heavy Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries/>
@@ -12096,10 +12096,12 @@ All powers must be selected from the same discipline before the beginning of the
           </entryGroups>
           <modifiers/>
           <rules>
-            <rule id="830993c4-7edf-f67c-7212-35358a135039" name="Explosive Demise" hidden="false">
+            <rule id="830993c4-7edf-f67c-7212-35358a135039" name="Explosive Demise" hidden="true">
               <modifiers>
-                <modifier type="show" field="name" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="8e873bd7-2028-5d24-ab8b-51db33d28ca4" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
+                <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="eee24a67-b01f-8d45-0cca-4ea76a4abe61" childId="c4d2b2fd-6516-9c99-362c-4da72bcc1ae2" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
