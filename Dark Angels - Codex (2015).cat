@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="578f-d512-a02e-7d0b" revision="7" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Codex Adeptus Astartes: Dark Angels" books="Dark Angels Codex 2015, 7th Edition" authorName="Thairne" authorContact="Interrogatorchaplain@gmx.de" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="578f-d512-a02e-7d0b" revision="8" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Codex Adeptus Astartes: Dark Angels" books="Dark Angels Codex 2015, 7th Edition" authorName="Thairne" authorContact="Interrogatorchaplain@gmx.de" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="8d97-d552-b1a5-2b59" name="10th Company Support" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -1444,7 +1444,7 @@
             <entry id="56e5-ca51-7db0-1695" name="Power Fist" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups>
-                <entryGroup id="1736-efb1-5bcb-aed3" name="Built-in Weapon" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entryGroup id="1736-efb1-5bcb-aed3" name="Built-in Weapon" defaultEntryId="461d-ea78-0c84-b8c3" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -1452,8 +1452,13 @@
                     <link id="402e-0597-cfbb-1bb5" targetId="d7a3-b9c7-0ba7-b4b7" linkType="entry">
                       <modifiers/>
                     </link>
-                    <link id="461d-ea78-0c84-b8c3" targetId="2af9-3e12-029d-7ed5" linkType="entry">
-                      <modifiers/>
+                    <link id="461d-ea78-0c84-b8c3" targetId="3e9639ad-4414-d7ec-49d6-8dcdf4ac25f0" linkType="entry">
+                      <modifiers>
+                        <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions/>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
                     </link>
                   </links>
                 </entryGroup>
@@ -9844,9 +9849,32 @@ D6 VEHICLE TARGET
       <links/>
     </entry>
     <entry id="fea8a00b-565f-c79e-1619-656b8a98e675" name="Drop Pod" points="35.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="100">
-      <entries/>
+      <entries>
+        <entry id="73fa-094e-744c-2c90" name="Free Demi Battle Company Transport" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+          <entries/>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="d5dd-2bbc-ffc1-cc70" field="selections" type="instance of" value="2.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="fea8a00b-565f-c79e-1619-656b8a98e675" childId="73fa-094e-744c-2c90" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -13485,7 +13513,23 @@ casualties. In missions that use Victory Points to determine the winner, the Sla
       <links/>
     </entry>
     <entry id="19761f80-4e53-0400-14ae-cb58c247e02e" name="Razorback" points="55.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Angels 6th" page="100">
-      <entries/>
+      <entries>
+        <entry id="e2ef-a6a3-4e3e-d605" name="Free Demi Battle Company Transport" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+          <entries/>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="d5dd-2bbc-ffc1-cc70" field="selections" type="instance of" value="2.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
       <entryGroups>
         <entryGroup id="09dd3ad7-3a12-de65-ef3a-3ffb282f94b7" name="Top mounted weapon" defaultEntryId="e180b29e-f467-6a83-9ef2-61e41bc8eed9" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -13564,7 +13608,14 @@ casualties. In missions that use Victory Points to determine the winner, the Sla
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="19761f80-4e53-0400-14ae-cb58c247e02e" childId="e2ef-a6a3-4e3e-d605" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -13626,9 +13677,32 @@ casualties. In missions that use Victory Points to determine the winner, the Sla
       </links>
     </entry>
     <entry id="9f86138d-5a9e-4ed9-9d40-df6498a8cd6c" name="Rhino" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Angels 6th" page="100">
-      <entries/>
+      <entries>
+        <entry id="934c-f30a-58f9-ef16" name="Free Demi Battle Company Transport" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+          <entries/>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="d5dd-2bbc-ffc1-cc70" field="selections" type="instance of" value="2.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="9f86138d-5a9e-4ed9-9d40-df6498a8cd6c" childId="934c-f30a-58f9-ef16" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
