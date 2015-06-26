@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a1d51a68-4b57-eb7d-f7e2-23bf0c22e374" revision="122" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2013)" authorName="Thommy Abbott" authorContact="legiones.astartes@gmail.com" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a1d51a68-4b57-eb7d-f7e2-23bf0c22e374" revision="123" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2013)" authorName="Thommy Abbott" authorContact="legiones.astartes@gmail.com" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="ba186d42-94de-9258-eea8-9ff224149e35" name="1st Company Hammerfall Assault Force" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -2423,7 +2423,14 @@ Mirage is a blessing that targets the psyker, as well as any unit he has joined 
             <entry id="b8db75bb-181c-c541-e34c-eba6c037bd13" name="Space Marine Biker" points="21.0" categoryId="(No Category)" type="upgrade" minSelections="4" maxSelections="7" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="decrement" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="a18c85db-48cb-b669-33af-782e0aeedcf3" childId="cca46eee-84bb-7f90-2f21-aa3dd72cac92" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <rules/>
               <profiles>
                 <profile id="60ba1bf0-e372-7d91-3077-a9334f55b735" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Space Marine Biker" hidden="false" page="0">
