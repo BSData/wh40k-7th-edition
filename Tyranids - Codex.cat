@@ -17883,8 +17883,19 @@ Formation’s Tyranid Warrior Brood can re-roll failed To Wound rolls of 1 in th
     <link id="5c2a-018d-587d-974f" targetId="faad-7aa3-c605-0d7d" linkType="entry" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
       <modifiers/>
     </link>
-    <link id="ff3b-0da2-6add-ba2e" targetId="1f9b-834a-58ac-0b8f" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
-      <modifiers/>
+    <link id="ff3b-0da2-6add-ba2e" targetId="1f9b-834a-58ac-0b8f" linkType="entry" categoryId="(No Category)">
+      <modifiers>
+        <modifier type="increment" field="maxInForce" value="1.0" repeat="true" numRepeats="1" incrementParentId="force type" incrementChildId="5ee8-78a4-e8ec-2a83" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="maxInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="6e29-910d-897a-5fef" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </link>
     <link id="bdb3-2ef9-e28c-03dd" targetId="971a-bb26-63ab-595a" linkType="entry" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
       <modifiers/>
@@ -22246,7 +22257,7 @@ own, unless their own would be higher for any reason.</description>
         </link>
       </links>
     </entry>
-    <entry id="1f9b-834a-58ac-0b8f" name="Tyrant Guard Brood" points="0.0" categoryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Tyranids" page="86">
+    <entry id="1f9b-834a-58ac-0b8f" name="Tyrant Guard Brood" points="0.0" categoryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="0" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Tyranids" page="86">
       <entries>
         <entry id="5541-980a-c16b-e017" name="Tyrant Guard" points="50.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Tyranids" page="86">
           <entries>
@@ -22423,14 +22434,17 @@ rolls.</description>
       <links/>
     </entry>
     <entry id="955b-0d69-2fcb-2c4b" name="Zoanthrope Brood" points="0.0" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Tyranids / White Dwarf 42" page="89">
-      <entries>
-        <entry id="ca31-ad93-f89d-3967" name="Zoanthrope" points="50.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="6" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="7612-1965-4c16-5cf3" name="Brotherhood of Psychers" hidden="false" book="Main Rule Book" page="0">
-              <description>A unit with this special rule counts as a Mastery Level 1 Psyker. The unit follows all the
+      <entries/>
+      <entryGroups>
+        <entryGroup id="922e-d3ac-7cd3-1136" name="Zoanthrope Brood" minSelections="1" maxSelections="6" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="a7e0-602f-8c88-d18a" name="Zoanthrope" points="50.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="6" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="d01b-d39a-5cd6-1dd2" name="Brotherhood of Psychers" hidden="false" book="Main Rule Book" page="0">
+                  <description>A unit with this special rule counts as a Mastery Level 1 Psyker. The unit follows all the
 normal rules for Psykers, with the following clarifications:
 
 The unit uses the Leadership of its character, if there is one (and he is alive), or the unit,
@@ -22440,53 +22454,60 @@ Leadership of an Independent Character for Psychic tests.
 If the unit suffers the Perils of the Warp, or any other attack that specifically targets
 Psykers, it is resolved against the character, if there is one (and he is alive), or against a
 random, non-character model in the unit, if there is no character (or he is dead).</description>
-              <modifiers/>
-            </rule>
-            <rule id="322c-0a48-7a8d-5032" name="Warp Field" hidden="false" book="Codex: Tyranids" page="45">
-              <description>Zoanthropes have a 3+ invulnerable save.</description>
-              <modifiers/>
-            </rule>
-            <rule id="a597-b00a-b8a9-90d0" name="Psychic Brood" hidden="false" book="Codex: Tyranids" page="45">
-              <description>A Zoanthrope brood follows all the rules for Brotherhood of Psykers except that the unit
+                  <modifiers/>
+                </rule>
+                <rule id="7307-549e-4afe-db79" name="Warp Field" hidden="false" book="Codex: Tyranids" page="45">
+                  <description>Zoanthropes have a 3+ invulnerable save.</description>
+                  <modifiers/>
+                </rule>
+                <rule id="121c-957f-a07b-454c" name="Psychic Brood" hidden="false" book="Codex: Tyranids" page="45">
+                  <description>A Zoanthrope brood follows all the rules for Brotherhood of Psykers except that the unit
 has a Mastery Level of 2. In addition, if a Zoanthrope Brood uses the Warp Blast power 
 (see Codex: Tyranids) the number of shots fired is equal to the number of Zoanthropes 
 and Neurothropes in that brood.
 
 For example, a brood of three Zoanthropes that successfully manifested Warp Blast
 would treat both the Burst and Lance profiles as Assault 3.</description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links>
-            <link id="21e0-09df-bf7c-5b16" targetId="2ae91f87-7808-36b9-090d-2fbcc6bbd26c" linkType="rule">
-              <modifiers/>
-            </link>
-            <link id="46f7-b3a6-252b-1d84" targetId="34a50f2a-82f2-8f06-0d60-e26e520f2add" linkType="rule">
-              <modifiers/>
-            </link>
-            <link id="9cb4-127c-a912-ba0d" targetId="0489b7e8-ec5c-17db-625d-c939d408a20f" linkType="rule">
-              <modifiers/>
-            </link>
-            <link id="b8fa-c1f7-8c10-5de3" targetId="a2a6-7948-3478-67c5" linkType="rule">
-              <modifiers/>
-            </link>
-            <link id="0bf7-9933-5847-5783" targetId="974a-2cb2-50b5-da13" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="06b4-0cb5-e829-8694" name="Neurothrope" points="75.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="White Dwarf 42">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="1166-5f3d-27e8-04d9" name="Warp Field" hidden="false" book="Codex: Tyranids" page="45">
-              <description>Zoanthropes have a 3+ invulnerable save.</description>
-              <modifiers/>
-            </rule>
-            <rule id="e9a8-56f1-41ae-9f82" name="Brotherhood of Psychers" hidden="false" book="Main Rule Book" page="0">
-              <description>A unit with this special rule counts as a Mastery Level 1 Psyker. The unit follows all the
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles/>
+              <links>
+                <link id="e147-99e1-45da-9058" targetId="2ae91f87-7808-36b9-090d-2fbcc6bbd26c" linkType="rule">
+                  <modifiers/>
+                </link>
+                <link id="927a-59e1-bc4a-998e" targetId="34a50f2a-82f2-8f06-0d60-e26e520f2add" linkType="rule">
+                  <modifiers/>
+                </link>
+                <link id="2df2-3591-f2f6-15ad" targetId="0489b7e8-ec5c-17db-625d-c939d408a20f" linkType="rule">
+                  <modifiers/>
+                </link>
+                <link id="e087-7b68-05d9-f932" targetId="a2a6-7948-3478-67c5" linkType="rule">
+                  <modifiers/>
+                </link>
+                <link id="6ff4-8316-cd17-bc90" targetId="974a-2cb2-50b5-da13" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="ca8e-e32b-1791-21aa" name="Neurothrope" points="75.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="White Dwarf 42">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="922e-d3ac-7cd3-1136" childId="922e-d3ac-7cd3-1136" field="selections" type="less than" value="3.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="67cd-0cff-8634-5780" name="Warp Field" hidden="false" book="Codex: Tyranids" page="45">
+                  <description>Zoanthropes have a 3+ invulnerable save.</description>
+                  <modifiers/>
+                </rule>
+                <rule id="d821-7db8-e0f5-ef7a" name="Brotherhood of Psychers" hidden="false" book="Main Rule Book" page="0">
+                  <description>A unit with this special rule counts as a Mastery Level 1 Psyker. The unit follows all the
 normal rules for Psykers, with the following clarifications:
 
 The unit uses the Leadership of its character, if there is one (and he is alive), or the unit,
@@ -22496,40 +22517,44 @@ Leadership of an Independent Character for Psychic tests.
 If the unit suffers the Perils of the Warp, or any other attack that specifically targets
 Psykers, it is resolved against the character, if there is one (and he is alive), or against a
 random, non-character model in the unit, if there is no character (or he is dead).</description>
-              <modifiers/>
-            </rule>
-            <rule id="2c1d-b785-df9e-0b4e" name="Psychic Brood" hidden="false" book="Codex: Tyranids" page="45">
-              <description>A Zoanthrope brood follows all the rules for Brotherhood of Psykers except that the unit
+                  <modifiers/>
+                </rule>
+                <rule id="98a1-b76f-dfbe-79ec" name="Psychic Brood" hidden="false" book="Codex: Tyranids" page="45">
+                  <description>A Zoanthrope brood follows all the rules for Brotherhood of Psykers except that the unit
 has a Mastery Level of 2. In addition, if a Zoanthrope Brood uses the Warp Blast power 
 (see Codex: Tyranids) the number of shots fired is equal to the number of Zoanthropes 
 and Neurothropes in that brood.
 
 For example, a brood of three Zoanthropes that successfully manifested Warp Blast
 would treat both the Burst and Lance profiles as Assault 3.</description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links>
-            <link id="7a53-d53b-8a90-c678" targetId="2ae91f87-7808-36b9-090d-2fbcc6bbd26c" linkType="rule">
-              <modifiers/>
-            </link>
-            <link id="10eb-5f7d-eab6-c4b9" targetId="0489b7e8-ec5c-17db-625d-c939d408a20f" linkType="rule">
-              <modifiers/>
-            </link>
-            <link id="c431-c9cf-a5ab-2aca" targetId="34a50f2a-82f2-8f06-0d60-e26e520f2add" linkType="rule">
-              <modifiers/>
-            </link>
-            <link id="19a3-b138-949f-8e61" targetId="a2a6-7948-3478-67c5" linkType="rule">
-              <modifiers/>
-            </link>
-            <link id="301b-4923-c0ed-d3c4" targetId="77f9-4ee3-01f3-39c3" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-      </entries>
-      <entryGroups/>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles/>
+              <links>
+                <link id="9903-4040-49d5-bcca" targetId="2ae91f87-7808-36b9-090d-2fbcc6bbd26c" linkType="rule">
+                  <modifiers/>
+                </link>
+                <link id="ab48-0166-db05-04d9" targetId="0489b7e8-ec5c-17db-625d-c939d408a20f" linkType="rule">
+                  <modifiers/>
+                </link>
+                <link id="8c4d-fbc8-0009-c6ec" targetId="34a50f2a-82f2-8f06-0d60-e26e520f2add" linkType="rule">
+                  <modifiers/>
+                </link>
+                <link id="4d86-74af-78d5-a052" targetId="a2a6-7948-3478-67c5" linkType="rule">
+                  <modifiers/>
+                </link>
+                <link id="8a76-7243-a078-439a" targetId="77f9-4ee3-01f3-39c3" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
       <modifiers/>
       <rules/>
       <profiles/>
