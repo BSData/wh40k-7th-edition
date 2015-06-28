@@ -1325,7 +1325,7 @@ Mirage is a blessing that targets the psyker, as well as any unit he has joined 
         </link>
       </links>
     </entry>
-    <entry id="165d-32c9-8555-5e1c" name="Battle Demi Company *" points="0.0" categoryId="bf93-7277-bf48-16f7" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="165d-32c9-8555-5e1c" name="Battle Demi Company *" points="90.0" categoryId="bf93-7277-bf48-16f7" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups>
         <entryGroup id="d454-47f9-b648-30a7" name="Commander" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -1337,7 +1337,12 @@ Mirage is a blessing that targets the psyker, as well as any unit he has joined 
               <modifiers/>
               <links>
                 <link id="727a-e49b-302e-d091" targetId="41fb-65ac-f6e8-505c" linkType="entry">
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                 </link>
                 <link id="fc9a-5039-f75a-1e45" targetId="3830-b063-69aa-2582" linkType="entry">
                   <modifiers/>
@@ -1468,7 +1473,14 @@ Mirage is a blessing that targets the psyker, as well as any unit he has joined 
           </links>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="decrement" field="points" value="90.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="165d-32c9-8555-5e1c" childId="5d0b-3aa4-6a1c-a4f7" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="cdd3-200e-1260-8832" name="Objective Secured" hidden="false">
           <modifiers/>
@@ -1492,7 +1504,12 @@ Mirage is a blessing that targets the psyker, as well as any unit he has joined 
               <modifiers/>
               <links>
                 <link id="4ec2-9351-168e-d2f3" targetId="41fb-65ac-f6e8-505c" linkType="entry">
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                 </link>
                 <link id="a76c-5c57-1862-645f" targetId="3830-b063-69aa-2582" linkType="entry">
                   <modifiers/>
@@ -13092,7 +13109,12 @@ All powers must be selected from the same discipline before the beginning of the
               <modifiers/>
             </link>
             <link id="2c13-adb5-7bc9-c317" targetId="41fb-65ac-f6e8-505c" linkType="entry">
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
             <link id="ddf9-d3c4-2aa4-fcfc" targetId="071d-8cf0-fb5c-aecc" linkType="entry">
               <modifiers/>
@@ -16008,8 +16030,13 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
     <link id="0e39-28d5-694e-550b" targetId="fa13-35d7-9893-1c0c" linkType="entry" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
       <modifiers/>
     </link>
-    <link id="92f4-9c98-4427-8cdd" targetId="fa9b-0d83-8afd-14f0" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
-      <modifiers/>
+    <link id="92f4-9c98-4427-8cdd" targetId="41fb-65ac-f6e8-505c" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
+      <modifiers>
+        <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </link>
     <link id="188a-15cf-9368-3829" targetId="4df1-3a9a-6072-83f0" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
       <modifiers/>
@@ -17294,7 +17321,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </link>
       </links>
     </entry>
-    <entry id="41fb-65ac-f6e8-505c" name="Captain" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="41fb-65ac-f6e8-505c" name="Captain" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups>
         <entryGroup id="5b97-6055-16a7-2e45" name="Commander" defaultEntryId="2fb4-ccee-4a35-9e0f" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -30039,7 +30066,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <modifiers/>
       <rules>
         <rule id="95e7-fa72-f26d-2cf4" name="The Armour Indomitus" hidden="false">
-          <description>The Armour Indomintus confers a 2+ Armour Save and a 6+ invulnverable save. Once per game, at the beginning of any phase, the wearer can choose to temporarily push teh armour&apos;s force field to its limit. For the duration of that phase, the Armour Indomintus confers a 2+ invulnerable save.</description>
+          <description>The Armour Indomintus confers a 2+ Armour Save and a 6+ invulnverable save. Once per game, at the beginning of any phase, the wearer can choose to temporarily push the armour&apos;s force field to its limit. For the duration of that phase, the Armour Indomintus confers a 2+ invulnerable save.</description>
           <modifiers/>
         </rule>
       </rules>
