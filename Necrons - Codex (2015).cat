@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="026a-37f6-fa3a-c213" revision="8" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Necrons: Codex (2015)" authorName="Kangodo, Tobias" authorContact="Report issues and bugs for this Codex here:" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="026a-37f6-fa3a-c213" revision="9" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Necrons: Codex (2015)" authorName="Kangodo, Tobias" authorContact="Report issues and bugs for this Codex here:" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="c528a153-c346-46d9-a7e5-d5e0fd485ea5" name="Acquisition Phalanx" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="40k Apocalypse" page="169">
       <entries/>
@@ -1337,26 +1337,40 @@ The removed units may Deep Strike back into the game and the first placed model 
       <profiles/>
       <links/>
     </entry>
-  </entries>
-  <rules>
-    <rule id="500e-9af0-8415-1b9d" name="Ever-living" hidden="true">
-      <description>Models in this Detachment with the Reanimation Protocols special rule receive a +1 bonus to Reanimation Protocols rolls. Models in this Detachment with the Living Metal rule ignore the effects of Crew Stunned and Crew Shaken (but still lose a Hull Point).</description>
+    <entry id="08bb-1703-6474-00aa" name="Decurion Detachment" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
       <modifiers>
-        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
             <condition parentId="force type" childId="5035-9fad-cd58-1bce" field="selections" type="instance of" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
-        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+        <modifier type="set" field="maxInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="5035-9fad-cd58-1bce" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="minInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
             <condition parentId="force type" childId="5035-9fad-cd58-1bce" field="selections" type="instance of" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
       </modifiers>
-    </rule>
-  </rules>
+      <rules>
+        <rule id="05b1-e361-9ff5-5e12" name="Ever-living" hidden="true">
+          <description>Models in this Detachment with the Reanimation Protocols special rule receive a +1 bonus to Reanimation Protocols rolls. Models in this Detachment with the Living Metal rule ignore the effects of Crew Stunned and Crew Shaken (but still lose a Hull Point).</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+  </entries>
+  <rules/>
   <links>
     <link id="1f74d8ce-d67e-a118-32aa-98ccd9142ccf" targetId="32a88265-ce13-b174-e49b-6409eec23dcc" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
       <modifiers/>
