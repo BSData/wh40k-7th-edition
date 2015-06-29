@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4fe1-8588-ca35-920b" revision="7" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="20" battleScribeVersion="1.15" name="Cult Mechanicus: Codex (2015)" books="Codex: Cult Mechanicus" authorName="Axis of Entropy, Throtard" authorContact="axisofentropy@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4fe1-8588-ca35-920b" revision="8" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="20" battleScribeVersion="1.15" name="Cult Mechanicus: Codex (2015)" books="Codex: Cult Mechanicus" authorName="Axis of Entropy, Throtard" authorContact="axisofentropy@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="0307-11d2-873a-5d4d" name="Cohort Cybernetica" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus">
       <entries/>
@@ -1019,6 +1019,42 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
         </profile>
       </profiles>
+      <links/>
+    </entry>
+    <entry id="a9b6-8fb9-671e-d928" name="Battle Congregation" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="minInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="a9b6-8fb9-671e-d928" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="maxInRoster" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="a9b6-8fb9-671e-d928" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="a9b6-8fb9-671e-d928" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="8ffd-185e-39d8-8148" name="Tech-Adept" hidden="false">
+          <description>If this Detachment is your Primary Detachment, you can re-roll the result when rolling on the Warlord Traits table in Codex: Cult Mechanicus.</description>
+          <modifiers/>
+        </rule>
+        <rule id="60ea-3e0f-ee4b-a6e5" name="Divine Chorus" hidden="false">
+          <description>If your army includes one or more Detachments with this special rule, you can, once per game, choose to re-use a Canticle of the Omnissiah that your army has already used earlier in the game.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
       <links/>
     </entry>
   </entries>
