@@ -8192,7 +8192,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                             <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="5"/>
                             <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="3"/>
                             <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="10"/>
-                            <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="2+ / 4++"/>
+                            <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+ / 4++"/>
                           </characteristics>
                           <modifiers/>
                         </profile>
@@ -8222,7 +8222,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                             <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="5"/>
                             <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="3"/>
                             <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="10"/>
-                            <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="2+ / 4++"/>
+                            <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+ / 4++"/>
                           </characteristics>
                           <modifiers/>
                         </profile>
@@ -9970,7 +9970,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           </modifiers>
           <links>
             <link id="3f55-57bb-c6ff-c736" targetId="52fe-603e-5b0b-55ef" linkType="entry">
-              <modifiers/>
+              <modifiers>
+                <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="948b-39d8-2c59-c3ca" childId="0436-9399-05db-33e2" field="selections" type="equal to" value="10.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
           </links>
         </entryGroup>
@@ -10111,14 +10118,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
           <links>
             <link id="c4bc-6c74-806e-298b" targetId="cf1e-af32-4b46-2cdf" linkType="entry">
-              <modifiers>
-                <modifier type="set" field="maxSelections" value="4.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-            </link>
-            <link id="a530-b616-aefa-666d" targetId="d7a3-b9c7-0ba7-b4b7" linkType="entry">
               <modifiers>
                 <modifier type="set" field="maxSelections" value="4.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions/>
@@ -11941,7 +11940,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                       <conditions/>
                       <conditionGroups/>
                     </modifier>
-                    <modifier type="increment" field="minSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="f28e-d9c1-1775-b35a" incrementChildId="ec0a-b856-9324-11ff" incrementField="selections" incrementValue="1.0">
+                    <modifier type="increment" field="minSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="f28e-d9c1-1775-b35a" incrementChildId="ec0a-b856-9324-11ff" incrementField="selections" incrementValue="1.0">
                       <conditions/>
                       <conditionGroups/>
                     </modifier>
@@ -12047,6 +12046,14 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                       <conditions>
                         <condition parentId="1c4142f1-051a-8247-8122-3eb963b3b2e4" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
                       </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="1c4142f1-051a-8247-8122-3eb963b3b2e4" incrementChildId="f249-1432-1269-d6af" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="minSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="1c4142f1-051a-8247-8122-3eb963b3b2e4" incrementChildId="f249-1432-1269-d6af" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
                       <conditionGroups/>
                     </modifier>
                   </modifiers>
@@ -16869,9 +16876,6 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
         <link id="9f03-f467-b4be-72ca" targetId="cf1e-af32-4b46-2cdf" linkType="entry">
           <modifiers/>
         </link>
-        <link id="c0c4-a70e-489f-a764" targetId="d7a3-b9c7-0ba7-b4b7" linkType="entry">
-          <modifiers/>
-        </link>
         <link id="0631-2475-a799-7ce6" targetId="8285-fb4a-6b14-3c2a" linkType="entry">
           <modifiers/>
         </link>
@@ -16885,9 +16889,6 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
           <modifiers/>
         </link>
         <link id="92a7-c9d6-328a-fe00" targetId="0486-0971-735d-c41d" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="d95d-9082-3cad-1a43" targetId="0152bd6f-5620-98e2-5bb1-4caf9cf56441" linkType="entry">
           <modifiers/>
         </link>
       </links>
