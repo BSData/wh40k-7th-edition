@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2301-1cab-6d58-f23b" revision="11" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="17" battleScribeVersion="1.15" name="Skitarii: Codex (2015)" books="Codex: Skitarii" authorName="Axis of Entropy" authorContact="axisofentropy@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2301-1cab-6d58-f23b" revision="12" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="17" battleScribeVersion="1.15" name="Skitarii: Codex (2015)" books="Codex: Skitarii" authorName="Axis of Entropy" authorContact="axisofentropy@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="d640-a4f0-1327-2932" name="Ironstrider Cavaliers" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Skitarii" page="67">
       <entries/>
@@ -89,6 +89,42 @@
           <modifiers/>
         </link>
       </links>
+    </entry>
+    <entry id="a98f-4498-d272-120b" name="Skitarii Maniple" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="minInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="a98f-4498-d272-120b" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="a98f-4498-d272-120b" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="a98f-4498-d272-120b" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="f9ec-d32c-d8eb-430b" name="Crux Mechanicus" hidden="false">
+          <description>If this Detachment is your Primary Detachment, you can re-roll the result when rolling on the Warlord Traits table in Codex: Skitarii. Furthermore, your Warlord has the Preferred Enemy special rule.</description>
+          <modifiers/>
+        </rule>
+        <rule id="91fa-717f-d40a-c81e" name="Tireless Advance" hidden="false">
+          <description>All models from this Detachment have the Crusader and Scout special rules. Units from this Detachment cannot Outflank due to this special rule, but can do as the result of a different special rule (such as Infiltrate, or a Mission special rule).</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
     </entry>
     <entry id="602e-0740-e36f-d62e" name="War Cohort" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Skitarii" page="65">
       <entries/>
@@ -1237,42 +1273,6 @@
           <modifiers/>
         </link>
       </links>
-    </entry>
-    <entry id="a98f-4498-d272-120b" name="Skitarii Maniple" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="set" field="minInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="a98f-4498-d272-120b" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="a98f-4498-d272-120b" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="a98f-4498-d272-120b" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules>
-        <rule id="f9ec-d32c-d8eb-430b" name="Crux Mechanicus" hidden="false">
-          <description>If this Detachment is your Primary Detachment, you can re-roll the result when rolling on the Warlord Traits table in Codex: Skitarii. Furthermore, your Warlord has the Preferred Enemy special rule.</description>
-          <modifiers/>
-        </rule>
-        <rule id="91fa-717f-d40a-c81e" name="Tireless Advance" hidden="false">
-          <description>All models from this Detachment have the Crusader and Scout special rules. Units from this Detachment cannot Outflank due to this special rule, but can do as the result of a different special rule (such as Infiltrate, or a Mission special rule).</description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles/>
-      <links/>
     </entry>
   </entries>
   <rules/>
@@ -3219,7 +3219,7 @@ Also units may re-roll charge range until end of turn.</description>
       <modifiers/>
     </rule>
     <rule id="229f-4019-eb95-9336" name="Rad-saturation" hidden="false" book="Codex: Skitarii" page="57">
-      <description>Enemy units locked in combat subtract 1 from their Toughness.</description>
+      <description>Enemy units locked in combat with any number of models with this rule, subtract 1 from their Toughness (but no lower than 1).</description>
       <modifiers/>
     </rule>
     <rule id="9687-72f4-9d15-eef2" name="Relentless" hidden="false" book="BRB 2014" page="170">
