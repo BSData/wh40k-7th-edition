@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="6" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" authorName="Thommy Abbott (Senpai514)" authorContact="legiones.astartes@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="7" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" authorName="Thommy Abbott (Senpai514)" authorContact="legiones.astartes@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="af72-626e-f678-d0a5" name="10th Company Task Force *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -19275,7 +19275,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       <profiles/>
       <links/>
     </entry>
-    <entry id="3830-b063-69aa-2582" name="Captain Lysander" points="230.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="3830-b063-69aa-2582" name="Captain Lysander" points="230.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="71b5-bcd8-4adf-d7b2" name="Storm Shield" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -19309,7 +19309,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="e587907b-cbac-80cd-d83d-1d007376c2fb" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="e0cc-9a7b-e2eb-9122" name="Icon of Obstinacy" hidden="false">
           <description>If Lysander is your Warlord, all friendly Imperial Fists units within 12&quot; of him re-roll failed Morale checks, Pinning tests and Fear tests.</description>
@@ -19351,7 +19358,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </link>
       </links>
     </entry>
-    <entry id="a89c-1006-a5f8-5969" name="Captain Sicarius" points="175.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Marines" page="116">
+    <entry id="a89c-1006-a5f8-5969" name="Captain Sicarius" points="175.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Codex: Space Marines" page="116">
       <entries>
         <entry id="60ff-ccb2-8174-c185" name="Plasma Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -19390,7 +19397,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="bc95a691-11c1-ea39-be20-b9e20579b75c" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="e1bb-7821-e83e-30dd" name="Battle-forged Heroes" hidden="false" book="Codex: Space Marines" page="116">
           <description>During deployment, choose one friendly Ultramarines Tactical Squad. It gains one of the following special rules for the duration of the battle: Counter-attack, Infiltrate, Scout, or Tank Hunters.</description>
@@ -20752,7 +20766,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </link>
       </links>
     </entry>
-    <entry id="b678-f27d-6e38-0262" name="Chaplain Cassius" points="130.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="b678-f27d-6e38-0262" name="Chaplain Cassius" points="130.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="2576-b06e-2d59-8247" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -20807,7 +20821,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="bc95a691-11c1-ea39-be20-b9e20579b75c" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="f768-60e9-79a9-9690" name="Preferred Enemy (Tyranids)" hidden="false">
           <modifiers/>
@@ -20854,7 +20875,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </link>
       </links>
     </entry>
-    <entry id="dafa-16cc-1b97-4a13" name="Chaplain Grimaldus" points="150.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="dafa-16cc-1b97-4a13" name="Chaplain Grimaldus" points="150.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="30b5-dd6a-e3c8-bee4" name="Master-crafted Plasma Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -20911,7 +20932,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="b865634c-f335-edcb-c5ea-ad355c0100c0" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="42d7-3471-f732-bb0b" name="Unmatched Zeal" hidden="false">
           <description>Friendly Black Templars units within 6&quot; of Chaplain Grimaldus have the Zealot special rule.</description>
@@ -20956,7 +20984,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </link>
       </links>
     </entry>
-    <entry id="8ffc-b1e9-6f6a-1c68" name="Chief Librarian Tigurius" points="165.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="8ffc-b1e9-6f6a-1c68" name="Chief Librarian Tigurius" points="165.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="26f9-da16-210f-d4fa" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -20990,7 +21018,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="bc95a691-11c1-ea39-be20-b9e20579b75c" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="9e7e-7648-14f3-23a1" name="Psyker (Mastery Level 3)" hidden="false">
           <modifiers/>
@@ -22565,7 +22600,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       <profiles/>
       <links/>
     </entry>
-    <entry id="3678-6c89-ca13-a359" name="High Marshal Helbrecht" points="180.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="3678-6c89-ca13-a359" name="High Marshal Helbrecht" points="180.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="3abf-5984-104b-28f4" name="Combi-melta" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -22604,7 +22639,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="b865634c-f335-edcb-c5ea-ad355c0100c0" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="b852-1859-1800-9a82" name="Crusade of Wrath" hidden="false">
           <description>Once per game, at the beginning of your Assault phase, High Marshal Helbrecht can grant all friendly Black Templars models the Hatred and Fleet special rules untill the end of that phase.</description>
@@ -23394,7 +23436,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       <profiles/>
       <links/>
     </entry>
-    <entry id="5447-26cf-7908-f9a6" name="Kor&apos;sarro Khan" points="125.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="5447-26cf-7908-f9a6" name="Kor&apos;sarro Khan" points="125.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="eaec-abbe-8604-44c3" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -23467,7 +23509,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="1f9f0258-eaff-588d-8cd1-993698c7d62d" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="1cd3-2fe9-45b6-cd5d" name="Master of the Hunt" hidden="false">
           <description>If Kor&apos;sarro Khan is your Warlord, friendly White Scars models that have the Bike unit type, or are embarked on a Rhino or Razorback have the Scout special rule.
@@ -24817,7 +24866,7 @@ In addition, if Kor&apos;sarro Khan slays the enemy Warlord in a challenge, you 
         </link>
       </links>
     </entry>
-    <entry id="ef2b-07da-a3e0-ca88" name="Marneus Calgar" points="275.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="ef2b-07da-a3e0-ca88" name="Marneus Calgar" points="275.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="476e-c6e3-9263-f54f" name="Power Sword" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -24902,7 +24951,14 @@ In addition, if Kor&apos;sarro Khan slays the enemy Warlord in a challenge, you 
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="bc95a691-11c1-ea39-be20-b9e20579b75c" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="5d76-551d-6936-6a75" name="God of War" hidden="false">
           <description>If Marneus Calgar is your Warlord, he can choose any Warlord Trait from the Space Marine Warlord Traits table.</description>
@@ -24948,7 +25004,7 @@ In addition, if Kor&apos;sarro Khan slays the enemy Warlord in a challenge, you 
         </link>
       </links>
     </entry>
-    <entry id="75bf-8cd6-7c39-51a7" name="Pedro Kantor" points="185.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="75bf-8cd6-7c39-51a7" name="Pedro Kantor" points="185.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="41c8-3165-e614-5c09" name="Power Fist" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -24982,7 +25038,14 @@ In addition, if Kor&apos;sarro Khan slays the enemy Warlord in a challenge, you 
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="e587907b-cbac-80cd-d83d-1d007376c2fb" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="fc9d-d17e-1084-6036" name="Hold the Line" hidden="false">
           <description>Sternguard Veterans that are part Pedro Kantor&apos;s Detachment have the Objective Secured special rule</description>
@@ -26465,7 +26528,7 @@ In addition, if Kor&apos;sarro Khan slays the enemy Warlord in a challenge, you 
         </link>
       </links>
     </entry>
-    <entry id="4f66-a5c7-2c23-e1bd" name="Sergeant Chronus" points="50.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="4f66-a5c7-2c23-e1bd" name="Sergeant Chronus" points="50.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="dd53-1afe-aa50-a7a5" name="Servo-arm" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -27218,7 +27281,14 @@ In addition, if Kor&apos;sarro Khan slays the enemy Warlord in a challenge, you 
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="bc95a691-11c1-ea39-be20-b9e20579b75c" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles>
         <profile id="b63a-ca2a-e218-19c1" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Sergeant Chronus" hidden="false">
@@ -27252,7 +27322,7 @@ In addition, if Kor&apos;sarro Khan slays the enemy Warlord in a challenge, you 
         </link>
       </links>
     </entry>
-    <entry id="6ad3-8a91-3455-319d" name="Sergeant Telion" points="50.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="6ad3-8a91-3455-319d" name="Sergeant Telion" points="50.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="a147-7023-12ee-759a" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -27286,7 +27356,14 @@ In addition, if Kor&apos;sarro Khan slays the enemy Warlord in a challenge, you 
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="bc95a691-11c1-ea39-be20-b9e20579b75c" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="2152-04d6-b504-c0c3" name="Scout Sergeant" hidden="false">
           <description>Sergeant Telion may only join units of Scouts.</description>
@@ -29465,7 +29542,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
         </link>
       </links>
     </entry>
-    <entry id="6877-c655-cfa4-c106" name="The Emperor&apos;s Champion" points="140.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="6877-c655-cfa4-c106" name="The Emperor&apos;s Champion" points="140.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="8e2e-0c51-5cc4-3264" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -29499,7 +29576,14 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="b865634c-f335-edcb-c5ea-ad355c0100c0" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="54e1-b4ed-7873-222a" name="Honour or Death" hidden="false">
           <modifiers/>
@@ -30851,7 +30935,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <profiles/>
       <links/>
     </entry>
-    <entry id="a846-4165-70e1-e30a" name="Vulkan He&apos;stan" points="190.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="a846-4165-70e1-e30a" name="Vulkan He&apos;stan" points="190.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="30bd-65ed-86b3-2e37" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -30900,7 +30984,14 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="e79008dd-b65e-28fa-7a70-fa2097475682" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="b448-04ea-267f-748c" name="The Forgefather" hidden="false">
           <description>If Vulkan He&apos;stan is your Warlord, all meltaguns, combi-meltas and multi-meltas fired by models in his Detachment have the Master-crafted special rule.</description>
