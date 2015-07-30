@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="152" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="153" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="d333bebf-fda1-d63f-3a91-f3c4a81166e1" name="[Apoc] Cult of Destruction" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -14722,7 +14722,7 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
       </profiles>
       <links/>
     </entry>
-    <entry id="3e97-d506-885d-5aff" name="Chaos Lord" points="65.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="3e97-d506-885d-5aff" name="Chaos Lord" points="65.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
       <entryGroups>
         <entryGroup id="ff79-6ccf-0001-5cee" name="Mark of Chaos" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -22336,6 +22336,8 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
             <conditionGroup type="and">
               <conditions>
                 <condition parentId="roster" childId="f03040f6-c518-3af5-aff3-813f24c753fe" field="selections" type="equal to" value="0.0"/>
+                <condition parentId="direct parent" childId="8da7-e2ef-2379-a802" field="selections" type="at least" value="1.0"/>
+                <condition parentId="direct parent" childId="e50b169a-27d4-47c1-797f-662259a1f60a" field="selections" type="at least" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -22343,7 +22345,15 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
         </modifier>
         <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
-          <conditionGroups/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="direct parent" childId="8da7-e2ef-2379-a802" field="selections" type="at least" value="1.0"/>
+                <condition parentId="direct parent" childId="b7b57910-3cbe-e895-cb47-c303f2e41b6a" field="selections" type="at least" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules/>
@@ -22829,7 +22839,15 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
       <modifiers>
         <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
-          <conditionGroups/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="direct parent" childId="8da7-e2ef-2379-a802" field="selections" type="less than" value="1.0"/>
+                <condition parentId="direct parent" childId="b7b57910-3cbe-e895-cb47-c303f2e41b6a" field="selections" type="less than" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
@@ -23967,8 +23985,17 @@ Enemy units within 12&quot; of a unit in this formation subtract 1 from their Ba
       </entryGroups>
       <modifiers>
         <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions/>
-          <conditionGroups/>
+          <conditions>
+            <condition parentId="force type" childId="ae2b-ee25-838d-1dc2" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="direct parent" childId="ee5cbf81-95d2-6a7c-d494-cc5576405bef" field="selections" type="at least" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
@@ -23976,6 +24003,7 @@ Enemy units within 12&quot; of a unit in this formation subtract 1 from their Ba
             <conditionGroup type="or">
               <conditions>
                 <condition parentId="force type" childId="6780f462-a3ee-49f8-a775-f45d298bc761" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="ae2b-ee25-838d-1dc2" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -24410,7 +24438,7 @@ Enemy units within 12&quot; of a unit in this formation subtract 1 from their Ba
         <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
                 <condition parentId="force type" childId="6780f462-a3ee-49f8-a775-f45d298bc761" field="selections" type="less than" value="1.0"/>
                 <condition parentId="force type" childId="ae2b-ee25-838d-1dc2" field="selections" type="less than" value="1.0"/>
@@ -25073,6 +25101,7 @@ Enemy units within 12&quot; of a unit in this formation subtract 1 from their Ba
             <conditionGroup type="or">
               <conditions>
                 <condition parentId="force type" childId="733ea40a-ea0b-4bd1-ab2a-c26ab92ba55c" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="4e77-234a-15e5-8c40" field="selections" type="at least" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -25090,6 +25119,7 @@ Enemy units within 12&quot; of a unit in this formation subtract 1 from their Ba
             <conditionGroup type="or">
               <conditions>
                 <condition parentId="force type" childId="733ea40a-ea0b-4bd1-ab2a-c26ab92ba55c" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="4e77-234a-15e5-8c40" field="selections" type="at least" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -25605,6 +25635,7 @@ Enemy units within 12&quot; of a unit in this formation subtract 1 from their Ba
             <conditionGroup type="and">
               <conditions>
                 <condition parentId="force type" childId="733ea40a-ea0b-4bd1-ab2a-c26ab92ba55c" field="selections" type="equal to" value="0.0"/>
+                <condition parentId="force type" childId="4e77-234a-15e5-8c40" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -25617,6 +25648,7 @@ Enemy units within 12&quot; of a unit in this formation subtract 1 from their Ba
               <conditions>
                 <condition parentId="force type" childId="733ea40a-ea0b-4bd1-ab2a-c26ab92ba55c" field="selections" type="equal to" value="0.0"/>
                 <condition parentId="roster" childId="f03040f6-c518-3af5-aff3-813f24c753fe" field="selections" type="equal to" value="0.0"/>
+                <condition parentId="force type" childId="4e77-234a-15e5-8c40" field="selections" type="less than" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -28746,9 +28778,6 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
     <link id="6837-8138-6c4e-b53e" targetId="c5fc-da7b-9c1f-bfe4" linkType="entry" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
       <modifiers/>
     </link>
-    <link id="2bb8-f287-bc67-ee45" targetId="598f-3cba-b8c5-e748" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
-      <modifiers/>
-    </link>
     <link id="4e10-750e-0758-5364" targetId="8a3b-80c7-0cf3-e044" linkType="entry" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
       <modifiers/>
     </link>
@@ -28759,6 +28788,12 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
       <modifiers/>
     </link>
     <link id="00e1-2ed0-9bf3-cd90" targetId="661b-14f1-8fd9-84b5" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
+      <modifiers/>
+    </link>
+    <link id="2b91-a30a-6976-50bd" targetId="9765-6363-9d49-b571" linkType="entry" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
+      <modifiers/>
+    </link>
+    <link id="6d24-81c6-91dd-dafa" targetId="3354-24e9-4ec9-506b" linkType="entry" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
       <modifiers/>
     </link>
   </links>
