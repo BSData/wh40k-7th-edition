@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2301-1cab-6d58-f23b" revision="14" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="17" battleScribeVersion="1.15" name="Skitarii: Codex (2015)" books="Codex: Skitarii" authorName="Axis of Entropy" authorContact="axisofentropy@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2301-1cab-6d58-f23b" revision="15" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="17" battleScribeVersion="1.15" name="Skitarii: Codex (2015)" books="Codex: Skitarii" authorName="Axis of Entropy" authorContact="axisofentropy@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="d640-a4f0-1327-2932" name="Ironstrider Cavaliers" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Skitarii" page="67">
       <entries/>
@@ -2133,11 +2133,15 @@
           <entryGroups/>
           <modifiers>
             <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
+              <conditions>
+                <condition parentId="66b7-0016-6a9b-efe1" childId="92a1-f0d4-4541-b178" field="selections" type="equal to" value="1.0"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
             <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
+              <conditions>
+                <condition parentId="66b7-0016-6a9b-efe1" childId="92a1-f0d4-4541-b178" field="selections" type="equal to" value="1.0"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -2787,11 +2791,15 @@
           <entryGroups/>
           <modifiers>
             <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
+              <conditions>
+                <condition parentId="1ffb-9124-a097-bb18" childId="92a1-f0d4-4541-b178" field="selections" type="equal to" value="1.0"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
             <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
+              <conditions>
+                <condition parentId="1ffb-9124-a097-bb18" childId="92a1-f0d4-4541-b178" field="selections" type="equal to" value="1.0"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -2825,6 +2833,44 @@
           <modifiers/>
         </link>
         <link id="1c0c-c46c-762e-dccf" targetId="65b3-0111-0170-3275" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="92a1-f0d4-4541-b178" name="Phosphoenix" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Skitarii" page="56">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="direct parent" childId="f92d-33a5-7235-3fb1" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="0482-e56f-22d7-bacb" name="Poisoned (3+)" hidden="false" book="BRB 2014" page="169">
+          <description>Always Wounds on 3+. May re-roll To Wound if Strength higher than target&apos;s Toughness.</description>
+          <modifiers/>
+        </rule>
+        <rule id="3d21-75d5-1e0f-339b" name="Phosphex" hidden="false" book="Codex: Skitarii" page="77">
+          <description>Each To Hit scores 3 hits instead of 1.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="11b8-a06a-3c90-974a" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Phosphoenix" hidden="false" book="Codex: Skitarii" page="77">
+          <characteristics>
+            <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="6&quot;"/>
+            <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
+            <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Pistol, Luminagen, Phosphex, Poisoned (3+)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="a465-f0b2-406e-4c29" targetId="10f6-13b0-4440-dfe2" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -2949,49 +2995,14 @@
           </profiles>
           <links/>
         </entry>
-        <entry id="2fae-e039-eab6-3709" name="Phosphoenix" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Skitarii" page="56">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="direct parent" childId="f92d-33a5-7235-3fb1" field="selections" type="equal to" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules>
-            <rule id="7895-b5e9-15e0-e0a8" name="Poisoned (3+)" hidden="false" book="BRB 2014" page="169">
-              <description>Always Wounds on 3+. May re-roll To Wound if Strength higher than target&apos;s Toughness.</description>
-              <modifiers/>
-            </rule>
-            <rule id="dfb2-7dc0-1836-4256" name="Phosphex" hidden="false" book="Codex: Skitarii" page="77">
-              <description>Each To Hit scores 3 hits instead of 1.</description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles>
-            <profile id="a6f9-39dc-1cab-c061" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Phosphoenix" hidden="false" book="Codex: Skitarii" page="77">
-              <characteristics>
-                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="6&quot;"/>
-                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
-                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Pistol, Luminagen, Phosphex, Poisoned (3+)"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links>
-            <link id="b9c4-17a8-1d4f-c509" targetId="10f6-13b0-4440-dfe2" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
       </entries>
       <entryGroups/>
       <modifiers/>
       <links>
         <link id="3ee4-86c2-7c86-bbb9" targetId="fc36-225e-bc47-3a4b" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="8ba9-af01-64c1-3e33" targetId="92a1-f0d4-4541-b178" linkType="entry">
           <modifiers/>
         </link>
       </links>
