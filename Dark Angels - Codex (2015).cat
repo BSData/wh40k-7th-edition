@@ -15271,20 +15271,7 @@ casualties. In missions that use Victory Points to determine the winner, the Sla
           </entries>
           <entryGroups>
             <entryGroup id="b69e-78c2-71e0-75b3" name="Heavy Weapon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="b255-2fb0-d3bc-844e" name="Heavy Bolter with Hellfire Rounds" points="13.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="fc7d-1cee-0485-986b" targetId="cf1e-af32-4b46-2cdf" linkType="entry">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
+              <entries/>
               <entryGroups/>
               <modifiers/>
               <links>
@@ -15300,6 +15287,9 @@ casualties. In missions that use Victory Points to determine the winner, the Sla
                   <modifiers/>
                 </link>
                 <link id="7e18-a1ad-168f-3107" targetId="f246-5643-62b3-be1b" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="5fc9-4ada-bd49-e087" targetId="c4d8-837c-cb66-9cf5" linkType="entry">
                   <modifiers/>
                 </link>
               </links>
@@ -16586,6 +16576,24 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       </rules>
       <profiles/>
       <links/>
+    </entry>
+    <entry id="c4d8-837c-cb66-9cf5" name="Heavy Bolter with Hellfire Shells" points="13.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="99cf-420f-a8ce-dd58" targetId="229d7dc1-5484-ea4b-34a0-e6d3b525e6d7" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="7022-c0d2-b2d4-a5b1" targetId="a2e2-e0e2-081b-b363" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="b0cd-8d87-6672-c1e4" targetId="7975-b4b1-822b-1897" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
   </sharedEntries>
   <sharedEntryGroups>
@@ -19707,6 +19715,10 @@ If held in reserve, the unit gains Outflank.</description>
 Unit re-rolls all failed To Hit rolls during the first round of each close combat</description>
       <modifiers/>
     </rule>
+    <rule id="7975-b4b1-822b-1897" name="Poisoned" hidden="false">
+      <description>Always wounds on a 4+ (unless another number is specified). When not stated otherwise, counts as S1. No effect against vehicles.</description>
+      <modifiers/>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="ad912002-52e2-329f-ae93-6902ba2b1d85" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Artificer Armour" hidden="false" book="Codex: Dark Angels 2015" page="154">
@@ -21101,6 +21113,15 @@ Unit re-rolls all failed To Hit rolls during the first round of each close comba
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Large Blast, Barrage"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="a2e2-e0e2-081b-b363" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Heavy Bolter (Hellfire Shells)" hidden="false" book="Codex: Dark Angels 2015" page="152">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="1"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="-"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Blast, Poisoned (2+)"/>
       </characteristics>
       <modifiers/>
     </profile>
