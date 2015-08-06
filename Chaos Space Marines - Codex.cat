@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="153" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="154" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="d333bebf-fda1-d63f-3a91-f3c4a81166e1" name="[Apoc] Cult of Destruction" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -14763,22 +14763,19 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
                 </link>
               </links>
             </entry>
-            <entry id="8da7-e2ef-2379-a802" name="Mark of Khorne" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="67b8-4fb0-f1ba-2c25" targetId="e53e9738-2619-dece-cdd0-a3b06edcd0a5" linkType="rule">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
           </entries>
           <entryGroups/>
           <modifiers/>
-          <links/>
+          <links>
+            <link id="9a1d-adfb-6c78-f864" targetId="d71dd962-cb90-0dd4-e165-462ae8e62e52" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="points" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+          </links>
         </entryGroup>
         <entryGroup id="7448-72aa-c3c3-e7f3" name="Mount / Jump pack / Chaos bike" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -14786,7 +14783,7 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="3e97-d506-885d-5aff" incrementChildId="8da7-e2ef-2379-a802" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="3e97-d506-885d-5aff" incrementChildId="9a1d-adfb-6c78-f864" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
@@ -15085,7 +15082,7 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
             </link>
             <link id="f4bd-b916-5a8f-f8dc" targetId="e6f25083-8a79-9dd3-e3d9-c15010879a1c" linkType="entry">
               <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="3e97-d506-885d-5aff" incrementChildId="8da7-e2ef-2379-a802" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="3e97-d506-885d-5aff" incrementChildId="9a1d-adfb-6c78-f864" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
@@ -15203,7 +15200,7 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
             </link>
             <link id="0a74-d552-8085-10d7" targetId="e6f25083-8a79-9dd3-e3d9-c15010879a1c" linkType="entry">
               <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="3e97-d506-885d-5aff" incrementChildId="8da7-e2ef-2379-a802" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="3e97-d506-885d-5aff" incrementChildId="9a1d-adfb-6c78-f864" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
@@ -22336,7 +22333,7 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
             <conditionGroup type="and">
               <conditions>
                 <condition parentId="roster" childId="f03040f6-c518-3af5-aff3-813f24c753fe" field="selections" type="equal to" value="0.0"/>
-                <condition parentId="direct parent" childId="8da7-e2ef-2379-a802" field="selections" type="at least" value="1.0"/>
+                <condition parentId="direct parent" childId="9a1d-adfb-6c78-f864" field="selections" type="at least" value="1.0"/>
                 <condition parentId="direct parent" childId="e50b169a-27d4-47c1-797f-662259a1f60a" field="selections" type="at least" value="1.0"/>
               </conditions>
               <conditionGroups/>
@@ -22348,7 +22345,7 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition parentId="direct parent" childId="8da7-e2ef-2379-a802" field="selections" type="at least" value="1.0"/>
+                <condition parentId="direct parent" childId="9a1d-adfb-6c78-f864" field="selections" type="at least" value="1.0"/>
                 <condition parentId="direct parent" childId="b7b57910-3cbe-e895-cb47-c303f2e41b6a" field="selections" type="at least" value="1.0"/>
               </conditions>
               <conditionGroups/>
@@ -22842,7 +22839,7 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition parentId="direct parent" childId="8da7-e2ef-2379-a802" field="selections" type="less than" value="1.0"/>
+                <condition parentId="direct parent" childId="9a1d-adfb-6c78-f864" field="selections" type="less than" value="1.0"/>
                 <condition parentId="direct parent" childId="b7b57910-3cbe-e895-cb47-c303f2e41b6a" field="selections" type="less than" value="1.0"/>
               </conditions>
               <conditionGroups/>
@@ -22856,7 +22853,7 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
               <conditions>
                 <condition parentId="force type" childId="98dcfa57-c2b9-4426-9890-bae406cf2d6c" field="selections" type="less than" value="1.0"/>
                 <condition parentId="roster" childId="f03040f6-c518-3af5-aff3-813f24c753fe" field="selections" type="less than" value="1.0"/>
-                <condition parentId="force type" childId="8da7-e2ef-2379-a802" field="selections" type="less than" value="1.0"/>
+                <condition parentId="force type" childId="9a1d-adfb-6c78-f864" field="selections" type="less than" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
