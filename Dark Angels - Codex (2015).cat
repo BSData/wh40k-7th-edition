@@ -2415,10 +2415,6 @@ the laser destroyer’s rate of fire. Stability is required for this overcharged
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions/>
-          <conditionGroups/>
-        </modifier>
       </modifiers>
       <rules/>
       <profiles>
@@ -11420,6 +11416,46 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         <link id="1d28-1e7e-cb18-8fdd" targetId="5597b050-3300-051f-6f3b-31338758a429" linkType="entry">
                           <modifiers/>
                         </link>
+                        <link id="21ef-41e8-a73d-cd58" targetId="151f05e5-5594-7564-29fe-067fbeee6262" linkType="entry">
+                          <modifiers>
+                            <modifier type="set" field="points" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions/>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
+                        </link>
+                        <link id="c5a3-1fc7-35ab-2f7b" targetId="4073-c4ea-1dc3-0f63" linkType="entry">
+                          <modifiers>
+                            <modifier type="set" field="points" value="5.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions/>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
+                        </link>
+                        <link id="cc7b-3bc8-2d9f-2452" targetId="3962-588c-099b-00a7" linkType="entry">
+                          <modifiers>
+                            <modifier type="set" field="points" value="5.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions/>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
+                        </link>
+                        <link id="f51f-f67f-55be-8b14" targetId="7b48-df5c-4e5e-6b28" linkType="entry">
+                          <modifiers>
+                            <modifier type="set" field="points" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions/>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
+                        </link>
+                        <link id="3131-7c1a-c31d-422f" targetId="1f23-786e-5ed4-b953" linkType="entry">
+                          <modifiers>
+                            <modifier type="set" field="points" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions/>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
+                        </link>
                       </links>
                     </entryGroup>
                   </entryGroups>
@@ -11479,14 +11515,21 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                   </conditions>
                   <conditionGroups/>
                 </modifier>
-                <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="a577-7752-4d10-f8cf" childId="877a-008f-004a-7b98" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
               </modifiers>
-              <rules/>
+              <rules>
+                <rule id="96a4-9063-a944-8649" name="RAI Warning (int Chap)" hidden="true">
+                  <description>RAW: A Crozius Arcanum is not a power weapon.
+RAI: It is a power weapon eligible to be switched. Use with care.</description>
+                  <modifiers>
+                    <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="7c6e-578f-f254-7749" childId="1d28-1e7e-cb18-8fdd" field="selections" type="equal to" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </rule>
+              </rules>
               <profiles>
                 <profile id="d854-ea2e-d033-e94c" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Interrogator-Chaplain" hidden="false" book="Codex: Dark Angels 6th" page="30">
                   <characteristics>
@@ -11551,7 +11594,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
         </link>
         <link id="877a-008f-004a-7b98" targetId="151f05e5-5594-7564-29fe-067fbeee6262" linkType="entry">
-          <modifiers/>
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="a577-7752-4d10-f8cf" childId="7c6e-578f-f254-7749" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
