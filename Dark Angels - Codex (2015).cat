@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="578f-d512-a02e-7d0b" revision="18" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Dark Angels: Codex (2015)" books="Dark Angels Codex 2015, 7th Edition" authorName="Thairne" authorContact="Interrogatorchaplain@gmx.de" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="578f-d512-a02e-7d0b" revision="19" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Dark Angels: Codex (2015)" books="Dark Angels Codex 2015, 7th Edition" authorName="Thairne" authorContact="Interrogatorchaplain@gmx.de" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="8d97-d552-b1a5-2b59" name="10th Company Support" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -120,14 +120,7 @@
   <rules/>
   <links>
     <link id="8b6dd7a9-d515-6384-06a8-d0e6f91283d3" targetId="933d3fef-6150-ff0c-547c-b08de5100f3d" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
     </link>
     <link id="ddf6d097-b9cd-9a14-2ed7-97fb5ea30c8c" targetId="16b853bd-8392-1242-7288-98e05b41c021" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
       <modifiers>
@@ -260,14 +253,7 @@
       </modifiers>
     </link>
     <link id="248d-6838-beb2-ad89" targetId="a577-7752-4d10-f8cf" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
     </link>
     <link id="1e2f-600e-4054-c7d1" targetId="32f7-dddb-ccd5-f4e2" linkType="entry" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
       <modifiers>
@@ -445,12 +431,6 @@
     </link>
     <link id="e282-33ff-2d82-2d40" targetId="1305-21e4-e10c-b248" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
       <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
             <condition parentId="force type" childId="4c51-9346-df15-f554" field="selections" type="instance of" value="0.0"/>
@@ -768,6 +748,16 @@
     </link>
     <link id="9621-ecda-3a32-af5c" targetId="5ec3-7139-7eeb-af3a" linkType="entry">
       <modifiers/>
+    </link>
+    <link id="5b87-cd40-0349-e1a8" targetId="bdab-3e94-b94b-c98d" linkType="rule">
+      <modifiers>
+        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </link>
   </links>
   <sharedEntries>
@@ -7731,7 +7721,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             <entry id="ac44-86af-01ec-3769" name="Space Marine Bike" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Angels 6th" page="0">
               <entries/>
               <entryGroups/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <rules/>
               <profiles>
                 <profile id="48f0-02df-a28e-eb4b" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Space Marine Bike" hidden="false" book="Codex: Dark Angels 6th" page="64">
@@ -10889,6 +10886,24 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </link>
       </links>
     </entry>
+    <entry id="c4d8-837c-cb66-9cf5" name="Heavy Bolter with Hellfire Shells" points="13.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="99cf-420f-a8ce-dd58" targetId="229d7dc1-5484-ea4b-34a0-e6d3b525e6d7" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="7022-c0d2-b2d4-a5b1" targetId="a2e2-e0e2-081b-b363" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="b0cd-8d87-6672-c1e4" targetId="7975-b4b1-822b-1897" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="d7a3-b9c7-0ba7-b4b7" name="Heavy Flamer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="BRB 2014" page="176">
       <entries/>
       <entryGroups/>
@@ -11111,7 +11126,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                     <entry id="0044-6771-faf7-aae5" name="Space Marine Bike" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Angels 6th" page="0">
                       <entries/>
                       <entryGroups/>
-                      <modifiers/>
+                      <modifiers>
+                        <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
                       <rules/>
                       <profiles>
                         <profile id="aad2-97ba-0867-0a4b" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Interrogator-Chaplain" hidden="false" book="Codex: Dark Angels 2015" page="102">
@@ -11833,7 +11855,14 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                     <entry id="c58362fe-ea4b-c3c3-1828-9acc9b4e0a0b" name="Space Marine Bike" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Angels 6th" page="0">
                       <entries/>
                       <entryGroups/>
-                      <modifiers/>
+                      <modifiers>
+                        <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
                       <rules/>
                       <profiles>
                         <profile id="1b47eb3f-6384-ac59-656e-676726495550" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Librarian" hidden="false" book="Codex: Dark Angels 2015" page="104">
@@ -16577,24 +16606,6 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <profiles/>
       <links/>
     </entry>
-    <entry id="c4d8-837c-cb66-9cf5" name="Heavy Bolter with Hellfire Shells" points="13.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="99cf-420f-a8ce-dd58" targetId="229d7dc1-5484-ea4b-34a0-e6d3b525e6d7" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="7022-c0d2-b2d4-a5b1" targetId="a2e2-e0e2-081b-b363" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="b0cd-8d87-6672-c1e4" targetId="7975-b4b1-822b-1897" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="e85931aa-e6b5-524d-49d1-41c146286129" name="Assault Basic Wargear" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -19545,6 +19556,10 @@ A mindlocked unit may not voluntarily move, shoot or charge.  A mindlocked unit 
       <description>When this unit arrives from reserves roll a die. On a 1 or 2 it comes in on your left, on a 3 or 4 it comes in on your right and on a 5 or 6 you choose right or left.</description>
       <modifiers/>
     </rule>
+    <rule id="7975-b4b1-822b-1897" name="Poisoned" hidden="false">
+      <description>Always wounds on a 4+ (unless another number is specified). When not stated otherwise, counts as S1. No effect against vehicles.</description>
+      <modifiers/>
+    </rule>
     <rule id="28b8dc3c-9647-8bae-7039-240a71e8e48d" name="Power of the Machine Spirit" hidden="false" book="BRB 2014">
       <description>So long as the vehicle dosen&apos;t move flat out or pop smoke, it may fire an additional weapon and may fire at a different target.</description>
       <modifiers/>
@@ -19567,6 +19582,11 @@ A mindlocked unit may not voluntarily move, shoot or charge.  A mindlocked unit 
     </rule>
     <rule id="1b87f977-960b-8c95-9d63-fa2aaf230193" name="Psyker" hidden="false" page="0">
       <description>Dark Angels Librarians are Psykers who use the Interromancy (Dark Angels p 156), Divination, Pyromancy, Telepathy, Telekinesis or and/or Demonology powers</description>
+      <modifiers/>
+    </rule>
+    <rule id="bdab-3e94-b94b-c98d" name="RAI Warning (RWSF)" hidden="true">
+      <description>RAW: Only Sammael can be taken.
+RAI: Other generic HQ&apos;s with Space Marine Bikes can be taken as well. Use with care.</description>
       <modifiers/>
     </rule>
     <rule id="9338292b-c019-35c7-3455-bda9e27ae505" name="Rapid Fire" hidden="false" book="BRB 2014" page="42">
@@ -19713,10 +19733,6 @@ If held in reserve, the unit gains Outflank.</description>
       <description>Automatically pass all Pinning-, Fear- and Regroup tests and Morale checks. Cannot go to ground or use the &quot;Our Weapons Are Useless&quot; rule.
 
 Unit re-rolls all failed To Hit rolls during the first round of each close combat</description>
-      <modifiers/>
-    </rule>
-    <rule id="7975-b4b1-822b-1897" name="Poisoned" hidden="false">
-      <description>Always wounds on a 4+ (unless another number is specified). When not stated otherwise, counts as S1. No effect against vehicles.</description>
       <modifiers/>
     </rule>
   </sharedRules>
@@ -20167,6 +20183,15 @@ Unit re-rolls all failed To Hit rolls during the first round of each close comba
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 3"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="a2e2-e0e2-081b-b363" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Heavy Bolter (Hellfire Shells)" hidden="false" book="Codex: Dark Angels 2015" page="152">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="1"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="-"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Blast, Poisoned (2+)"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -21113,15 +21138,6 @@ Unit re-rolls all failed To Hit rolls during the first round of each close comba
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Large Blast, Barrage"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="a2e2-e0e2-081b-b363" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Heavy Bolter (Hellfire Shells)" hidden="false" book="Codex: Dark Angels 2015" page="152">
-      <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
-        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="1"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="-"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Blast, Poisoned (2+)"/>
       </characteristics>
       <modifiers/>
     </profile>
