@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="578f-d512-a02e-7d0b" revision="15" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Dark Angels: Codex (2015)" books="Dark Angels Codex 2015, 7th Edition" authorName="Thairne" authorContact="Interrogatorchaplain@gmx.de" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="578f-d512-a02e-7d0b" revision="20" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Dark Angels: Codex (2015)" books="Dark Angels Codex 2015, 7th Edition" authorName="Thairne" authorContact="Interrogatorchaplain@gmx.de" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="8d97-d552-b1a5-2b59" name="10th Company Support" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -120,14 +120,7 @@
   <rules/>
   <links>
     <link id="8b6dd7a9-d515-6384-06a8-d0e6f91283d3" targetId="933d3fef-6150-ff0c-547c-b08de5100f3d" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
     </link>
     <link id="ddf6d097-b9cd-9a14-2ed7-97fb5ea30c8c" targetId="16b853bd-8392-1242-7288-98e05b41c021" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
       <modifiers>
@@ -260,14 +253,7 @@
       </modifiers>
     </link>
     <link id="248d-6838-beb2-ad89" targetId="a577-7752-4d10-f8cf" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
     </link>
     <link id="1e2f-600e-4054-c7d1" targetId="32f7-dddb-ccd5-f4e2" linkType="entry" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
       <modifiers>
@@ -445,12 +431,6 @@
     </link>
     <link id="e282-33ff-2d82-2d40" targetId="1305-21e4-e10c-b248" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
       <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
             <condition parentId="force type" childId="4c51-9346-df15-f554" field="selections" type="instance of" value="0.0"/>
@@ -769,6 +749,16 @@
     <link id="9621-ecda-3a32-af5c" targetId="5ec3-7139-7eeb-af3a" linkType="entry">
       <modifiers/>
     </link>
+    <link id="5b87-cd40-0349-e1a8" targetId="bdab-3e94-b94b-c98d" linkType="rule">
+      <modifiers>
+        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+    </link>
   </links>
   <sharedEntries>
     <entry id="5ec3-7139-7eeb-af3a" name="* Caestus Assault Ram" points="275.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
@@ -884,7 +874,12 @@
           <modifiers/>
         </link>
         <link id="ca40-e391-4d1f-2d12" targetId="fa90d7db-2009-6fab-33e4-a58841adf823" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -1314,7 +1309,12 @@
       </profiles>
       <links>
         <link id="bb70-b69c-0457-1fed" targetId="5fdeb7c3-ba89-2ee3-c164-2dafda27a2aa" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -1529,7 +1529,16 @@
           <modifiers/>
         </link>
         <link id="2c7e-4bc9-499a-686b" targetId="7af90049-6c31-f073-b4bd-56f2b283e39d" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="a6b2-8aa6-8b62-e5dd" targetId="a839-3168-e840-3853" linkType="entry">
           <modifiers/>
@@ -1653,7 +1662,12 @@
           <modifiers/>
         </link>
         <link id="b83b-9e00-63f1-f644" targetId="7af90049-6c31-f073-b4bd-56f2b283e39d" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="4a13-b1f0-75d5-e591" targetId="52fe-603e-5b0b-55ef" linkType="entry">
           <modifiers>
@@ -1997,7 +2011,12 @@
           <modifiers/>
         </link>
         <link id="5763-6645-3ae5-6fd0" targetId="7af90049-6c31-f073-b4bd-56f2b283e39d" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="bbaf-5b6e-a48f-5bb0" targetId="52fe-603e-5b0b-55ef" linkType="entry">
           <modifiers>
@@ -2068,7 +2087,12 @@
           <modifiers/>
         </link>
         <link id="ace0-841e-3290-8902" targetId="33728e61-dd9a-8837-1804-29124b90498f" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -2165,7 +2189,12 @@
           <modifiers/>
         </link>
         <link id="fa15-be50-5171-0a94" targetId="ed1d-fea5-8066-3a2f" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -2228,7 +2257,12 @@ the laser destroyer’s rate of fire. Stability is required for this overcharged
       </profiles>
       <links>
         <link id="60ba-31da-ee0f-448b" targetId="33728e61-dd9a-8837-1804-29124b90498f" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="2fe4-24b0-1200-45f4" targetId="261b-5bb5-42b6-a0ef" linkType="profile">
           <modifiers/>
@@ -2547,7 +2581,12 @@ the laser destroyer’s rate of fire. Stability is required for this overcharged
           <modifiers/>
         </link>
         <link id="0737-5fe1-1b39-45b9" targetId="7af90049-6c31-f073-b4bd-56f2b283e39d" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="1b46-fe2d-4507-2bdf" targetId="2eec-e9b4-015a-9341" linkType="rule">
           <modifiers/>
@@ -2757,7 +2796,12 @@ the laser destroyer’s rate of fire. Stability is required for this overcharged
       </profiles>
       <links>
         <link id="37d7-15c2-35fd-700e" targetId="5fdeb7c3-ba89-2ee3-c164-2dafda27a2aa" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -2887,7 +2931,12 @@ the laser destroyer’s rate of fire. Stability is required for this overcharged
           <modifiers/>
         </link>
         <link id="bf22-8d4b-c46a-6a3a" targetId="8c2dff0c-4449-4e36-b9d8-faf66950131d" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="9afe-16d6-a8f6-012e" targetId="2eec-e9b4-015a-9341" linkType="rule">
           <modifiers/>
@@ -3021,7 +3070,12 @@ the laser destroyer’s rate of fire. Stability is required for this overcharged
           <modifiers/>
         </link>
         <link id="3c0c-5eff-5b91-e5e1" targetId="7e517e11-9580-52a8-35d0-43a654e74ae3" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="bd71-4fc9-a952-02cd" targetId="2eec-e9b4-015a-9341" linkType="rule">
           <modifiers/>
@@ -3140,7 +3194,12 @@ the laser destroyer’s rate of fire. Stability is required for this overcharged
           <modifiers/>
         </link>
         <link id="12db-03e8-dfc1-25c8" targetId="532cd196-6981-f538-e855-b5e430acc488" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -3248,7 +3307,12 @@ the laser destroyer’s rate of fire. Stability is required for this overcharged
           <modifiers/>
         </link>
         <link id="c9ce-e9ba-2107-5534" targetId="532cd196-6981-f538-e855-b5e430acc488" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -3362,7 +3426,12 @@ Cover saves of enemy targets suffer -1 modifier</description>
           <modifiers/>
         </link>
         <link id="263d-7585-1db0-fc72" targetId="532cd196-6981-f538-e855-b5e430acc488" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -3472,7 +3541,12 @@ Cover saves of enemy targets suffer -1 modifier</description>
           <modifiers/>
         </link>
         <link id="b080-cabc-00b3-ea52" targetId="532cd196-6981-f538-e855-b5e430acc488" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -3542,7 +3616,12 @@ Cover saves of enemy targets suffer -1 modifier</description>
               <modifiers/>
             </link>
             <link id="e5e6-e239-8fc5-24c3" targetId="7e517e11-9580-52a8-35d0-43a654e74ae3" linkType="entry group">
-              <modifiers/>
+              <modifiers>
+                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
           </links>
         </entry>
@@ -3707,7 +3786,12 @@ Cover saves of enemy targets suffer -1 modifier</description>
           <modifiers/>
         </link>
         <link id="9504-b7e5-76f5-a7f4" targetId="7af90049-6c31-f073-b4bd-56f2b283e39d" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -4288,7 +4372,12 @@ Cover saves of enemy targets suffer -1 modifier</description>
           <modifiers/>
         </link>
         <link id="41bd-9915-5927-c3f2" targetId="33728e61-dd9a-8837-1804-29124b90498f" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="85b1-9a5d-766e-fd6f" targetId="2eec-e9b4-015a-9341" linkType="rule">
           <modifiers/>
@@ -4342,10 +4431,8 @@ Cover saves of enemy targets suffer -1 modifier</description>
         </link>
         <link id="f5c4-ce7f-dad6-515b" targetId="7884285d-81aa-701b-bf07-045c26ae8b63" linkType="entry group">
           <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="447ed554-5aab-7bfa-27d3-ac0e50f90ca0" field="selections" type="equal to" value="1.0"/>
-              </conditions>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -4459,7 +4546,12 @@ Cover saves of enemy targets suffer -1 modifier</description>
       </profiles>
       <links>
         <link id="1178-bd60-dcbd-7bd9" targetId="7af90049-6c31-f073-b4bd-56f2b283e39d" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="307c-ddb7-5301-23eb" targetId="a839-3168-e840-3853" linkType="entry">
           <modifiers>
@@ -4949,7 +5041,12 @@ Cover saves of enemy targets suffer -1 modifier</description>
           <modifiers/>
         </link>
         <link id="71ad-deaf-113c-037d" targetId="e4248d8e-65dc-4484-e0ce-e3df7da24af2" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -5470,7 +5567,12 @@ Cover saves of enemy targets suffer -1 modifier</description>
           <modifiers/>
         </link>
         <link id="5584-a704-e862-1021" targetId="e4248d8e-65dc-4484-e0ce-e3df7da24af2" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="f7bf-f7e1-faa4-47f7" targetId="e96e-172d-4f82-bf3d" linkType="entry">
           <modifiers>
@@ -5589,10 +5691,12 @@ Cover saves of enemy targets suffer -1 modifier</description>
       </profiles>
       <links>
         <link id="0f11-dc3b-be28-a04b" targetId="e4248d8e-65dc-4484-e0ce-e3df7da24af2" linkType="entry group">
-          <modifiers/>
-        </link>
-        <link id="8ffc-9226-3c6a-ef1e" targetId="e4248d8e-65dc-4484-e0ce-e3df7da24af2" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="4be4-bc80-7528-2bc7" targetId="e96e-172d-4f82-bf3d" linkType="entry">
           <modifiers>
@@ -5642,7 +5746,7 @@ Cover saves of enemy targets suffer -1 modifier</description>
           <links>
             <link id="65bf-fa45-6ca5-4980" targetId="cf1e-af32-4b46-2cdf" linkType="entry">
               <modifiers>
-                <modifier type="increment" field="minSelections" value="20.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="points" value="20.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
@@ -5650,7 +5754,7 @@ Cover saves of enemy targets suffer -1 modifier</description>
             </link>
             <link id="f8ce-1143-70b9-3032" targetId="c8f3-88f8-9de2-ef16" linkType="entry">
               <modifiers>
-                <modifier type="increment" field="minSelections" value="40.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="points" value="40.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
@@ -5678,7 +5782,7 @@ Cover saves of enemy targets suffer -1 modifier</description>
           <links>
             <link id="11f6-d5b2-b39c-61ce" targetId="cf1e-af32-4b46-2cdf" linkType="entry">
               <modifiers>
-                <modifier type="increment" field="minSelections" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="points" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
@@ -5686,7 +5790,7 @@ Cover saves of enemy targets suffer -1 modifier</description>
             </link>
             <link id="6e85-b1a9-b05a-296f" targetId="d7a3-b9c7-0ba7-b4b7" linkType="entry">
               <modifiers>
-                <modifier type="increment" field="minSelections" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="points" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
@@ -5694,7 +5798,7 @@ Cover saves of enemy targets suffer -1 modifier</description>
             </link>
             <link id="651d-e3d1-a9da-aabb" targetId="ccbf1ac0-199d-5207-a24f-04908c7e4d2f" linkType="entry">
               <modifiers>
-                <modifier type="increment" field="minSelections" value="20.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="points" value="20.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
@@ -5738,7 +5842,12 @@ Cover saves of enemy targets suffer -1 modifier</description>
       </profiles>
       <links>
         <link id="a527-f922-2ba6-e2bc" targetId="5fdeb7c3-ba89-2ee3-c164-2dafda27a2aa" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -6383,7 +6492,12 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
         </link>
         <link id="9c62-bb63-aaf8-658c" targetId="33728e61-dd9a-8837-1804-29124b90498f" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -6488,7 +6602,12 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
         </link>
         <link id="34b6-c67f-48c0-b865" targetId="8c2dff0c-4449-4e36-b9d8-faf66950131d" linkType="entry group">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="e50f-b904-a396-7713" targetId="c17cda41-d6f3-79f7-d66b-0b3b8abb6dae" linkType="entry">
           <modifiers/>
@@ -6680,13 +6799,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <modifiers>
                 <modifier type="hide" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="51a9-3bc5-f662-c7b8" childId="c65d0b0b-47e4-cb05-078b-c84e6c8e02a4" field="selections" type="at least" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="show" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="51a9-3bc5-f662-c7b8" childId="c65d0b0b-47e4-cb05-078b-c84e6c8e02a4" field="selections" type="equal to" value="0.0"/>
+                    <condition parentId="51a9-3bc5-f662-c7b8" childId="0b12-d8e9-2cdc-322c" field="selections" type="at least" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -6708,13 +6821,13 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <modifiers>
                 <modifier type="hide" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="51a9-3bc5-f662-c7b8" childId="c65d0b0b-47e4-cb05-078b-c84e6c8e02a4" field="selections" type="equal to" value="0.0"/>
+                    <condition parentId="51a9-3bc5-f662-c7b8" childId="0b12-d8e9-2cdc-322c" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
                 <modifier type="show" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="51a9-3bc5-f662-c7b8" childId="c65d0b0b-47e4-cb05-078b-c84e6c8e02a4" field="selections" type="at least" value="1.0"/>
+                    <condition parentId="51a9-3bc5-f662-c7b8" childId="0b12-d8e9-2cdc-322c" field="selections" type="at least" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -6843,13 +6956,13 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <modifiers>
                 <modifier type="hide" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="51a9-3bc5-f662-c7b8" childId="c65d0b0b-47e4-cb05-078b-c84e6c8e02a4" field="selections" type="equal to" value="0.0"/>
+                    <condition parentId="51a9-3bc5-f662-c7b8" childId="0b12-d8e9-2cdc-322c" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
                 <modifier type="show" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="51a9-3bc5-f662-c7b8" childId="c65d0b0b-47e4-cb05-078b-c84e6c8e02a4" field="selections" type="at least" value="1.0"/>
+                    <condition parentId="51a9-3bc5-f662-c7b8" childId="0b12-d8e9-2cdc-322c" field="selections" type="at least" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -6882,9 +6995,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               </characteristics>
               <modifiers>
                 <modifier type="show" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="51a9-3bc5-f662-c7b8" childId="c65d0b0b-47e4-cb05-078b-c84e6c8e02a4" field="selections" type="equal to" value="0.0"/>
-                  </conditions>
+                  <conditions/>
                   <conditionGroups/>
                 </modifier>
                 <modifier type="set" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="2" repeat="false" numRepeats="1" incrementParentId="725d-08ae-3438-4647" incrementChildId="e08f-1289-bc6d-a0bd" incrementField="selections" incrementValue="1.0">
@@ -6901,13 +7012,26 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                 </modifier>
                 <modifier type="hide" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="51a9-3bc5-f662-c7b8" childId="c65d0b0b-47e4-cb05-078b-c84e6c8e02a4" field="selections" type="at least" value="1.0"/>
+                    <condition parentId="51a9-3bc5-f662-c7b8" childId="0b12-d8e9-2cdc-322c" field="selections" type="at least" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
             </profile>
           </profiles>
+          <links/>
+        </entry>
+        <entry id="0b12-d8e9-2cdc-322c" name="Jump Packs" points="3.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="increment" field="points" value="3.0" repeat="true" numRepeats="1" incrementParentId="51a9-3bc5-f662-c7b8" incrementChildId="4ab1-24aa-ed31-11ac" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <rules/>
+          <profiles/>
           <links/>
         </entry>
       </entries>
@@ -6946,7 +7070,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <entryGroup id="fbb3-ae21-bedc-cb46" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="51a9-3bc5-f662-c7b8" childId="0b12-d8e9-2cdc-322c" field="selections" type="at least" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="e5fc-316a-e4e1-de1c" targetId="9f86138d-5a9e-4ed9-9d40-df6498a8cd6c" linkType="entry">
               <modifiers>
@@ -6981,14 +7112,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                       <conditionGroups/>
                     </conditionGroup>
                   </conditionGroups>
-                </modifier>
-              </modifiers>
-            </link>
-            <link id="8fe1-8fe6-c935-304d" targetId="c65d0b0b-47e4-cb05-078b-c84e6c8e02a4" linkType="entry">
-              <modifiers>
-                <modifier type="increment" field="points" value="3.0" repeat="true" numRepeats="1" incrementParentId="51a9-3bc5-f662-c7b8" incrementChildId="4ab1-24aa-ed31-11ac" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
                 </modifier>
               </modifiers>
             </link>
@@ -7594,7 +7717,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             <entry id="ac44-86af-01ec-3769" name="Space Marine Bike" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Angels 6th" page="0">
               <entries/>
               <entryGroups/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <rules/>
               <profiles>
                 <profile id="48f0-02df-a28e-eb4b" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Space Marine Bike" hidden="false" book="Codex: Dark Angels 6th" page="64">
@@ -7717,6 +7847,15 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                 <link id="24c5-3e74-6930-208a" targetId="2a3b-3951-c3ea-2ce8" linkType="entry">
                   <modifiers/>
                 </link>
+                <link id="3a8d-b54f-38c6-bac0" targetId="379e-b281-e23c-39d3" linkType="entry group">
+                  <modifiers/>
+                </link>
+                <link id="291c-8936-0b57-cdd2" targetId="3962-588c-099b-00a7" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="a9e8-5121-288a-0bf4" targetId="96aa50d6-91a3-1559-3434-20e27ff428f5" linkType="entry">
+                  <modifiers/>
+                </link>
               </links>
             </entryGroup>
             <entryGroup id="bbee-03bc-9775-8b9b" name="Right Hand" defaultEntryId="46f3-ce11-b5e1-c014" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -7740,6 +7879,18 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                   <modifiers/>
                 </link>
                 <link id="2152-4a31-d29f-baae" targetId="aa3a-5de0-225c-b0ee" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="d814-f3e6-f80a-0342" targetId="fa72-4014-f89a-8e0d" linkType="entry group">
+                  <modifiers/>
+                </link>
+                <link id="effd-2505-15a7-8c1c" targetId="cd22c0d3-5f51-8bb8-2e18-6d706219249e" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="71a0-9be1-771c-fec7" targetId="2a3b-3951-c3ea-2ce8" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="ce61-c93b-1c67-323c" targetId="3e9639ad-4414-d7ec-49d6-8dcdf4ac25f0" linkType="entry">
                   <modifiers/>
                 </link>
               </links>
@@ -7948,37 +8099,10 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <entryGroup id="cb71-1ec1-d19a-51fd" name="Weapons Options" minSelections="0" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups>
-            <entryGroup id="fcab-7726-2a98-beb9" name="Replace Bolt Pistol" minSelections="0" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="a4b0-e15a-5440-8269" incrementChildId="4eaf-821e-e0f1-5537" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="a4b0-e15a-5440-8269" childId="4eaf-821e-e0f1-5537" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <links>
-                <link id="8661-f1f9-c0d6-2c40" targetId="aa3a-5de0-225c-b0ee" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="5.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-              </links>
-            </entryGroup>
             <entryGroup id="493d-9cee-9e8f-3199" name="Replace Chainsword and/or Bolt Pistol" minSelections="0" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
-              <modifiers>
-                <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="a4b0-e15a-5440-8269" incrementChildId="8661-f1f9-c0d6-2c40" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
               <links>
                 <link id="c6e1-588b-0cae-4a32" targetId="151f05e5-5594-7564-29fe-067fbeee6262" linkType="entry">
                   <modifiers>
@@ -8132,11 +8256,11 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             </entryGroup>
           </entryGroups>
           <modifiers>
-            <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="a4b0-e15a-5440-8269" incrementChildId="7c81-3fc1-05eb-449d" incrementField="selections" incrementValue="1.0">
+            <modifier type="decrement" field="maxSelections" value="2.0" repeat="true" numRepeats="1" incrementParentId="a4b0-e15a-5440-8269" incrementChildId="7c81-3fc1-05eb-449d" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups/>
             </modifier>
-            <modifier type="decrement" field="minSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="a4b0-e15a-5440-8269" incrementChildId="4eaf-821e-e0f1-5537" incrementField="selections" incrementValue="1.0">
+            <modifier type="decrement" field="maxSelections" value="2.0" repeat="true" numRepeats="1" incrementParentId="a4b0-e15a-5440-8269" incrementChildId="4eaf-821e-e0f1-5537" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -8228,6 +8352,12 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <conditionGroups/>
             </modifier>
           </modifiers>
+        </link>
+        <link id="2b11-79c3-05b3-153a" targetId="4505-fc26-c4b8-1918" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="9f87-5323-d737-642d" targetId="15f9-cc47-2a56-d718" linkType="entry">
+          <modifiers/>
         </link>
       </links>
     </entry>
@@ -8330,15 +8460,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         <link id="c298-5771-f2ec-2352" targetId="cd22c0d3-5f51-8bb8-2e18-6d706219249e" linkType="entry">
                           <modifiers/>
                         </link>
-                        <link id="3fef-7be8-5075-aefd" targetId="6b29-fdb2-7686-99a1" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="1234-70a6-5b8d-3720" targetId="d3ec-bf9d-adbe-e1e0" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="2f88-75ce-9bce-1be5" targetId="2d9a-e91f-005c-b0cd" linkType="entry">
-                          <modifiers/>
-                        </link>
                         <link id="151c-877a-d6e5-8554" targetId="aa3a-5de0-225c-b0ee" linkType="entry">
                           <modifiers/>
                         </link>
@@ -8346,6 +8467,33 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                           <modifiers/>
                         </link>
                         <link id="92b2-0802-3531-b112" targetId="2a3b-3951-c3ea-2ce8" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="5b2f-e6fd-0001-7016" targetId="fa72-4014-f89a-8e0d" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="f35b-3331-14dd-1ac4" targetId="379e-b281-e23c-39d3" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="a32e-d845-60f0-13d8" targetId="1dde-f147-945e-0296" linkType="entry">
+                          <modifiers>
+                            <modifier type="set" field="points" value="25.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions/>
+                              <conditionGroups/>
+                            </modifier>
+                            <modifier type="set" field="points" value="25.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions/>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
+                        </link>
+                        <link id="51d7-a404-8939-252a" targetId="96aa50d6-91a3-1559-3434-20e27ff428f5" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="b8e6-fa5a-6e6c-51ca" targetId="3962-588c-099b-00a7" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="cf42-07f7-7666-9d5f" targetId="1f23-786e-5ed4-b953" linkType="entry">
                           <modifiers/>
                         </link>
                       </links>
@@ -8373,21 +8521,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         <link id="4c90-ee51-e565-3d9b" targetId="aa3a-5de0-225c-b0ee" linkType="entry">
                           <modifiers/>
                         </link>
-                        <link id="3231-a062-4d42-670a" targetId="c714-bc65-9abd-8f58" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="cfc8-785f-81cd-ca34" targetId="151f05e5-5594-7564-29fe-067fbeee6262" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="9240-74ea-7455-f648" targetId="1f99-0f63-ab11-a0b9" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="5e30-ce8f-86a4-437b" targetId="c034-0ef5-811a-a725" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="6ea4-37e3-7eb7-9086" targetId="b417-8ddd-6663-5cff" linkType="entry">
-                          <modifiers/>
-                        </link>
                         <link id="3bac-6d8b-67ac-3ac4" targetId="1f23-786e-5ed4-b953" linkType="entry">
                           <modifiers/>
                         </link>
@@ -8401,6 +8534,21 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                               <conditionGroups/>
                             </modifier>
                           </modifiers>
+                        </link>
+                        <link id="3b56-0c54-37ad-ca21" targetId="fa72-4014-f89a-8e0d" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="983c-70bc-97fb-403f" targetId="379e-b281-e23c-39d3" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="ac2e-98b0-ee9c-2aff" targetId="bd5a380c-b776-682e-bb83-12f37e77afcc" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="1ab9-923d-4070-2887" targetId="cd22c0d3-5f51-8bb8-2e18-6d706219249e" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="1f2b-20fc-0444-fe5b" targetId="3e9639ad-4414-d7ec-49d6-8dcdf4ac25f0" linkType="entry">
+                          <modifiers/>
                         </link>
                       </links>
                     </entryGroup>
@@ -8431,6 +8579,18 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                     <modifier type="increment" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions>
                         <condition parentId="6e3a-e16c-b7b4-ac04" childId="fa95-2bd4-5f50-d1d3" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="6e3a-e16c-b7b4-ac04" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="6e3a-e16c-b7b4-ac04" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -8541,21 +8701,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         <link id="59f9-6845-511e-fee2" targetId="aa3a-5de0-225c-b0ee" linkType="entry">
                           <modifiers/>
                         </link>
-                        <link id="a8ab-9ce7-6bd2-32c7" targetId="c714-bc65-9abd-8f58" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="7c55-15a0-993d-aebe" targetId="151f05e5-5594-7564-29fe-067fbeee6262" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="ee11-ae09-f233-1048" targetId="1f99-0f63-ab11-a0b9" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="7d83-43a0-508e-9208" targetId="c034-0ef5-811a-a725" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="7963-11a2-d209-9e45" targetId="b417-8ddd-6663-5cff" linkType="entry">
-                          <modifiers/>
-                        </link>
                         <link id="3cd2-85ff-ffe9-bc65" targetId="1f23-786e-5ed4-b953" linkType="entry">
                           <modifiers/>
                         </link>
@@ -8564,11 +8709,26 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         </link>
                         <link id="7f12-608f-be7f-f621" targetId="1dde-f147-945e-0296" linkType="entry">
                           <modifiers>
-                            <modifier type="set" field="points" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                            <modifier type="set" field="points" value="25.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                               <conditions/>
                               <conditionGroups/>
                             </modifier>
                           </modifiers>
+                        </link>
+                        <link id="1b36-8da1-6296-bcff" targetId="fa72-4014-f89a-8e0d" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="d03c-b83a-67f1-79c6" targetId="379e-b281-e23c-39d3" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="53eb-1291-0380-90f8" targetId="cd22c0d3-5f51-8bb8-2e18-6d706219249e" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="e1a0-43eb-8081-a184" targetId="bd5a380c-b776-682e-bb83-12f37e77afcc" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="df7f-567c-9baf-ddbe" targetId="3e9639ad-4414-d7ec-49d6-8dcdf4ac25f0" linkType="entry">
+                          <modifiers/>
                         </link>
                       </links>
                     </entryGroup>
@@ -8592,15 +8752,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         <link id="bf2c-0444-f14f-349e" targetId="cd22c0d3-5f51-8bb8-2e18-6d706219249e" linkType="entry">
                           <modifiers/>
                         </link>
-                        <link id="15ad-81c3-7243-129f" targetId="6b29-fdb2-7686-99a1" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="d80e-c391-5edd-6eb0" targetId="d3ec-bf9d-adbe-e1e0" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="5cbd-5bcd-7c24-e264" targetId="2d9a-e91f-005c-b0cd" linkType="entry">
-                          <modifiers/>
-                        </link>
                         <link id="a79a-14bd-0844-52f3" targetId="aa3a-5de0-225c-b0ee" linkType="entry">
                           <modifiers/>
                         </link>
@@ -8608,6 +8759,29 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                           <modifiers/>
                         </link>
                         <link id="7f02-6c77-0b85-d85d" targetId="2a3b-3951-c3ea-2ce8" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="0c79-85c3-c7bf-cdca" targetId="fa72-4014-f89a-8e0d" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="d694-3c87-bb51-5dad" targetId="379e-b281-e23c-39d3" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="ea80-11d0-50b6-f27d" targetId="1f23-786e-5ed4-b953" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="afbc-4b08-070c-382a" targetId="3962-588c-099b-00a7" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="c975-fc82-2dc7-3e9f" targetId="1dde-f147-945e-0296" linkType="entry">
+                          <modifiers>
+                            <modifier type="set" field="points" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions/>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
+                        </link>
+                        <link id="fd83-917f-cd8b-d289" targetId="96aa50d6-91a3-1559-3434-20e27ff428f5" linkType="entry">
                           <modifiers/>
                         </link>
                       </links>
@@ -8639,6 +8813,18 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                     <modifier type="increment" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions>
                         <condition parentId="e6b0-d1b4-9285-8e56" childId="fa95-2bd4-5f50-d1d3" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="e6b0-d1b4-9285-8e56" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="e6b0-d1b4-9285-8e56" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -8783,7 +8969,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         </link>
                         <link id="9aa4-d3cc-a7fe-5246" targetId="1f23-786e-5ed4-b953" linkType="entry">
                           <modifiers>
-                            <modifier type="set" field="points" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                            <modifier type="set" field="points" value="25.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                               <conditions/>
                               <conditionGroups/>
                             </modifier>
@@ -8826,6 +9012,18 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                     <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions>
                         <condition parentId="517c-0a3b-cb43-84a0" childId="fa95-2bd4-5f50-d1d3" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="517c-0a3b-cb43-84a0" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="517c-0a3b-cb43-84a0" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -8913,13 +9111,88 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <link id="f9de-5141-493e-7558" targetId="e313-4d11-06f3-6a19" linkType="rule">
           <modifiers/>
         </link>
+        <link id="da02-4bcc-510f-5933" targetId="e44b8d08-ba96-44e9-e90e-7db14cf4d747" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="ab7d-12f6-6ad4-2cc5" targetId="3da8-e2a5-f147-2105" linkType="rule">
+          <modifiers/>
+        </link>
       </links>
     </entry>
     <entry id="abcc-fb6d-012c-9120" name="Company Veterans Squad" points="0.0" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
-        <entry id="6207-29af-f94b-ac34" name="Veterans (with Sgt)" points="18.0" categoryId="(No Category)" type="upgrade" minSelections="5" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="6207-29af-f94b-ac34" name="Company Veteran" points="18.0" categoryId="(No Category)" type="model" minSelections="5" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
-          <entryGroups/>
+          <entryGroups>
+            <entryGroup id="4012-6361-3704-2fcc" name="Left Hand" defaultEntryId="cd53-50b6-0690-0b78" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <links>
+                <link id="5d12-8138-34f0-75f1" targetId="fa72-4014-f89a-8e0d" linkType="entry group">
+                  <modifiers/>
+                </link>
+                <link id="ae2d-939c-7a56-2712" targetId="bd5a380c-b776-682e-bb83-12f37e77afcc" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="cd53-50b6-0690-0b78" targetId="cd22c0d3-5f51-8bb8-2e18-6d706219249e" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="f21c-eab6-fd33-d920" targetId="3e9639ad-4414-d7ec-49d6-8dcdf4ac25f0" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="73fb-dffc-e86f-c2e3" targetId="aa3a-5de0-225c-b0ee" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="ea90-e3c9-75e6-0e84" targetId="2a3b-3951-c3ea-2ce8" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="43c8-8427-0dc3-5bf9" targetId="379e-b281-e23c-39d3" linkType="entry group">
+                  <modifiers/>
+                </link>
+                <link id="b13a-4537-5d5a-fd49" targetId="3962-588c-099b-00a7" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="3229-eb25-fc9b-a0a1" targetId="96aa50d6-91a3-1559-3434-20e27ff428f5" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
+            </entryGroup>
+            <entryGroup id="8f5a-333b-0b14-9057" name="Right Hand" defaultEntryId="6eed-ff87-0af2-b59d" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <links>
+                <link id="0b78-d743-285c-e952" targetId="379e-b281-e23c-39d3" linkType="entry group">
+                  <modifiers/>
+                </link>
+                <link id="6eed-ff87-0af2-b59d" targetId="bd5a380c-b776-682e-bb83-12f37e77afcc" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="a56c-7406-a638-7069" targetId="96aa50d6-91a3-1559-3434-20e27ff428f5" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="14e6-a98a-47dc-46e8" targetId="3962-588c-099b-00a7" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="9f16-eec1-6d31-0fad" targetId="aa3a-5de0-225c-b0ee" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="ba49-b718-6688-c841" targetId="fa72-4014-f89a-8e0d" linkType="entry group">
+                  <modifiers/>
+                </link>
+                <link id="e14b-ce21-30f3-89db" targetId="cd22c0d3-5f51-8bb8-2e18-6d706219249e" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="2f6e-a070-b4d7-da17" targetId="2a3b-3951-c3ea-2ce8" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="a5e7-6faa-2d4e-36ab" targetId="3e9639ad-4414-d7ec-49d6-8dcdf4ac25f0" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
+            </entryGroup>
+          </entryGroups>
           <modifiers/>
           <rules/>
           <profiles>
@@ -8956,30 +9229,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           </profiles>
           <links/>
         </entry>
-        <entry id="a47a-888c-852c-75fa" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" book="BRB" page="56">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="08d0-5647-b49e-d295" targetId="b095edea-e6f2-ca98-4b23-ed67b127e5c4" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="be6b-1c0e-9751-2236" name="Boltgun" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" book="BRB" page="56">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="4ae7-f035-f437-2d68" targetId="d0855a82-95b8-3ced-5254-e8a058a4fd97" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
       </entries>
       <entryGroups>
         <entryGroup id="7dd5-d28b-5bdb-5e13" name="Shield" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -9010,7 +9259,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             </link>
           </links>
         </entryGroup>
-        <entryGroup id="d9d9-7563-7c72-4d70" name="Weapon Options" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="d9d9-7563-7c72-4d70" name="Weapon Options" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups>
             <entryGroup id="07db-45db-d1fb-a7aa" name="Heavy Weapon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -9033,262 +9282,42 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                 <link id="6088-8619-8c21-6adb" targetId="8285-fb4a-6b14-3c2a" linkType="entry">
                   <modifiers/>
                 </link>
+                <link id="18af-4e17-1be1-dbcb" targetId="0486-0971-735d-c41d" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="d65c-e942-e18e-2dc3" targetId="f246-5643-62b3-be1b" linkType="entry">
+                  <modifiers/>
+                </link>
               </links>
             </entryGroup>
-            <entryGroup id="68ef-56b5-bb36-a232" name="Special Weapons" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="270f-7f34-00b1-0192" name="Flamer" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="309f-d184-0783-5b14" targetId="1ce10607-5995-3fef-e630-9f3473b63cb5" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-                <entry id="7530-d8c9-2410-d9d3" name="Meltagun" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="cc75-a8c9-fc09-af81" targetId="f42fe59c-9501-9c55-f63f-62c08a41816a" linkType="rule">
-                      <modifiers/>
-                    </link>
-                    <link id="273e-72b9-10e2-75a9" targetId="e9f7171a-6c78-7c12-622e-d0489775d370" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-                <entry id="0411-aa49-0e55-486a" name="Plasma Gun" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="0dc9-d9d1-fc5d-9c22" targetId="f0a12794-cc49-db78-9ca6-7e68f7d03cfc" linkType="rule">
-                      <modifiers/>
-                    </link>
-                    <link id="9e26-d9e2-87a3-d67c" targetId="d1102aeb-7e61-6277-b82b-d1201d008faa" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="abcc-fb6d-012c-9120" incrementChildId="6207-29af-f94b-ac34" incrementField="selections" incrementValue="10.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <links/>
-            </entryGroup>
-            <entryGroup id="ac89-c3a2-9b1c-07a4" name="Exchange" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="4a75-3e84-d571-b486" name="Boltgun for Chain Sword" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="BRB" page="60">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers>
-                    <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="d9d9-7563-7c72-4d70" incrementChildId="07db-45db-d1fb-a7aa" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                    <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="d9d9-7563-7c72-4d70" incrementChildId="68ef-56b5-bb36-a232" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                    <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="d9d9-7563-7c72-4d70" incrementChildId="eb1f-6449-d1c4-6aca" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                    <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="abcc-fb6d-012c-9120" incrementChildId="6207-29af-f94b-ac34" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="da17-9550-4331-4cb7" targetId="9867e09d-506f-abca-8bcf-4d4e3989bb35" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-                <entry id="5f83-ac6f-afb8-a0de" name="Bolt Pistol for Chain Sword" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="BRB" page="60">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers>
-                    <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="abcc-fb6d-012c-9120" incrementChildId="6207-29af-f94b-ac34" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="b93d-a816-c0da-d6bf" targetId="9867e09d-506f-abca-8bcf-4d4e3989bb35" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-            <entryGroup id="eb1f-6449-d1c4-6aca" name="Replace Boltgun" minSelections="0" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entryGroup id="68ef-56b5-bb36-a232" name="Special Weapons" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="d9d9-7563-7c72-4d70" incrementChildId="4a75-3e84-d571-b486" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="abcc-fb6d-012c-9120" incrementChildId="6207-29af-f94b-ac34" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
+                <modifier type="increment" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="abcc-fb6d-012c-9120" childId="6207-29af-f94b-ac34" field="selections" type="at least" value="10.0"/>
+                  </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
               <links>
-                <link id="bd06-f88f-7ab0-a8df" targetId="151f05e5-5594-7564-29fe-067fbeee6262" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
+                <link id="40d6-97bb-d717-1902" targetId="7d1d-faae-2164-a8a7" linkType="entry">
+                  <modifiers/>
                 </link>
-                <link id="4de5-70db-1df5-b0a3" targetId="c714-bc65-9abd-8f58" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
+                <link id="12f1-4a50-e1e4-59e5" targetId="bf83-69e9-b0e8-2058" linkType="entry">
+                  <modifiers/>
                 </link>
-                <link id="e653-3047-8437-148a" targetId="2d9a-e91f-005c-b0cd" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
+                <link id="06e8-6514-84b3-9e5c" targetId="194c-cd33-a3b6-8baf" linkType="entry">
+                  <modifiers/>
                 </link>
-                <link id="48a8-e6b7-ad51-ddd9" targetId="aa3a-5de0-225c-b0ee" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-                <link id="e5bc-f2f4-daf5-8621" targetId="b417-8ddd-6663-5cff" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-                <link id="9a68-e7cc-1aee-481a" targetId="194c-cd33-a3b6-8baf" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-                <link id="3f1a-f3cb-2823-6545" targetId="1f99-0f63-ab11-a0b9" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-                <link id="5bee-477d-ae2c-7a0f" targetId="c034-0ef5-811a-a725" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-                <link id="c20e-f3f1-6d4e-3db3" targetId="cd22c0d3-5f51-8bb8-2e18-6d706219249e" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-                <link id="5b84-2f02-8b1d-e3f2" targetId="d3ec-bf9d-adbe-e1e0" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-                <link id="86ed-8c68-5a26-3732" targetId="7d1d-faae-2164-a8a7" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-                <link id="f165-e6a8-d824-c004" targetId="3962-588c-099b-00a7" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-                <link id="4ffa-4948-0986-65ac" targetId="6b29-fdb2-7686-99a1" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-                <link id="2872-d2f1-a1c2-c002" targetId="3e9639ad-4414-d7ec-49d6-8dcdf4ac25f0" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-                <link id="2812-e26c-3581-58d3" targetId="1f23-786e-5ed4-b953" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
+                <link id="0948-7255-0b2a-3bfe" targetId="c496-9e22-dfb7-9bda" linkType="entry">
+                  <modifiers/>
                 </link>
               </links>
             </entryGroup>
           </entryGroups>
-          <modifiers>
-            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="abcc-fb6d-012c-9120" incrementChildId="6207-29af-f94b-ac34" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="abcc-fb6d-012c-9120" incrementChildId="6207-29af-f94b-ac34" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <modifiers/>
           <links/>
         </entryGroup>
       </entryGroups>
@@ -9311,8 +9340,13 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <link id="23ab-e518-8951-5849" targetId="b5471d70-0c4d-8ccf-7c6d-86836279515c" linkType="entry group">
           <modifiers/>
         </link>
-        <link id="965f-f2f5-d5b3-60eb" targetId="13f0-510e-4b4b-9528" linkType="entry">
-          <modifiers/>
+        <link id="4cff-f854-2775-6e51" targetId="13f0-510e-4b4b-9528" linkType="entry">
+          <modifiers>
+            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="abcc-fb6d-012c-9120" incrementChildId="6207-29af-f94b-ac34" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -9396,7 +9430,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
           <rules/>
           <profiles>
-            <profile id="f225-3642-68a4-7dd0" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Deathwing Champion" hidden="false" page="0">
+            <profile id="f225-3642-68a4-7dd0" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Deathwing Champion" hidden="false" book="Codex: Dark Angels 2015" page="117">
               <characteristics>
                 <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
                 <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="5"/>
@@ -9411,7 +9445,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               </characteristics>
               <modifiers/>
             </profile>
-            <profile id="d0a4-b261-6006-4f73" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Halberd of Caliban" hidden="false" book="Codex: Dark Angels 6th" page="62">
+            <profile id="d0a4-b261-6006-4f73" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Halberd of Caliban" hidden="false" book="Codex: Dark Angels 2015" page="151">
               <characteristics>
                 <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
                 <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="+2"/>
@@ -9433,7 +9467,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
           <rules/>
           <profiles>
-            <profile id="2e98-aedd-ebb5-b535" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Deathwing Apothecary" hidden="false" page="0">
+            <profile id="2e98-aedd-ebb5-b535" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Deathwing Apothecary" hidden="false" book="Codex: Dark Angels 2015" page="117">
               <characteristics>
                 <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
                 <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
@@ -9468,9 +9502,15 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             <link id="5da4-34e2-7063-e0ce" targetId="3f3965a7-b4c1-0b2e-ab1b-ebe9db2ff147" linkType="profile">
               <modifiers/>
             </link>
+            <link id="5936-3390-9f7b-0205" targetId="a524478f-9b6f-7834-89dd-37518b0c9810" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="6b14-31b0-c368-73d0" targetId="2b710a71-7efd-6039-ac46-d382f649ae75" linkType="profile">
+              <modifiers/>
+            </link>
           </links>
         </entry>
-        <entry id="a28c-9057-e08a-fedc" name="Deathwing Sergeant" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entry id="a28c-9057-e08a-fedc" name="Deathwing Sergeant" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Angels 2015" page="117">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -9495,6 +9535,9 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                   <conditionGroups/>
                 </modifier>
               </modifiers>
+            </link>
+            <link id="b2e2-f9ea-f6a8-56b6" targetId="0eec-7423-d98d-5785" linkType="profile">
+              <modifiers/>
             </link>
           </links>
         </entry>
@@ -9578,10 +9621,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <conditions/>
               <conditionGroups/>
             </modifier>
-            <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="fa1e-9cff-b133-3dc6" incrementChildId="e48f-3073-6cf6-42c8" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
             <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="fa1e-9cff-b133-3dc6" incrementChildId="1e84-e153-b377-d251" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups/>
@@ -9610,10 +9649,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <conditionGroups/>
             </modifier>
             <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="fa1e-9cff-b133-3dc6" incrementChildId="1df6-d4e2-4a9e-91a0" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="fa1e-9cff-b133-3dc6" incrementChildId="1e84-e153-b377-d251" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -9703,7 +9738,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <modifiers/>
               <rules/>
               <profiles>
-                <profile id="2447-898a-391a-2b86" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Flail of the Unforgiven" hidden="false" page="0">
+                <profile id="2447-898a-391a-2b86" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Flail of the Unforgiven" hidden="false" book="Codex: Dark Angels 2015" page="151">
                   <characteristics>
                     <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
                     <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="+2"/>
@@ -9727,7 +9762,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
           <rules/>
           <profiles>
-            <profile id="b03a-02a6-9eac-0fe4" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Knight Master" hidden="false" page="0">
+            <profile id="b03a-02a6-9eac-0fe4" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Knight Master" hidden="false" book="Codex: Dark Angels 2015" page="118">
               <characteristics>
                 <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
                 <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="5"/>
@@ -9751,9 +9786,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <entries/>
               <entryGroups/>
               <modifiers/>
-              <rules/>
+              <rules>
+                <rule id="57c3-dc20-fad1-29d8" name="Smite" hidden="false" book="Codex: Dark Angels 2015" page="151">
+                  <description>Can opt to exchange normal attacks for a single Smite attack at Strength x2, AP2.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
               <profiles>
-                <profile id="fbc1-a3fa-e5f0-ff73" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Mace of Absolution (Normal)" hidden="false" page="0">
+                <profile id="fbc1-a3fa-e5f0-ff73" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Mace of Absolution (Normal)" hidden="false" book="Codex: Dark Angels 2015" page="151">
                   <characteristics>
                     <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
                     <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="+2"/>
@@ -9762,7 +9802,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                   </characteristics>
                   <modifiers/>
                 </profile>
-                <profile id="7c9f-3197-c224-532b" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Mace of Absolution (Smite Mode)" hidden="false" page="0">
+                <profile id="7c9f-3197-c224-532b" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Mace of Absolution (Smite Mode)" hidden="false" book="Codex: Dark Angels 2015" page="151">
                   <characteristics>
                     <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
                     <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="x2"/>
@@ -9772,14 +9812,18 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                   <modifiers/>
                 </profile>
               </profiles>
-              <links/>
+              <links>
+                <link id="dd29-d194-1da7-849c" targetId="6a0fa0dc-46cc-6168-95fa-1187ab48011d" linkType="rule">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
           <modifiers/>
           <rules/>
           <profiles>
-            <profile id="d280-19c5-d0b0-e8af" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Deathwing Knights" hidden="false" page="0">
+            <profile id="d280-19c5-d0b0-e8af" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Deathwing Knight" hidden="false" book="Codex: Dark Angels 2015" page="118">
               <characteristics>
                 <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry"/>
                 <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="5"/>
@@ -9926,6 +9970,18 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             <link id="7230-e9e8-2fcd-1dd8" targetId="3f3965a7-b4c1-0b2e-ab1b-ebe9db2ff147" linkType="profile">
               <modifiers/>
             </link>
+            <link id="3560-8568-ec38-3016" targetId="a524478f-9b6f-7834-89dd-37518b0c9810" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="6ddb-8683-8a55-0be4" targetId="2b710a71-7efd-6039-ac46-d382f649ae75" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="d696-7940-9063-5813" targetId="c2240ed0-58f9-b7aa-bc54-a6107c4cf942" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="784b-3a29-4587-f7c7" targetId="0eec-7423-d98d-5785" linkType="profile">
+              <modifiers/>
+            </link>
           </links>
         </entry>
       </entries>
@@ -9951,11 +10007,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <conditions/>
               <conditionGroups/>
             </modifier>
-            <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="948b-39d8-2c59-c3ca" incrementChildId="00a6-098a-4315-85f9" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="948b-39d8-2c59-c3ca" incrementChildId="ed32-286e-6d65-7fdb" incrementField="selections" incrementValue="1.0">
+            <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="948b-39d8-2c59-c3ca" incrementChildId="7426-4385-2d97-6f84" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -10197,7 +10249,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="aa74-2634-63a4-a2ed" name="Devastator Weapons" defaultEntryId="7a83-850e-0a31-eeee" minSelections="4" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="aa74-2634-63a4-a2ed" name="Replace boltgun" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -10250,14 +10302,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                 </modifier>
               </modifiers>
             </link>
-            <link id="7a83-850e-0a31-eeee" targetId="cd22c0d3-5f51-8bb8-2e18-6d706219249e" linkType="entry">
-              <modifiers>
-                <modifier type="set" field="maxSelections" value="4.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-            </link>
             <link id="94cf-b005-6c68-3d35" targetId="ccbf1ac0-199d-5207-a24f-04908c7e4d2f" linkType="entry">
               <modifiers>
                 <modifier type="set" field="maxSelections" value="4.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
@@ -10295,6 +10339,9 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
         </link>
         <link id="71c8-b89e-d8ef-e8c5" targetId="a943-b4d2-a2c4-8974" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="75b5-1e3d-52c3-ddde" targetId="f693-e8a9-e104-5c4a" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -10392,7 +10439,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                 </link>
                 <link id="9f77-6ca4-cd3f-d86e" targetId="7af90049-6c31-f073-b4bd-56f2b283e39d" linkType="entry group">
                   <modifiers>
-                    <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                    <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions/>
                       <conditionGroups>
                         <conditionGroup type="or">
@@ -10773,7 +10820,11 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       <modifiers/>
       <rules/>
       <profiles/>
-      <links/>
+      <links>
+        <link id="ec6a-eff1-18f0-e29c" targetId="1ae3-17aa-ff63-978e" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
     <entry id="2a3b-3951-c3ea-2ce8" name="Grav Pistol" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -10801,6 +10852,24 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       <profiles/>
       <links>
         <link id="87e0-a3a2-0613-9dca" targetId="229d7dc1-5484-ea4b-34a0-e6d3b525e6d7" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="c4d8-837c-cb66-9cf5" name="Heavy Bolter with Hellfire Shells" points="13.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="99cf-420f-a8ce-dd58" targetId="229d7dc1-5484-ea4b-34a0-e6d3b525e6d7" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="7022-c0d2-b2d4-a5b1" targetId="a2e2-e0e2-081b-b363" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="b0cd-8d87-6672-c1e4" targetId="7975-b4b1-822b-1897" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -10959,7 +11028,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </link>
       </links>
     </entry>
-    <entry id="a577-7752-4d10-f8cf" name="Interrogator-Chaplain" points="110.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Angels 6th" page="30">
+    <entry id="a577-7752-4d10-f8cf" name="Interrogator-Chaplain" points="110.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Angels 2015" page="102">
       <entries/>
       <entryGroups>
         <entryGroup id="7264-8832-9f38-6bd9" name="Armour" defaultEntryId="0aa2-4e8f-471a-99cc" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -11027,7 +11096,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                     <entry id="0044-6771-faf7-aae5" name="Space Marine Bike" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Angels 6th" page="0">
                       <entries/>
                       <entryGroups/>
-                      <modifiers/>
+                      <modifiers>
+                        <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
                       <rules/>
                       <profiles>
                         <profile id="aad2-97ba-0867-0a4b" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Interrogator-Chaplain" hidden="false" book="Codex: Dark Angels 2015" page="102">
@@ -11089,15 +11165,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         <link id="5f95-cb1b-8b82-2312" targetId="cd22c0d3-5f51-8bb8-2e18-6d706219249e" linkType="entry">
                           <modifiers/>
                         </link>
-                        <link id="18ff-4cdb-99ee-6a2a" targetId="6b29-fdb2-7686-99a1" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="6100-b117-4206-1fcf" targetId="d3ec-bf9d-adbe-e1e0" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="72a5-69ce-5faa-f7c3" targetId="2d9a-e91f-005c-b0cd" linkType="entry">
-                          <modifiers/>
-                        </link>
                         <link id="918f-af0d-7391-87e3" targetId="aa3a-5de0-225c-b0ee" linkType="entry">
                           <modifiers/>
                         </link>
@@ -11105,6 +11172,21 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                           <modifiers/>
                         </link>
                         <link id="0701-e938-aeee-131d" targetId="2a3b-3951-c3ea-2ce8" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="894a-7bd7-6b3e-4154" targetId="96aa50d6-91a3-1559-3434-20e27ff428f5" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="e625-20ef-dc03-89ca" targetId="fa72-4014-f89a-8e0d" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="e7b5-9354-e2fd-2d6f" targetId="379e-b281-e23c-39d3" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="333d-de7a-5fce-4fa0" targetId="1f23-786e-5ed4-b953" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="d695-6290-f2fd-c681" targetId="3962-588c-099b-00a7" linkType="entry">
                           <modifiers/>
                         </link>
                       </links>
@@ -11132,21 +11214,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         <link id="b6d1-577a-3279-1ba9" targetId="aa3a-5de0-225c-b0ee" linkType="entry">
                           <modifiers/>
                         </link>
-                        <link id="123f-ff77-0007-871e" targetId="c714-bc65-9abd-8f58" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="39bb-5fb5-3694-c0ec" targetId="151f05e5-5594-7564-29fe-067fbeee6262" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="2fbb-792e-947e-a9db" targetId="1f99-0f63-ab11-a0b9" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="e331-a185-4e2f-bcf1" targetId="c034-0ef5-811a-a725" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="3333-5818-f9a8-fdcb" targetId="b417-8ddd-6663-5cff" linkType="entry">
-                          <modifiers/>
-                        </link>
                         <link id="62c1-8fc0-bdaf-89bf" targetId="1f23-786e-5ed4-b953" linkType="entry">
                           <modifiers/>
                         </link>
@@ -11154,6 +11221,21 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                           <modifiers/>
                         </link>
                         <link id="29d1-993a-a5e8-9e6f" targetId="2a3b-3951-c3ea-2ce8" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="bfc6-049b-2030-3abd" targetId="bd5a380c-b776-682e-bb83-12f37e77afcc" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="a685-4ce7-ffe2-bc55" targetId="cd22c0d3-5f51-8bb8-2e18-6d706219249e" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="11ec-b159-cad7-5df4" targetId="fa72-4014-f89a-8e0d" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="e316-de75-c59c-6876" targetId="379e-b281-e23c-39d3" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="80cb-1d8b-9e96-a731" targetId="3e9639ad-4414-d7ec-49d6-8dcdf4ac25f0" linkType="entry">
                           <modifiers/>
                         </link>
                       </links>
@@ -11185,6 +11267,18 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                     <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions>
                         <condition parentId="8f51-eb58-ddbb-9bd6" childId="fa95-2bd4-5f50-d1d3" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="8f51-eb58-ddbb-9bd6" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="8f51-eb58-ddbb-9bd6" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -11293,23 +11387,10 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                       <entryGroups/>
                       <modifiers/>
                       <links>
-                        <link id="b6fb-4e18-3c75-8086" targetId="3962-588c-099b-00a7" linkType="entry">
-                          <modifiers>
-                            <modifier type="set" field="points" value="5.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                              <conditions/>
-                              <conditionGroups/>
-                            </modifier>
-                          </modifiers>
+                        <link id="1d28-1e7e-cb18-8fdd" targetId="5597b050-3300-051f-6f3b-31338758a429" linkType="entry">
+                          <modifiers/>
                         </link>
-                        <link id="d11d-88f6-0998-6841" targetId="4073-c4ea-1dc3-0f63" linkType="entry">
-                          <modifiers>
-                            <modifier type="set" field="points" value="5.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                              <conditions/>
-                              <conditionGroups/>
-                            </modifier>
-                          </modifiers>
-                        </link>
-                        <link id="ffcf-8729-920c-27f3" targetId="151f05e5-5594-7564-29fe-067fbeee6262" linkType="entry">
+                        <link id="21ef-41e8-a73d-cd58" targetId="151f05e5-5594-7564-29fe-067fbeee6262" linkType="entry">
                           <modifiers>
                             <modifier type="set" field="points" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                               <conditions/>
@@ -11317,10 +11398,23 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                             </modifier>
                           </modifiers>
                         </link>
-                        <link id="ec17-442b-efce-6e58" targetId="7b48-df5c-4e5e-6b28" linkType="entry">
-                          <modifiers/>
+                        <link id="c5a3-1fc7-35ab-2f7b" targetId="4073-c4ea-1dc3-0f63" linkType="entry">
+                          <modifiers>
+                            <modifier type="set" field="points" value="5.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions/>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
                         </link>
-                        <link id="ece5-52a6-9a42-98fd" targetId="1f23-786e-5ed4-b953" linkType="entry">
+                        <link id="cc7b-3bc8-2d9f-2452" targetId="3962-588c-099b-00a7" linkType="entry">
+                          <modifiers>
+                            <modifier type="set" field="points" value="5.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions/>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
+                        </link>
+                        <link id="f51f-f67f-55be-8b14" targetId="7b48-df5c-4e5e-6b28" linkType="entry">
                           <modifiers>
                             <modifier type="set" field="points" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                               <conditions/>
@@ -11328,8 +11422,13 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                             </modifier>
                           </modifiers>
                         </link>
-                        <link id="1d28-1e7e-cb18-8fdd" targetId="5597b050-3300-051f-6f3b-31338758a429" linkType="entry">
-                          <modifiers/>
+                        <link id="3131-7c1a-c31d-422f" targetId="1f23-786e-5ed4-b953" linkType="entry">
+                          <modifiers>
+                            <modifier type="set" field="points" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions/>
+                              <conditionGroups/>
+                            </modifier>
+                          </modifiers>
                         </link>
                       </links>
                     </entryGroup>
@@ -11363,6 +11462,18 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                       </conditions>
                       <conditionGroups/>
                     </modifier>
+                    <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="a71e-fce4-d4c1-3fff" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="a71e-fce4-d4c1-3fff" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
                   </modifiers>
                   <links>
                     <link id="e66e-ea73-8b84-bf9d" targetId="012d-585f-2e25-1217" linkType="entry group">
@@ -11378,14 +11489,21 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                   </conditions>
                   <conditionGroups/>
                 </modifier>
-                <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="a577-7752-4d10-f8cf" childId="877a-008f-004a-7b98" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
               </modifiers>
-              <rules/>
+              <rules>
+                <rule id="96a4-9063-a944-8649" name="RAI Warning (int Chap)" hidden="true">
+                  <description>RAW: A Crozius Arcanum is not a power weapon.
+RAI: It is a power weapon eligible to be switched. Use with care.</description>
+                  <modifiers>
+                    <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="7c6e-578f-f254-7749" childId="1d28-1e7e-cb18-8fdd" field="selections" type="equal to" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </rule>
+              </rules>
               <profiles>
                 <profile id="d854-ea2e-d033-e94c" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Interrogator-Chaplain" hidden="false" book="Codex: Dark Angels 6th" page="30">
                   <characteristics>
@@ -11446,14 +11564,18 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <link id="b081-0d34-6226-f6cf" targetId="ca219793-6e3f-63f3-e811-6b9920eec96a" linkType="rule">
           <modifiers/>
         </link>
-        <link id="08c8-20d8-4d3c-7051" targetId="5670a420-377e-94cb-33fb-3e46343b2a23" linkType="rule">
-          <modifiers/>
-        </link>
         <link id="ee75-729d-180f-c499" targetId="e313-4d11-06f3-6a19" linkType="rule">
           <modifiers/>
         </link>
         <link id="877a-008f-004a-7b98" targetId="151f05e5-5594-7564-29fe-067fbeee6262" linkType="entry">
-          <modifiers/>
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="a577-7752-4d10-f8cf" childId="7c6e-578f-f254-7749" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -11565,7 +11687,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
         </link>
         <link id="f8df-dbc4-fcac-6d2a" targetId="532cd196-6981-f538-e855-b5e430acc488" linkType="entry group">
           <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -11639,7 +11761,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
         </link>
         <link id="74ac-574b-8dfc-63be" targetId="532cd196-6981-f538-e855-b5e430acc488" linkType="entry group">
           <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -11713,7 +11835,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
         </link>
         <link id="df17-3e18-c76e-b240" targetId="532cd196-6981-f538-e855-b5e430acc488" linkType="entry group">
           <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -11757,7 +11879,14 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                     <entry id="c58362fe-ea4b-c3c3-1828-9acc9b4e0a0b" name="Space Marine Bike" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Dark Angels 6th" page="0">
                       <entries/>
                       <entryGroups/>
-                      <modifiers/>
+                      <modifiers>
+                        <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
                       <rules/>
                       <profiles>
                         <profile id="1b47eb3f-6384-ac59-656e-676726495550" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Librarian" hidden="false" book="Codex: Dark Angels 2015" page="104">
@@ -11766,7 +11895,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                             <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="5"/>
                             <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
                             <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
-                            <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="(5)"/>
+                            <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="5"/>
                             <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="2"/>
                             <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
                             <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="2"/>
@@ -11868,19 +11997,10 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                       <entryGroups/>
                       <modifiers/>
                       <links>
-                        <link id="55b2-1bed-a4a8-8201" targetId="6b29-fdb2-7686-99a1" linkType="entry">
-                          <modifiers/>
-                        </link>
                         <link id="c6f2-bc5e-a678-a107" targetId="bd5a380c-b776-682e-bb83-12f37e77afcc" linkType="entry">
                           <modifiers/>
                         </link>
                         <link id="db67-7776-e5ed-de85" targetId="aa3a-5de0-225c-b0ee" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="8326-53db-84b2-4924" targetId="d3ec-bf9d-adbe-e1e0" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="b5ac-fe24-3a43-b55e" targetId="2d9a-e91f-005c-b0cd" linkType="entry">
                           <modifiers/>
                         </link>
                         <link id="133d-2a1b-35ec-3da8" targetId="cd22c0d3-5f51-8bb8-2e18-6d706219249e" linkType="entry">
@@ -11892,7 +12012,19 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                         <link id="6d1f-24fc-ef70-a3c5" targetId="2a3b-3951-c3ea-2ce8" linkType="entry">
                           <modifiers/>
                         </link>
-                        <link id="b153-5a0c-9cf9-faf5" targetId="cfcd-510b-db8d-8820" linkType="entry">
+                        <link id="6910-112b-3fff-878d" targetId="fa72-4014-f89a-8e0d" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="ef63-e481-a96d-b3ee" targetId="379e-b281-e23c-39d3" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="6d48-db64-7567-3fc9" targetId="1f23-786e-5ed4-b953" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="152c-8a0d-c221-46af" targetId="96aa50d6-91a3-1559-3434-20e27ff428f5" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="2f7d-be2f-7037-e12b" targetId="3962-588c-099b-00a7" linkType="entry">
                           <modifiers/>
                         </link>
                       </links>
@@ -11929,25 +12061,25 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                         <link id="ebd0-ecd6-8e1a-133b" targetId="aa3a-5de0-225c-b0ee" linkType="entry">
                           <modifiers/>
                         </link>
-                        <link id="cc35-26bf-2ffd-7499" targetId="c714-bc65-9abd-8f58" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="8623-8261-357c-448c" targetId="151f05e5-5594-7564-29fe-067fbeee6262" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="76a2-0a7b-05d8-d1f1" targetId="1f99-0f63-ab11-a0b9" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="5f99-9d9e-8fd4-67f0" targetId="c034-0ef5-811a-a725" linkType="entry">
-                          <modifiers/>
-                        </link>
-                        <link id="1d44-4558-e85c-b2e2" targetId="b417-8ddd-6663-5cff" linkType="entry">
-                          <modifiers/>
-                        </link>
                         <link id="376f-f022-9b35-4e31" targetId="1f23-786e-5ed4-b953" linkType="entry">
                           <modifiers/>
                         </link>
                         <link id="bd90-85cd-9611-1615" targetId="2a3b-3951-c3ea-2ce8" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="c12f-351e-2749-2757" targetId="fa72-4014-f89a-8e0d" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="5ce9-8e77-ac37-24bd" targetId="379e-b281-e23c-39d3" linkType="entry group">
+                          <modifiers/>
+                        </link>
+                        <link id="ff6a-660f-9179-47a6" targetId="3e9639ad-4414-d7ec-49d6-8dcdf4ac25f0" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="8728-ef7e-5d40-03c5" targetId="bd5a380c-b776-682e-bb83-12f37e77afcc" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="51fd-86f4-9f10-44a9" targetId="cd22c0d3-5f51-8bb8-2e18-6d706219249e" linkType="entry">
                           <modifiers/>
                         </link>
                       </links>
@@ -11979,6 +12111,18 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                     <modifier type="increment" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions>
                         <condition parentId="f28e-d9c1-1775-b35a" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="f28e-d9c1-1775-b35a" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="f28e-d9c1-1775-b35a" childId="fa95-2bd4-5f50-d1d3" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -12167,6 +12311,18 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                       </conditions>
                       <conditionGroups/>
                     </modifier>
+                    <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="1c4142f1-051a-8247-8122-3eb963b3b2e4" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="1c4142f1-051a-8247-8122-3eb963b3b2e4" childId="1d55-3280-e8ce-2012" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
                   </modifiers>
                   <links/>
                 </entryGroup>
@@ -12181,11 +12337,11 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
               </modifiers>
               <rules/>
               <profiles>
-                <profile id="77c30fab-49ab-6880-d827-f46139712eee" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Librarian" hidden="false" book="Codex: Dark Angels 6th" page="31">
+                <profile id="77c30fab-49ab-6880-d827-f46139712eee" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Librarian" hidden="false" book="Codex: Dark Angels 2015" page="104">
                   <characteristics>
                     <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
                     <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="5"/>
-                    <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="5"/>
+                    <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
                     <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
                     <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="4"/>
                     <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="2"/>
@@ -12377,7 +12533,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
       <entryGroups/>
       <modifiers/>
       <rules>
-        <rule id="3c6e-81ab-c6aa-1d6a" name="Bane of the Traitor" hidden="false">
+        <rule id="3c6e-81ab-c6aa-1d6a" name="Bane of the Traitor" hidden="false" book="Codex: Dark Angels 2015" page="155">
           <description>When this weapon is used to attack a model of the Chaos Space Marine Faction, it&apos;s AP is improved to 1.</description>
           <modifiers/>
         </rule>
@@ -12388,6 +12544,9 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           <modifiers/>
         </link>
         <link id="55100e93-6ee8-94fc-9698-f06a625d8220" targetId="6a0fa0dc-46cc-6168-95fa-1187ab48011d" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="b495-13ce-3563-b612" targetId="e68223a8-2786-6324-536d-76022a9be204" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -12929,7 +13088,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
         </link>
         <link id="738e-23fc-0ba0-94f5" targetId="33728e61-dd9a-8837-1804-29124b90498f" linkType="entry group">
           <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -13226,10 +13385,6 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
       <rules>
         <rule id="70d3-3cd2-845f-ee84" name="Attack Squadron" hidden="false">
           <description>If Ravenwing Land Speeder or Vengeance from this formation scores one of more hit in the shooting phase againts an enemy unit. All model from this formation&apos;s Ravenwing Bike Squad, Ravenwing Attack Bike Squad add 1 to their BS when shooting at the same target for the rest of the phase. </description>
-          <modifiers/>
-        </rule>
-        <rule id="6a8c-eb95-c7c9-e57e" name="Restrictions" hidden="false">
-          <description>Land Speeder Unit may only consist of a single model.</description>
           <modifiers/>
         </rule>
       </rules>
@@ -14451,7 +14606,7 @@ casualties. In missions that use Victory Points to determine the winner, the Sla
         </link>
       </links>
     </entry>
-    <entry id="1dde-f147-945e-0296" name="Relic Blade" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="1dde-f147-945e-0296" name="Relic Blade" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
       <modifiers/>
@@ -15169,20 +15324,7 @@ casualties. In missions that use Victory Points to determine the winner, the Sla
           </entries>
           <entryGroups>
             <entryGroup id="b69e-78c2-71e0-75b3" name="Heavy Weapon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="b255-2fb0-d3bc-844e" name="Heavy Bolter with Hellfire Rounds" points="13.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="fc7d-1cee-0485-986b" targetId="cf1e-af32-4b46-2cdf" linkType="entry">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
+              <entries/>
               <entryGroups/>
               <modifiers/>
               <links>
@@ -15198,6 +15340,9 @@ casualties. In missions that use Victory Points to determine the winner, the Sla
                   <modifiers/>
                 </link>
                 <link id="7e18-a1ad-168f-3107" targetId="f246-5643-62b3-be1b" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="5fc9-4ada-bd49-e087" targetId="c4d8-837c-cb66-9cf5" linkType="entry">
                   <modifiers/>
                 </link>
               </links>
@@ -16208,7 +16353,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
                 </link>
                 <link id="200a-1b6c-9538-b773" targetId="7af90049-6c31-f073-b4bd-56f2b283e39d" linkType="entry group">
                   <modifiers>
-                    <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                    <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions/>
                       <conditionGroups>
                         <conditionGroup type="or">
@@ -16287,7 +16432,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
         </link>
         <link id="df59-7ebe-c8ce-210d" targetId="7884285d-81aa-701b-bf07-045c26ae8b63" linkType="entry group">
           <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -16412,7 +16557,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
         </link>
         <link id="28f2-f9d8-6909-ffc2" targetId="7884285d-81aa-701b-bf07-045c26ae8b63" linkType="entry group">
           <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -17321,7 +17466,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="e4248d8e-65dc-4484-e0ce-e3df7da24af2" name="Legacies of Glory (Super Heavy Flier)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="e4248d8e-65dc-4484-e0ce-e3df7da24af2" name="Legacies of Glory (Super Heavy Flier)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="8aeb12cf-9701-cc7d-1cdb-f6fffacef189" name="Battle of Keylek" points="75.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -17496,7 +17641,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="5fdeb7c3-ba89-2ee3-c164-2dafda27a2aa" name="Legacies of Glory (Super Heavy Tanks)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="5fdeb7c3-ba89-2ee3-c164-2dafda27a2aa" name="Legacies of Glory (Super Heavy Tanks)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="32ca9daa-7c76-ceeb-1401-3535204283c8" name="Battle of Keylek" points="75.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -17659,7 +17804,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="33728e61-dd9a-8837-1804-29124b90498f" name="Legacies of Glory (Tank)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="33728e61-dd9a-8837-1804-29124b90498f" name="Legacies of Glory (Tank)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="7ff14317-4a12-9dc5-cf1c-e8c80c6a4a1f" name="War of Murder" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -17798,7 +17943,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="7884285d-81aa-701b-bf07-045c26ae8b63" name="Legacies of Glory (Tank, Blast)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="7884285d-81aa-701b-bf07-045c26ae8b63" name="Legacies of Glory (Tank, Blast)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="b38b85ea-45c3-b6a6-115f-76a6f34be37a" name="War of Murder" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -17949,7 +18094,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="532cd196-6981-f538-e855-b5e430acc488" name="Legacies of Glory (Tank, Transport)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="532cd196-6981-f538-e855-b5e430acc488" name="Legacies of Glory (Tank, Transport)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="981eee79-6e95-be03-ceab-48e267121b6a" name="War of Murder" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -18112,7 +18257,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="fa90d7db-2009-6fab-33e4-a58841adf823" name="Legacies of Glory (Tank, Transport, Deep Strike)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="fa90d7db-2009-6fab-33e4-a58841adf823" name="Legacies of Glory (Tank, Transport, Deep Strike)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="881c70e9-967e-4aa0-1121-3b70c912b2e4" name="Battle of Keylek" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -18299,7 +18444,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="ed1d-fea5-8066-3a2f" name="Legacies of Glory (Transport, Deep Strike)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="ed1d-fea5-8066-3a2f" name="Legacies of Glory (Transport, Deep Strike)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="cda7-f543-e158-6944" name="Battle of Keylek" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -18450,7 +18595,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="08082dae-2989-c512-bf74-886303002194" name="Legacies of Glory (Vehicle)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="08082dae-2989-c512-bf74-886303002194" name="Legacies of Glory (Vehicle)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="6458b4ea-91ea-c223-12f8-fb291c0b9b67" name="War of Murder" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -18577,7 +18722,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="7e517e11-9580-52a8-35d0-43a654e74ae3" name="Legacies of Glory (Vehicle, Blast)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="7e517e11-9580-52a8-35d0-43a654e74ae3" name="Legacies of Glory (Vehicle, Blast)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="ad79cff5-a434-719b-2bd2-5c5c9f9dbdc1" name="War of Murder" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -18716,7 +18861,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="8c2dff0c-4449-4e36-b9d8-faf66950131d" name="Legacies of Glory (Vehicle, Deep Strike)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="8c2dff0c-4449-4e36-b9d8-faf66950131d" name="Legacies of Glory (Vehicle, Deep Strike)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="e835fc2e-2076-17d2-f33e-4f3384fc681e" name="War of Murder" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -18855,7 +19000,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="7af90049-6c31-f073-b4bd-56f2b283e39d" name="Legacies of Glory (Walker)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="7af90049-6c31-f073-b4bd-56f2b283e39d" name="Legacies of Glory (Walker)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="37322217-dc0c-ca83-1a02-199b6edc74d5" name="War of Murder" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -19006,6 +19151,22 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <modifiers/>
       <links/>
     </entryGroup>
+    <entryGroup id="5aa4-c80e-cd83-5a66" name="Pistols" defaultEntryId="6dd0-932b-9aa1-98d4" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <links>
+        <link id="6dd0-932b-9aa1-98d4" targetId="bd5a380c-b776-682e-bb83-12f37e77afcc" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="b102-33f8-2665-350f" targetId="aa3a-5de0-225c-b0ee" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="2efe-14bc-ed76-3834" targetId="2a3b-3951-c3ea-2ce8" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
+    </entryGroup>
     <entryGroup id="379e-b281-e23c-39d3" name="Power Weapons" defaultEntryId="d48f-64cc-bf4c-7a8b" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
@@ -19125,23 +19286,7 @@ A mindlocked unit may not voluntarily mov, shoot or charge.  A mindlocked unit m
       <links/>
     </entryGroup>
     <entryGroup id="d51fa210-5086-0ef7-b11c-cd30499454f7" name="Vehicle Options" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries>
-        <entry id="9d1b-5363-cbd1-69f8" name="Dozer Blades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="5a7e-9ebc-ec83-8c93" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Dozer Blades" hidden="false">
-              <characteristics>
-                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="May reroll failed Dangerous Terrain Tests."/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-      </entries>
+      <entries/>
       <entryGroups/>
       <modifiers/>
       <links>
@@ -19192,8 +19337,8 @@ Roll a D6 and add the following modifiers (if applicable): +1 for a Servo Harnes
 If the result is 5 or more you may either restore a Hull Point or repair a Weapon Destroyed or Immobilised result, this is effective immediatly (ie the vehicle can then fire the reparied weapon)</description>
       <modifiers/>
     </rule>
-    <rule id="e68223a8-2786-6324-536d-76022a9be204" name="Blind" hidden="false" book="BRB 2014" page="33">
-      <description>Immediately take Initiative test. If it fails, BS and WS is reduced to 1 until end of next their/its next turn. If the attacking units  unit hits itself, it automatically passes.</description>
+    <rule id="e68223a8-2786-6324-536d-76022a9be204" name="Blind" hidden="false" book="BRB 2014" page="159">
+      <description>Immediately take Initiative test. If failed, BS and WS are reduced to 1 until end of unit&apos;s next turn. If the attacking unit hits itself, it automatically passes.</description>
       <modifiers/>
     </rule>
     <rule id="8834-9e35-190f-caa5" name="Bolster Defences" hidden="false" book="Codex: Dark Angels 6th" page="32">
@@ -19224,7 +19369,7 @@ Ravenwing Bike Squads are at full strength with seven models and may split into 
       <modifiers/>
     </rule>
     <rule id="e313-4d11-06f3-6a19" name="Deathwing" hidden="false" book="Codex: Dark Angels 2015" page="148">
-      <description>Fearless, Hatred(CSM)</description>
+      <description>Fearless: Automatically pass all Pinning-, Fear- and Regroup tests and Morale checks. Cannot go to ground or use the &quot;Our Weapons Are Useless&quot; rule. Hatred (CSM): Reroll all misses in the first round of each close combat when fighting Chaos Space Marines</description>
       <modifiers/>
     </rule>
     <rule id="3cf97b50-6618-dcde-4dce-538a36081c37" name="Deathwing Vehicle" hidden="false" book="Codex: Dark Angels 6th" page="40">
@@ -19259,7 +19404,7 @@ Models with &quot;And They Shall Know No Fear&quot; and &quot;Fearless&quot; are
       <modifiers/>
     </rule>
     <rule id="e44b8d08-ba96-44e9-e90e-7db14cf4d747" name="Fearless" hidden="false" book="BRB 2014" page="163">
-      <description>Automatically pass all Pinning-, Fea-r and Regroup tests and Morale checks. Cannot go to ground or use the &quot;Our Weapons Are Useless&quot; rule.</description>
+      <description>Automatically pass all Pinning-, Fear- and Regroup tests and Morale checks. Cannot go to ground or use the &quot;Our Weapons Are Useless&quot; rule.</description>
       <modifiers/>
     </rule>
     <rule id="e5316a13-1423-74b1-6747-6c545a96c2b6" name="Feel No Pain" hidden="false" book="BRB 2014" page="164">
@@ -19419,6 +19564,10 @@ A mindlocked unit may not voluntarily move, shoot or charge.  A mindlocked unit 
       <description>When this unit arrives from reserves roll a die. On a 1 or 2 it comes in on your left, on a 3 or 4 it comes in on your right and on a 5 or 6 you choose right or left.</description>
       <modifiers/>
     </rule>
+    <rule id="7975-b4b1-822b-1897" name="Poisoned" hidden="false">
+      <description>Always wounds on a 4+ (unless another number is specified). When not stated otherwise, counts as S1. No effect against vehicles.</description>
+      <modifiers/>
+    </rule>
     <rule id="28b8dc3c-9647-8bae-7039-240a71e8e48d" name="Power of the Machine Spirit" hidden="false" book="BRB 2014">
       <description>So long as the vehicle dosen&apos;t move flat out or pop smoke, it may fire an additional weapon and may fire at a different target.</description>
       <modifiers/>
@@ -19441,6 +19590,11 @@ A mindlocked unit may not voluntarily move, shoot or charge.  A mindlocked unit 
     </rule>
     <rule id="1b87f977-960b-8c95-9d63-fa2aaf230193" name="Psyker" hidden="false" page="0">
       <description>Dark Angels Librarians are Psykers who use the Interromancy (Dark Angels p 156), Divination, Pyromancy, Telepathy, Telekinesis or and/or Demonology powers</description>
+      <modifiers/>
+    </rule>
+    <rule id="bdab-3e94-b94b-c98d" name="RAI Warning (RWSF)" hidden="true">
+      <description>RAW: Only Sammael can be taken.
+RAI: Other generic HQ&apos;s with Space Marine Bikes can be taken as well. Use with care.</description>
       <modifiers/>
     </rule>
     <rule id="9338292b-c019-35c7-3455-bda9e27ae505" name="Rapid Fire" hidden="false" book="BRB 2014" page="42">
@@ -19584,7 +19738,9 @@ If held in reserve, the unit gains Outflank.</description>
       <modifiers/>
     </rule>
     <rule id="610ff1cd-1978-12cb-d0ce-29ca4dc5da1f" name="Zealot" hidden="false" book="BRB 2014" page="174">
-      <description>Unit this Character is joined to has Fearless and Hatred (Everything)</description>
+      <description>Automatically pass all Pinning-, Fear- and Regroup tests and Morale checks. Cannot go to ground or use the &quot;Our Weapons Are Useless&quot; rule.
+
+Unit re-rolls all failed To Hit rolls during the first round of each close combat</description>
       <modifiers/>
     </rule>
   </sharedRules>
@@ -19732,10 +19888,10 @@ If held in reserve, the unit gains Outflank.</description>
     </profile>
     <profile id="5e76-c197-d295-404a" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Combi-Grav" hidden="false">
       <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range"/>
-        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type"/>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot; (Bolter)/ 18&quot; (Grav)"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4 (Bolter)/ * (Grav)"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5 (Bolter) / 2 (Grav)"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Rapid Fire (Bolter) / Salvo 2/3 (Grav), One Shot (Grav)"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -19832,6 +19988,21 @@ If held in reserve, the unit gains Outflank.</description>
     <profile id="a4fec42d-2cf9-4190-c503-16a599385cf5" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Deathwing Company Banner" hidden="false" book="Codex: Dark Angels 2015" page="152">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="All Friendly models with Inner Circle rule within 6&quot; gain an extra attack."/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="0eec-7423-d98d-5785" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Deathwing Sergeant" hidden="false" book="Codex: Dark Angels 2015" page="116">
+      <characteristics>
+        <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
+        <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
+        <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+        <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
+        <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="4"/>
+        <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="1"/>
+        <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
+        <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="2"/>
+        <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="9"/>
+        <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="2+ / 5++"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -19989,10 +20160,10 @@ If held in reserve, the unit gains Outflank.</description>
     </profile>
     <profile id="1ae3-17aa-ff63-978e" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Grav Gun" hidden="false" book="BRB 2014">
       <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range"/>
-        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type"/>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="18&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="*"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Salvo 2/3"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -20023,6 +20194,15 @@ If held in reserve, the unit gains Outflank.</description>
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="a2e2-e0e2-081b-b363" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Heavy Bolter (Hellfire Shells)" hidden="false" book="Codex: Dark Angels 2015" page="152">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="1"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="-"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Blast, Poisoned (2+)"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="7991afc6-63e9-21ad-035c-b94dcc2dfabf" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Heavy Flamer" hidden="false" book="BRB 2014" page="176">
       <characteristics>
         <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Template"/>
@@ -20044,15 +20224,6 @@ If held in reserve, the unit gains Outflank.</description>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, One use only"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="a161-d6d5-5ed8-429f" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Honor Blade" hidden="false">
-      <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
-        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="S+2"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, two-handed"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -20639,6 +20810,15 @@ If held in reserve, the unit gains Outflank.</description>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="a161-d6d5-5ed8-429f" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Relic Blade" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="S+2"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, two-handed"/>
       </characteristics>
       <modifiers/>
     </profile>
