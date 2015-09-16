@@ -23210,7 +23210,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
                 <condition parentId="force type" childId="4225-61ca-e78e-1d13" field="selections" type="less than" value="1.0"/>
                 <condition parentId="force type" childId="73c3-16fe-c78d-016f" field="selections" type="less than" value="1.0"/>
@@ -29775,6 +29775,18 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </profile>
       </profiles>
       <links/>
+    </entry>
+    <entry id="c75e-0072-601c-5830" name="Eviscerator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="432b-b25b-1989-94a8" targetId="f2d5-994b-0399-1ec1" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
     <entry id="451a-3769-a668-e963" name="Fighter Ace" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -38344,18 +38356,6 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <profiles/>
       <links/>
     </entry>
-    <entry id="c75e-0072-601c-5830" name="Eviscerator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="432b-b25b-1989-94a8" targetId="f2d5-994b-0399-1ec1" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="4bd8-c261-1bcf-eb95" name="Chapter Relics *" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -41591,6 +41591,15 @@ In addition, units containing one or more models with the Zealot special rule re
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="f2d5-994b-0399-1ec1" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Eviscerator" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="x2"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Armourbane, Two-handed, Unwieldy"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="fcd538df-29d4-d39a-d1bd-f89dc0a34e57" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Extra Armour *" hidden="false" book="Warhammer 40,00: The Rules" page="98">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Stunned counts as Shaken"/>
@@ -42019,6 +42028,21 @@ In addition, units containing one or more models with the Zealot special rule re
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="6a3d-0cf8-b810-37e7" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Space Marines" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry"/>
+        <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
+        <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+        <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
+        <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="4"/>
+        <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="1"/>
+        <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
+        <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="1"/>
+        <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="8"/>
+        <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="1fa19a43-d532-0ff4-7acd-642e4350b585" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Storm Bolter" hidden="false" book="Warhammer 40,00: The Rules" page="176">
       <characteristics>
         <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
@@ -42088,30 +42112,6 @@ In addition, units containing one or more models with the Zealot special rule re
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Barrage, Large Blast"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="f2d5-994b-0399-1ec1" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Eviscerator" hidden="false">
-      <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
-        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="x2"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Armourbane, Two-handed, Unwieldy"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="6a3d-0cf8-b810-37e7" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Space Marines" hidden="false">
-      <characteristics>
-        <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry"/>
-        <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
-        <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
-        <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
-        <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="4"/>
-        <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="1"/>
-        <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
-        <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="1"/>
-        <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="8"/>
-        <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
       </characteristics>
       <modifiers/>
     </profile>
