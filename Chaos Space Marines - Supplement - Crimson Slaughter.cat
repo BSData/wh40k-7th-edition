@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="528a71c7-fca2-a2b1-89ef-a77784f505fb" revision="23" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Crimson Slaughter (2014)" authorName=" BSData team (Final Version)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="528a71c7-fca2-a2b1-89ef-a77784f505fb" revision="25" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Crimson Slaughter (2014)" authorName=" BSData team (Final Version)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="d333bebf-fda1-d63f-3a91-f3c4a81166e1" name="[Apoc] Cult of Destruction" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -15554,6 +15554,12 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
                 <link id="e3b593f5-ff7b-3125-c81e-188e7e251839" targetId="e53e9738-2619-dece-cdd0-a3b06edcd0a5" linkType="rule">
                   <modifiers/>
                 </link>
+                <link id="e1a1-5e27-94b1-23cc" targetId="2a4fd5b9-69cf-5ecf-8225-e07f016c2a52" linkType="rule">
+                  <modifiers/>
+                </link>
+                <link id="13eb-b80c-693a-5993" targetId="6a257a4f-f425-f618-dcbf-5e7eaf6f3fec" linkType="rule">
+                  <modifiers/>
+                </link>
               </links>
             </entry>
           </entries>
@@ -15567,8 +15573,16 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="ea81437d-8a08-4e43-a57f-04c09a786cd3" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
+                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="ea81437d-8a08-4e43-a57f-04c09a786cd3" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="ea81437d-8a08-4e43-a57f-04c09a786cd3" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="ea81437d-8a08-4e43-a57f-04c09a786cd3" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
@@ -15604,12 +15618,20 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
                 </link>
               </links>
             </entry>
-            <entry id="983eaace-1f2c-fc88-a394-1fd1fa6a96fb" name="Disc of Tzeetch" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="983eaace-1f2c-fc88-a394-1fd1fa6a96fb" name="Disc of Tzeentch" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="1dd83ab9-1ab4-4a15-85d1-1ad411377873" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
+                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="1dd83ab9-1ab4-4a15-85d1-1ad411377873" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="1dd83ab9-1ab4-4a15-85d1-1ad411377873" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="1dd83ab9-1ab4-4a15-85d1-1ad411377873" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
@@ -15625,8 +15647,16 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="48e2ca7d-ff5f-4361-b624-d3ecd5494df3" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
+                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="48e2ca7d-ff5f-4361-b624-d3ecd5494df3" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="48e2ca7d-ff5f-4361-b624-d3ecd5494df3" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="48e2ca7d-ff5f-4361-b624-d3ecd5494df3" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
@@ -15636,14 +15666,25 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
                 <link id="e25d7776-a24b-ee1d-0394-3f9080816e03" targetId="e558304b-d45e-247b-5f06-759fe2b2cbe8" linkType="profile">
                   <modifiers/>
                 </link>
+                <link id="3b42-da45-9b26-ed6b" targetId="aa1504f8-0ab7-d06c-cb7d-8eef3c2911cd" linkType="rule">
+                  <modifiers/>
+                </link>
               </links>
             </entry>
             <entry id="15168c12-6862-4209-0ee7-9d06f4f82d8a" name="Steed of Slaanesh" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="e2028a5d-9087-436a-aeb3-81eff0890a82" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
+                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="e2028a5d-9087-436a-aeb3-81eff0890a82" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="e2028a5d-9087-436a-aeb3-81eff0890a82" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="e2028a5d-9087-436a-aeb3-81eff0890a82" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
@@ -15651,6 +15692,12 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
               <profiles/>
               <links>
                 <link id="2f76ab83-e59c-cd46-57ed-baa0c14296f6" targetId="5f637bd5-ca32-c805-9a68-d4001de6ed46" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="229e-84ed-f551-f7ed" targetId="aa22-0c2c-4620-bcab" linkType="rule">
+                  <modifiers/>
+                </link>
+                <link id="4ef3-0baa-0dd2-a26d" targetId="7bae-917a-2bad-1ca4" linkType="rule">
                   <modifiers/>
                 </link>
               </links>
@@ -15685,6 +15732,12 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
               <profiles/>
               <links>
                 <link id="5e1a7969-822d-7423-3946-698ddf5178ec" targetId="555984b7-f596-aa5d-79e1-1123f78ac454" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="602c-6eeb-6b30-dbdf" targetId="24a441c3-9970-5437-cfab-db3e08852f98" linkType="rule">
+                  <modifiers/>
+                </link>
+                <link id="33f0-c99f-47fa-4944" targetId="3228-1288-5f1e-00fd" linkType="rule">
                   <modifiers/>
                 </link>
               </links>
@@ -16080,33 +16133,127 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
       <links>
         <link id="6ac22f0a-2094-685c-4e19-a0b0d0a18e24" targetId="e4a96746-d9fc-bfb0-58fd-13fd3e3279f4" linkType="profile">
           <modifiers>
+            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="4815dd9c-7b52-1130-9c3f-8e4877447580" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="append" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="/6++" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="1dd83ab9-1ab4-4a15-85d1-1ad411377873" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
             <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/5++" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
                 <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="c77cfec6-0979-42dc-23ae-979d92f00507" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/4++" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="c77cfec6-0979-42dc-23ae-979d92f00507" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="1dd83ab9-1ab4-4a15-85d1-1ad411377873" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="1" repeat="false" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="3c41507e-f20d-4a01-a259-59b8b94e7921" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="48e2ca7d-ff5f-4361-b624-d3ecd5494df3" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="3c41507e-f20d-4a01-a259-59b8b94e7921" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1" repeat="false" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="3c41507e-f20d-4a01-a259-59b8b94e7921" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="4815dd9c-7b52-1130-9c3f-8e4877447580" field="selections" type="at least" value="1.0"/>
+                <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="3c41507e-f20d-4a01-a259-59b8b94e7921" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="increment" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="1" repeat="true" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="3c41507e-f20d-4a01-a259-59b8b94e7921" incrementField="selections" incrementValue="1.0">
+            <modifier type="increment" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1" repeat="false" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="983eaace-1f2c-fc88-a394-1fd1fa6a96fb" incrementField="selections" incrementValue="1.0">
               <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="983eaace-1f2c-fc88-a394-1fd1fa6a96fb" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="3c41507e-f20d-4a01-a259-59b8b94e7921" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="15168c12-6862-4209-0ee7-9d06f4f82d8a" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="1e1ec117-f94c-77a3-a7e0-7aa960566279" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Cavalry (Character)" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="3c41507e-f20d-4a01-a259-59b8b94e7921" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="15168c12-6862-4209-0ee7-9d06f4f82d8a" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Jetbike (Character)" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="983eaace-1f2c-fc88-a394-1fd1fa6a96fb" field="selections" type="equal to" value="1.0"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="increment" field="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1" repeat="true" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="3c41507e-f20d-4a01-a259-59b8b94e7921" incrementField="selections" incrementValue="1.0">
-              <conditions/>
+            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="4815dd9c-7b52-1130-9c3f-8e4877447580" field="selections" type="equal to" value="1.0"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="decrement" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1" repeat="true" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="3c41507e-f20d-4a01-a259-59b8b94e7921" incrementField="selections" incrementValue="1.0">
-              <conditions/>
+            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Bike (Character)" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="497c2fd0-1d6f-42d3-b8f0-83c008fe7e7a" field="selections" type="equal to" value="1.0"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="increment" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1" repeat="true" numRepeats="1" incrementParentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" incrementChildId="983eaace-1f2c-fc88-a394-1fd1fa6a96fb" incrementField="selections" incrementValue="1.0">
-              <conditions/>
+            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Jump Infantry (Character)" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="dc1f7a7a-d608-45bb-a37f-c99da5dafee2" field="selections" type="equal to" value="1.0"/>
+              </conditions>
               <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="2" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="1e1ec117-f94c-77a3-a7e0-7aa960566279" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="a558b3ef-04d0-440e-a312-bac3255bf592" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="e2028a5d-9087-436a-aeb3-81eff0890a82" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/6++" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="4815dd9c-7b52-1130-9c3f-8e4877447580" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="a804cf7c-7162-4211-86d5-5cf48d7855f1" childId="1dd83ab9-1ab4-4a15-85d1-1ad411377873" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </link>
@@ -29382,6 +29529,12 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
                 <link id="94b1fdbd-5226-5e8e-0545-925f53a22c04" targetId="555984b7-f596-aa5d-79e1-1123f78ac454" linkType="profile">
                   <modifiers/>
                 </link>
+                <link id="87f6-c599-053d-e136" targetId="24a441c3-9970-5437-cfab-db3e08852f98" linkType="rule">
+                  <modifiers/>
+                </link>
+                <link id="53cd-fc5c-698d-8beb" targetId="3228-1288-5f1e-00fd" linkType="rule">
+                  <modifiers/>
+                </link>
               </links>
             </entry>
           </entries>
@@ -29545,44 +29698,89 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
                 </link>
               </links>
             </entry>
-            <entry id="3e8e78a7-7f89-8f9f-2b1b-d3868f6cfd20" name="Disc of Tzeetch" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="3e8e78a7-7f89-8f9f-2b1b-d3868f6cfd20" name="Disc of Tzeentch" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" incrementChildId="8754ce03-9311-8e0f-76b3-eb635930c8eb" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
+                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" incrementChildId="8754ce03-9311-8e0f-76b3-eb635930c8eb" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="8754ce03-9311-8e0f-76b3-eb635930c8eb" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="8754ce03-9311-8e0f-76b3-eb635930c8eb" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="d954-57cc-7504-816f" targetId="b277ee69-b8ec-7ba1-3ffd-41ba05d845f5" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
             <entry id="e6faa4d1-07bf-cbeb-8f69-6e887c20e66d" name="Palanquin of Nurgle" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" incrementChildId="01f01ef6-7b33-a44b-4d38-389d22fdb7b1" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
+                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" incrementChildId="01f01ef6-7b33-a44b-4d38-389d22fdb7b1" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="01f01ef6-7b33-a44b-4d38-389d22fdb7b1" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="01f01ef6-7b33-a44b-4d38-389d22fdb7b1" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="08b1-84d5-2f35-6a67" targetId="e558304b-d45e-247b-5f06-759fe2b2cbe8" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="a4aa-356a-036b-24ff" targetId="aa1504f8-0ab7-d06c-cb7d-8eef3c2911cd" linkType="rule">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
             <entry id="70322e1d-1475-e160-ec13-891d94cc4fae" name="Steed of Slaanesh" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" incrementChildId="e57d675b-e1c0-0ce4-eb52-8819189d77db" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
+                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" incrementChildId="e57d675b-e1c0-0ce4-eb52-8819189d77db" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="e57d675b-e1c0-0ce4-eb52-8819189d77db" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="e57d675b-e1c0-0ce4-eb52-8819189d77db" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="bf30-1d94-ef10-b6af" targetId="5f637bd5-ca32-c805-9a68-d4001de6ed46" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="8970-e0c4-9925-1849" targetId="aa22-0c2c-4620-bcab" linkType="rule">
+                  <modifiers/>
+                </link>
+                <link id="fd87-2c5d-6996-89a5" targetId="7bae-917a-2bad-1ca4" linkType="rule">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
@@ -29998,9 +30196,88 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
         </link>
         <link id="e9469a69-9961-a800-a51b-05d3fa9f6059" targetId="0dc7d750-fac9-1d04-f3c7-edb7ebd31f8a" linkType="profile">
           <modifiers>
+            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="b0b3bb70-f9b8-36ff-a4f7-a32cc84f37ed" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="append" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="/6++" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="8754ce03-9311-8e0f-76b3-eb635930c8eb" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
             <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/5++" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
                 <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="b7e3670c-b426-eb60-e07f-9918bcd607d2" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/4++" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="b7e3670c-b426-eb60-e07f-9918bcd607d2" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="8754ce03-9311-8e0f-76b3-eb635930c8eb" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="01f01ef6-7b33-a44b-4d38-389d22fdb7b1" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="a558b3ef-04d0-440e-a312-bac3255bf592" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="e57d675b-e1c0-0ce4-eb52-8819189d77db" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="70322e1d-1475-e160-ec13-891d94cc4fae" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="e6faa4d1-07bf-cbeb-8f69-6e887c20e66d" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="3e8e78a7-7f89-8f9f-2b1b-d3868f6cfd20" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="2" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="e6faa4d1-07bf-cbeb-8f69-6e887c20e66d" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Jump Infantry (Character)" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="74819182-5008-03cd-2f6a-a6b6d5065386" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Bike (Character)" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="075ff837-bc68-a219-4421-691ac32e51c7" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Jetbike (Character)" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="3e8e78a7-7f89-8f9f-2b1b-d3868f6cfd20" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Cavalry (Character)" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="1425fc4e-63d3-4fba-ba76-de4d5cfc72e7" childId="70322e1d-1475-e160-ec13-891d94cc4fae" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -30515,6 +30792,429 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
         </link>
       </links>
     </entry>
+    <entry id="3c91-af5e-0bf0-6214" name="Warlord Battle Titan" points="2750.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="8e1b-b609-e73e-f165" name="Ardex-defensor Mauler Bolt Cannon Turrets" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="60ae-27b2-a09e-c2f0" name="Ardex Machina" hidden="false">
+              <description>This weapon may fire Overwatch attacks even though the model to which its attached to may usually not do so, so long as it is within the firing arc of the charging models and, in addition, carries out all Snap Shots at BS 2.</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="4469-4a5f-d032-f40f" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 6, Twin-linked, Ardex Machina"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="686e-2aab-8ca4-cade" name="Rear-mounted Ardex-defensor Twin-linked Lascannon Turrets" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="5ec4-8edb-6c96-6b81" name="Ardex Machina" hidden="false">
+              <description>This weapon may fire Overwatch attacks even though the model to which its attached to may usually not do so, so long as it is within the firing arc of the charging models and, in addition, carries out all Snap Shots at BS 2.</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="9bd6-c6a6-76a7-f252" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Rear-mounted Ardex-defensor Twin-linked Lascannon Turrets" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="48&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Ardex Machina"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="bc21-48d6-4855-659b" name="Two Arm-mounted Weapons" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="0b1c-7d0c-2c0b-8e04" name="Belicosa Pattern Volcano Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="7035-902b-c4fe-a35a" name="Machine Destroyer" hidden="false">
+                  <description>When Attacking any target with an armour value, rolls of 1 on the Destroyer Damage table may be re-rolled.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="a8d5-5398-7550-b3b3" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Belicosa Pattern Volcano Cannon" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="180&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Apocalyptic Blast, Machine Destroyer"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="2447-1c9d-95a5-d992" name="Sunfury Plasma Annihilator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="7752-7896-f639-5afa" name="Plasma Wave" hidden="false">
+                  <description>Successful cover saves against this waepon&apos;s attacks must be re-rolled.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="ec2c-8da0-3d71-0b39" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Sunfury Plasma Annihilator" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 4, Apocalyptic Barrage, Plasma Wave"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="601c-c568-70d1-2c3a" name="Mori Quake Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="4d39-29d9-ff8c-3e69" name="Seismic Shock" hidden="false">
+                  <description>Units which suffer wounds or Hull Points lost from this attack may only move at half their usual maximum movement, may not Run, Charge or go Flat Out, and count as being in dangerous terrain one their next turn.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="63e4-d0c9-cba4-dfef" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Mori Quake Cannon" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;-360&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D/9/6"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Apocalyptic Blast, Seismic Shock, Concussion, Strikedown"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="7ff8-1df9-0c6d-0191" name="Arioch Titan Power Claw" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="9072-3099-2cc7-490d" name="Machine Destroyer" hidden="false">
+                  <description>When Attacking any target with an armour value, rolls of 1 on the Destroyer Damage table may be re-rolled.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="68e1-d4d2-7dba-b28a" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Arioch Titan Power Claw" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Machine Destroyer"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="915b-0127-5492-2523" name="Macro-gatling Blaster" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="5f6c-9cd5-df3d-3d75" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Macro-gatling Blaster" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="10"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 6, Large Blast, Pinning"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="bf83-c652-241e-956b" name="Carapace-mounted Weapons" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="9e3d-7147-989a-15a9" name="Two Apocalypse Missile Launchers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="4ac2-40e6-e4d9-b407" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Apocalypse Missile Launchers" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;-360&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 5, Apocalyptic Barrage"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="223e-67de-88d6-7f0b" name="Two Double-barrleed Turbo Laser Destructors" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="7826-e10e-77e3-110d" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Double-barrleed Turbo Laser Destructors" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="96&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 2, Large Blast"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="d1df-f5a9-89d2-da9b" name="Two Twin-linked Plasma Blastguns" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="f6ab-14d2-0cee-0322" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Titan Plasma Blastgun - Rapid" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 2, Massive Blast"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="00e3-f853-5f46-8d0c" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Titan Plasma Blastgun - Overload" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="96&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="10"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Apocalyptic Blast"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="fb61-cfe6-61da-9fcb" name="Two Reaver Laser Blasters" points="100.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="c85c-333d-c9e4-42b7" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Reaver Laser Blasters" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="96&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 3, Large Blast"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="2d64-504a-d54e-dfb3" name="Two Reaver Melta Cannons" points="100.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="35d5-b9fa-14b7-c840" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Reaver Melta Cannons" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="10"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Apocalyptic Blast, Melta"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="6912-5183-c7f6-eb83" name="Two Reaver Gatling Blasters" points="100.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="07b2-941d-77d6-6bb5" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Reaver Gatling Blasters" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 6, Large Blast, Pinning"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="0962-9665-e13b-ce1e" name="Two Vortex Missile Banks" points="150.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="8857-c076-1908-de05" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Vortex Missile Banks" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;-360&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Large Blast, Vortex, 2x One Use Only"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="b557-efb8-cd94-d149" name="Two Incinerator Missile Banks" points="75.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="1ca0-a01f-47f5-d915" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Incinerator Missile Banks" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;-360&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 10, Apocalyptic Barrage, No Cover Saves, One Use Only"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="a6df-ac38-f5c5-9a1e" name="Fear" hidden="false">
+          <description>At the start of each Fight sub-phase, a unit in base contact with one or more enemy models that cause Fear must take a Leadership test (called a Fear test) before any blows are struck. If the test is passed, all is well and there is no effect. If the test is failed, the unit succumbs to fear – all models in the unit have their Weapon Skill reduced to 1 for the remainder of that Fight sub-phase. Note that a model that causes Fear is not itself immune to Fear, and will still need to take a Fear test if it is base contact with any enemy models that cause Fear.</description>
+          <modifiers/>
+        </rule>
+        <rule id="45a7-bbff-d0f8-62d3" name="Hammer of Wrath" hidden="false">
+          <description>If a model with this special rule ends its charge move in base or hull contact with an enemy model, it makes one additional Attack that hits automatically and is resolved at the model’s unmodified Strength with AP-. This Attack does not benefit from any of the model’s special rules (such as Furious Charge, Rending etc.). This Attack is resolved during the Fight sub-phase at the Initiative 10 step, but does not grant the model an additional Pile In move.
+
+If a model with this special rule charges a building or vehicle, the hit is resolved against the Armour Value of the facing the charging model is touching. If a model with this special rule charges a building or vehicle that is a Transport or a Chariot, the hit is resolved against the building or vehicle, not the occupants or the rider.</description>
+          <modifiers/>
+        </rule>
+        <rule id="ffa5-acb5-7f9f-b2d3" name="Invincible Behemoth" hidden="false">
+          <description>A Super-heavy vehicle is so large and strongly built that weapons which degrade the armour of smaller vehicles will not effect it. Because of this, any attack that says that the target model is destroyed, wrecked, Explodes! or is otherwise removed from play inflicts D3 Hull Points of damage on a Super-heavy vehicle instead.
+
+In addition, any attacks or special abilities that permanently lower the Armour Values of a target vehicle do not affect a Super-heavy vehicle. Note that attacks or abilities that count the Armour Value as being lower, but do not actually change it, work normally.</description>
+          <modifiers/>
+        </rule>
+        <rule id="28f8-c9a0-e6af-6208" name="Move Through Cover" hidden="false">
+          <description>A unit that contains at least one model with this special rule rolls an extra D6 when rolling to move through difficult terrain and is not slowed by charging through difficult terrain. In most circumstances, this will mean that, when moving, the unit rolls 3D6 and picks the highest roll. Furthermore, a model with the Move Through Cover special rule automatically passes Dangerous Terrain tests.</description>
+          <modifiers/>
+        </rule>
+        <rule id="07aa-2d46-a233-8faf" name="Relentless" hidden="false">
+          <description>Relentless models can shoot with Heavy, Salvo or Ordnance weapons, counting as stationary, even if they moved in the previous Movement phase. They are also allowed to charge in the same turn they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
+          <modifiers/>
+        </rule>
+        <rule id="2da4-ce7f-2fe6-5dcc" name="Smash" hidden="false">
+          <description>All of the close combat attacks, except Hammer of Wrath attacks, of a model with this special rule are resolved at AP2 (unless it’s attacking with an AP1 weapon). Additionally, when it makes its close combat attacks, it can choose instead to make a single Smash Attack. If it does so, roll To Hit as normal, but resolve the Attack at double the model’s Strength (to a maximum of 10). Furthermore, a model making a Smash Attack can re-roll its armour penetration rolls, but must abide by the second result.</description>
+          <modifiers/>
+        </rule>
+        <rule id="2096-b2ed-f873-4531" name="Strikedown" hidden="false">
+          <description>Any non-vehicle model that suffers one or more unsaved Wounds or passes one or more saving throws against an attack with the Strikedown special rule moves as if it is in difficult terrain until the end of its next turn. It is a good idea to mark affected models with counters or coins so that you remember.</description>
+          <modifiers/>
+        </rule>
+        <rule id="dfda-4334-fc77-acdd" name="Reactor Meltdown" hidden="false">
+          <description>Warlord Catastrophic Damage Table uses 12&quot;/24&quot;/36&quot; blast measurements
+
+D6                    Result                           S                 AP
+ 1                   Explosion                    D/8/4             2/3/5
+2-3        Devastating Explosion        D/10/6           2/3/4
+4-6             Titanic Explosion            D/D/D            1/2/2</description>
+          <modifiers/>
+        </rule>
+        <rule id="d031-730d-06b6-15cd" name="Towering Monstrosity (Warlord)" hidden="false">
+          <description>The Warlord Titan may only be hit on a 6 by Infantry and Monstrous Creatures of any type in an assault, and on a 5 or 6 by Super-heavy Walkers and Gargantuan Creatures in an assault.
+
+The Warlord Titan may never be locked in an assault.
+
+The Warlord Titan is completely immune  to the effects of Haywire attacks, dangerous terrain, and psychic attacks other than Witchfire powers, which must attempt to damage it normally.
+
+The Warlord Titan&apos;s Stomp attack uses the Large Blast marker.
+
+The Warlord Titan&apos;s carapace-mounted weapons may not target models closer than 24&quot; from its hull, unless they are Flyers, Flying Monstrous Creatures or other Super-heavy vehicles or Gargantuan Monstrous Creatures.</description>
+          <modifiers/>
+        </rule>
+        <rule id="17eb-2215-8127-0e45" name="Reinforced Structure" hidden="false">
+          <description>The Warlord Titan has an invulnerable save of 5+ against any attacks that have breached its void shields.</description>
+          <modifiers/>
+        </rule>
+        <rule id="8367-f893-98a4-b5c3" name="World Burner" hidden="false">
+          <description>The Warlord Titan may use any of its Blast marker weapons to target areas of the battlefield, rather than enemy units if it wishes, including buildings and ruins, etc.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="54ed-df39-3fc5-a0f5" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Warlord Battle Titan" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="2"/>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+            <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="D"/>
+            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="15"/>
+            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="15"/>
+            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="14"/>
+            <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
+            <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="3"/>
+            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="30"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Super-heavy Walker)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="92bb-c0bb-f675-a3ea" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Armoured Ceramite" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="5662-61f8-6de9-7460" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Void Shields" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Warlord Titans have 6 Void Shields."/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
     <entry id="c249076c-179f-ee38-03d4-ff84d4941348" name="Warpsmith" points="110.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
         <entry id="3467e923-6fa1-d3be-0314-b51ff6e9c25d" name="Frag Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -31017,429 +31717,6 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
         </link>
       </links>
     </entry>
-    <entry id="3c91-af5e-0bf0-6214" name="Warlord Battle Titan" points="2750.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries>
-        <entry id="8e1b-b609-e73e-f165" name="Ardex-defensor Mauler Bolt Cannon Turrets" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="60ae-27b2-a09e-c2f0" name="Ardex Machina" hidden="false">
-              <description>This weapon may fire Overwatch attacks even though the model to which its attached to may usually not do so, so long as it is within the firing arc of the charging models and, in addition, carries out all Snap Shots at BS 2.</description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles>
-            <profile id="4469-4a5f-d032-f40f" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false">
-              <characteristics>
-                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
-                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
-                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
-                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 6, Twin-linked, Ardex Machina"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-        <entry id="686e-2aab-8ca4-cade" name="Rear-mounted Ardex-defensor Twin-linked Lascannon Turrets" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="5ec4-8edb-6c96-6b81" name="Ardex Machina" hidden="false">
-              <description>This weapon may fire Overwatch attacks even though the model to which its attached to may usually not do so, so long as it is within the firing arc of the charging models and, in addition, carries out all Snap Shots at BS 2.</description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles>
-            <profile id="9bd6-c6a6-76a7-f252" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Rear-mounted Ardex-defensor Twin-linked Lascannon Turrets" hidden="false">
-              <characteristics>
-                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="48&quot;"/>
-                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
-                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Ardex Machina"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-      </entries>
-      <entryGroups>
-        <entryGroup id="bc21-48d6-4855-659b" name="Two Arm-mounted Weapons" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="0b1c-7d0c-2c0b-8e04" name="Belicosa Pattern Volcano Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules>
-                <rule id="7035-902b-c4fe-a35a" name="Machine Destroyer" hidden="false">
-                  <description>When Attacking any target with an armour value, rolls of 1 on the Destroyer Damage table may be re-rolled.</description>
-                  <modifiers/>
-                </rule>
-              </rules>
-              <profiles>
-                <profile id="a8d5-5398-7550-b3b3" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Belicosa Pattern Volcano Cannon" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="180&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Apocalyptic Blast, Machine Destroyer"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-            <entry id="2447-1c9d-95a5-d992" name="Sunfury Plasma Annihilator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules>
-                <rule id="7752-7896-f639-5afa" name="Plasma Wave" hidden="false">
-                  <description>Successful cover saves against this waepon&apos;s attacks must be re-rolled.</description>
-                  <modifiers/>
-                </rule>
-              </rules>
-              <profiles>
-                <profile id="ec2c-8da0-3d71-0b39" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Sunfury Plasma Annihilator" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 4, Apocalyptic Barrage, Plasma Wave"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-            <entry id="601c-c568-70d1-2c3a" name="Mori Quake Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules>
-                <rule id="4d39-29d9-ff8c-3e69" name="Seismic Shock" hidden="false">
-                  <description>Units which suffer wounds or Hull Points lost from this attack may only move at half their usual maximum movement, may not Run, Charge or go Flat Out, and count as being in dangerous terrain one their next turn.</description>
-                  <modifiers/>
-                </rule>
-              </rules>
-              <profiles>
-                <profile id="63e4-d0c9-cba4-dfef" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Mori Quake Cannon" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;-360&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D/9/6"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Apocalyptic Blast, Seismic Shock, Concussion, Strikedown"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-            <entry id="7ff8-1df9-0c6d-0191" name="Arioch Titan Power Claw" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules>
-                <rule id="9072-3099-2cc7-490d" name="Machine Destroyer" hidden="false">
-                  <description>When Attacking any target with an armour value, rolls of 1 on the Destroyer Damage table may be re-rolled.</description>
-                  <modifiers/>
-                </rule>
-              </rules>
-              <profiles>
-                <profile id="68e1-d4d2-7dba-b28a" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Arioch Titan Power Claw" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Machine Destroyer"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-            <entry id="915b-0127-5492-2523" name="Macro-gatling Blaster" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="5f6c-9cd5-df3d-3d75" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Macro-gatling Blaster" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="10"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 6, Large Blast, Pinning"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-        <entryGroup id="bf83-c652-241e-956b" name="Carapace-mounted Weapons" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="9e3d-7147-989a-15a9" name="Two Apocalypse Missile Launchers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="4ac2-40e6-e4d9-b407" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Apocalypse Missile Launchers" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;-360&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 5, Apocalyptic Barrage"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-            <entry id="223e-67de-88d6-7f0b" name="Two Double-barrleed Turbo Laser Destructors" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="7826-e10e-77e3-110d" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Double-barrleed Turbo Laser Destructors" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="96&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 2, Large Blast"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-            <entry id="d1df-f5a9-89d2-da9b" name="Two Twin-linked Plasma Blastguns" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="f6ab-14d2-0cee-0322" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Titan Plasma Blastgun - Rapid" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 2, Massive Blast"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-                <profile id="00e3-f853-5f46-8d0c" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Titan Plasma Blastgun - Overload" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="96&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="10"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Apocalyptic Blast"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-            <entry id="fb61-cfe6-61da-9fcb" name="Two Reaver Laser Blasters" points="100.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="c85c-333d-c9e4-42b7" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Reaver Laser Blasters" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="96&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 3, Large Blast"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-            <entry id="2d64-504a-d54e-dfb3" name="Two Reaver Melta Cannons" points="100.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="35d5-b9fa-14b7-c840" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Reaver Melta Cannons" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="10"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Apocalyptic Blast, Melta"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-            <entry id="6912-5183-c7f6-eb83" name="Two Reaver Gatling Blasters" points="100.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="07b2-941d-77d6-6bb5" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Reaver Gatling Blasters" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 6, Large Blast, Pinning"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-            <entry id="0962-9665-e13b-ce1e" name="Two Vortex Missile Banks" points="150.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="8857-c076-1908-de05" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Vortex Missile Banks" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;-360&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Large Blast, Vortex, 2x One Use Only"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-            <entry id="b557-efb8-cd94-d149" name="Two Incinerator Missile Banks" points="75.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="1ca0-a01f-47f5-d915" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Incinerator Missile Banks" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;-360&quot;"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 10, Apocalyptic Barrage, No Cover Saves, One Use Only"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-      </entryGroups>
-      <modifiers/>
-      <rules>
-        <rule id="a6df-ac38-f5c5-9a1e" name="Fear" hidden="false">
-          <description>At the start of each Fight sub-phase, a unit in base contact with one or more enemy models that cause Fear must take a Leadership test (called a Fear test) before any blows are struck. If the test is passed, all is well and there is no effect. If the test is failed, the unit succumbs to fear – all models in the unit have their Weapon Skill reduced to 1 for the remainder of that Fight sub-phase. Note that a model that causes Fear is not itself immune to Fear, and will still need to take a Fear test if it is base contact with any enemy models that cause Fear.</description>
-          <modifiers/>
-        </rule>
-        <rule id="45a7-bbff-d0f8-62d3" name="Hammer of Wrath" hidden="false">
-          <description>If a model with this special rule ends its charge move in base or hull contact with an enemy model, it makes one additional Attack that hits automatically and is resolved at the model’s unmodified Strength with AP-. This Attack does not benefit from any of the model’s special rules (such as Furious Charge, Rending etc.). This Attack is resolved during the Fight sub-phase at the Initiative 10 step, but does not grant the model an additional Pile In move.
-
-If a model with this special rule charges a building or vehicle, the hit is resolved against the Armour Value of the facing the charging model is touching. If a model with this special rule charges a building or vehicle that is a Transport or a Chariot, the hit is resolved against the building or vehicle, not the occupants or the rider.</description>
-          <modifiers/>
-        </rule>
-        <rule id="ffa5-acb5-7f9f-b2d3" name="Invincible Behemoth" hidden="false">
-          <description>A Super-heavy vehicle is so large and strongly built that weapons which degrade the armour of smaller vehicles will not effect it. Because of this, any attack that says that the target model is destroyed, wrecked, Explodes! or is otherwise removed from play inflicts D3 Hull Points of damage on a Super-heavy vehicle instead.
-
-In addition, any attacks or special abilities that permanently lower the Armour Values of a target vehicle do not affect a Super-heavy vehicle. Note that attacks or abilities that count the Armour Value as being lower, but do not actually change it, work normally.</description>
-          <modifiers/>
-        </rule>
-        <rule id="28f8-c9a0-e6af-6208" name="Move Through Cover" hidden="false">
-          <description>A unit that contains at least one model with this special rule rolls an extra D6 when rolling to move through difficult terrain and is not slowed by charging through difficult terrain. In most circumstances, this will mean that, when moving, the unit rolls 3D6 and picks the highest roll. Furthermore, a model with the Move Through Cover special rule automatically passes Dangerous Terrain tests.</description>
-          <modifiers/>
-        </rule>
-        <rule id="07aa-2d46-a233-8faf" name="Relentless" hidden="false">
-          <description>Relentless models can shoot with Heavy, Salvo or Ordnance weapons, counting as stationary, even if they moved in the previous Movement phase. They are also allowed to charge in the same turn they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
-          <modifiers/>
-        </rule>
-        <rule id="2da4-ce7f-2fe6-5dcc" name="Smash" hidden="false">
-          <description>All of the close combat attacks, except Hammer of Wrath attacks, of a model with this special rule are resolved at AP2 (unless it’s attacking with an AP1 weapon). Additionally, when it makes its close combat attacks, it can choose instead to make a single Smash Attack. If it does so, roll To Hit as normal, but resolve the Attack at double the model’s Strength (to a maximum of 10). Furthermore, a model making a Smash Attack can re-roll its armour penetration rolls, but must abide by the second result.</description>
-          <modifiers/>
-        </rule>
-        <rule id="2096-b2ed-f873-4531" name="Strikedown" hidden="false">
-          <description>Any non-vehicle model that suffers one or more unsaved Wounds or passes one or more saving throws against an attack with the Strikedown special rule moves as if it is in difficult terrain until the end of its next turn. It is a good idea to mark affected models with counters or coins so that you remember.</description>
-          <modifiers/>
-        </rule>
-        <rule id="dfda-4334-fc77-acdd" name="Reactor Meltdown" hidden="false">
-          <description>Warlord Catastrophic Damage Table uses 12&quot;/24&quot;/36&quot; blast measurements
-
-D6                    Result                           S                 AP
- 1                   Explosion                    D/8/4             2/3/5
-2-3        Devastating Explosion        D/10/6           2/3/4
-4-6             Titanic Explosion            D/D/D            1/2/2</description>
-          <modifiers/>
-        </rule>
-        <rule id="d031-730d-06b6-15cd" name="Towering Monstrosity (Warlord)" hidden="false">
-          <description>The Warlord Titan may only be hit on a 6 by Infantry and Monstrous Creatures of any type in an assault, and on a 5 or 6 by Super-heavy Walkers and Gargantuan Creatures in an assault.
-
-The Warlord Titan may never be locked in an assault.
-
-The Warlord Titan is completely immune  to the effects of Haywire attacks, dangerous terrain, and psychic attacks other than Witchfire powers, which must attempt to damage it normally.
-
-The Warlord Titan&apos;s Stomp attack uses the Large Blast marker.
-
-The Warlord Titan&apos;s carapace-mounted weapons may not target models closer than 24&quot; from its hull, unless they are Flyers, Flying Monstrous Creatures or other Super-heavy vehicles or Gargantuan Monstrous Creatures.</description>
-          <modifiers/>
-        </rule>
-        <rule id="17eb-2215-8127-0e45" name="Reinforced Structure" hidden="false">
-          <description>The Warlord Titan has an invulnerable save of 5+ against any attacks that have breached its void shields.</description>
-          <modifiers/>
-        </rule>
-        <rule id="8367-f893-98a4-b5c3" name="World Burner" hidden="false">
-          <description>The Warlord Titan may use any of its Blast marker weapons to target areas of the battlefield, rather than enemy units if it wishes, including buildings and ruins, etc.</description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles>
-        <profile id="54ed-df39-3fc5-a0f5" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Warlord Battle Titan" hidden="false">
-          <characteristics>
-            <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="2"/>
-            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
-            <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="D"/>
-            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="15"/>
-            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="15"/>
-            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="14"/>
-            <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
-            <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="3"/>
-            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="30"/>
-            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Super-heavy Walker)"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="92bb-c0bb-f675-a3ea" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Armoured Ceramite" hidden="false">
-          <characteristics>
-            <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="5662-61f8-6de9-7460" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Void Shields" hidden="false">
-          <characteristics>
-            <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Warlord Titans have 6 Void Shields."/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links/>
-    </entry>
   </entries>
   <rules/>
   <links/>
@@ -31575,7 +31852,11 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
         </profile>
       </profiles>
-      <links/>
+      <links>
+        <link id="b4ab-657e-cc23-542e" targetId="893e92c2-a4b4-6646-8bac-bfa4ad7a776d" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
     <entry id="a5dbfed5-7768-9674-4650-71a5c5103417" name="Draznicht’s Ravagers" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
@@ -33267,6 +33548,10 @@ If marked, must generate 1 power from the discipline of the patron god, and no m
       <description>If a model with this rule suffers a Titanic Explosion! result on the Catastrophic Damage table, then all hits from the explosion are resolved as being hit by a Destroyer Weapon.</description>
       <modifiers/>
     </rule>
+    <rule id="3228-1288-5f1e-00fd" name="Relentless" hidden="false" book="BRB 2014">
+      <description>Relentless models can shoot with Heavy, Salvo or Ordnance weapons, counting as stationary, even if they moved in the previous Movement phase. They are also allowed to charge in the same turn they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
+      <modifiers/>
+    </rule>
     <rule id="7266bc83-5b4c-20cb-38aa-12125a5e62d4" name="Shred" hidden="false" page="0">
       <modifiers/>
     </rule>
@@ -33540,7 +33825,7 @@ Codex: Grey Knights
     </profile>
     <profile id="e4a96746-d9fc-bfb0-58fd-13fd3e3279f4" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Chaos Lord" hidden="false" page="0">
       <characteristics>
-        <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry"/>
+        <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="6"/>
         <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="5"/>
         <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
