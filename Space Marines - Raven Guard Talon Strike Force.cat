@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d6d8-5a97-c8cb-c27e" revision="2" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Raven Guard - Talon Strike Force" books="War Zone Damocles: Kauyon" authorName="whiskeyjuvenile" authorContact="" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d6d8-5a97-c8cb-c27e" revision="2" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Raven Guard - Talon Strike Force" books="War Zone Damocles: Kauyon" authorName="whiskeyjuvenile" authorContact="" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="3f13-d471-541f-67fc" name="Show FW" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -7229,7 +7229,7 @@
             </link>
           </links>
         </entryGroup>
-        <entryGroup id="64af-f4e3-a0af-fa22" name="Tactical Squad" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="64af-f4e3-a0af-fa22" name="Tactical Squad" minSelections="3" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -10521,50 +10521,35 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
             </link>
           </links>
         </entryGroup>
-        <entryGroup id="44ba-9a12-f934-f1cb" name="Special &amp; Heavy Weapons" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="44ba-9a12-f934-f1cb" name="Special or Heavy Weapon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <links>
             <link id="eb28-ff50-2bb9-ce36" targetId="4782-59ab-8af5-40b6" linkType="entry group">
-              <modifiers>
-                <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="44ba-9a12-f934-f1cb" childId="c80a-42fe-9056-c116" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="fa13-35d7-9893-1c0c" childId="ca3c-e7c9-114e-89e5" field="selections" type="equal to" value="9.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
             </link>
             <link id="c80a-42fe-9056-c116" targetId="390e-4156-8d81-4159" linkType="entry group">
-              <modifiers>
-                <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="44ba-9a12-f934-f1cb" childId="eb28-ff50-2bb9-ce36" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="fa13-35d7-9893-1c0c" childId="ca3c-e7c9-114e-89e5" field="selections" type="equal to" value="9.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
             </link>
           </links>
         </entryGroup>
-        <entryGroup id="0c0a-37bd-cf16-6ecd" name="Special Weapons" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="2924-723f-027b-7444" name="Special Weapon" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
-          <links/>
+          <modifiers>
+            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="fa13-35d7-9893-1c0c" childId="ca3c-e7c9-114e-89e5" field="selections" type="less than" value="9.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <links>
+            <link id="b138-3644-3329-ab3f" targetId="4782-59ab-8af5-40b6" linkType="entry group">
+              <modifiers/>
+            </link>
+          </links>
         </entryGroup>
       </entryGroups>
       <modifiers/>
@@ -12641,6 +12626,25 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
     </entry>
   </sharedEntries>
   <sharedEntryGroups>
+    <entryGroup id="02d3-565c-f8da-84fb" name="Captains" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <links>
+        <link id="35f6-cd19-012a-28d7" targetId="41fb-65ac-f6e8-505c" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="42b8-3998-90ff-3cef" targetId="cbe9-1ebf-6ec2-5594" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="d95f-734b-6fed-e376" targetId="3599-8e42-72ca-96ca" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="be05-e1b6-7433-84e9" targetId="e7df-ee0b-c660-3345" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
+    </entryGroup>
     <entryGroup id="4bd8-c261-1bcf-eb95" name="Chapter Relics *" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="b844-2a0d-4cff-082f" name="The Primarch&apos;s Wrath" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -12760,7 +12764,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           </profiles>
           <links/>
         </entry>
-        <entry id="c7a4-a92d-a3ee-b982" name="Swiftstrike and Murder" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entry id="c7a4-a92d-a3ee-b982" name="Swiftstrike and Murder" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -16027,25 +16031,6 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <entryGroups/>
       <modifiers/>
       <links/>
-    </entryGroup>
-    <entryGroup id="02d3-565c-f8da-84fb" name="Captains" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <links>
-        <link id="35f6-cd19-012a-28d7" targetId="41fb-65ac-f6e8-505c" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="42b8-3998-90ff-3cef" targetId="cbe9-1ebf-6ec2-5594" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="d95f-734b-6fed-e376" targetId="3599-8e42-72ca-96ca" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="be05-e1b6-7433-84e9" targetId="e7df-ee0b-c660-3345" linkType="entry">
-          <modifiers/>
-        </link>
-      </links>
     </entryGroup>
   </sharedEntryGroups>
   <sharedRules>
