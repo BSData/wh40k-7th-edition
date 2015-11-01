@@ -1117,7 +1117,25 @@
       <entries/>
       <entryGroups/>
       <modifiers/>
-      <rules/>
+      <rules>
+        <rule id="99c1-dd8e-d4c7-20a7" name="Ideal Mission Commander" hidden="true">
+          <description>If this Detachment is your Primary Detachment, you can choose to re-roll the result when rolling on the Warlord Traits table.</description>
+          <modifiers>
+            <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="force type" childId="5374616e6461726423232344415441232323" field="selections" type="instance of" value="0.0"/>
+                    <condition parentId="force type" childId="ce82-178d-1bda-b3ea" field="selections" type="instance of" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </rule>
+      </rules>
       <profiles/>
       <links/>
     </entry>
@@ -1701,56 +1719,14 @@
 updated by Eric Falsken, eric@everylittlething.net</description>
       <modifiers/>
     </rule>
-    <rule id="239b-f59a-36e4-b522" name="Ideal Mission Commander" hidden="true" book="">
-      <description>If this Detachment is your Primary Detachment, you can choose to re-roll the result when rolling on the Warlord Traits table.</description>
-      <modifiers>
-        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition parentId="roster" childId="da2e1335-92bc-0bd9-4c48-d21d6ae9ac22" field="selections" type="at least" value="1.0"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition parentId="force type" childId="5374616e6461726423232344415441232323" field="selections" type="instance of" value="0.0"/>
-                    <condition parentId="force type" childId="ce82-178d-1bda-b3ea" field="selections" type="instance of" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition parentId="roster" childId="da2e1335-92bc-0bd9-4c48-d21d6ae9ac22" field="selections" type="equal to" value="1.0"/>
-                <condition parentId="force type" childId="ce82-178d-1bda-b3ea" field="selections" type="instance of" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </rule>
-    <rule id="e5b1-d3e2-cc43-96f7" name="Coordinated Firepower" hidden="true" book="Codex: Tau Empire">
+    <rule id="e5b1-d3e2-cc43-96f7" name="Coordinated Firepower" hidden="false" book="Codex: Tau Empire">
       <description>Whenever a unit from a Hunter Contingent selects a target in the shooting phase, any number of other units from the same Detachment who can still shoot can add their firepower to the attack. These units must shoot the same target, resolving their shots as if they were a single unit - this includes the use of markerlight abilities. When 3 or more units combine their firepower, the firing models add 1 to their Ballistic Skill.</description>
       <modifiers>
-        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition parentId="roster" childId="da2e1335-92bc-0bd9-4c48-d21d6ae9ac22" field="selections" type="equal to" value="1.0"/>
-                <condition parentId="force type" childId="ce82-178d-1bda-b3ea" field="selections" type="instance of" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="hide" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="fb79-c330-e68b-36f1" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
     </rule>
@@ -1978,9 +1954,6 @@ updated by Eric Falsken, eric@everylittlething.net</description>
     <link id="8490-4d69-2bf5-54f9" targetId="30c7-d50a-37d8-3e4f" linkType="entry" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
       <modifiers/>
     </link>
-    <link id="9fbc-8a16-ed93-7787" targetId="b7cd5334-aab0-8f76-3cab-7bd6582c5183" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
-      <modifiers/>
-    </link>
     <link id="6d77-2363-7d98-fe92" targetId="a86b-61a0-0372-1989" linkType="entry" categoryId="d713cda3-5d0f-40d8-b621-69233263ec2a">
       <modifiers/>
     </link>
@@ -1997,6 +1970,9 @@ updated by Eric Falsken, eric@everylittlething.net</description>
       <modifiers/>
     </link>
     <link id="11f0-2d0a-c7ff-0dc5" targetId="33aa-38e6-4dc2-6f15" linkType="entry" categoryId="d713cda3-5d0f-40d8-b621-69233263ec2a">
+      <modifiers/>
+    </link>
+    <link id="674f-f9fa-e780-ed95" targetId="3b20-4cfa-d44c-a586" linkType="entry" categoryId="ef2b-83bd-1bad-5742">
       <modifiers/>
     </link>
   </links>
@@ -2159,6 +2135,28 @@ updated by Eric Falsken, eric@everylittlething.net</description>
           <modifiers/>
         </rule>
       </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="3b20-4cfa-d44c-a586" name="Assigned Air Caste Asset" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="5a24-fe09-a9a3-4527" name="Asset - required 1" defaultEntryId="3dbb-df71-0b70-5a3f" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="3dbb-df71-0b70-5a3f" targetId="13602f3a-b73f-1b41-17a0-dca7782d4bf0" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="a446-b5fe-4aaa-0b18" targetId="37423448-21bf-e3ff-cb66-f2cbbb21fe3a" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
       <profiles/>
       <links/>
     </entry>
@@ -2894,9 +2892,9 @@ Killing Blade: Rending until the end of the current phase.</description>
         </link>
         <link id="f4d6-53e4-a693-bc00" targetId="de74-09b4-fcf9-a083" linkType="entry group">
           <modifiers>
-            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="a975-2a84-e980-9464" childId="a4c6-49b2-1e7d-6913" field="selections" type="equal to" value="0.0"/>
+                <condition parentId="a975-2a84-e980-9464" childId="a4c6-49b2-1e7d-6913" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -3976,7 +3974,18 @@ Killing Blade: Rending until the end of the current phase.</description>
     </entry>
     <entry id="b896-523e-4f11-12c0" name="Drone Network" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
-      <entryGroups/>
+      <entryGroups>
+        <entryGroup id="8e33-8f26-4ab0-95c5" name="Drone team - required 1" defaultEntryId="3a1d-3fc9-a288-c738" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="3a1d-3fc9-a288-c738" targetId="2cd4e583-478c-4c23-893d-d49f426df7f3" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
       <modifiers/>
       <rules/>
       <profiles/>
@@ -5013,7 +5022,7 @@ Killing Blade: Rending until the end of the current phase.</description>
             </link>
           </links>
         </entryGroup>
-        <entryGroup id="297d-8f6b-051f-0e89" name="Infantry - 3 to 6" minSelections="3" maxSelections="6" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="297d-8f6b-051f-0e89" name="Troops - 3 to 6" defaultEntryId="ac62-febb-9875-5749" minSelections="3" maxSelections="6" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -5044,7 +5053,7 @@ Killing Blade: Rending until the end of the current phase.</description>
             </link>
           </links>
         </entryGroup>
-        <entryGroup id="7a24-50ef-d52b-6546" name="Battlesuits - 1 to 3" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="7a24-50ef-d52b-6546" name="Elites - 1 to 3" defaultEntryId="e599-13c7-1793-cd6f" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -5063,7 +5072,7 @@ Killing Blade: Rending until the end of the current phase.</description>
             </link>
           </links>
         </entryGroup>
-        <entryGroup id="dbc0-94c6-b540-ce7e" name="Scouts - 1 to 3" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="dbc0-94c6-b540-ce7e" name="Fast Attack - 1 to 3" defaultEntryId="7b0a-fe9e-3085-ad2c" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -5082,7 +5091,7 @@ Killing Blade: Rending until the end of the current phase.</description>
             </link>
           </links>
         </entryGroup>
-        <entryGroup id="14c6-42f4-0b46-7075" name="Support - 1 to 3" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="14c6-42f4-0b46-7075" name="Heavy Support - 1 to 3" defaultEntryId="932a-3c47-b344-4b6f" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -5487,7 +5496,7 @@ Killing Blade: Rending until the end of the current phase.</description>
                   <modifiers/>
                   <links/>
                 </entryGroup>
-                <entryGroup id="19ef-ddae-c3b7-dbc0" name="Defensive Weapon System" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entryGroup id="19ef-ddae-c3b7-dbc0" name="Defensive Weapon System" defaultEntryId="2950-b533-a8aa-1770" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries>
                     <entry id="2950-b533-a8aa-1770" name="Twin-linked Flamer" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                       <entries/>
@@ -6910,11 +6919,11 @@ Killing Blade: Rending until the end of the current phase.</description>
         <link id="28d0cfbb-6516-086c-19b9-4041667096ee" targetId="78ddae03-5da8-9e14-15b3-6a24882e5b8f" linkType="rule">
           <modifiers/>
         </link>
-        <link id="0a2e5c2b-4d77-95a6-cbaa-869dcd6160a6" targetId="c96925a7-06d9-cb03-1cbb-3022890c0ce9" linkType="entry group">
+        <link id="0a2e5c2b-4d77-95a6-cbaa-869dcd6160a6" targetId="de74-09b4-fcf9-a083" linkType="entry group">
           <modifiers>
-            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="b4b37bde-b8c3-48f4-af53-bdc989ad2cfd" childId="ebb5c9f7-bd81-cde1-786c-b8fcf7c0ae37" field="selections" type="equal to" value="0.0"/>
+                <condition parentId="b4b37bde-b8c3-48f4-af53-bdc989ad2cfd" childId="ebb5c9f7-bd81-cde1-786c-b8fcf7c0ae37" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -7559,9 +7568,9 @@ Killing Blade: Rending until the end of the current phase.</description>
         </link>
         <link id="038e-c7e0-3c55-69b2" targetId="de74-09b4-fcf9-a083" linkType="entry group">
           <modifiers>
-            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="2559412b-ba0a-4a9b-9ded-581e828cb142" childId="e69e9fe3-a635-4b28-0726-c3c7175b9bb8" field="selections" type="equal to" value="0.0"/>
+                <condition parentId="2559412b-ba0a-4a9b-9ded-581e828cb142" childId="e69e9fe3-a635-4b28-0726-c3c7175b9bb8" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -7632,6 +7641,248 @@ Killing Blade: Rending until the end of the current phase.</description>
       <rules/>
       <profiles/>
       <links/>
+    </entry>
+    <entry id="5dff-af07-1b47-3871" name="Tidewall Defence Network" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="ae1d-06cc-c8aa-8eac" name="Shieldlines - 4 required" defaultEntryId="1bb9-ecd5-b011-53dd" minSelections="4" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="1bb9-ecd5-b011-53dd" targetId="a86b-61a0-0372-1989" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="e3aa-c138-1b3b-b8fc" name="Platforms - 1 required" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="82cb-c7d8-533c-11cd" targetId="d644-7ee2-94f1-7152" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="b1a3-db5f-3b24-12c1" targetId="2d3a-567e-0e5f-a035" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="4347-fd1b-5e54-12d2" name="Indomitable Position" hidden="false">
+          <description>Models with the Tau Empire Faction have the Stubborn special rule whilst on a Tidewall Shieldline from a Tidewall Defence Network.</description>
+          <modifiers/>
+        </rule>
+        <rule id="d397-828d-998e-a731" name="Information Relay" hidden="false">
+          <description>Models with the Tau Empire Faction on a Tidewall Shieldline from a Tidewall Defence Network can operate the railgun or activate the Drones on its central platform.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="2d3a-567e-0e5f-a035" name="Tidewall Droneport" points="60.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="c926-0604-40e9-40d9" name="Drones - 4 required" defaultEntryId="1b23-7f17-5fd1-2f23" minSelections="4" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="1b23-7f17-5fd1-2f23" targetId="7919-95f8-49d5-c07e" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="7c29-1ede-dd52-6843" targetId="16dc-e048-6fca-21a1" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="5480-b944-113c-5801" targetId="e529-028c-7c50-c786" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="9b94-0d1d-1238-a0d9" name="Drone Control Systems" hidden="false">
+          <description>The four Drones start the game attached to the platform. They cannot perform any actions or be attacked while they remain attached. If the platform is occupied by any model with the Tau Empire Faction, then the Drones can be activated at the start of the occupying model&apos;s Movement Phase. When activated, the Drones immediately detach themselves from the platform in the same manner as Drones detaching from a vehicle (see Codex: Tau Empire). They are treated as part of the army that activated them for the rest of the battle, even if their platform is later abandoned.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="0c4c-89c6-7a5c-e343" profileTypeId="286c-0cd4-7630-47d0" name="Tidewall Droneport" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="83f8-a458-93f9-3e46" name="Armour Value"/>
+            <characteristic characteristicId="0e9c-76b3-2877-614d" name="Transport Capacity"/>
+            <characteristic characteristicId="13de-08da-586d-f7c0" name="Access Points"/>
+            <characteristic characteristicId="0767-d18e-a48d-3b39" name="Fire Points"/>
+            <characteristic characteristicId="d1d7-bcc6-18cd-c948" name="Hull Points"/>
+            <characteristic characteristicId="ff97-f5f0-521b-eaf4" name="Building Type" value="Battlefield Debris (defence line)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="434f-fa30-ac63-c550" targetId="5a9b-3ca0-b6c9-d96f" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="0590-1ad5-1a87-1683" targetId="9300-c465-44ac-b38f" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="e29c-92b9-99b1-7505" name="Tidewall Gunfort" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="78dd-6049-0572-9381" name="Gun Emplacements - 3 required" defaultEntryId="1cb7-cf92-6dc0-0ead" minSelections="3" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="1cb7-cf92-6dc0-0ead" targetId="d644-7ee2-94f1-7152" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="9226-61d3-14be-a95a" name="Coordinated Strike" hidden="false">
+          <description>Once per turn, a model firing a railgun from a Tidewall Gunfort can make a coordinated strike. If it does so, all of the railguns from the Gunfort fire at the same target using the model&apos;s BS, and may not be fired separately in the same shooting phase. Railguns firing in a coordinated strike add 1 to their Strength if using submunitions, and recieve the Armourbane special rule if using solid shot.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="d644-7ee2-94f1-7152" name="Tidewall Gunrig" points="85.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="7fdf-7d8e-6ba5-f7b7" name="Twin-linked Railgun with Submunitions" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="3ad1-9c76-6ebd-40d1" targetId="1e66e774-bb4a-20f4-bf64-53f63b1136b1" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="4dad-8178-2c63-add3" targetId="36d986c0-8e47-adaf-e68e-97761762da8f" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="913c-ae25-0813-af13" name="Identification Protocols" hidden="false">
+          <description>The Twin-linked Railgun may only be fired by models with the Tau Empire Faction that are on the Tidewall Gunrig.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="c5b8-c818-cfce-9203" profileTypeId="286c-0cd4-7630-47d0" name="Tidewall Gunrig" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="83f8-a458-93f9-3e46" name="Armour Value"/>
+            <characteristic characteristicId="0e9c-76b3-2877-614d" name="Transport Capacity"/>
+            <characteristic characteristicId="13de-08da-586d-f7c0" name="Access Points"/>
+            <characteristic characteristicId="0767-d18e-a48d-3b39" name="Fire Points"/>
+            <characteristic characteristicId="d1d7-bcc6-18cd-c948" name="Hull Points"/>
+            <characteristic characteristicId="ff97-f5f0-521b-eaf4" name="Building Type" value="Battlefield Debris (defence line and gun emplacement)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="07f3-70b6-c88e-5260" targetId="5a9b-3ca0-b6c9-d96f" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="dd3a-c583-a3a4-b899" targetId="9300-c465-44ac-b38f" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="33aa-38e6-4dc2-6f15" name="Tidewall Rampart" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Tidewall Rampart Dataslate">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="92a0-001c-43f9-79f7" name="Shieldlines - at least 2" defaultEntryId="5981-1b20-f6bd-90ae" minSelections="2" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="5981-1b20-f6bd-90ae" targetId="a86b-61a0-0372-1989" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="9eac-f364-6fe1-5af2" name="Gunrigs - 1 to 2" defaultEntryId="0deb-7729-bb02-3543" minSelections="1" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="0deb-7729-bb02-3543" targetId="d644-7ee2-94f1-7152" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="064c-ef9f-4c75-7712" name="Droneports - 1 to 2" defaultEntryId="95b1-a37f-94d0-8bbb" minSelections="1" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="95b1-a37f-94d0-8bbb" targetId="2d3a-567e-0e5f-a035" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="74ce-41a4-f205-4849" name="Telemetry Relay" hidden="false">
+          <description>In the Shooting phase, one model with the Tau Empire Faction that is on a Tidewall Droneport can upload telemetry data for an enemy unit within its line of sight instead of shooting. If it does so, a model firing a Tidewall Gunrig in the same Rampart against that enemy unit adds 1 to its BS and gains the Tank Hunter and Monster Hunter special rules until the end of the phase.</description>
+          <modifiers/>
+        </rule>
+        <rule id="1021-8422-ed25-6ea7" name="Field Network" hidden="false">
+          <description>Roll a dice each time a successful cover save is made for a model on a Tidewall Gunrig or Droneport if one of the Shieldlines&apos; barriers is between the attacker and the target. On a roll of 6, the attacking unit suffers 1 Randomly Allocated Wound or glancing hit, resolved at the same AP as the attacking weapon.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="a86b-61a0-0372-1989" name="Tidewall Shieldline" points="60.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="d289-c9a9-7bb0-00c6" name="Tidewall Field" hidden="false">
+          <description>Roll a dice each time a successful cover save is made for a model within 1&quot; of a Tidewall Shieldline&apos;s energy barrier, so long as the barrier is between the attacker and the target. On a roll of 6 the attacking unit suffers 1 Randomly Allocated Wound or glancing hit, resolved at the same AP as the attacking weapon.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="6da8-184d-0b71-864e" profileTypeId="286c-0cd4-7630-47d0" name="Tidewall Shieldline" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="83f8-a458-93f9-3e46" name="Armour Value"/>
+            <characteristic characteristicId="0e9c-76b3-2877-614d" name="Transport Capacity"/>
+            <characteristic characteristicId="13de-08da-586d-f7c0" name="Access Points"/>
+            <characteristic characteristicId="0767-d18e-a48d-3b39" name="Fire Points"/>
+            <characteristic characteristicId="d1d7-bcc6-18cd-c948" name="Hull Points"/>
+            <characteristic characteristicId="ff97-f5f0-521b-eaf4" name="Building Type" value="Battlefield Debris (defense line)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="2bb6-066c-aa52-a719" targetId="5a9b-3ca0-b6c9-d96f" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="424e-520d-eefb-b610" targetId="9300-c465-44ac-b38f" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
     <entry id="3367a5f7-742d-419a-ba07-fa09356eb836" name="Tiger Shark AX-1-0" points="660.0" categoryId="ee338739-6edf-4620-a2cc-f38d5dd21606" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="IA Apocalypse (2013)" page="124">
       <entries>
@@ -8417,7 +8668,7 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
         </rule>
       </rules>
       <profiles>
-        <profile id="6649-a6a7-f543-60d2" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="TX7 Devilfish" hidden="false">
+        <profile id="6649-a6a7-f543-60d2" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="TY7 Devilfish" hidden="false">
           <characteristics>
             <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="3"/>
             <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="12"/>
@@ -8568,11 +8819,15 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
           </modifiers>
           <rules/>
           <profiles/>
-          <links/>
+          <links>
+            <link id="910a-3f0a-b95c-b75e" targetId="706ac166-91de-9abc-d577-efab540d20fc" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="30e9d74a-da39-32e0-3cc3-8881b52ae2fc" name="Drones - up to 2" defaultEntryId="6059-8d99-9180-24b4" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="30e9d74a-da39-32e0-3cc3-8881b52ae2fc" name="Drones - up to 2 per member" defaultEntryId="6059-8d99-9180-24b4" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
@@ -9548,11 +9803,11 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
         <link id="92634253-94ec-71c9-fc77-329eb824e2f6" targetId="78ddae03-5da8-9e14-15b3-6a24882e5b8f" linkType="rule">
           <modifiers/>
         </link>
-        <link id="70282654-48dd-8ac4-5069-6af59f7f9075" targetId="c96925a7-06d9-cb03-1cbb-3022890c0ce9" linkType="entry group">
+        <link id="70282654-48dd-8ac4-5069-6af59f7f9075" targetId="158b-68f3-ebd5-5192" linkType="entry group">
           <modifiers>
-            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="490bcf2a-9457-48c1-aa7d-8180048b2d1b" childId="1ca5594c-3abf-5265-6afc-46329def8672" field="selections" type="equal to" value="0.0"/>
+                <condition parentId="490bcf2a-9457-48c1-aa7d-8180048b2d1b" childId="1ca5594c-3abf-5265-6afc-46329def8672" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -10210,7 +10465,7 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="a350-7cbe-325f-6cfd" name="Drones - max 2 per member" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="a350-7cbe-325f-6cfd" name="Drones - up to 2 per member" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
@@ -10831,248 +11086,6 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
       <profiles/>
       <links/>
     </entry>
-    <entry id="a86b-61a0-0372-1989" name="Tidewall Shieldline" points="60.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules>
-        <rule id="d289-c9a9-7bb0-00c6" name="Tidewall Field" hidden="false">
-          <description>Roll a dice each time a successful cover save is made for a model within 1&quot; of a Tidewall Shieldline&apos;s energy barrier, so long as the barrier is between the attacker and the target. On a roll of 6 the attacking unit suffers 1 Randomly Allocated Wound or glancing hit, resolved at the same AP as the attacking weapon.</description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles>
-        <profile id="6da8-184d-0b71-864e" profileTypeId="286c-0cd4-7630-47d0" name="Tidewall Shieldline" hidden="false">
-          <characteristics>
-            <characteristic characteristicId="83f8-a458-93f9-3e46" name="Armour Value"/>
-            <characteristic characteristicId="0e9c-76b3-2877-614d" name="Transport Capacity"/>
-            <characteristic characteristicId="13de-08da-586d-f7c0" name="Access Points"/>
-            <characteristic characteristicId="0767-d18e-a48d-3b39" name="Fire Points"/>
-            <characteristic characteristicId="d1d7-bcc6-18cd-c948" name="Hull Points"/>
-            <characteristic characteristicId="ff97-f5f0-521b-eaf4" name="Building Type" value="Battlefield Debris (defense line)"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links>
-        <link id="2bb6-066c-aa52-a719" targetId="5a9b-3ca0-b6c9-d96f" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="424e-520d-eefb-b610" targetId="9300-c465-44ac-b38f" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="2d3a-567e-0e5f-a035" name="Tidewall Droneport" points="60.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="c926-0604-40e9-40d9" name="Drones - 4 required" defaultEntryId="1b23-7f17-5fd1-2f23" minSelections="4" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="1b23-7f17-5fd1-2f23" targetId="7919-95f8-49d5-c07e" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="7c29-1ede-dd52-6843" targetId="16dc-e048-6fca-21a1" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="5480-b944-113c-5801" targetId="e529-028c-7c50-c786" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-      </entryGroups>
-      <modifiers/>
-      <rules>
-        <rule id="9b94-0d1d-1238-a0d9" name="Drone Control Systems" hidden="false">
-          <description>The four Drones start the game attached to the platform. They cannot perform any actions or be attacked while they remain attached. If the platform is occupied by any model with the Tau Empire Faction, then the Drones can be activated at the start of the occupying model&apos;s Movement Phase. When activated, the Drones immediately detach themselves from the platform in the same manner as Drones detaching from a vehicle (see Codex: Tau Empire). They are treated as part of the army that activated them for the rest of the battle, even if their platform is later abandoned.</description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles>
-        <profile id="0c4c-89c6-7a5c-e343" profileTypeId="286c-0cd4-7630-47d0" name="Tidewall Droneport" hidden="false">
-          <characteristics>
-            <characteristic characteristicId="83f8-a458-93f9-3e46" name="Armour Value"/>
-            <characteristic characteristicId="0e9c-76b3-2877-614d" name="Transport Capacity"/>
-            <characteristic characteristicId="13de-08da-586d-f7c0" name="Access Points"/>
-            <characteristic characteristicId="0767-d18e-a48d-3b39" name="Fire Points"/>
-            <characteristic characteristicId="d1d7-bcc6-18cd-c948" name="Hull Points"/>
-            <characteristic characteristicId="ff97-f5f0-521b-eaf4" name="Building Type" value="Battlefield Debris (defence line)"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links>
-        <link id="434f-fa30-ac63-c550" targetId="5a9b-3ca0-b6c9-d96f" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="0590-1ad5-1a87-1683" targetId="9300-c465-44ac-b38f" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="d644-7ee2-94f1-7152" name="Tidewall Gunrig" points="85.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries>
-        <entry id="7fdf-7d8e-6ba5-f7b7" name="Twin-linked Railgun with Submunitions" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="3ad1-9c76-6ebd-40d1" targetId="1e66e774-bb4a-20f4-bf64-53f63b1136b1" linkType="profile">
-              <modifiers/>
-            </link>
-            <link id="4dad-8178-2c63-add3" targetId="36d986c0-8e47-adaf-e68e-97761762da8f" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-      </entries>
-      <entryGroups/>
-      <modifiers/>
-      <rules>
-        <rule id="913c-ae25-0813-af13" name="Identification Protocols" hidden="false">
-          <description>The Twin-linked Railgun may only be fired by models with the Tau Empire Faction that are on the Tidewall Gunrig.</description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles>
-        <profile id="c5b8-c818-cfce-9203" profileTypeId="286c-0cd4-7630-47d0" name="Tidewall Gunrig" hidden="false">
-          <characteristics>
-            <characteristic characteristicId="83f8-a458-93f9-3e46" name="Armour Value"/>
-            <characteristic characteristicId="0e9c-76b3-2877-614d" name="Transport Capacity"/>
-            <characteristic characteristicId="13de-08da-586d-f7c0" name="Access Points"/>
-            <characteristic characteristicId="0767-d18e-a48d-3b39" name="Fire Points"/>
-            <characteristic characteristicId="d1d7-bcc6-18cd-c948" name="Hull Points"/>
-            <characteristic characteristicId="ff97-f5f0-521b-eaf4" name="Building Type" value="Battlefield Debris (defence line and gun emplacement)"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links>
-        <link id="07f3-70b6-c88e-5260" targetId="5a9b-3ca0-b6c9-d96f" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="dd3a-c583-a3a4-b899" targetId="9300-c465-44ac-b38f" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="e29c-92b9-99b1-7505" name="Tidewall Gunfort" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="78dd-6049-0572-9381" name="Gun Emplacements - 3 required" defaultEntryId="1cb7-cf92-6dc0-0ead" minSelections="3" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="1cb7-cf92-6dc0-0ead" targetId="d644-7ee2-94f1-7152" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-      </entryGroups>
-      <modifiers/>
-      <rules>
-        <rule id="9226-61d3-14be-a95a" name="Coordinated Strike" hidden="false">
-          <description>Once per turn, a model firing a railgun from a Tidewall Gunfort can make a coordinated strike. If it does so, all of the railguns from the Gunfort fire at the same target using the model&apos;s BS, and may not be fired separately in the same shooting phase. Railguns firing in a coordinated strike add 1 to their Strength if using submunitions, and recieve the Armourbane special rule if using solid shot.</description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="5dff-af07-1b47-3871" name="Tidewall Defence Network" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="ae1d-06cc-c8aa-8eac" name="Shieldlines - 4 required" defaultEntryId="1bb9-ecd5-b011-53dd" minSelections="4" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="1bb9-ecd5-b011-53dd" targetId="a86b-61a0-0372-1989" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-        <entryGroup id="e3aa-c138-1b3b-b8fc" name="Platforms - 1 required" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="82cb-c7d8-533c-11cd" targetId="d644-7ee2-94f1-7152" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="b1a3-db5f-3b24-12c1" targetId="2d3a-567e-0e5f-a035" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-      </entryGroups>
-      <modifiers/>
-      <rules>
-        <rule id="4347-fd1b-5e54-12d2" name="Indomitable Position" hidden="false">
-          <description>Models with the Tau Empire Faction have the Stubborn special rule whilst on a Tidewall Shieldline from a Tidewall Defence Network.</description>
-          <modifiers/>
-        </rule>
-        <rule id="d397-828d-998e-a731" name="Information Relay" hidden="false">
-          <description>Models with the Tau Empire Faction on a Tidewall Shieldline from a Tidewall Defence Network can operate the railgun or activate the Drones on its central platform.</description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="33aa-38e6-4dc2-6f15" name="Tidewall Rampart" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Tidewall Rampart Dataslate">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="92a0-001c-43f9-79f7" name="Shieldlines - at least 2" defaultEntryId="5981-1b20-f6bd-90ae" minSelections="2" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="5981-1b20-f6bd-90ae" targetId="a86b-61a0-0372-1989" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-        <entryGroup id="9eac-f364-6fe1-5af2" name="Gunrigs - 1 to 2" defaultEntryId="0deb-7729-bb02-3543" minSelections="1" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="0deb-7729-bb02-3543" targetId="d644-7ee2-94f1-7152" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-        <entryGroup id="064c-ef9f-4c75-7712" name="Droneports - 1 to 2" defaultEntryId="95b1-a37f-94d0-8bbb" minSelections="1" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="95b1-a37f-94d0-8bbb" targetId="2d3a-567e-0e5f-a035" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-      </entryGroups>
-      <modifiers/>
-      <rules>
-        <rule id="74ce-41a4-f205-4849" name="Telemetry Relay" hidden="false">
-          <description>In the Shooting phase, one model with the Tau Empire Faction that is on a Tidewall Droneport can upload telemetry data for an enemy unit within its line of sight instead of shooting. If it does so, a model firing a Tidewall Gunrig in the same Rampart against that enemy unit adds 1 to its BS and gains the Tank Hunter and Monster Hunter special rules until the end of the phase.</description>
-          <modifiers/>
-        </rule>
-        <rule id="1021-8422-ed25-6ea7" name="Field Network" hidden="false">
-          <description>Roll a dice each time a successful cover save is made for a model on a Tidewall Gunrig or Droneport if one of the Shieldlines&apos; barriers is between the attacker and the target. On a roll of 6, the attacking unit suffers 1 Randomly Allocated Wound or glancing hit, resolved at the same AP as the attacking weapon.</description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles/>
-      <links/>
-    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="c96925a7-06d9-cb03-1cbb-3022890c0ce9" name="Drones - up to 2" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -11091,7 +11104,7 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
         </link>
       </links>
     </entryGroup>
-    <entryGroup id="de74-09b4-fcf9-a083" name="Drones - up to 2 (infantry)" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="de74-09b4-fcf9-a083" name="Drones - up to 2 (requires Shas&apos;ui)" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
       <modifiers/>
@@ -11110,7 +11123,7 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
         </link>
       </links>
     </entryGroup>
-    <entryGroup id="c1a5be84-e87a-62c0-e29b-b6af21ae0d8f" name="Drones - up to 2 for each Member" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="c1a5be84-e87a-62c0-e29b-b6af21ae0d8f" name="Drones - up to 2 per member" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
       <modifiers/>
@@ -11662,6 +11675,22 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
       <modifiers/>
       <links/>
     </entryGroup>
+    <entryGroup id="158b-68f3-ebd5-5192" name="Drones - up to 2 (requires Shas&apos;vre)" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <links>
+        <link id="c7f7-099b-ee8e-773a" targetId="7919-95f8-49d5-c07e" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="91e6-0784-91a3-d238" targetId="16dc-e048-6fca-21a1" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="f7ab-1b5c-a796-82ec" targetId="e529-028c-7c50-c786" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
+    </entryGroup>
   </sharedEntryGroups>
   <sharedRules>
     <rule id="2aa527e2-c420-4192-80f6-deedf1106c06" name="Acute Senses" hidden="false" book="Warhammer 40k rulebook" page="33">
@@ -11725,6 +11754,10 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
       <description>Whilst a unit with this special rule includes 3 vehicles or MCs, all vehicles and MCs in the unit have +1 BS.</description>
       <modifiers/>
     </rule>
+    <rule id="5a9b-3ca0-b6c9-d96f" name="Firebase" hidden="false">
+      <description>Re-roll To Hit rolls of 1 for shooting attacks made by models with the Tau Empire Faction that are on this Fortification.</description>
+      <modifiers/>
+    </rule>
     <rule id="e072383f-af9b-dd0f-c13f-1db67b060808" name="Fleet" hidden="false" book="Warhammer 40k rulebook" page="35">
       <modifiers/>
     </rule>
@@ -11761,6 +11794,10 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
     </rule>
     <rule id="db2066fc-3494-7d90-531d-92f63950540c" name="Marker Beacon" hidden="false" page="38">
       <description>Tau units deploying by means of Deep Strike rule to a point visible to the vehicle may re-roll the Scatter dice. Note that the vehicle must already be on the table at the start of the turn for the Marker Beacon to be used.</description>
+      <modifiers/>
+    </rule>
+    <rule id="9300-c465-44ac-b38f" name="Mobile Defence Position" hidden="false">
+      <description>If you brought this Fortification as part of your army, you may move it up to 6&quot; in the Movement Phase. It cannot move if there are any enemy models on it, and may only carry friendly models if all members of their unit are on it. Models carried with it are treated as being stationary for the purposes of firing weapons, but cannot move themselves in the same phase. This Fortification can only move over open ground, and cannot move within 1&quot; of enemy models.</description>
       <modifiers/>
     </rule>
     <rule id="633c41e7-402b-f964-0575-b851d9f51dce" name="Move Through Cover" hidden="false" book="Warhammer 40k rulebook" page="40">
@@ -11874,14 +11911,6 @@ Scour: (Markerlight Cost 1+) For each markerlight counter expended on this abili
       <modifiers/>
     </rule>
     <rule id="5a03ff44-727c-e381-47ca-05f5a44d9c4a" name="Very Bulky" hidden="false" book="Warhammer 40k rulebook" page="35">
-      <modifiers/>
-    </rule>
-    <rule id="5a9b-3ca0-b6c9-d96f" name="Firebase" hidden="false">
-      <description>Re-roll To Hit rolls of 1 for shooting attacks made by models with the Tau Empire Faction that are on this Fortification.</description>
-      <modifiers/>
-    </rule>
-    <rule id="9300-c465-44ac-b38f" name="Mobile Defence Position" hidden="false">
-      <description>If you brought this Fortification as part of your army, you may move it up to 6&quot; in the Movement Phase. It cannot move if there are any enemy models on it, and may only carry friendly models if all members of their unit are on it. Models carried with it are treated as being stationary for the purposes of firing weapons, but cannot move themselves in the same phase. This Fortification can only move over open ground, and cannot move within 1&quot; of enemy models.</description>
       <modifiers/>
     </rule>
   </sharedRules>
