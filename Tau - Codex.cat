@@ -1117,7 +1117,25 @@
       <entries/>
       <entryGroups/>
       <modifiers/>
-      <rules/>
+      <rules>
+        <rule id="99c1-dd8e-d4c7-20a7" name="Ideal Mission Commander" hidden="true">
+          <description>If this Detachment is your Primary Detachment, you can choose to re-roll the result when rolling on the Warlord Traits table.</description>
+          <modifiers>
+            <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="force type" childId="5374616e6461726423232344415441232323" field="selections" type="instance of" value="0.0"/>
+                    <condition parentId="force type" childId="ce82-178d-1bda-b3ea" field="selections" type="instance of" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </rule>
+      </rules>
       <profiles/>
       <links/>
     </entry>
@@ -1701,56 +1719,14 @@
 updated by Eric Falsken, eric@everylittlething.net</description>
       <modifiers/>
     </rule>
-    <rule id="239b-f59a-36e4-b522" name="Ideal Mission Commander" hidden="true" book="">
-      <description>If this Detachment is your Primary Detachment, you can choose to re-roll the result when rolling on the Warlord Traits table.</description>
-      <modifiers>
-        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition parentId="roster" childId="da2e1335-92bc-0bd9-4c48-d21d6ae9ac22" field="selections" type="at least" value="1.0"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition parentId="force type" childId="5374616e6461726423232344415441232323" field="selections" type="instance of" value="0.0"/>
-                    <condition parentId="force type" childId="ce82-178d-1bda-b3ea" field="selections" type="instance of" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition parentId="roster" childId="da2e1335-92bc-0bd9-4c48-d21d6ae9ac22" field="selections" type="equal to" value="1.0"/>
-                <condition parentId="force type" childId="ce82-178d-1bda-b3ea" field="selections" type="instance of" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </rule>
-    <rule id="e5b1-d3e2-cc43-96f7" name="Coordinated Firepower" hidden="true" book="Codex: Tau Empire">
+    <rule id="e5b1-d3e2-cc43-96f7" name="Coordinated Firepower" hidden="false" book="Codex: Tau Empire">
       <description>Whenever a unit from a Hunter Contingent selects a target in the shooting phase, any number of other units from the same Detachment who can still shoot can add their firepower to the attack. These units must shoot the same target, resolving their shots as if they were a single unit - this includes the use of markerlight abilities. When 3 or more units combine their firepower, the firing models add 1 to their Ballistic Skill.</description>
       <modifiers>
-        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition parentId="roster" childId="da2e1335-92bc-0bd9-4c48-d21d6ae9ac22" field="selections" type="equal to" value="1.0"/>
-                <condition parentId="force type" childId="ce82-178d-1bda-b3ea" field="selections" type="instance of" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="hide" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="fb79-c330-e68b-36f1" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
     </rule>
