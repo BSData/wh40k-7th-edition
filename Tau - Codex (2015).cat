@@ -1719,17 +1719,6 @@
 updated by Eric Falsken, eric@everylittlething.net</description>
       <modifiers/>
     </rule>
-    <rule id="e5b1-d3e2-cc43-96f7" name="Coordinated Firepower" hidden="false" book="Codex: Tau Empire">
-      <description>Whenever a unit from a Hunter Contingent selects a target in the shooting phase, any number of other units from the same Detachment who can still shoot can add their firepower to the attack. These units must shoot the same target, resolving their shots as if they were a single unit - this includes the use of markerlight abilities. When 3 or more units combine their firepower, the firing models add 1 to their Ballistic Skill.</description>
-      <modifiers>
-        <modifier type="hide" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="fb79-c330-e68b-36f1" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-    </rule>
   </rules>
   <links>
     <link id="5d8ca185-ab0c-dc2a-2c3b-13b12a7157d2" targetId="c37adcc6-69a3-4281-be3b-afc70cbafa52" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
@@ -1973,6 +1962,21 @@ updated by Eric Falsken, eric@everylittlething.net</description>
       <modifiers/>
     </link>
     <link id="674f-f9fa-e780-ed95" targetId="3b20-4cfa-d44c-a586" linkType="entry" categoryId="ef2b-83bd-1bad-5742">
+      <modifiers/>
+    </link>
+    <link id="f0fb-9b18-5614-eb3f" targetId="de63-a4dd-9d33-2134" linkType="rule">
+      <modifiers/>
+    </link>
+    <link id="56cb-3549-1b82-747d" targetId="8916-cc71-e8c7-62eb" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
+      <modifiers/>
+    </link>
+    <link id="28e3-d0b9-b61c-5ffd" targetId="3f0b-d6af-d644-ace3" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
+      <modifiers/>
+    </link>
+    <link id="687a-595d-4bd6-f22f" targetId="8916-cc71-e8c7-62eb" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
+      <modifiers/>
+    </link>
+    <link id="adf9-1fc2-a923-b651" targetId="a2d9-9248-e6b0-e67e" linkType="entry" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
       <modifiers/>
     </link>
   </links>
@@ -4095,7 +4099,7 @@ Killing Blade: Rending until the end of the current phase.</description>
     <entry id="2cd4e583-478c-4c23-893d-d49f426df7f3" name="Drones" points="0.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups>
-        <entryGroup id="3057217c-b87e-76d1-d4f9-dbbd7d962a4b" name="Drones" defaultEntryId="0fa452ff-795b-e8da-d540-8f5806b5fffd" minSelections="4" maxSelections="12" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="3057217c-b87e-76d1-d4f9-dbbd7d962a4b" name="Drones - at least 4" defaultEntryId="0fa452ff-795b-e8da-d540-8f5806b5fffd" minSelections="4" maxSelections="12" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -4130,7 +4134,11 @@ Killing Blade: Rending until the end of the current phase.</description>
       <modifiers/>
       <rules/>
       <profiles/>
-      <links/>
+      <links>
+        <link id="3fba-cc14-3ddb-4704" targetId="78ddae03-5da8-9e14-15b3-6a24882e5b8f" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
     <entry id="375c-1721-84f1-3b63" name="DS8 Tactical Support Turret" points="10.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -4310,15 +4318,12 @@ Killing Blade: Rending until the end of the current phase.</description>
           <entryGroups/>
           <modifiers/>
           <rules/>
-          <profiles>
-            <profile id="31fb-2f4b-0f64-1cb8" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Hover Drone" hidden="false">
-              <characteristics>
-                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="A model with a hover drone is not slowed by Difficult Terrain (even when charging), can move over all other models and terrain freely (but cannot end their move on top of other models or Impassable Terrain) and automatically passes Dangerous Terrain tests."/>
-              </characteristics>
+          <profiles/>
+          <links>
+            <link id="c670-a536-86ab-4ef0" targetId="2255-235a-522c-b865" linkType="profile">
               <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
+            </link>
+          </links>
         </entry>
       </entries>
       <entryGroups>
@@ -4972,56 +4977,58 @@ Killing Blade: Rending until the end of the current phase.</description>
       <links/>
     </entry>
     <entry id="e1fc-abb7-7061-fad8" name="Hunter Cadre" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="8b6e-1a8d-75fa-a885" name="Commander - 1 Required" defaultEntryId="ceb4-07f6-cec6-5ef1" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="528b-7d07-2c25-a915" name="HQ" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="ceb4-07f6-cec6-5ef1" targetId="7316b9dd-cd51-4e03-b198-f7492f3cb15a" linkType="entry">
+          <entryGroups>
+            <entryGroup id="d843-127c-d2ed-b3de" name="Bodyguards - up to 1" defaultEntryId="7ea0-4094-36c0-8fe1" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
               <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-        <entryGroup id="8d5e-1a4c-c460-135e" name="Bodyguards - up to 1" defaultEntryId="d334-76d1-3336-484b" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
+              <links>
+                <link id="7ea0-4094-36c0-8fe1" targetId="5b84d7be-d9ac-0795-54b8-9fa60a2c4da6" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+              </links>
+            </entryGroup>
+            <entryGroup id="ce0e-bfc9-fe41-067f" name="Cadre Fireblade - up to 1" defaultEntryId="fb92-12b9-cf5e-89a3" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <links>
+                <link id="fb92-12b9-cf5e-89a3" targetId="467cef28-773c-943d-0ab1-51ce65a9d623" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+              </links>
+            </entryGroup>
+            <entryGroup id="9b5b-ccf3-5f7d-ac6b" name="Commander - 1 Required" defaultEntryId="6be8-a11a-56fa-dbb2" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <links>
+                <link id="6be8-a11a-56fa-dbb2" targetId="7316b9dd-cd51-4e03-b198-f7492f3cb15a" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
+            </entryGroup>
+          </entryGroups>
           <modifiers/>
-          <links>
-            <link id="d334-76d1-3336-484b" targetId="5b84d7be-d9ac-0795-54b8-9fa60a2c4da6" linkType="entry">
-              <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-            </link>
-          </links>
-        </entryGroup>
-        <entryGroup id="a196-1445-cd1e-6fe3" name="Cadre Fireblade - up to 1" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="5953-bff0-e1d9-6e47" targetId="467cef28-773c-943d-0ab1-51ce65a9d623" linkType="entry">
-              <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-            </link>
-          </links>
-        </entryGroup>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
         <entryGroup id="297d-8f6b-051f-0e89" name="Troops - 3 to 6" defaultEntryId="ac62-febb-9875-5749" minSelections="3" maxSelections="6" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
@@ -6154,6 +6161,9 @@ Killing Blade: Rending until the end of the current phase.</description>
         <link id="d72d-9e22-8ae4-1abc" targetId="c45edd04-fbed-9960-761b-57d0efa228a8" linkType="profile">
           <modifiers/>
         </link>
+        <link id="93ca-eafc-c388-8862" targetId="78ddae03-5da8-9e14-15b3-6a24882e5b8f" linkType="rule">
+          <modifiers/>
+        </link>
       </links>
     </entry>
     <entry id="28c2-26a3-980b-1a06" name="MV31 Pulse Accelerator Drone" points="15.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -6194,7 +6204,11 @@ Killing Blade: Rending until the end of the current phase.</description>
           <modifiers/>
         </profile>
       </profiles>
-      <links/>
+      <links>
+        <link id="88a9-45d3-4687-99c0" targetId="78ddae03-5da8-9e14-15b3-6a24882e5b8f" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
     <entry id="1b7b-ade1-37c4-914b" name="MV33 Grav-inhibitor Drone" points="15.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -6776,7 +6790,7 @@ Killing Blade: Rending until the end of the current phase.</description>
                     </link>
                   </links>
                 </entry>
-                <entry id="e0db-5dfb-2234-e5a4" name="Photon Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entry id="e0db-5dfb-2234-e5a4" name="Photon Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -7284,7 +7298,7 @@ Killing Blade: Rending until the end of the current phase.</description>
         </link>
       </links>
     </entry>
-    <entry id="0ce87ee0-0210-4c87-96da-a3bba62ce7bd" name="Sniper Drones" points="0.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="0ce87ee0-0210-4c87-96da-a3bba62ce7bd" name="Sniper Drone Team" points="0.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="2ad6ebef-812e-1c68-6fe1-f92068fc44a8" name="Firesight Marksman" points="13.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -7372,7 +7386,7 @@ Killing Blade: Rending until the end of the current phase.</description>
         </link>
       </links>
     </entry>
-    <entry id="182a892f-32ec-81e1-2d69-080e2912b6f2" name="Stealth Battlesuit" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="70">
+    <entry id="182a892f-32ec-81e1-2d69-080e2912b6f2" name="Stealth Battlesuit" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
       <entries>
         <entry id="5130-0916-6be5-21ef" name="Blacksun Filter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -7686,19 +7700,34 @@ Killing Blade: Rending until the end of the current phase.</description>
     <entry id="2d3a-567e-0e5f-a035" name="Tidewall Droneport" points="60.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups>
-        <entryGroup id="c926-0604-40e9-40d9" name="Drones - 4 required" defaultEntryId="1b23-7f17-5fd1-2f23" minSelections="4" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="bb96-f9e6-bd0b-af4f" name="Drones - 4 required" defaultEntryId="a03b-7a15-8d2d-46ed" minSelections="4" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <links>
-            <link id="1b23-7f17-5fd1-2f23" targetId="7919-95f8-49d5-c07e" linkType="entry">
-              <modifiers/>
+            <link id="a03b-7a15-8d2d-46ed" targetId="7919-95f8-49d5-c07e" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
-            <link id="7c29-1ede-dd52-6843" targetId="16dc-e048-6fca-21a1" linkType="entry">
-              <modifiers/>
+            <link id="3779-98f6-a177-8323" targetId="16dc-e048-6fca-21a1" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
-            <link id="5480-b944-113c-5801" targetId="e529-028c-7c50-c786" linkType="entry">
-              <modifiers/>
+            <link id="b4ce-b464-67d2-b64b" targetId="e529-028c-7c50-c786" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
           </links>
         </entryGroup>
@@ -7996,7 +8025,7 @@ Killing Blade: Rending until the end of the current phase.</description>
                 </link>
               </links>
             </entry>
-            <entry id="08d6849d-ee3f-fe17-019f-e800b141db3e" name="14x Gun Drones" points="0.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="08d6849d-ee3f-fe17-019f-e800b141db3e" name="14x MV1 Gun Drones" points="0.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
                 <entry id="0f5b-452d-24a0-e1d9" name="Twin-linked Pulse Carbines" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries/>
@@ -8024,6 +8053,9 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
               <profiles/>
               <links>
                 <link id="3044c6c0-f115-3530-710e-0bb8bb1f65c8" targetId="c45edd04-fbed-9960-761b-57d0efa228a8" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="86d2-ea04-58f7-c25c" targetId="78ddae03-5da8-9e14-15b3-6a24882e5b8f" linkType="rule">
                   <modifiers/>
                 </link>
               </links>
@@ -8083,30 +8115,6 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
       <entries>
         <entry id="2648930f-b717-49f3-9966-152f92949b3a" name="TX4 Piranha" points="40.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
-            <entry id="ce3089ec-76ff-1668-9b3a-0062b70fc2db" name="Two Gun Drones" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="7870-028c-e4bd-dd05" name="MV1 Gun Drone" points="0.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="4e9c-f8e5-4c07-7df7" targetId="c45edd04-fbed-9960-761b-57d0efa228a8" linkType="profile">
-                      <modifiers/>
-                    </link>
-                    <link id="86ce-d9c9-1769-4d3d" targetId="cbb0da66-186b-a0ad-d442-e6337658b410" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
             <entry id="6e556af4-a399-9145-7542-62c55e247eca" name="Seeker Missile" points="8.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
@@ -8115,6 +8123,24 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
               <profiles/>
               <links>
                 <link id="0d63356f-01f7-91d7-7add-3cfe659002fc" targetId="9cc8ceef-b172-b0ba-bc66-bc50c0b0c4ab" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="ef57-906d-4c58-6448" name="2x MV1 Gun Drone" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="d78f-1e26-3f22-3610" targetId="c45edd04-fbed-9960-761b-57d0efa228a8" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="83e2-92ac-7b50-db2c" targetId="cbb0da66-186b-a0ad-d442-e6337658b410" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="be60-fabc-8632-9cf6" targetId="78ddae03-5da8-9e14-15b3-6a24882e5b8f" linkType="rule">
                   <modifiers/>
                 </link>
               </links>
@@ -8338,7 +8364,7 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="0cc0ae8c-c84c-eee2-cc49-0046f1d70f0a" name="Sponson gear" defaultEntryId="040568f5-9a5b-f498-5a7f-1d26b749d619" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="0cc0ae8c-c84c-eee2-cc49-0046f1d70f0a" name="Sponson gear" defaultEntryId="6b4a-bb77-866f-99b6" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="22418dd3-f012-5c11-30f3-909e9e4d95f3" name="Twin-linked Smart Missile System" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -8352,30 +8378,6 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
                 </link>
               </links>
             </entry>
-            <entry id="040568f5-9a5b-f498-5a7f-1d26b749d619" name="Two Gun Drones" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="6667-4801-8d63-a181" name="MV1 Gun Drone" points="0.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="4faa-a89a-6605-07b2" targetId="c45edd04-fbed-9960-761b-57d0efa228a8" linkType="profile">
-                      <modifiers/>
-                    </link>
-                    <link id="a784-8a97-52a6-2072" targetId="cbb0da66-186b-a0ad-d442-e6337658b410" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
             <entry id="bfba431a-f3c6-b98b-afff-465044413776" name="Twin-linked Burst Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
@@ -8384,6 +8386,24 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
               <profiles/>
               <links>
                 <link id="d5666be5-ccba-7dbb-50fd-3cfe4e5c2118" targetId="098adddb-eedc-e062-e858-2e34ca7a7ef6" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="6b4a-bb77-866f-99b6" name="2x MV1 Gun Drone" points="0.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="f956-4a3a-77d1-6313" targetId="c45edd04-fbed-9960-761b-57d0efa228a8" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="3cf7-db44-667d-5e41" targetId="cbb0da66-186b-a0ad-d442-e6337658b410" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="317e-860e-15c6-483d" targetId="78ddae03-5da8-9e14-15b3-6a24882e5b8f" linkType="rule">
                   <modifiers/>
                 </link>
               </links>
@@ -8488,7 +8508,7 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="fc1c02eb-5fa1-9cb6-6122-5bf8bba3867d" name="Sponson Gear" defaultEntryId="5dbe6b77-e19a-056f-d94e-3572992879d4" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="fc1c02eb-5fa1-9cb6-6122-5bf8bba3867d" name="Sponson Gear" defaultEntryId="4e06-50a9-680e-4321" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="8ef2373a-18fc-59e5-ef6a-a95a2beb1e46" name="Twin-linked Smart Missile System" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -8502,30 +8522,6 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
                 </link>
               </links>
             </entry>
-            <entry id="5dbe6b77-e19a-056f-d94e-3572992879d4" name="Two Gun Drones" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="24ec-4825-7654-f74c" name="MV1 Gun Drone" points="0.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="f06c-a202-70eb-8cf9" targetId="c45edd04-fbed-9960-761b-57d0efa228a8" linkType="profile">
-                      <modifiers/>
-                    </link>
-                    <link id="d152-036f-58a9-994b" targetId="cbb0da66-186b-a0ad-d442-e6337658b410" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
             <entry id="722aded3-0d6f-37d7-f3bb-6b1f496f0aaa" name="Twin-linked Burst Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
@@ -8534,6 +8530,24 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
               <profiles/>
               <links>
                 <link id="2a64e09a-446d-f36e-9749-3db75ac7ef21" targetId="098adddb-eedc-e062-e858-2e34ca7a7ef6" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="4e06-50a9-680e-4321" name="2x MV1 Gun Drone" points="0.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="203f-0a95-bdf8-690c" targetId="c45edd04-fbed-9960-761b-57d0efa228a8" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="cc27-fbed-5e7e-c92b" targetId="cbb0da66-186b-a0ad-d442-e6337658b410" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="3a26-710e-b294-44ea" targetId="78ddae03-5da8-9e14-15b3-6a24882e5b8f" linkType="rule">
                   <modifiers/>
                 </link>
               </links>
@@ -8616,7 +8630,7 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="b4c4fad7-c51f-504c-4064-027f70d973de" name="Sponson gear" defaultEntryId="d83d8b41-86cc-de2d-0300-4357ea318453" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="b4c4fad7-c51f-504c-4064-027f70d973de" name="Sponson gear" defaultEntryId="30e5-b771-f58e-4738" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="63cd3bcc-e567-a05b-a8a0-4a854899fb03" name="Twin-linked Smart Missile System" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -8630,29 +8644,23 @@ To deploy a squad of Gun Drones, nominate any point over which the Tiger Shark m
                 </link>
               </links>
             </entry>
-            <entry id="d83d8b41-86cc-de2d-0300-4357ea318453" name="Two Gun Drones" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="ab9a-c173-cadf-c9b7" name="MV1 Gun Drone" points="0.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="0066-5187-4ff0-f7e0" targetId="c45edd04-fbed-9960-761b-57d0efa228a8" linkType="profile">
-                      <modifiers/>
-                    </link>
-                    <link id="b7e4-9ac6-612c-7437" targetId="cbb0da66-186b-a0ad-d442-e6337658b410" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
+            <entry id="30e5-b771-f58e-4738" name="2x MV1 Gun Drone" points="0.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
               <entryGroups/>
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="ccf9-3bd3-6ea4-f981" targetId="c45edd04-fbed-9960-761b-57d0efa228a8" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="8a5f-3ce9-5e32-5ff4" targetId="cbb0da66-186b-a0ad-d442-e6337658b410" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="e583-fc3d-ba17-ddcd" targetId="78ddae03-5da8-9e14-15b3-6a24882e5b8f" linkType="rule">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
@@ -11086,6 +11094,537 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
       <profiles/>
       <links/>
     </entry>
+    <entry id="2d7d-00fd-ecab-ac18" name="Aun&apos;do" points="75.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="5173-42ce-883b-1909" name="Honour Blade" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="4ff5-eaf3-7054-ac11" targetId="c7f38461-2bf4-da6b-bfe0-bb2249c01888" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="9418-b79f-bf56-7488" name="Homing Beacon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="821a-4e3d-6b0f-d4c5" targetId="3d9e7a50-0096-8e0d-ab9a-227c6b6da5bf" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="a51c-9255-988b-4f8e" name="Hover Drone" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="1772-4eb2-1434-e7eb" targetId="2255-235a-522c-b865" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="224e-9290-5452-b0a6" name="Warlord Trait: Exemplar of the Selfless Cause" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles>
+        <profile id="8709-ce85-3cc1-73e0" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Aun&apos;do" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
+            <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="3"/>
+            <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="3"/>
+            <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="3"/>
+            <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="3"/>
+            <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="3"/>
+            <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="3"/>
+            <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="10"/>
+            <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="5+"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="1e4c-4ca8-8a6e-43c1" targetId="f0f1-422a-5de5-50ff" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="e5d2-4613-5b3e-e2de" targetId="d97e327f-efbf-647a-5f5e-15cd4ae6b179" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="0002-ef09-6418-4306" targetId="c8df78e0-1ae6-b95f-efeb-92560b7c25c9" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="72d7-a076-9625-4c45" targetId="697bebf7-be21-2f57-4a80-e386c7554f1b" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="3200-fc23-8c40-315b" name="Stealth Team Darktide" points="125.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="2c43-dd0b-cc62-9db5" name="Stealth Shas&apos;ui" points="0.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+          <entries>
+            <entry id="d286-3d9b-2603-bc6f" name="Burst Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="b804-ef28-1987-99bb" targetId="098adddb-eedc-e062-e858-2e34ca7a7ef6" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="82a8-20ed-6a3c-336b" targetId="182a892f-32ec-81e1-2d69-080e2912b6f2" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="fb88-e8bc-0ced-99f4" targetId="9390d52e-6c8f-3121-ef88-e477594e4ee3" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="b23e-affd-2418-175a" name="Shas&apos;vre Ryaon" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="a006-1713-227a-de16" name="Fusion Blaster" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="0727-8a7d-7706-b2b9" targetId="be4d6cdc-18e5-ab45-24b7-e15ed5ceddb9" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="9b34-f298-02ef-2f71" targetId="182a892f-32ec-81e1-2d69-080e2912b6f2" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="7229-c96b-655d-3fd2" name="Drone" defaultEntryId="8795-0bab-5a19-02c2" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="8795-0bab-5a19-02c2" targetId="e529-028c-7c50-c786" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="3f47-8cd4-4f40-107f" targetId="49d05f14-fd74-0eb4-826b-b97304a9fa52" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="9ee7-a6e6-56f0-008b" targetId="546e-2c7c-dd89-7889" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="2e2c-8863-8536-5d9e" targetId="05b3a4c5-d439-5178-588c-2b58eabf8f03" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="2031-8b83-3d79-fa4b" targetId="9f24357e-ce45-d33d-4a31-d6bc64b8f083" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="5ade-69f9-0b6d-3529" targetId="706ac166-91de-9abc-d577-efab540d20fc" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="fbae-64d8-c393-9c03" targetId="78ddae03-5da8-9e14-15b3-6a24882e5b8f" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="8916-cc71-e8c7-62eb" name="Tireless Hunter" points="55.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Infiltration Cadre Burning Dawn">
+      <entries>
+        <entry id="c7dc-cf9a-f2c9-7ce2" name="Fusion Blaster" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="a118-03fa-258c-a8b5" targetId="be4d6cdc-18e5-ab45-24b7-e15ed5ceddb9" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="ca3a-9e97-ad58-6b41" name="2x MV1 Gun Drone" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="c69e-6eee-71f4-06ac" targetId="c45edd04-fbed-9960-761b-57d0efa228a8" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="8787-5bdd-3a6e-6af3" targetId="cbb0da66-186b-a0ad-d442-e6337658b410" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="0101-0d69-7544-41db" targetId="78ddae03-5da8-9e14-15b3-6a24882e5b8f" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles>
+        <profile id="c38b-86f9-c245-c01d" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Tireless Hunter" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="11"/>
+            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="10"/>
+            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="10"/>
+            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="2"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Fast, Skimmer, Open-topped"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
+    <entry id="a2d9-9248-e6b0-e67e" name="Infiltration Cadre Burning Dawn" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Infiltration Cadre Burning Dawn">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="94f4-d251-102d-a3bf" name="High Councillor" hidden="false">
+          <description>Once per game, when using hte Invocation of the Elements special rule, Aun&apos;Do can invoke up to two elemental powers, instead of just one.</description>
+          <modifiers/>
+        </rule>
+        <rule id="26ab-fb2e-206e-cb66" name="Infiltration Cadre" hidden="false">
+          <description>All units in this Formation have the Scouts special rule. Units that already have the Scouts special rule instead gain the Infiltrate special rule.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="1acf-0794-b670-4ef1" targetId="2d7d-00fd-ecab-ac18" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+        <link id="98a5-822c-cee8-f9be" targetId="8916-cc71-e8c7-62eb" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+        <link id="3b32-0d85-a6ad-8c54" targetId="3200-fc23-8c40-315b" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+        <link id="f2b3-267f-4941-b259" targetId="3f0b-d6af-d644-ace3" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+        <link id="a18b-ef44-4a5c-4150" targetId="05b3a4c5-d439-5178-588c-2b58eabf8f03" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="3f0b-d6af-d644-ace3" name="Pathfinder Team Aurora" points="240.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="da71-31aa-b5d0-7932" name="Pathfinder with Pulse Carbine and Markerlight" points="0.0" categoryId="(No Category)" type="model" minSelections="6" maxSelections="6" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+          <entries>
+            <entry id="7816-d804-b4d0-7cef" name="Pulse Carbine and Markerlight" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="4631-e29e-afc3-600f" targetId="b713cb61-358e-14df-27d3-693b187e6970" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="97c5-dd63-fff3-3a1c" targetId="cbb0da66-186b-a0ad-d442-e6337658b410" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="767e-0462-5d23-d16f" name="Photon Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="9395-f2fb-5d25-7c4f" targetId="82af881d-6129-9aa8-c886-40e5f998562d" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="b6f5-c2c2-f057-680c" targetId="f4fade05-cfb0-bb21-f879-6f4b3ad6eb8e" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="3838-2a67-ec2d-7a35" name="Shas&apos;ui Starshroud" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="76f3-c2b7-8a92-e4d8" name="Photon Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="553f-95e2-47ad-1c6e" targetId="82af881d-6129-9aa8-c886-40e5f998562d" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="6b28-59f1-ef11-d9e6" name="Pulse Carbine and Markerlight" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="5037-fd96-a537-cd15" targetId="b713cb61-358e-14df-27d3-693b187e6970" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="0642-8038-1ce4-b65a" targetId="cbb0da66-186b-a0ad-d442-e6337658b410" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="c211-541e-1668-fc99" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Shas&apos;ui Starshroud" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
+                <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="2"/>
+                <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="3"/>
+                <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="3"/>
+                <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="3"/>
+                <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="1"/>
+                <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="2"/>
+                <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="2"/>
+                <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="8"/>
+                <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="5+"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="eb21-f66c-c5ed-bc60" name="Pathfinder with Ion Rifle" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+          <entries>
+            <entry id="122a-853b-54f2-94ed" name="Ion Rifle" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="c0f2-26c0-acc4-fa5f" targetId="f05e374f-b183-e33c-5702-88127066abdb" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="d0cd-d276-12e2-85b2" targetId="2056fa21-3805-0dd7-cf63-079c303336a9" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="eb05-03e4-6810-ffe2" name="Photon Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="fac3-08cf-4928-2c62" targetId="82af881d-6129-9aa8-c886-40e5f998562d" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="c997-1d74-09ee-7709" targetId="f4fade05-cfb0-bb21-f879-6f4b3ad6eb8e" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="aba3-8541-72c0-bc7f" name="Pathfinder with Rail Rifle" points="0.0" categoryId="(No Category)" type="model" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+          <entries>
+            <entry id="6908-157e-3868-c80d" name="Photon Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="7ebc-5539-0ebf-c608" targetId="82af881d-6129-9aa8-c886-40e5f998562d" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="1922-0bd0-d929-5923" name="Rail Rifle" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="3a84-e6cf-e2c5-8b7f" targetId="7201787d-a87c-d2b5-0e34-663ea9da70a6" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="ccd8-d898-495d-9ed3" targetId="f4fade05-cfb0-bb21-f879-6f4b3ad6eb8e" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="c0d3-02e1-7449-df3e" name="Recon Drones" defaultEntryId="c125-3cc2-0a3d-51a2" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="c125-3cc2-0a3d-51a2" targetId="0513-b918-84d1-c3ea" linkType="entry">
+              <modifiers>
+                <modifier type="increment" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="0ef7-247b-e756-796d" name="Pulse Accelerator Drone" defaultEntryId="e042-c06f-6e05-ceb9" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="e042-c06f-6e05-ceb9" targetId="28c2-26a3-980b-1a06" linkType="entry">
+              <modifiers>
+                <modifier type="increment" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="2285-8461-3cb9-4905" name="Grav-inhibitor Drone" defaultEntryId="b97f-394e-94c3-b34b" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="b97f-394e-94c3-b34b" targetId="1b7b-ade1-37c4-914b" linkType="entry">
+              <modifiers>
+                <modifier type="increment" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="c96925a7-06d9-cb03-1cbb-3022890c0ce9" name="Drones - up to 2" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -11119,6 +11658,22 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
           <modifiers/>
         </link>
         <link id="2a98-afc4-ef1a-4dc4" targetId="67c1-67dc-ac90-81d0" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
+    </entryGroup>
+    <entryGroup id="158b-68f3-ebd5-5192" name="Drones - up to 2 (requires Shas&apos;vre)" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <links>
+        <link id="c7f7-099b-ee8e-773a" targetId="7919-95f8-49d5-c07e" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="91e6-0784-91a3-d238" targetId="16dc-e048-6fca-21a1" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="f7ab-1b5c-a796-82ec" targetId="e529-028c-7c50-c786" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -11675,22 +12230,6 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="158b-68f3-ebd5-5192" name="Drones - up to 2 (requires Shas&apos;vre)" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <links>
-        <link id="c7f7-099b-ee8e-773a" targetId="7919-95f8-49d5-c07e" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="91e6-0784-91a3-d238" targetId="16dc-e048-6fca-21a1" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="f7ab-1b5c-a796-82ec" targetId="e529-028c-7c50-c786" linkType="entry">
-          <modifiers/>
-        </link>
-      </links>
-    </entryGroup>
   </sharedEntryGroups>
   <sharedRules>
     <rule id="2aa527e2-c420-4192-80f6-deedf1106c06" name="Acute Senses" hidden="false" book="Warhammer 40k rulebook" page="33">
@@ -11718,6 +12257,17 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
     <rule id="bac07be4-2a6e-0f87-ecd8-7c5c668ddfcd" name="Command-link Drone" hidden="false" page="46">
       <description>Any Tau units (including Vespid units with a Strain Leader, but not Kroot units) within 18&quot; of drone may use Shadowsun&apos;s Leadership for any Morale or Pinning tests.</description>
       <modifiers/>
+    </rule>
+    <rule id="de63-a4dd-9d33-2134" name="Coordinated Firepower" hidden="false" book="Codex: Tau Empire">
+      <description>Whenever a unit from a Hunter Contingent selects a target in the shooting phase, any number of other units from the same Detachment who can still shoot can add their firepower to the attack. These units must shoot the same target, resolving their shots as if they were a single unit - this includes the use of markerlight abilities. When 3 or more units combine their firepower, the firing models add 1 to their Ballistic Skill.</description>
+      <modifiers>
+        <modifier type="hide" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="e1fc-abb7-7061-fad8" field="selections" type="less than" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="010344b8-5d19-6460-6825-b2b323e284c1" name="Counter-attack" hidden="false" book="Warhammer 40k rulebook" page="35">
       <modifiers/>
@@ -11911,6 +12461,12 @@ Scour: (Markerlight Cost 1+) For each markerlight counter expended on this abili
       <modifiers/>
     </rule>
     <rule id="5a03ff44-727c-e381-47ca-05f5a44d9c4a" name="Very Bulky" hidden="false" book="Warhammer 40k rulebook" page="35">
+      <modifiers/>
+    </rule>
+    <rule id="f0f1-422a-5de5-50ff" name="Fearless" hidden="false">
+      <modifiers/>
+    </rule>
+    <rule id="546e-2c7c-dd89-7889" name="Precision Shots" hidden="false">
       <modifiers/>
     </rule>
   </sharedRules>
@@ -12950,6 +13506,12 @@ Scour: (Markerlight Cost 1+) For each markerlight counter expended on this abili
     <profile id="7ea009f0-d5ce-75c9-6932-17d8950d1d32" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Velocity Tracker" hidden="false">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Choose to have Skyfire, or not, each time it makes shooting attack (choose once for all weapons)."/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="2255-235a-522c-b865" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Hover Drone" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="A model with a hover drone is not slowed by Difficult Terrain (even when charging), can move over all other models and terrain freely (but cannot end their move on top of other models or Impassable Terrain) and automatically passes Dangerous Terrain tests."/>
       </characteristics>
       <modifiers/>
     </profile>
