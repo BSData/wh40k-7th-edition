@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="26" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" books="" authorName="Thommy Abbott (Senpai514)" authorContact="legiones.astartes@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="28" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" books="" authorName="Thommy Abbott (Senpai514)" authorContact="legiones.astartes@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="320d-148f-008f-f2a4" name="&quot;1st Company Veterans" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="40k Apocalypse">
       <entries/>
@@ -40417,7 +40417,7 @@ In addition, if Kor&apos;sarro Khan slays the enemy Warlord in a challenge, you 
             <modifier type="increment" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
                     <condition parentId="force type" childId="2fadceb5-5601-9e03-9a46-41c3aa1a24c5" field="selections" type="instance of" value="1.0"/>
                     <condition parentId="force type" childId="de22-54d3-049b-e814" field="selections" type="instance of" value="1.0"/>
@@ -41063,7 +41063,7 @@ In addition, if Kor&apos;sarro Khan slays the enemy Warlord in a challenge, you 
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="0959-5341-9e3c-c4f8" name="Weapons" defaultEntryId="0428-a27e-174d-b621" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="0959-5341-9e3c-c4f8" name="Weapons" defaultEntryId="0428-a27e-174d-b621" minSelections="4" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="0428-a27e-174d-b621" name="Boltgun" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -41180,6 +41180,10 @@ In addition, if Kor&apos;sarro Khan slays the enemy Warlord in a challenge, you 
               <conditionGroups/>
             </modifier>
             <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="df11-7608-b463-67cc" incrementChildId="94ef-8514-6954-5382" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="decrement" field="minSelections" value="4.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -43737,7 +43741,11 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="547e-f042-d4b1-997c" targetId="7a30edcf-768a-362a-e5f6-b99515b45fff" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
