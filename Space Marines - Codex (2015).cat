@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="30" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" books="" authorName="Thommy Abbott (Senpai514)" authorContact="legiones.astartes@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="31" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" books="" authorName="Thommy Abbott (Senpai514)" authorContact="legiones.astartes@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="320d-148f-008f-f2a4" name="&quot;1st Company Veterans" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="40k Apocalypse">
       <entries/>
@@ -9545,7 +9545,14 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="2e9e-fa7f-f889-508f" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="1221-54c9-d455-fac4" name="Empyric Channelling" hidden="false">
           <modifiers/>
@@ -9630,7 +9637,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
     <entry id="2e9e-fa7f-f889-508f" name="&apos;Pinion Battle Demi-Company *" points="0.0" categoryId="bf93-7277-bf48-16f7" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Warzone Damocles: Kauyon">
       <entries/>
       <entryGroups>
-        <entryGroup id="16c3-a0b5-1e32-4064" name="Command Squad" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="16c3-a0b5-1e32-4064" name="Command Squad (0-1)" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -9729,7 +9736,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="2e60-cc5c-5e78-1afd" name="Scout Squads" minSelections="1" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="2e60-cc5c-5e78-1afd" name=" Scout Squads (1-5)" minSelections="1" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -9897,14 +9904,14 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
                 <conditionGroup type="or">
                   <conditions>
                     <condition parentId="force type" childId="ba487d62-d836-cd64-642f-29e7abb8e86b" field="selections" type="equal to" value="1.0"/>
-                    <condition parentId="roster" childId="a17fe9a3-8324-c541-e891-354b795f055a" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="force type" childId="a17fe9a3-8324-c541-e891-354b795f055a" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
                 <conditionGroup type="or">
                   <conditions>
                     <condition parentId="force type" childId="165d-32c9-8555-5e1c" field="selections" type="equal to" value="1.0"/>
-                    <condition parentId="roster" childId="2e9e-fa7f-f889-508f" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="force type" childId="2e9e-fa7f-f889-508f" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -12094,7 +12101,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
         </link>
       </links>
     </entry>
-    <entry id="cf4f-9f6d-1173-1015" name="&apos;Shadowstrike Kill Team" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+    <entry id="cf4f-9f6d-1173-1015" name="&apos;Shadowstrike Kill Team *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="deee-d08e-460c-c294" name="Vanguard Veteran Squad" points="0.0" categoryId="(No Category)" type="unit" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -12830,14 +12837,14 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
                 <conditionGroup type="or">
                   <conditions>
                     <condition parentId="force type" childId="ba487d62-d836-cd64-642f-29e7abb8e86b" field="selections" type="equal to" value="1.0"/>
-                    <condition parentId="roster" childId="a17fe9a3-8324-c541-e891-354b795f055a" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="force type" childId="a17fe9a3-8324-c541-e891-354b795f055a" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
                 <conditionGroup type="or">
                   <conditions>
                     <condition parentId="force type" childId="165d-32c9-8555-5e1c" field="selections" type="equal to" value="1.0"/>
-                    <condition parentId="roster" childId="2e9e-fa7f-f889-508f" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="force type" childId="2e9e-fa7f-f889-508f" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -12872,7 +12879,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
         </link>
       </links>
     </entry>
-    <entry id="d18a-0ad8-a322-9df5" name="&apos;Shadowstrike Kill Team" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="d18a-0ad8-a322-9df5" name="&apos;Shadowstrike Kill Team *" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="e298-ab39-cfbf-f739" name="Vanguard Veteran Squad" points="0.0" categoryId="(No Category)" type="unit" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -34033,6 +34040,300 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </link>
       </links>
     </entry>
+    <entry id="e3c9-bc14-bc16-d3a7" name="&apos;Skyhammer Orbital Strike Force * " points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Kauyon">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="3665-ceff-da7b-93c2" name="Tactical Squad 3" defaultEntryId="9573-9f10-6165-0ab1" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="9573-9f10-6165-0ab1" targetId="fa13-35d7-9893-1c0c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="cff2-0427-e31d-30c2" name="Tactical Squad 1" defaultEntryId="78ab-3de7-3b2c-2986" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="78ab-3de7-3b2c-2986" targetId="fa13-35d7-9893-1c0c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="6704-031e-3c17-d00d" name="Tactical Squad 2" defaultEntryId="d14d-ad2d-edc2-0433" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="d14d-ad2d-edc2-0433" targetId="fa13-35d7-9893-1c0c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="fecf-965d-8211-df8f" name="Land Speeder Units (1-3)" defaultEntryId="c92c-1669-98dd-6651" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="c92c-1669-98dd-6651" targetId="50ac-3d28-b8ea-e36d" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="force type" childId="ba487d62-d836-cd64-642f-29e7abb8e86b" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="force type" childId="a17fe9a3-8324-c541-e891-354b795f055a" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="force type" childId="165d-32c9-8555-5e1c" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="force type" childId="2e9e-fa7f-f889-508f" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="3f78-7207-630f-db44" name="&apos;Skyhammer Orbital Strike Force * " points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Kauyon">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="55d4-a484-8c5e-165b" name="Tactical Squad 3" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="1193-a065-906b-bc5c" targetId="fa13-35d7-9893-1c0c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="2f06-bafa-fcb5-fa0c" name="Tactical Squad 1" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="f5a7-3461-267a-fee3" targetId="fa13-35d7-9893-1c0c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="2934-bad2-6479-dc7a" name="Tactical Squad 2" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="20be-fd28-0cc1-cd81" targetId="fa13-35d7-9893-1c0c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="16cb-5ce8-ff9f-8f11" name="Land Speeder Units (1-3)" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="86d4-ea8f-a3c7-4975" targetId="50ac-3d28-b8ea-e36d" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="df95-897b-723c-26eb" name="&apos;Shadow Force *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Kauyon">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="6683-4187-ab5a-cef0" name="Commander" defaultEntryId="d244-defc-1c53-6a22" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="d244-defc-1c53-6a22" targetId="41fb-65ac-f6e8-505c" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="b8c4-2cd4-3b57-2147" targetId="2cdd-35c8-b2a7-f99d" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="f344-83d5-7fd1-dc81" targetId="cbe9-1ebf-6ec2-5594" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="3c86-385c-fa7e-3a75" targetId="f050-1f63-dbb2-eb98" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="021b-e64c-7f3d-782f" name="Sternguard Veteran Squad" defaultEntryId="4ddc-9b60-ea59-2b78" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="4ddc-9b60-ea59-2b78" targetId="55d9-82be-6a7e-6416" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="d62f-bc24-e395-923b" name="Vanguard Veteran Squad" defaultEntryId="a035-a7b9-a34b-814f" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="a035-a7b9-a34b-814f" targetId="49bc-2c78-3c69-5149" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="79e6-2ce0-dd0c-5ef1" name="Land Speeder Squadron" defaultEntryId="955c-d280-ec8b-e686" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="955c-d280-ec8b-e686" targetId="50ac-3d28-b8ea-e36d" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="force type" childId="ba487d62-d836-cd64-642f-29e7abb8e86b" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="force type" childId="a17fe9a3-8324-c541-e891-354b795f055a" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="force type" childId="165d-32c9-8555-5e1c" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="force type" childId="2e9e-fa7f-f889-508f" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="8bd1-75c8-4e18-c33d" name="Swift Redeployement" hidden="false" book="kauyon">
+          <description>Non-Vehicles reroll run moves, Vehicles flat-out an extra 6&quot;.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="ddd3-d396-b1ef-1dc2" targetId="6f1b9ae2-5c32-d27c-46a8-48da580d152d" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="6b0d-045d-d216-9134" targetId="303cbd4b-7f1d-3d2f-0657-bec6abe6495b" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="a67c-610e-dac6-f390" targetId="3227-b15b-a0b3-6973" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="2a6f-084e-30a9-d339" name="&apos;Shadow Force *" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Kauyon">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="b302-3948-757d-d994" name="Commander" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="5688-2802-95f8-99d5" targetId="41fb-65ac-f6e8-505c" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="ce5b-3f5e-8979-2b33" targetId="2cdd-35c8-b2a7-f99d" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="79c3-11e1-85be-0fb2" targetId="cbe9-1ebf-6ec2-5594" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="d2f5-413b-6c53-5d0b" targetId="f050-1f63-dbb2-eb98" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="6779-236e-af46-0898" name="Sternguard Veteran Squad" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="8ffb-7134-44a5-4cd8" targetId="55d9-82be-6a7e-6416" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="5d19-7d66-03da-e3fd" name="Vanguard Veteran Squad" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="e1dc-cddf-18cc-a154" targetId="49bc-2c78-3c69-5149" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="5d27-5668-53a8-5f87" name="Land Speeder Squadron" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="602b-5b7b-d2cf-dbcd" targetId="50ac-3d28-b8ea-e36d" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="44cf-17ca-7c03-ca9b" name="Swift Redeployement" hidden="false" book="kauyon">
+          <description>Non-Vehicles reroll run moves, Vehicles flat-out an extra 6&quot;.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="5a4e-7a50-ab36-9947" targetId="6f1b9ae2-5c32-d27c-46a8-48da580d152d" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="9c56-adb1-767e-0de1" targetId="303cbd4b-7f1d-3d2f-0657-bec6abe6495b" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="8005-f33c-87f4-7314" targetId="3227-b15b-a0b3-6973" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
   </entries>
   <rules/>
   <links>
@@ -54737,6 +55038,10 @@ You must accept the second roll , even if it is worse than the first.</descripti
       <description>A unit containing one or more models with the Zealot special rule automatically passes Pinning, Fear and Regroup tests and Morale checks, but cannot Go to Ground and cannot choose to fail a Morale check due to the Our Weapons Are Useless rule. If a unit gains the Zealot special rule when it has Gone to Ground, all the effects of Go to Ground are immediately cancelled.
 
 In addition, units containing one or more models with the Zealot special rule re-roll all failed To Hit rolls during the first round of each close combat – they do not get to re-roll failed To Hit rolls in subsequent rounds.</description>
+      <modifiers/>
+    </rule>
+    <rule id="3227-b15b-a0b3-6973" name="Acute Senses" hidden="false" book="Main Rule Book">
+      <description>Outflanking units can re-roll to determine the table side they enter on.</description>
       <modifiers/>
     </rule>
   </sharedRules>
