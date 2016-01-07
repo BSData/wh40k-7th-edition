@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" revision="50" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Astra Militarum: Codex (2014)" authorName="k, ecrousseau" authorContact="edward@rousseau.id.au" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" revision="51" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Astra Militarum: Codex (2014)" authorName="k, ecrousseau" authorContact="edward@rousseau.id.au" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="b2a8eb79-9f7c-a708-b119-eeb94dd9411e" name="&quot;Rampart Detachment&quot;" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Sanctus Reach: The Red Waaagh!">
       <entries>
@@ -18575,10 +18575,35 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       <profiles/>
       <links/>
     </entry>
-    <entry id="f40d-a3c3-0b37-6179" name="HoC: Celeritas" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="War Zone Damocles: Mont&apos;ka" page="167">
+    <entry id="f40d-a3c3-0b37-6179" name="HoC: Celeritas" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="War Zone Damocles: Mont&apos;ka" page="167">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="7ce7dd42-91eb-e6fc-e0af-0196e3121951" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="3a4f451f-bf06-43ef-200a-101b05a94831" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="dc36ac93-84e3-4dd4-361c-fd7f9d617a0e" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="41e7e901-879e-e93b-ab6e-46eee0879ea5" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="37889767-276a-098d-58d5-f420c2fd0aa1" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="6a4314f1-a5ad-f4cf-e575-0382c34bcbe8" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="58a86e33-bc8f-b63c-8811-31a5d40b261d" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="9ad78e9f-8d10-abc3-0b52-50320850c296" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="1fe0e11a-5174-b4e9-842e-b254870ae161" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="c9f3faf0-6276-2120-b548-421a5d1ee178" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="19d7fd2a-b029-ec77-769f-18e0a239c0c0" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="b16e59cf-cf9e-e4bd-ca74-2c197b354097" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="58e43d13-b09f-d7f9-9a5b-0e889e805736" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="10d99d9a-5268-3abb-aec0-76ff3ae54961" field="selections" type="greater than" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -18590,10 +18615,35 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </link>
       </links>
     </entry>
-    <entry id="47f2-4b0b-1a38-757e" name="HoC: Kabe&apos;s Herald" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="War Zone Damocles: Mont&apos;ka" page="167">
+    <entry id="47f2-4b0b-1a38-757e" name="HoC: Kabe&apos;s Herald" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="War Zone Damocles: Mont&apos;ka" page="167">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="7ce7dd42-91eb-e6fc-e0af-0196e3121951" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="3a4f451f-bf06-43ef-200a-101b05a94831" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="dc36ac93-84e3-4dd4-361c-fd7f9d617a0e" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="41e7e901-879e-e93b-ab6e-46eee0879ea5" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="37889767-276a-098d-58d5-f420c2fd0aa1" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="6a4314f1-a5ad-f4cf-e575-0382c34bcbe8" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="58a86e33-bc8f-b63c-8811-31a5d40b261d" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="9ad78e9f-8d10-abc3-0b52-50320850c296" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="1fe0e11a-5174-b4e9-842e-b254870ae161" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="c9f3faf0-6276-2120-b548-421a5d1ee178" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="19d7fd2a-b029-ec77-769f-18e0a239c0c0" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="b16e59cf-cf9e-e4bd-ca74-2c197b354097" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="58e43d13-b09f-d7f9-9a5b-0e889e805736" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="10d99d9a-5268-3abb-aec0-76ff3ae54961" field="selections" type="greater than" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -18614,10 +18664,35 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </link>
       </links>
     </entry>
-    <entry id="c5bb-7abf-569e-a39a" name="HoC: Standard of the Lost 113th" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="War Zone Damocles: Mont&apos;ka" page="167">
+    <entry id="c5bb-7abf-569e-a39a" name="HoC: Standard of the Lost 113th" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="War Zone Damocles: Mont&apos;ka" page="167">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="7ce7dd42-91eb-e6fc-e0af-0196e3121951" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="3a4f451f-bf06-43ef-200a-101b05a94831" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="dc36ac93-84e3-4dd4-361c-fd7f9d617a0e" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="41e7e901-879e-e93b-ab6e-46eee0879ea5" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="37889767-276a-098d-58d5-f420c2fd0aa1" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="6a4314f1-a5ad-f4cf-e575-0382c34bcbe8" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="58a86e33-bc8f-b63c-8811-31a5d40b261d" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="9ad78e9f-8d10-abc3-0b52-50320850c296" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="1fe0e11a-5174-b4e9-842e-b254870ae161" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="c9f3faf0-6276-2120-b548-421a5d1ee178" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="19d7fd2a-b029-ec77-769f-18e0a239c0c0" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="b16e59cf-cf9e-e4bd-ca74-2c197b354097" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="58e43d13-b09f-d7f9-9a5b-0e889e805736" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="10d99d9a-5268-3abb-aec0-76ff3ae54961" field="selections" type="greater than" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -18662,10 +18737,35 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </link>
       </links>
     </entry>
-    <entry id="101c-1493-63f6-4e0e" name="HoC: The Iron Left" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="War Zone Damocles: Mont&apos;ka" page="167">
+    <entry id="101c-1493-63f6-4e0e" name="HoC: The Iron Left" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="War Zone Damocles: Mont&apos;ka" page="167">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="7ce7dd42-91eb-e6fc-e0af-0196e3121951" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="3a4f451f-bf06-43ef-200a-101b05a94831" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="dc36ac93-84e3-4dd4-361c-fd7f9d617a0e" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="41e7e901-879e-e93b-ab6e-46eee0879ea5" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="37889767-276a-098d-58d5-f420c2fd0aa1" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="6a4314f1-a5ad-f4cf-e575-0382c34bcbe8" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="58a86e33-bc8f-b63c-8811-31a5d40b261d" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="9ad78e9f-8d10-abc3-0b52-50320850c296" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="1fe0e11a-5174-b4e9-842e-b254870ae161" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="c9f3faf0-6276-2120-b548-421a5d1ee178" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="19d7fd2a-b029-ec77-769f-18e0a239c0c0" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="b16e59cf-cf9e-e4bd-ca74-2c197b354097" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="58e43d13-b09f-d7f9-9a5b-0e889e805736" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="10d99d9a-5268-3abb-aec0-76ff3ae54961" field="selections" type="greater than" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -18698,10 +18798,35 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </link>
       </links>
     </entry>
-    <entry id="6545-ce68-6e30-e2eb" name="HoC: Volkov&apos;s Cane" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="War Zone Damocles: Mont&apos;ka" page="167">
+    <entry id="6545-ce68-6e30-e2eb" name="HoC: Volkov&apos;s Cane" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="War Zone Damocles: Mont&apos;ka" page="167">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="7ce7dd42-91eb-e6fc-e0af-0196e3121951" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="3a4f451f-bf06-43ef-200a-101b05a94831" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="dc36ac93-84e3-4dd4-361c-fd7f9d617a0e" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="41e7e901-879e-e93b-ab6e-46eee0879ea5" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="37889767-276a-098d-58d5-f420c2fd0aa1" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="6a4314f1-a5ad-f4cf-e575-0382c34bcbe8" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="58a86e33-bc8f-b63c-8811-31a5d40b261d" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="9ad78e9f-8d10-abc3-0b52-50320850c296" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="1fe0e11a-5174-b4e9-842e-b254870ae161" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="c9f3faf0-6276-2120-b548-421a5d1ee178" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="19d7fd2a-b029-ec77-769f-18e0a239c0c0" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="b16e59cf-cf9e-e4bd-ca74-2c197b354097" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="58e43d13-b09f-d7f9-9a5b-0e889e805736" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="10d99d9a-5268-3abb-aec0-76ff3ae54961" field="selections" type="greater than" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -18713,10 +18838,35 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </link>
       </links>
     </entry>
-    <entry id="f9c1-954c-7de8-1750" name="HoC: Wrath of Cadia" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="War Zone Damocles: Mont&apos;ka" page="167">
+    <entry id="f9c1-954c-7de8-1750" name="HoC: Wrath of Cadia" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="War Zone Damocles: Mont&apos;ka" page="167">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="7ce7dd42-91eb-e6fc-e0af-0196e3121951" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="3a4f451f-bf06-43ef-200a-101b05a94831" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="dc36ac93-84e3-4dd4-361c-fd7f9d617a0e" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="41e7e901-879e-e93b-ab6e-46eee0879ea5" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="37889767-276a-098d-58d5-f420c2fd0aa1" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="6a4314f1-a5ad-f4cf-e575-0382c34bcbe8" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="58a86e33-bc8f-b63c-8811-31a5d40b261d" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="9ad78e9f-8d10-abc3-0b52-50320850c296" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="1fe0e11a-5174-b4e9-842e-b254870ae161" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="c9f3faf0-6276-2120-b548-421a5d1ee178" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="19d7fd2a-b029-ec77-769f-18e0a239c0c0" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="b16e59cf-cf9e-e4bd-ca74-2c197b354097" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="58e43d13-b09f-d7f9-9a5b-0e889e805736" field="selections" type="greater than" value="0.0"/>
+                <condition parentId="force type" childId="10d99d9a-5268-3abb-aec0-76ff3ae54961" field="selections" type="greater than" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
