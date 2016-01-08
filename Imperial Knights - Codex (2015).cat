@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6940-50fe-5175-21fa" revision="15" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Imperial Knights: Codex (2015)" books="Imperial Knights: Codex (2015)" authorName="Senpai514" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6940-50fe-5175-21fa" revision="16" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Imperial Knights: Codex (2015)" books="Imperial Knights: Codex (2015)" authorName="Senpai514" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="0141e356-7ddf-bc5f-1e1d-e301bdabded2" name="Adamantine Lance" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -3889,6 +3889,14 @@ If a unit with this special rule is deployed inside a Dedicated Transport, it co
       <profiles/>
       <links/>
     </entry>
+    <entry id="293e-a1f1-b60c-cec9" name="Show FW models" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
     <entry id="1838-1afb-6bd9-b427" name="Skyreaper Lance" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="7967-5cf8-f64f-753c" name="3 Imperial Knights (of any type)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="3" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -4645,7 +4653,7 @@ Knight Crusader - Precision Bombardment: Blast weapons fired by models in this F
     </link>
   </links>
   <sharedEntries>
-    <entry id="5246-abcd-738d-14ad" name="Cerastus Knight-Acheron" points="415.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="2" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="5246-abcd-738d-14ad" name="Cerastus Knight-Acheron" points="415.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="2" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="cec7-609c-8004-371d" name="Acheron Pattern Flame Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -4743,6 +4751,12 @@ Knight Crusader - Precision Bombardment: Blast weapons fired by models in this F
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="293e-a1f1-b60c-cec9" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
       <rules/>
       <profiles>
@@ -4789,7 +4803,7 @@ Knight Crusader - Precision Bombardment: Blast weapons fired by models in this F
         </link>
       </links>
     </entry>
-    <entry id="21f2-5614-1166-84d9" name="Cerastus Knight-Atrapos" points="435.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="2" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="21f2-5614-1166-84d9" name="Cerastus Knight-Atrapos" points="435.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="2" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="4e14-931b-fd6b-4f17" name="Graviton Singularity Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -4900,6 +4914,12 @@ Knight Crusader - Precision Bombardment: Blast weapons fired by models in this F
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="293e-a1f1-b60c-cec9" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
       <rules>
         <rule id="d730-4a07-ea6e-4b8c" name="Macro-extinction Targeting Protocols" hidden="false">
@@ -4962,7 +4982,7 @@ Catastrophic Damage table.</description>
         </link>
       </links>
     </entry>
-    <entry id="dd31-499f-5351-57d7" name="Cerastus Knight-Castigator" points="380.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="2" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="dd31-499f-5351-57d7" name="Cerastus Knight-Castigator" points="380.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="2" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="dfd0-692a-aa78-4fea" name="Twin-linked Castigator Pattern Bolt Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -5059,6 +5079,12 @@ Catastrophic Damage table.</description>
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="293e-a1f1-b60c-cec9" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
       <rules/>
       <profiles>
@@ -5111,7 +5137,7 @@ Catastrophic Damage table.</description>
         </link>
       </links>
     </entry>
-    <entry id="9e56-0ab7-efd7-f3d0" name="Cerastus Knight-Lancer" points="400.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="2" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="lancer.pdf" page="0">
+    <entry id="9e56-0ab7-efd7-f3d0" name="Cerastus Knight-Lancer" points="400.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="2" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="lancer.pdf" page="0">
       <entries>
         <entry id="8a55-5377-6c02-1019" name="Cerastus Shock Lance" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -5188,6 +5214,12 @@ Catastrophic Damage table.</description>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
             <condition parentId="force type" childId="81dd-7ca3-059c-eaa7" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="293e-a1f1-b60c-cec9" field="selections" type="equal to" value="1.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -5931,7 +5963,7 @@ Catastrophic Damage table.</description>
         </link>
       </links>
     </entry>
-    <entry id="17ee-cd8e-8b95-3d38" name="Questoris Knight Magaera" points="395.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="2" minInRoster="0" maxInRoster="0" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
+    <entry id="17ee-cd8e-8b95-3d38" name="Questoris Knight Magaera" points="395.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="2" minInRoster="0" maxInRoster="0" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="" page="0">
       <entries>
         <entry id="d593-13aa-0e31-2a69" name="Phased Plasma-fusil" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -6079,6 +6111,12 @@ Catastrophic Damage table.</description>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
             <condition parentId="force type" childId="81dd-7ca3-059c-eaa7" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="293e-a1f1-b60c-cec9" field="selections" type="equal to" value="1.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
