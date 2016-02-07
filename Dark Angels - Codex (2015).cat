@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="578f-d512-a02e-7d0b" revision="33" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Dark Angels: Codex (2015)" books="Dark Angels Codex 2015, 7th Edition" authorName="Thairne" authorContact="Interrogatorchaplain@gmx.de" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="578f-d512-a02e-7d0b" revision="35" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Dark Angels: Codex (2015)" books="Dark Angels Codex 2015, 7th Edition" authorName="Thairne" authorContact="Interrogatorchaplain@gmx.de" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="8d97-d552-b1a5-2b59" name="10th Company Support" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -578,12 +578,6 @@
     </link>
     <link id="8072-af18-0422-cf28" targetId="3c39-d7f4-00e0-2bd3" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
       <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
             <condition parentId="force type" childId="4c51-9346-df15-f554" field="selections" type="instance of" value="0.0"/>
@@ -1577,7 +1571,7 @@
             </link>
             <link id="2c1d-e28a-1a51-c877" targetId="b6a4-0774-a70c-eecc" linkType="entry">
               <modifiers>
-                <modifier type="set" field="points" value="200.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="points" value="20.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
@@ -13012,7 +13006,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                         </link>
                       </links>
                     </entryGroup>
-                    <entryGroup id="b614-f11e-a132-a897" name="Chapter Relics" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                    <entryGroup id="b614-f11e-a132-a897" name="Chapter Relics" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                       <entries/>
                       <entryGroups/>
                       <modifiers/>
@@ -14310,6 +14304,14 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                 </link>
                 <link id="816c-3b8a-0d7d-b365" targetId="379e-b281-e23c-39d3" linkType="entry group">
                   <modifiers/>
+                </link>
+                <link id="a04d-e4ec-d2f2-a356" targetId="1f23-786e-5ed4-b953" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="points" value="30.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                 </link>
               </links>
             </entryGroup>
@@ -16411,7 +16413,14 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
                 <entry id="f0d9-78f6-bf70-56ae" name="Bike" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="force type" childId="c3fd-56c5-5348-44ce" field="selections" type="instance of" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <rules/>
                   <profiles/>
                   <links>
@@ -17441,6 +17450,14 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         </link>
         <link id="0285-3e15-8d75-9098" targetId="2a3b-3951-c3ea-2ce8" linkType="entry">
           <modifiers/>
+        </link>
+        <link id="5100-3d1a-e25b-44d8" targetId="1f23-786e-5ed4-b953" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="points" value="30.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entryGroup>
