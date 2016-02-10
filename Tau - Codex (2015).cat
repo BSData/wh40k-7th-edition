@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="24a0-49b6-ecef-1c5a" revision="18" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="23" battleScribeVersion="1.15" name="Tau Empire: Codex (2015)" books="Codex: Tau Empire, Kau&apos;yon, Mont&apos;ka" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="24a0-49b6-ecef-1c5a" revision="19" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="23" battleScribeVersion="1.15" name="Tau Empire: Codex (2015)" books="Codex: Tau Empire, Kau&apos;yon, Mont&apos;ka" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="624c35d9-cb7e-26b8-1d3a-77a4bc324d57" name="Ambush Spearhead" points="75.0" categoryId="38cf4ccf-0665-45cb-a773-fea06ee1467a" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Spearhead_Expansion.pdf" page="11">
       <entries/>
@@ -4913,7 +4913,20 @@ Killing Blade: Rending until the end of the current phase.</description>
       <links/>
     </entry>
     <entry id="ab72-0b15-9a80-e11e" name="Fusion Blades" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Mont&apos;ka" page="85">
-      <entries/>
+      <entries>
+        <entry id="720e-ae20-3e85-ca3c" name="Twin-linked Fusion Blaster" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="e1be-b1a0-da2f-00d5" targetId="be4d6cdc-18e5-ab45-24b7-e15ed5ceddb9" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
       <entryGroups/>
       <modifiers/>
       <rules>
@@ -13203,6 +13216,10 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
               <conditions/>
               <conditionGroups/>
             </modifier>
+            <modifier type="increment" field="maxSelections" value="2.0" repeat="true" numRepeats="1" incrementParentId="856d-5b14-f28b-55ce" incrementChildId="ab72-0b15-9a80-e11e" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <links>
             <link id="312d-2be7-9e4d-ec2b" targetId="657ae87f-0e32-5a5a-abd2-9047ee23b118" linkType="entry group">
@@ -13313,6 +13330,10 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
                   <entryGroups/>
                   <modifiers>
                     <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="0382f825-1e06-35a6-4a47-f89b4eb1b723" incrementChildId="6ba7-48fc-c6c1-c6a6" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="decrement" field="maxSelections" value="2.0" repeat="true" numRepeats="1" incrementParentId="0d5c9c9e-a1e1-7190-1d63-a9b6770868eb" incrementChildId="ab72-0b15-9a80-e11e" incrementField="selections" incrementValue="1.0">
                       <conditions/>
                       <conditionGroups/>
                     </modifier>
