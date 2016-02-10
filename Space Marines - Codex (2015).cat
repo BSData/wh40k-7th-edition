@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="42" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" books="" authorName="Thommy Abbott (Senpai514)" authorContact="legiones.astartes@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="43" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" books="" authorName="Thommy Abbott (Senpai514)" authorContact="legiones.astartes@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="320d-148f-008f-f2a4" name="&quot;1st Company Veterans" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="40k Apocalypse">
       <entries/>
@@ -55321,6 +55321,37 @@ If the result is a 5 or more, you may either restore a Hull Point lost earlier i
       <description>Bulky models count as two models for the purposes of Transport Capacity.</description>
       <modifiers/>
     </rule>
+    <rule id="b2c6-e29c-60f7-3c2b" name="Chapter Relics per model (Disclaimer)" hidden="false" page="250">
+      <description>(Disclaimer)
+There is currently some ambiguity whether a single model can take more than one relic from the space marines relic list.
+
+The current C:SM codex makes the following statements:
+
+In an applicable unit pofile (e.g. captain, page 289 of the digital codex) :
+	&quot;A Captain or Chapter Master may take items from the Melee Weapons, Ranged
+	Weapons, Special Issue Wargear and/or Chapter Relics lists.&quot;
+
+On the wargear list entry (page 250 of the digital codex):
+	&quot;Only one of each Chapter Relic may be taken per army. A model may replace one weapon
+	with one of the following:&quot;
+
+Additionally the Full Relic entry (page 453 of the digital codex) states:
+	&quot;The sacred artefacts of the Adeptus Astartes are items of incredible rarity,
+	bestowing great power upon the Space Marines that carry them. Only one of
+	each of the following items may be chosen per army.&quot;
+
+Given the above statements, two interpertations have emerged:
+
+The first interperts the statement &quot;A model may replace one weapon with one of the following...&quot;  as meaning that a model may replace only ONE weapon with ONE relic. Therefore, a single model can only have one relic at any given time.
+
+The second interperts the staments above as meaning that a model may replace each of it&apos;s weapons with a (different) relic. So a space marine captain can replace a bolt pistol with the Shield Eternal, and his the chainsword with a Burning blade. The basis for this interpertation is the unit entry, which states &quot;items&quot; may be taken from the list. And that the &quot;replace one weapon with one of..&quot; statement to be specifically referring to the requirement of repalcing an exisisting weapon.
+
+The issue is further complicated by the existence of non-weapon relics, such as armour and wargear, such as those added by supplements, which do not replace weapons. This creates a third intermediate case, where only one relic weapon is allowed in combination with a non-relic weapon. So in the case of the Vanilla codex, a model would be able to take the Armour Indomitus and replace a single weapon also.
+
+ With no official FAQ on the matter, the decision rests with the player.
+</description>
+      <modifiers/>
+    </rule>
     <rule id="15f12b40-90ae-a6cf-a89c-637f09456817" name="Chapter Tactics *" hidden="false">
       <modifiers/>
     </rule>
@@ -55682,51 +55713,6 @@ You must accept the second roll , even if it is worse than the first.</descripti
       <description>A unit containing one or more models with the Zealot special rule automatically passes Pinning, Fear and Regroup tests and Morale checks, but cannot Go to Ground and cannot choose to fail a Morale check due to the Our Weapons Are Useless rule. If a unit gains the Zealot special rule when it has Gone to Ground, all the effects of Go to Ground are immediately cancelled.
 
 In addition, units containing one or more models with the Zealot special rule re-roll all failed To Hit rolls during the first round of each close combat – they do not get to re-roll failed To Hit rolls in subsequent rounds.</description>
-      <modifiers/>
-    </rule>
-    <rule id="b2c6-e29c-60f7-3c2b" name="Chapter Relics per model" hidden="false" page="250">
-      <description>As per discussion on Gitter on 10/02/2016 about issue #1832, it was decided that a character can take more than one relic from the relics list.
-
-efalsken 18:16
-oh, I see, it&apos;s the use of the word &quot;one&quot; in the rule. IMHO, one is &quot;1, singular&quot;. If it was implied to be allowed multiple times, once for each weapon, it would have used the word &quot;each&quot;. It&apos;s the whole &quot;how many weapons can a GC shoot&quot; argument all over again.
-
-ddarz 18:16
-so the debate was basically focused on one statement in the books (including Eldar): &quot;A model can replace one weapon with one of the following...&quot;
-ah beat me to it
-yep
-any insight would be most welcome
-
-efalsken 18:16
-but that is in the relics section, not in the unit profiles?
-
-ddarz 18:16
-yep
-
-efalsken 18:16
-what does the unit profile say?
-in the relic section, it&apos;s clear that one weapon is replaced with one relic. It does not bear on how many times that rule can be tapped per model.
-now if the model rule says it may take selections (plural) from Relics, then it clearly can.
-
-ddarz 18:18
-Space marines: A Captain or Chapter Master may take items from the Melee Weapons, Ranged
-Weapons, Special Issue Wargear and/or Chapter Relics lists
-
-efalsken 18:18
-items. plural. seems legit to me
-
-ddarz 18:18
-and that&apos;s my interpretation too
-
-efalsken 18:18
-The statement in Relics just means that &quot;a relic must take the place of a single other weapon&quot;
-
-ddarz 18:19
-exactly (if it&apos;s a weapon, there&apos;s armour and wargear too)
-
-efalsken 18:19
-right
-Might be useful to leave a &quot;rule&quot; entry as &quot;hidden&quot; hanging off of the relevant entry to explain our reasoning here.
-be sure to mention the edition+page of all relevant rules, so when the new rules come out we can revisit it.</description>
       <modifiers/>
     </rule>
   </sharedRules>
