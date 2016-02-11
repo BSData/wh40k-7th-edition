@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="188" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="189" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="c765439d-7af4-5eea-85b4-0f8458870cd6" name="[Apoc] Lords of the Black Crusade" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -12207,7 +12207,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           </links>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="467c-2538-a9f0-0d2e" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -16207,7 +16214,14 @@ Apocalyptic Blast </description>
           <modifiers/>
         </link>
         <link id="dbc3-4bca-b3fa-7adc" targetId="d32e5abf-de5b-a35a-beec-cba3220b837f" linkType="entry">
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="467c-2538-a9f0-0d2e" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="c141-0c6d-b2b3-3c6d" targetId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" linkType="entry">
           <modifiers/>
@@ -17977,14 +17991,7 @@ If the special Vector Strike is used, the squadron may not make another that tur
               <modifiers/>
             </link>
             <link id="d4bf-ad22-9e47-3b84" targetId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" linkType="entry">
-              <modifiers>
-                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="force type" childId="f4b8d750-4a35-5e39-7d8b-650b29543b48" field="selections" type="equal to" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
             </link>
           </links>
         </entry>
@@ -18444,25 +18451,6 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
             </link>
           </links>
         </entry>
-        <entry id="3b5c-7245-32c3-aeb3" name="Veterans of the long war" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="force type" childId="6d29-efef-8db0-ed67" field="selections" type="at least" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="f95c-9daa-1674-04a5" targetId="fd9a1651-2e3e-e050-0aac-87937ab7e2c0" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
         <entry id="39a7-1fd7-c2c8-3005" name="Berzerkers" points="19.0" categoryId="(No Category)" type="model" minSelections="4" maxSelections="19" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries>
             <entry id="72ac-4971-7400-cd35" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
@@ -18579,6 +18567,9 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
           <modifiers/>
         </link>
         <link id="dede-ae64-4e56-cd8f" targetId="7cdf7d7e-8e25-5903-e18c-72b82b90eaae" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="d700-b538-f3b4-6439" targetId="d32e5abf-de5b-a35a-beec-cba3220b837f" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -19221,148 +19212,6 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
       </profiles>
       <links/>
     </entry>
-    <entry id="5a41-6ba7-9db6-6ac5" name="Legionnaire Warband" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="9ff0-8f89-ad3e-e247" name="HQ" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="0c1b-f989-29c8-40d0" targetId="598f-3cba-b8c5-e748" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="29e2-c2f1-6214-6a8c" targetId="9832-6438-ea96-d6d6" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="4c4f-07ab-89e6-0b27" targetId="b7d7-400d-c0df-c78c" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="cdd7-2727-ddd7-6c5e" targetId="d630-2b65-3996-c1a3" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-        <entryGroup id="3b80-a287-2206-d738" name="Elites" minSelections="2" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="df33-d87e-5e02-8dc4" targetId="8a3b-80c7-0cf3-e044" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="4fc5-a2cf-7d04-3ea4" targetId="bfbb-5f37-6875-a0ef" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="af92-2039-69d1-b2b5" targetId="2db9-679d-21ec-5949" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="c2ee-dc34-e1de-21e2" targetId="d990-6016-2e27-d72f" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="8aeb-2283-b584-4d33" targetId="5827-0f87-428a-2bdf" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="fff7-9d0e-f634-427d" targetId="d553-752e-86d1-19fd" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="b33e-b5c0-dfb3-7412" targetId="7142-e365-1c12-efd6" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="4d7d-db1b-e0ca-e6c3" targetId="c3c4-425d-e94e-1b26" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="b14a-d755-3929-fe25" targetId="6fc3-e706-bcf0-dfa2" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-        <entryGroup id="499b-824b-3bac-9c27" name="Troops" minSelections="3" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="70f2-2cd5-2cbd-3d2d" targetId="b9a9-557f-f8fb-4377" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="9df2-b08d-6113-330c" targetId="3354-24e9-4ec9-506b" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-        <entryGroup id="42ae-dcbf-5497-5240" name="Fast Attack" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="344b-a0e3-aee9-8d74" targetId="101f-b7b9-83a0-d998" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="3019-1f55-dd41-18f5" targetId="abee-429f-503a-074f" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="b4cb-a352-f3aa-525e" targetId="f674-7e58-a07c-e270" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="acae-c720-5303-9ff1" targetId="661b-14f1-8fd9-84b5" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="9ed1-2f94-b401-064b" targetId="0d77-1f37-3b32-c978" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-        <entryGroup id="038f-364b-0c1c-c7c5" name="Heavy Support" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="67a7-814c-07e1-67b0" targetId="9765-6363-9d49-b571" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="877f-e7c3-d17c-c54f" targetId="5f6a-5432-b9a3-cc77" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="e00c-ed99-faf6-d376" targetId="ac6d-d083-8ae2-dc18" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="71d4-c61e-5f02-f567" targetId="a374-0611-5092-b88b" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="b418-dbf0-e477-7639" targetId="07c3-8ec0-bfc9-8f99" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="26f4-a00e-d63a-bb5e" targetId="d8e0-73f9-06d0-347b" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="871c-1026-e956-37f2" targetId="67df-ff04-b483-f1c3" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="5a90-e758-56de-4ad1" targetId="66b4-7e29-c38b-2ab8" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-      </entryGroups>
-      <modifiers/>
-      <rules>
-        <rule id="fa60-8367-7c2f-c1c5" name="Ten thousand years of Hatred" hidden="false">
-          <description>When engaged with a unit from a space marine codex (including Space Marines, Blood Angels, Dark Angels, Space Wolves, Grey Knights and the Forgeworld listed chapters), the models in this formation may re-roll to failed hits in every round of combat. If a unit within this formation is within 12&quot; of a space marine unit, then the unit gains fearless.</description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles/>
-      <links>
-        <link id="51d1-e6c7-1a3a-c990" targetId="598f-3cba-b8c5-e748" linkType="entry">
-          <modifiers>
-            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </link>
-      </links>
-    </entry>
     <entry id="d3e7-290d-f3e8-6a14" name="Lucius the Eternal" points="165.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
         <entry id="b00f-5313-8eb3-2f0d" name="Lash of Torment" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -19844,33 +19693,6 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
             </link>
           </links>
         </entry>
-        <entry id="5309-ce4b-fe91-e3cd" name="Veteran of The Long War" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="increment" field="points" value="1.0" repeat="true" numRepeats="1" incrementParentId="6fc3-e706-bcf0-dfa2" incrementChildId="84a8-b394-b902-b0fa" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="points" value="1.0" repeat="true" numRepeats="1" incrementParentId="6fc3-e706-bcf0-dfa2" incrementChildId="ed56-bd58-6205-ca02" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="force type" childId="6d29-efef-8db0-ed67" field="selections" type="at least" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="eea0-ff2d-1073-56b0" targetId="fd9a1651-2e3e-e050-0aac-87937ab7e2c0" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
         <entry id="c051-ffac-924e-1044" name="Extra CCW" points="1.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
@@ -20102,6 +19924,18 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
         <link id="810f-74e8-66d8-70f9" targetId="69dc1813-9e46-c062-cf10-b83e3eff3bad" linkType="rule">
           <modifiers/>
         </link>
+        <link id="b700-5c52-f896-1d1a" targetId="d32e5abf-de5b-a35a-beec-cba3220b837f" linkType="entry">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0" repeat="true" numRepeats="1" incrementParentId="6fc3-e706-bcf0-dfa2" incrementChildId="ed56-bd58-6205-ca02" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="points" value="1.0" repeat="true" numRepeats="1" incrementParentId="6fc3-e706-bcf0-dfa2" incrementChildId="84a8-b394-b902-b0fa" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
       </links>
     </entry>
     <entry id="07c3-8ec0-bfc9-8f99" name="Obliterators" points="0.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -20286,33 +20120,6 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
           <profiles/>
           <links>
             <link id="d6f9-1f78-0433-622d" targetId="18ea0c9e-9025-87d4-3cfc-8b65628e611b" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="bff0-613d-94da-2047" name="Veteran of the long war" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="increment" field="points" value="1.0" repeat="true" numRepeats="1" incrementParentId="bfbb-5f37-6875-a0ef" incrementChildId="66b1-3c8f-92cf-ac93" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="points" value="1.0" repeat="true" numRepeats="1" incrementParentId="bfbb-5f37-6875-a0ef" incrementChildId="5b79-057c-8df0-6a4b" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="force type" childId="6d29-efef-8db0-ed67" field="selections" type="at least" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="04cc-2a95-6a68-61d0" targetId="fd9a1651-2e3e-e050-0aac-87937ab7e2c0" linkType="rule">
               <modifiers/>
             </link>
           </links>
@@ -20618,6 +20425,18 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
         <link id="e78c-e74a-fe12-b2e8" targetId="089da406-9b91-62aa-3327-94ab214bc6fb" linkType="profile">
           <modifiers/>
         </link>
+        <link id="282a-7e8b-a81b-2a38" targetId="d32e5abf-de5b-a35a-beec-cba3220b837f" linkType="entry">
+          <modifiers>
+            <modifier type="increment" field="points" value="1.0" repeat="true" numRepeats="1" incrementParentId="bfbb-5f37-6875-a0ef" incrementChildId="66b1-3c8f-92cf-ac93" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="points" value="1.0" repeat="true" numRepeats="1" incrementParentId="bfbb-5f37-6875-a0ef" incrementChildId="5b79-057c-8df0-6a4b" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
       </links>
     </entry>
     <entry id="40d5-5190-e960-df6d" name="Plague Zombies" points="0.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -20888,7 +20707,7 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
-                <modifier type="increment" field="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="1" repeat="true" numRepeats="1" incrementParentId="2db9-679d-21ec-5949" incrementChildId="7c08-89cd-e090-8c37" incrementField="selections" incrementValue="1.0">
+                <modifier type="increment" field="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="1" repeat="true" numRepeats="1" incrementParentId="2db9-679d-21ec-5949" incrementChildId="5059-eca1-18db-7fe9" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
@@ -20901,33 +20720,6 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
           </profiles>
           <links>
             <link id="e56e-d272-da84-2762" targetId="ae970133-d0be-0936-0b4b-009985e0be18" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="7c08-89cd-e090-8c37" name="Veterans of the Long War" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="increment" field="points" value="2.0" repeat="true" numRepeats="1" incrementParentId="2db9-679d-21ec-5949" incrementChildId="f9bc-0467-cd61-6d5a" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="points" value="2.0" repeat="true" numRepeats="1" incrementParentId="2db9-679d-21ec-5949" incrementChildId="88e7-1b4f-c110-a12e" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="force type" childId="6d29-efef-8db0-ed67" field="selections" type="at least" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="84aa-30c6-6f6f-7f1d" targetId="fd9a1651-2e3e-e050-0aac-87937ab7e2c0" linkType="rule">
               <modifiers/>
             </link>
           </links>
@@ -21067,7 +20859,7 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
               <conditions/>
               <conditionGroups/>
             </modifier>
-            <modifier type="increment" field="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="1" repeat="true" numRepeats="1" incrementParentId="2db9-679d-21ec-5949" incrementChildId="7c08-89cd-e090-8c37" incrementField="selections" incrementValue="1.0">
+            <modifier type="increment" field="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="1" repeat="true" numRepeats="1" incrementParentId="2db9-679d-21ec-5949" incrementChildId="5059-eca1-18db-7fe9" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -21086,6 +20878,18 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
         </link>
         <link id="b853-2085-bf34-1feb" targetId="fabdb798-b5bf-7543-2627-7a2807785826" linkType="rule">
           <modifiers/>
+        </link>
+        <link id="5059-eca1-18db-7fe9" targetId="d32e5abf-de5b-a35a-beec-cba3220b837f" linkType="entry">
+          <modifiers>
+            <modifier type="increment" field="points" value="2.0" repeat="true" numRepeats="1" incrementParentId="2db9-679d-21ec-5949" incrementChildId="f9bc-0467-cd61-6d5a" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="points" value="2.0" repeat="true" numRepeats="1" incrementParentId="2db9-679d-21ec-5949" incrementChildId="88e7-1b4f-c110-a12e" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -23907,7 +23711,7 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition parentId="direct parent" childId="5a41-6ba7-9db6-6ac5" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="467c-2538-a9f0-0d2e" field="selections" type="instance of" value="0.0"/>
                 <condition parentId="force type" childId="6d29-efef-8db0-ed67" field="selections" type="at least" value="1.0"/>
               </conditions>
               <conditionGroups/>
@@ -24145,10 +23949,6 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
         </link>
         <link id="99c1-91a4-6b87-a9a9" targetId="d32e5abf-de5b-a35a-beec-cba3220b837f" linkType="entry">
           <modifiers>
-            <modifier type="set" field="points" value="5.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
             <modifier type="increment" field="points" value="3.0" repeat="true" numRepeats="1" incrementParentId="f674-7e58-a07c-e270" incrementChildId="9ccb-cdec-59ee-f145" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups/>
@@ -24495,6 +24295,9 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
           <modifiers/>
         </link>
         <link id="0c01-ae73-3058-2536" targetId="6e5ebfef-c6c1-7f03-cda7-4923c695622e" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="0a92-40a7-ec5c-ebe9" targetId="04cb0539-11e5-51a2-f2de-5a13db595959" linkType="entry">
           <modifiers/>
         </link>
       </links>
