@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="44" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" books="" authorName="Thommy Abbott (Senpai514)" authorContact="legiones.astartes@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="45" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" books="" authorName="Thommy Abbott (Senpai514)" authorContact="legiones.astartes@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="320d-148f-008f-f2a4" name="&quot;1st Company Veterans" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="40k Apocalypse">
       <entries/>
@@ -33872,7 +33872,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       <modifiers/>
     </link>
     <link id="08de-1240-4f22-d6e6" targetId="df11-7608-b463-67cc" linkType="entry" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="minInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="2cdd-35c8-b2a7-f99d" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </link>
     <link id="843a-d054-c173-bf56" targetId="c992-6adc-ac5a-75d4" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
       <modifiers>
@@ -33958,6 +33965,22 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
     </link>
     <link id="2fdd-6ba9-cfea-7b7e" targetId="ea21-4080-fd7a-72d4" linkType="entry">
       <modifiers/>
+    </link>
+    <link id="c94c-50ae-92bf-c4fa" targetId="0d0f-2a8f-2986-1707" linkType="entry" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="2cdd-35c8-b2a7-f99d" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="2cdd-35c8-b2a7-f99d" field="selections" type="less than" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </link>
   </links>
   <sharedEntries>
@@ -47673,7 +47696,11 @@ All powers must be selected from the same discipline before the beginning of the
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="ace9-1640-4ec2-bbc3" targetId="7154132f-7a1a-aa55-0d4f-78fa4d2c7b91" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
@@ -47710,7 +47737,7 @@ All powers must be selected from the same discipline before the beginning of the
           <modifiers/>
         </rule>
         <rule id="6a88-eef2-4f70-4aed" name="Raiding Tactics" hidden="false" book="IA8" page="112">
-          <description>Korvydae usually leas a fast moving raiding force. If your army is led by Korvydae then it must include at least one Space Marine Scout squad. If may also take any Assault squads as a Troops choice instead of a Fast Attack choice.</description>
+          <description>Korvydae usually leads a fast moving raiding force. If your army is led by Korvydae then it must include at least one Space Marine Scout squad. It may also take any Assault squads as a Troops choice instead of a Fast Attack choice.</description>
           <modifiers/>
         </rule>
       </rules>
