@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6cacb5fc-d6bf-078d-307e-6f16c72d5f2a" revision="20" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="1" battleScribeVersion="1.15" name="Blood Angels: Codex (2014)" books="Codex: Blood Angels" authorName="Kangodo (and others)" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6cacb5fc-d6bf-078d-307e-6f16c72d5f2a" revision="23" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="1" battleScribeVersion="1.15" name="Blood Angels: Codex (2014)" books="Codex: Blood Angels" authorName="Kangodo (and others)" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="fa1acfe9-aaea-9141-a026-3a83f5286cee" name="Angel&apos;s Fury Spearhead Force" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -12547,15 +12547,16 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
         </modifier>
       </modifiers>
       <rules>
-        <rule id="991fec39-375e-123a-2e78-fd2f66245509" name="Master of the Host" hidden="false" page="0">
-          <description>If Commander Dante is your Warlord and the mission you are playing has the Tactical Objectives mission special rule, roll on the Tactical Traits table immediately before deploying the first unit in your army. Dante has this Warlord Trait in addition to the Descent of Angels Warlord Trait.</description>
-          <modifiers/>
-        </rule>
-        <rule id="c8abda13-db6a-6a6b-1355-d971b6189701" name="Surgical Strike" hidden="false" page="0">
+        <rule id="c8abda13-db6a-6a6b-1355-d971b6189701" name="Hit and Run" hidden="false" page="0">
           <description>Hit and Run</description>
           <modifiers/>
         </rule>
         <rule id="80a13d15-481f-a453-423b-c52be5a5f0f1" name="Tactical Precision" hidden="false" page="0">
+          <description>If Commander Dante is your Warlord and the mission you are playing
+has the Tactical Objectives mission special rule, roll on the Tactical Traits table immediately
+before deploying the first unit in your army. Dante has this Warlord Trait in addition to the
+Descent of Angels Warlord Trait.
+</description>
           <modifiers/>
         </rule>
         <rule id="ef5e7dac-5ea5-4abd-65eb-b5dd2edd049f" name="Eternal Warrior" hidden="false">
@@ -23351,15 +23352,25 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
       <modifiers/>
     </rule>
     <rule id="42b6e0ee-0285-520e-7c1d-58dda31b629f" name="And They Shall Know No Fear" hidden="false">
+      <description>A unit that contains at least one model with this special rule automatically passes Fear and Regroup Tests. When it Regroups, the  unit does not make the 3&quot; Regroup move, but can instead move, shoot (or Run) and declare charges normally in that turn. Furthermore, if a unit containing one or more models with this special rule is caught by a Sweeping Advance, they are not destroyed, but remain locked in combat instead.</description>
       <modifiers/>
     </rule>
     <rule id="0ac44832-0671-ea49-9c6a-c11a9747b627" name="Assault Vehicle" hidden="false">
+      <description>Passengers disembarking from Access Points on a vehicle with this special rule can charge on the turn they do so (even in a turn that the vehicle was destroyed, or in the following turn) unless the vehicle arrived from Reserve that turn.</description>
       <modifiers/>
     </rule>
     <rule id="3d2faf58-5514-68f4-82d6-d57152b1778b" name="Combat Squads" hidden="false">
+      <description>A full strength, ten-man unit with this special rule can break down into two five-man units, called combat squads, considered to be two five-man squads of the same type. For example, a ten-man Blood Angels Tactical Squad can split into two five-man Tactical Squads using the combat squads rule.
+
+You must decide which units are splitting combat squads, and which models go into each combat squad, immediately before determining your Warlord traits. A unit split into combat squads therefore is now two seperate units for all game purposes, includeing calculateing the total number of units in the army and determining the number of units you can place in Reserve. Then proceed with deployment as normal. In an exception to the normal rules, two combat squads split from the same unit can embark in the same transport vehicle, provideing its Transport Capacity allows. Once you have decided whether or not to spilt a unit into combat squads, it must remain that way for the entire battle. It cannot split up or join back together later on in the battle, nor can you use a redeployment to split up a unit or join it  back together.
+
+Note that Bike Squads count as being at full strength when they have eight Space Marine Bikers and one Attack Bike. If split into combat squads, one combat squad will have five Bikers, the other will have three bikkers and the Attack Bike</description>
       <modifiers/>
     </rule>
     <rule id="19f46d20-2e5d-d519-cf9c-3acab5ede82d" name="Counter-attack" hidden="false">
+      <description>If a unit contains at least one model with this special rule, and that unit is charged, every model with the Counter-attack special rule in the unit gets +1 Attack untill the end of the phase.
+
+If when charged, the unit was already locke din combat, the Cunter-attack special rule has no effect</description>
       <modifiers/>
     </rule>
     <rule id="e01dda6d-c14a-07d8-fa02-cae1bcb534b9" name="Deep Strike" hidden="false">
@@ -23370,12 +23381,21 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
       <modifiers/>
     </rule>
     <rule id="199c45ee-bde8-b703-ca1a-9a1cf8f57c1c" name="Fear" hidden="false">
+      <description>At the start of each Fight sub-phase, a unit in base contact with one or more enemy models that cause Fear must take a Leadership test (called a Fear test) before any blows are struck. If the test is passed, all is well and there is no effect. If the test is failed, the unit succumbs to fear-all models in the unit have their Weapon Skill reduced to 1 for the remainder of the Fight sub-phase. Note that a model that causes Fear is not itself immune to Fear, and will still need to take a Fear test if it is in base contact with any enemy models that cause Fear.</description>
       <modifiers/>
     </rule>
     <rule id="832a9acd-a7d5-3dbf-609c-b0026f3727bc" name="Fearless" hidden="false">
+      <description>Units containing one or more models with the Fearless special rule automatically pass Pinning, Fear, Regroup tests and Morale checks, but cannot Go to Ground and cannot choose to fail a Morale check due to the Our Weapons Are Useless rule. If a unit has Gone to Ground and then gains the Fearless special rule, all the effects of Go to Ground are immediately cancelled.</description>
       <modifiers/>
     </rule>
     <rule id="9bc82b29-dc1c-512c-2934-4184dfbe97af" name="Feel No Pain" hidden="false">
+      <description>When a model with this special rule suffers an unsaved wound, it can make a special Feel No Pain roll to avoid being wounded (this is not a saving throw and so can be used against attacks that state that &apos;no saves of any kind are allowed&apos;, for example those inflicted by Perils of the Warp).
+
+Feel no pain saves may not be taken against Destroyer attacks or against unsaved wounds that have the Instant Death special rule.
+
+Roll a D6 each time an unsaved wound is suffered. On a 4 or less you must take the wound as normal on a 5+ the unsaved wound is discounted - treat it as having been saved.
+
+If a unit has the Feel No Pain special rule with a number in brackets afterwards - Feel No Pain (6+), for example - then the number in brackets is the D6 result needed to discount the Wound.</description>
       <modifiers/>
     </rule>
     <rule id="4dfb96c0-6bb5-ba0d-3893-a149119ec74e" name="Fleet" hidden="false">
@@ -23383,6 +23403,7 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
       <modifiers/>
     </rule>
     <rule id="bbb2eae0-e4d2-240f-887c-204bf8c0bed7" name="Furious Charge" hidden="false">
+      <description>In a turn in which a model with this special rule charges into combat, it adds +1 to its Strength characteristic until the end of the Assault phase. A model that has made a disordered charge that turn receives no benefit from Furious Charge.</description>
       <modifiers/>
     </rule>
     <rule id="d209e2e9-a2e8-c041-66c3-059c3b9cd6e0" name="Graviton" hidden="false">
@@ -23397,6 +23418,38 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
       <modifiers/>
     </rule>
     <rule id="5943575b-7ad2-a2b9-e146-58ed551525c7" name="Independent Character" hidden="false">
+      <description>Independent Characters can join other units. They cannot, however, join units that contain vehicles or Monstrous Creatures. They can join other independent Characters, though, to form a powerful multi-character unit!
+
+Joining and Leaveing a Unit
+An Independent Character can begin the game already with a unit, either by being deployed in unit coherency with it or, if the unit is in Reserve, by you informing your opponent of which unit it has joined.
+
+In order to join a unit, an Independent Character simply has to move so that he is within the 2&quot; unit coherency distance of a friendly unit at the end of their movement phase, the player must declare which unit it is joining. If a independent character does not intend to join a unit, it must (where possible) remain more than 2&quot; from it at the end of the movement phase. This is to make clear whether they have joined the unit or not. Note that after an Independent character joins a unit that unit can move no further that Movement Phase.
+
+An Independent Character can leave a unit during the Movement phase by moving out of unit coherency with it. He cannot join or leave during any other phase-once shots are fired or charges are declared, it is too late to join in or duck out!
+
+An Independent Character cannot leave a unit while either he or the unit is in Reserves, locked in Combat or Falling Back. If an Independent Character joins a unit, and all other models in that unit are killed, he again becomes a unit of one model at the start of the following phase.
+
+While an Indepent character is part of a unit, he counts as part of the unit for all rules purposes, though he still follows the riles for characters.
+
+Look Out, Sir
+Independent Characters pass Look Out Sir rolls on a 2+
+
+Heroic Moral
+A unit that contains one or more Independent Characters does not need a double 1 to Regroup if reduced to below 25% of its starting numbers, but instead tests as if it had at least 25% remaining.
+
+Special Rules
+When an Independent Character joins a unit, it might have different special rules from those of the unit. Unless specified in the rule itself (as in the Stubborn special rule), the unit&apos;s special rules are not conferred upon the Independent Character, and the Independent Character&apos;s special rules are not confered upon the unit. Special rules that are conferred to the unit only apply for as long as the Independent Character is with them.
+
+Independent Characters and Infiltrate
+An Independent Character Without the Infiltrate special rule cannot join a unit of infiltrators during deployment and vice versa.
+
+Sometimes a unit that an independent CHaracter has joined will be the target of a beneficial or harmful effect, such as those bestowed by the Blind special rule, for example. If the character leaves the unit both he and the unit continue to be affected  by the effect, so you&apos;ll need to mark the character accordingly.
+
+For example, Farseer Mehiledrin and his unit of Eldar Guardians are set ablaze by a weapon with the Soul Blaze special rule. If Mehiledrin leaves the unit, both he and the Guardians will still be ablaze and the ongoing effects of the Soul Blaze rule must be resolved separately.
+
+Conversely, if an Independent Character joins a unit after that unit has been the target of an ongoing effect (or joins a unit after himself having been the target of an ongoing effect) benefits and penalties from that effect are not shared.
+
+For example, Crimson Fists Tactical Squad Hemanez is suffering the effects of the Blind special rule. If Captain Cruz joins the unit, he does not suffer the results of the Blind special rule as he was not there when it happened!</description>
       <modifiers/>
     </rule>
     <rule id="4ef9d1ba-6802-4c35-6b9c-0b5fd1f832a4" name="Legacies of Glory" hidden="false" book="Imperial Armour II 2nd Ed" page="0">
@@ -23462,15 +23515,25 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
       <modifiers/>
     </rule>
     <rule id="765eb1b4-4ab3-0941-c3d8-29a7238e8020" name="Outflank" hidden="false">
+      <description>During deployment, players can declare that any unit that cointains at least one model with this special rule is attempting to Outflank the enemy. When this unit arrives from Reserves, but not Ongoing Reserve, the controlling player rolls a D6: on a 1-2, the unit comes in from the table edge to the left of their controlling player&apos;s own table edge; 3-4, they come on from the right; on a 5-6, the player can choose left or right. Models move onto the table as described for other Reserves.</description>
       <modifiers/>
     </rule>
     <rule id="4d18a8fe-13da-a05a-2dec-6842b0b83630" name="Rage" hidden="false">
+      <description>In a turn in which a model with this special rule charges into combat, it gains +2 Attacks for charging, rather than +1. A model that has made a disordered charge that turn receives no benefit from Rage</description>
       <modifiers/>
     </rule>
     <rule id="5c421581-ea8b-678d-b484-1dd4905cf120" name="Relentless" hidden="false">
+      <description>Relentless models can shoot with Heavy, Salvo or Ordnance weapons, counting as stationary, even if they moved in the previous Movement phase. They are also allowed to charge in the same turn that they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
       <modifiers/>
     </rule>
     <rule id="c4621cb6-f30c-b816-4362-35149a59a7d9" name="Scouts" hidden="false">
+      <description>After both sides have deployed (including Infiltrators), but before the first player begins his first turn, a unit containing at least one model with this special rule can choose to redeploy. If the unit is Infantry, Artillery, a Walker or a Monstrous Creature, each model can redeploy anywhere entirely within 6&quot; of its current position. If it is any other unit type, each model can redeploy anywhere entirely within 12&quot; of its current position. During this redeployment, Scouts can move outside the owning player&apos;s deployment , but must remain 12&quot;  away fom any enemy unit. A unit that makes a Scout redployment cannot charge in the first game turn. A unit cannot embark or disembark as  part of a scout redployment.
+
+If both sides have scots, roll-off; the winner decides who redeploys first. Then alternate redeploying Scout units.
+
+If a unit with this special rule is deployed inside a Dedicated Transport, it confers the Scout special rule to the Transport (though a disembarkation cannot be performed as part of the redeployment). Note tht a Transport with this special rule does not lose it if a unit without this special rule is embarked upon it. Having scout also confers the Outflank special rule to units of Scouts that are kept in reserve.
+
+If a unit has both Infiltrate and Scout special rules, that unit can deploy as per the Infiltrate special rule and then redploy as per the Scout Special Rule.</description>
       <modifiers/>
     </rule>
     <rule id="99488e37-01a3-cd98-91ed-043b654d6911" name="Storm of Angels" hidden="false">
@@ -23490,9 +23553,13 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
       <modifiers/>
     </rule>
     <rule id="2850faf1-00d1-48c4-c044-831d6ab79798" name="Void Shields" hidden="false">
+      <description>Each hit scored against the model will instead hit a void shield (whilst they remain). Close combat attacks come from inside the shield and therefore are not stopped. Void shields have an Armour Value of 12. A glancing or penetrateing hit (or any hit from a Destroyer weapon) scored against a void shield causes it to collapse. After all the void shields have collapsed, further hits strike the model instead. At the end of each of the controlling player&apos;s turns, roll one dice for each collapsed void shield: each roll of 5+ instantly restores one collapsed shield.. If a weapon uses a template or blast marker and it hits one or more units protected by a Void Shield Zone, ignore the number of hits it would normally cause to the units &amp; instead roll to penetrate the void shield once using the weapons normal rules &amp; profile for each template or blast marker that hits.</description>
       <modifiers/>
     </rule>
     <rule id="d6b184d6-ff9d-c113-3650-7d625f5a43ed" name="Zealot" hidden="false">
+      <description>A unit containing one or models with the Xealot special rule automatically passes Pinning, Fear and Regroup tests and Morale checks, but cannot Go to Ground and cannot choose to fail a Morale check due to the Our Weapons are Useless rule. If a unit gains the Zealot special rule when it has Gone to Ground, all the effects of Gone to Ground are immediately cancelled.
+
+In addition, units containing one or more models with the Zealot special rule re-roll all failed To Hit rolls during the first round of each close combat - they do not get to re-roll failed To Hit rolls in subsequent rounds.</description>
       <modifiers/>
     </rule>
   </sharedRules>

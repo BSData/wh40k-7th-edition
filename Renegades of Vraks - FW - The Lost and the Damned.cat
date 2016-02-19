@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b304-5367-ebe7-8669" revision="5" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Renegades of Vraks: IASoV - The Lost and the Damned (2015)" authorName="k" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b304-5367-ebe7-8669" revision="6" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Renegades of Vraks: IASoV - The Lost and the Damned (2015)" authorName="k" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a9109191-abc5-f506-cc44-c3b2762199ec" name="Daemon Lord - An’ggrath the Unbound" points="888.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour 13" page="198">
       <entries>
@@ -4441,7 +4441,7 @@
           <modifiers>
             <modifier type="set" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="force type" childId="f66ccc63-24d6-b1c8-31f2-1524d22d54b6" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="f66ccc63-24d6-b1c8-31f2-1524d22d54b6" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -6420,7 +6420,7 @@
                 </modifier>
                 <modifier type="increment" field="maxSelections" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="force type" childId="c87b9976-27c6-e70f-98ec-39ed33887670" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="roster" childId="c87b9976-27c6-e70f-98ec-39ed33887670" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -7783,9 +7783,9 @@
       </entries>
       <entryGroups/>
       <modifiers>
-        <modifier type="set" field="minInForce" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+        <modifier type="set" field="minInRoster" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="force type" childId="c87b9976-27c6-e70f-98ec-39ed33887670" field="selections" type="equal to" value="1.0"/>
+            <condition parentId="roster" childId="c87b9976-27c6-e70f-98ec-39ed33887670" field="selections" type="equal to" value="1.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -12453,8 +12453,8 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition parentId="force type" childId="8d17c6b4-6448-b00c-0a61-4730c204b6fd" field="selections" type="equal to" value="1.0"/>
-                <condition parentId="force type" childId="96c45554-6814-8b1d-86cd-cb70f79c4d90" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="8d17c6b4-6448-b00c-0a61-4730c204b6fd" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="96c45554-6814-8b1d-86cd-cb70f79c4d90" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -13301,7 +13301,7 @@
       <modifiers>
         <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="force type" childId="f66ccc63-24d6-b1c8-31f2-1524d22d54b6" field="selections" type="equal to" value="1.0"/>
+            <condition parentId="roster" childId="f66ccc63-24d6-b1c8-31f2-1524d22d54b6" field="selections" type="equal to" value="1.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -13550,7 +13550,7 @@
       <entries/>
       <entryGroups/>
       <modifiers>
-        <modifier type="set" field="minInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+        <modifier type="set" field="minInRoster" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
             <condition parentId="force type" childId="06da-d4f3-d5a7-e73e" field="selections" type="instance of" value="0.0"/>
           </conditions>
@@ -15274,12 +15274,6 @@
     <rule id="a58b39b9-c3ab-eb26-3b11-aa7ce0abd38e" name="Covenant of Nurgle" hidden="false" book="Imperial Armour: Siege of Vraks" page="237">
       <modifiers/>
     </rule>
-    <rule id="993ba417-9cd4-4667-99a4-46e4b2c79748" name="Covenant of Slaanesh" hidden="false" book="Imperial Armour 13" page="151">
-      <modifiers/>
-    </rule>
-    <rule id="5f096744-e856-e2c3-f361-53434ead0025" name="Covenant of Tzeentch" hidden="false" book="Imperial Armour 13" page="151">
-      <modifiers/>
-    </rule>
     <rule id="eead883a-5423-61ce-c77e-c41c77ad9c84" name="Crusader" hidden="false" book="Warhammer 40k rulebook" page="30">
       <modifiers/>
     </rule>
@@ -15353,15 +15347,6 @@
       <modifiers/>
     </rule>
     <rule id="7cab0b5e-d7e8-f1fc-6556-db359a659843" name="Dedicated to Nurgle" hidden="false" book="Imperial Armour 13" page="160">
-      <modifiers/>
-    </rule>
-    <rule id="43230407-4281-eabf-cc82-45c362e18c44" name="Dedicated to Slaanesh" hidden="false" book="Imperial Armour 13" page="104">
-      <modifiers/>
-    </rule>
-    <rule id="3dd7156a-8d1a-ece8-efc0-10a3683b9a3b" name="Dedicated to Slaanesh (Brutes)" hidden="false" book="Imperial Armour 13" page="160">
-      <modifiers/>
-    </rule>
-    <rule id="957effeb-f250-934b-564d-34e174dd0c90" name="Dedicated to Tzeentch" hidden="false" book="Imperial Armour 13" page="160">
       <modifiers/>
     </rule>
     <rule id="bf64bcf7-f58a-16dc-2d77-d8ad4e7a9ac8" name="Dedication of Khorne" hidden="false" book="Imperial Armour 13" page="127">
@@ -17518,18 +17503,6 @@
         <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="2"/>
         <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="8"/>
         <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="5+"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="157580af-680d-12bc-cf63-7516b389dc8c" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Mark of Khorne" hidden="false" book="Codex: Chaos Space Marines" page="30">
-      <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Model has Rage &amp; Counter-attack"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="5147effb-31bc-06c5-2859-4e98722bba19" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Mark of Nurgle" hidden="false" book="Codex: Chaos Space Marines" page="30">
-      <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Model has +1T. A Psyker with Mark of Nurgle must generate at least one of his powers from the Discipline of Nurgle."/>
       </characteristics>
       <modifiers/>
     </profile>
