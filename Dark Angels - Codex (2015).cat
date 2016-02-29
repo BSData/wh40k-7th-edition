@@ -8017,11 +8017,15 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       <modifiers/>
       <rules>
         <rule id="b5c8-1d90-6a25-4124" name="Supreme Fire Discipline" hidden="false">
-          <description>Unless jinking, all units in this formation with the Grim Resolve Special Rule fire Overwatch at full BS.</description>
+          <description>Unless jinking, all units in this formation with the Grim Resolve Special Rule fire Overwatch at full BS when part of a Lion&apos;s Blade.</description>
           <modifiers/>
         </rule>
         <rule id="723a-d8f2-75f0-f267" name="Company Support" hidden="false">
           <description>If The Lion&apos;s Blade includes 2 Demi Battle companys, whereas one includes a Company Master and the other a Chaplain, all Rhinos, Razorbacks and Drop Pods for units in a Demi Battle Company are free. Cost for upgrades still has to be paid.</description>
+          <modifiers/>
+        </rule>
+        <rule id="ab79-2b13-df46-e334" name="Fire Discipline" hidden="false">
+          <description>Models in this formation with the Grim Resolve SR fire overwatch at BS3.</description>
           <modifiers/>
         </rule>
       </rules>
@@ -8062,6 +8066,9 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <conditionGroups/>
             </modifier>
           </modifiers>
+        </link>
+        <link id="ca18-ae94-3b22-f123" targetId="243e-8093-97e2-127f" linkType="rule">
+          <modifiers/>
         </link>
       </links>
     </entry>
@@ -10581,6 +10588,9 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <description>Venerable Dreadnought Units may only include a single model and must have purchased a Drop Pod as Dedicated Transport. Independent Characters need to have purchased Terminator Armour.</description>
           <modifiers/>
         </rule>
+        <rule id="360e-f9a8-6cdc-3cd0" name="Preferred Enemy (Chaos Space Marines)" hidden="false">
+          <modifiers/>
+        </rule>
       </rules>
       <profiles/>
       <links>
@@ -10607,7 +10617,12 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
         </link>
         <link id="beb2-f482-0b01-296e" targetId="6a7e-2ff0-d7cd-b751" linkType="rule">
-          <modifiers/>
+          <modifiers>
+            <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -20453,6 +20468,9 @@ At the beginning of every subsequent player turn, the marker scatters 2D6&quot; 
       <description>Automatically pass all Pinning-, Fear- and Regroup tests and Morale checks. Cannot go to ground or use the &quot;Our Weapons Are Useless&quot; rule.
 
 Unit re-rolls all failed To Hit rolls during the first round of each close combat</description>
+      <modifiers/>
+    </rule>
+    <rule id="243e-8093-97e2-127f" name="Objective Secured" hidden="false">
       <modifiers/>
     </rule>
   </sharedRules>
