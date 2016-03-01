@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="026a-37f6-fa3a-c213" revision="7" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Necrons: Codex (2015)" authorName="Kangodo, Tobias" authorContact="Report issues and bugs for this Codex here:" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="026a-37f6-fa3a-c213" revision="11" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Necrons: Codex (2015)" books="Necrons: Codex (2015)" authorName="Kangodo, Tobias" authorContact="Report issues and bugs for this Codex here:" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="c528a153-c346-46d9-a7e5-d5e0fd485ea5" name="Acquisition Phalanx" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="40k Apocalypse" page="169">
       <entries/>
@@ -1348,6 +1348,12 @@ The removed units may Deep Strike back into the game and the first placed model 
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="show" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="5035-9fad-cd58-1bce" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
     </rule>
   </rules>
@@ -1487,9 +1493,6 @@ The removed units may Deep Strike back into the game and the first placed model 
     <link id="6454-9f59-1f02-8b87" targetId="76f6-bd0f-5895-cfa2" linkType="entry" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
       <modifiers/>
     </link>
-    <link id="3c00-e5ad-3efb-1c06" targetId="dac9-7a63-1c57-2715" linkType="entry" categoryId="bf93-7277-bf48-16f7">
-      <modifiers/>
-    </link>
     <link id="788c-7385-e47f-b12d" targetId="dac9-7a63-1c57-2715" linkType="entry" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
       <modifiers/>
     </link>
@@ -1551,6 +1554,12 @@ The removed units may Deep Strike back into the game and the first placed model 
       <modifiers/>
     </link>
     <link id="7c8e-00b2-db56-414a" targetId="3b4f-faec-3104-33da" linkType="entry" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
+      <modifiers/>
+    </link>
+    <link id="31f5-00ae-4deb-f2fa" targetId="dac9-7a63-1c57-2715" linkType="entry" categoryId="bf93-7277-bf48-16f7">
+      <modifiers/>
+    </link>
+    <link id="d702-1ae1-4324-64bc" targetId="2413-a299-7bb4-293c" linkType="entry" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
       <modifiers/>
     </link>
   </links>
@@ -3266,7 +3275,7 @@ The removed units may Deep Strike back into the game and the first placed model 
       </profiles>
       <links/>
     </entry>
-    <entry id="f0a010af-0686-8c3c-7ada-b1a46923d7a2" name="Fighter Ace" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="f0a010af-0686-8c3c-7ada-b1a46923d7a2" name="Fighter Ace" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Shield of Baal: Leviathan" page="310">
       <entries/>
       <entryGroups/>
       <modifiers/>
@@ -3682,28 +3691,6 @@ The removed units may Deep Strike back into the game and the first placed model 
           </profiles>
           <links>
             <link id="3b250eed-905d-c515-7b74-f5f03ab5f83a" targetId="cbcb38d8-d4c4-3320-2946-4976f4c0e5e9" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="bf8f16fb-3ace-af80-7dc5-ed2173c20487" name="Pyrrhian Eternals" points="0.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="set" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="fa230092-444d-e839-9f0a-86dee54dcea0" field="selections" type="less than" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="43c87bd7-fbbb-aac9-c244-d5a075e1fe4d" targetId="517463e9-96e6-583d-41eb-b5c00df57502" linkType="rule">
-              <modifiers/>
-            </link>
-            <link id="a021791c-ed36-355f-04bb-2c0a576ee601" targetId="c91538d2-cbee-01c1-57b6-302092a2dffe" linkType="rule">
               <modifiers/>
             </link>
           </links>
@@ -4635,6 +4622,18 @@ If the Tomb Ziggurat is destroyed, the docked warmachine takes a S10, AP2 hit.</
         </link>
       </links>
     </entry>
+    <entry id="febf-4717-a407-6e99" name="Phase Shifter" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="3942-5a88-8de8-3f41" targetId="b8e2-3d2d-ada9-ccec" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="6b76-c128-51ae-b42f" name="Powers of the C&apos;tan - Coalescent" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
@@ -4947,6 +4946,60 @@ If the Tomb Ziggurat is destroyed, the docked warmachine takes a S10, AP2 hit.</
           <modifiers/>
         </link>
       </links>
+    </entry>
+    <entry id="2413-a299-7bb4-293c" name="Retribution Phalanx" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Start Collecting! Necrons" page="http://i.imgur.com/6SKRJIJ.jpg">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="b16f-e2dd-41fb-94c1" name="Warriors" defaultEntryId="db6b-1de2-58e7-3272" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="db6b-1de2-58e7-3272" targetId="132b0de6-63eb-e649-044d-2ca3591cf807" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="00b7-7517-9483-446b" name="Canoptek Scarabs" defaultEntryId="9b2c-442f-335d-2015" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="9b2c-442f-335d-2015" targetId="4fcaea44-66e3-8149-9ef4-e3fb11929c07" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="8c5e-3d79-8776-03c4" name="Triarch Stalker" defaultEntryId="f0fe-8494-7740-89e9" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="f0fe-8494-7740-89e9" targetId="e3727ff3-fc7a-7ff3-d790-599ef232c46c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="738d-d413-a75f-1187" name="Overlord" defaultEntryId="f20e-6a51-1e94-7960" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="f20e-6a51-1e94-7960" targetId="fffe04c4-b352-1b3e-da42-24084731988f" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="85c2-aa15-049b-31ba" name="From the Sands, We Rise" hidden="false" book="Start Collecting! Necrons">
+          <description>If the unit of Necron Warriors or Scarabs from a Retribution Phalanx is wiped out, it can return to the battlefield at the start of your next turn. The unit must be set up within 3&quot; of the Necron Overlord from this Formation.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
     </entry>
     <entry id="d20d-61b3-4597-63d9" name="Royal Court" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -6276,18 +6329,6 @@ If the Tomb Ziggurat is destroyed, the docked warmachine takes a S10, AP2 hit.</
       </rules>
       <profiles/>
       <links/>
-    </entry>
-    <entry id="febf-4717-a407-6e99" name="Phase Shifter" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="3942-5a88-8de8-3f41" targetId="b8e2-3d2d-ada9-ccec" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
     </entry>
   </sharedEntries>
   <sharedEntryGroups>

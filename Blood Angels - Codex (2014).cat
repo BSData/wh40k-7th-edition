@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6cacb5fc-d6bf-078d-307e-6f16c72d5f2a" revision="14" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="1" battleScribeVersion="1.15" name="Blood Angels: Codex (2014)" books="Codex: Blood Angels" authorName="Kangodo (and others)" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6cacb5fc-d6bf-078d-307e-6f16c72d5f2a" revision="23" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="1" battleScribeVersion="1.15" name="Blood Angels: Codex (2014)" books="Codex: Blood Angels" authorName="Kangodo (and others)" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="fa1acfe9-aaea-9141-a026-3a83f5286cee" name="Angel&apos;s Fury Spearhead Force" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -2430,25 +2430,33 @@
             </link>
           </links>
         </entryGroup>
-        <entryGroup id="48276372-f1ea-fe22-7f6c-7a81072a0d09" name="Command Squad" defaultEntryId="85cc8df1-57f4-0df2-c7b8-a5b1d4975e9b" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="48276372-f1ea-fe22-7f6c-7a81072a0d09" name="Command Squad" defaultEntryId="85cc8df1-57f4-0df2-c7b8-a5b1d4975e9b" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="set" field="maxSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" incrementChildId="2c46eb96-5839-94d5-b93a-aeb7d7a543b3" incrementField="selections" incrementValue="1.0">
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
-              <conditionGroups/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" childId="03d3ea0d-2d79-81fc-2fb5-8c4badf07765" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" childId="ac94b32c-059b-31d6-5d90-5067721fc559" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
-            <modifier type="set" field="minSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" incrementChildId="2c46eb96-5839-94d5-b93a-aeb7d7a543b3" incrementField="selections" incrementValue="1.0">
+            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="minSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" incrementChildId="1fb672e1-f062-b981-172b-9552f08701fe" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="maxSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" incrementChildId="1fb672e1-f062-b981-172b-9552f08701fe" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" childId="1fb672e1-f062-b981-172b-9552f08701fe" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" childId="2c46eb96-5839-94d5-b93a-aeb7d7a543b3" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <links>
@@ -2497,25 +2505,33 @@
             </link>
           </links>
         </entryGroup>
-        <entryGroup id="acf13db9-45a5-4f22-bce1-12dd7eba7d8c" name="Furioso Dreadnought" defaultEntryId="5e59670b-c87c-4dba-cbc2-db4aa938221a" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="acf13db9-45a5-4f22-bce1-12dd7eba7d8c" name="Furioso Dreadnought" defaultEntryId="5e59670b-c87c-4dba-cbc2-db4aa938221a" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="set" field="maxSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" incrementChildId="ac94b32c-059b-31d6-5d90-5067721fc559" incrementField="selections" incrementValue="1.0">
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" incrementChildId="ac94b32c-059b-31d6-5d90-5067721fc559" incrementField="selections" incrementValue="1.0">
               <conditions/>
-              <conditionGroups/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" childId="2c46eb96-5839-94d5-b93a-aeb7d7a543b3" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" childId="1fb672e1-f062-b981-172b-9552f08701fe" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
-            <modifier type="set" field="minSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" incrementChildId="ac94b32c-059b-31d6-5d90-5067721fc559" incrementField="selections" incrementValue="1.0">
+            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" incrementChildId="03d3ea0d-2d79-81fc-2fb5-8c4badf07765" incrementField="selections" incrementValue="1.0">
               <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="minSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" incrementChildId="03d3ea0d-2d79-81fc-2fb5-8c4badf07765" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="maxSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" incrementChildId="03d3ea0d-2d79-81fc-2fb5-8c4badf07765" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" childId="03d3ea0d-2d79-81fc-2fb5-8c4badf07765" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="4e13c24d-45a2-1f24-5af2-2b3f85ab7b65" childId="ac94b32c-059b-31d6-5d90-5067721fc559" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <links>
@@ -2680,6 +2696,161 @@ Also confers a 5++ against attacks made to the front armour, including damage fr
           <modifiers/>
         </link>
       </links>
+    </entry>
+    <entry id="02da-8315-c0ca-c102" name="Cerastus Knight-Atrapos" points="435.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="2" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="8abd-4550-7634-45c1" name="Graviton Singularity Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="9ee9-b380-8e71-bd96" name="Collapsing Singularity" hidden="false">
+              <description>Before firing the weapon, roll a D6. On a result of a 1, the firing Knight-Atrapos suffers a single Hull Point of damage with no saves of any kind before the attack is carried out. On a result of a 6, the attack is carried out with the Vortex special rule.</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="d2ef-69e6-8051-69e6" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Graviton Singularity Cannon" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Large Blast, Armourbane, Concussive, Collapsing Singularity"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="5103-d6af-b495-5305" name="Atrapos Lascutter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="298c-4f81-890d-9e53" name="Wrecker" hidden="false" book="">
+              <description>Weapons and attacks with this special rule may re-roll failed Armour Penetration rolls against fortifications and immobile structures (such as bunkers and barricades), and add +1 to any result rolled on the Building Damage chart. If this attack damages a bulkhead or wall section of terrain and destroys it, remove that section of terrain from play if possible.</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="ae13-e6b1-5193-f6b1" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Atrapos Lascutter - Beam" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="8&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="7f88-1a3e-c647-6198" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Atrapos Lascutter - Close Combat" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Wrecker"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="aac0-ffad-1120-9a4e" name="Ionic Flare Shield" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="ef13-dd3c-4b07-a6b8" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Ionic Flare Shield" hidden="false" book="" page="0">
+              <characteristics>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="When a Questoris Knight Magaera is deployed, and subsequently at the start of each of the opposing side’s Shooting phases, the Questoris Knight Magaera’s controlling player must declare which facing each Questoris Knight’s ionic flare shield is covering. The choices are: front, left side, right side or rear. The Knight has a 4+ invulnerable save against all hits on that facing until the start of the opposing side’s next Shooting phase, and the strength of any Shooting attack against it from that facing is reduced by -1, the effect increasing to -2 if the weapon has the Blast or Template rules (note, however, that this strength reduction has no effect on Destroyer or Haywire attacks). Ionic flare shields are repositioned before any attacks are carried out in the Shooting phase and may not be used to make saving throws against close combat attacks."/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="4966-d09a-936e-3622" name="Occular Augmetics" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="fd51-778d-b9cc-26bf" name="Macro-extinction Targeting Protocols" hidden="false">
+          <description>When making shooting attacks against targets of the Super-heavy or Gargantuan Creature type, the Cerastus Knight-Atrapos counts its weapons as Twin-linked.</description>
+          <modifiers/>
+        </rule>
+        <rule id="6d0f-ae38-7807-7a2f" name="Catastrophic Destruction" hidden="false">
+          <description>When destroyed, the Cerastus Knight-Atrapos adds +2 to the result rolled on the
+Catastrophic Damage table.</description>
+          <modifiers/>
+        </rule>
+        <rule id="2b52-ab08-9cc1-010a" name="Flank Speed" hidden="false">
+          <description>If the Cerastus Knight opts to make a Run move rather than firing a weapon in the Shooting phase, it may move 3D6&quot;.</description>
+          <modifiers/>
+        </rule>
+        <rule id="4ee7-b80b-ee02-10df" name="Strikedown" hidden="false">
+          <description>Any non-vehicle model that suffers one or more unsaved Wounds or passes one or more saving throws against an attack with the Strikedown special rule moves as if it is in difficult terrain until the end of its next turn. It is a good idea to mark affected models with counters or coins so that you remember.</description>
+          <modifiers/>
+        </rule>
+        <rule id="628f-d6d4-8501-ebe8" name="Smash" hidden="false">
+          <description>All of the close combat attacks, except Hammer of Wrath attacks, of a model with this special rule are resolved at AP2 (unless it’s attacking with an AP1 weapon). Additionally, when it makes its close combat attacks, it can choose instead to make a single Smash Attack. If it does so, roll To Hit as normal, but resolve the Attack at double the model’s Strength (to a maximum of 10). Furthermore, a model making a Smash Attack can re-roll its armour penetration rolls, but must abide by the second result.</description>
+          <modifiers/>
+        </rule>
+        <rule id="7af3-f562-8456-de03" name="Relentless" hidden="false">
+          <description>Relentless models can shoot with Heavy, Salvo or Ordnance weapons, counting as stationary, even if they moved in the previous Movement phase. They are also allowed to charge in the same turn they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
+          <modifiers/>
+        </rule>
+        <rule id="6440-59d5-3f6b-fb99" name="Move Through Cover" hidden="false">
+          <description>A unit that contains at least one model with this special rule rolls an extra D6 when rolling to move through difficult terrain and is not slowed by charging through difficult terrain. In most circumstances, this will mean that, when moving, the unit rolls 3D6 and picks the highest roll. Furthermore, a model with the Move Through Cover special rule automatically passes Dangerous Terrain tests.</description>
+          <modifiers/>
+        </rule>
+        <rule id="4817-4ea3-b684-6d30" name="Invincible Behemoth" hidden="false">
+          <description>A Super-heavy vehicle is so large and strongly built that weapons which degrade the armour of smaller vehicles will not effect it. Because of this, any attack that says that the target model is destroyed, wrecked, Explodes! or is otherwise removed from play inflicts D3 Hull Points of damage on a Super-heavy vehicle instead.
+
+In addition, any attacks or special abilities that permanently lower the Armour Values of a target vehicle do not affect a Super-heavy vehicle. Note that attacks or abilities that count the Armour Value as being lower, but do not actually change it, work normally.</description>
+          <modifiers/>
+        </rule>
+        <rule id="264d-4359-02c4-11c2" name="Hammer of Wrath" hidden="false">
+          <description>If a model with this special rule ends its charge move in base or hull contact with an enemy model, it makes one additional Attack that hits automatically and is resolved at the model’s unmodified Strength with AP-. This Attack does not benefit from any of the model’s special rules (such as Furious Charge, Rending etc.). This Attack is resolved during the Fight sub-phase at the Initiative 10 step, but does not grant the model an additional Pile In move.
+
+If a model with this special rule charges a building or vehicle, the hit is resolved against the Armour Value of the facing the charging model is touching. If a model with this special rule charges a building or vehicle that is a Transport or a Chariot, the hit is resolved against the building or vehicle, not the occupants or the rider.</description>
+          <modifiers/>
+        </rule>
+        <rule id="76c4-cd60-5acb-52d4" name="Fear" hidden="false">
+          <description>At the start of each Fight sub-phase, a unit in base contact with one or more enemy models that cause Fear must take a Leadership test (called a Fear test) before any blows are struck. If the test is passed, all is well and there is no effect. If the test is failed, the unit succumbs to fear – all models in the unit have their Weapon Skill reduced to 1 for the remainder of that Fight sub-phase. Note that a model that causes Fear is not itself immune to Fear, and will still need to take a Fear test if it is base contact with any enemy models that cause Fear.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="f3a9-a2a8-781d-5be6" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Cerastus Knight-Atrapos" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+            <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="10"/>
+            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="13"/>
+            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="12"/>
+            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="12"/>
+            <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
+            <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="4"/>
+            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="7"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Super-heavy Walker)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="00b6-9bfe-a8a9-9b92" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Blessed Autosimulacra" hidden="false" book="" page="0">
+          <characteristics>
+            <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="If a vehicle has suffered Hull Point damage at the end of the controlling player’s turn, roll a D6. On a 6, one lost Hull Point is restored."/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
     </entry>
     <entry id="870a3e40-e788-a04f-03fc-7cf8fd3c2ad6" name="Cerberus Heavy Tank Destroyer" points="355.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour 2 - Second Edition">
       <entries>
@@ -4121,29 +4292,6 @@ On a 1 the firing model loses 1 Hull Point.</description>
           <profiles/>
           <links/>
         </entry>
-        <entry id="6372-6fc4-e00a-d965" name="Twin-linked Anvilus pattern autocannon battery" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="91c9-4585-b5e6-36d2" name="Sunder" hidden="false">
-              <description>Attacks made with this weapon may re-roll failed Armour Penetration rolls.</description>
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles>
-            <profile id="4a51-ae32-0ca2-ae28" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Anvilus autocannon battery" hidden="false">
-              <characteristics>
-                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="48&quot;"/>
-                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
-                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
-                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 4, Sunder"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
         <entry id="b699-c328-dce0-cf39" name="Armoured Ceramite" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
@@ -4202,6 +4350,63 @@ On a 1 the firing model loses 1 Hull Point.</description>
                   <modifiers/>
                 </link>
               </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="a4e3-9b7d-e99c-328a" name="Arm Weapons" defaultEntryId="5ccd-be07-8119-432e" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="5ccd-be07-8119-432e" name="Twin-linked Anvilus Pattern Autocannon Battery" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="d30c-29a3-2e87-1ba6" name="Sunder" hidden="false">
+                  <description>Attacks with this special rule may re-roll failed Armour Penetration rolls.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="2cc8-b5ce-29dc-9d82" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Anvilus Autocannon Battery" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="48&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 4, Sunder"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="6bb0-db32-eb66-17c9" name="Twin-linked Hellfire Plasma Cannonade" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="aa8b-02e8-0767-780b" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Hellfire Plasma Cannonade (sustained  fire)" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 4"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="d5ec-c7d0-297e-4d3b" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Hellfire Plasma Cannonade (maximal fire)" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Gets Hot, Large Blast"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
             </entry>
           </entries>
           <entryGroups/>
@@ -6220,6 +6425,324 @@ On a 1 you must place a Large Blast on it and all models take a S3 hit.</descrip
         </link>
       </links>
     </entry>
+    <entry id="8f05-ae54-93be-774d" name="Space Marine HQ Command Tanks" points="400.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="1742-6ec2-08d3-dfff" name="Land Raider Excelsior" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="2725-21c4-a36c-237b" name="Grav-cannon and Grav-amp" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="70e8-2dfb-5cbb-9d16" name="Two Twin-linked Lascannons" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups>
+            <entryGroup id="a34d-4c61-6667-022e" name="May take any of the following" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="dd61-ac63-afc4-fd7c" name="Storm Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="94a1-bfa8-9175-4758" name="Hunter-killer Missile" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="9774-2691-405a-ee6b" name="Extra Armour" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+            <entryGroup id="5259-70d3-e337-729e" name="May take one of the following" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="5b8c-ef5f-3acf-ade0" name="Rod of Command" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles>
+                    <profile id="ba68-9396-d6dd-d33c" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Rod of Command" hidden="false">
+                      <characteristics>
+                        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Increases the range of the model&apos;s Tactical Authority special rule to 18&quot;."/>
+                      </characteristics>
+                      <modifiers/>
+                    </profile>
+                  </profiles>
+                  <links/>
+                </entry>
+                <entry id="7ab2-c46f-739f-c7bc" name="Combi-plasma" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <rules>
+            <rule id="1b7a-7a87-b765-f125" name="Data Augurs" hidden="false">
+              <description>Whilst a Land Raider Excelsior is within 24&quot; of one or more friendky Rhinos Primaris, it adds 1 to its Ballistic Skill.</description>
+              <modifiers/>
+            </rule>
+            <rule id="eac8-b881-86d6-2fc1" name="Tactical Authority" hidden="false">
+              <description>At the start of your Shooting phase, select one friendly unit within12&quot; that has the same Faction as your Land Raider Excelsior. Choose one of the following special rules to apply to that unit until the start of your next turn: Counter-attack, Fearless, Hit &amp; Run, Interceptor, Preferred Enemy, Skyfire, Split Fire or Tank Hunters.</description>
+              <modifiers/>
+            </rule>
+            <rule id="a5ac-4be2-3495-e986" name="Transport Capacity - 10" hidden="false">
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="e586-7404-1ee0-e168" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Land Raider Excelsior" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+                <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="14"/>
+                <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="14"/>
+                <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="14"/>
+                <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="4"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Tank, Transport, Character)"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="499d-b6af-cf2a-8c4c" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Aquila Aegis Field" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="An Aquila aegis field confers a 6+ invulnerable save. In addition, a model with an Aquila aegis field ignores Crew Shaken and Crew Stunned results on the Vehicle Damage table (but still loses a Hull Point)."/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="95f9-7d7e-5d56-e1ac" name="Rhino Primaris" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="7fbe-9976-eddc-6f75" name="Twin-linked Plasma Gun" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="ca90-1498-60a2-1a3b" name="Orbital Array" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="0c06-b913-313d-3c29" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Orbital Alpha Strike" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Infinite"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="10"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Barrage, Massive Blast, One Use Only, Orbital"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="9fe6-ebef-a981-48b1" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Orbital Array" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="At the start of each of your turns after the first, if this vehicle is on the battlefield you can choose to Coordinate Reinforcements or once per game, call an Orbital Alpha Strike. To Coordinate Reinforcements, select one friendly unit that is is Reserves; that unit automatically arrives from Reserves."/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="7460-3b3f-a898-30f8" name="Dozer Blade" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups>
+            <entryGroup id="9ee3-b70e-b3ba-27d2" name="May take any of the following" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="8a82-95f2-de45-33b0" name="Storm Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="d6e0-1314-6d9f-0bdd" name="Hunter-killer Missile" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="1c05-09b3-4e2c-d4b0" name="Extra Armour" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <rules>
+            <rule id="12e1-c9f7-5a28-6673" name="Transport Capacity - 6" hidden="false">
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="95ed-8a6f-bd56-54a9" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Rhino Primaris" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+                <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="11"/>
+                <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="11"/>
+                <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="10"/>
+                <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="3"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Tank, Transport)"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="6718-d173-11b2-09ad" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Servo-skull Hub" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="At the start of your Shooting phase, you can select one friendly unit within 12&quot; of this model and immediately apply one of the effects described below to that unit. Each of these effects can only be used once per game.  - Targeting Data Skull: The target unit cn fire Snap Shots (including Overwatch) using their full Ballistic Skill charateristic untill the start of your next turn.  - Repair Skull: Vehicle models only. Roll a D6; on a 2+, the target model regains 1 Hull Point lost earlier in that battle.  - Vox Skull: The target unit gains the Fearless special rule until the start of your next turn."/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="40de-05fe-44f9-8a12" name="Space Marine Quad Mortar Support Battery" points="0.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="d6bc-1761-2e0b-e82c" name="Space Marine Quad Mortar Support Battery" points="60.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="53fe-9b17-50d8-6d8a" name="Quad Mortar" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="ced7-1d1c-303d-a07d" name="Shell Shock" hidden="false">
+                  <description>Due to the rapid impact of the Quad Mortar’s shells, Pinning tests taken because of its attacks are made at a -1 Leadership penalty.</description>
+                  <modifiers/>
+                </rule>
+                <rule id="875c-a31d-fd32-8a0e" name="Sunder" hidden="false">
+                  <description>Attacks with this special rule may re-roll failed Armour Penetration rolls.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="3f9f-703d-2218-1b58" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Quad Mortar - Frag" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;-60&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 4, Barrage, Blast, Pinning, Shell Shock"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="ea6f-b55c-039c-9bc3" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Quad Mortar - Shatter" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 4, Sunder"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="171a-535d-e225-b3be" name="Extremly Bulky" hidden="false">
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="0583-957b-9074-c854" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Rapier Carrier" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Artillery"/>
+            <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="-"/>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="-"/>
+            <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="-"/>
+            <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="7"/>
+            <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="2"/>
+            <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="-"/>
+            <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="-"/>
+            <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="-"/>
+            <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="2c35-a615-03bb-223a" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Two Space Marine Crew" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value=""/>
+            <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+            <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
+            <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="4"/>
+            <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="1"/>
+            <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
+            <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="1"/>
+            <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="8"/>
+            <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
     <entry id="6448847e-1524-a51d-9360-d7a7694909c6" name="Spartan Assault Tank" points="295.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour 2 - Second Edition">
       <entries>
         <entry id="115ebc91-082a-be08-a377-8fa23680b05b" name="Searchlight" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -6839,7 +7362,7 @@ Models that already have the Fearless special rule instead gain the Counter-atta
               <entryGroups/>
               <modifiers/>
               <links>
-                <link id="9b55e8e1-d31b-b78c-073e-a905609e51a3" targetId="142a1204-d68d-e4dd-9365-b1a14136319b" linkType="entry">
+                <link id="9b55e8e1-d31b-b78c-073e-a905609e51a3" targetId="efd15599-a95e-dce6-e017-3450413c1908" linkType="entry">
                   <modifiers/>
                 </link>
               </links>
@@ -7221,7 +7744,7 @@ Lascannon/MM automatically target the nearest enemy Vehicle or MC.</description>
           <entryGroups/>
           <modifiers/>
           <links>
-            <link id="bd0bd516-4196-17ad-598a-76dfe621dcbe" targetId="142a1204-d68d-e4dd-9365-b1a14136319b" linkType="entry">
+            <link id="bd0bd516-4196-17ad-598a-76dfe621dcbe" targetId="efd15599-a95e-dce6-e017-3450413c1908" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -7922,6 +8445,429 @@ If the vehicle has moved it can fire at 24&quot;, otherwise you may fire 48&quot
           <modifiers/>
         </link>
       </links>
+    </entry>
+    <entry id="97a6-a1a1-be67-2f8e" name="Warlord Battle Titan" points="2750.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="9d9c-fd25-13ec-1e53" name="Ardex-defensor Mauler Bolt Cannon Turrets" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="0ba1-5093-84e1-2d4a" name="Ardex Machina" hidden="false">
+              <description>This weapon may fire Overwatch attacks even though the model to which its attached to may usually not do so, so long as it is within the firing arc of the charging models and, in addition, carries out all Snap Shots at BS 2.</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="5f36-4020-3b21-02e9" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Ardex-defensor Mauler Bolt Cannon Turrets" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 6, Twin-linked, Ardex Machina"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="13e2-4c94-5c1d-7e0e" name="Rear-mounted Ardex-defensor Twin-linked Lascannon Turrets" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="006c-78d0-f1cb-51f2" name="Ardex Machina" hidden="false">
+              <description>This weapon may fire Overwatch attacks even though the model to which its attached to may usually not do so, so long as it is within the firing arc of the charging models and, in addition, carries out all Snap Shots at BS 2.</description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="e593-79b6-7733-8f32" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Rear-mounted Ardex-defensor Twin-linked Lascannon Turrets" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="48&quot;"/>
+                <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
+                <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Ardex Machina"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="06ba-bdfe-bf37-0b91" name="Two Arm-mounted Weapons" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="671c-21f2-cffa-6514" name="Belicosa Pattern Volcano Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="ef8c-08f5-41af-ca8f" name="Machine Destroyer" hidden="false">
+                  <description>When Attacking any target with an armour value, rolls of 1 on the Destroyer Damage table may be re-rolled.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="9989-b2b5-6e2f-23ba" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Belicosa Pattern Volcano Cannon" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="180&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Apocalyptic Blast, Machine Destroyer"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="3f12-edea-547c-c986" name="Sunfury Plasma Annihilator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="cb0d-24e2-21e7-e52e" name="Plasma Wave" hidden="false">
+                  <description>Successful cover saves against this waepon&apos;s attacks must be re-rolled.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="dee2-2b54-4ebb-2d75" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Sunfury Plasma Annihilator" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 4, Apocalyptic Barrage, Plasma Wave"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="2ee8-16bf-afaa-0606" name="Mori Quake Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="a361-cdcc-a504-b134" name="Seismic Shock" hidden="false">
+                  <description>Units which suffer wounds or Hull Points lost from this attack may only move at half their usual maximum movement, may not Run, Charge or go Flat Out, and count as being in dangerous terrain one their next turn.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="f637-4da6-1dcb-0892" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Mori Quake Cannon" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;-360&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D/9/6"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Apocalyptic Blast, Seismic Shock, Concussion, Strikedown"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="0212-f85a-bd0f-0978" name="Arioch Titan Power Claw" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="2c7c-8b57-6be1-ef8f" name="Machine Destroyer" hidden="false">
+                  <description>When Attacking any target with an armour value, rolls of 1 on the Destroyer Damage table may be re-rolled.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="5e3a-bb51-afe3-dd56" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Arioch Titan Power Claw" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Machine Destroyer"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="69e9-6156-7e6f-796b" name="Macro-gatling Blaster" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="d47d-c622-0c31-fb7e" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Macro-gatling Blaster" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="10"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 6, Large Blast, Pinning"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="e4b2-f2ba-7222-f571" name="Carapace-mounted Weapons" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="196e-2abc-67f7-8899" name="Two Apocalypse Missile Launchers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="89f9-6338-db34-8468" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Apocalypse Missile Launchers" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;-360&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 5, Apocalyptic Barrage"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="d225-db65-b57e-3f84" name="Two Double-barrleed Turbo Laser Destructors" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="8e0f-0871-aed4-767f" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Double-barrleed Turbo Laser Destructors" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="96&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 2, Large Blast"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="c958-0629-dd4b-804d" name="Two Twin-linked Plasma Blastguns" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="532d-50bd-b5a7-2092" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Titan Plasma Blastgun - Rapid" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 2, Massive Blast"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="8697-f346-13b3-d731" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Titan Plasma Blastgun - Overload" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="96&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="10"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Apocalyptic Blast"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="9cd1-b8fa-6fcb-f31b" name="Two Reaver Laser Blasters" points="100.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="1898-962c-be05-d90d" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Reaver Laser Blasters" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="96&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 3, Large Blast"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="c560-1922-43dc-d564" name="Two Reaver Melta Cannons" points="100.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="56bd-9306-8090-aee3" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Reaver Melta Cannons" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="10"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Apocalyptic Blast, Melta"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="12ce-05a1-abf3-c7cb" name="Two Reaver Gatling Blasters" points="100.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="793e-14d6-3bf4-6e7c" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Reaver Gatling Blasters" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="72&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 6, Large Blast, Pinning"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="5654-01bb-d4a2-9826" name="Two Vortex Missile Banks" points="150.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="aaa4-729c-5584-6a47" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Vortex Missile Banks" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;-360&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="D"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 1, Large Blast, Vortex, 2x One Use Only"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="ba82-c577-cb50-039f" name="Two Incinerator Missile Banks" points="75.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="2073-4c1c-a3a7-f6f4" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Two Incinerator Missile Banks" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12&quot;-360&quot;"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="6"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Primary Weapon 10, Apocalyptic Barrage, No Cover Saves, One Use Only"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="0238-e7d9-ea91-f992" name="Fear" hidden="false">
+          <description>At the start of each Fight sub-phase, a unit in base contact with one or more enemy models that cause Fear must take a Leadership test (called a Fear test) before any blows are struck. If the test is passed, all is well and there is no effect. If the test is failed, the unit succumbs to fear – all models in the unit have their Weapon Skill reduced to 1 for the remainder of that Fight sub-phase. Note that a model that causes Fear is not itself immune to Fear, and will still need to take a Fear test if it is base contact with any enemy models that cause Fear.</description>
+          <modifiers/>
+        </rule>
+        <rule id="5c3f-792d-bc78-c170" name="Hammer of Wrath" hidden="false">
+          <description>If a model with this special rule ends its charge move in base or hull contact with an enemy model, it makes one additional Attack that hits automatically and is resolved at the model’s unmodified Strength with AP-. This Attack does not benefit from any of the model’s special rules (such as Furious Charge, Rending etc.). This Attack is resolved during the Fight sub-phase at the Initiative 10 step, but does not grant the model an additional Pile In move.
+
+If a model with this special rule charges a building or vehicle, the hit is resolved against the Armour Value of the facing the charging model is touching. If a model with this special rule charges a building or vehicle that is a Transport or a Chariot, the hit is resolved against the building or vehicle, not the occupants or the rider.</description>
+          <modifiers/>
+        </rule>
+        <rule id="824d-d46c-ac50-d34d" name="Invincible Behemoth" hidden="false">
+          <description>A Super-heavy vehicle is so large and strongly built that weapons which degrade the armour of smaller vehicles will not effect it. Because of this, any attack that says that the target model is destroyed, wrecked, Explodes! or is otherwise removed from play inflicts D3 Hull Points of damage on a Super-heavy vehicle instead.
+
+In addition, any attacks or special abilities that permanently lower the Armour Values of a target vehicle do not affect a Super-heavy vehicle. Note that attacks or abilities that count the Armour Value as being lower, but do not actually change it, work normally.</description>
+          <modifiers/>
+        </rule>
+        <rule id="718b-e0aa-3221-b445" name="Move Through Cover" hidden="false">
+          <description>A unit that contains at least one model with this special rule rolls an extra D6 when rolling to move through difficult terrain and is not slowed by charging through difficult terrain. In most circumstances, this will mean that, when moving, the unit rolls 3D6 and picks the highest roll. Furthermore, a model with the Move Through Cover special rule automatically passes Dangerous Terrain tests.</description>
+          <modifiers/>
+        </rule>
+        <rule id="cee9-1159-6ae4-3cb2" name="Relentless" hidden="false">
+          <description>Relentless models can shoot with Heavy, Salvo or Ordnance weapons, counting as stationary, even if they moved in the previous Movement phase. They are also allowed to charge in the same turn they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
+          <modifiers/>
+        </rule>
+        <rule id="9016-0e71-7da4-9779" name="Smash" hidden="false">
+          <description>All of the close combat attacks, except Hammer of Wrath attacks, of a model with this special rule are resolved at AP2 (unless it’s attacking with an AP1 weapon). Additionally, when it makes its close combat attacks, it can choose instead to make a single Smash Attack. If it does so, roll To Hit as normal, but resolve the Attack at double the model’s Strength (to a maximum of 10). Furthermore, a model making a Smash Attack can re-roll its armour penetration rolls, but must abide by the second result.</description>
+          <modifiers/>
+        </rule>
+        <rule id="6ced-8192-e372-3a1c" name="Strikedown" hidden="false">
+          <description>Any non-vehicle model that suffers one or more unsaved Wounds or passes one or more saving throws against an attack with the Strikedown special rule moves as if it is in difficult terrain until the end of its next turn. It is a good idea to mark affected models with counters or coins so that you remember.</description>
+          <modifiers/>
+        </rule>
+        <rule id="9d95-2a0d-f618-0a78" name="Reactor Meltdown" hidden="false">
+          <description>Warlord Catastrophic Damage Table uses 12&quot;/24&quot;/36&quot; blast measurements
+
+D6                    Result                           S                 AP
+ 1                   Explosion                    D/8/4             2/3/5
+2-3        Devastating Explosion        D/10/6           2/3/4
+4-6             Titanic Explosion            D/D/D            1/2/2</description>
+          <modifiers/>
+        </rule>
+        <rule id="d6dd-7cd5-7d28-300f" name="Towering Monstrosity (Warlord)" hidden="false">
+          <description>The Warlord Titan may only be hit on a 6 by Infantry and Monstrous Creatures of any type in an assault, and on a 5 or 6 by Super-heavy Walkers and Gargantuan Creatures in an assault.
+
+The Warlord Titan may never be locked in an assault.
+
+The Warlord Titan is completely immune  to the effects of Haywire attacks, dangerous terrain, and psychic attacks other than Witchfire powers, which must attempt to damage it normally.
+
+The Warlord Titan&apos;s Stomp attack uses the Large Blast marker.
+
+The Warlord Titan&apos;s carapace-mounted weapons may not target models closer than 24&quot; from its hull, unless they are Flyers, Flying Monstrous Creatures or other Super-heavy vehicles or Gargantuan Monstrous Creatures.</description>
+          <modifiers/>
+        </rule>
+        <rule id="5cea-c1ee-3782-33a3" name="Reinforced Structure" hidden="false">
+          <description>The Warlord Titan has an invulnerable save of 5+ against any attacks that have breached its void shields.</description>
+          <modifiers/>
+        </rule>
+        <rule id="cc29-4d7f-723f-118d" name="World Burner" hidden="false">
+          <description>The Warlord Titan may use any of its Blast marker weapons to target areas of the battlefield, rather than enemy units if it wishes, including buildings and ruins, etc.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="7c57-b94d-c9d3-858c" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Warlord Battle Titan" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="2"/>
+            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
+            <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="D"/>
+            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="15"/>
+            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="15"/>
+            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="14"/>
+            <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
+            <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="3"/>
+            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="30"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Super-heavy Walker)"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="30ce-e27d-f8c4-e21a" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Armoured Ceramite" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="e74e-8926-adc8-45fa" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Void Shields" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Warlord Titans have 6 Void Shields."/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
     </entry>
     <entry id="6e911f16-6219-1d73-6339-4db40235b249" name="Whirlwind Hyperios Air Defence Tank" points="115.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour 2 - Second Edition">
       <entries>
@@ -11601,15 +12547,16 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
         </modifier>
       </modifiers>
       <rules>
-        <rule id="991fec39-375e-123a-2e78-fd2f66245509" name="Master of the Host" hidden="false" page="0">
-          <description>If Commander Dante is your Warlord and the mission you are playing has the Tactical Objectives mission special rule, roll on the Tactical Traits table immediately before deploying the first unit in your army. Dante has this Warlord Trait in addition to the Descent of Angels Warlord Trait.</description>
-          <modifiers/>
-        </rule>
-        <rule id="c8abda13-db6a-6a6b-1355-d971b6189701" name="Surgical Strike" hidden="false" page="0">
+        <rule id="c8abda13-db6a-6a6b-1355-d971b6189701" name="Hit and Run" hidden="false" page="0">
           <description>Hit and Run</description>
           <modifiers/>
         </rule>
         <rule id="80a13d15-481f-a453-423b-c52be5a5f0f1" name="Tactical Precision" hidden="false" page="0">
+          <description>If Commander Dante is your Warlord and the mission you are playing
+has the Tactical Objectives mission special rule, roll on the Tactical Traits table immediately
+before deploying the first unit in your army. Dante has this Warlord Trait in addition to the
+Descent of Angels Warlord Trait.
+</description>
           <modifiers/>
         </rule>
         <rule id="ef5e7dac-5ea5-4abd-65eb-b5dd2edd049f" name="Eternal Warrior" hidden="false">
@@ -22405,15 +23352,25 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
       <modifiers/>
     </rule>
     <rule id="42b6e0ee-0285-520e-7c1d-58dda31b629f" name="And They Shall Know No Fear" hidden="false">
+      <description>A unit that contains at least one model with this special rule automatically passes Fear and Regroup Tests. When it Regroups, the  unit does not make the 3&quot; Regroup move, but can instead move, shoot (or Run) and declare charges normally in that turn. Furthermore, if a unit containing one or more models with this special rule is caught by a Sweeping Advance, they are not destroyed, but remain locked in combat instead.</description>
       <modifiers/>
     </rule>
     <rule id="0ac44832-0671-ea49-9c6a-c11a9747b627" name="Assault Vehicle" hidden="false">
+      <description>Passengers disembarking from Access Points on a vehicle with this special rule can charge on the turn they do so (even in a turn that the vehicle was destroyed, or in the following turn) unless the vehicle arrived from Reserve that turn.</description>
       <modifiers/>
     </rule>
     <rule id="3d2faf58-5514-68f4-82d6-d57152b1778b" name="Combat Squads" hidden="false">
+      <description>A full strength, ten-man unit with this special rule can break down into two five-man units, called combat squads, considered to be two five-man squads of the same type. For example, a ten-man Blood Angels Tactical Squad can split into two five-man Tactical Squads using the combat squads rule.
+
+You must decide which units are splitting combat squads, and which models go into each combat squad, immediately before determining your Warlord traits. A unit split into combat squads therefore is now two seperate units for all game purposes, includeing calculateing the total number of units in the army and determining the number of units you can place in Reserve. Then proceed with deployment as normal. In an exception to the normal rules, two combat squads split from the same unit can embark in the same transport vehicle, provideing its Transport Capacity allows. Once you have decided whether or not to spilt a unit into combat squads, it must remain that way for the entire battle. It cannot split up or join back together later on in the battle, nor can you use a redeployment to split up a unit or join it  back together.
+
+Note that Bike Squads count as being at full strength when they have eight Space Marine Bikers and one Attack Bike. If split into combat squads, one combat squad will have five Bikers, the other will have three bikkers and the Attack Bike</description>
       <modifiers/>
     </rule>
     <rule id="19f46d20-2e5d-d519-cf9c-3acab5ede82d" name="Counter-attack" hidden="false">
+      <description>If a unit contains at least one model with this special rule, and that unit is charged, every model with the Counter-attack special rule in the unit gets +1 Attack untill the end of the phase.
+
+If when charged, the unit was already locke din combat, the Cunter-attack special rule has no effect</description>
       <modifiers/>
     </rule>
     <rule id="e01dda6d-c14a-07d8-fa02-cae1bcb534b9" name="Deep Strike" hidden="false">
@@ -22424,12 +23381,21 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
       <modifiers/>
     </rule>
     <rule id="199c45ee-bde8-b703-ca1a-9a1cf8f57c1c" name="Fear" hidden="false">
+      <description>At the start of each Fight sub-phase, a unit in base contact with one or more enemy models that cause Fear must take a Leadership test (called a Fear test) before any blows are struck. If the test is passed, all is well and there is no effect. If the test is failed, the unit succumbs to fear-all models in the unit have their Weapon Skill reduced to 1 for the remainder of the Fight sub-phase. Note that a model that causes Fear is not itself immune to Fear, and will still need to take a Fear test if it is in base contact with any enemy models that cause Fear.</description>
       <modifiers/>
     </rule>
     <rule id="832a9acd-a7d5-3dbf-609c-b0026f3727bc" name="Fearless" hidden="false">
+      <description>Units containing one or more models with the Fearless special rule automatically pass Pinning, Fear, Regroup tests and Morale checks, but cannot Go to Ground and cannot choose to fail a Morale check due to the Our Weapons Are Useless rule. If a unit has Gone to Ground and then gains the Fearless special rule, all the effects of Go to Ground are immediately cancelled.</description>
       <modifiers/>
     </rule>
     <rule id="9bc82b29-dc1c-512c-2934-4184dfbe97af" name="Feel No Pain" hidden="false">
+      <description>When a model with this special rule suffers an unsaved wound, it can make a special Feel No Pain roll to avoid being wounded (this is not a saving throw and so can be used against attacks that state that &apos;no saves of any kind are allowed&apos;, for example those inflicted by Perils of the Warp).
+
+Feel no pain saves may not be taken against Destroyer attacks or against unsaved wounds that have the Instant Death special rule.
+
+Roll a D6 each time an unsaved wound is suffered. On a 4 or less you must take the wound as normal on a 5+ the unsaved wound is discounted - treat it as having been saved.
+
+If a unit has the Feel No Pain special rule with a number in brackets afterwards - Feel No Pain (6+), for example - then the number in brackets is the D6 result needed to discount the Wound.</description>
       <modifiers/>
     </rule>
     <rule id="4dfb96c0-6bb5-ba0d-3893-a149119ec74e" name="Fleet" hidden="false">
@@ -22437,6 +23403,7 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
       <modifiers/>
     </rule>
     <rule id="bbb2eae0-e4d2-240f-887c-204bf8c0bed7" name="Furious Charge" hidden="false">
+      <description>In a turn in which a model with this special rule charges into combat, it adds +1 to its Strength characteristic until the end of the Assault phase. A model that has made a disordered charge that turn receives no benefit from Furious Charge.</description>
       <modifiers/>
     </rule>
     <rule id="d209e2e9-a2e8-c041-66c3-059c3b9cd6e0" name="Graviton" hidden="false">
@@ -22451,6 +23418,38 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
       <modifiers/>
     </rule>
     <rule id="5943575b-7ad2-a2b9-e146-58ed551525c7" name="Independent Character" hidden="false">
+      <description>Independent Characters can join other units. They cannot, however, join units that contain vehicles or Monstrous Creatures. They can join other independent Characters, though, to form a powerful multi-character unit!
+
+Joining and Leaveing a Unit
+An Independent Character can begin the game already with a unit, either by being deployed in unit coherency with it or, if the unit is in Reserve, by you informing your opponent of which unit it has joined.
+
+In order to join a unit, an Independent Character simply has to move so that he is within the 2&quot; unit coherency distance of a friendly unit at the end of their movement phase, the player must declare which unit it is joining. If a independent character does not intend to join a unit, it must (where possible) remain more than 2&quot; from it at the end of the movement phase. This is to make clear whether they have joined the unit or not. Note that after an Independent character joins a unit that unit can move no further that Movement Phase.
+
+An Independent Character can leave a unit during the Movement phase by moving out of unit coherency with it. He cannot join or leave during any other phase-once shots are fired or charges are declared, it is too late to join in or duck out!
+
+An Independent Character cannot leave a unit while either he or the unit is in Reserves, locked in Combat or Falling Back. If an Independent Character joins a unit, and all other models in that unit are killed, he again becomes a unit of one model at the start of the following phase.
+
+While an Indepent character is part of a unit, he counts as part of the unit for all rules purposes, though he still follows the riles for characters.
+
+Look Out, Sir
+Independent Characters pass Look Out Sir rolls on a 2+
+
+Heroic Moral
+A unit that contains one or more Independent Characters does not need a double 1 to Regroup if reduced to below 25% of its starting numbers, but instead tests as if it had at least 25% remaining.
+
+Special Rules
+When an Independent Character joins a unit, it might have different special rules from those of the unit. Unless specified in the rule itself (as in the Stubborn special rule), the unit&apos;s special rules are not conferred upon the Independent Character, and the Independent Character&apos;s special rules are not confered upon the unit. Special rules that are conferred to the unit only apply for as long as the Independent Character is with them.
+
+Independent Characters and Infiltrate
+An Independent Character Without the Infiltrate special rule cannot join a unit of infiltrators during deployment and vice versa.
+
+Sometimes a unit that an independent CHaracter has joined will be the target of a beneficial or harmful effect, such as those bestowed by the Blind special rule, for example. If the character leaves the unit both he and the unit continue to be affected  by the effect, so you&apos;ll need to mark the character accordingly.
+
+For example, Farseer Mehiledrin and his unit of Eldar Guardians are set ablaze by a weapon with the Soul Blaze special rule. If Mehiledrin leaves the unit, both he and the Guardians will still be ablaze and the ongoing effects of the Soul Blaze rule must be resolved separately.
+
+Conversely, if an Independent Character joins a unit after that unit has been the target of an ongoing effect (or joins a unit after himself having been the target of an ongoing effect) benefits and penalties from that effect are not shared.
+
+For example, Crimson Fists Tactical Squad Hemanez is suffering the effects of the Blind special rule. If Captain Cruz joins the unit, he does not suffer the results of the Blind special rule as he was not there when it happened!</description>
       <modifiers/>
     </rule>
     <rule id="4ef9d1ba-6802-4c35-6b9c-0b5fd1f832a4" name="Legacies of Glory" hidden="false" book="Imperial Armour II 2nd Ed" page="0">
@@ -22516,15 +23515,25 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
       <modifiers/>
     </rule>
     <rule id="765eb1b4-4ab3-0941-c3d8-29a7238e8020" name="Outflank" hidden="false">
+      <description>During deployment, players can declare that any unit that cointains at least one model with this special rule is attempting to Outflank the enemy. When this unit arrives from Reserves, but not Ongoing Reserve, the controlling player rolls a D6: on a 1-2, the unit comes in from the table edge to the left of their controlling player&apos;s own table edge; 3-4, they come on from the right; on a 5-6, the player can choose left or right. Models move onto the table as described for other Reserves.</description>
       <modifiers/>
     </rule>
     <rule id="4d18a8fe-13da-a05a-2dec-6842b0b83630" name="Rage" hidden="false">
+      <description>In a turn in which a model with this special rule charges into combat, it gains +2 Attacks for charging, rather than +1. A model that has made a disordered charge that turn receives no benefit from Rage</description>
       <modifiers/>
     </rule>
     <rule id="5c421581-ea8b-678d-b484-1dd4905cf120" name="Relentless" hidden="false">
+      <description>Relentless models can shoot with Heavy, Salvo or Ordnance weapons, counting as stationary, even if they moved in the previous Movement phase. They are also allowed to charge in the same turn that they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
       <modifiers/>
     </rule>
     <rule id="c4621cb6-f30c-b816-4362-35149a59a7d9" name="Scouts" hidden="false">
+      <description>After both sides have deployed (including Infiltrators), but before the first player begins his first turn, a unit containing at least one model with this special rule can choose to redeploy. If the unit is Infantry, Artillery, a Walker or a Monstrous Creature, each model can redeploy anywhere entirely within 6&quot; of its current position. If it is any other unit type, each model can redeploy anywhere entirely within 12&quot; of its current position. During this redeployment, Scouts can move outside the owning player&apos;s deployment , but must remain 12&quot;  away fom any enemy unit. A unit that makes a Scout redployment cannot charge in the first game turn. A unit cannot embark or disembark as  part of a scout redployment.
+
+If both sides have scots, roll-off; the winner decides who redeploys first. Then alternate redeploying Scout units.
+
+If a unit with this special rule is deployed inside a Dedicated Transport, it confers the Scout special rule to the Transport (though a disembarkation cannot be performed as part of the redeployment). Note tht a Transport with this special rule does not lose it if a unit without this special rule is embarked upon it. Having scout also confers the Outflank special rule to units of Scouts that are kept in reserve.
+
+If a unit has both Infiltrate and Scout special rules, that unit can deploy as per the Infiltrate special rule and then redploy as per the Scout Special Rule.</description>
       <modifiers/>
     </rule>
     <rule id="99488e37-01a3-cd98-91ed-043b654d6911" name="Storm of Angels" hidden="false">
@@ -22544,9 +23553,13 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
       <modifiers/>
     </rule>
     <rule id="2850faf1-00d1-48c4-c044-831d6ab79798" name="Void Shields" hidden="false">
+      <description>Each hit scored against the model will instead hit a void shield (whilst they remain). Close combat attacks come from inside the shield and therefore are not stopped. Void shields have an Armour Value of 12. A glancing or penetrateing hit (or any hit from a Destroyer weapon) scored against a void shield causes it to collapse. After all the void shields have collapsed, further hits strike the model instead. At the end of each of the controlling player&apos;s turns, roll one dice for each collapsed void shield: each roll of 5+ instantly restores one collapsed shield.. If a weapon uses a template or blast marker and it hits one or more units protected by a Void Shield Zone, ignore the number of hits it would normally cause to the units &amp; instead roll to penetrate the void shield once using the weapons normal rules &amp; profile for each template or blast marker that hits.</description>
       <modifiers/>
     </rule>
     <rule id="d6b184d6-ff9d-c113-3650-7d625f5a43ed" name="Zealot" hidden="false">
+      <description>A unit containing one or models with the Xealot special rule automatically passes Pinning, Fear and Regroup tests and Morale checks, but cannot Go to Ground and cannot choose to fail a Morale check due to the Our Weapons are Useless rule. If a unit gains the Zealot special rule when it has Gone to Ground, all the effects of Gone to Ground are immediately cancelled.
+
+In addition, units containing one or more models with the Zealot special rule re-roll all failed To Hit rolls during the first round of each close combat - they do not get to re-roll failed To Hit rolls in subsequent rounds.</description>
       <modifiers/>
     </rule>
   </sharedRules>
