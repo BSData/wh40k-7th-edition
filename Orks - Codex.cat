@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5e29cf46-0edb-4f2a-8b49-7691fba3e163" revision="49" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Orks: Codex (2014)" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5e29cf46-0edb-4f2a-8b49-7691fba3e163" revision="50" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Orks: Codex (2014)" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="be395edd-44e9-332e-a47c-4c522af759cd" name="&quot;Green Tide&quot;" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Waaagh! Ghazghkull" page="0">
       <entries>
@@ -421,6 +421,32 @@
                       <modifiers/>
                     </link>
                     <link id="db6d-56a1-af30-7d13" targetId="e5f3e3d6-49b9-6d71-1a03-8cd2af8554f8" linkType="entry">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entryGroup>
+                <entryGroup id="edb4-2952-3a13-81c5" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <links>
+                    <link id="66fc-9aff-bae7-0279" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="602a-00b3-be35-0df1" targetId="30cc6165-7121-a4c0-1262-e729b435b68f" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="406a-11cc-5767-4f5a" targetId="e1874b1b-7ca5-7fe1-5329-a0e073b0c230" linkType="entry">
+                      <modifiers>
+                        <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="d30d-03ce-8139-fff4" childId="f3aee269-2f69-f57e-eaea-6a91ac502357" field="selections" type="equal to" value="0.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                    </link>
+                    <link id="c104-00e7-c4ad-7da4" targetId="c0773bfa-69cd-5e61-7d16-35180db73f6e" linkType="entry">
                       <modifiers/>
                     </link>
                   </links>
@@ -1136,14 +1162,7 @@
               <links/>
             </entryGroup>
           </entryGroups>
-          <modifiers>
-            <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="force type" childId="e4a7bc38-f85c-0552-d50c-cf3640222184" field="selections" type="equal to" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <modifiers/>
           <rules/>
           <profiles/>
           <links>
@@ -1442,7 +1461,14 @@
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="e4a7bc38-f85c-0552-d50c-cf3640222184" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -1748,18 +1774,6 @@
                   </conditions>
                   <conditionGroups/>
                 </modifier>
-                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition parentId="force type" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="force type" childId="60605955-d4b9-1fe4-0a50-10d14c5a87fd" field="selections" type="instance of" value="0.0"/>
-                      </conditions>
-                      <conditionGroups/>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <links>
                 <link id="cda68413-ed7f-3730-2962-658485204a33" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
@@ -1897,20 +1911,7 @@
               <modifiers/>
               <links>
                 <link id="2fd7c3c1-af53-e518-e390-0155f25ba8e5" targetId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" linkType="entry">
-                  <modifiers>
-                    <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition parentId="force type" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
-                            <condition parentId="force type" childId="60605955-d4b9-1fe4-0a50-10d14c5a87fd" field="selections" type="instance of" value="0.0"/>
-                          </conditions>
-                          <conditionGroups/>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
+                  <modifiers/>
                 </link>
               </links>
             </entryGroup>
@@ -1925,6 +1926,7 @@
                       <conditions>
                         <condition parentId="force type" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
                         <condition parentId="force type" childId="60605955-d4b9-1fe4-0a50-10d14c5a87fd" field="selections" type="instance of" value="0.0"/>
+                        <condition parentId="force type" childId="0df9-c2b3-dcf8-f2ae" field="selections" type="instance of" value="0.0"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -2732,20 +2734,7 @@
                 <entryGroup id="4993-0bb1-7af2-c1f8" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries/>
                   <entryGroups/>
-                  <modifiers>
-                    <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition parentId="force type" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
-                            <condition parentId="force type" childId="60605955-d4b9-1fe4-0a50-10d14c5a87fd" field="selections" type="instance of" value="0.0"/>
-                          </conditions>
-                          <conditionGroups/>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
+                  <modifiers/>
                   <links>
                     <link id="4b03-56f3-dc82-468c" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
                       <modifiers/>
@@ -2849,6 +2838,7 @@
                           <conditions>
                             <condition parentId="force type" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
                             <condition parentId="force type" childId="60605955-d4b9-1fe4-0a50-10d14c5a87fd" field="selections" type="instance of" value="0.0"/>
+                            <condition parentId="force type" childId="0df9-c2b3-dcf8-f2ae" field="selections" type="instance of" value="0.0"/>
                           </conditions>
                           <conditionGroups/>
                         </conditionGroup>
@@ -11093,7 +11083,7 @@
                   <modifiers>
                     <modifier type="increment" field="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions>
-                        <condition parentId="63a3-d0e8-2049-f03a" childId="63a3-d0e8-2049-f03a" field="selections" type="at least" value="1.0"/>
+                        <condition parentId="63a3-d0e8-2049-f03a" childId="638c-b437-1a6b-3057" field="selections" type="at least" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -11168,15 +11158,24 @@
             </link>
           </links>
         </entry>
+        <entry id="638c-b437-1a6b-3057" name="Scorch da Earth" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="414d-b80f-4ba0-fcdd" targetId="435d-4dae-7225-f0e9" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
       </entries>
       <entryGroups/>
       <modifiers/>
       <rules/>
       <profiles/>
       <links>
-        <link id="72fa-698e-8594-4f6a" targetId="435d-4dae-7225-f0e9" linkType="rule">
-          <modifiers/>
-        </link>
         <link id="aa83-2db0-54fd-5ea7" targetId="199a26c2-88ac-f821-c1c0-53f52e909d28" linkType="entry">
           <modifiers/>
         </link>
@@ -11629,6 +11628,18 @@
             </link>
           </links>
         </entry>
+        <entry id="105d-93f9-fc08-66f7" name="Ghazghkull&apos;s Leftenuntz" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="2293-b352-5b7f-8ade" targetId="fd7f4504-57fc-802c-dddb-e0c92d0ee751" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
       </entries>
       <entryGroups>
         <entryGroup id="b495-39a1-efdb-4e15" name="Council" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -11759,6 +11770,32 @@
                     </link>
                   </links>
                 </entryGroup>
+                <entryGroup id="4795-011e-231d-a93b" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <links>
+                    <link id="fd2b-0d12-a9c3-b618" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="da57-0093-752d-ee5b" targetId="30cc6165-7121-a4c0-1262-e729b435b68f" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="8173-77db-22d2-f147" targetId="e1874b1b-7ca5-7fe1-5329-a0e073b0c230" linkType="entry">
+                      <modifiers>
+                        <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="cb9b-3ede-231e-3d3b" childId="f3aee269-2f69-f57e-eaea-6a91ac502357" field="selections" type="equal to" value="0.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                    </link>
+                    <link id="323a-d7ca-f0c8-0a6e" targetId="c0773bfa-69cd-5e61-7d16-35180db73f6e" linkType="entry">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entryGroup>
               </entryGroups>
               <modifiers/>
               <rules/>
@@ -11786,7 +11823,7 @@
                     </modifier>
                     <modifier type="increment" field="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions>
-                        <condition parentId="9c0d-3767-24c8-f20f" childId="9c0d-3767-24c8-f20f" field="selections" type="at least" value="1.0"/>
+                        <condition parentId="9c0d-3767-24c8-f20f" childId="105d-93f9-fc08-66f7" field="selections" type="at least" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -11951,6 +11988,42 @@
                     </link>
                   </links>
                 </entryGroup>
+                <entryGroup id="43ee-c680-5c81-2288" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <links>
+                    <link id="90cd-f319-32b5-2c18" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="9f8a-6bb1-8f3e-b21e" targetId="30cc6165-7121-a4c0-1262-e729b435b68f" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="c3ed-7a5f-0f7b-aa20" targetId="e1874b1b-7ca5-7fe1-5329-a0e073b0c230" linkType="entry">
+                      <modifiers>
+                        <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="78de-d4a1-8937-4e42" childId="f3aee269-2f69-f57e-eaea-6a91ac502357" field="selections" type="equal to" value="0.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                    </link>
+                    <link id="a5f7-fa7a-8896-cf9c" targetId="c0773bfa-69cd-5e61-7d16-35180db73f6e" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="af92-b9e1-c94a-148e" targetId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" linkType="entry">
+                      <modifiers>
+                        <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="78de-d4a1-8937-4e42" childId="dbcd-07a3-ac19-bd6e" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                    </link>
+                  </links>
+                </entryGroup>
               </entryGroups>
               <modifiers/>
               <rules/>
@@ -11977,26 +12050,39 @@
                           <conditions>
                             <condition parentId="78de-d4a1-8937-4e42" childId="b217-2ea7-3170-17a8" field="selections" type="equal to" value="1.0"/>
                             <condition parentId="78de-d4a1-8937-4e42" childId="dbcd-07a3-ac19-bd6e" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="78de-d4a1-8937-4e42" childId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" field="selections" type="equal to" value="1.0"/>
                           </conditions>
                           <conditionGroups/>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
                     <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Bike (Character)" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions>
-                        <condition parentId="78de-d4a1-8937-4e42" childId="dbcd-07a3-ac19-bd6e" field="selections" type="equal to" value="1.0"/>
-                      </conditions>
-                      <conditionGroups/>
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition parentId="78de-d4a1-8937-4e42" childId="dbcd-07a3-ac19-bd6e" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="78de-d4a1-8937-4e42" childId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                     <modifier type="increment" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions>
-                        <condition parentId="78de-d4a1-8937-4e42" childId="dbcd-07a3-ac19-bd6e" field="selections" type="equal to" value="1.0"/>
-                      </conditions>
-                      <conditionGroups/>
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition parentId="78de-d4a1-8937-4e42" childId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="78de-d4a1-8937-4e42" childId="dbcd-07a3-ac19-bd6e" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                     <modifier type="increment" field="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions>
-                        <condition parentId="9c0d-3767-24c8-f20f" childId="9c0d-3767-24c8-f20f" field="selections" type="at least" value="1.0"/>
+                        <condition parentId="9c0d-3767-24c8-f20f" childId="105d-93f9-fc08-66f7" field="selections" type="at least" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -12056,9 +12142,6 @@
           <modifiers/>
         </link>
         <link id="46a7-5350-6faf-556c" targetId="5881d5a1-85ef-7495-6994-4d6c19301e1e" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="cf2c-eeef-d415-3a69" targetId="fd7f4504-57fc-802c-dddb-e0c92d0ee751" linkType="rule">
           <modifiers/>
         </link>
         <link id="b650-33cb-56da-a89e" targetId="199a26c2-88ac-f821-c1c0-53f52e909d28" linkType="entry">
@@ -15497,20 +15580,7 @@
         <entryGroup id="b3e6-950a-6bf2-e511" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition parentId="force type" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
-                    <condition parentId="force type" childId="60605955-d4b9-1fe4-0a50-10d14c5a87fd" field="selections" type="instance of" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+          <modifiers/>
           <links>
             <link id="2e0d-b826-3303-a537" targetId="25030daf-4eef-f5b8-4515-9860fe363438" linkType="entry">
               <modifiers/>
@@ -15563,6 +15633,7 @@
                   <conditions>
                     <condition parentId="force type" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
                     <condition parentId="force type" childId="60605955-d4b9-1fe4-0a50-10d14c5a87fd" field="selections" type="instance of" value="0.0"/>
+                    <condition parentId="force type" childId="0df9-c2b3-dcf8-f2ae" field="selections" type="instance of" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -15837,6 +15908,51 @@
             </link>
           </links>
         </entryGroup>
+        <entryGroup id="f388-e342-9635-8314" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="b4cd-4896-f0b6-cf41" targetId="25030daf-4eef-f5b8-4515-9860fe363438" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="d61a-543d-3668-dbd7" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="322f-0f5e-6c97-60f7" targetId="30cc6165-7121-a4c0-1262-e729b435b68f" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="9d80-7189-6c5a-4164" targetId="e1874b1b-7ca5-7fe1-5329-a0e073b0c230" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="76d885d1-61ae-138e-9d56-151523fd1e55" childId="f3aee269-2f69-f57e-eaea-6a91ac502357" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+            <link id="a5e7-aaa0-b822-1856" targetId="c0773bfa-69cd-5e61-7d16-35180db73f6e" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="beb1-8d7b-e225-ccda" targetId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="76d885d1-61ae-138e-9d56-151523fd1e55" childId="46fb0bc0-23de-aa24-8f30-aa842a72e88f" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="76d885d1-61ae-138e-9d56-151523fd1e55" childId="c43c4210-b493-689d-18df-cce4a5406287" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </link>
+          </links>
+        </entryGroup>
       </entryGroups>
       <modifiers/>
       <rules/>
@@ -15854,22 +15970,35 @@
                   <conditions>
                     <condition parentId="76d885d1-61ae-138e-9d56-151523fd1e55" childId="46fb0bc0-23de-aa24-8f30-aa842a72e88f" field="selections" type="equal to" value="1.0"/>
                     <condition parentId="76d885d1-61ae-138e-9d56-151523fd1e55" childId="fc04-0423-be94-2f67" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="76d885d1-61ae-138e-9d56-151523fd1e55" childId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Bike (Character)" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="76d885d1-61ae-138e-9d56-151523fd1e55" childId="46fb0bc0-23de-aa24-8f30-aa842a72e88f" field="selections" type="equal to" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="76d885d1-61ae-138e-9d56-151523fd1e55" childId="46fb0bc0-23de-aa24-8f30-aa842a72e88f" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="76d885d1-61ae-138e-9d56-151523fd1e55" childId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="76d885d1-61ae-138e-9d56-151523fd1e55" childId="46fb0bc0-23de-aa24-8f30-aa842a72e88f" field="selections" type="equal to" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="76d885d1-61ae-138e-9d56-151523fd1e55" childId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="76d885d1-61ae-138e-9d56-151523fd1e55" childId="46fb0bc0-23de-aa24-8f30-aa842a72e88f" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </link>
@@ -16190,20 +16319,7 @@
         <entryGroup id="5afc-4ea5-1bff-84c9" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition parentId="force type" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
-                    <condition parentId="force type" childId="60605955-d4b9-1fe4-0a50-10d14c5a87fd" field="selections" type="instance of" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+          <modifiers/>
           <links>
             <link id="4ec3-0243-b985-03bd" targetId="25030daf-4eef-f5b8-4515-9860fe363438" linkType="entry">
               <modifiers/>
@@ -16240,6 +16356,7 @@
                   <conditions>
                     <condition parentId="force type" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
                     <condition parentId="force type" childId="60605955-d4b9-1fe4-0a50-10d14c5a87fd" field="selections" type="instance of" value="0.0"/>
+                    <condition parentId="force type" childId="0df9-c2b3-dcf8-f2ae" field="selections" type="instance of" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -16540,6 +16657,35 @@
           <entryGroups/>
           <modifiers/>
           <links/>
+        </entryGroup>
+        <entryGroup id="13f3-2868-dd7d-2ee9" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="77db-10d0-78a4-00d6" targetId="25030daf-4eef-f5b8-4515-9860fe363438" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="dc40-fc7f-16c9-f2e5" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="6f25-9b34-0732-a6cb" targetId="30cc6165-7121-a4c0-1262-e729b435b68f" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="0581-7fe9-72ef-7adb" targetId="e1874b1b-7ca5-7fe1-5329-a0e073b0c230" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="372b-1513-7e47-91de" childId="f3aee269-2f69-f57e-eaea-6a91ac502357" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+            <link id="ecab-113f-3e83-fcbd" targetId="c0773bfa-69cd-5e61-7d16-35180db73f6e" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
         </entryGroup>
       </entryGroups>
       <modifiers/>
@@ -17010,7 +17156,7 @@
                 </entry>
               </entries>
               <entryGroups>
-                <entryGroup id="d5cd-c499-2718-102c" name="Must Choose 1" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entryGroup id="d5cd-c499-2718-102c" name="Must Choose 1" defaultEntryId="b972-50c1-a1a2-483e" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries>
                     <entry id="b972-50c1-a1a2-483e" name="Slugga" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
                       <entries/>
@@ -23896,20 +24042,7 @@
         <entryGroup id="2f2b-6aa7-675f-5b76" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition parentId="force type" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
-                    <condition parentId="force type" childId="60605955-d4b9-1fe4-0a50-10d14c5a87fd" field="selections" type="instance of" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+          <modifiers/>
           <links>
             <link id="a18a-3c0a-7f68-5e53" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
               <modifiers/>
@@ -24048,6 +24181,7 @@
                   <conditions>
                     <condition parentId="force type" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
                     <condition parentId="force type" childId="60605955-d4b9-1fe4-0a50-10d14c5a87fd" field="selections" type="instance of" value="0.0"/>
+                    <condition parentId="force type" childId="0df9-c2b3-dcf8-f2ae" field="selections" type="instance of" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -24292,6 +24426,42 @@
             </link>
           </links>
         </entryGroup>
+        <entryGroup id="2363-2921-8283-c0b6" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="42ab-6fce-99d3-091a" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="ce4e-e3c9-87c4-37c3" targetId="30cc6165-7121-a4c0-1262-e729b435b68f" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="daac-97ea-10cd-8440" targetId="e1874b1b-7ca5-7fe1-5329-a0e073b0c230" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="a051-8109-fd9d-b174" childId="f3aee269-2f69-f57e-eaea-6a91ac502357" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+            <link id="5433-28aa-e333-cc93" targetId="c0773bfa-69cd-5e61-7d16-35180db73f6e" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="12f8-fa92-84f1-fc0a" targetId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="a051-8109-fd9d-b174" childId="67fe-b60e-da5c-7abb" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+          </links>
+        </entryGroup>
       </entryGroups>
       <modifiers/>
       <rules/>
@@ -24318,22 +24488,35 @@
                   <conditions>
                     <condition parentId="a051-8109-fd9d-b174" childId="b140-2b75-6c04-d4be" field="selections" type="equal to" value="1.0"/>
                     <condition parentId="a051-8109-fd9d-b174" childId="67fe-b60e-da5c-7abb" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="a051-8109-fd9d-b174" childId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Bike (Character)" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="a051-8109-fd9d-b174" childId="67fe-b60e-da5c-7abb" field="selections" type="equal to" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="a051-8109-fd9d-b174" childId="67fe-b60e-da5c-7abb" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="a051-8109-fd9d-b174" childId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="1" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="a051-8109-fd9d-b174" childId="67fe-b60e-da5c-7abb" field="selections" type="equal to" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="a051-8109-fd9d-b174" childId="94a5b1f7-f37c-222a-66fd-f31515fe8bc0" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="a051-8109-fd9d-b174" childId="67fe-b60e-da5c-7abb" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </link>
@@ -24498,45 +24681,6 @@
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="5042-c83f-218c-f3cb" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition parentId="force type" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
-                    <condition parentId="force type" childId="60605955-d4b9-1fe4-0a50-10d14c5a87fd" field="selections" type="instance of" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <links>
-            <link id="3a16-1772-dcaa-544f" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="1bd8-31da-41f2-7e50" targetId="30cc6165-7121-a4c0-1262-e729b435b68f" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="5400-aa82-cf09-4012" targetId="e1874b1b-7ca5-7fe1-5329-a0e073b0c230" linkType="entry">
-              <modifiers>
-                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="6cfa-d1ae-de1d-24d0" childId="f3aee269-2f69-f57e-eaea-6a91ac502357" field="selections" type="equal to" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-            </link>
-            <link id="f5ac-d031-a106-9973" targetId="c0773bfa-69cd-5e61-7d16-35180db73f6e" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
         <entryGroup id="16d3-c92a-430e-2358" name="May Choose Any Runts, Squigs &amp; Know-wots" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="06e1-a0ec-f9ef-0662" name="Cybork Body" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -24618,6 +24762,7 @@
                   <conditions>
                     <condition parentId="force type" childId="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" field="selections" type="equal to" value="1.0"/>
                     <condition parentId="force type" childId="60605955-d4b9-1fe4-0a50-10d14c5a87fd" field="selections" type="instance of" value="0.0"/>
+                    <condition parentId="force type" childId="0df9-c2b3-dcf8-f2ae" field="selections" type="instance of" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -24638,6 +24783,32 @@
               <modifiers/>
             </link>
             <link id="7c1d-bf9e-a503-1628" targetId="e5f3e3d6-49b9-6d71-1a03-8cd2af8554f8" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="ee55-68f3-7850-a615" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="553f-c4e2-b355-5e8d" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="0423-2db3-0a1c-df23" targetId="30cc6165-7121-a4c0-1262-e729b435b68f" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="717c-b51a-62fc-02dd" targetId="e1874b1b-7ca5-7fe1-5329-a0e073b0c230" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="6cfa-d1ae-de1d-24d0" childId="f3aee269-2f69-f57e-eaea-6a91ac502357" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+            <link id="26ca-2acd-ca06-5989" targetId="c0773bfa-69cd-5e61-7d16-35180db73f6e" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -24808,6 +24979,32 @@
               <modifiers/>
             </link>
             <link id="7be1-8025-1a1b-6a95" targetId="e5f3e3d6-49b9-6d71-1a03-8cd2af8554f8" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="1cc0-9b2a-cbb3-7610" name="Gifts of Gork and Mork" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="45fb-cc71-c16c-4c15" targetId="e8082e4a-deaa-4284-de95-d0b0bb9be10b" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="1f3a-ebfc-dab0-47c7" targetId="30cc6165-7121-a4c0-1262-e729b435b68f" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="f4c7-6675-b5df-5596" targetId="e1874b1b-7ca5-7fe1-5329-a0e073b0c230" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="89d5-f953-1c6d-4322" childId="f3aee269-2f69-f57e-eaea-6a91ac502357" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+            <link id="33da-9597-8140-32c9" targetId="c0773bfa-69cd-5e61-7d16-35180db73f6e" linkType="entry">
               <modifiers/>
             </link>
           </links>
