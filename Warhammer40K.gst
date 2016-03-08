@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" revision="49" battleScribeVersion="1.15" name="Warhammer 40,000 7th Edition" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" revision="50" battleScribeVersion="1.15" name="Warhammer 40,000 7th Edition" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <forceTypes>
     <forceType id="5374616e6461726423232344415441232323" name="Combined Arms Detachment" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
       <categories>
@@ -1402,6 +1402,13 @@
       <characteristics>
         <characteristic id="0c51-25a6-109a-e6a6" name="Mastery Level"/>
         <characteristic id="ebe3-4c75-016c-5da5" name="Disciplines"/>
+      </characteristics>
+    </profileType>
+    <profileType id="b3a8-0452-7436-44d1" name="Transport">
+      <characteristics>
+        <characteristic id="2001-2946-ab5b-2567" name="Capacity"/>
+        <characteristic id="205a-8cb9-b2bf-094a" name="Fire Points"/>
+        <characteristic id="e307-de60-d06b-9d49" name="Access Points"/>
       </characteristics>
     </profileType>
   </profileTypes>
