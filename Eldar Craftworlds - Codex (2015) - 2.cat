@@ -583,19 +583,6 @@
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="f945-f6ca-d1a2-c6d0" name="Guardians" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="cf0c-fb09-bb0d-7944" targetId="4753-0ad3-2715-408a" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="bcc3-efdb-7c37-6f75" targetId="623f-0a83-272b-d418" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
       </entryGroups>
       <modifiers/>
       <rules>
@@ -8035,11 +8022,16 @@ The Controlling player may choose to have a Lynx deployed on the table at the be
           <entryGroups/>
           <modifiers>
             <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="1bd4-140a-7f5c-f180" childId="f425-c979-4e51-42e1" field="selections" type="equal to" value="1.0"/>
-                <condition parentId="1bd4-140a-7f5c-f180" childId="3aeb-67de-ecec-a8ae" field="selections" type="equal to" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="1bd4-140a-7f5c-f180" childId="f425-c979-4e51-42e1" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="1bd4-140a-7f5c-f180" childId="3aeb-67de-ecec-a8ae" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <links>
@@ -14452,6 +14444,73 @@ The Controlling player may choose to have a Lynx deployed on the table at the be
         </link>
       </links>
     </entry>
+    <entry id="edc9-2b8d-4571-6b81" name="Windrider Host" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Eldar Craftworlds (2015)" page="139">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="0a0a-73f2-b709-71b3" name="Farseer Skyrunner - 1 required" defaultEntryId="6c71-ec13-e859-5849" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="6c71-ec13-e859-5849" targetId="1a67-1c2b-96bf-4b52" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="1030-a70a-7645-98d1" name="Warlock Conclaves - 1 required" defaultEntryId="85a9-5e6b-c06e-2835" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="85a9-5e6b-c06e-2835" targetId="54c1-d90c-1827-d5bd" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="fea7-6372-a586-6bc6" name="Windriders - 3 required" defaultEntryId="eeec-c70c-bcd7-89a7" minSelections="3" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="eeec-c70c-bcd7-89a7" targetId="5926-905e-64dd-70c2" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="5cce-b451-68c2-20f5" name="Vyper Squadrons - 1 rrequired" defaultEntryId="97da-65c0-7b59-5d57" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="97da-65c0-7b59-5d57" targetId="bc01-daa0-b610-0ec2" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition parentId="force type" childId="1bd4-140a-7f5c-f180" field="selections" type="at least" value="1.0"/>
+                <condition parentId="force type" childId="c2a1-7d99-4258-6821" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="dbea-b5af-fe5d-be6e" name="Tempest of Blades" hidden="false" book="Codex: Eldar Craftworlds (2015)" page="13">
+          <description>Once per game, as long as the Farseer from this Formation has not been removed as a casualty, the Eldar player can declare a Tempest of Blades at the start of their Shooting Phase. All Shuriken weapons in this Formation gain the Shred special rule until the end of the phase.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
     <entry id="5926-905e-64dd-70c2" name="Windriders" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Eldar Craftworlds (2015)" page="114">
       <entries>
         <entry id="db0a-ede8-e3ad-0f54" name="Windrider Warlock" points="50.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="">
@@ -14817,73 +14876,6 @@ The Controlling player may choose to have a Lynx deployed on the table at the be
           <modifiers/>
         </link>
       </links>
-    </entry>
-    <entry id="edc9-2b8d-4571-6b81" name="Windrider Host" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Eldar Craftworlds (2015)" page="139">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="0a0a-73f2-b709-71b3" name="Farseer Skyrunner - 1 required" defaultEntryId="6c71-ec13-e859-5849" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="6c71-ec13-e859-5849" targetId="1a67-1c2b-96bf-4b52" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-        <entryGroup id="1030-a70a-7645-98d1" name="Warlock Conclaves - 1 required" defaultEntryId="85a9-5e6b-c06e-2835" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="85a9-5e6b-c06e-2835" targetId="54c1-d90c-1827-d5bd" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-        <entryGroup id="fea7-6372-a586-6bc6" name="Windriders - 3 required" defaultEntryId="eeec-c70c-bcd7-89a7" minSelections="3" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="eeec-c70c-bcd7-89a7" targetId="5926-905e-64dd-70c2" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-        <entryGroup id="5cce-b451-68c2-20f5" name="Vyper Squadrons - 1 rrequired" defaultEntryId="97da-65c0-7b59-5d57" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="97da-65c0-7b59-5d57" targetId="bc01-daa0-b610-0ec2" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-      </entryGroups>
-      <modifiers>
-        <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition parentId="force type" childId="1bd4-140a-7f5c-f180" field="selections" type="at least" value="1.0"/>
-                <condition parentId="force type" childId="c2a1-7d99-4258-6821" field="selections" type="instance of" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <rules>
-        <rule id="dbea-b5af-fe5d-be6e" name="Tempest of Blades" hidden="false" book="Codex: Eldar Craftworlds (2015)" page="13">
-          <description>Once per game, as long as the Farseer from this Formation has not been removed as a casualty, the Eldar player can declare a Tempest of Blades at the start of their Shooting Phase. All Shuriken weapons in this Formation gain the Shred special rule until the end of the phase.</description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles/>
-      <links/>
     </entry>
     <entry id="a2e0-b265-c182-d363" name="Wraith Constructs" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Eldar Craftworlds (2015)" page="95">
       <entries/>
