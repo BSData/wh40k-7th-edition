@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5e29cf46-0edb-4f2a-8b49-7691fba3e163" revision="54" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Orks: Codex (2014)" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5e29cf46-0edb-4f2a-8b49-7691fba3e163" revision="55" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Orks: Codex (2014)" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="13471a19-62d9-e7bc-9af9-6bce6b5d3935" name="&quot;Grukk&apos;s Rippin&apos; Krew&quot;" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Sanctus Reach: Stormclaw" page="29">
       <entries/>
@@ -28,7 +28,7 @@
         </link>
       </links>
     </entry>
-    <entry id="1451e893-d19a-4bef-43ee-cf0e3aa713b3" name="&quot;Mogrok&apos;s Bossboyz&quot;" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Sanctus Reach: The Red Waaagh!">
+    <entry id="1451e893-d19a-4bef-43ee-cf0e3aa713b3" name="&quot;Mogrok&apos;s Bossboyz&quot;" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Sanctus Reach: The Red Waaagh!">
       <entries>
         <entry id="afc1cb29-943c-0d32-a5c4-109a03c0f48e" name="Weirdboy" points="45.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Orks" page="0">
           <entries>
@@ -8576,7 +8576,20 @@
     <entry id="7c000a1b-8c4d-676f-411f-5ce3e7892ebc" name="Waaagh! Ghazghkull Options" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Waaagh! Ghazghkull" page="0">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="60605955-d4b9-1fe4-0a50-10d14c5a87fd" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="0df9-c2b3-dcf8-f2ae" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links/>
