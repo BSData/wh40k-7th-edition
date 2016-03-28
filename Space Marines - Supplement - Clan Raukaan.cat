@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="34c0ba54-b74f-93f9-1611-97a0626cb555" revision="42" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Supplement - Clan Raukaan (2013)" books="" authorName="" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="34c0ba54-b74f-93f9-1611-97a0626cb555" revision="43" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Supplement - Clan Raukaan (2013)" books="" authorName="" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a724-406d-637e-af29" name="&quot;Bladewing Assault Brotherhood&quot;" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="War Zone Damocles: Kauyon">
       <entries>
@@ -10226,6 +10226,18 @@
                 </link>
               </links>
             </entry>
+            <entry id="a870-9f55-71f0-2d3f" name="Cyclonic Melta Lance" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="433e-2cea-ac3a-76c9" targetId="04eb-7d84-fd3e-9ea7" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
           </entries>
           <entryGroups/>
           <modifiers/>
@@ -10240,7 +10252,16 @@
           <modifiers/>
         </link>
         <link id="3036-91cd-7ccd-b544" targetId="16de-6205-9359-a890" linkType="profile">
-          <modifiers/>
+          <modifiers>
+            <modifier type="decrement" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1" repeat="true" numRepeats="1" incrementParentId="9fe7-3157-fc78-fe82" incrementChildId="a870-9f55-71f0-2d3f" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="decrement" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1" repeat="true" numRepeats="1" incrementParentId="9fe7-3157-fc78-fe82" incrementChildId="ace0-84fe-e305-0350" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="0e7e-c3fd-ad9c-2535" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" linkType="entry">
           <modifiers/>
@@ -18229,7 +18250,11 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       <modifiers/>
       <rules/>
       <profiles/>
-      <links/>
+      <links>
+        <link id="5341-8592-1aa1-464c" targetId="2ef6-01f4-a4b7-dbea" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
     <entry id="d0d38aa7-8eeb-6da1-4ec1-f4fdbf0ab448" name="Psychic Hood" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
@@ -30539,6 +30564,15 @@ Iron and Steel</description>
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="04eb-7d84-fd3e-9ea7" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Cyclonic Melta Lance" hidden="false" book="Relic Leviathan Dreadnought">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="18"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="9"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 3, Melta"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="cbf7b3b2-ecd9-5725-971a-e3a6c2ea6fb7" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Cypher" hidden="false" book="Dataslate: Cypher" page="0">
       <characteristics>
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
@@ -32581,8 +32615,7 @@ Iron and Steel</description>
     </profile>
     <profile id="f7db025a-18cf-7403-3c97-a7c384c6fe2c" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Psychic Hood" hidden="false" book="Warhammer 40k rulebook" page="0">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Each time a unit (or model) is targeted by an enemy psychic power and is within 12&quot; of a friendly model with a psychic hood, the wearer of the hood can attempt to Deny the Witch in their stead, as if he were in the target unit. If the Deny the Witch attempt is failed, the psychic power is resolved as normal, but effects only the initial target, not the wearer of the hood.
-If a model with a psychic hood is embarked in a vehicle or building, he can only use the hood to nullify powers targeting the vehicle or building he is embarked within."/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Each time a unit (or model) is targeted by an enemy psychic power and is within 12&quot; of a friendly model with a psychic hood, the wearer of the hood can attempt to Deny the Witch in their stead, as if he were in the target unit. If the Deny the Witch attempt is failed, the psychic power is resolved as normal, but effects only the initial target, not the wearer of the hood. If a model with a psychic hood is embarked in a vehicle or building, he can only use the hood to nullify powers targeting the vehicle or building he is embarked within."/>
       </characteristics>
       <modifiers/>
     </profile>
