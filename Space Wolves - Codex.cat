@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="21e36b7e-84ee-2ec0-53f2-2c32fd8bd981" revision="68" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Wolves: Codex (2014)" books="" authorName="BSData" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="21e36b7e-84ee-2ec0-53f2-2c32fd8bd981" revision="69" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Wolves: Codex (2014)" books="" authorName="BSData" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="dec7-3100-06a0-9ae8" name="&quot;Deathpack&quot;" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Start Collecting! Space Wolves">
       <entries/>
@@ -22165,6 +22165,9 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                 <link id="8261-7ba8-2a73-88d0" targetId="3a95-c774-edd6-2d55" linkType="profile">
                   <modifiers/>
                 </link>
+                <link id="680d-7bb6-29ef-6f19" targetId="da4cc1e9-9855-01d0-f968-d551470dce58" linkType="rule">
+                  <modifiers/>
+                </link>
               </links>
             </entry>
           </entries>
@@ -36974,7 +36977,11 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="fd71-1139-51d2-dc61" targetId="d6b7-d692-9254-af88" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
             <entry id="9457-c981-6dc3-d08c" name="Wulfen Pack Leader" points="50.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries>
@@ -36982,8 +36989,23 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
-                  <rules/>
-                  <profiles/>
+                  <rules>
+                    <rule id="5a0f-165a-0d17-a9a6" name="Stormfrag Auto-Launcher" hidden="false" book="Curse of the Wulfen" page="53">
+                      <description>Models in a unit that includes one or more models equipped with stormfrag auto-launchers do not suffer the penalty to their Initiative for charging enemies through difficult terrain, but fight at their normal Initiative in the ensuing combat.</description>
+                      <modifiers/>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="afb7-c7ed-4afa-d3a9" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Stormfrag Auto-Launcher" hidden="false" book="Curse of the Wulfen" page="53">
+                      <characteristics>
+                        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12"/>
+                        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
+                        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
+                        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault D3"/>
+                      </characteristics>
+                      <modifiers/>
+                    </profile>
+                  </profiles>
                   <links/>
                 </entry>
                 <entry id="5943-e778-a247-5bd0" name="Dual Frost Claws" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -37003,7 +37025,11 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="ad9c-6b29-0092-d963" targetId="acec-fa42-e18d-26bc" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
@@ -37075,9 +37101,6 @@ Models in affected unitsthat are slain in the Fight sub-phase can, at the end of
           <modifiers/>
         </link>
         <link id="646f-83dd-bcf6-e541" targetId="e2158329-cadf-d23f-6391-0a33f0619b43" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="0357-5563-2550-7349" targetId="d6b7-d692-9254-af88" linkType="profile">
           <modifiers/>
         </link>
       </links>
@@ -43889,7 +43912,7 @@ Jaws of the World Wolf is a focussed witchfire power that targets a single non-v
     <rule id="e62673a2-b8b7-53eb-1836-d08c880ab3be" name="Reactor Meltdown" hidden="false" book="Imperial Armour Apocalypse 2013" page="6">
       <modifiers/>
     </rule>
-    <rule id="e347-4382-5902-74e6" name="Reaping Swings" hidden="false" book="Curse of the Wulfen" page="53">
+    <rule id="e347-4382-5902-74e6" name="Reaping Swing" hidden="false" book="Curse of the Wulfen" page="53">
       <description>On a turn in which a model equipped with thisweapon charges, it strikes at its normal Initiative order in the ensuing combat. In any subsequent rounds of combat, the wielder strikes at the Initiative 1 step.</description>
       <modifiers/>
     </rule>
