@@ -2294,37 +2294,11 @@
     <entry id="d424bec9-6511-cfe8-2d41-a014eb8e93a4" name="Chapter Tactics" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="1" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Marines" page="77">
       <entries/>
       <entryGroups/>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="2fadceb5-5601-9e03-9a46-41c3aa1a24c5" field="selections" type="instance of" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <rules/>
       <profiles/>
       <links>
         <link id="be872990-742e-834e-3afb-a2aaa0d28907" targetId="aa221aac-ed49-aeb3-3657-2de942c17cbe" linkType="entry group">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="8c06c603-3bef-40fe-94d6-25682d9cdb7f" name="Chapter Tactics - Formation Detachment" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Codex: Space Marines" page="77">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="2fadceb5-5601-9e03-9a46-41c3aa1a24c5" field="selections" type="instance of" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="77b78af7-1a5c-a361-3413-1aae23dfdd40" targetId="aa221aac-ed49-aeb3-3657-2de942c17cbe" linkType="entry group">
           <modifiers/>
         </link>
       </links>
@@ -3031,7 +3005,7 @@
         </link>
       </links>
     </entry>
-    <entry id="7f8f4fdc-901e-f467-3db7-491c063e7606" name="Cypher, Fallen" points="190.0" categoryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Dataslate: Cypher" page="0">
+    <entry id="7ce7dd42-91eb-e6fc-e0af-0196e3121951" name="Cypher, Fallen" points="190.0" categoryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Dataslate: Cypher" page="0">
       <entries>
         <entry id="208a54ab-d960-c90c-eb8f-a78087307b62" name="Cypher&apos;s Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -11334,7 +11308,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="21e7-2790-9f0b-15ff" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -15232,6 +15213,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
         </link>
       </links>
+    </entry>
+    <entry id="21e7-2790-9f0b-15ff" name="Ortan Cassius" points="0.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="40k-rules-deathwatch-en.pdf">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
     </entry>
     <entry id="b460-083f-412f-f395" name="Pedro Kantor, Crimson Fists" points="185.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Marines" page="0">
       <entries>
@@ -32295,8 +32284,7 @@ The most recent data is employed by default but you may select this option if yo
     </profile>
     <profile id="f7db025a-18cf-7403-3c97-a7c384c6fe2c" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Psychic Hood" hidden="false" book="Warhammer 40k rulebook" page="0">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Each time a unit (or model) is targeted by an enemy psychic power and is within 12&quot; of a friendly model with a psychic hood, the wearer of the hood can attempt to Deny the Witch in their stead, as if he were in the target unit. If the Deny the Witch attempt is failed, the psychic power is resolved as normal, but effects only the initial target, not the wearer of the hood.
-If a model with a psychic hood is embarked in a vehicle or building, he can only use the hood to nullify powers targeting the vehicle or building he is embarked within."/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Each time a unit (or model) is targeted by an enemy psychic power and is within 12&quot; of a friendly model with a psychic hood, the wearer of the hood can attempt to Deny the Witch in their stead, as if he were in the target unit. If the Deny the Witch attempt is failed, the psychic power is resolved as normal, but effects only the initial target, not the wearer of the hood. If a model with a psychic hood is embarked in a vehicle or building, he can only use the hood to nullify powers targeting the vehicle or building he is embarked within."/>
       </characteristics>
       <modifiers/>
     </profile>
