@@ -3521,21 +3521,21 @@
   <sharedSelectionEntries/>
   <sharedSelectionEntryGroups/>
   <sharedRules>
-    <rule id="e15d-1437-cfb2-b8dd" name="Acute Senses" hidden="false">
+    <rule id="e15d-1437-cfb2-b8dd" name="Acute Senses" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Outflanking units can re-roll to determine the table side they enter on.</description>
     </rule>
-    <rule id="8714-46ad-62c0-ce35" name="Adamantium Will" hidden="false">
+    <rule id="8714-46ad-62c0-ce35" name="Adamantium Will" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit that contains at least one model with this special rule receives a +1 bonus to Deny the Witch tests.</description>
     </rule>
-    <rule id="2e56-6b02-4343-0e40" name="And They Shall Know No Fear" hidden="false">
+    <rule id="2e56-6b02-4343-0e40" name="And They Shall Know No Fear" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3544,28 +3544,28 @@
 
 Furthermore, if a unit containing one or more models with this special rule is caught by a Sweeping Advance, they are not destroyed, but remain locked in combat instead.</description>
     </rule>
-    <rule id="8024-df0a-ec75-95c0" name="Assault Vehicle" hidden="false">
+    <rule id="8024-df0a-ec75-95c0" name="Assault Vehicle" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Passengers disembarking can charge the turn they do, unless the vehicle arrived from Reserve that turn. </description>
     </rule>
-    <rule id="8fad-693f-88b4-bac6" name="Blind" book="BRB - 7th Edition" hidden="false">
+    <rule id="8fad-693f-88b4-bac6" name="Blind" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Any unit hit by one or more models or weapons with this special rule must take an Initiative test at the end of the current phase. If the test is passed, all is well – a shouted warning has caused the warriors to avert their gaze. If the Initiative test is failed, all models in the unit are reduced to Weapon Skill and Ballistic Skill 1 until the end of their next turn. Should the attacking unit hit themselves, we assume they are prepared and they automatically pass the test. Any model that does not have an Initiative characteristic (for example, non-Walker vehicles, buildings etc.) is unaffected by this special rule. </description>
     </rule>
-    <rule id="b4c1-e1df-b875-92a6" name="Bulky" hidden="false">
+    <rule id="b4c1-e1df-b875-92a6" name="Bulky" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Bulky models count as two models for the purposes of Transport Capacity.</description>
     </rule>
-    <rule id="243a-b08c-3c8c-c363" name="Deep Strike" hidden="false">
+    <rule id="243a-b08c-3c8c-c363" name="Deep Strike" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3605,7 +3605,7 @@ disembark during their Movement phase as normal.
 
 4-6 - Delayed. Because of mechanical failure or enemy action, the reinforcements are delayed. The unit is placed in Ongoing Reserves.</description>
     </rule>
-    <rule id="41fe-9e25-f4a8-095b" name="Counter-attack" hidden="false">
+    <rule id="41fe-9e25-f4a8-095b" name="Counter-attack" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3614,28 +3614,28 @@ disembark during their Movement phase as normal.
 
 If, when charged, the unit was already locked in combat, the Counter-attack special rule has no effect.</description>
     </rule>
-    <rule id="f172-03fe-1e9f-c363" name="Eternal Warrior" hidden="false">
+    <rule id="f172-03fe-1e9f-c363" name="Eternal Warrior" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>If a model with this special rule suffers an unsaved Wound from an attack that inflicts Instant Death, it only reduces its Wounds by 1, instead of automatically reducing its Wounds to 0.</description>
     </rule>
-    <rule id="280d-1a0c-5916-3012" name="Fear" hidden="false">
+    <rule id="280d-1a0c-5916-3012" name="Fear" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>At the start of each Fight sub-phase, a unit in base contact with one or more enemy models that cause Fear must take a Leadership test (called a Fear test) before any blows are struck. If the test is passed, all is well and there is no effect. If the test is failed, the unit succumbs to fear – all models in the unit have their Weapon Skill reduced to 1 for the remainder of that Fight sub-phase. Note that a model that causes Fear is not itself immune to Fear, and will still need to take a Fear test if it is base contact with any enemy models that cause Fear.</description>
     </rule>
-    <rule id="8d37-2e47-4a04-58f7" name="Fearless" hidden="false">
+    <rule id="8d37-2e47-4a04-58f7" name="Fearless" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Units containing one or more models with the Fearless special rule automatically pass Pinning, Fear, Regroup tests and Morale checks, but cannot Go to Ground and cannot choose to fail a Morale check due to the Our Weapons Are Useless rule. If a unit has Gone to Ground and then gains the Fearless special rule, all the effects of Go to Ground are immediately cancelled.</description>
     </rule>
-    <rule id="3c7d-11d6-e265-abb4" name="Feel No Pain" hidden="false">
+    <rule id="3c7d-11d6-e265-abb4" name="Feel No Pain" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3648,35 +3648,28 @@ Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take 
 
 If a unit has the Feel No Pain special rule with a number in brackets afterwards –Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
-    <rule id="39c6-1f20-a156-47f4" name="Fleet" hidden="false">
+    <rule id="39c6-1f20-a156-47f4" name="Fleet" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit composed entirely of models with this special rule can re-roll one or more of the dice when determining Run moves and charge ranges (such as a single D6 from a charge range roll, for example).</description>
     </rule>
-    <rule id="8ffe-a938-0fe4-b498" name="Flurry" book="War Zone Damocles - Kauyon" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>After a model attacking with this weapon has rolled to hit, it makes a number of bonus attacks equal to the number of hits that have been scored. Further hits do not cause further bonus attacks.</description>
-    </rule>
-    <rule id="b6da-cce3-2346-9c27" name="Furious Charge" hidden="false">
+    <rule id="b6da-cce3-2346-9c27" name="Furious Charge" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>In a turn in which a model with this special rule charges into combat, it adds +1 to its Strength characteristic until the end of the Assault phase. A model that has made a disordered charge that turn receives no benefit from Furious Charge.</description>
     </rule>
-    <rule id="9cf8-e693-2882-a2ca" name="Graviton" book="" hidden="false">
+    <rule id="9cf8-e693-2882-a2ca" name="Graviton" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>The roll needed To Wound when firing a grav-weapon is always equal to the armour save of the target, to a minimwn of 6+. For example, when resolving a hit against a Space Marine in power armour you would need a 3+ To Wound. When resolving a hit against a vehicle, roll a D6 for each hit instead of rolling for armour penetration as normal. On a 1-5 nothing happens, but on a 6, the target suffers an lmmobilised result and loses a single Hull Point. Grav-weapons have no effect on buildings.</description>
     </rule>
-    <rule id="4628-0ada-2997-8568" name="Hammer of Wrath" hidden="false">
+    <rule id="4628-0ada-2997-8568" name="Hammer of Wrath" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3685,7 +3678,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
 
 If a model with this special rule charges a building or vehicle, the hit is resolved against the Armour Value of the facing the charging model is touching. If a model with this special rule charges a building or vehicle that is a Transport or a Chariot, the hit is resolved against the building or vehicle, not the occupants or the rider.</description>
     </rule>
-    <rule id="1b52-f89b-6c9b-c3c2" name="Hit and Run" hidden="false">
+    <rule id="1b52-f89b-6c9b-c3c2" name="Hit and Run" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3698,7 +3691,7 @@ If the test is passed, choose a direction – then roll 3D6. As long as the dist
 
 A Hit &amp; Run move is not slowed by difficult terrain, but takes Dangerous Terrain tests as normal. It may not be used to move into base or hull contact with enemy units, and models instead stop 1&quot; away. If there are units with this rule on both sides who wish to disengage, roll-off to determine who goes first and then alternate disengaging them. If the last of these ends up no longer in combat, it Consolidates instead.</description>
     </rule>
-    <rule id="ef3b-09c6-4024-cd37" name="Independant Character" hidden="false">
+    <rule id="ef3b-09c6-4024-cd37" name="Independant Character" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3736,48 +3729,49 @@ Conversely, if an Independent Character joins a unit after that unit has been th
 
 For example, Crimson Fists Tactical Squad Hemanez is suffering the effects of the Blind special rule. If Captain Cruiz joins the unit, he does not suffer the results of the Blind special rule as he was not there when it happened!</description>
     </rule>
-    <rule id="0b11-a0ff-f0ba-5341" name="Infiltrate *" hidden="false">
+    <rule id="0b11-a0ff-f0ba-5341" name="Infiltrate" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Deployed after all other units anywhere &gt; 12&quot; away from enemy and outside their line of sight, or &gt; 18&quot; away within LoS.  Cannot charge in first turn after deploying this way.  Also has Outflank.</description>
     </rule>
-    <rule id="d3e5-b43d-a89c-3bd8" name="Jink" hidden="false">
+    <rule id="d3e5-b43d-a89c-3bd8" name="Jink" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>When a unit with any models with the Jink special rule is selected as a target for a shooting attack, you may declare that it will Jink. The decision must be made before any To Hit rolls have been made. If the unit Jinks, all models in the unit with this special rule gain a 4+ cover save until the start of their next Movement phase, but they can only fire Snap Shots until the end of their next turn.</description>
     </rule>
-    <rule id="609e-1ee4-78c1-0ba1" name="Master-crafted" hidden="false">
+    <rule id="609e-1ee4-78c1-0ba1" name="Master-crafted" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Weapons with the Master-crafted special rule allow the bearer to re-roll one failed roll To Hit per turn with that weapon.</description>
     </rule>
-    <rule id="93c5-dcdd-af20-413e" name="Monster Hunter" hidden="false">
+    <rule id="93c5-dcdd-af20-413e" name="Monster Hunter" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit that contains at least one model with this special rule re-rolls all failed To Wound rolls against Monstrous Creatures.</description>
     </rule>
-    <rule id="7ecc-bc3d-6e22-63dc" name="Move Through Cover" hidden="false">
+    <rule id="7ecc-bc3d-6e22-63dc" name="Move Through Cover" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit that contains at least one model with this special rule rolls an extra D6 when rolling to move through difficult terrain and is not slowed by charging through difficult terrain. In most circumstances, this will mean that, when moving, the unit rolls 3D6 and picks the highest roll. Furthermore, a model with the Move Through Cover special rule automatically passes Dangerous Terrain tests.</description>
     </rule>
-    <rule id="528d-4089-aaeb-bc3c" name="Power of the Machine Spirit" hidden="false">
+    <rule id="528d-4089-aaeb-bc3c" name="Power of the Machine Spirit" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>In a turn in which the vehicle neither moves Flat Out nor uses smoke launchers, the vehicle can fire one more weapon at its full Ballistic Skill than normally permitted. In addition, this weapon can be fired at a different target unit to any other weapons, subject to the normal rules for shooting.</description>
     </rule>
-    <rule id="540d-b15f-f709-3bf9" name="Precision Shots" hidden="false">
+    <rule id="540d-b15f-f709-3bf9" name="Precision Shots" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3788,27 +3782,28 @@ Wounds from Precision Shots are allocated against a model (or models) of your ch
 
 Note that Snap Shots and shots from weapons that scatter, or do not roll To Hit, can never be Precision Shots.</description>
     </rule>
-    <rule id="f217-b311-e5b1-c8c7" name="Preferred Enemy *" hidden="false">
+    <rule id="f217-b311-e5b1-c8c7" name="Preferred Enemy" book="BRB" page="169" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Reroll all failed to hit and to wound rolls of 1 against the chosen enemy in both shooting and assault.</description>
     </rule>
-    <rule id="814f-6a54-47ae-6abd" name="Rampage" hidden="false">
+    <rule id="814f-6a54-47ae-6abd" name="Rampage" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>At the start of any Fight sub-phase, models with the Rampage special rule gain +D3 attacks if the combat they are in contains more enemy models than friendly models – count all models locked in the combat, not just those models that are engaged. Roll once to determine the number of bonus Attacks all Rampaging models involved in that combat receive that phase. A model that has made a disordered charge that turn receives no benefit from Rampage.</description>
     </rule>
-    <rule id="7674-690c-ab59-1444" name="Relentless" hidden="false">
+    <rule id="7674-690c-ab59-1444" name="Relentless" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Relentless models can shoot with Heavy, Salvo or Ordnance weapons, counting as stationary, even if they moved in the previous Movement phase. They are also allowed to charge in the same turn they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
     </rule>
-    <rule id="6a76-59d1-822c-59c9" name="Rending" hidden="false">
+    <rule id="6a76-59d1-822c-59c9" name="Rending" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3819,7 +3814,7 @@ Similarly, if a model makes a shooting attack with a weapon that has the Rending
 
 In either case, against vehicles, each armour penetration roll of 6 allows a further D3 to be rolled, with the result added to the total. These hits are not resolved at AP2, but are instead resolved using the model/weapon’s AP value.</description>
     </rule>
-    <rule id="5770-35c6-7341-5527" name="Shred" hidden="false">
+    <rule id="5770-35c6-7341-5527" name="Shred" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3828,7 +3823,7 @@ In either case, against vehicles, each armour penetration roll of 6 allows a fur
 
 Similarly, if a model makes a shooting attack with a weapon that has the Shred special rule, it re-rolls its failed To Wound rolls.</description>
     </rule>
-    <rule id="7182-6dce-dc98-9f7c" name="Shrouded" hidden="false">
+    <rule id="7182-6dce-dc98-9f7c" name="Shrouded" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3837,75 +3832,77 @@ Similarly, if a model makes a shooting attack with a weapon that has the Shred s
 
 Cover save bonuses from the Shrouded and Stealth special rules are cumulative (to a maximum of a 2+ cover save).</description>
     </rule>
-    <rule id="e6bc-ea23-502f-5042" name="Slow and Purposeful" hidden="false">
+    <rule id="e6bc-ea23-502f-5042" name="Slow and Purposeful" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit that contains at least one model with this special rule cannot Run, Turbo-boost, move Flat Out, perform Sweeping Advances or fire Overwatch. However, they can shoot with Heavy, Salvo and Ordnance weapons, counting as stationary even if they moved in the previous Movement phase. They are also allowed to charge in the same turn they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
     </rule>
-    <rule id="1bb3-2856-abde-cd6d" name="Smash" hidden="false">
+    <rule id="1bb3-2856-abde-cd6d" name="Smash" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>All of the close combat attacks, except Hammer of Wrath attacks, of a model with this special rule are resolved at AP2 (unless it’s attacking with an AP1 weapon). Additionally, when it makes its close combat attacks, it can choose instead to make a single Smash Attack. If it does so, roll To Hit as normal, but resolve the Attack at double the model’s Strength (to a maximum of 10). Furthermore, a model making a Smash Attack can re-roll its armour penetration rolls, but must abide by the second result.</description>
     </rule>
-    <rule id="6981-e5a9-c7d1-9332" name="Specialist Weapon" hidden="false">
+    <rule id="6981-e5a9-c7d1-9332" name="Specialist Weapon" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A model fighting with this weapon does not receive +1 Attack for fighting with two weapons unless it is armed with two or more Melee weapons with the Specialist Weapon rule.</description>
     </rule>
-    <rule id="2ee4-4ad5-04de-d3e2" name="Stealth *" hidden="false">
+    <rule id="2ee4-4ad5-04de-d3e2" name="Stealth" book="BRB" page="172" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Counts it&apos;s coversave as 1 point better than normal (Combines with Shrouded)</description>
     </rule>
-    <rule id="8e8f-e6ca-9f2c-e019" name="Strafing Run" hidden="false">
+    <rule id="8e8f-e6ca-9f2c-e019" name="Strafing Run" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>When shooting Assault, Heavy, Rapid Fire or Salvo weapons at Artillery, Beasts, Bikes, Cavalry, Infantry, Monstrous Creatures and vehicles without the Flyer or Skimmer type, this vehicle has +1 Ballistic Skill.</description>
     </rule>
-    <rule id="b500-e499-9f9b-43f4" name="Strikedown" hidden="false">
+    <rule id="b500-e499-9f9b-43f4" name="Strikedown" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Any non-vehicle model that suffers one or more unsaved Wounds or passes one or more saving throws against an attack with the Strikedown special rule moves as if it is in difficult terrain until the end of its next turn. It is a good idea to mark affected models with counters or coins so that you remember.</description>
     </rule>
-    <rule id="a1e0-247a-474f-2f5a" name="Stubborn" hidden="false">
+    <rule id="a1e0-247a-474f-2f5a" name="Stubborn" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>When a unit that contains at least one model with this special rule takes Morale checks or Pinning tests, they ignore any negative Leadership modifiers. If a unit is both Fearless and Stubborn, it uses the rules for Fearless instead.</description>
     </rule>
-    <rule id="6fc3-10c7-ad0f-4b3a" name="Supersonic *" hidden="false">
+    <rule id="6fc3-10c7-ad0f-4b3a" name="Supersonic" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>A Supersonic vehicle that moves Flat Out must move at least 18&quot; and can move up to 36&quot;. </description>
     </rule>
-    <rule id="4378-c0f8-107a-4e3e" name="Tank Hunters" hidden="false">
+    <rule id="4378-c0f8-107a-4e3e" name="Tank Hunters" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit that contains at least one model with this special rule re-rolls failed armour penetration rolls against vehicles (both with shooting and in close combat) and can choose to re-roll glancing hits, in an attempt to instead get a penetrating hit – but the second result must be kept.</description>
     </rule>
-    <rule id="20e0-3f6c-f3ac-fda2" name="Very Bulky" hidden="false">
+    <rule id="20e0-3f6c-f3ac-fda2" name="Very Bulky" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Very Bulky models instead count as three models.</description>
     </rule>
-    <rule id="6fc0-ebe5-6c64-7c9f" name="Zealot" hidden="false">
+    <rule id="6fc0-ebe5-6c64-7c9f" name="Zealot" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3914,59 +3911,71 @@ Cover save bonuses from the Shrouded and Stealth special rules are cumulative (t
 
 In addition, units containing one or more models with the Zealot special rule re-roll all failed To Hit rolls during the first round of each close combat – they do not get to re-roll failed To Hit rolls in subsequent rounds.</description>
     </rule>
-    <rule id="6428-979b-5904-7475" name="Extremely Bulky" hidden="false">
+    <rule id="6428-979b-5904-7475" name="Extremely Bulky" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Extremely Bulky models count as five models for the purposes of Transport Capacity.</description>
     </rule>
-    <rule id="3d3c-398b-775d-72ff" name="Vortex *" hidden="false">
+    <rule id="3d3c-398b-775d-72ff" name="Vortex" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>A weapon with this special rule is a Destroyer weapon and uses a blast marker of some type (e.g. blast, large blast, massive blast, etc). Place the appropriate marker, roll for scatter and apply damage. For determining Wound allocation, always assume the shot is coming from the centre of the marker, in the same manner as a Barrage weapon. 
+The marker for a Vortex weapon is not removed from play after damage has been resolved. Leave it in play on the tabletop. The marker is impassable terrain as long as it remains in play. 
+At the beginning of every subsequent player turn, the marker scatters 2D6&quot; (use the little arrow if you roll a Hit!). If a double is rolled, the marker is removed from play instead. Any unit under the marker’s new location is hit. Apply damage as described above.</description>
     </rule>
-    <rule id="3002-de38-7230-fbc6" name="Twin-Linked *" hidden="false">
+    <rule id="3002-de38-7230-fbc6" name="Twin-Linked" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Re-roll all failed To Hit rolls.
+
+Blast - can reroll both 2D6 and scatter die. 
+
+Template - Reroll To Wound and armour penetration rolls.</description>
     </rule>
-    <rule id="3ac5-a550-39f8-f28a" name="Rage" page="0" hidden="false">
+    <rule id="3ac5-a550-39f8-f28a" name="Rage" book="BRB" page="" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>In a turn in which a model with this special rule charges into combat, it gains +2 Attacks for charging, rather than +1. A model that has made a disordered charge that turn receives no benefit from Rage.</description>
     </rule>
-    <rule id="3eda-669d-bd54-e3c0" name="Daemon" page="0" hidden="false">
+    <rule id="3eda-669d-bd54-e3c0" name="Daemon" book="BRB" page="" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>5+ Invunerable, Causes Fear</description>
     </rule>
-    <rule id="acb1-64c4-ef54-3a55" name="Soul Blaze *" hidden="false">
+    <rule id="acb1-64c4-ef54-3a55" name="Soul Blaze" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>If a unit suffers one or more wounds from an attack with this special rule, it is set ablaze and continues to burn.
+
+At the end of each turn, roll a D6 for each unit with a Soul Blaze counter. On a 3- the flames die and unit is no longer ablaze. On a 4+ the unit takes D3 S4 AP5 hits with Ignores Cover special rule. These wounds are randomly allocated.</description>
     </rule>
-    <rule id="d0ea-e2a6-032d-8754" name="Concussive" hidden="false">
+    <rule id="d0ea-e2a6-032d-8754" name="Concussive" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A model that suffers one or more unsaved Wounds from a weapon with this special rule is reduced to Initiative 1 until the end of the following Assault phase.</description>
     </rule>
-    <rule id="f987-c2a3-1a7a-9703" name="Crusader" hidden="false">
+    <rule id="f987-c2a3-1a7a-9703" name="Crusader" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit that contains at least one model with this special rule rolls an extra dice when making Run moves, using highest result rolled. IN addition, a unit that contains at least one model with this rule adds D3 to its Sweeping Advance totals (roll each time).</description>
     </rule>
-    <rule id="3897-5e71-1b57-57ba" name="Fleshbane" hidden="false">
+    <rule id="3897-5e71-1b57-57ba" name="Fleshbane" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3977,7 +3986,7 @@ Similarly, if a model makes a shooting attack with a weapon that has this specia
 
 In either case, this special rule has no effect against vehicles or buildings.</description>
     </rule>
-    <rule id="5341-7110-d8d4-171a" name="Vector Strike" hidden="false">
+    <rule id="5341-7110-d8d4-171a" name="Vector Strike" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3986,27 +3995,219 @@ In either case, this special rule has no effect against vehicles or buildings.</
 
 A model that made a Vector Strike in its Movement phase counts as having already fired one weapon in its following Shooting phase. However, any additional weapons it fires that turn can choose a different target to that of the Vector Strike.</description>
     </rule>
-    <rule id="5039-18f0-a9ed-0938" name="Torrent" hidden="false">
+    <rule id="5039-18f0-a9ed-0938" name="Torrent" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A weapon with this special rule is treated like any other Template weapon, but when firing it in the Shooting phase, place the template so that the narrow end is within 12&quot; of the weaon and the wide end is no closer to the weapon than the narrow end.</description>
     </rule>
-  </sharedRules>
-  <sharedProfiles>
-    <profile id="3d4b-95ea-f860-dd22" name="Boltgun" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+    <rule id="b1ee-7803-8ddb-cb4e" name="Destroyer Weapon" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="4"/>
-        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="5"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire"/>
-      </characteristics>
-    </profile>
+      <description>If a weapon has a D instead of a Strength value in its profile, it is a Destroyer weapon. To resolve a Destroyer weapon&apos;s attack, roll To Hit as you would for a standard attack. If the attack hits, roll on the table instead of rolling To Wound or for armour penetration. Most Destroyer Weapons have AP1 or AP2, so armour saves are not typically allowed. Cover saves and invulnerable saves can be taken against hits from a Destroyer weapon as normal, unless a Devastating Hit or Deathblow result is rolled. For the purposes of determining if a Destroyer hit has the Instant Death special rule, assume it has Strength 10. Multiple Wounds/Hull Points inflicted by a Destroyer hit do not carry over to other models in the unit (any excess are lost).</description>
+    </rule>
+    <rule id="3498-7560-3a1a-9e27" name="Armourbane" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If a model has this special rule, or is attacking with a Melee weapon that has this special rule, it rolls an additional D6 for armour penetration in close combat.
+
+If a model makes a shooting attack with a weapon that has this special rule, it rolls an additional D6 for armour penetration. In either case, this special rule has no effect against non-vehicle models. </description>
+    </rule>
+    <rule id="f588-4e5a-a032-0aee" name="Force" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Any Psyker that has one or more weapons with this special rule knows the Force psychic power in addition to any other powers they know.
+
+Force - Warp Charge 1
+Force is a blessing psychic power that targets the Psyker and his unit. All of the targets&apos; weapons that have the Force special rule gain the Instant Death special rule until the start of your next Psychic phase.</description>
+    </rule>
+    <rule id="4e9f-4f6f-6fbc-6418" name="Gets Hot" book="BRB" page="164" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Each roll of 1 To Hit causes a Wound to the firing model (armor and invulnerable saves may be taken but the Wound cannot be allocated to any other model.)  Vehicles instead have a 50% chance to take a glancing hit.  Blast weapons instead roll a D6 before firing; upon rolling a 1 they take the hit described above instead of firing.</description>
+    </rule>
+    <rule id="5e10-0200-5a10-0e8a" name="Hatred" book="BRB" page="165" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of each close combat.</description>
+    </rule>
+    <rule id="719f-69cb-c032-d0ef" name="Haywire" book="BRB" page="165" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When a weapon with this special rule hits a vehicle, roll a D6 to determine the effect rather than rolling for armour penetration normally: 1 - No effect; 2-5 - Glancing hit; 6 - Penetrating hit</description>
+    </rule>
+    <rule id="52f9-9dcb-b6ed-0562" name="Ignores Cover" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Cover saves cannot be taken against Wounds, glancing hits or penetrating hits caused by weapons with the Ignores Cover special rule.</description>
+    </rule>
+    <rule id="0f21-40bb-398a-836d" name="Instant Death" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If a model suffers an unsaved Wound from an attack with this special rule, it is reduced to 0 Wounds and is removed as a casualty.</description>
+    </rule>
+    <rule id="0a4d-b72d-5517-7320" name="Interceptor" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>At the end of the enemy Movement phase, a weapon with the Interceptor special rule can be fired at any one unit that has arrived from Reserve within its range and line of sight. If this rule is used, the weapon cannot be fired in the next turn, but the firing model can shoot a different weapon if it has one.</description>
+    </rule>
+    <rule id="c2d5-d82e-74f8-fe82" name="Outflank" book="BRB" page="168" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When this unit arrives from reserves roll a die. On a 1 or 2 it comes in on your left, on a 3 or 4 it comes in on your right and on a 5 or 6 you choose right or left.</description>
+    </rule>
+    <rule id="bc4c-234f-0293-98a7" name="Melta" book="BRB" page="168" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Within half range, add D6 to armor penetration against vehicles.</description>
+    </rule>
+    <rule id="46ca-9255-0e77-e9f5" name="Missile Lock" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A model with this special rule re-rolls failed To Hit rolls when shooting any weapon that has the One Use Only special rule. If a model with this special rule is shooting a weapon that has both the One Use Only and Blast special rules, that shot will instead scatter D6&quot; rather than 2D6&quot;.</description>
+    </rule>
+    <rule id="8918-d7ce-5edb-3b70" name="Pinning" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If target unit (non-vehicle) suffers any unsaved Wounds, it must pass a Ld test or Go to Ground.</description>
+    </rule>
+    <rule id="a5ff-1cb1-bee4-d809" name="Poisoned" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If a model has the Poisoned special rule, or is attacking with a Melee weapon that has the Poisoned special rule, it always wounds on a fixed number (generally shown in brackets), unless a lower result would be required, when attacking in close combat. In addition, if the Strength of the wielder (or the Poisoned weapon) is higher than the Toughness of the victim, the wielder must re-roll failed rolls To Wound in close combat.
+
+Similarly, if a model makes a shooting attack with a weapon that has the Poisoned special rule, it always wounds on a fixed number (generally shown in brackets), unless a lower result would be required. If no number is shown in brackets, the rules is Poisoned (4+).
+
+Unless otherwise stated, Poisoned weapons are treated as having S1. The poisoned special rule has no effect against vehicles.</description>
+    </rule>
+    <rule id="80c8-1041-d0f1-6e58" name="Precision Strikes" book="BRB" page="169" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Melee hit rolls of 6 become Precision Strikes and may be allocated to an engaged model of your choice. (Look Out, Sir is still allowed.)</description>
+    </rule>
+    <rule id="7a42-bcc8-95a0-302d" name="Psyker" book="BRB" page="" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A model with this special rule is a Psyker. This rule is typically presented with a Mastery level, shown in brackets - if no Mastery Level is shown then the model has a Mastery Level of 1. Rules for generating and manifesting psychic powers can be found in the Psychic phase section.</description>
+    </rule>
+    <rule id="2189-13e6-c68c-ab23" name="Psychic Pilot" book="BRB" page="" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A vehicle with this special rule is a Psyker. This rule is typically presented with a Mastery Level, shown in brackets - if no Mastery Level is shown then that vehicle has a Mastery Level of 1. The unit follows all the normal rules for generating and manifesting psychic powers, with the following clarification: the vehicle is considered to have a Leadership characteristic of 10, should this be needed in order to resolve any psychic power or Perils of the Warp.</description>
+    </rule>
+    <rule id="d9b9-6c13-981a-0f07" name="Repel the Enemy" book="BRB" page="" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Models disembarking from Access Points on a building can charge on the turn they do so, even on a turn the building was destroyed.</description>
+    </rule>
+    <rule id="aacf-411e-4e49-8016" name="Sentry Defense System" book="BRB" page="" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A building with this special rule can use automated fire against enemy units, even if it is unoccupied. In addition, enemy units can shoot at and charge a building with this special rule, even if it is unoccupied. </description>
+    </rule>
+    <rule id="1794-e0e0-bedf-e46b" name="Scout" book="BRB" page="171" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>After all deployment but before first turn a unit with this rule may redeploy. If it is Infantry, Artillery, Walker or a Monstrous Creature it may redeploy anywhere within 6&quot;, all other unit types may redeploy anywhere within 12&quot;, and all must remain 12&quot; away from enemy units.
+Any unit that redeploys with this rule may not charge on the first turn.
+If held in reserve, the unit gains Outflank.</description>
+    </rule>
+    <rule id="d79e-5694-a42b-5168" name="Skilled Rider" book="BRB" page="171" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Automatically passes Dangerous Terrain and receives +1 to Jink saves</description>
+    </rule>
+    <rule id="a2ba-d82a-e101-581e" name="Skyfire" book="BRB" page="" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Fires using normal BS when shooting at Flyers, FMCs, and Skimmers, but only fire Snap Shots against other targets.</description>
+    </rule>
+    <rule id="ed78-4c38-34cf-326c" name="Sniper" book="BRB" page="" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>On a To Hit roll of 6, that shot is a Precision Shot. Wounds from PS are allocated against a model (or models) of your choice in the target unit, as long as it is in range and LOS of the firer, rather than normal rules for Wound Allocation. Can still make Look Out, Sir rolls. Snap Shots can never be Precision Shots.
+
+Shooting attacks always wound on To Wound of 4+, regardless of T. In addition, To Wound rolls of 6 is resolved at AP2.
+
+Against vehicles, attacks count as S4.</description>
+    </rule>
+    <rule id="1c72-b2a6-9ff3-8662" name="Split Fire" book="BRB" page="172" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A single model may fire at a different target than the rest of the unit.</description>
+    </rule>
+    <rule id="9079-7061-f12c-a6ba" name="Swarms" book="BRB" page="" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If, when allocating Wounds to a unit with the Swarms special rule, two or more models could be chosen as the closest enemy, the closest enemy is always the model with the least number of Wounds. If a model with the Swarm special rule suffers an unsaved Wound from a Blast (any size) or Template weapon, each unsaved Wound is multiplied to two unsaved Wounds unless that Wound has the Instant Death special rule. However, a unit entirely composed of models with the Swarm special rule is not slowed by difficult terrain, but must test for Dangerous Terrain as normal.</description>
+    </rule>
+    <rule id="3858-bd8f-cf37-f5a6" name="Unwieldy" book="BRB" page="174" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A model attacking with this weapon Piles In and fights at Initiative step 1, unless it is a Monstrous Creature or a Walker.</description>
+    </rule>
+    <rule id="78a5-e7d1-89b3-2fb5" name="Vector Dancer" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A model with this special rule can make an additional pivot on the spot of up to 90 degrees at the end of its move. A model that uses this extra pivot cannot move Flat Out in the following Shooting phase.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
     <profile id="fcde-3e6a-e240-1157" name="Autogun" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
@@ -4053,30 +4254,6 @@ A model that made a Vector Strike in its Movement phase counts as having already
         <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="5"/>
         <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="-"/>
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 20"/>
-      </characteristics>
-    </profile>
-    <profile id="20dc-1fbb-dc65-7f04" name="Assault Cannon" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="6"/>
-        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="4"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 4, Rending"/>
-      </characteristics>
-    </profile>
-    <profile id="3922-981d-ccb7-c169" name="Quad-gun" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="48&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="7"/>
-        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="4"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 4, Interceptor, Skyfire, Twin-linked"/>
       </characteristics>
     </profile>
     <profile id="bc34-f1ec-56fa-2829" name="Battle Cannon" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -4151,18 +4328,6 @@ A model that made a Vector Strike in its Movement phase counts as having already
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1"/>
       </characteristics>
     </profile>
-    <profile id="a3d2-b0d7-70bc-695e" name="Grav-gun" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="*"/>
-        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Salvo 2/3, Concussive, Graviton"/>
-      </characteristics>
-    </profile>
     <profile id="ec4c-1132-ddaf-db8e" name="Meltagun" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
@@ -4187,7 +4352,7 @@ A model that made a Vector Strike in its Movement phase counts as having already
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire, Gets Hot"/>
       </characteristics>
     </profile>
-    <profile id="7b30-68a4-3745-c6fa" name="Grav-pistol" book="Warhammer 40,00: The Rules" page="177" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="7b30-68a4-3745-c6fa" name="Grav-pistol" book="BRB" page="177" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -4199,7 +4364,7 @@ A model that made a Vector Strike in its Movement phase counts as having already
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol, Concussive, Graviton"/>
       </characteristics>
     </profile>
-    <profile id="c76b-4051-dbf4-d5b8" name="Grav-cannon" book="Warhammer 40,00: The Rules" page="177" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="c76b-4051-dbf4-d5b8" name="Grav-cannon" book="BRB" page="177" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -4283,7 +4448,7 @@ A model that made a Vector Strike in its Movement phase counts as having already
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1"/>
       </characteristics>
     </profile>
-    <profile id="92be-1bfc-f355-f214" name="Multi-laser" book="Codex: Astra Militarum" page="0" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="92be-1bfc-f355-f214" name="Multi-laser" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -4343,7 +4508,7 @@ A model that made a Vector Strike in its Movement phase counts as having already
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 1, Melta"/>
       </characteristics>
     </profile>
-    <profile id="fdd8-1a5f-5722-d6ee" name="Assault Grenades" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="fdd8-1a5f-5722-d6ee" name="Assault Grenade" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -4593,6 +4758,270 @@ A model that made a Vector Strike in its Movement phase counts as having already
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Once per game, instead of shooting or flat out movements/running, the vehicle can activate smoke launchers. May not fire its weapons that turn but recieves a 5+ cover save until next player turn.  Unaffected by weapon destroyed, crew shaken and crew stunned results."/>
+      </characteristics>
+    </profile>
+    <profile id="20dc-1fbb-dc65-7f04" name="Assault Cannon" book="BRB" page="176" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="6"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="4"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 4, Rending"/>
+      </characteristics>
+    </profile>
+    <profile id="3922-981d-ccb7-c169" name="Quad-gun" book="Warhammer 40k rulebook" page="0" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="48"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="7"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="4"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 4, Interceptor, Twin-linked, Skyfire"/>
+      </characteristics>
+    </profile>
+    <profile id="3d4b-95ea-f860-dd22" name="Boltgun" book="Codex: Astra Militarum" page="0" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="4"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="5"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire"/>
+      </characteristics>
+    </profile>
+    <profile id="a3d2-b0d7-70bc-695e" name="Grav-gun" book="BRB" page="177" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="*"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Salvo 2/3, Concussive, Graviton"/>
+      </characteristics>
+    </profile>
+    <profile id="505e-a5aa-edab-6d5b" name="Storm Bolter" book="Warhammer 40,00: The Rules" page="176" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="4"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="5"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 2"/>
+      </characteristics>
+    </profile>
+    <profile id="49ae-4451-9bc0-5238" name="Flamestorm Cannon" book="BRB" page="176" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Template"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="6"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="3"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1"/>
+      </characteristics>
+    </profile>
+    <profile id="e92d-1654-a3f9-f981" name="Space Marine Shotgun" book="BRB" page="177" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="4"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="-"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 2"/>
+      </characteristics>
+    </profile>
+    <profile id="45a4-5982-7f8b-fb33" name="Sniper Rifle" page="0" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="X"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="6"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 1, Sniper"/>
+      </characteristics>
+    </profile>
+    <profile id="4750-7eb0-ff1e-6257" name="Vulcan Mega-bolter" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="60"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="6"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="3"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 15"/>
+      </characteristics>
+    </profile>
+    <profile id="6b4f-1b77-e845-3907" name="Inferno Pistol" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="6&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="8"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="1"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol, Melta"/>
+      </characteristics>
+    </profile>
+    <profile id="0964-678c-96c7-28af" name="Dragon&apos;s Breath Flamer" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Template"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="5"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="4"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1"/>
+      </characteristics>
+    </profile>
+    <profile id="8a30-ee20-c94b-2193" name="Flamespurt" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Template"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="5"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="4"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1"/>
+      </characteristics>
+    </profile>
+    <profile id="b309-2758-151b-e2f2" name="Heat Ray (Dispersed Beam)" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Template"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="5"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="4"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 1"/>
+      </characteristics>
+    </profile>
+    <profile id="ee62-0088-3ce1-8453" name="Flakk Missile" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="48&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="7"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="4"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 1, Skyfire"/>
+      </characteristics>
+    </profile>
+    <profile id="bb9f-390b-3b92-197c" name="Eviscerator" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="x2"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Armourbane, Two-handed, Unwieldy"/>
+      </characteristics>
+    </profile>
+    <profile id="e209-5038-fc25-4927" name="Heavy Chainsword" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="+2"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="5"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Two-handed"/>
+      </characteristics>
+    </profile>
+    <profile id="c019-5c9a-c1f4-4b4f" name="Force Axe" book="Warhammer 40k rulebook" page="0" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="+1"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Force, Unwieldy"/>
+      </characteristics>
+    </profile>
+    <profile id="ed69-f85e-5982-9ab8" name="Force Stave" book="Warhammer 40k rulebook" page="0" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="+2"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="4"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Force, Concussive"/>
+      </characteristics>
+    </profile>
+    <profile id="29c5-cff6-7f7c-96d6" name="Force Sword" book="Warhammer 40k rulebook" page="0" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="User"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="3"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Force"/>
+      </characteristics>
+    </profile>
+    <profile id="3a00-c9d9-111e-037f" name="Witchblade" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="User"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="-"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Armourbane, Fleshbane"/>
+      </characteristics>
+    </profile>
+    <profile id="4b12-0de1-af1e-6ad3" name="Plasma Grenade" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="8&quot; / -"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="4"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="4"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1, Blast / -"/>
+      </characteristics>
+    </profile>
+    <profile id="4a90-2615-6958-53cd" name="Defensive Grenade" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="8&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="1"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="-"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1, Blast, Blind"/>
       </characteristics>
     </profile>
   </sharedProfiles>
