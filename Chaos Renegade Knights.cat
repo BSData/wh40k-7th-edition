@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0701-88e9-a200-0455" revision="1" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="49" battleScribeVersion="1.15" name="Chaos Renegade Knights" books="" authorName="cartag" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0701-88e9-a200-0455" revision="2" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="49" battleScribeVersion="1.15" name="Chaos Renegade Knights" books="" authorName="cartag" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries/>
   <rules/>
   <links>
@@ -323,7 +323,20 @@
       <links/>
     </entry>
     <entry id="8077-af66-ff34-45f5" name="Renegade Knight" points="325.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
+      <entries>
+        <entry id="42f9-a761-7b70-41d6" name="Ion Shield" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="c628-9de8-fb0b-c3ba" targetId="aa51-04c0-9c9f-ebd4" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
       <entryGroups>
         <entryGroup id="7c1f-fb85-4e35-0d81" name="Heavy Stubber or Meltagun" defaultEntryId="0768-eaed-01af-9d03" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -384,9 +397,6 @@
           <modifiers/>
         </link>
         <link id="2d1e-d5d1-6bf7-4a32" targetId="06e7-7163-f288-0913" linkType="entry group">
-          <modifiers/>
-        </link>
-        <link id="ecbc-9d2c-4923-dea7" targetId="aa51-04c0-9c9f-ebd4" linkType="profile">
           <modifiers/>
         </link>
       </links>
@@ -512,6 +522,12 @@
             <link id="2828-8c80-2486-bf84" targetId="7c23-ceb1-3a2b-9f80" linkType="profile">
               <modifiers/>
             </link>
+            <link id="6c69-3957-8002-f1c7" targetId="5f6d-3d53-4340-a62c" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="b151-73bf-0c56-6ba8" targetId="a9af-815e-2851-0ed6" linkType="rule">
+              <modifiers/>
+            </link>
           </links>
         </entry>
         <entry id="c437-54ad-b22c-9496" name="Thermal Cannon" points="45.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -563,6 +579,10 @@
     </entryGroup>
   </sharedEntryGroups>
   <sharedRules>
+    <rule id="5f6d-3d53-4340-a62c" name="Colossal" hidden="false">
+      <description>A model fighting with this weapon Piles In and fights at Initiative step 1. </description>
+      <modifiers/>
+    </rule>
     <rule id="d5c4-ab2d-8af6-3b43" name="Fallen Household" hidden="false">
       <description>If this Detachment contains 3 Renegade Knights, it forms a Fallen Household and all of its models have the Preferred Enemy (Imperial Knights) special rule. However, such is the enmity between their former comrades that all Imperial Knights will have the Preferred Enemy (Fallen Household) special rule as well.</description>
       <modifiers/>
@@ -572,6 +592,7 @@
       <modifiers/>
     </rule>
     <rule id="a9af-815e-2851-0ed6" name="Hurl" hidden="false">
+      <description>If a Renegade Knight fighting with a thunderstrike gauntlet destroys an enemy Monstrous Creature or vehicle in the Fight sub-phase, it can choose to hurl it (Gargantuan Creatures, Super-heavy vehicles, and buildings cannot be hurled). If a vehicle was destroyed as a result of suffering an Explodes! result on the Vehicle Damage table, resolve any damage before hurling it. Any passengers must make an emergency disembarkation before their Transport is hurled. To hurl an enemy model, immediately resolve a shooting attack against an enemy unit within 12&quot; that is not locked in combat using the Hurl profile. A hurled model is removed from the battlefield after the attack has been resolevd. </description>
       <modifiers/>
     </rule>
     <rule id="16e3-41e5-f577-846f" name="The Bigger They Are..." hidden="false">
