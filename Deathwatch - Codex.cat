@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="eb33-68c8-0226-2d18" revision="2" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="23" battleScribeVersion="1.15" name="Deathwatch: Codex (2016)" authorName="" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="eb33-68c8-0226-2d18" revision="3" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="23" battleScribeVersion="1.15" name="Deathwatch: Codex (2016)" authorName="" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="01a5-c43d-05bb-55d5" name="&quot;Kill Team Cassius&quot;" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="40k-rules-deathwatch-en.pdf" page="8">
       <entries/>
@@ -959,6 +959,15 @@
                     <link id="5f45-1503-e5a1-ed20" targetId="06e0-d3f8-246b-1f38" linkType="entry">
                       <modifiers/>
                     </link>
+                    <link id="eeb5-6a63-a578-232c" targetId="baa2f167-cb38-1836-f3aa-ccac32d06894" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="86f5-d8fc-d467-d29d" targetId="9a27-5b61-fc41-bff1" linkType="entry group">
+                      <modifiers/>
+                    </link>
+                    <link id="6d3e-7451-b710-13ce" targetId="8c98-251e-ef1f-0a77" linkType="entry group">
+                      <modifiers/>
+                    </link>
                   </links>
                 </entryGroup>
               </entryGroups>
@@ -984,6 +993,15 @@
                 <link id="a6b3-8087-201c-1e81" targetId="987c-96cf-7b0f-0053" linkType="entry">
                   <modifiers/>
                 </link>
+                <link id="e94d-d9fc-a482-bad5" targetId="3d38b959-ea86-2697-4301-f873035e74e8" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="1063-8c5a-5bd1-8f1b" targetId="4368-beea-5ddc-7bfc" linkType="entry group">
+                  <modifiers/>
+                </link>
+                <link id="8c05-53d0-6989-6ed3" targetId="7561-31e7-a9f4-b7c3" linkType="entry">
+                  <modifiers/>
+                </link>
               </links>
             </entry>
             <entry id="8e5c-23a0-1dc7-c5f8" name="Terminator Captain" points="90.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Marines" page="0">
@@ -996,18 +1014,6 @@
                   <profiles/>
                   <links>
                     <link id="2f12-3e94-d9f8-7332" targetId="4d818034-4bf4-6fbf-b1ea-408b69ef1843" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-                <entry id="8df1-0afa-1067-1315" name="Terminator Armour" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="5c61-4565-65d4-8a94" targetId="77cd0765-7ddf-d654-cc86-3de641888ae3" linkType="profile">
                       <modifiers/>
                     </link>
                   </links>
@@ -1054,10 +1060,16 @@
                         <link id="f0d6-b71d-54a0-7847" targetId="c1b1c1d6-c6ef-9cd4-a4c2-a6cacb88deb0" linkType="profile">
                           <modifiers>
                             <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/4++" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                              <conditions>
-                                <condition parentId="8e5c-23a0-1dc7-c5f8" childId="8df1-0afa-1067-1315" field="selections" type="equal to" value="1.0"/>
-                              </conditions>
-                              <conditionGroups/>
+                              <conditions/>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition parentId="8e5c-23a0-1dc7-c5f8" childId="73b6-bc43-6550-5a0e" field="selections" type="equal to" value="1.0"/>
+                                    <condition parentId="8e5c-23a0-1dc7-c5f8" childId="87ea-d578-7309-a53a" field="selections" type="equal to" value="1.0"/>
+                                  </conditions>
+                                  <conditionGroups/>
+                                </conditionGroup>
+                              </conditionGroups>
                             </modifier>
                           </modifiers>
                         </link>
@@ -1073,10 +1085,16 @@
                         <link id="f53e-0cd9-3139-42e0" targetId="4c3bb06b-08c6-5496-ecd6-e0649ac5234e" linkType="profile">
                           <modifiers>
                             <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/4++" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                              <conditions>
-                                <condition parentId="8e5c-23a0-1dc7-c5f8" childId="8df1-0afa-1067-1315" field="selections" type="equal to" value="1.0"/>
-                              </conditions>
-                              <conditionGroups/>
+                              <conditions/>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition parentId="8e5c-23a0-1dc7-c5f8" childId="73b6-bc43-6550-5a0e" field="selections" type="equal to" value="1.0"/>
+                                    <condition parentId="8e5c-23a0-1dc7-c5f8" childId="87ea-d578-7309-a53a" field="selections" type="equal to" value="1.0"/>
+                                  </conditions>
+                                  <conditionGroups/>
+                                </conditionGroup>
+                              </conditionGroups>
                             </modifier>
                           </modifiers>
                         </link>
@@ -1462,7 +1480,60 @@
                     <link id="a6c4-b377-2904-ba48" targetId="06e0-d3f8-246b-1f38" linkType="entry">
                       <modifiers/>
                     </link>
+                    <link id="434a-c324-bf29-8e43" targetId="baa2f167-cb38-1836-f3aa-ccac32d06894" linkType="entry">
+                      <modifiers/>
+                    </link>
+                    <link id="ae87-d0a3-39c9-960f" targetId="9a27-5b61-fc41-bff1" linkType="entry group">
+                      <modifiers/>
+                    </link>
+                    <link id="d3c5-c5b2-1612-e2f1" targetId="8c98-251e-ef1f-0a77" linkType="entry group">
+                      <modifiers/>
+                    </link>
                   </links>
+                </entryGroup>
+                <entryGroup id="0eae-e6ca-acdb-d6df" name="Armour" defaultEntryId="73b6-bc43-6550-5a0e" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries>
+                    <entry id="73b6-bc43-6550-5a0e" name="Terminator Armour" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers/>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="2701-c937-e96f-798b" targetId="77cd0765-7ddf-d654-cc86-3de641888ae3" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                    <entry id="87ea-d578-7309-a53a" name="Cataphractii Terminator Armour" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers>
+                        <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions/>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition parentId="8e5c-23a0-1dc7-c5f8" childId="3e5e-8bae-83cf-7ac3" field="selections" type="equal to" value="1.0"/>
+                                <condition parentId="8e5c-23a0-1dc7-c5f8" childId="072f-1b25-006e-03a3" field="selections" type="equal to" value="1.0"/>
+                              </conditions>
+                              <conditionGroups/>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="94ed-9b6c-1160-37ee" targetId="77cd0765-7ddf-d654-cc86-3de641888ae3" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                  </entries>
+                  <entryGroups/>
+                  <modifiers/>
+                  <links/>
                 </entryGroup>
               </entryGroups>
               <modifiers/>
@@ -1485,6 +1556,15 @@
                   <modifiers/>
                 </link>
                 <link id="44d7-9d53-76ea-7df9" targetId="987c-96cf-7b0f-0053" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="1131-d044-2cb6-ee1b" targetId="3d38b959-ea86-2697-4301-f873035e74e8" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="12f6-f999-9db6-ef6b" targetId="4368-beea-5ddc-7bfc" linkType="entry group">
+                  <modifiers/>
+                </link>
+                <link id="02fd-900f-d423-516a" targetId="7561-31e7-a9f4-b7c3" linkType="entry">
                   <modifiers/>
                 </link>
               </links>
@@ -2988,6 +3068,52 @@
                           <profiles/>
                           <links>
                             <link id="fffb-ac0c-50dd-f928" targetId="ad5f0ec0-b2ca-747d-faba-f1cc93b93fa9" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="dfed-d6f9-5a3d-8c14" name="Veteran w/ Nocturne’s Fury, Salamanders" points="42.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                          <entries>
+                            <entry id="1934-ea02-9062-09d3" name="Bolt Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
+                              <entries/>
+                              <entryGroups/>
+                              <modifiers/>
+                              <rules/>
+                              <profiles/>
+                              <links>
+                                <link id="90fa-ca4e-7cf6-8582" targetId="82de7a82-9e87-8dc1-6d88-fbe1ee0c024c" linkType="profile">
+                                  <modifiers/>
+                                </link>
+                              </links>
+                            </entry>
+                            <entry id="3536-bbf7-30e3-4bf0" name="Power Armour, Frag &amp; Krak Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
+                              <entries/>
+                              <entryGroups/>
+                              <modifiers/>
+                              <rules/>
+                              <profiles/>
+                              <links>
+                                <link id="26a8-bd35-b9b2-3ea5" targetId="0758d64b-c98c-715e-4489-518c6b5ee139" linkType="profile">
+                                  <modifiers/>
+                                </link>
+                                <link id="3698-362e-da86-25d8" targetId="2a70b795-1b42-0d58-a800-7f7061405f23" linkType="profile">
+                                  <modifiers/>
+                                </link>
+                                <link id="3350-afc7-11f1-15ba" targetId="6504b864-90fa-59cc-1102-95134a06a894" linkType="profile">
+                                  <modifiers/>
+                                </link>
+                              </links>
+                            </entry>
+                          </entries>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="8265-aeaa-e964-ec96" targetId="ad5f0ec0-b2ca-747d-faba-f1cc93b93fa9" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="2c5a-7633-bec9-cbf2" targetId="ce5a-838a-214e-a725" linkType="entry">
                               <modifiers/>
                             </link>
                           </links>
@@ -4639,6 +4765,107 @@
         </link>
       </links>
     </entry>
+    <entry id="82064386-8968-1d51-001e-2941a99d0b2f" name="Gift: Betrayer’s Bane" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="d052340b-c894-06c7-effb-cf2ec24bc57e" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="8792-c2cd-c97a-e1ef" targetId="cd99a6cf-d74e-00ae-734e-fd0d73574c3c" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="50b7-8d67-2c32-0de8" targetId="ef85bc4c-4d62-743a-35f1-c05f6f01aac9" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="1be69f91-8bee-e2e0-9d45-ec1d6851a7d2" name="Gift: The Axe of Medusa" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="d052340b-c894-06c7-effb-cf2ec24bc57e" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="5c48-4afb-60c0-b99c" targetId="d32cf74b-bc68-b5e4-f040-be95d2f21489" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="fc5c-725a-0910-1061" targetId="edebc04f-9597-37af-0b91-60bfb6b39236" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="a42534db-d61f-748a-c0a6-9014e61c3717" name="Gift: The Gorgon’s Chain" points="45.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="d052340b-c894-06c7-effb-cf2ec24bc57e" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="60c2-f91c-3012-3118" targetId="5b17e610-5f5e-35e8-5349-11493dcbc9a6" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="64a0d9eb-866d-fa3c-8336-c4f16b9f7228" name="Gift: The Ironstone" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="d052340b-c894-06c7-effb-cf2ec24bc57e" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="81ed-81cf-a63c-4dd2" targetId="1c7813ab-1ef3-2643-95cd-426a15df7d98" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="6b9a7626-2800-e0be-a4be-8325997c2d45" name="Gift: The Tempered Helm" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="d052340b-c894-06c7-effb-cf2ec24bc57e" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="8a24-d578-2f01-9a0c" targetId="a78fe1e3-3d94-8122-698a-375bb152c2e9" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="e5900495-f5a1-ae34-2e1a-c6012c597c42" name="Imperial Fists" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
       <entryGroups/>
@@ -4879,6 +5106,24 @@
           <modifiers/>
         </link>
         <link id="63df-6195-ca41-da41" targetId="987c-96cf-7b0f-0053" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="12aa-a453-d2de-ef2a" targetId="3d57-4980-11a5-51d4" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="763f-3bfe-1345-c165" targetId="eb29-a338-7ac7-b765" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="f17d-e937-63d7-a8ca" targetId="6bc3-daee-f143-3171" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="9f4a-bfdd-2da2-f914" targetId="c094-685e-4d46-5c8a" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="a1d0-39e2-0873-bd4d" targetId="927d-7e37-a0e9-1249" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="16cf-8e83-4794-ba1f" targetId="a004e025-5589-0768-4593-c70ab258d828" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -5373,6 +5618,28 @@
         </link>
       </links>
     </entry>
+    <entry id="628a-893d-1814-d9c4" name="Relic: Drake-smiter" points="50.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="8386ab1b-ec65-d822-2087-a43748fd4b3b" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="6a03-27c6-43e3-c22b" targetId="89be-f45a-cafa-42c9" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="f8bf-0936-c781-3029" targetId="946a-fbdb-5869-1661" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="a902-a93f-d8dd-137d" name="Relic: Ex Tenebris" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
       <entries/>
       <entryGroups/>
@@ -5453,6 +5720,28 @@
           <modifiers/>
         </link>
         <link id="7f75-ee47-a73f-9de5" targetId="c880-9c6d-5e07-4a05" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="ce5a-838a-214e-a725" name="Relic: Nocturne’s Fury" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="8386ab1b-ec65-d822-2087-a43748fd4b3b" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="d0a0-728e-228a-e2e3" targetId="dde1-1334-03c1-18ec" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="3b61-79ff-56dc-7d59" targetId="ef98-67d3-06a0-ad4f" linkType="profile">
           <modifiers/>
         </link>
       </links>
@@ -5620,6 +5909,31 @@
         </link>
       </links>
     </entry>
+    <entry id="3d38b959-ea86-2697-4301-f873035e74e8" name="Relic: The Eye of Hypnoth, Imperial Fists" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition parentId="force type" childId="2e4123c3-7c9e-eb2d-4548-9b8d7008f3b9" field="selections" type="equal to" value="0.0"/>
+                <condition parentId="force type" childId="364c21e4-5de2-9233-930c-3d8cd30f1831" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="5686-3738-4bcf-ebca" targetId="2ebc889b-4532-5db5-bd27-356563c16a18" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="7e65-834f-b8f0-d972" name="Relic: The Glaive of Vengeance" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
       <entries/>
       <entryGroups/>
@@ -5728,6 +6042,28 @@
         </link>
       </links>
     </entry>
+    <entry id="7561-31e7-a9f4-b7c3" name="Relic: The Salamander’s Mantle, Salamanders" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="8386ab1b-ec65-d822-2087-a43748fd4b3b" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="5477-b9e9-41ba-0921" targetId="5c931240-087a-3624-74d9-41572b0c32fd" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="92f8-8fbd-d47e-f0f9" targetId="7031-aeaf-6296-a4ba" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="420cd79f-2f5e-234f-fccc-95807e30c456" name="Relic: The Shield Eternal" points="50.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Space Marines" page="0">
       <entries/>
       <entryGroups/>
@@ -5742,6 +6078,50 @@
           <modifiers/>
         </link>
         <link id="290d-3aa7-1180-e825" targetId="f9d2bc2a-a97d-d31a-6248-8c3e5bda2080" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="baa2f167-cb38-1836-f3aa-ccac32d06894" name="Relic: The Spartean, Imperial Fists" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition parentId="force type" childId="364c21e4-5de2-9233-930c-3d8cd30f1831" field="selections" type="equal to" value="0.0"/>
+                <condition parentId="force type" childId="e5900495-f5a1-ae34-2e1a-c6012c597c42" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="62f6-3bf0-d404-7373" targetId="736b0fc9-05b7-add2-d10b-10028e61df60" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="3a32-9281-bd5c-7227" name="Relic: Wrath of Prometheus" points="50.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="8386ab1b-ec65-d822-2087-a43748fd4b3b" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="e31d-6b1d-6c8a-60c4" targetId="bfd0-224d-27cb-7384" linkType="profile">
           <modifiers/>
         </link>
       </links>
@@ -6444,6 +6824,35 @@
         </link>
       </links>
     </entryGroup>
+    <entryGroup id="4368-beea-5ddc-7bfc" name="Gifts of the Gorgon Relics, Iron Hands" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <links>
+        <link id="59ea-4667-22db-5fb3" targetId="64a0d9eb-866d-fa3c-8336-c4f16b9f7228" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="4326-fb28-1995-7271" targetId="a42534db-d61f-748a-c0a6-9014e61c3717" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="5c6a-5a36-4036-ec69" targetId="6b9a7626-2800-e0be-a4be-8325997c2d45" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
+    </entryGroup>
+    <entryGroup id="9a27-5b61-fc41-bff1" name="Gifts of the Gorgon Weapons, Iron Hands" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <links>
+        <link id="2211-4e63-1556-021c" targetId="1be69f91-8bee-e2e0-9d45-ec1d6851a7d2" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="0f51-b30a-bdd9-313e" targetId="82064386-8968-1d51-001e-2941a99d0b2f" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
+    </entryGroup>
     <entryGroup id="9531-30c1-477d-a162" name="Relics of Chogoris, White Scars" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
@@ -6456,6 +6865,19 @@
           <modifiers/>
         </link>
         <link id="239c-12da-85ac-f339" targetId="38ec-ecf2-e69c-ccd3" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
+    </entryGroup>
+    <entryGroup id="8c98-251e-ef1f-0a77" name="Relics of Nocturne, Salamanders" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <links>
+        <link id="afa5-c2d7-f340-bf2c" targetId="3a32-9281-bd5c-7227" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="cf3d-c252-4d96-c1bd" targetId="628a-893d-1814-d9c4" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -6700,6 +7122,9 @@
     <rule id="6783e538-3a3d-a0c1-d072-b0adf7c8787a" name="Master Artisans" hidden="false" book="Codex: Space Marines" page="0">
       <modifiers/>
     </rule>
+    <rule id="89be-f45a-cafa-42c9" name="Mighty Strike" hidden="false" book="Angels of Death" page="95">
+      <modifiers/>
+    </rule>
     <rule id="da1ed4de-254d-c912-ab05-04d39e9ff788" name="Mnemonic Redaction Protocols" hidden="false" book="FW chaptertactics PDF" page="0">
       <modifiers/>
     </rule>
@@ -6745,6 +7170,21 @@
     <rule id="281e230f-4363-bb46-ff31-2cad750bdbb5" name="Psychic Discipline: Biomancy" hidden="false" book="Warhammer 40k rulebook" page="0">
       <modifiers/>
     </rule>
+    <rule id="a004e025-5589-0768-4593-c70ab258d828" name="Psychic Discipline: Daemonology" hidden="false" book="Warhammer 40k rulebook" page="28">
+      <modifiers/>
+    </rule>
+    <rule id="eb29-a338-7ac7-b765" name="Psychic Discipline: Fulmination" hidden="false" book="Angels of Death" page="107">
+      <modifiers/>
+    </rule>
+    <rule id="3d57-4980-11a5-51d4" name="Psychic Discipline: Geokinesis" hidden="false" book="Angels of Death" page="107">
+      <modifiers/>
+    </rule>
+    <rule id="c094-685e-4d46-5c8a" name="Psychic Discipline: Librarius" hidden="false" book="Angels of Death" page="107">
+      <modifiers/>
+    </rule>
+    <rule id="6bc3-daee-f143-3171" name="Psychic Discipline: Technomancy" hidden="false" book="Angels of Death" page="107">
+      <modifiers/>
+    </rule>
     <rule id="fa0ea3b3-9cba-8035-7c1d-33148075f3ac" name="Psyker Mastery Level 2" hidden="false" book="Warhammer 40k rulebook" page="0">
       <modifiers/>
     </rule>
@@ -6779,6 +7219,9 @@
       <modifiers/>
     </rule>
     <rule id="a3b13d5c-8ac4-c516-87ef-42eac8b833c8" name="Scour the Xenos" hidden="false" book="War Zone Damnos" page="45">
+      <modifiers/>
+    </rule>
+    <rule id="edebc04f-9597-37af-0b91-60bfb6b39236" name="Severing Strike" hidden="false" book="Angels of Death" page="89">
       <modifiers/>
     </rule>
     <rule id="88c62b2c-1ce3-447a-7df0-2be6df73b0c6" name="Shadow Killers" hidden="false" book="FW chaptertactics PDF" page="0">
@@ -7185,6 +7628,24 @@
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="ef85bc4c-4d62-743a-35f1-c05f6f01aac9" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Betrayer’s Bane (Boltgun Barrel)" hidden="false" book="Angels of Death" page="89">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Rapid Fire, Master-crafted"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="cd99a6cf-d74e-00ae-734e-fd0d73574c3c" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Betrayer’s Bane (Melta Barrel)" hidden="false" book="Angels of Death" page="89">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="8"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1, Master-crafted, Melta"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="dda69de4-fc11-5b67-edd8-716d69e95e9b" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Blessed Autosimulacra" hidden="false" book="Magaera.pdf" page="0">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="If a vehicle has suffered Hull Point damage at the end of the controlling player’s turn, roll a D6. On a 6, one lost Hull Point is restored."/>
@@ -7230,6 +7691,12 @@
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="7"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="3"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 8"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="fffa-864d-9256-90c3" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Cataphractii Terminator Armour" hidden="false" book="Angels of Death" page="57">
+      <characteristics>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="2+ Armour Sv, 4+ Invul Sv, Bulky, Deep Strike, Slow and Purposeful, may re-roll invulnerable saving throws of 1."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -7452,6 +7919,15 @@
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Pistol, Ignores Cover"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="946a-fbdb-5869-1661" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Drake-smiter" hidden="false" book="Angels of Death" page="95">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="x2"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Concussive, Master-crafted, Specialist Weapon, Unwieldy, Mighty Strike"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -7877,6 +8353,24 @@
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="dde1-1334-03c1-18ec" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Nocturne’s Fury (Drakefire)" hidden="false" book="Angels of Death" page="95">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Template"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Heavy 1, Torrent"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="ef98-67d3-06a0-ad4f" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Nocturne’s Fury (Earthfire)" hidden="false" book="Angels of Death" page="95">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="Template"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Assault 1"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="faa4ea24-e51b-8663-3e7c-1a791b55aed7" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Occular Augmetics" hidden="false" book="HH4: Conquest" page="301">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Has Night Vision special rule, and may re-roll results of a 1 on the Vehicle Damage table and Destroyer Weapon Attack table which are inflicted by their shooting attacks at a range of 12&quot; or less.  "/>
@@ -8275,12 +8769,27 @@
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="d32cf74b-bc68-b5e4-f040-be95d2f21489" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="The Axe of Medusa" hidden="false" book="Angels of Death" page="89">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="+2"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Master-crafted, Severing Strike, Unwieldy"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="f7754842-f151-6f5f-eabe-8f38525ab31c" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="The Burning Blade" hidden="false" book="Codex: Space Marines" page="0">
       <characteristics>
         <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="+3"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Blind, Incandescent"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="2ebc889b-4532-5db5-bd27-356563c16a18" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Eye of Hypnoth" hidden="false" book="Angels of Death" page="83">
+      <characteristics>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="A model with the Eye of Hypnoth can use it in place of making a shooting attack. If he does, target an enemy unit or building within 18&quot; (this does not count as choosing a target for his unit to shoot at). A unit targeted by the Eye of Hypnoth has its cover save reduced by 1 until the end of the phase (this is not cumulative with the similar bonus granted by an Auspex – see Codex: Space Marines). A building targeted by the Eye of Hypnoth instead has all of its Armour Values reduced by 1 (to a minimum of 1) until the end of the phase."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -8302,9 +8811,21 @@
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="5b17e610-5f5e-35e8-5349-11493dcbc9a6" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Gorgon’s Chain" hidden="false" book="Angels of Death" page="89">
+      <characteristics>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The bearer of the Gorgon’s Chain has the following special rules, depending on how many unsaved Wounds he has suffered during  the battle:  Wounds Suffered - Special Rules  0 Wounds suffered - The bearer has a 3+ invulnerable save, +1 to his Feel No Pain rolls and the Eternal Warrior special rule. 1 Wound suffered - The bearer has a 3+ invulnerable save and the Eternal Warrior special rule. 2 Wounds suffered - The bearer has a 3+ invulnerable save. 3 Wounds suffered - The bearer has a 4+ invulnerable save.  Each time the bearer suffers an unsaved Wound or recovers a Wound as a result of the It Will Not Die special rule, the effects of the Gorgon’s Chain change immediately; you should roll the bearer’s saves individually."/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="3024-3c97-2416-48eb" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Hunter&apos;s Eye" hidden="false" book="War Zone Damocles: Kauyon" page="154">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="+1BS, all the model&apos;s ranged weapons gain Ignores Cover. While the model is part of a unit, all other ranged weapons carried by models in that unit gain Ignores Cover."/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="1c7813ab-1ef3-2643-95cd-426a15df7d98" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Ironstone" hidden="false" book="Angels of Death" page="89">
+      <characteristics>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Friendly Clan Raukaan Tanks and Walkers within 6&quot; of the bearer pass their It Will Not Die rolls on a 4+. If this roll is a 6, the Ironstone also repairs a Weapon Destroyed or Immobilised result that the vehicle suffered earlier in the battle (controlling player’s choice)."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -8329,9 +8850,30 @@
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="7031-aeaf-6296-a4ba" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Salamander’s Mantle" hidden="false" book="Angels of Death" page="95">
+      <characteristics>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Bearer has Eternal Warrior"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="c2e87e76-1195-9911-45de-56a06ba36c35" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Shield Eternal" hidden="false" book="Codex: Space Marines" page="0">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Storm Shield, grants Adamantium Will and Eternal Warrior. 3+ Invul Sv. Cannot claim +1 A for having two close combat weapons in Assault."/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="736b0fc9-05b7-add2-d10b-10028e61df60" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="The Spartean" hidden="false" book="Angels of Death" page="83">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="12"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="5"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Pistol, Ignores Cover, Master-crafted"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="a78fe1e3-3d94-8122-698a-375bb152c2e9" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Tempered Helm" hidden="false" book="Angels of Death" page="89">
+      <characteristics>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="When taking Morale tests, all friendly units within 24&quot; of the bearer can use his Ld instead of their own. Furthermore, nominate a single friendly unit within 12&quot; of  the bearer at the start of  each of  his Shooting phases. That unit can reroll all To Hit rolls of a 1 in that Shooting phase.  Both of these rules can be used even if the bearer is embarked in a vehicle or building."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -8362,9 +8904,25 @@
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="bfd0-224d-27cb-7384" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Wrath of Prometheus" hidden="false" book="Angels of Death" page="95">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="30"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Rapid Fire, Master-crafted, Rending"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="4663-363c-886d-81fa" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Wrath of the Heavens" hidden="false" book="War Zone Damocles: Kauyon" page="154">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Space Marine Bike. When the model Turbo-boosts, it can move 18&quot; and pass over units &amp; terrain as though it were a Jetbike."/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="927d-7e37-a0e9-1249" profileTypeId="bc97-dea9-9e88-bb7d" name="Jensus Natorian (Psy.)" hidden="false" book="">
+      <characteristics>
+        <characteristic characteristicId="0c51-25a6-109a-e6a6" name="Mastery Level" value="2"/>
+        <characteristic characteristicId="ebe3-4c75-016c-5da5" name="Disciplines" value="Biomancy&lt;BR&gt;Daemonology&lt;BR&gt;Fulmination&lt;BR&gt;Geokinesis&lt;BR&gt;Librarius&lt;BR&gt;Technomancy"/>
       </characteristics>
       <modifiers/>
     </profile>
