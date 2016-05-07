@@ -1429,9 +1429,15 @@
     </profileType>
     <profileType id="3a08-ea03-a598-8615" name="Flyer">
       <characteristics>
-        <characteristic id="ee0a-bf1a-6632-990a" name="Combat Role"/>
-        <characteristic id="40b0-4703-ba42-d684" name="Pursuit"/>
-        <characteristic id="33b9-f048-e43f-2fb3" name="Agility"/>
+        <characteristic id="9878-e3f6-b7b4-7225" name="BS"/>
+        <characteristic id="3a4e-bc1d-4a12-7176" name="Front"/>
+        <characteristic id="d12e-7bdb-191c-4849" name="Side"/>
+        <characteristic id="a4cb-791a-6a75-4e4a" name="Rear"/>
+        <characteristic id="93e6-d4b1-28a8-944b" name="HP"/>
+        <characteristic id="eb65-838c-8eaa-8b5d" name="Type"/>
+        <characteristic id="d477-c087-173f-9f1c" name="Combat Role"/>
+        <characteristic id="e04d-332e-8b52-0071" name="Pursuit"/>
+        <characteristic id="ae34-f5c0-19af-4883" name="Agility"/>
       </characteristics>
     </profileType>
   </profileTypes>
