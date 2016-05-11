@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="54" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" books="" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="55" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" books="" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="320d-148f-008f-f2a4" name="&quot;1st Company Veterans" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="40k Apocalypse">
       <entries/>
@@ -1991,7 +1991,7 @@ rule.</description>
         </link>
       </links>
     </entry>
-    <entry id="af72-626e-f678-d0a5" name="&apos;10th Company Task Force *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="af72-626e-f678-d0a5" name="&apos;10th Company Task Force *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups>
         <entryGroup id="96de-2933-3924-15a1" name="3-5 Scout Units" minSelections="3" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -2067,7 +2067,20 @@ rule.</description>
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="de22-54d3-049b-e814" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="2efc-cc10-0e27-4bbc" name="The Trap is Sprung" hidden="false">
           <modifiers/>
@@ -3487,7 +3500,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <profiles/>
       <links/>
     </entry>
-    <entry id="5ddb-f6a8-ad4a-94bb" name="&apos;1st Company Task Force" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="5ddb-f6a8-ad4a-94bb" name="&apos;1st Company Task Force" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups>
         <entryGroup id="1411-94d1-fd99-4abf" name="3-5 Veteran Squads" minSelections="3" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -3593,7 +3606,20 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="de22-54d3-049b-e814" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="205a-64ae-33b7-d6f7" name="Extremis Level Threat *" hidden="false">
           <modifiers/>
@@ -3737,7 +3763,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
         </link>
       </links>
     </entry>
-    <entry id="9750-7e8e-1c05-27de" name="&apos;Anti-air Defence Force *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="9750-7e8e-1c05-27de" name="&apos;Anti-air Defence Force *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups>
         <entryGroup id="3c60-de94-3cd5-8774" name="1 Unit of Stalkers" defaultEntryId="d009-86da-b553-c1bf" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -3825,7 +3851,20 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           </links>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="de22-54d3-049b-e814" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="c981-4439-4eff-2012" name="Skyspear Autotargeting" hidden="false">
           <modifiers/>
@@ -3931,7 +3970,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <profiles/>
       <links/>
     </entry>
-    <entry id="3776-1a6e-79d6-0152" name="&apos;Armoured Task Force" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="3776-1a6e-79d6-0152" name="&apos;Armoured Task Force" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups>
         <entryGroup id="f058-d477-bd8d-e4b9" name="3-5 Tank Squadrons" minSelections="3" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -4052,7 +4091,20 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           </links>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="de22-54d3-049b-e814" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="a49c-8b62-ca89-7772" name="Paregoric Cant" hidden="false">
           <description>Vehicles from this Formation ignore the effects of Crew Shaken and Crew Stunned results while they are within 6&quot; of the Techmarine or a Techmarine Gunner from this Formation.</description>
@@ -4233,7 +4285,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
         </link>
       </links>
     </entry>
-    <entry id="165d-32c9-8555-5e1c" name="&apos;Battle Demi Company *" points="0.0" categoryId="bf93-7277-bf48-16f7" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="165d-32c9-8555-5e1c" name="&apos;Battle Demi Company *" points="0.0" categoryId="bf93-7277-bf48-16f7" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups>
         <entryGroup id="d454-47f9-b648-30a7" name="Commander" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -4391,7 +4443,20 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           </links>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="de22-54d3-049b-e814" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="cdd3-200e-1260-8832" name="Objective Secured" hidden="false">
           <modifiers/>
@@ -4573,7 +4638,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <profiles/>
       <links/>
     </entry>
-    <entry id="e2d0-ff04-de6b-d1dc" name="&apos;Bladewing Assault Brotherhood *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="e2d0-ff04-de6b-d1dc" name="&apos;Bladewing Assault Brotherhood *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups>
         <entryGroup id="c11f-c0c4-2aac-0fb4" name="Commander" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -4677,7 +4742,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <profiles/>
       <links/>
     </entry>
-    <entry id="5fe4-cc8b-1efa-e895" name="&apos;Centurion Siegebreaker Cohort *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="5fe4-cc8b-1efa-e895" name="&apos;Centurion Siegebreaker Cohort *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups>
         <entryGroup id="00ab-92d5-5e3c-4ef1" name="1 Unit of Ironclad Dreadnoughts" defaultEntryId="15cd-d596-a8a7-86a3" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -4747,7 +4812,19 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="de22-54d3-049b-e814" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="a8d6-420c-e6f7-7004" name="Demolition Specialists" hidden="false">
           <modifiers/>
@@ -5215,10 +5292,15 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       </entryGroups>
       <modifiers>
         <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="1f9f0258-eaff-588d-8cd1-993698c7d62d" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules>
@@ -5318,13 +5400,13 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <profiles/>
       <links/>
     </entry>
-    <entry id="2f0c-fc1b-5fb1-53e9" name="&apos;Land Raider Spearhead" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="2f0c-fc1b-5fb1-53e9" name="&apos;Land Raider Spearhead" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups>
         <entryGroup id="4f32-6810-3633-d62a" name="3 Land Raiders" minSelections="3" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups>
-            <entryGroup id="2a5f-7fe9-749e-3722" name="1st Land Raider" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entryGroup id="2a5f-7fe9-749e-3722" name="1st Land Raider" defaultEntryId="4925-5eb5-16d9-6b66" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -5355,7 +5437,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
                 </link>
               </links>
             </entryGroup>
-            <entryGroup id="42e8-2a7e-7d39-6f7e" name="2nd Land Raider" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entryGroup id="42e8-2a7e-7d39-6f7e" name="2nd Land Raider" defaultEntryId="9cbb-d989-2c58-253e" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -5386,7 +5468,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
                 </link>
               </links>
             </entryGroup>
-            <entryGroup id="ca9a-36e2-5ca4-1fd0" name="3rd Land Raider" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entryGroup id="ca9a-36e2-5ca4-1fd0" name="3rd Land Raider" defaultEntryId="3ea3-6831-8e43-6f66" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -5422,7 +5504,20 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="de22-54d3-049b-e814" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="0b44-f716-3baa-7109" name="Armoured Behemoths" hidden="false">
           <modifiers/>
@@ -5550,7 +5645,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <profiles/>
       <links/>
     </entry>
-    <entry id="4d21-e093-8d72-621c" name="&apos;Librarius Conclave *" points="0.0" categoryId="9050-d437-3301-7e42" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="4d21-e093-8d72-621c" name="&apos;Librarius Conclave *" points="0.0" categoryId="9050-d437-3301-7e42" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups>
         <entryGroup id="3610-9249-14e8-4a6e" name="3-5 Librarians" minSelections="3" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -5623,6 +5718,18 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
             <condition parentId="force type" childId="2e9e-fa7f-f889-508f" field="selections" type="equal to" value="1.0"/>
           </conditions>
           <conditionGroups/>
+        </modifier>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="de22-54d3-049b-e814" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules>
@@ -5993,31 +6100,57 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <profiles/>
       <links/>
     </entry>
-    <entry id="9a00-66f0-88ef-2d37" name="&apos;Raptor Wing *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+    <entry id="9a00-66f0-88ef-2d37" name="&apos;Raptor Wing *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
-      <entryGroups/>
+      <entryGroups>
+        <entryGroup id="be4b-8118-bfcb-2dac" name="Land Speeders" defaultEntryId="341f-b426-d241-1b3c" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="341f-b426-d241-1b3c" targetId="50ac-3d28-b8ea-e36d" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="3154-3baa-3c7a-e834" name="Stormtalon Gunship" defaultEntryId="71c4-11a0-e415-8383" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="71c4-11a0-e415-8383" targetId="fb10-3438-8efe-363a" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="minSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
       <modifiers>
         <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
           <conditionGroups>
-            <conditionGroup type="and">
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition parentId="force type" childId="ba487d62-d836-cd64-642f-29e7abb8e86b" field="selections" type="equal to" value="1.0"/>
-                    <condition parentId="force type" childId="a17fe9a3-8324-c541-e891-354b795f055a" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition parentId="force type" childId="165d-32c9-8555-5e1c" field="selections" type="equal to" value="1.0"/>
-                    <condition parentId="force type" childId="2e9e-fa7f-f889-508f" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -6031,32 +6164,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
         </rule>
       </rules>
       <profiles/>
-      <links>
-        <link id="6470-b7a7-31d3-05f7" targetId="50ac-3d28-b8ea-e36d" linkType="entry">
-          <modifiers>
-            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="maxSelections" value="3.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </link>
-        <link id="1d27-4420-abad-0ab7" targetId="fb10-3438-8efe-363a" linkType="entry">
-          <modifiers>
-            <modifier type="set" field="minSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </link>
-      </links>
+      <links/>
     </entry>
     <entry id="1e2b-a633-7083-31e9" name="&apos;Raptor Wing *" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -7261,7 +7369,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
         </link>
       </links>
     </entry>
-    <entry id="e30b-2bcf-424a-e88b" name="&apos;Reclusiam Command Squad" points="0.0" categoryId="9050-d437-3301-7e42" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="">
+    <entry id="e30b-2bcf-424a-e88b" name="&apos;Reclusiam Command Squad" points="0.0" categoryId="9050-d437-3301-7e42" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="">
       <entries>
         <entry id="efc2-5d98-595a-c263" name="Command Squad" points="90.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -7642,7 +7750,20 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           </links>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="de22-54d3-049b-e814" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="ec59-6389-cdb0-d2f8" name="Stirring Rhetoric" hidden="false">
           <description>All friendly units with the Space Marines Faction within 6&quot; of the Chaplain from this Formation re-roll failed To Hit rolls during the first round of each close combat.</description>
@@ -9497,7 +9618,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <profiles/>
       <links/>
     </entry>
-    <entry id="4478-6852-2308-bec5" name="&apos;Speartip Strike *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="4478-6852-2308-bec5" name="&apos;Speartip Strike *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups>
         <entryGroup id="34b5-171b-cd93-68e3" name="2 units in any combination" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -9517,7 +9638,19 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           </links>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="fc7e-b3fc-e9a2-af03" name="Strategic Spearhead" hidden="false">
           <modifiers/>
@@ -9597,10 +9730,10 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
         </link>
       </links>
     </entry>
-    <entry id="48ec-6f20-6dec-7ad0" name="&apos;Storm Wing" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="">
+    <entry id="48ec-6f20-6dec-7ad0" name="&apos;Storm Wing" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="">
       <entries/>
       <entryGroups>
-        <entryGroup id="641a-2f78-7cf2-67f4" name="Stormraven Gunship" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="641a-2f78-7cf2-67f4" name="Stormraven Gunship" defaultEntryId="b576-c79f-9b8b-23e5" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -9610,7 +9743,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
             </link>
           </links>
         </entryGroup>
-        <entryGroup id="9aee-f9fe-187f-6f1f" name="Stormtalon Gunship" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="9aee-f9fe-187f-6f1f" name="Stormtalon Gunship" defaultEntryId="8c87-e076-245b-f605" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -9620,7 +9753,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
             </link>
           </links>
         </entryGroup>
-        <entryGroup id="e7bd-89a6-2a48-e481" name="Stormtalon Gunship" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="e7bd-89a6-2a48-e481" name="Stormtalon Gunship" defaultEntryId="5147-d9e1-f971-7a79" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -9631,7 +9764,21 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           </links>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="de22-54d3-049b-e814" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="8d96-20a3-5b80-eea2" name="Data Lattice" hidden="false">
           <description>As long as at least one Stormtalon from this Formation has not been completely destroyed, the Formation&apos;s Stormraven Gunship has the Strafing Run special rule</description>
@@ -9693,7 +9840,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <profiles/>
       <links/>
     </entry>
-    <entry id="48ef-763a-c917-2b38" name="&apos;Stormbringer Squadron *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="48ef-763a-c917-2b38" name="&apos;Stormbringer Squadron *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="3f45-2615-96ef-3b89" name="Scout Squad" points="0.0" categoryId="(No Category)" type="unit" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -10193,7 +10340,19 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
         </entry>
       </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="121b-43b0-2e25-7d62" name="Locate and Secure" hidden="false">
           <modifiers/>
@@ -10840,10 +10999,15 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       </entryGroups>
       <modifiers>
         <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="1f9f0258-eaff-588d-8cd1-993698c7d62d" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules>
@@ -10965,7 +11129,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <profiles/>
       <links/>
     </entry>
-    <entry id="105a-aa55-7b5f-c248" name="&apos;Strike Force Command" points="0.0" categoryId="9050-d437-3301-7e42" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="105a-aa55-7b5f-c248" name="&apos;Strike Force Command" points="0.0" categoryId="9050-d437-3301-7e42" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups>
         <entryGroup id="54bc-655e-f17d-f3e3" name=" 1 of the following" defaultEntryId="2c13-adb5-7bc9-c317" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -11075,7 +11239,20 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           </links>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="de22-54d3-049b-e814" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links/>
@@ -11195,7 +11372,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
       <profiles/>
       <links/>
     </entry>
-    <entry id="2d4c-5d0d-8ba6-ffd9" name="&apos;Strike Force Ultra *" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="2d4c-5d0d-8ba6-ffd9" name="&apos;Strike Force Ultra *" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="315a-6cd9-4803-e227" name="Venerable Dreadnought" points="125.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -11950,7 +12127,19 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           </links>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="dfd4-b1a9-b425-88f2" name="Ultra Strike" hidden="false">
           <description>As long as this Formation&apos;s Terminator Captain is still alive, the controlling player makes Reserve Rolls for any of this Formation&apos;s units from his first turn.</description>
@@ -11975,7 +12164,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
         </link>
       </links>
     </entry>
-    <entry id="4362-ca09-8b97-8473" name="&apos;Suppression Force" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="4362-ca09-8b97-8473" name="&apos;Suppression Force" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
         <entry id="ed37-06b6-1b8d-44c6" name="Whirlwinds" points="0.0" categoryId="(No Category)" type="unit" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -12054,7 +12243,21 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           </links>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="de22-54d3-049b-e814" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="1efa-5fec-3ec7-ae5b" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="2b52-7aeb-ee03-9f5e" name="Datalink Telemetry" hidden="false">
           <description>One Land Speederfrom this Formation can nominate an enemy unit within 18&quot; and in line of sight in its Shooting phase. It cannot do this in the same turn it moves Flat Out. Until the end of the phase, all shooting attacks made with Whirlwind Multiple Missile Launchers by models in this Formation against the nominated can re-roll To Hit and are treated as having an infinite range.</description>
@@ -20377,7 +20580,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
         </link>
       </links>
     </entry>
-    <entry id="8c829f3e-2eb0-86bf-681f-d6b0cfd27eae" name="Chapter Tactics" points="0.0" categoryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="upgrade" minSelections="0" maxSelections="-1" minInForce="1" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="8c829f3e-2eb0-86bf-681f-d6b0cfd27eae" name="Chapter Tactics" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="1" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
       <entryGroups>
         <entryGroup id="0b43aefa-299d-571f-febf-785f6c25d74b" name="Must Pick One" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -29571,6 +29774,553 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </link>
       </links>
     </entry>
+    <entry id="2cc3-6c22-a528-4d9b" name="&apos;Masters of the Armoury" points="0.0" categoryId="9050-d437-3301-7e42" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="ba59-3225-96f1-26b5" name="Space Marine HQ Command Tank" defaultEntryId="4389-f7c9-6815-179c" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="4389-f7c9-6815-179c" targetId="4f66-a5c7-2c23-e1bd" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="70ed-89b7-b410-6ec4" targetId="d0f0-0f64-d9b7-de20" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="e793-b6ef-da7c-8471" targetId="3ddf-7701-a92c-054d" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="9fe9-4592-ff8d-01d6" targetId="117a-4b0a-60c7-c882" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="8308-193f-45f9-7154" targetId="b399-2dc7-ed23-83a3" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="c90b-b492-15e7-56b1" targetId="2ef0-4aaf-5491-1d7a" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="b00c-2273-8406-cd0c" name="&apos;Keepers of the Forge" points="0.0" categoryId="9050-d437-3301-7e42" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="8cb8-7b6d-7b1b-2d1d" name="Tech Marine" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="197d-d415-e4a0-bf82" targetId="d87c-82b4-3f78-6d11" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="96b9-a329-3ca9-32b8" name="Rhino/Razorback" defaultEntryId="34eb-81c7-ef8e-183e" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="e5c0-07a5-cf93-0dc9" targetId="7c18-79c7-2f98-6289" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="34eb-81c7-ef8e-183e" targetId="65fb-b9f5-acbc-083f" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="39b0-5b06-df71-78dd" name="&apos;Techmarine" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="ac15-1c66-3aa9-47d8" name="Techmarine" defaultEntryId="6b0f-d2ec-9b5f-8171" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="6b0f-d2ec-9b5f-8171" targetId="d87c-82b4-3f78-6d11" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="0bbc-2268-969c-4004" name="&apos;Honoured Ancients" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="c367-8774-9486-8f9a" name="Dreadnoguht" defaultEntryId="26c6-8a7b-d33b-18a3" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="26c6-8a7b-d33b-18a3" targetId="6562-3cb8-1de8-7ef4" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="1e76-a8ad-7165-c464" targetId="c493-b483-6e9b-65f0" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="48c3-7914-3d9f-02cc" targetId="ab36-0763-8fa4-35b0" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="9b74-70f8-50fd-1e1e" name="&apos;Mechanised Infantry" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="c747-6c6f-01b8-0066" name="Infantry Selection" defaultEntryId="7f1d-2d4a-d57c-916d" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="7f1d-2d4a-d57c-916d" targetId="fa13-35d7-9893-1c0c" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="e16f-7295-d09f-f74d" targetId="0d0f-2a8f-2986-1707" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="2753-125c-7433-1c70" targetId="2bde-3f74-73da-af8a" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="6f06-ab78-9c92-5bf0" targetId="df11-7608-b463-67cc" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="fb38-d774-b860-8f7b" targetId="d941-4753-2d3e-7009" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="4750-53d0-7d61-c061" targetId="1a34-79a4-be00-222e" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="c3a6-6217-ba3f-4bc0" targetId="55d9-82be-6a7e-6416" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="0006-b4b4-05bd-39b9" targetId="49bc-2c78-3c69-5149" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="4289-bb05-adcd-49cc" targetId="e80d-4913-76b1-2f5f" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="acdd-6a0c-d747-8e71" targetId="011b-a1b5-0982-fc11" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="5b7e-d4d8-b3a9-46c8" name="&apos;Recon Outriders" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="978e-7765-289e-9cbb" name="Land Speeder" defaultEntryId="fc98-2e8b-33ec-22c4" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="fc98-2e8b-33ec-22c4" targetId="50ac-3d28-b8ea-e36d" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="caa3-8a09-b6d3-c1e9" name="&apos;Armoured Task Force" points="0.0" categoryId="bf93-7277-bf48-16f7" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="11a4-c1e2-9ba9-b5a6" name="3-5 Tank Squadrons" minSelections="3" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups>
+            <entryGroup id="f65f-02e5-32e8-95c9" name="1st Tank Squadron" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <links>
+                <link id="0d1f-5651-7514-df44" targetId="a5c4-d373-412f-d6fe" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="f387-3c1e-289a-4bed" targetId="2ef0-4aaf-5491-1d7a" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="fdb6-6aa4-f16d-8944" targetId="d0f0-0f64-d9b7-de20" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
+            </entryGroup>
+            <entryGroup id="a9a7-40ee-bd41-3ab4" name="2nd Tank Squadron" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <links>
+                <link id="cd73-e5f9-dd61-2645" targetId="a5c4-d373-412f-d6fe" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="2d40-bb64-2fc1-2b6d" targetId="2ef0-4aaf-5491-1d7a" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="f109-5b5f-b1cd-c850" targetId="d0f0-0f64-d9b7-de20" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
+            </entryGroup>
+            <entryGroup id="d030-7e71-69f7-721d" name="3rd Tank Squadron" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <links>
+                <link id="ec5c-300c-4669-1e34" targetId="a5c4-d373-412f-d6fe" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="6595-df2e-f897-cad6" targetId="2ef0-4aaf-5491-1d7a" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="0a30-74b0-e43c-247a" targetId="d0f0-0f64-d9b7-de20" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
+            </entryGroup>
+            <entryGroup id="f554-69bc-6d8d-17af" name="4th Tank Squadron" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <links>
+                <link id="f9a4-4053-a3a2-041a" targetId="a5c4-d373-412f-d6fe" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="d264-041e-da41-aab6" targetId="2ef0-4aaf-5491-1d7a" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="ef67-0547-fed1-ed67" targetId="d0f0-0f64-d9b7-de20" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
+            </entryGroup>
+            <entryGroup id="6692-9fe8-a04e-1f5f" name="5th Tank Squadron" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <links>
+                <link id="fbcb-0b30-e71d-59e2" targetId="a5c4-d373-412f-d6fe" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="0d64-31be-5092-e75c" targetId="2ef0-4aaf-5491-1d7a" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="822a-f32d-7877-03ec" targetId="d0f0-0f64-d9b7-de20" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="0742-c3df-b1a9-96ce" name="Thunderfire Cannon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="2137-ed81-9bdc-0f78" targetId="8edd-d3b1-bbaf-3cc8" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="e51a-1f46-5030-ac43" name="Thunderfire Cannon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="e73e-127c-86b1-534d" targetId="8edd-d3b1-bbaf-3cc8" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="cc0f-b519-2c65-08f5" name="Thunderfire Cannon" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="605a-225e-0a44-6e66" targetId="8edd-d3b1-bbaf-3cc8" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="9806-287a-320d-8e38" name="Paregoric Cant" hidden="false">
+          <description>Vehicles from this Formation ignore the effects of Crew Shaken and Crew Stunned results while they are within 6&quot; of the Techmarine or a Techmarine Gunner from this Formation.</description>
+          <modifiers/>
+        </rule>
+        <rule id="e833-ca73-13f2-5982" name="The Will of the Omnissiah" hidden="false">
+          <description>The Techmarine and Techmarine Gunners from this Formation have a +1 bonus when making Blessings of the Omnissiah rolls to repair vehicles from this Formation.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="3311-16e6-28a2-5d0e" targetId="d87c-82b4-3f78-6d11" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+        <link id="abcb-6fc2-939d-70fe" targetId="4f66-a5c7-2c23-e1bd" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="6f00-83b6-b33a-054c" name="&apos;Land Raider Spearhead" points="0.0" categoryId="bf93-7277-bf48-16f7" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="f359-69e9-3b87-877e" name="3 Land Raiders" minSelections="3" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups>
+            <entryGroup id="4dae-9974-c8b3-89c9" name="1st Land Raider" defaultEntryId="9f55-8b17-31a7-6e03" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <links>
+                <link id="9f55-8b17-31a7-6e03" targetId="3ddf-7701-a92c-054d" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="3.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+                <link id="ebc8-4a19-c604-7f83" targetId="117a-4b0a-60c7-c882" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="3.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+                <link id="3f21-cc32-d819-8279" targetId="b399-2dc7-ed23-83a3" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="3.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+              </links>
+            </entryGroup>
+            <entryGroup id="3121-b564-ddcb-b5ba" name="2nd Land Raider" defaultEntryId="caf6-f6a5-4744-41d3" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <links>
+                <link id="caf6-f6a5-4744-41d3" targetId="3ddf-7701-a92c-054d" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="3.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+                <link id="00d1-22d5-3172-c550" targetId="117a-4b0a-60c7-c882" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="3.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+                <link id="d5ff-2f5b-f1c1-8f42" targetId="b399-2dc7-ed23-83a3" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="3.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+              </links>
+            </entryGroup>
+            <entryGroup id="e2bc-cb10-5181-9e18" name="3rd Land Raider" defaultEntryId="00d5-58e5-2f38-5e1f" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <links>
+                <link id="00d5-58e5-2f38-5e1f" targetId="3ddf-7701-a92c-054d" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="3.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+                <link id="0737-a2a1-3c09-a8c9" targetId="117a-4b0a-60c7-c882" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="3.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+                <link id="8fb5-5cd2-18ac-b092" targetId="b399-2dc7-ed23-83a3" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="3.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+              </links>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="14df-d670-311f-5cb8" name="Armoured Behemoths" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="4b2d-8eb5-35f6-6919" name="Even the Mightiest Shall Fall" hidden="false">
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
   </entries>
   <rules/>
   <links>
@@ -29701,9 +30451,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       <modifiers/>
     </link>
     <link id="188a-15cf-9368-3829" targetId="4df1-3a9a-6072-83f0" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
-      <modifiers/>
-    </link>
-    <link id="f92a-31d7-177d-d02b" targetId="d87c-82b4-3f78-6d11" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
       <modifiers/>
     </link>
     <link id="e3f3-8f20-6c2f-0970" targetId="071d-8cf0-fb5c-aecc" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
@@ -29837,6 +30584,9 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <conditionGroups/>
         </modifier>
       </modifiers>
+    </link>
+    <link id="db4a-66d4-9dc0-3320" targetId="d87c-82b4-3f78-6d11" linkType="entry" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
+      <modifiers/>
     </link>
   </links>
   <sharedEntries>
@@ -41724,7 +42474,7 @@ All powers must be selected from the same discipline before the beginning of the
     </entry>
     <entry id="2ef0-4aaf-5491-1d7a" name="Predators" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
-        <entry id="ffec-b5cb-981b-fb31" name="Predator" points="75.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entry id="ffec-b5cb-981b-fb31" name="Predator" points="75.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="">
           <entries/>
           <entryGroups>
             <entryGroup id="3ecd-8246-8f53-f32f" name="Sponson Weapons" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -41790,7 +42540,19 @@ All powers must be selected from the same discipline before the beginning of the
               <links/>
             </entryGroup>
           </entryGroups>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <rules/>
           <profiles>
             <profile id="b612-d781-e73e-36ed" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Predator" hidden="false">
@@ -43592,10 +44354,16 @@ All powers must be selected from the same discipline before the beginning of the
       <entryGroups/>
       <modifiers>
         <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="bc95a691-11c1-ea39-be20-b9e20579b75c" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="bc95a691-11c1-ea39-be20-b9e20579b75c" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules/>
@@ -46480,7 +47248,19 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
             </entry>
           </entries>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <rules/>
           <profiles/>
           <links/>
@@ -47789,7 +48569,19 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
             </entry>
           </entries>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="force type" childId="9e5a-933c-f94f-964c" field="selections" type="instance of" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <rules/>
           <profiles>
             <profile id="1eed-7cf3-269e-be0b" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Vindicator" hidden="false">
