@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="026a-37f6-fa3a-c213" revision="13" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Necrons: Codex (2015)" books="Necrons: Codex (2015)" authorName="Kangodo, Tobias" authorContact="Report issues and bugs for this Codex here:" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="026a-37f6-fa3a-c213" revision="14" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Necrons: Codex (2015)" books="Necrons: Codex (2015)" authorName="Kangodo, Tobias" authorContact="Report issues and bugs for this Codex here:" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="c528a153-c346-46d9-a7e5-d5e0fd485ea5" name="Acquisition Phalanx" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="40k Apocalypse" page="169">
       <entries/>
@@ -1205,7 +1205,19 @@ When choosing to Deep Strike, the Pylons must be upgraded with Teleportation Mat
           </links>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="5f5656da-74a2-07ea-d64e-592c74700823" field="selections" type="less than" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="205cfc35-ab48-3625-3bf6-81ad61db889b" name="Regent of Mephrit" hidden="false">
           <description>As long as the Necron Overlord from Zarathusa&apos;s Royal Decurion has not been removed as a casualty, that Formation&apos;s Command Protocols special rule applies to all non-vehicle units in this Formation.</description>
@@ -1548,13 +1560,49 @@ The removed units may Deep Strike back into the game and the first placed model 
       <modifiers/>
     </link>
     <link id="b957-6775-92ca-eaad" targetId="0d75-e685-adb6-c36b" linkType="entry" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="5f5656da-74a2-07ea-d64e-592c74700823" field="selections" type="less than" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </link>
     <link id="8802-4437-7e2d-cf9b" targetId="28bd-2e18-85de-10c5" linkType="entry" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="5f5656da-74a2-07ea-d64e-592c74700823" field="selections" type="less than" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </link>
     <link id="7c8e-00b2-db56-414a" targetId="3b4f-faec-3104-33da" linkType="entry" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="5f5656da-74a2-07ea-d64e-592c74700823" field="selections" type="less than" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </link>
     <link id="31f5-00ae-4deb-f2fa" targetId="dac9-7a63-1c57-2715" linkType="entry" categoryId="bf93-7277-bf48-16f7">
       <modifiers/>
@@ -3318,15 +3366,20 @@ The removed units may Deep Strike back into the game and the first placed model 
         </link>
       </links>
     </entry>
-    <entry id="1dcbe4b4-1b23-aca3-71b7-dcfbd02a92fc" name="Edge of Eternity" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+    <entry id="1dcbe4b4-1b23-aca3-71b7-dcfbd02a92fc" name="Edge of Eternity" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
       <modifiers>
-        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="5f5656da-74a2-07ea-d64e-592c74700823" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="5f5656da-74a2-07ea-d64e-592c74700823" field="selections" type="at least" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="5f5656da-74a2-07ea-d64e-592c74700823" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="5f5656da-74a2-07ea-d64e-592c74700823" field="selections" type="less than" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules>
@@ -5275,15 +5328,20 @@ If the Tomb Ziggurat is destroyed, the docked warmachine takes a S10, AP2 hit.</
       <profiles/>
       <links/>
     </entry>
-    <entry id="7b0ebefb-e0b5-3c82-a026-05ccb6bc7cdc" name="Solar Thermasite" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+    <entry id="7b0ebefb-e0b5-3c82-a026-05ccb6bc7cdc" name="Solar Thermasite" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
       <modifiers>
-        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="5f5656da-74a2-07ea-d64e-592c74700823" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="5f5656da-74a2-07ea-d64e-592c74700823" field="selections" type="at least" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="5f5656da-74a2-07ea-d64e-592c74700823" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="5f5656da-74a2-07ea-d64e-592c74700823" field="selections" type="less than" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules/>
@@ -5566,15 +5624,20 @@ If the Tomb Ziggurat is destroyed, the docked warmachine takes a S10, AP2 hit.</
       </profiles>
       <links/>
     </entry>
-    <entry id="79fe0dcf-37e5-5852-82d5-3fc1607fa2b9" name="The God Shackle" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+    <entry id="79fe0dcf-37e5-5852-82d5-3fc1607fa2b9" name="The God Shackle" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
       <modifiers>
-        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="5f5656da-74a2-07ea-d64e-592c74700823" field="selections" type="at least" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="5f5656da-74a2-07ea-d64e-592c74700823" field="selections" type="less than" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules/>
