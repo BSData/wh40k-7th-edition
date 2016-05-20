@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2301-1cab-6d58-f23b" revision="22" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="17" battleScribeVersion="1.15" name="Skitarii: Codex (2015)" books="Codex: Skitarii" authorName="Axis of Entropy" authorContact="axisofentropy@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2301-1cab-6d58-f23b" revision="23" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="17" battleScribeVersion="1.15" name="Skitarii: Codex (2015)" books="Codex: Skitarii" authorName="Axis of Entropy" authorContact="axisofentropy@gmail.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="0a94-b6ee-6c90-cdc0" name="Battle Maniple (War Conv.)" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="3" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Codex: Skitarii" page="64">
       <entries>
@@ -2922,7 +2922,20 @@ Third and last, enjoy the formation!</description>
       </links>
     </entry>
     <entry id="abe6-f073-e7b7-7560" name="Skitarii Rangers" points="0.0" categoryId="(No Category)" type="unit" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Skitarii">
-      <entries/>
+      <entries>
+        <entry id="771a-5287-713c-2d8c" name="Skitarii Ranger" points="11.0" categoryId="(No Category)" type="upgrade" minSelections="4" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Skitarii">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="3a8c-98dc-d3b5-2b49" targetId="ec10-199f-8a4c-7778" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
       <entryGroups/>
       <modifiers/>
       <rules/>
@@ -2940,9 +2953,6 @@ Third and last, enjoy the formation!</description>
         <link id="44cf-8e9c-58e7-b50a" targetId="b46e-ccf2-3b67-cbac" linkType="rule">
           <modifiers/>
         </link>
-        <link id="577d-c4fd-3ddc-c970" targetId="0af7-8f9f-63db-1088" linkType="entry">
-          <modifiers/>
-        </link>
         <link id="0b68-4a35-7875-5737" targetId="66b7-0016-6a9b-efe1" linkType="entry">
           <modifiers/>
         </link>
@@ -2956,7 +2966,7 @@ Third and last, enjoy the formation!</description>
           <modifiers>
             <modifier type="set" field="maxSelections" value="3.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="abe6-f073-e7b7-7560" childId="577d-c4fd-3ddc-c970" field="selections" type="equal to" value="9.0"/>
+                <condition parentId="abe6-f073-e7b7-7560" childId="771a-5287-713c-2d8c" field="selections" type="equal to" value="9.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -3224,6 +3234,58 @@ Third and last, enjoy the formation!</description>
               <modifiers/>
             </link>
           </links>
+        </entryGroup>
+        <entryGroup id="2aa1-1ee4-7ee9-996a" name="Protection Fields" defaultEntryId="6e67-c649-4af2-7d78" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="33cd-7457-02a6-e0cd" name="Conversion field" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus" page="56">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="7b50-9987-f2df-14e7" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Conversion Field" hidden="false" book="Codex: Cult Mechanicus" page="77">
+                  <characteristics>
+                    <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="4++ invulnerable save.  After successful save[s], at end of that phase, all units within D6&quot; must test Blind. Friendly units re-roll test."/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="6e67-c649-4af2-7d78" name="Refractor field" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="6873-233f-9d41-7479" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Refractor Field" hidden="false" book="Codex: Cult Mechanicus" page="77">
+                  <characteristics>
+                    <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="5++ Invulnerable Save"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="fa90-2651-e693-a24f" name="Stasis field" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Cult Mechanicus">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="c288-663f-be26-8a86" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Stasis Field" hidden="false" book="Codex: Cult Mechanicus" page="77">
+                  <characteristics>
+                    <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="While a model equipped with a stasis field has Gone to Ground, it gains a 2++ invulnerable save, but its Weapon Skill and Ballistic Skill characteristics are reduced to 0."/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
         </entryGroup>
       </entryGroups>
       <modifiers/>
