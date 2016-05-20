@@ -49494,10 +49494,23 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           <entryGroups/>
           <modifiers>
             <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="fa13-35d7-9893-1c0c" childId="ca3c-e7c9-114e-89e5" field="selections" type="equal to" value="9.0"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="fa13-35d7-9893-1c0c" childId="ca3c-e7c9-114e-89e5" field="selections" type="equal to" value="9.0"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition parentId="fa13-35d7-9893-1c0c" childId="ca3c-e7c9-114e-89e5" field="selections" type="equal to" value="8.0"/>
+                        <condition parentId="fa13-35d7-9893-1c0c" childId="d020-a5f0-e34f-558d" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <links>
@@ -52328,14 +52341,7 @@ Nominate any point over which the Stormraven moved that turn and deploy the squa
           <profiles>
             <profile id="8cb4-d3bf-9a5e-6bce" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Gorgon&apos;s Chain" hidden="false">
               <characteristics>
-                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The bearer of the Gorgon&apos;s Chain has the following special rules, depending on how many unsaved Wounds he has suffered during the battle:
-
-0 - The bearer has a 3+ Invulnerable save, +1 to his Feel No Pain rolls, and the Eternal Warrior special rule.
-1 - The bearer has a 3+ Invulnerable save and the Eternal Warrior special rule.
-2 - The bearer has a 3+ Invulnerable save.
-3 - The bearer has a 4+ invulnerable save.
-
-Each time the bearer suffers an unsaved Wound, or recovers a Wound as a result of the It Will Not Die rule, the effects of the Gorgon&apos;s Chain change immediately; you should roll the bearer&apos;s saves individually."/>
+                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The bearer of the Gorgon&apos;s Chain has the following special rules, depending on how many unsaved Wounds he has suffered during the battle:  0 - The bearer has a 3+ Invulnerable save, +1 to his Feel No Pain rolls, and the Eternal Warrior special rule. 1 - The bearer has a 3+ Invulnerable save and the Eternal Warrior special rule. 2 - The bearer has a 3+ Invulnerable save. 3 - The bearer has a 4+ invulnerable save.  Each time the bearer suffers an unsaved Wound, or recovers a Wound as a result of the It Will Not Die rule, the effects of the Gorgon&apos;s Chain change immediately; you should roll the bearer&apos;s saves individually."/>
               </characteristics>
               <modifiers/>
             </profile>
