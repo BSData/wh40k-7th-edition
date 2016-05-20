@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="6cacb5fc-d6bf-078d-307e-6f16c72d5f2a" revision="23" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="1" battleScribeVersion="1.15" name="Blood Angels: Codex (2014)" books="Codex: Blood Angels" authorName="Kangodo (and others)" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="fa1acfe9-aaea-9141-a026-3a83f5286cee" name="Angel&apos;s Fury Spearhead Force" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -4799,9 +4799,6 @@ On a 1 the firing model loses 1 Hull Point.</description>
         <rule id="d71d7e92-e723-62cd-485f-852fc1c01307" name="Power of the Machine Spirit" hidden="false">
           <modifiers/>
         </rule>
-        <rule id="9d2bd603-eff5-f391-5709-58a0c3c10d26" name="Relic of the Armoury" hidden="false">
-          <modifiers/>
-        </rule>
         <rule id="acab0e88-4023-5161-1726-0644cc0b91b7" name="Independent Turret Fire" hidden="false">
           <modifiers/>
         </rule>
@@ -4830,6 +4827,9 @@ On a 1 the firing model loses 1 Hull Point.</description>
           <modifiers/>
         </link>
         <link id="78305c24-ae37-8744-9b5d-e746cd827c4e" targetId="3ca919b8-b068-e2f2-abc8-b20bc99fa048" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="bc27-9b08-206a-bda7" targetId="daff115c-21ff-fc86-19e3-9822dca1640c" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -11629,7 +11629,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                 </link>
               </links>
             </entry>
-            <entry id="f55ad048-a8db-8e0b-e30d-a6c808df7c48" name="Crozius Arcanum" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="f55ad048-a8db-8e0b-e30d-a6c808df7c48" name="Crozius Arcanum" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -17271,11 +17271,43 @@ Friendly Blood Angel-units within 6&quot; gain Hatred.</description>
       <entries/>
       <entryGroups/>
       <modifiers>
-        <modifier type="increment" field="maxInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="cb4c08b8-78fe-b09a-cf59-883cd7e4cf59" field="selections" type="greater than" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
+        <modifier type="set" field="maxInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition parentId="force type" childId="cb4c08b8-78fe-b09a-cf59-883cd7e4cf59" field="selections" type="greater than" value="0.0"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition parentId="force type" childId="16954bb8-fab1-8794-3a9e-85e9ce96b72c" field="selections" type="less than" value="1.0"/>
+                    <condition parentId="force type" childId="15115b50-c0b5-d8d4-6b33-a7d4f8a7463f" field="selections" type="less than" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="maxInForce" value="-1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition parentId="force type" childId="cb4c08b8-78fe-b09a-cf59-883cd7e4cf59" field="selections" type="greater than" value="0.0"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="force type" childId="16954bb8-fab1-8794-3a9e-85e9ce96b72c" field="selections" type="at least" value="1.0"/>
+                    <condition parentId="force type" childId="15115b50-c0b5-d8d4-6b33-a7d4f8a7463f" field="selections" type="at least" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules>
