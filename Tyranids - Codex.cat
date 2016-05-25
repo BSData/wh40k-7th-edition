@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2f40acf-4ce2-862a-6856-dcb472106abb" revision="55" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Tyranids: Codex (2014)" authorName="Spartacusbob/ Randobar / Arnestig" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f2f40acf-4ce2-862a-6856-dcb472106abb" revision="56" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Tyranids: Codex (2014)" authorName="Spartacusbob/ Randobar / Arnestig" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="8ead9175-2891-4ae0-a60b-e0afe7f76c70" name="Bioblast Node" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Dataslate: Tyranid Onslaught" page="0">
       <entries>
@@ -15988,7 +15988,7 @@ The Formation’s Trygon and Mawloc enter play via Deep Strike as usual.</descri
       <profiles/>
       <links/>
     </entry>
-    <entry id="765b-59df-e57e-5368" name="Tervigon" points="195.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="0" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Tyranids" page="87">
+    <entry id="765b-59df-e57e-5368" name="Tervigon" points="195.0" categoryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="0" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Tyranids" page="87">
       <entries>
         <entry id="8a4f-4da8-be7f-026a" name="Psyker (Mastery Level 1)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -16080,9 +16080,44 @@ The Formation’s Trygon and Mawloc enter play via Deep Strike as usual.</descri
         </entryGroup>
       </entryGroups>
       <modifiers>
-        <modifier type="increment" field="maxInForce" value="1.0" repeat="true" numRepeats="1" incrementParentId="force type" incrementChildId="24ff-c4f6-907a-ab1c" incrementField="selections" incrementValue="1.0">
-          <conditions/>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="24ff-c4f6-907a-ab1c" field="selections" type="less than" value="1.0"/>
+          </conditions>
           <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="maxInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="24ff-c4f6-907a-ab1c" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="24ff-c4f6-907a-ab1c" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="maxInForce" value="2.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="24ff-c4f6-907a-ab1c" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="24ff-c4f6-907a-ab1c" field="selections" type="equal to" value="2.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="maxInForce" value="3.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="24ff-c4f6-907a-ab1c" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="24ff-c4f6-907a-ab1c" field="selections" type="equal to" value="3.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules/>
