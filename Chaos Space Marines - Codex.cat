@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="197" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="c765439d-7af4-5eea-85b4-0f8458870cd6" name="[Apoc] Lords of the Black Crusade" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -13760,30 +13760,14 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
     </entry>
     <entry id="8a3b-80c7-0cf3-e044" name="Chaos Terminators" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries>
-        <entry id="5bff-28ac-f5f3-b6a7" name="Bringers of Despair" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="true" page="0">
+        <entry id="5bff-28ac-f5f3-b6a7" name="Bringers of Despair" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="true" page="0">
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition parentId="force type" childId="b3acaf35-affc-36d2-af40-57b4f1351548" field="selections" type="less than" value="1.0"/>
-                    <condition parentId="force type" childId="6d29-efef-8db0-ed67" field="selections" type="at least" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="force type" childId="6d29-efef-8db0-ed67" field="selections" type="at least" value="1.0"/>
+                <condition parentId="category" childId="2c83-cc8e-64f7-15f1" field="selections" type="at least" value="1.0"/>
               </conditions>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="points" value="6.0" repeat="true" numRepeats="1" incrementParentId="8a3b-80c7-0cf3-e044" incrementChildId="4a1b-d975-a299-25a4" incrementField="selections" incrementValue="1.0">
-              <conditions/>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -14850,7 +14834,17 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
           <rules/>
           <profiles/>
-          <links/>
+          <links>
+            <link id="c147-7c08-1a19-a795" targetId="8b2113df-55b3-2f62-0601-f729b5851ac0" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="8ba3-946f-8f53-b93f" targetId="a243616a-65df-2af8-f12c-8657bdee994f" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="99c9-ab07-3eee-f887" targetId="2df1e9cd-8cf9-c4ca-7c0a-0fdb8d8ef2c7" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
         </entry>
         <entry id="7b76-80e2-5dec-8e70" name="Chosen Champion" points="18.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries>
@@ -26311,7 +26305,7 @@ Codex: Grey Knights
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="7"/>
         <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="5"/>
-        <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4(8)"/>
+        <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
         <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="5"/>
         <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="4"/>
         <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="6"/>
