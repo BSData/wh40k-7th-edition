@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="55" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="56" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -3960,6 +3960,12 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
+        <infoLink id="a36e-8dee-7d08-a31d" name="New InfoLink" hidden="false" targetId="97df-06a3-356e-02a8" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
       </infoLinks>
       <modifiers/>
       <constraints>
@@ -4544,6 +4550,12 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
+        <infoLink id="5116-d23b-590e-f728" name="" hidden="false" targetId="a1e0-247a-474f-2f5a" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
       </infoLinks>
       <modifiers/>
       <constraints>
@@ -4664,16 +4676,15 @@
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="7bc9-3b7d-7768-24aa" name="Wide Fire Points" book="Stronghold Assault" page="0" hidden="false">
+      <rules/>
+      <infoLinks>
+        <infoLink id="797a-2b5c-f64f-ab2e" hidden="false" targetId="d9b9-6c13-981a-0f07" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="797a-2b5c-f64f-ab2e" hidden="false" targetId="d9b9-6c13-981a-0f07" type="rule">
+        </infoLink>
+        <infoLink id="b148-e657-28c5-c4a5" name="New InfoLink" hidden="false" targetId="207b-b21e-68cb-ace0" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4725,16 +4736,21 @@
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="4d35-b2a1-c009-dabb" name="Improved Arcs of Fire" book="Stronghold Assault" page="0" hidden="false">
+      <rules/>
+      <infoLinks>
+        <infoLink id="6d7e-0252-b601-2b0a" hidden="false" targetId="afb7-b281-a9ce-4272" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="6d7e-0252-b601-2b0a" hidden="false" targetId="afb7-b281-a9ce-4272" type="rule">
+        </infoLink>
+        <infoLink id="afe1-424b-4eb7-003c" name="" hidden="false" targetId="a1e0-247a-474f-2f5a" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="55ae-c616-3470-34e6" name="New InfoLink" hidden="false" targetId="d191-d6ec-e3c8-31f6" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4779,6 +4795,12 @@
           <modifiers/>
         </infoLink>
         <infoLink id="a042-b584-3913-ba04" hidden="false" targetId="afb7-b281-a9ce-4272" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="0cf3-eb91-205e-9abd" name="" hidden="false" targetId="a1e0-247a-474f-2f5a" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4879,15 +4901,21 @@
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="a767-a7a7-dc3a-9276" name="Fuel Siphon" book="Stronghold Assault" page="0" hidden="false">
+      <rules/>
+      <infoLinks>
+        <infoLink id="41bd-451c-7c76-5fc5" name="" hidden="false" targetId="57a3-2add-b379-0bb5" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-      </rules>
-      <infoLinks/>
+        </infoLink>
+        <infoLink id="e03d-561f-7b6a-6c4a" name="New InfoLink" hidden="false" targetId="5039-18f0-a9ed-0938" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5478-f6be-f8c6-cdad" type="max"/>
@@ -4919,15 +4947,15 @@
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="0480-e13b-c5b4-9017" name="Landing Pad Configuration" book="Stronghold Assault" page="0" hidden="false">
+      <rules/>
+      <infoLinks>
+        <infoLink id="9223-1f65-0e5e-c745" name="New InfoLink" hidden="false" targetId="bec8-659e-1d2c-c696" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-      </rules>
-      <infoLinks/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b07-2f38-6433-2621" type="max"/>
@@ -4935,15 +4963,15 @@
       <selectionEntries>
         <selectionEntry id="1575-fba1-a604-45c2" name="Ready for Takeoff" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
           <profiles/>
-          <rules>
-            <rule id="135b-e6b0-9e88-a23c" name="Ready for Takeoff" book="Stronghold Assault" page="0" hidden="false">
+          <rules/>
+          <infoLinks>
+            <infoLink id="327e-c45b-1d26-405d" name="New InfoLink" hidden="false" targetId="4a67-bf5f-4008-c425" type="rule">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-            </rule>
-          </rules>
-          <infoLinks/>
+            </infoLink>
+          </infoLinks>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2af4-b69e-26d5-4010" type="max"/>
@@ -7594,60 +7622,70 @@ Against vehicles, attacks count as S4.</description>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>When a building with the Mighty Bulwark special rule suffers a penetrating hit, there is a -1 modifier to the roll on the Building Damage table.</description>
     </rule>
     <rule id="ad74-698e-d727-4b16" name="Massive Fortification" book="Stronghold Assault" page="0" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Massive Fortifications follow all th erules for buildings as defined in the Warhammer 40,000 rulebook, but have the Mighty Bulwark special rule and can have an Armour Value of up to 15 rather than being limited to 14. The datasheet entry for the fortification will list the actual Armour Values it has.</description>
     </rule>
     <rule id="63c3-7047-44b3-6aaa" name="Sonic Boom" book="Stronghold Assault" page="0" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>After firing a quake shell, draw a straight line between the Aquila macro-cannon and the central hole of the apocalyptic mega-blast template.  Roll a dice for each Flyer, Flying Monstrous Creature, or Flying Gargantuan Creature model crossed by this line.  On a roll of 1, a Flyer will Crash and Burn, while a Clying Monstrous Creature or Flying Gargantuan Creature will take D3 Wounds with no saving throws allowed.</description>
     </rule>
     <rule id="91f0-544c-2fcf-bb56" name="Containment Failure" book="Stronghold Assault" page="0" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>If the main strongpoint suffers a Total Collapse or Detonation! result, roll one dice for each remaining vortex missile.  On a roll of 1-2, the missile explodes.  Place the vortex&apos;s blast marker on the center of the main strongpoint, then scatter 2D6&quot;</description>
     </rule>
     <rule id="d04c-20b3-dc49-ea06" name="Very Wide Fire Point" book="Stronghold Assault" page="0" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Up to six occupying models can fire out of each of this building&apos;s fire points.</description>
     </rule>
     <rule id="8c62-54ee-2b8d-bdce" name="Fully Automated" book="Stronghold Assault" page="0" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Emplaced weapons on a Firestorm Redoubt can only fire using the automated fire rule: models occupying a Firestorm Redoubt cannot use the manual fire rule to fire any of its emplaced weapons.</description>
     </rule>
     <rule id="38b6-e53f-8514-a49e" name="Primary Target" book="Stronghold Assault" page="0" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Emplaced weapons on a Firestorm Redoubt that have the Skyfire special rule must fire at the nearest enemy Flyer of Flying Monstrous Creature unit within range and line of sight. If no enemy unit of either of these types is within range or line of sight, that emplaced weapon must instead fire at the nearest enemy unit within range and line of sight.</description>
     </rule>
     <rule id="376e-9c4d-f804-6d61" name="Remote Fire" book="Stronghold Assault" page="0" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Any of the fortification&apos;s emplaced weapons can be fired (using either automated or manual fire) by models occupying the main tower, even if the building housing the emplaced weapons itself is unoccupied.  This rule cannot be used to fire emplaced weapons on any part of the fortification occupied by an enemy unit.</description>
     </rule>
     <rule id="d174-6df8-fbc5-64d1" name="Sacred Ground" book="Stronghold Assault" page="0" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>All models from the armies of the Imerium (e.g. Imperial Guard, Sisters of Battle, all Chapters of Space Marines etc.) have the Stubborn special rule whist within 2&quot; of Imperial Rubble</description>
     </rule>
     <rule id="afb7-b281-a9ce-4272" name="Stalwart Defence" book="Stronghold Assault" page="0" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Models have the Stubborn special rule whist within a Wall of Martyrs Imperial Defence Line or Defence Emplacement section.</description>
     </rule>
     <rule id="8de3-9e93-da02-b9dd" name="It Will Not Die" book="BRB" hidden="false">
       <profiles/>
@@ -7655,6 +7693,52 @@ Against vehicles, attacks count as S4.</description>
       <infoLinks/>
       <modifiers/>
       <description>At the end of each of your turns, roll a D6 for each of your models with this special rule that has less than its starting number of Wounds or Hull Points, but has not been removed as a casualty or destroyed. On a 5+, that model regains a Wound or Hull Point lost earlier in the game.</description>
+    </rule>
+    <rule id="207b-b21e-68cb-ace0" name="Wide Firing Points" book="Stronghold Assault" page="0" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Up to four occupying models can fire out of each of this building&apos;s fire points.</description>
+    </rule>
+    <rule id="57a3-2add-b379-0bb5" name="Fuel Siphon" book="Stronghold Assault" page="0" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Any flamer weapon fired by a non-vehicle model within 2&quot; of a Promethium Relay Pipe in the shooting phase can change its weapon type from Assault to Heavy, or from Pistol to Heavy. If it does so, the weapon gains the Torrent special rule until the end of that phase.</description>
+    </rule>
+    <rule id="bec8-659e-1d2c-c696" name="Landing Pad Configuration" book="Stronghold Assault" page="0" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A Skyshield Landing PAd has certain rules depending on its current configuration, shielded or unfurled. At the beginning of the Movement phase, before rolling for Reserves, a model in base contact with a Skyshield Landing pad can change its configuration from shielded to unfurled (or vice versa). If there are models from both sides in base contact with the landing pad, its configuration cannot be changed.
+
+Shielded: Units on top of a shielded Skyshield Landing pad have a 4+ invulnerable save against shooting attacks.
+
+Unfurled: If a unit deep strieks on top of an unfurled Skyshield Landing Pad, it will never scatter.  Jump units, Jet Pack units, Jetbikes, and SKimmers do not need to take Dangerous Terrain tests for moving on to or off of an unfurled Skyshield Landing Pad.</description>
+    </rule>
+    <rule id="4a67-bf5f-4008-c425" name="Ready for Takeoff" book="Stronghold Assault" page="0" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When deploying your army, you can deploy one of your Flyers with the Hover type on top of each of your Skyshield Landing Pads that has this upgrade, even though Flyers normally have to start the game in reserves.  Flyers that deploy in this way start the game hovering and cannot Zoom in the first game turn.</description>
+    </rule>
+    <rule id="97df-06a3-356e-02a8" name="Missile Battery" book="Stronghold Assault" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>The emplaced vortex missile may fire a maximum of seven vortex missiles over the course of the battle.  No more than one missile may be fired per Shooting phase.</description>
+    </rule>
+    <rule id="d191-d6ec-e3c8-31f6" name="Improved Arcs of Fire" book="Stronghold Assault" page="0" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Any model within a Defence Emplacement section re-rolls failed To-Hit rolsl when resolving Overwatch if using a weapon with the Heavy type.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
