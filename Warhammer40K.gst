@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="56" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="58" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -95,6 +95,13 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
           </constraints>
+        </categoryEntry>
+        <categoryEntry id="2aa2-d9e3-bef6-09be" name="Other" book="" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
@@ -2764,6 +2771,13 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
           </constraints>
         </categoryEntry>
+        <categoryEntry id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
       </categoryEntries>
       <forceEntries/>
     </forceEntry>
@@ -2802,6 +2816,13 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
           </constraints>
         </categoryEntry>
+        <categoryEntry id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
       </categoryEntries>
       <forceEntries/>
     </forceEntry>
@@ -2819,41 +2840,33 @@
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c7f8-b5c6-ca3a-25f0" type="max"/>
           </constraints>
         </categoryEntry>
         <categoryEntry id="9050-d437-3301-7e42" name="Command" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers>
-            <modifier type="increment" field="maxSelections" value="5.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="bf93-7277-bf48-16f7" repeats="1"/>
-              </repeats>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
           </constraints>
         </categoryEntry>
         <categoryEntry id="ef2b-83bd-1bad-5742" name="Auxiliary" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers>
-            <modifier type="increment" field="minSelections" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="bf93-7277-bf48-16f7" repeats="1"/>
-              </repeats>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
           </constraints>
+        </categoryEntry>
+        <categoryEntry id="c005-0402-cf19-b04c" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
@@ -3513,6 +3526,13 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a56c-53f5-885d-af71" type="min"/>
           </constraints>
         </categoryEntry>
+        <categoryEntry id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
       </categoryEntries>
       <forceEntries/>
     </forceEntry>
@@ -3537,19 +3557,50 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="increment" field="bc7c-8a89-b840-dc72" value="1">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="bf93-7277-bf48-16f7" repeats="1"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="bc7c-8a89-b840-dc72" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="bc7c-8a89-b840-dc72" type="max"/>
           </constraints>
         </categoryEntry>
         <categoryEntry id="ef2b-83bd-1bad-5742" name="Auxiliary" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="increment" field="20d9-cd42-4f52-09fa" value="1">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="bf93-7277-bf48-16f7" repeats="1"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="3b10-4460-2ac4-d404" value="10">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="bf93-7277-bf48-16f7" repeats="1"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="20d9-cd42-4f52-09fa" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b10-4460-2ac4-d404" type="max"/>
           </constraints>
+        </categoryEntry>
+        <categoryEntry id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
@@ -3577,7 +3628,7 @@
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="dc52-9a32-d7a3-4224" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="dc52-9a32-d7a3-4224" type="max"/>
           </constraints>
         </categoryEntry>
         <categoryEntry id="ef2b-83bd-1bad-5742" name="Auxiliary" hidden="false">
@@ -3588,6 +3639,13 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e12-8a8b-0c30-fe02" type="min"/>
           </constraints>
+        </categoryEntry>
+        <categoryEntry id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
@@ -3626,6 +3684,13 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="05a4-a978-9af6-a479" type="min"/>
           </constraints>
+        </categoryEntry>
+        <categoryEntry id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
@@ -8777,6 +8842,17 @@ Unfurled: If a unit deep strieks on top of an unfurled Skyshield Landing Pad, it
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Area Terrain. A model in cover behind wreckage or rubble has a 4+ cover save."/>
+      </characteristics>
+    </profile>
+    <profile id="f0ec-023c-4865-fe5a" name="Psychic Hood" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Each time a unit (or model) is targeted by an enemy psycic power and is within 12&quot; of a friendly model with a psychic hood, the wearer of the hood can attempt to Deny the Witch in their stead, as if he were in the target unit.  If the Deny the Witch attempt is failed, the psychic power is resolved as norma, but effects only the initial target, not the wearer of the hood.
+
+If a model with a psychic hood is embarked in a vehicle or building, he can only use the hood to nullify powers targeting the vehicle or buildign he is embarked within."/>
       </characteristics>
     </profile>
   </sharedProfiles>
