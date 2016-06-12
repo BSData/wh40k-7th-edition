@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="83d27dcf-7aba-2f77-c5c0-6dbf86c8e185" revision="51" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Daemons: Codex (2013)" authorName="BSData team (Original Authors: LM, JJ)" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="83d27dcf-7aba-2f77-c5c0-6dbf86c8e185" revision="52" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Daemons: Codex (2013)" authorName="BSData team (Original Authors: LM, JJ)" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="d85d-423c-4d50-6754" name="[FW] Chaos Knight Errant" points="370.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -5415,8 +5415,10 @@ Wounds / Effect
           <links>
             <link id="1189-2667-ee43-e2bf" targetId="5df8-3d13-2131-21de" linkType="entry">
               <modifiers>
-                <modifier type="set" field="maxSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="eeb8-23a2-fd50-af88" incrementChildId="2ded-e7c4-a7cb-6c5d" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="eeb8-23a2-fd50-af88" incrementChildId="2ded-e7c4-a7cb-6c5d" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="eeb8-23a2-fd50-af88" childId="6a22-750e-232d-a582" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
@@ -5571,8 +5573,10 @@ Wounds / Effect
         </link>
         <link id="2ded-e7c4-a7cb-6c5d" targetId="6a22-750e-232d-a582" linkType="entry group">
           <modifiers>
-            <modifier type="set" field="maxSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="eeb8-23a2-fd50-af88" incrementChildId="1189-2667-ee43-e2bf" incrementField="selections" incrementValue="1.0">
-              <conditions/>
+            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="eeb8-23a2-fd50-af88" incrementChildId="1189-2667-ee43-e2bf" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="eeb8-23a2-fd50-af88" childId="5df8-3d13-2131-21de" field="selections" type="equal to" value="1.0"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
