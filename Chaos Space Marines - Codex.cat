@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="199" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" revision="200" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Space Marines: Codex (2012)" authorName=" BSData team (Originally authored by SincerelyNoob ,JJ, Magc8Ball, Grarg)" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="c765439d-7af4-5eea-85b4-0f8458870cd6" name="[Apoc] Lords of the Black Crusade" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -1883,7 +1883,7 @@
             <conditionGroup type="or">
               <conditions>
                 <condition parentId="force type" childId="2c93-74cb-4b9d-42c2" field="selections" type="equal to" value="1.0"/>
-                <condition parentId="roster" childId="6d29-efef-8db0-ed67" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="6d29-efef-8db0-ed67" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -2667,9 +2667,9 @@
                 <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="10"/>
                 <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="2"/>
                 <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Vehicle (Flyer, Hover)"/>
-                <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-                <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-                <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+                <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Attack Flyer"/>
+                <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="3"/>
+                <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="4"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -3802,9 +3802,9 @@ On a roll of a 2-5, it remains wrecked but the controlling player may attempt to
                 <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="12"/>
                 <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="3"/>
                 <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Vehicle (Hover, Flyer)"/>
-                <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-                <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-                <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+                <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Attack Flyer"/>
+                <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="1"/>
+                <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="1"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -4489,9 +4489,9 @@ On a roll of a 2-5, it remains wrecked but the controlling player may attempt to
             <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="12"/>
             <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="4"/>
             <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Vehicle (Flyer, Hover)"/>
-            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Attack Flyer"/>
+            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="3"/>
+            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="3"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -5314,7 +5314,18 @@ On a roll of a 2-5, it remains wrecked but the controlling player may attempt to
           <modifiers/>
         </profile>
       </profiles>
-      <links/>
+      <links>
+        <link id="f573-86f1-3522-0bf9" targetId="48064679-8bfe-230a-befd-c38cb590f9b9" linkType="entry group">
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="bfb6-aaa1-da2c-606b" childId="f789-354c-ac07-527e" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+      </links>
     </entry>
     <entry id="68f0-9968-396b-4ced" name="[FW] Chaos Knight Paladin" points="375.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
@@ -5493,7 +5504,18 @@ On a roll of a 2-5, it remains wrecked but the controlling player may attempt to
           <modifiers/>
         </profile>
       </profiles>
-      <links/>
+      <links>
+        <link id="d1f7-36f1-1c65-317c" targetId="48064679-8bfe-230a-befd-c38cb590f9b9" linkType="entry group">
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="68f0-9968-396b-4ced" childId="46f1-c67d-7413-7500" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+      </links>
     </entry>
     <entry id="0538-bbf7-4b96-9327" name="[FW] Chaos Land Raider Proteus" points="200.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries>
@@ -6766,9 +6788,9 @@ Does not apply to weapons firing without LoS, Fearless units or units without as
             <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="12"/>
             <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="4"/>
             <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Vehicle (Flyer, Hover, Transport)"/>
-            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Attack Flyer"/>
+            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="3"/>
+            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="2"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -6975,9 +6997,9 @@ Does not apply to weapons firing without LoS, Fearless units or units without as
             <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="10"/>
             <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="9"/>
             <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Super-Heavy Flyer (Hover)"/>
-            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Air Leviathan"/>
+            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="4"/>
+            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="1"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -7548,9 +7570,9 @@ Does not apply to weapons firing without LoS, Fearless units or units without as
             <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="12"/>
             <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="3"/>
             <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Vehicle (Hover, Flyer)"/>
-            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Attack Flyer"/>
+            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="1"/>
+            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="1"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -8608,9 +8630,9 @@ When making armour penetration/To wound rolls against the chosen model, all roll
             <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="10"/>
             <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="2"/>
             <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Vehicle (Flyer)"/>
-            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Interceptor"/>
+            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="5"/>
+            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="3"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -8832,9 +8854,9 @@ When making armour penetration/To wound rolls against the chosen model, all roll
             <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="10"/>
             <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="4"/>
             <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Vehicle (Flyer)"/>
-            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Strike Fighter"/>
+            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="4"/>
+            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="4"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -8950,9 +8972,9 @@ A Single Chaos Rapier Weapons Battery</description>
             <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="12"/>
             <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="5"/>
             <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Vehicle (Flyer, Transport, Hover)"/>
-            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Air Leviathan"/>
+            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="1"/>
+            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="1"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -24304,7 +24326,7 @@ Flying units ( including Flying Monstrous Creatures, Flying Gargantuan Creatures
                 <characteristic characteristicId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" name="T" value="4"/>
                 <characteristic characteristicId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" name="W" value="1"/>
                 <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
-                <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="1"/>
+                <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="2"/>
                 <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="9"/>
                 <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+"/>
               </characteristics>
@@ -26438,6 +26460,9 @@ At the beginning of the controlling player’s first player turn, they must choo
     <rule id="9bc5-15de-5870-1fe0" name="Hammer of Wrath" hidden="false">
       <modifiers/>
     </rule>
+    <rule id="11e4-74e2-518b-7222" name="Hatred" hidden="false">
+      <modifiers/>
+    </rule>
     <rule id="fdf0aec1-6a3d-378c-50d6-4985c8f62c2f" name="Heat Blast" hidden="false">
       <description>When a model with this rule arrives via Deep Strike, or later when operating as a skimmer in Hover mode, it may if its controlling player wishes inflict a Heat Blast attack. If it does so, then models it is transporting may not disembark or embark on the turn this attack is used.
 
@@ -26643,10 +26668,6 @@ Codex: Grey Knights
       <modifiers/>
     </rule>
     <rule id="ce1d1a19-a570-d613-f5ea-793f6cc9dbc7" name="Zealot" hidden="false" page="0">
-      <modifiers/>
-    </rule>
-    <rule id="11e4-74e2-518b-7222" name="Hatred" hidden="false">
-      <description></description>
       <modifiers/>
     </rule>
   </sharedRules>
@@ -27215,7 +27236,7 @@ Codex: Grey Knights
         <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="12"/>
         <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="10"/>
         <characteristic characteristicId="a558b3ef-04d0-440e-a312-bac3255bf592" name="I" value="4"/>
-        <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="2"/>
+        <characteristic characteristicId="5dff3e7c-e024-4030-a71d-03195ec06ea7" name="A" value="4"/>
         <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="3"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Walker)"/>
       </characteristics>
