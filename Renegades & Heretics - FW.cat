@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="eeaf9333-0dd2-91e2-75ab-4e1e539d6988" revision="10" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Renegades &amp; Heretics: IA13 (2014)" authorName="k" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="eeaf9333-0dd2-91e2-75ab-4e1e539d6988" revision="11" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Renegades &amp; Heretics: IA13 (2014)" authorName="k" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="da008b32-9fe1-8c4a-25a2-47879aac5166" name="Allow War Zone Vraks Characters" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -7,9 +7,13 @@
       <modifiers/>
       <rules/>
       <profiles/>
-      <links/>
+      <links>
+        <link id="c514-bbc6-1d7f-5a3d" targetId="efb52a05-643d-66c4-91b9-2d41104f4f54" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
-    <entry id="289bbf0a-f15d-93a4-d838-70cdf87d726c" name="Arkos the Faithless, Scion of Alpharius" points="130.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Imperial Armour Apocalypse 2013" page="153">
+    <entry id="289bbf0a-f15d-93a4-d838-70cdf87d726c" name="Arkos the Faithless, Scion of Alpharius *" points="130.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Imperial Armour Apocalypse 2013" page="153">
       <entries>
         <entry id="26095f44-ff33-1dbe-29ef-7d50881caccc" name="Dark Blade" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -315,7 +319,7 @@
               <rules/>
               <profiles/>
               <links>
-                <link id="151e09a7-8eaf-9269-f2cc-b8241444394d" targetId="f5219a7d-8f28-f451-c18b-61ac0d99f0fa" linkType="profile">
+                <link id="151e09a7-8eaf-9269-f2cc-b8241444394d" targetId="f2a6ba71-e144-13d1-4c6d-03ad41a291c1" linkType="profile">
                   <modifiers/>
                 </link>
               </links>
@@ -327,7 +331,7 @@
               <rules/>
               <profiles/>
               <links>
-                <link id="c88386b4-0464-08c2-d0ae-2d4110c87899" targetId="f5219a7d-8f28-f451-c18b-61ac0d99f0fa" linkType="profile">
+                <link id="c88386b4-0464-08c2-d0ae-2d4110c87899" targetId="ad6699a9-7f3b-4bf1-8ddc-132f53b95417" linkType="profile">
                   <modifiers/>
                 </link>
               </links>
@@ -459,7 +463,7 @@
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="bfd66ddc-344f-9c57-8eb5-844ada6d81a0" name="Dedications of Chaos" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+        <entryGroup id="bfd66ddc-344f-9c57-8eb5-844ada6d81a0" name="Dedications of Chaos" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="b4f412e2-c3cc-54fe-ea1b-e543c9e905a8" name="Dedication of Khorne" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -471,9 +475,16 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition parentId="force type" childId="72fe-b068-15cc-4982" field="selections" type="instance of" value="0.0"/>
-                        <condition parentId="force type" childId="cc89e998-1e4d-f62f-4c50-915c077af45b" field="selections" type="equal to" value="0.0"/>
                       </conditions>
-                      <conditionGroups/>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition parentId="roster" childId="357f200c-524b-81f3-aa5f-f049db84afe0" field="selections" type="equal to" value="0.0"/>
+                            <condition parentId="roster" childId="f18931f3-81ef-799f-eaa3-07c0067183b9" field="selections" type="equal to" value="0.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -494,10 +505,16 @@
               <entryGroups/>
               <modifiers>
                 <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="force type" childId="2af7d5cd-5f93-7bda-c4ea-fd7f448a1b34" field="selections" type="equal to" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition parentId="roster" childId="52cc9914-74e2-a061-cc1e-30e1e08948f3" field="selections" type="equal to" value="0.0"/>
+                        <condition parentId="roster" childId="bc47ebb1-051d-12f5-85f9-a2520a661c51" field="selections" type="equal to" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <rules/>
@@ -511,16 +528,59 @@
                 </link>
               </links>
             </entry>
+            <entry id="7a85-0b77-1d24-711f" name="Dedication of Slaanesh" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition parentId="roster" childId="1af8f61d-fc6c-9508-4a81-c5d8730ec8c8" field="selections" type="equal to" value="0.0"/>
+                        <condition parentId="roster" childId="0c1bfed3-f6ff-c810-fa80-9494794a1bdd" field="selections" type="equal to" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="6e69-fbca-325a-7dcb" targetId="d5c2-bdc9-cc3e-bd9c" linkType="rule">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="44dd-0466-db66-cc63" name="Dedication of Tzeentch" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition parentId="roster" childId="68928713-5871-66c8-3b3d-e0c69217216a" field="selections" type="equal to" value="0.0"/>
+                        <condition parentId="roster" childId="a567e325-4907-1e0f-0a93-b2e3f562a1f8" field="selections" type="equal to" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="4894-4737-7572-ad03" targetId="47c4-f966-0504-f531" linkType="rule">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
           </entries>
           <entryGroups/>
-          <modifiers>
-            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="force type" childId="da008b32-9fe1-8c4a-25a2-47879aac5166" field="selections" type="equal to" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <modifiers/>
           <links/>
         </entryGroup>
       </entryGroups>
@@ -1848,7 +1908,11 @@
           </entries>
           <entryGroups/>
           <modifiers/>
-          <links/>
+          <links>
+            <link id="ec36-ef82-1ece-b457" targetId="0e4d-349e-5934-a358" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
         </entryGroup>
       </entryGroups>
       <modifiers>
@@ -2781,7 +2845,7 @@
         </link>
       </links>
     </entry>
-    <entry id="2af7d5cd-5f93-7bda-c4ea-fd7f448a1b34" name="Necrosius the Undying" points="160.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Imperial Armour Apocalypse 2013" page="151">
+    <entry id="2af7d5cd-5f93-7bda-c4ea-fd7f448a1b34" name="Necrosius the Undying *" points="160.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Imperial Armour Apocalypse 2013" page="151">
       <entries>
         <entry id="5031a306-c8a0-dcf2-0ce4-40da3b09d7a9" name="Bolt Pistol w/ Plague Bolts" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -2864,18 +2928,6 @@
             </link>
           </links>
         </entry>
-        <entry id="fcb74a57-bd5e-0f40-372d-b65a2f218259" name="Mark of Nurgle" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="6946a176-1deb-882c-c1cf-a015946d425d" targetId="5147effb-31bc-06c5-2859-4e98722bba19" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
       </entries>
       <entryGroups/>
       <modifiers>
@@ -2925,22 +2977,13 @@
         <link id="d2ba430d-7d65-fab2-dedb-1114179348bb" targetId="fa0ea3b3-9cba-8035-7c1d-33148075f3ac" linkType="rule">
           <modifiers/>
         </link>
+        <link id="0c82-ddc0-21c7-6927" targetId="52cc9914-74e2-a061-cc1e-30e1e08948f3" linkType="entry">
+          <modifiers/>
+        </link>
       </links>
     </entry>
     <entry id="4c88f5fe-4b89-88cd-eb14-23d13da1c1f3" name="Noise Marines" points="27.0" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Codex: Chaos Space Marines faq 1.0" page="47">
       <entries>
-        <entry id="cfbcc743-b428-818e-aaf9-557a98471eea" name="Mark of Slaanesh" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="dd81405d-6fb4-bf2f-994f-cdd6480d2a7f" targetId="8106f39f-7c18-239b-9c27-1a821764c426" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
         <entry id="16594cc3-64e0-3635-5fbf-b669025fc84f" name="Veterans of the Long War" points="1.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
@@ -3099,7 +3142,11 @@
               </entries>
               <entryGroups/>
               <modifiers/>
-              <links/>
+              <links>
+                <link id="1cfd-878d-c18d-67c4" targetId="0e4d-349e-5934-a358" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
             </entryGroup>
             <entryGroup id="01a808ef-cf08-2f8b-8fbe-4b7115392a28" name="Weapons" defaultEntryId="43bb89cd-ec48-9c7b-84aa-6810e914f2b4" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
@@ -3315,7 +3362,11 @@
                       <conditionGroups/>
                     </modifier>
                   </modifiers>
-                  <links/>
+                  <links>
+                    <link id="ea4d-eb7d-20a8-d1cf" targetId="0e4d-349e-5934-a358" linkType="entry">
+                      <modifiers/>
+                    </link>
+                  </links>
                 </entryGroup>
               </entryGroups>
               <modifiers>
@@ -3619,6 +3670,9 @@
           <modifiers/>
         </link>
         <link id="d4b288d9-212b-e4e1-45b1-4d46c6b2f357" targetId="03dab2c7-7e60-1960-6992-687d4378b810" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="6871-1f68-44c6-e121" targetId="1af8f61d-fc6c-9508-4a81-c5d8730ec8c8" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -16289,9 +16343,9 @@
         <entry id="066226f1-efb0-7a6e-52ea-ace635ad88f7" name="Spined Chaos Beast" points="140.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="">
           <entries/>
           <entryGroups>
-            <entryGroup id="13c071b5-5d8a-35e0-45d0-505ba053efff" name="Alignment" defaultEntryId="cc851a9f-28e2-8e5d-4cab-4db751740984" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+            <entryGroup id="13c071b5-5d8a-35e0-45d0-505ba053efff" name="Alignment" defaultEntryId="cc851a9f-28e2-8e5d-4cab-4db751740984" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
-                <entry id="cc851a9f-28e2-8e5d-4cab-4db751740984" name="Daemon of Khorne" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entry id="cc851a9f-28e2-8e5d-4cab-4db751740984" name="Daemon of Khorne" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -16312,7 +16366,7 @@
                     </link>
                   </links>
                 </entry>
-                <entry id="0d8cdbfa-aa26-ff8a-57d2-90b0da9f8356" name="Daemon of Nurgle" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entry id="0d8cdbfa-aa26-ff8a-57d2-90b0da9f8356" name="Daemon of Nurgle" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -16339,7 +16393,7 @@
                     </link>
                   </links>
                 </entry>
-                <entry id="fe58a063-b980-dad6-b139-a809d0c778d9" name="Daemon of Tzeentch" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entry id="fe58a063-b980-dad6-b139-a809d0c778d9" name="Daemon of Tzeentch" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -16357,7 +16411,7 @@
                     </link>
                   </links>
                 </entry>
-                <entry id="a4c1f801-4373-3d43-f448-0d8db1210cde" name="Daemon of Slaanesh" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                <entry id="a4c1f801-4373-3d43-f448-0d8db1210cde" name="Daemon of Slaanesh" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -16578,7 +16632,7 @@
         </link>
       </links>
     </entry>
-    <entry id="cc89e998-1e4d-f62f-4c50-915c077af45b" name="Zhufor the Impaler" points="175.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Imperial Armour Apocalypse 2013" page="152">
+    <entry id="cc89e998-1e4d-f62f-4c50-915c077af45b" name="Zhufor the Impaler *" points="175.0" categoryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Imperial Armour Apocalypse 2013" page="152">
       <entries>
         <entry id="b33dcbbb-93f2-2a58-fc21-4dfa6ecb3f12" name="Skulltaker Chainaxe" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -16764,6 +16818,38 @@
                       <profiles/>
                       <links>
                         <link id="9d2c3431-15e9-f666-4cf5-1e8555c05526" targetId="8ac9b561-512c-7d0d-8dcc-aa07e0bde4b9" linkType="profile">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entry>
+                    <entry id="3218-a7f1-492e-daa7" name="Combi-chemical Flamer" points="7.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers>
+                        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions/>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition parentId="force type" childId="72fe-b068-15cc-4982" field="selections" type="instance of" value="0.0"/>
+                                <condition parentId="force type" childId="f27ddc58-26a0-c164-64d5-75065a3d9620" field="selections" type="instance of" value="0.0"/>
+                                <condition parentId="force type" childId="3bfe125e-5674-06d5-082f-f7f577ea26fc" field="selections" type="instance of" value="0.0"/>
+                              </conditions>
+                              <conditionGroups/>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                      <rules/>
+                      <profiles/>
+                      <links>
+                        <link id="3ef9-bb3d-0ea9-042b" targetId="fa06-c66d-7101-7a0e" linkType="profile">
+                          <modifiers/>
+                        </link>
+                        <link id="b110-3558-ab3d-69e7" targetId="5f892a41-bd85-137f-d843-175ddd1897ec" linkType="profile">
+                          <modifiers/>
+                        </link>
+                        <link id="e31b-a36f-551c-1eb1" targetId="04f48936-58c1-8b7b-a273-e5ad9110bc6b" linkType="profile">
                           <modifiers/>
                         </link>
                       </links>
@@ -17001,6 +17087,38 @@
                               <modifiers/>
                             </link>
                             <link id="aebe76ad-2d64-3ca9-e4ac-1a956c811651" targetId="5f892a41-bd85-137f-d843-175ddd1897ec" linkType="profile">
+                              <modifiers/>
+                            </link>
+                          </links>
+                        </entry>
+                        <entry id="079f-458b-2b22-d70a" name="Combi-chemical Flamer" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers>
+                            <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                              <conditions/>
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition parentId="force type" childId="72fe-b068-15cc-4982" field="selections" type="instance of" value="0.0"/>
+                                    <condition parentId="force type" childId="f27ddc58-26a0-c164-64d5-75065a3d9620" field="selections" type="instance of" value="0.0"/>
+                                    <condition parentId="force type" childId="3bfe125e-5674-06d5-082f-f7f577ea26fc" field="selections" type="instance of" value="0.0"/>
+                                  </conditions>
+                                  <conditionGroups/>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
+                          <rules/>
+                          <profiles/>
+                          <links>
+                            <link id="e356-d747-984a-88c6" targetId="fa06-c66d-7101-7a0e" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="8c4e-7d64-3688-e206" targetId="5f892a41-bd85-137f-d843-175ddd1897ec" linkType="profile">
+                              <modifiers/>
+                            </link>
+                            <link id="fcf5-e95b-d314-dbe8" targetId="04f48936-58c1-8b7b-a273-e5ad9110bc6b" linkType="profile">
                               <modifiers/>
                             </link>
                           </links>
@@ -17841,6 +17959,38 @@
         </link>
       </links>
     </entry>
+    <entry id="0e4d-349e-5934-a358" name="Combi-chemical Flamer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="72fe-b068-15cc-4982" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="f27ddc58-26a0-c164-64d5-75065a3d9620" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="force type" childId="3bfe125e-5674-06d5-082f-f7f577ea26fc" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="f667-b177-20cc-c411" targetId="fa06-c66d-7101-7a0e" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="9ece-76b2-5926-674e" targetId="5f892a41-bd85-137f-d843-175ddd1897ec" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="2a3d-e0bf-fa92-0699" targetId="04f48936-58c1-8b7b-a273-e5ad9110bc6b" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="a0e17b93-dae1-1a7c-4f13-2cceee994fe4" name="Command Net Vox" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
       <entries/>
       <entryGroups/>
@@ -18357,6 +18507,42 @@
           <modifiers/>
         </link>
         <link id="19602134-d1d7-d3b3-3457-c8c4d9a0919f" targetId="e2158329-cadf-d23f-6391-0a33f0619b43" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="52cc9914-74e2-a061-cc1e-30e1e08948f3" name="Mark of Nurgle" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="253b-e9df-e020-cbc6" targetId="5147effb-31bc-06c5-2859-4e98722bba19" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="1af8f61d-fc6c-9508-4a81-c5d8730ec8c8" name="Mark of Slaanesh" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="17a0-c887-8e1c-7494" targetId="8106f39f-7c18-239b-9c27-1a821764c426" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="68928713-5871-66c8-3b3d-e0c69217216a" name="Mark of Tzeentch" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="5edd-ceea-f8c8-ec83" targetId="0cb5-7d9d-3426-78f6" linkType="profile">
           <modifiers/>
         </link>
       </links>
@@ -19504,6 +19690,9 @@
         <link id="2af59120-74cb-4f42-8c61-8dbf65072db5" targetId="815b9c7c-c0ca-4d1e-18e1-79191ac16213" linkType="entry">
           <modifiers/>
         </link>
+        <link id="d6cd-c483-1b0c-a6c1" targetId="0e4d-349e-5934-a358" linkType="entry">
+          <modifiers/>
+        </link>
       </links>
     </entryGroup>
     <entryGroup id="48aa6133-f705-f72c-af2d-5c4c91798f21" name="Hull-mounted Weapon" defaultEntryId="1433705f-63d4-b850-eded-ee2adbfc81ff" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -20189,6 +20378,11 @@
     </entryGroup>
   </sharedEntryGroups>
   <sharedRules>
+    <rule id="efb52a05-643d-66c4-91b9-2d41104f4f54" name="* Friendly Games Only" hidden="false" book="" page="0">
+      <description>These Characters are no longer part of the Renegades &amp; Heretics Army. However, they are included here due to their participation in the Vraks War Zone, and out of respect to players who may have used them in previous versions of the list.
+As such &amp; with the consent of your opponents, they may add colour to friendly games, but should not be chosen for competitive or tournament play.</description>
+      <modifiers/>
+    </rule>
     <rule id="b5edcb5b-5323-9144-2deb-59aa5938214f" name="5+ Invulnerable Save" hidden="false" book="Codex: Chaos Daemons">
       <modifiers/>
     </rule>
@@ -20349,6 +20543,12 @@
       <modifiers/>
     </rule>
     <rule id="5a644da8-3d31-d8c5-b7e6-cf2c498bb72f" name="Dedication of Nurgle" hidden="false" book="Imperial Armour 13" page="127">
+      <modifiers/>
+    </rule>
+    <rule id="d5c2-bdc9-cc3e-bd9c" name="Dedication of Slaanesh" hidden="false" book="Imperial Armour 13" page="127">
+      <modifiers/>
+    </rule>
+    <rule id="47c4-f966-0504-f531" name="Dedication of Tzeentch" hidden="false" book="Imperial Armour 13" page="127">
       <modifiers/>
     </rule>
     <rule id="90311584-d42b-5056-1554-0c859a6db9ab" name="Deep Strike" hidden="false" book="Warhammer 40k rulebook" page="36">
@@ -20941,9 +21141,9 @@
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="f672f65a-522d-9ad2-0ec9-b3304385dbe9" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Armoured Cockpit" hidden="false" book="Imperial Armour Apocalypse 2013" page="6">
+    <profile id="f672f65a-522d-9ad2-0ec9-b3304385dbe9" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Armoured Cockpit" hidden="false" book="Death-from-the-Skies.pdf" page="6">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Ignore Crew Shaken or Crew Stunned on a 4+"/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Ignore Crew Shaken or Crew Stunned on a 4+. However, during the Interception sub-phase of the Dogfight phase, vehicles equipped with this upgrade that are in Reserves or Ongoing Reserves count as Bombers for the purpose of calculating modifiers to rolls made in this sub-phase."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -21087,9 +21287,9 @@
         <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="10"/>
         <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="2"/>
         <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Flyer, Hover"/>
-        <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-        <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-        <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+        <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Attack Flyer"/>
+        <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="3"/>
+        <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="4"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -21778,9 +21978,9 @@
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="8b60fc27-ff30-70ab-a1ad-2a50855c9938" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Flare or Chaff Launcher" hidden="false" book="IA Aeronautica" page="5">
+    <profile id="8b60fc27-ff30-70ab-a1ad-2a50855c9938" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Flare or Chaff Launcher" hidden="false" book="Death-from-the-Skies.pdf" page="6">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="4+ Invul Sv against Missiles"/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Single use. If used during the opposing player’s Shooting phase, they grant the equipped vehicle a 4+ Invul Sv against all weapons with the Missile type or with the word &apos;Missile&apos; in their name. The use of flare or chaff launchers in an opponent’s Shooting phase must be declared after the opposing player has made a To Hit roll, but before any Armour Penetration rolls are made. Flare or chaff launchers may also be used during the Dogfight phase. They are only used during the Attack sub-phase and only if the equipped vehicle has already declared it will Jink. When used in the Dogfight phase, they increase the equipped vehicle’s Jink save by one step and make that save an Invulnerable save."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -22147,9 +22347,9 @@
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="5432a591-fd7c-6c71-0e92-cc376dea1774" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Illum Flare" hidden="false" book="IA Aeronautica" page="5">
+    <profile id="5432a591-fd7c-6c71-0e92-cc376dea1774" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Illum Flare" hidden="false" book="Death-from-the-Skies.pdf" page="6">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Equipped vehicle may drop one per turn, in same manner as a bomb. Stays in play &apos;til end of turn. Any unit, targetting an enemy unit which is within 12&quot; of the Flare, gains Night Vision for that Shooting phase."/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="During each friendly Movement phase, a model equipped with illum flares may drop one as though it were a weapon with the Bomb 1 type, placing a marker where the flare lands. All units within 12&quot; of the Flare marker may be targeted as though Night Fight was not in effect. Illum flares have no effect if the Night Fight rules are not in play. At the end of each Game Turn, remove all Flare markers currently on the battlefield."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -22180,9 +22380,9 @@
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="fb1f6c9a-5446-7579-7255-317e7b4f5037" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Infrared Targeting" hidden="false" book="Imperial Armour Apocalypse 2013" page="6">
+    <profile id="fb1f6c9a-5446-7579-7255-317e7b4f5037" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Infrared Targeting" hidden="false" book="Death-from-the-Skies.pdf" page="6">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Night Vision"/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="Gains Night Vision. During the Dogfight phase, a vehicle equipped with this upgrade may re-roll all To Hit rolls of a ‘1’ made during the Attack sub-phase."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -22481,6 +22681,12 @@
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="0cb5-7d9d-3426-78f6" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Mark of Tzeentch" hidden="false" book="Codex: Chaos Space Marines" page="30">
+      <characteristics>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="+1 Invul Sv (to 3++). Confers a 6+ Invul Sv if no existing save is present."/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="1021e6e7-114c-4721-1f84-a2dfe0515968" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Mawcannon (Phlegm)" hidden="false" book="Imperial Armour 13" page="132">
       <characteristics>
         <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="36"/>
@@ -22546,7 +22752,7 @@
     </profile>
     <profile id="304513bb-c5d8-08f0-3efe-0086a0fd919f" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Militia Training" hidden="false" book="Imperial Armour 13" page="185">
       <characteristics>
-        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="+1BS"/>
+        <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="+1BS, or +1BS and +1WS, where applicable."/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -23089,9 +23295,9 @@
         <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="10"/>
         <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="3"/>
         <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Flyer, Hover, Transport"/>
-        <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-        <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-        <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+        <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Utility Craft"/>
+        <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="1"/>
+        <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="1"/>
       </characteristics>
       <modifiers/>
     </profile>
