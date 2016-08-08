@@ -342,13 +342,25 @@
     <entry id="5b3b28ee-e8a0-d196-45ac-d07b144c4712" name="Archon" points="60.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="">
       <entries/>
       <entryGroups>
-        <entryGroup id="eccce310-ca49-20ae-ebc2-ecbd2788fa31" name="Armour" defaultEntryId="ccc3d186-9ae6-aeae-27c0-e5e16b3afe70" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="eccce310-ca49-20ae-ebc2-ecbd2788fa31" name="Armour" defaultEntryId="ccc3d186-9ae6-aeae-27c0-e5e16b3afe70" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <links>
             <link id="ccc3d186-9ae6-aeae-27c0-e5e16b3afe70" targetId="96020062-5dec-9367-1e79-538f27c83dd0" linkType="entry">
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="5b3b28ee-e8a0-d196-45ac-d07b144c4712" childId="a15c-d185-f93f-0e9a" field="selections" type="greater than" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </link>
           </links>
         </entryGroup>
@@ -4969,6 +4981,21 @@
         </link>
       </links>
     </entry>
+    <entry id="a15c-d185-f93f-0e9a" name="The Armour of Misery" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles>
+        <profile id="1ea3-d2af-ab4d-a3c6" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Armour of Misery" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The Armour of Misery confers a 4+ Armour Save, a 6+ invulnerable save and the Fear special rule. All enemy units within 6&quot; of the bearer suffer a -2 Leadership penalty."/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="359216fa-43af-366a-a5dc-b73b1fca678e" name="1- 12 of the Court of the Archon" defaultEntryId="a15ebb48-3bb4-8291-dd58-e7489e55818c" minSelections="1" maxSelections="12" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -5227,21 +5254,6 @@
     </entryGroup>
     <entryGroup id="65b2e53b-2f3d-c487-dfee-17deeef4e4a6" name="Artefacts of Cruelty" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
-        <entry id="1eb9bd54-5cd6-96e1-c7cd-72dd5bfafd90" name="The Armour of Misery" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="718910db-4d22-b7b8-04d9-2cf3d79a4797" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Armour of Misery" hidden="false">
-              <characteristics>
-                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The Armour of Misery confers a 4+ Armour Save, a 6+ invulnerable save and the Fear special rule. All enemy units within 6&quot; of the bearer suffer a -2 Leadership penalty."/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
         <entry id="0c3f96b3-e00d-308a-af98-3caf1633a4c8" name="The Animus Vitae" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
@@ -5295,6 +5307,9 @@
           <modifiers/>
         </link>
         <link id="d806-4b54-b50e-0a47" targetId="0531-06d8-d779-1f80" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="510b-ae52-ecfd-70d6" targetId="a15c-d185-f93f-0e9a" linkType="entry">
           <modifiers/>
         </link>
       </links>
