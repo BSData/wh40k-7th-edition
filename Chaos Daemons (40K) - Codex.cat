@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="83d27dcf-7aba-2f77-c5c0-6dbf86c8e185" revision="51" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Daemons: Codex (2013)" authorName="BSData team (Original Authors: LM, JJ)" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="83d27dcf-7aba-2f77-c5c0-6dbf86c8e185" revision="54" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Daemons: Codex (2013)" authorName="BSData team (Original Authors: LM, JJ)" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="d85d-423c-4d50-6754" name="[FW] Chaos Knight Errant" points="370.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -968,14 +968,17 @@ If there is no space for the pink horrors, or no models, they are then destroyed
             </rule>
           </rules>
           <profiles>
-            <profile id="208e-1a6d-591f-7e44" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Blight Drones of Nurgle" hidden="false">
+            <profile id="208e-1a6d-591f-7e44" profileTypeId="3a08-ea03-a598-8615" name="Blight Drones of Nurgle" hidden="false">
               <characteristics>
-                <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="2"/>
-                <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="12"/>
-                <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="11"/>
-                <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="10"/>
-                <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="2"/>
-                <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Vehicle (Flyer, Hover)"/>
+                <characteristic characteristicId="9878-e3f6-b7b4-7225" name="BS" value="2"/>
+                <characteristic characteristicId="3a4e-bc1d-4a12-7176" name="Front" value="12"/>
+                <characteristic characteristicId="d12e-7bdb-191c-4849" name="Side" value="11"/>
+                <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="10"/>
+                <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="2"/>
+                <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Vehicle (Flyer, Hover)"/>
+                <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
+                <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
+                <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
               </characteristics>
               <modifiers/>
             </profile>
@@ -4003,18 +4006,6 @@ Wounds / Effect
         <link id="3603-0729-d4a8-6c8e" targetId="5947-9ffc-cfba-806d" linkType="profile">
           <modifiers/>
         </link>
-        <link id="3567-0d78-3116-bd92" targetId="3e48-4a3f-a971-0f19" linkType="entry group">
-          <modifiers>
-            <modifier type="set" field="maxPoints" value="20.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="maxPoints" value="20.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </link>
       </links>
     </entry>
     <entry id="40debf19-f2ad-becd-81f4-699c4fe513c4" name="Exalted Locus of Beguilement" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -4164,6 +4155,11 @@ Wounds / Effect
       <modifiers/>
       <rules>
         <rule id="f9ac-68da-824f-9d4f" name="Fighter Ace" hidden="false">
+          <description>Roll D6 after Warlord trait
+
+1-2 - Guided by the Gods: The Fighter Ace must re-roll failed To Wound and failed armour penetration rolls when making Vector Strikes.
+3-4 - Unholy Fortitude: Add +1 W to the Fighter Ace&apos;s profile.
+5-6 - Blessed by the Gods: The Fighter Ace&apos;s invulnerable save is improved by 1. This is cumulative with any other modifiers to the Fighter Ace&apos;s invulnerable save.</description>
           <modifiers/>
         </rule>
       </rules>
@@ -5412,8 +5408,10 @@ Wounds / Effect
           <links>
             <link id="1189-2667-ee43-e2bf" targetId="5df8-3d13-2131-21de" linkType="entry">
               <modifiers>
-                <modifier type="set" field="maxSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="eeb8-23a2-fd50-af88" incrementChildId="2ded-e7c4-a7cb-6c5d" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="eeb8-23a2-fd50-af88" incrementChildId="2ded-e7c4-a7cb-6c5d" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="eeb8-23a2-fd50-af88" childId="6a22-750e-232d-a582" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
@@ -5568,8 +5566,10 @@ Wounds / Effect
         </link>
         <link id="2ded-e7c4-a7cb-6c5d" targetId="6a22-750e-232d-a582" linkType="entry group">
           <modifiers>
-            <modifier type="set" field="maxSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="eeb8-23a2-fd50-af88" incrementChildId="1189-2667-ee43-e2bf" incrementField="selections" incrementValue="1.0">
-              <conditions/>
+            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="eeb8-23a2-fd50-af88" incrementChildId="1189-2667-ee43-e2bf" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="eeb8-23a2-fd50-af88" childId="5df8-3d13-2131-21de" field="selections" type="equal to" value="1.0"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -6296,7 +6296,7 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
       <profiles>
         <profile id="4cc4-8a47-3c79-2726" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Lord of Change" hidden="false" page="0">
           <characteristics>
-            <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Monstrous Creature (Character)"/>
+            <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Flying Monstrous Creature (Character)"/>
             <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="6"/>
             <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="6"/>
             <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="6"/>
@@ -6335,6 +6335,9 @@ Super-heavy vehicle, but it may not make Stomp attacks.</description>
           </modifiers>
         </link>
         <link id="a714-c616-59ce-b0a7" targetId="78f1-f67e-ed98-b018" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="3011-8c93-e41d-e14b" targetId="685156ec-d040-61a1-65e7-cf5ba676de3f" linkType="entry">
           <modifiers/>
         </link>
       </links>

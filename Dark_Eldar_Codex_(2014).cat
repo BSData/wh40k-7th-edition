@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="635e04e0-204e-2672-055e-6d081ee0fc93" revision="22" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Dark Eldar: Codex (2014)" books="" authorName="BSData on GitHub" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="635e04e0-204e-2672-055e-6d081ee0fc93" revision="25" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Dark Eldar: Codex (2014)" books="" authorName="BSData on GitHub" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="eb21d12e-1d75-d23b-d086-af82f107b768" name="Court of the Archon" points="0.0" categoryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="0" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -307,6 +307,9 @@
         </modifier>
       </modifiers>
     </link>
+    <link id="f85b-45df-8d59-c959" targetId="25dd-b264-a2b7-837e" linkType="entry" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
+      <modifiers/>
+    </link>
   </links>
   <sharedEntries>
     <entry id="d55d275d-f0e3-8d5c-040e-4825503ca30b" name="Agoniser" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -339,13 +342,25 @@
     <entry id="5b3b28ee-e8a0-d196-45ac-d07b144c4712" name="Archon" points="60.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="">
       <entries/>
       <entryGroups>
-        <entryGroup id="eccce310-ca49-20ae-ebc2-ecbd2788fa31" name="Armour" defaultEntryId="ccc3d186-9ae6-aeae-27c0-e5e16b3afe70" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="eccce310-ca49-20ae-ebc2-ecbd2788fa31" name="Armour" defaultEntryId="ccc3d186-9ae6-aeae-27c0-e5e16b3afe70" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <links>
             <link id="ccc3d186-9ae6-aeae-27c0-e5e16b3afe70" targetId="96020062-5dec-9367-1e79-538f27c83dd0" linkType="entry">
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="5b3b28ee-e8a0-d196-45ac-d07b144c4712" childId="a15c-d185-f93f-0e9a" field="selections" type="greater than" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </link>
           </links>
         </entryGroup>
@@ -828,7 +843,7 @@
           <modifiers>
             <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="category" childId="28b94f51-e66b-4096-aa59-0c9df620a77d" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="direct parent" childId="bbbff194-9df1-4bc7-87d3-0fb30df5d994" field="selections" type="instance of" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -1064,7 +1079,7 @@
     <entry id="bbbff194-9df1-4bc7-87d3-0fb30df5d994" name="Formation: Kabalite Raiding Party" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups>
-        <entryGroup id="b3ce2605-0fb8-cccc-19ff-77e88176ba96" name="Arhon" defaultEntryId="50d9a88e-d439-6d82-c6ec-64acd229759c" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="b3ce2605-0fb8-cccc-19ff-77e88176ba96" name="Archon" defaultEntryId="50d9a88e-d439-6d82-c6ec-64acd229759c" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -1159,6 +1174,62 @@
           <modifiers/>
         </link>
         <link id="13ef2ef5-4f5e-12d3-f7f8-1cdd7140fa80" targetId="854ee896-7946-7259-c2ad-483a482d4e44" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="25dd-b264-a2b7-837e" name="Formation: Purge Coterie" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="078a-e43c-3455-a1ea" name="Archon" defaultEntryId="65d4-a7c9-474e-c50a" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="65d4-a7c9-474e-c50a" targetId="5b3b28ee-e8a0-d196-45ac-d07b144c4712" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="3be5-e5c1-88fb-6744" name="Reavers" defaultEntryId="9875-18a4-5f94-411f" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="9875-18a4-5f94-411f" targetId="5f906016-1d30-7424-444b-c347f752e913" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="bc4a-124c-49f3-3393" name="Raider" defaultEntryId="66da-2afa-e01f-5934" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="66da-2afa-e01f-5934" targetId="2b26266b-185f-2928-00dc-a2a37402d61c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="0145-2997-12af-9877" name="Kabalite Unit" defaultEntryId="6106-4169-ba21-6419" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="6106-4169-ba21-6419" targetId="775786c3-a7e0-95c5-996b-96a0cc7c8408" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="af5d-4667-654e-c8e1" targetId="a79ae54e-65f3-1fef-5573-cfd087189d5e" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="657e-668f-1319-6888" targetId="c8f9-9650-3363-75a7" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -1839,7 +1910,7 @@
           <modifiers>
             <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="category" childId="28b94f51-e66b-4096-aa59-0c9df620a77d" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="direct parent" childId="bbbff194-9df1-4bc7-87d3-0fb30df5d994" field="selections" type="instance of" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -2066,7 +2137,7 @@
           <modifiers>
             <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="category" childId="28b94f51-e66b-4096-aa59-0c9df620a77d" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="direct parent" childId="fa41ab81-6358-c413-cbe6-34a002720f57" field="selections" type="instance of" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -2300,7 +2371,7 @@
           <modifiers>
             <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="category" childId="28b94f51-e66b-4096-aa59-0c9df620a77d" field="selections" type="instance of" value="0.0"/>
+                <condition parentId="direct parent" childId="bbbff194-9df1-4bc7-87d3-0fb30df5d994" field="selections" type="instance of" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -2831,14 +2902,17 @@
         </rule>
       </rules>
       <profiles>
-        <profile id="ea1c-d775-fe1b-cb04" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Raven Strike Fighter" hidden="false" book="IA: Aeronautica (2012)" page="69">
+        <profile id="ea1c-d775-fe1b-cb04" profileTypeId="3a08-ea03-a598-8615" name="Raven Strike Fighter" hidden="false" book="IA: Aeronautica (2012)" page="69">
           <characteristics>
-            <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS"/>
-            <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="10"/>
-            <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="10"/>
-            <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="10"/>
-            <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="2"/>
-            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Flyer"/>
+            <characteristic characteristicId="9878-e3f6-b7b4-7225" name="BS"/>
+            <characteristic characteristicId="3a4e-bc1d-4a12-7176" name="Front" value="10"/>
+            <characteristic characteristicId="d12e-7bdb-191c-4849" name="Side" value="10"/>
+            <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="10"/>
+            <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="2"/>
+            <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Flyer"/>
+            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
+            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
+            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -4907,6 +4981,21 @@
         </link>
       </links>
     </entry>
+    <entry id="a15c-d185-f93f-0e9a" name="The Armour of Misery" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles>
+        <profile id="1ea3-d2af-ab4d-a3c6" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Armour of Misery" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The Armour of Misery confers a 4+ Armour Save, a 6+ invulnerable save and the Fear special rule. All enemy units within 6&quot; of the bearer suffer a -2 Leadership penalty."/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="359216fa-43af-366a-a5dc-b73b1fca678e" name="1- 12 of the Court of the Archon" defaultEntryId="a15ebb48-3bb4-8291-dd58-e7489e55818c" minSelections="1" maxSelections="12" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -5165,21 +5254,6 @@
     </entryGroup>
     <entryGroup id="65b2e53b-2f3d-c487-dfee-17deeef4e4a6" name="Artefacts of Cruelty" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
-        <entry id="1eb9bd54-5cd6-96e1-c7cd-72dd5bfafd90" name="The Armour of Misery" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="718910db-4d22-b7b8-04d9-2cf3d79a4797" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Armour of Misery" hidden="false">
-              <characteristics>
-                <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The Armour of Misery confers a 4+ Armour Save, a 6+ invulnerable save and the Fear special rule. All enemy units within 6&quot; of the bearer suffer a -2 Leadership penalty."/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
         <entry id="0c3f96b3-e00d-308a-af98-3caf1633a4c8" name="The Animus Vitae" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
@@ -5233,6 +5307,9 @@
           <modifiers/>
         </link>
         <link id="d806-4b54-b50e-0a47" targetId="0531-06d8-d779-1f80" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="510b-ae52-ecfd-70d6" targetId="a15c-d185-f93f-0e9a" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -5561,6 +5638,10 @@ A Hit &amp; Run move is not slowed by difficult terrain, but takes Dangerous Ter
     </rule>
     <rule id="c265aaa5-c077-d365-2a06-e62cb60cb352" name="Lethal Dose" hidden="false" book="Codex: Dark Eldar 2014">
       <description>Any To Wound roll of a 6 inflicted by this weapon has the Instant Death special rule. </description>
+      <modifiers/>
+    </rule>
+    <rule id="c8f9-9650-3363-75a7" name="Marked for Death" hidden="false">
+      <description>Such is the power at their disposal that, with but a simple gesture, an Archon can order the swift demise of those that displease them. At the start of each friendly turn, pick an enemy unit within line of sight of the Archon. All other units from the Purge Coterie have the Preferred Enemy special rule agains the unit you picked until the start of the next turn. </description>
       <modifiers/>
     </rule>
     <rule id="e8af8066-2b98-a452-ee06-6635177c04ee" name="Master of Blades" hidden="false" book="Codex: Dark Eldar 2014">
@@ -6560,14 +6641,17 @@ A Hit &amp; Run move is not slowed by difficult terrain, but takes Dangerous Ter
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="1c0dc4d6-d0ea-f3e7-d636-4fb8ccfb9a80" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Razorwing Jetfighter" hidden="false" page="0">
+    <profile id="1c0dc4d6-d0ea-f3e7-d636-4fb8ccfb9a80" profileTypeId="3a08-ea03-a598-8615" name="Razorwing Jetfighter" hidden="false" page="0">
       <characteristics>
-        <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
-        <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="10"/>
-        <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="10"/>
-        <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="10"/>
-        <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="3"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Flyer"/>
+        <characteristic characteristicId="9878-e3f6-b7b4-7225" name="BS" value="4"/>
+        <characteristic characteristicId="3a4e-bc1d-4a12-7176" name="Front" value="10"/>
+        <characteristic characteristicId="d12e-7bdb-191c-4849" name="Side" value="10"/>
+        <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="10"/>
+        <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="3"/>
+        <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Flyer"/>
+        <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Fighter"/>
+        <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="5"/>
+        <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="5"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -6999,14 +7083,17 @@ A Hit &amp; Run move is not slowed by difficult terrain, but takes Dangerous Ter
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="60c3fb50-6ce4-8bbc-3dfd-8608528c53b3" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Voidraven Bomber" hidden="false" page="0">
+    <profile id="60c3fb50-6ce4-8bbc-3dfd-8608528c53b3" profileTypeId="3a08-ea03-a598-8615" name="Voidraven Bomber" hidden="false" page="0">
       <characteristics>
-        <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
-        <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="10"/>
-        <characteristic characteristicId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" name="Side" value="10"/>
-        <characteristic characteristicId="0a9f33cb-0412-420a-89d2-20707c360bd2" name="Rear" value="10"/>
-        <characteristic characteristicId="ae95a1af-719f-4365-b951-33cd3ca9148a" name="HP" value="3"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Flyer"/>
+        <characteristic characteristicId="9878-e3f6-b7b4-7225" name="BS" value="4"/>
+        <characteristic characteristicId="3a4e-bc1d-4a12-7176" name="Front" value="10"/>
+        <characteristic characteristicId="d12e-7bdb-191c-4849" name="Side" value="10"/>
+        <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="10"/>
+        <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="3"/>
+        <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Flyer"/>
+        <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Bomber"/>
+        <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="5"/>
+        <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="4"/>
       </characteristics>
       <modifiers/>
     </profile>
