@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="83d27dcf-7aba-2f77-c5c0-6dbf86c8e185" revision="54" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Daemons: Codex (2013)" authorName="BSData team (Original Authors: LM, JJ)" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="83d27dcf-7aba-2f77-c5c0-6dbf86c8e185" revision="55" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Chaos Daemons: Codex (2013)" authorName="BSData team" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="d85d-423c-4d50-6754" name="[FW] Chaos Knight Errant" points="370.0" categoryId="c888f08a-6cea-4a01-8126-d374a9231554" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -905,6 +905,12 @@ If there is no space for the pink horrors, or no models, they are then destroyed
       <modifiers/>
     </link>
     <link id="4434-7907-350d-707e" targetId="0899-4ef9-27d7-b992" linkType="entry" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
+      <modifiers/>
+    </link>
+    <link id="6eba-7f83-bae2-8cf3" targetId="fdf3-7ddc-dd10-03fa" linkType="entry" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
+      <modifiers/>
+    </link>
+    <link id="e7f6-8161-6eff-4404" targetId="a025-4bcd-12e9-b8be" linkType="entry" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
       <modifiers/>
     </link>
   </links>
@@ -2576,7 +2582,20 @@ Note that this special counter-charge can only be done in the enemy Charge sub-p
       </links>
     </entry>
     <entry id="7eeb-4507-a35b-c789" name="Burning Chariot of Tzeentch" points="100.0" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-      <entries/>
+      <entries>
+        <entry id="d3b8-f976-3025-8ab6" name="Blue Horror Crew" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="8520-870b-0fb4-b8b3" targetId="2ffe-96fa-577a-0e70" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
       <entryGroups>
         <entryGroup id="b88a-5d3b-9f16-4fea" name="Exalted Flamer" defaultEntryId="45cc-b822-fc37-cdc3" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -2616,6 +2635,14 @@ Note that this special counter-charge can only be done in the enemy Charge sub-p
         </link>
         <link id="4f9f-7553-d317-da7e" targetId="2ffe-96fa-577a-0e70" linkType="rule">
           <modifiers/>
+        </link>
+        <link id="5155-a0bc-9e9b-047e" targetId="3e48-4a3f-a971-0f19" linkType="entry group">
+          <modifiers>
+            <modifier type="set" field="maxPoints" value="20.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -3973,7 +4000,7 @@ Wounds / Effect
       <profiles>
         <profile id="950d-c321-b0e5-a06d" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Exalted Flamer" hidden="false" page="0">
           <characteristics>
-            <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
+            <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Jump Infantry (Character)"/>
             <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
             <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="4"/>
             <characteristic characteristicId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" name="S" value="4"/>
@@ -9048,7 +9075,7 @@ Any non-Fearless unit in CC with this unit must pass a leadership check or be un
       <modifiers/>
     </rule>
     <rule id="ece4-bc8c-add4-6f6a" name="Daemonic Corruption" hidden="false">
-      <description>Objective Markers controlled by units from this Detachment count as controlled for the rest of the game, even if the controlling player has no units wihtin 3&quot; of them. This effect lasts until an enemy scoring unit cleanses the objective by controlling it.</description>
+      <description>Any Objective Markers controlled by units from this Detachment at the end of your turn count as being under your control for the rest of the game, even inf you have no units within 3&quot; of them. A unit can only corrupt a single Objective Marker in this manner at the end of each of your turns. This effect lasts until an enemy scoring unit cleanses the objective by controlling it.</description>
       <modifiers/>
     </rule>
     <rule id="521fb0b8-870d-f3e9-6f25-483767d3b77e" name="Daemonic Instability" hidden="false" page="0">
@@ -9394,6 +9421,10 @@ If you roll The Dark Prince Thirsts, you may re-roll a single dice roll to deter
       <modifiers/>
     </rule>
     <rule id="aa8381a2-dde2-5acf-ae70-353f9fefe05e" name="Watch this!" hidden="false" page="0">
+      <modifiers/>
+    </rule>
+    <rule id="7daa-8045-8144-d92a" name="Patronage of the Dark Gods" hidden="false">
+      <description>Psykers from this Detachment can choose to generate all of their psychic powers from the Discipline of Change, Plague or Excess (as appropriate) if they wish. However, if they do so, then the rules for Chaos Focus (see BRB) no longer apply to them; they follow the normal rules for Psychic Focus instead.</description>
       <modifiers/>
     </rule>
   </sharedRules>
