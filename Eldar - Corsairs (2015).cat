@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3ae4-9ad8-c53f-c5c3" revision="14" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Eldar: Corsairs (2015)" books="Imperial Armour 11: Second Edition (2015)" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3ae4-9ad8-c53f-c5c3" revision="15" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Eldar: Corsairs (2015)" books="Imperial Armour 11: Second Edition (2015)" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="43d3-de57-30bf-14be" name="Command Crew" points="0.0" categoryId="4bd4-7f76-50ee-7417" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Imperial Armour 11: SE (2015)" page="152">
       <entries/>
@@ -3171,6 +3171,12 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
 The controlling player may choose to have a Corsair Lynx deployed on the table in Hover mode as a Fast Skimmer during normal deployment, before the start of the first turn. If this option is utilised then the Lynx may not revert to a Zooming Flyer until the beginning of turn 2.</description>
           <modifiers/>
         </rule>
+        <rule id="47aa-7904-5778-20b0" name="*" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Death-from-the-Skies.pdf">
+          <description>These ground vehicles, Drop Pods or Skimmers may transition into Zooming Flyers in a temporary fashion. They gain the benefits of Agility, Pursuit and Combat Roles only while operating as Zooming Flyers. If they exit the board into Ongoing Reserves as Zooming Flyers, they may be targeted during the Dogfight phase, but do not count for determining Air Superiority.
+
+</description>
+          <modifiers/>
+        </rule>
       </rules>
       <profiles>
         <profile id="12ca-0f1c-3ef1-3f35" profileTypeId="3a08-ea03-a598-8615" name="Lynx" hidden="false" book="Imperial Armour 11: SE (2015)" page="173">
@@ -3181,9 +3187,9 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
             <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="11"/>
             <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="5"/>
             <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Vehicle (Flyer, Hover)"/>
-            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Attack Flyer"/>
+            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="2"/>
+            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="1"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -3193,6 +3199,9 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
           <modifiers/>
         </link>
         <link id="5d56-2b8e-b73b-5c36" targetId="4e7b-ba68-4a42-df94" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="46ea-a20f-6ce1-335e" targetId="978f-c419-1286-4893" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -3713,7 +3722,27 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
               </entries>
               <entryGroups/>
               <modifiers/>
-              <rules/>
+              <rules>
+                <rule id="3898-cd27-4096-0af8" name="Interceptor" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Death-from-the-Skies.pdf">
+                  <description>Interceptors are the assassins of the skies, intended to seek out and kill individual targets rather than perform indiscriminate air superiority missions. Counts as a Fighter for use in Attack Patterns.
+
+</description>
+                  <modifiers/>
+                </rule>
+                <rule id="ef11-bb70-3eea-3e21" name="Sky Assassins " hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Death-from-the-Skies.pdf">
+                  <description>At the beginning of the game, after all models have been deployed, a player whose force includes one or more Zooming Flyers whose Combat Role is Interceptor must select a single Combat Role as the target type for their Interceptors. Interceptors may re-roll all failed To Hit and Armour Penetration rolls of 1 when targeting their selected target type.
+
+In addition, Zooming Flyers of the Interceptor type always count as having the Skyfire special rule when firing any weapon in the Shooting phase or Dogfight phase, regardless of target type.
+
+</description>
+                  <modifiers/>
+                </rule>
+                <rule id="7a6c-96b8-cf39-1fdb" name="Interceptors and Dogfights" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Death-from-the-Skies.pdf">
+                  <description>During the Dogfight phase, a player with at least one Interceptor in Reserves or Ongoing Reserves during the Dogfight phase may choose to roll an additional D6 during the Interception sub-phase and must choose the highest single dice for their score, but must select an Interceptor to engage in the Dogfight if they are the attacker. In the Engage and Manoeuvre sub-phases, if an Interceptor is the attacking Flyer then its controlling player may set two hidden dice to different numbers instead of one, and may select one of those dice to use after their opponent has revealed their own dice. When defending, an Interceptor does not gain this bonus.
+</description>
+                  <modifiers/>
+                </rule>
+              </rules>
               <profiles>
                 <profile id="176d-1abe-82f6-fa25" profileTypeId="3a08-ea03-a598-8615" name="Nightwing" hidden="false" book="Imperial Armour 11: SE (2015)" page="170">
                   <characteristics>
@@ -3723,9 +3752,10 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
                     <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="10"/>
                     <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="2"/>
                     <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Vehicle (Flyer)"/>
-                    <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-                    <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-                    <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+                    <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Interceptor
+"/>
+                    <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="5"/>
+                    <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="5"/>
                   </characteristics>
                   <modifiers/>
                 </profile>
@@ -3887,7 +3917,12 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
                 </entryGroup>
               </entryGroups>
               <modifiers/>
-              <rules/>
+              <rules>
+                <rule id="878b-9bd6-3dfe-7aff" name="Strike-fighter Skyfire mode" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Death-from-the-Skies.pdf">
+                  <description>Zooming Flyers with the Strike-fighter Combat Role may choose to enter Skyfire mode at the beginning of each Shooting phase. If they enter Skyfire mode then all weapons fired from that Flyer in that Shooting phase gain the Skyfire special rule.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
               <profiles>
                 <profile id="8182-51e7-b697-d638" profileTypeId="3a08-ea03-a598-8615" name="Phoenix" hidden="false" book="Imperial Armour 11: SE (2015)" page="171">
                   <characteristics>
@@ -3897,9 +3932,10 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
                     <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="10"/>
                     <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="3"/>
                     <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Vehicle (Flyer)"/>
-                    <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-                    <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-                    <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+                    <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Strike-fighter
+"/>
+                    <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="5"/>
+                    <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="4"/>
                   </characteristics>
                   <modifiers/>
                 </profile>
@@ -3933,6 +3969,9 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
           <modifiers/>
         </link>
         <link id="f499-780e-7286-cf66" targetId="05b3a4c5-d439-5178-588c-2b58eabf8f03" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="214c-e820-4dc4-83bb" targetId="978f-c419-1286-4893" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -4983,6 +5022,24 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
           <description>Rear Ramp: Up to 3 units may disembark from the Vampire Raider in a single turn.</description>
           <modifiers/>
         </rule>
+        <rule id="1eb2-8690-0dbb-8624" name="Defensive Fire" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Death-from-the-Skies.pdf">
+          <description>A Zooming Flyer with the Air Leviathan Combat Role may choose to have any weapons it carries with Strength 7 or less fire as Defensive Weapons in any given Shooting phase. A Defensive Weapon must fire using the Skyfire special rule, and each Defensive Weapon may fire at a different target. In addition, Defensive Weapons do not count against the number of weapons a Flyer may use in a single Shooting phase.
+
+During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongoing Reserves, they must roll an additional D6 during the Interception sub-phase and use the single lowest dice result to determine their score. Air Leviathan count as Bombers when determining the player’s score during that sub-phase. Also, if chosen as the defending Flyer, an Air Leviathan that is not performing a Head-on Pass may choose to designate any of its Strength 7 or less weapons as Defensive Weapons as though it were a Shooting phase – these weapons may each make a single attack upon the opposing Flyer after all other weapons fire has been resolved regardless of line of sight or range and using the Skyfire special rule.
+
+
+
+
+
+
+</description>
+          <modifiers/>
+        </rule>
+        <rule id="b8d0-0262-8f75-f40c" name="Air Leviathan Resilience" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Death-from-the-Skies.pdf">
+          <description>When affected by a Crew Stunned result on the Vehicle Damage table, an Air Leviathan is not reduced to Pursuit and Agility of 1, as its crew is large enough to replace any incapacitated members. Instead, when affected by Crew Stunned, an Air Leviathan loses the benefits of the Defensive Fire special rule.
+</description>
+          <modifiers/>
+        </rule>
       </rules>
       <profiles>
         <profile id="e3c9-892b-4786-033d" profileTypeId="3a08-ea03-a598-8615" name="Vampire Raider" hidden="false" book="Imperial Armour 11: SE (2015)" page="176">
@@ -4993,9 +5050,9 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
             <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="11"/>
             <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="12"/>
             <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Super-heavy Flyer (Hover)"/>
-            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Air Leviathan"/>
+            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="4"/>
+            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="3"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -6657,6 +6714,34 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
         </link>
       </links>
     </entry>
+    <entry id="1a3c-9e62-3c88-323f" name="Master-crafted Witch Staff" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="1a3c-9e62-3c88-323f" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="direct parent" childId="9687-c1af-7454-ff83" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="033f-fd90-906f-24c0" targetId="869b-65b0-2efd-de69" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="a044-714c-4cdb-7fcd" targetId="adbb-790a-110e-a0da" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="6d4f-589e-efed-e0bc" targetId="d422-aa34-6a70-fe52" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="13e3-d2f0-5906-8d24" targetId="509b-2870-300e-b1c3" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="1097-63a3-75d0-aa74" name="Multiphase Key Generator" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups/>
@@ -6672,6 +6757,18 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
       <profiles/>
       <links>
         <link id="1d17-c6a9-e146-5e68" targetId="3c2c-9fe4-1a44-03a3" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="98e4-79c0-a253-bf9c" name="Plasma Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Warhammer 40K: rulebook">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="c5a0-ecbf-7d3a-76bb" targetId="ebcf488f-275e-ef99-9a26-8b457051616e" linkType="profile">
           <modifiers/>
         </link>
       </links>
@@ -6745,6 +6842,18 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
       <profiles/>
       <links>
         <link id="c679-2dbb-a829-f241" targetId="9345-b07e-665b-c6a6" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="69c7-03bf-36e0-cbc5" name="Shadowwave Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="IA11 2E">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="fda1-653b-42f0-5f49" targetId="3f36-4f02-f6f0-de12" linkType="profile">
           <modifiers/>
         </link>
       </links>
@@ -6879,30 +6988,6 @@ Lust for Dark Power: The power of his ancestors sings through him, encouraging t
       <profiles/>
       <links/>
     </entry>
-    <entry id="98e4-79c0-a253-bf9c" name="Plasma Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Warhammer 40K: rulebook">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="c5a0-ecbf-7d3a-76bb" targetId="ebcf488f-275e-ef99-9a26-8b457051616e" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="69c7-03bf-36e0-cbc5" name="Shadowwave Grenades" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="IA11 2E">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="fda1-653b-42f0-5f49" targetId="3f36-4f02-f6f0-de12" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
     <entry id="9687-c1af-7454-ff83" name="Witch Staff" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
@@ -6911,34 +6996,6 @@ Lust for Dark Power: The power of his ancestors sings through him, encouraging t
       <profiles/>
       <links>
         <link id="fafc-fb9f-cca4-998f" targetId="869b-65b0-2efd-de69" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="1a3c-9e62-3c88-323f" name="Master-crafted Witch Staff" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="1a3c-9e62-3c88-323f" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="direct parent" childId="9687-c1af-7454-ff83" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="033f-fd90-906f-24c0" targetId="869b-65b0-2efd-de69" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="a044-714c-4cdb-7fcd" targetId="adbb-790a-110e-a0da" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="6d4f-589e-efed-e0bc" targetId="d422-aa34-6a70-fe52" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="13e3-d2f0-5906-8d24" targetId="509b-2870-300e-b1c3" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -8009,6 +8066,11 @@ D6     Result
 4-5     Warp Terrors: Daemons swirl close about the frayed veil that separates realspace from the Warp, taunting the Eldar witch and their kin with the doom that awaits them. All friendly units with the Faction Eldar Corsair within 6&quot;, including this model and any unit it has joined, must make an immediate Morale check, rolling three D6 and keeping the two highest dice to determine the result.
 
 6         The Eye of She Who Thirsts: The psyker gains the attention of Slaanesh. For the remainder of the game, whenever this model is called upon to take a Psychic test, the controlling player must roll on the Wild Psyker Perils of the Warp table if any doubles are rolled. A model already affected by this result must re-roll any results of 6 on this table.</description>
+      <modifiers/>
+    </rule>
+    <rule id="978f-c419-1286-4893" name="Break Turns" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Death-from-the-Skies.pdf">
+      <description>Zooming Flyers with the Strike-fighter, Air Leviathan or Utility Craft Combat Roles may not make Break Turns.
+</description>
       <modifiers/>
     </rule>
   </sharedRules>
