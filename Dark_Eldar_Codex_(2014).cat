@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="635e04e0-204e-2672-055e-6d081ee0fc93" revision="25" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Dark Eldar: Codex (2014)" books="" authorName="BSData on GitHub" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="635e04e0-204e-2672-055e-6d081ee0fc93" revision="26" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Dark Eldar: Codex (2014)" books="Dark Eldar: Codex (2014)" authorName="BSData on GitHub" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="eb21d12e-1d75-d23b-d086-af82f107b768" name="Court of the Archon" points="0.0" categoryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="0" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -2900,19 +2900,23 @@
           <description>When entering play via Deep Strike, if it does so within 12&quot; of an enemy Flyer or Skimmer, its controlling player may re-roll the Scatter dice to determine where it arrives.</description>
           <modifiers/>
         </rule>
+        <rule id="2b02-b842-8565-80c7" name="Strike-fighter Skyfire mode" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Death-from-the-Skies.pdf">
+          <description>Zooming Flyers with the Strike-fighter Combat Role may choose to enter Skyfire mode at the beginning of each Shooting phase. If they enter Skyfire mode then all weapons fired from that Flyer in that Shooting phase gain the Skyfire special rule.</description>
+          <modifiers/>
+        </rule>
       </rules>
       <profiles>
         <profile id="ea1c-d775-fe1b-cb04" profileTypeId="3a08-ea03-a598-8615" name="Raven Strike Fighter" hidden="false" book="IA: Aeronautica (2012)" page="69">
           <characteristics>
-            <characteristic characteristicId="9878-e3f6-b7b4-7225" name="BS"/>
+            <characteristic characteristicId="9878-e3f6-b7b4-7225" name="BS" value="4"/>
             <characteristic characteristicId="3a4e-bc1d-4a12-7176" name="Front" value="10"/>
             <characteristic characteristicId="d12e-7bdb-191c-4849" name="Side" value="10"/>
             <characteristic characteristicId="a4cb-791a-6a75-4e4a" name="Rear" value="10"/>
             <characteristic characteristicId="93e6-d4b1-28a8-944b" name="HP" value="2"/>
             <characteristic characteristicId="eb65-838c-8eaa-8b5d" name="Type" value="Flyer"/>
-            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="N/A"/>
-            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="N/A"/>
-            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="N/A"/>
+            <characteristic characteristicId="d477-c087-173f-9f1c" name="Combat Role" value="Strike Fighter"/>
+            <characteristic characteristicId="e04d-332e-8b52-0071" name="Pursuit" value="5"/>
+            <characteristic characteristicId="ae34-f5c0-19af-4883" name="Agility" value="4"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -2931,6 +2935,9 @@
           <modifiers/>
         </link>
         <link id="54a0-0b47-2ece-fa75" targetId="302a-4621-5e54-1d84" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="a7eb-9913-ec44-9888" targetId="f097-74ed-2c08-a3c5" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -4183,6 +4190,21 @@
         </link>
       </links>
     </entry>
+    <entry id="a15c-d185-f93f-0e9a" name="The Armour of Misery" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles>
+        <profile id="1ea3-d2af-ab4d-a3c6" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Armour of Misery" hidden="false">
+          <characteristics>
+            <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The Armour of Misery confers a 4+ Armour Save, a 6+ invulnerable save and the Fear special rule. All enemy units within 6&quot; of the bearer suffer a -2 Leadership penalty."/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
+    </entry>
     <entry id="0531-06d8-d779-1f80" name="The Djin Blade" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
@@ -4981,21 +5003,6 @@
         </link>
       </links>
     </entry>
-    <entry id="a15c-d185-f93f-0e9a" name="The Armour of Misery" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles>
-        <profile id="1ea3-d2af-ab4d-a3c6" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="The Armour of Misery" hidden="false">
-          <characteristics>
-            <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="The Armour of Misery confers a 4+ Armour Save, a 6+ invulnerable save and the Fear special rule. All enemy units within 6&quot; of the bearer suffer a -2 Leadership penalty."/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links/>
-    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="359216fa-43af-366a-a5dc-b73b1fca678e" name="1- 12 of the Court of the Archon" defaultEntryId="a15ebb48-3bb4-8291-dd58-e7489e55818c" minSelections="1" maxSelections="12" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -5516,6 +5523,11 @@ from. This is cumulative with the Agonising and/or Master of Pain special rules.
     </rule>
     <rule id="e1cd281e-8ad7-d38a-f9c0-d84c345787f2" name="Blade Whip" hidden="false" book="Codex: Dark Eldar 2014">
       <description>Models fighting with a razorflail re-roll all failed To Hit rolls in close combat. </description>
+      <modifiers/>
+    </rule>
+    <rule id="f097-74ed-2c08-a3c5" name="Break Turns" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Death-from-the-Skies.pdf">
+      <description>Zooming Flyers with the Strike-fighter, Air Leviathan or Utility Craft Combat Roles may not make Break Turns.
+</description>
       <modifiers/>
     </rule>
     <rule id="93152e90-4e6e-849b-64a9-8a00921ad937" name="Bulky" hidden="false" book="BRB 2014" page="159">
