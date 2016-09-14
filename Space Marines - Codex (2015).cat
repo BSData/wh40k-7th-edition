@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="89" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" books="" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="90" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" books="" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="320d-148f-008f-f2a4" name="&quot;1st Company Veterans" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="40k Apocalypse">
       <entries/>
@@ -12655,6 +12655,10 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                       <description>Imperial Fists models can re-roll armour penetration rolls against buildings that do not result in a glancing or penetrating hit, and add 1 to the result when rolling on the Building Damage table.  In addition, imperial Fists, Devastator Squads and Centurion Devestator Squads have the Tank Hunters special rule.</description>
                       <modifiers/>
                     </rule>
+                    <rule id="c144-e8e8-8271-7978" name="Centurion Warsuits" hidden="false" book="Angels of Death" page="82">
+                      <description>In an Imperial Fists Detachment, Centurion Devastator Squads can be taken as Elites choices as well as Heavy Support choices, and Centurion Assault Squads can be taken as Fast Attack choices as well as Elites choices.</description>
+                      <modifiers/>
+                    </rule>
                   </rules>
                   <profiles/>
                   <links>
@@ -24074,6 +24078,26 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
     </link>
     <link id="94f1-d995-9605-b6b1" targetId="8935-0161-16aa-c749" linkType="entry" categoryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74">
       <modifiers/>
+    </link>
+    <link id="7170-c4f7-8a6f-ef41" targetId="011b-a1b5-0982-fc11" linkType="entry" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="e587907b-cbac-80cd-d83d-1d007376c2fb" field="selections" type="less than" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+    </link>
+    <link id="4ebe-5325-30c1-5062" targetId="e80d-4913-76b1-2f5f" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="e587907b-cbac-80cd-d83d-1d007376c2fb" field="selections" type="less than" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </link>
   </links>
   <sharedEntries>
