@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="24a0-49b6-ecef-1c5a" revision="29" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="23" battleScribeVersion="1.15" name="Tau Empire: Codex (2015)" books="Codex: Tau Empire (2015), Kau&apos;yon (2015), Mont&apos;ka (2015), Imperial Armour 4: Second Edition (2012), Death From the Skies (2016)" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="24a0-49b6-ecef-1c5a" revision="30" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="23" battleScribeVersion="1.15" name="Tau Empire: Codex (2015)" books="Codex: Tau Empire (2015), Kau&apos;yon (2015), Mont&apos;ka (2015), Imperial Armour 4: Second Edition (2012), Death From the Skies (2016)" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="624c35d9-cb7e-26b8-1d3a-77a4bc324d57" name="Ambush Spearhead" points="75.0" categoryId="38cf4ccf-0665-45cb-a773-fea06ee1467a" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Spearhead_Expansion.pdf" page="11">
       <entries/>
@@ -1436,12 +1436,6 @@ updated by Eric Falsken, eric@everylittlething.net</description>
     <link id="3150ed16-d9a6-8eef-f2e6-a25c3c9064a9" targetId="cecabc47-5a5d-64d4-6e99-5755d4907be2" linkType="entry" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
       <modifiers/>
     </link>
-    <link id="31223abf-e7b0-b9a7-c8a0-629b27f1f015" targetId="ba23-ca86-c08a-78df" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
-      <modifiers/>
-    </link>
-    <link id="5ffd78b3-3433-d623-1f61-9e10a17e342c" targetId="76e4-7f6d-0c56-95df" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
-      <modifiers/>
-    </link>
     <link id="227a77c0-6305-892b-5965-1ae374cf6427" targetId="5b84d7be-d9ac-0795-54b8-9fa60a2c4da6" linkType="entry" categoryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
       <modifiers/>
     </link>
@@ -1693,6 +1687,12 @@ updated by Eric Falsken, eric@everylittlething.net</description>
     <link id="4f59-796b-9de4-9b7a" targetId="7170-30b8-bc03-f2bf" linkType="entry" categoryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
       <modifiers/>
     </link>
+    <link id="4a3c-314b-4490-bdfe" targetId="13602f3a-b73f-1b41-17a0-dca7782d4bf0" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
+      <modifiers/>
+    </link>
+    <link id="6099-827d-11af-9619" targetId="37423448-21bf-e3ff-cb66-f2cbbb21fe3a" linkType="entry" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438">
+      <modifiers/>
+    </link>
   </links>
   <sharedEntries>
     <entry id="6b5a-5260-e43b-f326" name="Air Caste Support Cadre" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -1731,7 +1731,24 @@ updated by Eric Falsken, eric@everylittlething.net</description>
         </rule>
       </rules>
       <profiles/>
-      <links/>
+      <links>
+        <link id="ce54-d869-d408-b239" targetId="516b-65e7-7ff6-13c6" linkType="rule">
+          <modifiers>
+            <modifier type="hide" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="category" childId="ef2b-83bd-1bad-5742" field="selections" type="instance of" value="0.0"/>
+                    <condition parentId="category" childId="28b94f51-e66b-4096-aa59-0c9df620a77d" field="selections" type="instance of" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </link>
+      </links>
     </entry>
     <entry id="cf91-05c4-5bb3-d9d1" name="Air Superiority Cadre" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Mont&apos;ka" page="81">
       <entries/>
@@ -2325,10 +2342,10 @@ Killing Blade: Rending until the end of the current phase.</description>
         </link>
       </links>
     </entry>
-    <entry id="76e4-7f6d-0c56-95df" name="AX3 Razorshark Strike Fighters" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Death From the Skies (2016)">
+    <entry id="76e4-7f6d-0c56-95df" name="AX3 Razorshark Strike Fighter Wing" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Death From the Skies (2016)">
       <entries/>
       <entryGroups>
-        <entryGroup id="8675-0189-cf77-26cf" name="Wing Members - up to 4" defaultEntryId="4cdb-fafb-29a7-eeb5" minSelections="1" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="8675-0189-cf77-26cf" name="Wing Members - 2 to 4" defaultEntryId="4cdb-fafb-29a7-eeb5" minSelections="2" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -2342,7 +2359,11 @@ Killing Blade: Rending until the end of the current phase.</description>
       <modifiers/>
       <rules/>
       <profiles/>
-      <links/>
+      <links>
+        <link id="bfeb-db0f-4845-31ff" targetId="516b-65e7-7ff6-13c6" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
     <entry id="37423448-21bf-e3ff-cb66-f2cbbb21fe3a" name="AX39 Sun Shark Bomber" points="160.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -2505,10 +2526,10 @@ Killing Blade: Rending until the end of the current phase.</description>
         </link>
       </links>
     </entry>
-    <entry id="ba23-ca86-c08a-78df" name="AX39 Sun Shark Bombers" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Death From the Skies (20160">
+    <entry id="ba23-ca86-c08a-78df" name="AX39 Sun Shark Bomber Wing" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Death From the Skies (2016)">
       <entries/>
       <entryGroups>
-        <entryGroup id="a7b4-1d12-7972-7d15" name="Wing Members - up to 4" defaultEntryId="9f35-ecf2-8029-742e" minSelections="1" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="a7b4-1d12-7972-7d15" name="Wing Members - 2 to 4" defaultEntryId="9f35-ecf2-8029-742e" minSelections="2" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -2522,7 +2543,11 @@ Killing Blade: Rending until the end of the current phase.</description>
       <modifiers/>
       <rules/>
       <profiles/>
-      <links/>
+      <links>
+        <link id="f3b1-87ec-cbcd-006b" targetId="516b-65e7-7ff6-13c6" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
     <entry id="38156693-0c4e-0842-75c0-1029e1429221" name="Barracuda Air Superiority Fighter [FW]" points="130.0" categoryId="c274d0b0-5866-44bc-9810-91c136ae7438" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="IA 3 SE: Taros Campaign" page="185">
       <entries>
