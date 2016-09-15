@@ -84,6 +84,29 @@
         </link>
       </links>
     </entry>
+    <entry id="280e-54b3-eb19-f978" name="Razorwing Jetfigter Wing" points="0.0" categoryId="8c73-dac2-10f4-9b50" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="2919-41dc-10db-395c" name="Razorwings (2 - 4)" defaultEntryId="a318-6ae9-2c70-8370" minSelections="2" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="a318-6ae9-2c70-8370" targetId="5fe16e24-3b9c-2c66-fcd1-0d9f086691a4" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="9ff1-1cfd-8464-ddce" targetId="2754-ffe0-8528-f2de" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="809c5b28-49ee-fbb2-22ab-bbdf6556f003" name="Realspace Raiders Detachment" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups/>
@@ -202,6 +225,29 @@
       <rules/>
       <profiles/>
       <links/>
+    </entry>
+    <entry id="00d3-b58e-4012-fc3b" name="Voidraven Bomber Wing" points="0.0" categoryId="8c73-dac2-10f4-9b50" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="1321-fd16-147a-780e" name="Voidravens (2 - 4)" defaultEntryId="1937-f657-5e58-f79b" minSelections="2" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="1937-f657-5e58-f79b" targetId="eb483764-181e-c321-46a8-f4ef9437119b" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="1e5c-ee7d-6c66-4f63" targetId="2754-ffe0-8528-f2de" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
   </entries>
   <rules/>
@@ -1082,7 +1128,7 @@
         </link>
       </links>
     </entry>
-    <entry id="1d25-02de-101a-f8d9" name="Formation: Blackheart Talon" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Death from the Skies">
+    <entry id="1d25-02de-101a-f8d9" name="Formation: Blackheart Talon" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Death from the Skies" page="136">
       <entries/>
       <entryGroups>
         <entryGroup id="f0b1-ec7f-1c27-ad45" name="Razorwing Jetfighters" defaultEntryId="1e69-be25-e7ce-929d" minSelections="2" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -1140,7 +1186,18 @@
         </rule>
       </rules>
       <profiles/>
-      <links/>
+      <links>
+        <link id="8c5c-4b72-80e9-58cc" targetId="2754-ffe0-8528-f2de" linkType="rule">
+          <modifiers>
+            <modifier type="hide" field="name" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="2fadceb5-5601-9e03-9a46-41c3aa1a24c5" field="selections" type="instance of" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+      </links>
     </entry>
     <entry id="bbbff194-9df1-4bc7-87d3-0fb30df5d994" name="Formation: Kabalite Raiding Party" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -5835,6 +5892,16 @@ A Hit &amp; Run move is not slowed by difficult terrain, but takes Dangerous Ter
     </rule>
     <rule id="35e69364-cf41-1e95-ed7b-08956457f582" name="Warlord Trait: Towering Arrogance" hidden="false">
       <description>The Warlord, and all friendly units with the Dark Eldar Faction within 12&quot; of the Warlord, have the Fearless special rule.</description>
+      <modifiers/>
+    </rule>
+    <rule id="2754-ffe0-8528-f2de" name="Wing Leader (Dark Eldar)" hidden="false" book="Death from the Skies" page="80">
+      <description>Wing Leaders are free upgrades for Flyers. One model in each Flyer Wing can be upgraded to a Wing Leader at no additional points cost. At the start of any game, immediately after determining your Warlord Trait, roll on the Wing Leader table relevant to their Faction for each Wing Leader to determine their special rule.
+
+1-2 Bloodthirsty Hunter: Add 1 to the Wing Leader’s Pursuit value. Add an additional 1 when making Engagement rolls for the Wing Leader in a Dogfight.
+
+3-4 Arrogant Perfectionist: You can re-roll one dice roll for the Wing Leader each turn.
+
+5-6 Selfish Leader: You can add 1 to this Wing Leader’s Ballistic Skill if they attack before the other Flyers in their Wing (there must still be at least one other Flyer from the Flyer Wing on the battlefield). </description>
       <modifiers/>
     </rule>
   </sharedRules>
