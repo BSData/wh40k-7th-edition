@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6cacb5fc-d6bf-078d-307e-6f16c72d5f2a" revision="30" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="1" battleScribeVersion="1.15" name="Blood Angels: Codex (2014)" books="Codex: Blood Angels" authorName="Kangodo (and others)" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6cacb5fc-d6bf-078d-307e-6f16c72d5f2a" revision="31" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="1" battleScribeVersion="1.15" name="Blood Angels: Codex (2014)" books="Codex: Blood Angels" authorName="Kangodo (and others)" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repos" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="fa1acfe9-aaea-9141-a026-3a83f5286cee" name="Angel&apos;s Fury Spearhead Force" points="0.0" categoryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -10300,12 +10300,12 @@ Terminator Assault Squads may charge in the turn they arrive by Deep Strike, but
     <entry id="20be-c43f-026e-4ca0" name="&quot;Death Company Strike Force&quot;" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups>
-        <entryGroup id="af48-4167-9285-df7c" name="Chaplain" defaultEntryId="d50d-7d42-4bb0-0365" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="af48-4167-9285-df7c" name="Chaplain" defaultEntryId="2c0c-95a2-c9c8-2281" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
           <modifiers/>
           <links>
-            <link id="d50d-7d42-4bb0-0365" targetId="cc78-114c-c6f4-651a" linkType="entry">
+            <link id="2c0c-95a2-c9c8-2281" targetId="cc78-114c-c6f4-651a" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -14193,7 +14193,14 @@ Descent of Angels Warlord Trait.
             <characteristic characteristicId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" name="Ld" value="10"/>
             <characteristic characteristicId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="Save" value="3+/4++"/>
           </characteristics>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/4++" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="direct parent" childId="24b2-bb00-b277-a10d" field="selections" type="at least" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <links>
@@ -24130,31 +24137,6 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
               </profiles>
               <links/>
             </entry>
-            <entry id="8307-a789-7a55-adfc" name="Hammer of Baal" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="Angel&apos;s Blade" page="117">
-              <entries/>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="direct parent" childId="bf6d8881-63fa-2b1e-c143-03d31d0a0c0f" field="selections" type="instance of" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <rules/>
-              <profiles>
-                <profile id="cfcb-7323-28ae-a759" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Hammer of Baal" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
-                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="x2"/>
-                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
-                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Concussive, Master-crafted, Specialist Weapon, Unwieldy"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
           </entries>
           <entryGroups/>
           <modifiers>
@@ -24306,7 +24288,7 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
               <modifiers>
                 <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="direct parent" childId="cc78-114c-c6f4-651a" field="selections" type="instance of" value="0.0"/>
+                    <condition parentId="direct parent" childId="cc78-114c-c6f4-651a" field="selections" type="at least" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -24340,9 +24322,23 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
                 <conditionGroup type="and">
                   <conditions>
                     <condition parentId="force type" childId="b5433d42-5fc2-ea9e-86a9-470b00474574" field="selections" type="at least" value="1.0"/>
-                    <condition parentId="force type" childId="82f7-c738-f9fb-8e90" field="selections" type="instance of" value="1.0"/>
                   </conditions>
-                  <conditionGroups/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="force type" childId="82f7-c738-f9fb-8e90" field="selections" type="instance of" value="1.0"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition parentId="direct parent" childId="cc78-114c-c6f4-651a" field="selections" type="at least" value="1.0"/>
+                            <condition parentId="force type" childId="2fadceb5-5601-9e03-9a46-41c3aa1a24c5" field="selections" type="instance of" value="0.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -24620,14 +24616,47 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
           </links>
         </entry>
         <entry id="bac62c16-60a4-fb62-9439-2a1715482a27" name="Thunder hammer" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
+          <entries>
+            <entry id="9858-75a4-d709-fa29" name="Hammer of Baal" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Angel&apos;s Blade" page="117">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="category" childId="bf6d8881-63fa-2b1e-c143-03d31d0a0c0f" field="selections" type="less than" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles>
+                <profile id="3471-0c5b-8fd9-7bbb" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Hammer of Baal" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="x2"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Concussive, Master-crafted, Specialist Weapon, Unwieldy"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
           <entryGroups/>
           <modifiers/>
           <rules/>
           <profiles/>
           <links>
             <link id="00ec7356-cc1b-42c2-3f92-e076c102c272" targetId="39bcef9a-88b7-7bce-161c-e68398d8638f" linkType="profile">
-              <modifiers/>
+              <modifiers>
+                <modifier type="hide" field="None" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="bac62c16-60a4-fb62-9439-2a1715482a27" childId="9858-75a4-d709-fa29" field="selections" type="at least" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
           </links>
         </entry>
@@ -24752,14 +24781,47 @@ If your Warlord is an Imperial Knight, that Knight is a character. A Knight Warl
           </links>
         </entry>
         <entry id="dc06c92d-200c-683d-b7bb-e369716055f3" name="Thunder hammer" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
+          <entries>
+            <entry id="6052-9da6-d64e-5c02" name="Hammer of Baal" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Angel&apos;s Blade" page="117">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="category" childId="bf6d8881-63fa-2b1e-c143-03d31d0a0c0f" field="selections" type="less than" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles>
+                <profile id="3610-2e33-ede6-faa2" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Hammer of Baal" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+                    <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="x2"/>
+                    <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="2"/>
+                    <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Concussive, Master-crafted, Specialist Weapon, Unwieldy"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
           <entryGroups/>
           <modifiers/>
           <rules/>
           <profiles/>
           <links>
             <link id="34f9161e-ccf4-d245-381f-5519d029d7ea" targetId="39bcef9a-88b7-7bce-161c-e68398d8638f" linkType="profile">
-              <modifiers/>
+              <modifiers>
+                <modifier type="hide" field="None" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="dc06c92d-200c-683d-b7bb-e369716055f3" childId="6052-9da6-d64e-5c02" field="selections" type="at least" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
           </links>
         </entry>
