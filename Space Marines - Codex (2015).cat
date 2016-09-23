@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="94" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" books="" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" revision="95" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" battleScribeVersion="1.15" name="Space Marines: Codex (2015)" books="" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40k/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="320d-148f-008f-f2a4" name="&quot;1st Company Veterans" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="40k Apocalypse">
       <entries/>
@@ -22587,6 +22587,65 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
         </link>
       </links>
+    </entry>
+    <entry id="1fb7-f031-8fe1-afbf" name="&quot;Deathwatch Strike Team" points="0.0" categoryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="4d10-da83-f285-42d3" name="Kill Teams - 2+" minSelections="2" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="f217-2180-b1aa-7c99" targetId="49bc-2c78-3c69-5149" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="f1ef-f0b7-ec27-f8dc" targetId="55d9-82be-6a7e-6416" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="f6e6-d1aa-463a-3a10" name="Watch Captain" defaultEntryId="3725-27ac-edb3-1ded" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="3725-27ac-edb3-1ded" targetId="41fb-65ac-f6e8-505c" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="12ce-c369-ca2d-d086" name="Antiphasic Bolts" hidden="false" book="War Zone: Damnos" page="45">
+          <description>In addition to their other ammunition, bolter or combi-bolter armed models from this formation have antiphasic bolts.</description>
+          <modifiers/>
+        </rule>
+        <rule id="a836-9719-669c-5373" name="Antiphasic" hidden="false" book="War Zone: Damnos" page="45">
+          <description>Successful Reanimation Protocols and Ever-living rolls caused by antiphasic bolts must be re-rolled.</description>
+          <modifiers/>
+        </rule>
+        <rule id="657a-62bd-fd25-4d60" name="Forewarned is Forearmed" hidden="false" book="War Zone: Damnos" page="45">
+          <description>When determining Warlord Traits, choose a codex from the following list: Dark Eldar, Eldar, Necrons, Orks, Tau Empire or Tyranids. All units in this Formation have the Preferred Enemy special rule against all units from the chosen codex.</description>
+          <modifiers/>
+        </rule>
+        <rule id="8f54-dc11-80fb-73a9" name="Scour the Xenos" hidden="false" book="War Zone: Damnos" page="45">
+          <description>Every time an enemy Warlord from one of the Codexes listed above is removed as a casualty as the result of a Wound caused by a model from this Formation, you immediately score an extra Strategic Victory Point.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="dace-93a1-c46a-003f" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Antiphasic Bolts" hidden="false" book="War Zone: Damnos" page="45">
+          <characteristics>
+            <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="24&quot;"/>
+            <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="4"/>
+            <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
+            <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Rapid Fire, Antiphasic"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
     </entry>
   </entries>
   <rules/>
@@ -50432,6 +50491,15 @@ In addition, units containing one or more models with the Zealot special rule re
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="8aa7-5e96-062b-9d10" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Seismic Hammer" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
+        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="x2"/>
+        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
+        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Concussive, Specialist Weapon, Unwieldy"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="7cecbcd2-b268-c364-876d-bae5c9f0a2e0" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Siege Shield *" hidden="false" book="Codex Adeptus Astartes" page="197">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="A vehicle with a siege shield automatically passes Dangerous Terrain tests."/>
@@ -50657,15 +50725,6 @@ In addition, units containing one or more models with the Zealot special rule re
         <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="5"/>
         <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="4"/>
         <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Ordnance 1, Barrage, Large Blast"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="8aa7-5e96-062b-9d10" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Seismic Hammer" hidden="false">
-      <characteristics>
-        <characteristic characteristicId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Range" value="-"/>
-        <characteristic characteristicId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="Strength" value="x2"/>
-        <characteristic characteristicId="6abee736-f8d3-498e-97ac-a5c68445609f" name="AP" value="1"/>
-        <characteristic characteristicId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Type" value="Melee, Concussive, Specialist Weapon, Unwieldy"/>
       </characteristics>
       <modifiers/>
     </profile>
