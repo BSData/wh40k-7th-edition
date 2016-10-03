@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f840-ed73-44ab-3d6a" revision="1" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="46" battleScribeVersion="1.15" name="Genestealer Cults - Codex" books="Codex: Genestealer Cults" authorName="GenWilhelm" authorContact="" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f840-ed73-44ab-3d6a" revision="2" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="46" battleScribeVersion="1.15" name="Genestealer Cults - Codex" books="Codex: Genestealer Cults" authorName="GenWilhelm" authorContact="" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="9b30-18fa-bed4-4722" name="Brood Brothers" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -23,6 +23,34 @@
       </entryGroups>
       <modifiers/>
       <rules/>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="afec-5ed0-c880-4de5" name="Cult Insurrection Command Benefits" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="e34d-8198-502a-4daa" field="selections" type="instance of" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="58e0-93d6-48a2-5357" name="Cult Father" hidden="false" book="Codex: Genestealer Cults" page="66">
+          <description>If you choose a Patriarch from this Detachment as your Warlord, you can re-roll the result when rolling on the Warlord Traits table in Codex: Genestealer Cults.</description>
+          <modifiers/>
+        </rule>
+        <rule id="a585-cf83-fe47-cbf5" name="An Uprising Generations in the Making" hidden="false" book="Codex: Genestealer Cults" page="66">
+          <description>All non-vehicle units in this Detachment have the Infiltrate special rule (units that already hve the Infiltrate special rule instead have the Shrouded special rule during the first game turn). In addition, you can add 1 to all your Reserve Rolls, whilst your opponent must subtract 1 from all their Reserve Rolls.</description>
+          <modifiers/>
+        </rule>
+        <rule id="7538-e1d1-9a7a-9722" name="Numbers Beyond Counting" hidden="false" book="Codex: Genestealer Cults" page="66">
+          <description>Each time a unit from this Detachment arrives from Ongoing Reserves, it is reinforced - you can return D6 models to the unit that were slain previously during the battle.</description>
+          <modifiers/>
+        </rule>
+      </rules>
       <profiles/>
       <links/>
     </entry>
@@ -78,15 +106,22 @@
     </entry>
     <entry id="bd37-bf46-91b9-5d21" name="Shadow Skulkers" points="0.0" categoryId="ef2b-83bd-1bad-5742" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
-      <entryGroups/>
+      <entryGroups>
+        <entryGroup id="5327-946e-c4b0-4ed1" name="Purestrain Genestealers" defaultEntryId="112b-b982-ff9c-e2fe" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="112b-b982-ff9c-e2fe" targetId="7a47-190b-914c-2edc" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
       <modifiers/>
       <rules/>
       <profiles/>
-      <links>
-        <link id="20ce-e98d-0402-4309" targetId="7a47-190b-914c-2edc" linkType="entry">
-          <modifiers/>
-        </link>
-      </links>
+      <links/>
     </entry>
   </entries>
   <rules/>
@@ -667,7 +702,7 @@
       </entryGroups>
       <modifiers/>
       <rules>
-        <rule id="cff4-608b-9d3d-e876" name="Nexus of Devotion" hidden="false" page="72">
+        <rule id="cff4-608b-9d3d-e876" name="Nexus of Devotion" hidden="false" book="Codex: Genestealer Cults" page="72">
           <description>Friendly units with the Genestealer Cults Faction within 12&quot; of this model have the Feel No Pain (6+) special rule. Models that already have the Feel No Pain (excluding Acolyte Iconwards) special rule instead add 1 to their Feel No Pain rolls.</description>
           <modifiers/>
         </rule>
@@ -972,7 +1007,7 @@
       </entryGroups>
       <modifiers/>
       <rules>
-        <rule id="d8f9-65f1-34ab-b842" name="Familial Pride" hidden="false">
+        <rule id="d8f9-65f1-34ab-b842" name="Familial Pride" hidden="false" book="Codex: Genestealer Cults" page="89">
           <description>Any non-vehicle unit in this Formation that is within 6&quot; of at least one other unit from the same Formation adds 1 to both its Leadership and its Weapon Skill.</description>
           <modifiers/>
         </rule>
@@ -1020,11 +1055,11 @@
       </entryGroups>
       <modifiers/>
       <rules>
-        <rule id="4123-ff1c-56e6-faf5" name="Lords of the Brood" hidden="false">
+        <rule id="4123-ff1c-56e6-faf5" name="Lords of the Brood" hidden="false" book="Codex: Genestealer Cults" page="93">
           <description>The three models of a Broodcoven must be deployed as a single unit. They can still join friendly units, but if one does so, all other Broodcoven models must join the same unit. Similarly, if one Broodcoven models leaves a unit, all other Broodcoven models must also leave that unit and they must form back into a new unit composed of Independent Characters again.</description>
           <modifiers/>
         </rule>
-        <rule id="623c-c245-7912-e5ac" name="Coven Masters" hidden="false">
+        <rule id="623c-c245-7912-e5ac" name="Coven Masters" hidden="false" book="Codex: Genestealer Cults" page="93">
           <description>The Broodcoven unit and any unit they join have the following special rules whilst the relevant model from this Formation is still alive.
 Patriarch: Fleet
 Magus: Counter-attack
@@ -1068,7 +1103,7 @@ Primus: Preferred Enemy
           <modifiers/>
           <rules/>
           <profiles>
-            <profile id="46d6-1561-6c36-9d39" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Lasgun Arrays" hidden="false" page="80">
+            <profile id="46d6-1561-6c36-9d39" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Lasgun Arrays" hidden="false" book="Codex: Genestealer Cults" page="80">
               <characteristics>
                 <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="A Chimera has two separate arrays of three lasguns – one array located above each side of its hull. Up to six models in the embarked unit (a maximum of three per array) may fire one lasgun each from these lasgun arrays, provided those models are not using the Chimera’s Fire Points this turn. To represent the unusual nature of these weapons, use the Chimera’s Ballistic Skill for these shots – the lasgun arrays can shoot at this Ballistic Skill regardless of how far the Chimera has moved. If the Chimera has suffered a Crew Stunned or Crew Shaken result, the lasgun arrays can only make Snap Shots. Lastly, each array may shoot at a different target to the Chimera’s other weaponry, though all lasguns in the same array must shoot at the same target."/>
               </characteristics>
@@ -1156,7 +1191,7 @@ Primus: Preferred Enemy
       </entryGroups>
       <modifiers/>
       <rules>
-        <rule id="1848-36b3-a71a-1494" name="Amphibious" hidden="false" book="" page="80">
+        <rule id="1848-36b3-a71a-1494" name="Amphibious" hidden="false" book="Codex: Genestealer Cults" page="80">
           <description>A Chimera treats all water features as open terrain when it moves.</description>
           <modifiers/>
         </rule>
@@ -1468,11 +1503,11 @@ Primus: Preferred Enemy
       </entryGroups>
       <modifiers/>
       <rules>
-        <rule id="93a5-9988-9f17-46b9" name="Reckless Fanaticism" hidden="false">
+        <rule id="93a5-9988-9f17-46b9" name="Reckless Fanaticism" hidden="false" book="Codex: Genestealer Cults" page="87">
           <description>All units of Neophyte Hybrids from a Deliverance Broodsurge must begin the game embarked upon their Goliath Trucks. These units can disembark even if thei vehicle moved at Cruising Speed, though each model that does so must take a Dangerous Terrain test.</description>
           <modifiers/>
         </rule>
-        <rule id="8c54-831a-4599-e390" name="Perfervid Crew" hidden="false">
+        <rule id="8c54-831a-4599-e390" name="Perfervid Crew" hidden="false" book="Codex: Genestealer Cults" page="87">
           <description>each time a vehicle from this Formation suffers a Crew Stunned or Crew Shaken result, that result is ignored (though the vehicle still loses a Hull Point).</description>
           <modifiers/>
         </rule>
@@ -1926,7 +1961,7 @@ Primus: Preferred Enemy
                       </entryGroups>
                       <modifiers/>
                       <rules>
-                        <rule id="549e-2ee3-a706-425d" name="Rugged Construction" hidden="false" page="83">
+                        <rule id="549e-2ee3-a706-425d" name="Rugged Construction" hidden="false" book="Codex: Genestealer Cults" page="83">
                           <description>If this model suffers a Crew Shaken, Crew Stunned or Immobilised result, roll a dice. On a roll of 4 or more, the vehicle ignores the result, but loses a Hull Point as normal.</description>
                           <modifiers/>
                         </rule>
@@ -1957,11 +1992,11 @@ Primus: Preferred Enemy
       </entryGroups>
       <modifiers/>
       <rules>
-        <rule id="0790-d9af-18e8-09e5" name="Demolition Specialists" hidden="false">
+        <rule id="0790-d9af-18e8-09e5" name="Demolition Specialists" hidden="false" book="Codex: Genestealer Cults" page="88">
           <description>Acolyte Hybrids from a Demolition Claw can re-roll the scatter dice when using a Demolition Charge or a Cache of Demolition Charges when embarked upon a Goliath Rockgrinder from this Formation.</description>
           <modifiers/>
         </rule>
-        <rule id="2740-e5ff-22d7-4390" name="Extra Explosives" hidden="false">
+        <rule id="2740-e5ff-22d7-4390" name="Extra Explosives" hidden="false" book="Codex: Genestealer Cults" page="88">
           <description>Roll a dice each time a model throws a Demolition Charge whilst it is within 6&quot; of a Goliath Rockgrinder from this Formation; on a 4 or more that model replenishes its explosives annd can throw another Demolition Charge during the battle.</description>
           <modifiers/>
         </rule>
@@ -2427,7 +2462,7 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
       </entryGroups>
       <modifiers/>
       <rules>
-        <rule id="50c6-bd0e-4b61-2c4c" name="Rugged Construction" hidden="false" page="83">
+        <rule id="50c6-bd0e-4b61-2c4c" name="Rugged Construction" hidden="false" book="Codex: Genestealer Cults" page="83">
           <description>If this model suffers a Crew Shaken, Crew Stunned or Immobilised result, roll a dice. On a roll of 4 or more, the vehicle ignores the result, but loses a Hull Point as normal.</description>
           <modifiers/>
         </rule>
@@ -2500,7 +2535,7 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
       <entryGroups/>
       <modifiers/>
       <rules>
-        <rule id="43ab-40fc-a644-2abe" name="Rugged Construction" hidden="false" page="83">
+        <rule id="43ab-40fc-a644-2abe" name="Rugged Construction" hidden="false" book="Codex: Genestealer Cults" page="83">
           <description>If this model suffers a Crew Shaken, Crew Stunned or Immobilised result, roll a dice. On a roll of 4 or more, the vehicle ignores the result, but loses a Hull Point as normal.</description>
           <modifiers/>
         </rule>
@@ -3134,7 +3169,7 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
         </modifier>
       </modifiers>
       <rules>
-        <rule id="0d07-88e2-d388-4678" name="Spiritual Leader" hidden="false" page="71">
+        <rule id="0d07-88e2-d388-4678" name="Spiritual Leader" hidden="false" book="Codex: Genestealer Cults" page="71">
           <description>Friendly units with the Genestealer Cults Faction within 12&quot; of this model have the Adamantium Will special rule.</description>
           <modifiers/>
         </rule>
@@ -3552,11 +3587,11 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
       </entryGroups>
       <modifiers/>
       <rules>
-        <rule id="f259-a634-fe53-120d" name="Mechanised Ambush" hidden="false">
+        <rule id="f259-a634-fe53-120d" name="Mechanised Ambush" hidden="false" book="Codex: Genestealer Cults" page="91">
           <description>This Formation&apos;s units of Neophyte Hybrids must start the game embarked within their transports. Vehicle units from this Formation have the Outflank special rule. Scout Sentinels from this Formation instead gain the Cult Ambush special rule.</description>
           <modifiers/>
         </rule>
-        <rule id="030e-9e5a-8fea-766b" name="Devoted Crew" hidden="false">
+        <rule id="030e-9e5a-8fea-766b" name="Devoted Crew" hidden="false" book="Codex: Genestealer Cults" page="91">
           <description>Roll a dice each time a vehicle from this Formation suffers a Crew Stunned or Crew Shaken result. On a 4 or more that result is ignored (though the vehicle still loses a Hull Point).</description>
           <modifiers/>
         </rule>
@@ -3866,7 +3901,7 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
         </modifier>
       </modifiers>
       <rules>
-        <rule id="668d-9f9a-99d4-aa29" name="Living Idol" hidden="false" page="70">
+        <rule id="668d-9f9a-99d4-aa29" name="Living Idol" hidden="false" book="Codex: Genestealer Cults" page="70">
           <description>Friendly units with the Genestealer Cults Faction within 12&quot; of this model have the Fearless special rule.</description>
           <modifiers/>
         </rule>
@@ -4127,7 +4162,7 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
         </modifier>
       </modifiers>
       <rules>
-        <rule id="6b42-8897-69d6-80cc" name="Cult Demagogue" hidden="false" page="72">
+        <rule id="6b42-8897-69d6-80cc" name="Cult Demagogue" hidden="false" book="Codex: Genestealer Cults" page="72">
           <description>Friendly units with the Genestealer Cults Faction within 12&quot; of this model have the Hatred special rule.</description>
           <modifiers/>
         </rule>
@@ -4228,11 +4263,11 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
       <entryGroups/>
       <modifiers/>
       <rules>
-        <rule id="4a42-f21c-7462-75cc" name="Hyper Reflexes" hidden="false" page="78">
+        <rule id="4a42-f21c-7462-75cc" name="Hyper Reflexes" hidden="false" book="Codex: Genestealer Cults" page="78">
           <description>Purestrain Genestealers have a 5+ invulverable save.</description>
           <modifiers/>
         </rule>
-        <rule id="3ad4-90d5-1a48-99ae" name="Brood Instinct" hidden="false" page="78">
+        <rule id="3ad4-90d5-1a48-99ae" name="Brood Instinct" hidden="false" book="Codex: Genestealer Cults" page="78">
           <description>Only a Patriarch can join this unit. Whilst a Patriarch is joined to this unit, the Purestrain Genestealers gain the Furious Charge special rule.</description>
           <modifiers/>
         </rule>
@@ -4498,11 +4533,11 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
       </entryGroups>
       <modifiers/>
       <rules>
-        <rule id="70cd-983d-7200-1ac8" name="Time to Rise Up" hidden="false">
+        <rule id="70cd-983d-7200-1ac8" name="Time to Rise Up" hidden="false" book="Codex: Genestealer Cults" page="86">
           <description>All the units in a Subterranean Uprising must Infiltrate during deployment, and set up using the Cult Ambush special rule. When rolling on the Cult Ambush table for a unit in the Formation, roll two dice instead of one and choose either of the results.</description>
           <modifiers/>
         </rule>
-        <rule id="622c-fb50-1bad-02ef" name="Meticulous Planner" hidden="false">
+        <rule id="622c-fb50-1bad-02ef" name="Meticulous Planner" hidden="false" book="Codex: Genestealer Cults" page="86">
           <description>If a unit in this Formation has been joined by a Primus, you can roll three dice instead of one when rolling on the Cult Ambush table for this unit, and select any of the results.</description>
           <modifiers/>
         </rule>
@@ -4642,11 +4677,11 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
       </entryGroups>
       <modifiers/>
       <rules>
-        <rule id="ff8d-b084-2313-f764" name="Frenzied Devotion" hidden="false">
+        <rule id="ff8d-b084-2313-f764" name="Frenzied Devotion" hidden="false" book="Codex: Genestealer Cults" page="92">
           <description>Units from this Formation have the Zealot special rule whilst they are within 12&quot; of a friendly Magus.Furthermore, a unit that is actually joined by a Magus can re-roll failed To Hit rolls in every round of close combat, not just the first.</description>
           <modifiers/>
         </rule>
-        <rule id="eb99-5454-7931-3950" name="Willing Subjects" hidden="false">
+        <rule id="eb99-5454-7931-3950" name="Willing Subjects" hidden="false" book="Codex: Genestealer Cults" page="92">
           <description>If a Magus targets a Neophyte Hybrid or Acolyte Hybrid unit from this Formation with a blessing psychic power, be can re-roll the Psychic test if it is failed.</description>
           <modifiers/>
         </rule>
@@ -4810,11 +4845,11 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
               <entryGroups/>
               <modifiers/>
               <rules>
-                <rule id="f03b-e10c-9cc3-1cbd" name="Hyper Reflexes" hidden="false" page="78">
+                <rule id="f03b-e10c-9cc3-1cbd" name="Hyper Reflexes" hidden="false" book="Codex: Genestealer Cults" page="78">
                   <description>Purestrain Genestealers have a 5+ invulverable save.</description>
                   <modifiers/>
                 </rule>
-                <rule id="4d21-c1b3-ab08-739f" name="Brood Instinct" hidden="false" page="78">
+                <rule id="4d21-c1b3-ab08-739f" name="Brood Instinct" hidden="false" book="Codex: Genestealer Cults" page="78">
                   <description>Only a Patriarch can join this unit. Whilst a Patriarch is joined to this unit, the Purestrain Genestealers gain the Furious Charge special rule.</description>
                   <modifiers/>
                 </rule>
@@ -4849,7 +4884,7 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
       </entryGroups>
       <modifiers/>
       <rules>
-        <rule id="b459-c194-54ad-87d3" name="Strange Mutations" hidden="false">
+        <rule id="b459-c194-54ad-87d3" name="Strange Mutations" hidden="false" book="Codex: Genestealer Cults" page="90">
           <description>Before the start of the game, roll a dice a apply the following result to The First Curse&apos;s unit of Purestrain Genestealers for the duration of the game:
 1) Flesh Hooks: The unit doesn&apos;t suffer the penalty to their Initiative for chraging enemies through difficult terrain.
 2) Hardened Carapaces: The unit&apos;s Armour Save is increased to 4+.
@@ -5366,11 +5401,11 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
       <description>A model that suffers one or more unsaved Wounds from a weapon with this special rule is reduced to Initiative 1 until the end of the following Assault phase.</description>
       <modifiers/>
     </rule>
-    <rule id="8936-83d2-a0fc-7d64" name="Crush" hidden="false" page="99">
+    <rule id="8936-83d2-a0fc-7d64" name="Crush" hidden="false" book="Codex: Genestealer Cults" page="99">
       <description>A model equipped with a Metamorph claw has a +2 bonus to its Strength during the Fight subphase.</description>
       <modifiers/>
     </rule>
-    <rule id="5e06-11ab-8ac6-6375" name="Cult Ambush" hidden="false" page="96">
+    <rule id="5e06-11ab-8ac6-6375" name="Cult Ambush" hidden="false" book="Codex: Genestealer Cults" page="96">
       <description>Units with this special rule that Infiltrate, or that arrive from Reserve or Ongoing Reserve, can chose to roll on the Cult Ambush table instead of deploying or arriving from Reserves normally. Unless otherwise specified, ambushing units move onto the table as described for other Reserves and cannot move any further during the movement phase. Units cannot use the cult ambush special rule whilst they are embarked inside a vehicle.</description>
       <modifiers/>
     </rule>
@@ -5425,7 +5460,7 @@ in inches, is sufficient to allow the entire unit to move over 1&quot; away from
 See BRB for details.</description>
       <modifiers/>
     </rule>
-    <rule id="c1c1-1f74-d087-a7ae" name="Lash" hidden="false" page="99">
+    <rule id="c1c1-1f74-d087-a7ae" name="Lash" hidden="false" book="Codex: Genestealer Cults" page="99">
       <description>A model equipped with a aweapon with this special rule has +3 Initiative during the Fight subphase.</description>
       <modifiers/>
     </rule>
@@ -5457,14 +5492,14 @@ Against vehicles, each armour penetration roll of 6 allows a further D3 to be ro
 See BRB for details.</description>
       <modifiers/>
     </rule>
-    <rule id="68a1-1058-e764-744e" name="Return to the Shadows" hidden="false" page="96">
+    <rule id="68a1-1058-e764-744e" name="Return to the Shadows" hidden="false" book="Codex: Genestealer Cults" page="96">
       <description>Instead of moving in the movement phase, any unit with this special rule that is not within 6&quot; of any enemy models, can be removed from the battlefield and placed into Ongoing Reserve. A unit cannot Return to the Shadows in the same turn it arrives from Reserves or Ongoing Reserves, and cannot do so whilst embarked in a vehicle.</description>
       <modifiers/>
     </rule>
     <rule id="adee-9e9e-c640-5e44" name="Scout" hidden="false" book="Warhammer 40,000: The Rules">
       <modifiers/>
     </rule>
-    <rule id="7ae4-44e1-0be4-896c" name="Scythe" hidden="false" page="99">
+    <rule id="7ae4-44e1-0be4-896c" name="Scythe" hidden="false" book="Codex: Genestealer Cults" page="99">
       <description>A model equipped with a Metamorph talon has a +1 bonus to Weapon Skill during the Fight subphase. A model equipped with two Metamorph talons has a +2 bonus to Weapon Skill during the Fight subphase instead.</description>
       <modifiers/>
     </rule>
@@ -5495,7 +5530,7 @@ Cover save bonuses from the Shrouded and Stealth special rules are cumulative (t
       <description>A model attacking with this weapon never receives +1 Attack for fighting with two Melee weapons.</description>
       <modifiers/>
     </rule>
-    <rule id="890d-2f13-d09f-5149" name="Unquestioning Loyalty" hidden="false" page="96">
+    <rule id="890d-2f13-d09f-5149" name="Unquestioning Loyalty" hidden="false" book="Codex: Genestealer Cults" page="96">
       <description>A model with this special rule automatically passes Look Out, Sir attempts, and can even make Look Out, Sir attempts when fighting in a challenge.</description>
       <modifiers/>
     </rule>
@@ -5511,7 +5546,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
     </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="9356-5fcc-ad12-68ba" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Aberrant" hidden="false" book="" page="79">
+    <profile id="9356-5fcc-ad12-68ba" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Aberrant" hidden="false" book="Codex: Genestealer Cults" page="79">
       <characteristics>
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
@@ -5526,7 +5561,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="4dda-d79e-8b0f-32f3" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Acolyte Hybrid" hidden="false" book="" page="74">
+    <profile id="4dda-d79e-8b0f-32f3" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Acolyte Hybrid" hidden="false" book="Codex: Genestealer Cults" page="74">
       <characteristics>
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
@@ -5541,7 +5576,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="8cf0-b981-b775-dbf4" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Acolyte Iconward" hidden="false" page="73">
+    <profile id="8cf0-b981-b775-dbf4" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Acolyte Iconward" hidden="false" book="Codex: Genestealer Cults" page="73">
       <characteristics>
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
@@ -5556,7 +5591,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="60c0-5669-4aa2-368e" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Acolyte Leader" hidden="false" book="" page="74">
+    <profile id="60c0-5669-4aa2-368e" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Acolyte Leader" hidden="false" book="Codex: Genestealer Cults" page="74">
       <characteristics>
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
@@ -5571,7 +5606,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="feab-3f0d-7cb2-16a3" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Armoured Sentinel" hidden="false" page="81">
+    <profile id="feab-3f0d-7cb2-16a3" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Armoured Sentinel" hidden="false" book="Codex: Genestealer Cults" page="81">
       <characteristics>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="3"/>
         <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="3"/>
@@ -5655,7 +5690,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="1295-b826-33a1-fcb7" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Chimera" hidden="false" page="80">
+    <profile id="1295-b826-33a1-fcb7" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Chimera" hidden="false" book="Codex: Genestealer Cults" page="80">
       <characteristics>
         <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="3"/>
         <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="12"/>
@@ -5684,7 +5719,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="22d8-78e9-37a6-da97" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Cult Icon" hidden="false" page="100">
+    <profile id="22d8-78e9-37a6-da97" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Cult Icon" hidden="false" book="Codex: Genestealer Cults" page="100">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="All models in a unit with the cult icon have +1 Weapon Skill while the bearer is alive."/>
       </characteristics>
@@ -5705,7 +5740,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="0ab5-9879-2567-c2cc" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Drilldozer Blade" hidden="false" page="100">
+    <profile id="0ab5-9879-2567-c2cc" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Drilldozer Blade" hidden="false" book="Codex: Genestealer Cults" page="100">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="A vehicle with a drilldozer blade automatically passes Dangerous Terrain tests.  When a vehicle with a drilldozer blade Rams an enemy vehicle, add an extra D6 to the Strength of the hit. If the Ram causes a penetrating hit, add 1 to the result on the vehicle damage table.  When a vehicle with a drilldozer blade performs a Tank Shock, each enemy unit that the vehicle reaches must take an Initiative test before taking a Morale check. If the test is failed the unit immediately suffers D3 S10 AP2 hits. If an enemy unit makes a Death or Glory attack on a vehicle with a drilldozer blade and fails to stop the vehicle, the unit suffers an additional D3 S10 AP2 hits in addition to the to the damage they normally suffer for the failed attack. Hits from a drilldozer blade are Randomly Allocated."/>
       </characteristics>
@@ -5762,7 +5797,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="f21a-d340-ab4e-a86d" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Golaith Rockgrinder" hidden="false" page="84">
+    <profile id="f21a-d340-ab4e-a86d" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Golaith Rockgrinder" hidden="false" book="Codex: Genestealer Cults" page="84">
       <characteristics>
         <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="3"/>
         <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="12"/>
@@ -5773,7 +5808,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="fefe-824c-9b42-8c0f" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Goliath Truck" hidden="false" page="83">
+    <profile id="fefe-824c-9b42-8c0f" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Goliath Truck" hidden="false" book="Codex: Genestealer Cults" page="83">
       <characteristics>
         <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="3"/>
         <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="11"/>
@@ -5901,7 +5936,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="ce5e-e145-5f70-43ea" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Hybrid Metamorph" hidden="false" page="77">
+    <profile id="ce5e-e145-5f70-43ea" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Hybrid Metamorph" hidden="false" book="Codex: Genestealer Cults" page="77">
       <characteristics>
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
@@ -5961,7 +5996,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="2e52-9d95-690b-8fdb" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Leman Russ" hidden="false" page="85">
+    <profile id="2e52-9d95-690b-8fdb" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f" name="Leman Russ" hidden="false" book="Codex: Genestealer Cults" page="85">
       <characteristics>
         <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="3"/>
         <characteristic characteristicId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Front" value="14"/>
@@ -5972,7 +6007,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="4c3e-990e-5b24-20dc" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Magus" hidden="false" page="71">
+    <profile id="4c3e-990e-5b24-20dc" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Magus" hidden="false" book="Codex: Genestealer Cults" page="71">
       <characteristics>
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
@@ -6011,7 +6046,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="f8ca-37a8-c8a3-39e1" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Metamorph Leader" hidden="false" page="77">
+    <profile id="f8ca-37a8-c8a3-39e1" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Metamorph Leader" hidden="false" book="Codex: Genestealer Cults" page="77">
       <characteristics>
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="4"/>
@@ -6116,7 +6151,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="8e07-37a4-182b-1d82" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Neophyte Hybrid" hidden="false" book="" page="75">
+    <profile id="8e07-37a4-182b-1d82" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Neophyte Hybrid" hidden="false" book="Codex: Genestealer Cults" page="75">
       <characteristics>
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="3"/>
@@ -6131,7 +6166,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="4d45-6936-ab11-bd5d" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Neophyte Leader" hidden="false" book="" page="75">
+    <profile id="4d45-6936-ab11-bd5d" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Neophyte Leader" hidden="false" book="Codex: Genestealer Cults" page="75">
       <characteristics>
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="3"/>
@@ -6146,7 +6181,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="7584-1eda-89e4-dbd8" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Neophyte Weapons Team" hidden="false" book="" page="75">
+    <profile id="7584-1eda-89e4-dbd8" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Neophyte Weapons Team" hidden="false" book="Codex: Genestealer Cults" page="75">
       <characteristics>
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="3"/>
@@ -6161,7 +6196,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="d264-9dab-3bbb-690d" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Patriarch" hidden="false" page="70">
+    <profile id="d264-9dab-3bbb-690d" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Patriarch" hidden="false" book="Codex: Genestealer Cults" page="70">
       <characteristics>
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="7"/>
@@ -6236,7 +6271,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="a1c2-95f5-790a-7c2a" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Primus" hidden="false" page="72">
+    <profile id="a1c2-95f5-790a-7c2a" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Primus" hidden="false" book="Codex: Genestealer Cults" page="72">
       <characteristics>
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry (Character)"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="5"/>
@@ -6266,7 +6301,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="97fa-f269-4a0b-569e" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Purestrain Genestealer" hidden="false" book="" page="78">
+    <profile id="97fa-f269-4a0b-569e" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Purestrain Genestealer" hidden="false" book="Codex: Genestealer Cults" page="78">
       <characteristics>
         <characteristic characteristicId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Unit Type" value="Infantry"/>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="6"/>
@@ -6296,7 +6331,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="c25e-7f8d-cc67-9047" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Scout Sentinel" hidden="false" page="82">
+    <profile id="c25e-7f8d-cc67-9047" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Scout Sentinel" hidden="false" book="Codex: Genestealer Cults" page="82">
       <characteristics>
         <characteristic characteristicId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="WS" value="3"/>
         <characteristic characteristicId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="BS" value="3"/>
@@ -6368,7 +6403,7 @@ Units containing one or more models with the Zealot special rule re-roll all fai
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="54fd-a42b-7c29-d48d" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Toxin Injector" hidden="false" page="100">
+    <profile id="54fd-a42b-7c29-d48d" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Toxin Injector" hidden="false" book="Codex: Genestealer Cults" page="100">
       <characteristics>
         <characteristic characteristicId="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description" value="If a model with a Toxin Injector fights using his rending claws, those attacks have the Poisoned special rule."/>
       </characteristics>
