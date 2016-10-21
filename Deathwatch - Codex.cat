@@ -1626,14 +1626,24 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
     <entry id="0351-b3b8-f979-191e" name="Aquila Kill Team" points="0.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups>
-        <entryGroup id="cd13-e060-813e-52a7" name="Kill Team" minSelections="0" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="cd13-e060-813e-52a7" name="Kill Team" minSelections="0" maxSelections="6" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups>
-            <entryGroup id="d01e-ede5-3d83-c996" name="One or more from the following" minSelections="1" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entryGroup id="d01e-ede5-3d83-c996" name="One or more from the following" minSelections="1" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="cd13-e060-813e-52a7" incrementChildId="a651-5caa-e718-e504" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="maxSelections" value="5.0" repeat="false" numRepeats="1" incrementParentId="cd13-e060-813e-52a7" incrementChildId="b26d-7713-6715-6b07" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="cd13-e060-813e-52a7" childId="b26d-7713-6715-6b07" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="d01e-ede5-3d83-c996" incrementChildId="0a34-216b-f48b-230c" incrementField="selections" incrementValue="1.0">
                   <conditions>
                     <condition parentId="cd13-e060-813e-52a7" childId="0a34-216b-f48b-230c" field="selections" type="equal to" value="1.0"/>
                   </conditions>
@@ -1658,28 +1668,48 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                 </link>
               </links>
             </entryGroup>
-            <entryGroup id="a651-5caa-e718-e504" name="Veterans" defaultEntryId="1c67-3f2b-b223-23b8" minSelections="5" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
+            <entryGroup id="e406-03f2-2fb3-dde4" name="Veteran Squad" defaultEntryId="1306-40f7-f2ff-8df5" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="1306-40f7-f2ff-8df5" name="Veterans" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups>
+                    <entryGroup id="a651-5caa-e718-e504" name="Veterans" defaultEntryId="1c67-3f2b-b223-23b8" minSelections="5" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                      <entries/>
+                      <entryGroups/>
+                      <modifiers>
+                        <modifier type="set" field="maxSelections" value="5.0" repeat="false" numRepeats="1" incrementParentId="cd13-e060-813e-52a7" incrementChildId="0a34-216b-f48b-230c" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="0351-b3b8-f979-191e" childId="0a34-216b-f48b-230c" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <links>
+                        <link id="1c67-3f2b-b223-23b8" targetId="3433-e03b-cecc-aedf" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="5a5d-7111-c78e-a20a" targetId="d1dc-1a32-e287-4e24" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="d8d4-a487-0434-cc96" targetId="280a-70f8-1f65-a295" linkType="entry">
+                          <modifiers/>
+                        </link>
+                        <link id="a3cc-7bdb-1374-0628" targetId="8963-b342-a25e-b882" linkType="entry">
+                          <modifiers/>
+                        </link>
+                      </links>
+                    </entryGroup>
+                  </entryGroups>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
               <entryGroups/>
-              <modifiers>
-                <modifier type="set" field="maxSelections" value="5.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="cd13-e060-813e-52a7" childId="0a34-216b-f48b-230c" field="selections" type="equal to" value="1.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
               <links>
-                <link id="1c67-3f2b-b223-23b8" targetId="3433-e03b-cecc-aedf" linkType="entry">
-                  <modifiers/>
-                </link>
-                <link id="5a5d-7111-c78e-a20a" targetId="d1dc-1a32-e287-4e24" linkType="entry">
-                  <modifiers/>
-                </link>
-                <link id="d8d4-a487-0434-cc96" targetId="280a-70f8-1f65-a295" linkType="entry">
-                  <modifiers/>
-                </link>
-                <link id="a3cc-7bdb-1374-0628" targetId="8963-b342-a25e-b882" linkType="entry">
+                <link id="b26d-7713-6715-6b07" targetId="ec36-ddfd-3798-a6b6" linkType="entry">
                   <modifiers/>
                 </link>
               </links>
@@ -1884,7 +1914,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="0c42-4948-9686-c747" name="Boltgun Arm" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="0c42-4948-9686-c747" name="Boltgun Arm" defaultEntryId="828b-46a6-7d35-0bf3" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="828b-46a6-7d35-0bf3" name="Boltgun" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -2218,7 +2248,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           </modifiers>
           <links/>
         </entryGroup>
-        <entryGroup id="5f4d-05b9-c769-fa2e" name="Close Combat Weapon Arm" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="5f4d-05b9-c769-fa2e" name="Close Combat Weapon Arm" defaultEntryId="41c2-e7bb-b75b-66b1" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="a6bc-45d4-4d41-da8f" name="Storm Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -8102,6 +8132,9 @@ This is NOT validated through BattleScribe.</description>
             <link id="988f-958d-f280-5bc2" targetId="55d9-82be-6a7e-6416" linkType="entry">
               <modifiers/>
             </link>
+            <link id="54d7-c719-21c1-b1c0" targetId="ec36-ddfd-3798-a6b6" linkType="entry">
+              <modifiers/>
+            </link>
           </links>
         </entryGroup>
       </entryGroups>
@@ -8138,7 +8171,7 @@ This is NOT validated through BattleScribe.</description>
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="9955-755a-a1b3-6613" name="Power Fist Arm" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="9955-755a-a1b3-6613" name="Power Fist Arm" defaultEntryId="716e-87a6-1938-cd25" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="716e-87a6-1938-cd25" name="Power Fist" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -8213,7 +8246,7 @@ This is NOT validated through BattleScribe.</description>
           </modifiers>
           <links/>
         </entryGroup>
-        <entryGroup id="1664-903c-398e-11f8" name="Storm Bolter Arm" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="1664-903c-398e-11f8" name="Storm Bolter Arm" defaultEntryId="363c-b72b-4f4c-daa4" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="363c-b72b-4f4c-daa4" name="Storm Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -8366,7 +8399,7 @@ This is NOT validated through BattleScribe.</description>
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="021c-3dc5-9a17-54b5" name="Bolt Pistol Arm" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="021c-3dc5-9a17-54b5" name="Bolt Pistol Arm" defaultEntryId="3c8f-cfd9-cc6b-30ad" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="71d9-a39c-754c-4722" name="Lightning Claw" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -8558,7 +8591,7 @@ This is NOT validated through BattleScribe.</description>
           </modifiers>
           <links/>
         </entryGroup>
-        <entryGroup id="9378-47d4-882b-dd7c" name="Chainsword Arm" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="9378-47d4-882b-dd7c" name="Chainsword Arm" defaultEntryId="4045-c31b-def4-bc36" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="4045-c31b-def4-bc36" name="Chainsword" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -9116,7 +9149,7 @@ This is NOT validated through BattleScribe.</description>
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="d708-75be-1f41-b78c" name="Boltgun Arm" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="d708-75be-1f41-b78c" name="Boltgun Arm" defaultEntryId="393c-5ff4-cc99-2dcb" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="393c-5ff4-cc99-2dcb" name="Boltgun" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -9450,7 +9483,7 @@ This is NOT validated through BattleScribe.</description>
           </modifiers>
           <links/>
         </entryGroup>
-        <entryGroup id="6fc7-e439-cbbc-e137" name="Close Combat Weapon Arm" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="6fc7-e439-cbbc-e137" name="Close Combat Weapon Arm" defaultEntryId="d268-96a6-a020-f8ae" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="f377-bac7-b531-c6c5" name="Storm Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -11447,6 +11480,9 @@ This is NOT validated through BattleScribe.</description>
             <link id="988c-f21d-54bb-5d83" targetId="55d9-82be-6a7e-6416" linkType="entry">
               <modifiers/>
             </link>
+            <link id="8cce-7834-6cb1-c4d2" targetId="ec36-ddfd-3798-a6b6" linkType="entry">
+              <modifiers/>
+            </link>
           </links>
         </entryGroup>
         <entryGroup id="9fd6-bdbc-13b3-6712" name="Watch Captain" defaultEntryId="fbe7-81ad-c2ca-2529" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -11626,7 +11662,7 @@ This is NOT validated through BattleScribe.</description>
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="1256-21ae-cade-73df" name="Boltgun Arm" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="1256-21ae-cade-73df" name="Boltgun Arm" defaultEntryId="1e72-7245-f65a-4a24" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="1e72-7245-f65a-4a24" name="Boltgun" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -11960,7 +11996,7 @@ This is NOT validated through BattleScribe.</description>
           </modifiers>
           <links/>
         </entryGroup>
-        <entryGroup id="21af-f382-8704-c9ab" name="Close Combat Weapon Arm" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="21af-f382-8704-c9ab" name="Close Combat Weapon Arm" defaultEntryId="1ef8-723b-d28b-292c" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="7252-9c2b-1daf-d19c" name="Storm Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
