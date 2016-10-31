@@ -1,17 +1,22 @@
 Warhammer 40,000
 ================
 
+##Important
+
 [![Join the chat at https://gitter.im/BSData/wh40k](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BSData/wh40k?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-__Notice__: _However we don't support the 6th Edition, all the files in their last revisions for 6th are available [here](https://github.com/BSData/wh40k/releases/tag/v3.1.4). Downloading .bsr file (green button) and importing it in BattleScribe_ __won't__ _mess with 7th ed files._
+__BattleScribe v1.15 users Notice__: _However we don't support BattleScribe v1.15 any longer, all the files in their last revisions for that BattleScribe are available [here](https://github.com/BSData/wh40k/releases/tag/v4.18.7). Downloading .bsr file (one of the Downloads) and importing it in BattleScribe v1.15 will allow you to use these no-longer-maintained datafiles._
+
+__6th ed users Notice__: _However we don't support the 6th Edition, all the files in their last revisions for 6th are available [here](https://github.com/BSData/wh40k/releases/tag/v3.1.4). Downloading .bsr file (green button) and importing it in BattleScribe_ __won't__ _mess with 7th ed files._
 
 ####Contents####
 
+* [Important][]
 * [Overview][]
 * [Reporting bugs & contact us][]
 * [Links][]
 
-
+[Important]: #important
 [Overview]: #overview
 [Reporting bugs & contact us]: #reporting-bugs--contact-us
 [Links]: #links
