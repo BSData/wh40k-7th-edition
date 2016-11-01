@@ -61,6 +61,13 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3031-eaa6-b109-8c6c" type="min"/>
           </constraints>
         </categoryEntry>
+        <categoryEntry id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
       </categoryEntries>
       <forceEntries/>
     </forceEntry>
@@ -285,6 +292,13 @@
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ecc-7e4d-ab9c-0601" type="max"/>
           </constraints>
+        </categoryEntry>
+        <categoryEntry id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
@@ -42944,15 +42958,15 @@
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f3c81f27-3743-9ac4-3e5e-9e16a8228936" name="Relics of Baal" hidden="true" collective="false">
+        <selectionEntryGroup id="f3c81f27-3743-9ac4-3e5e-9e16a8228936" name="Relics of Baal" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" field="hidden" value="true">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db1-7bbd-e441-4910" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db1-7bbd-e441-4910" type="lessThan"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -43226,15 +43240,15 @@
           <selectionEntryGroups/>
           <entryLinks/>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9fecf8d7-3619-833d-6648-474f96c39696" name="Fleshtearer Relics" hidden="true" collective="false">
+        <selectionEntryGroup id="9fecf8d7-3619-833d-6648-474f96c39696" name="Fleshtearer Relics" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" field="hidden" value="true">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfcb-5c2f-04d8-e55b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfcb-5c2f-04d8-e55b" type="lessThan"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -43300,24 +43314,24 @@
           <selectionEntryGroups/>
           <entryLinks/>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ceaf-75b8-2e28-4ad0" name="Relics of the Lost" hidden="true" collective="false">
+        <selectionEntryGroup id="ceaf-75b8-2e28-4ad0" name="Relics of the Lost" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" field="hidden" value="true">
               <repeats/>
               <conditions/>
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db1-7bbd-e441-4910" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db1-7bbd-e441-4910" type="lessThan"/>
                   </conditions>
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e89f-a1ea-d7e8-a09e" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20be-c43f-026e-4ca0" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e89f-a1ea-d7e8-a09e" type="notInstanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20be-c43f-026e-4ca0" type="notInstanceOf"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
