@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="032c-f467-12f6-fc58" name="Space Marines: Codex" revision="4" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="032c-f467-12f6-fc58" name="Space Marines: Codex" revision="5" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="bab5-1920-a2ed-5b27" name="Vulkan&apos;s Teachings" book="Supplement: Angels of Death" hidden="false">
@@ -7478,6 +7478,13 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
+                    <modifier type="set" field="hidden" value="true">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="0b24-bce1-f844-87e4" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="432d-fd77-a66e-7549" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="017d-65a9-02f1-aaf4" type="max"/>
@@ -7640,7 +7647,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
                           <selectionEntryGroups/>
                           <entryLinks/>
                           <costs>
-                            <cost name="pts" costTypeId="points" value="20.0"/>
+                            <cost name="pts" costTypeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -17676,39 +17683,19 @@ If several models are in a position to capture Cypher, some of which are Dark An
         <selectionEntry id="9574-f093-6a99-ebac" name="Initiate" hidden="false" collective="false" type="model">
           <profiles/>
           <rules/>
-          <infoLinks/>
+          <infoLinks>
+            <infoLink id="ff6c-539b-c17c-b49c" name="" hidden="false" targetId="d4c0-9a45-5e62-0565" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
           <modifiers>
             <modifier type="decrement" field="e9e8-10ee-365f-578a" value="1">
               <repeats>
                 <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="188b-5a1d-4610-8cc0" repeats="1"/>
                 <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05aa-0742-e6bb-28a7" repeats="1"/>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ddc-dd64-7958-a11c" repeats="1"/>
-              </repeats>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="decrement" field="e9e8-10ee-365f-578a" value="1">
-              <repeats>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="188b-5a1d-4610-8cc0" repeats="1"/>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05aa-0742-e6bb-28a7" repeats="1"/>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ddc-dd64-7958-a11c" repeats="1"/>
-              </repeats>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="e9e8-10ee-365f-578a" value="1">
-              <repeats>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="188b-5a1d-4610-8cc0" repeats="1"/>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05aa-0742-e6bb-28a7" repeats="1"/>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ddc-dd64-7958-a11c" repeats="1"/>
-              </repeats>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="e9e8-10ee-365f-578a" value="1">
-              <repeats>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05aa-0742-e6bb-28a7" repeats="1"/>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="188b-5a1d-4610-8cc0" repeats="1"/>
                 <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ddc-dd64-7958-a11c" repeats="1"/>
               </repeats>
               <conditions/>
@@ -17776,7 +17763,14 @@ If several models are in a position to capture Cypher, some of which are Dark An
         <selectionEntry id="7ddc-dd64-7958-a11c" name="Initiate (Heavy Weapon)" hidden="false" collective="false" type="model">
           <profiles/>
           <rules/>
-          <infoLinks/>
+          <infoLinks>
+            <infoLink id="0a58-5a8b-c647-c7aa" name="" hidden="false" targetId="d4c0-9a45-5e62-0565" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d92-f19e-2d97-5458" type="max"/>
@@ -17880,28 +17874,31 @@ If several models are in a position to capture Cypher, some of which are Dark An
           </costs>
         </selectionEntry>
         <selectionEntry id="1867-a396-a3f6-ea9f" name="Neophyte" hidden="false" collective="false" type="model">
-          <profiles/>
+          <profiles>
+            <profile id="78b6-e455-c8b8-a071" name="Neophyte" book="Codex: Space Marines" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantry"/>
+                <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="4"/>
+                <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="4"/>
+                <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="4"/>
+                <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
+                <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1"/>
+                <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="4"/>
+                <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1"/>
+                <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="8"/>
+                <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="4+"/>
+              </characteristics>
+            </profile>
+          </profiles>
           <rules/>
           <infoLinks/>
           <modifiers>
             <modifier type="increment" field="c20c-9d7e-8ffe-cd4d" value="1">
-              <repeats>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9574-f093-6a99-ebac" repeats="1"/>
-              </repeats>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="c20c-9d7e-8ffe-cd4d" value="1">
-              <repeats>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2ee3-dc1d-651b-6797" repeats="1"/>
-              </repeats>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="c20c-9d7e-8ffe-cd4d" value="1">
-              <repeats>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ddc-dd64-7958-a11c" repeats="1"/>
-              </repeats>
+              <repeats/>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -17977,7 +17974,14 @@ If several models are in a position to capture Cypher, some of which are Dark An
         <selectionEntry id="188b-5a1d-4610-8cc0" name="Initiate (Special Weapon)" hidden="false" collective="false" type="model">
           <profiles/>
           <rules/>
-          <infoLinks/>
+          <infoLinks>
+            <infoLink id="0b92-408a-8cd6-e95a" name="" hidden="false" targetId="d4c0-9a45-5e62-0565" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="981e-16c1-a252-ac17" type="max"/>
@@ -18030,7 +18034,26 @@ If several models are in a position to capture Cypher, some of which are Dark An
           </costs>
         </selectionEntry>
         <selectionEntry id="05aa-0742-e6bb-28a7" name="Sword Brother" hidden="false" collective="false" type="model">
-          <profiles/>
+          <profiles>
+            <profile id="250c-2a2d-8e41-f682" name="Sword Brother" book="Codex: Space Marines" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantry (Character)"/>
+                <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="4"/>
+                <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="4"/>
+                <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="4"/>
+                <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
+                <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1"/>
+                <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="4"/>
+                <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="2"/>
+                <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="9"/>
+                <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
+              </characteristics>
+            </profile>
+          </profiles>
           <rules/>
           <infoLinks/>
           <modifiers/>
@@ -54046,6 +54069,24 @@ Note that Bike Squads count as being at full strength when they have eight Space
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Each hit scored against a Titan will instead hit a void shield (whilst at least one remains active).  Close combat attacks come from inside the shield and therefore are not stopped.  Void shields have an Armour Value of 12.  A Glancing hit or Penetrating hit (or any hit from a Destroyer Weapon) scored against a void shield causes it to collapse.  After all void shields have collapsed, further hits strike the Titan instead.  At the end of each of the Titan&apos;s turns, roll a D6 for each collapsed void shield.  Each roll of 5+ instantly restores one collapsed shield."/>
+      </characteristics>
+    </profile>
+    <profile id="d4c0-9a45-5e62-0565" name="Initiate" book="Codex: Space Marines" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantry"/>
+        <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="4"/>
+        <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="4"/>
+        <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="4"/>
+        <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
+        <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1"/>
+        <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="4"/>
+        <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1"/>
+        <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="8"/>
+        <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
       </characteristics>
     </profile>
   </sharedProfiles>
