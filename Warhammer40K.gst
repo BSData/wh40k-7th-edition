@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="1" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -117,8 +117,30 @@
   <forceEntries>
     <forceEntry id="5374616e6461726423232344415441232323" name="Combined Arms Detachment" hidden="false">
       <profiles/>
-      <rules/>
-      <infoLinks/>
+      <rules>
+        <rule id="0543-c57d-03c3-9fd0" name="Ideal Mission Commander" book="BRB" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If this Detachment is chosen as your Primary Detachment, you can choose to re-roll the result on the Warlord Trait table.</description>
+        </rule>
+        <rule id="dc18-bdba-ac60-d405" name="Objective Secured (Troops)" book="BRB" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All Troops units from this Detachment have the Objective Secured special rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6ada-c167-20ea-50aa" name="New InfoLink" hidden="false" targetId="4764-48d9-da41-afaa" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints/>
       <categoryEntries>
@@ -209,8 +231,23 @@
     </forceEntry>
     <forceEntry id="416c6c696564204465746163686d656e7423232344415441232323" name="Allied Detachment" hidden="false">
       <profiles/>
-      <rules/>
-      <infoLinks/>
+      <rules>
+        <rule id="e97a-c2d1-185d-53c0" name="Objective Secured (Troops)" book="BRB" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All Troops units from this Detachment have the Objective Secured special rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="04cb-1caf-8bbe-9531" name="New InfoLink" hidden="false" targetId="4764-48d9-da41-afaa" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints/>
       <categoryEntries>
@@ -1667,42 +1704,42 @@
       <forceEntries/>
     </forceEntry>
     <forceEntry id="b874-6ed1-e9bd-a86b" name="DW Black Spear Strike Force" book="" hidden="false">
-        <profiles/>
-        <rules/>
-        <infoLinks/>
-        <modifiers/>
-        <constraints/>
-        <categoryEntries>
-            <categoryEntry id="9050-d437-3301-7e42" name="Command" hidden="false">
-                <profiles/>
-                <rules/>
-                <infoLinks/>
-                <modifiers/>
-                <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="813c-7483-fb8e-d0ab" type="min"/>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8aeb-0b7d-a91f-50ae" type="max"/>
-                </constraints>
-            </categoryEntry>
-            <categoryEntry id="bf93-7277-bf48-16f7" name="Core" hidden="false">
-                <profiles/>
-                <rules/>
-                <infoLinks/>
-                <modifiers/>
-                <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fae7-5a04-a5cc-9585" type="min"/>
-                </constraints>
-            </categoryEntry>
-            <categoryEntry id="ef2b-83bd-1bad-5742" name="Auxiliary" hidden="false">
-                <profiles/>
-                <rules/>
-                <infoLinks/>
-                <modifiers/>
-                <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a4f3-1490-a723-b30d" type="min"/>
-                </constraints>
-            </categoryEntry>
-        </categoryEntries>
-        <forceEntries/>
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="9050-d437-3301-7e42" name="Command" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="813c-7483-fb8e-d0ab" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8aeb-0b7d-a91f-50ae" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="bf93-7277-bf48-16f7" name="Core" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fae7-5a04-a5cc-9585" type="min"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="ef2b-83bd-1bad-5742" name="Auxiliary" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a4f3-1490-a723-b30d" type="min"/>
+          </constraints>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
     </forceEntry>
     <forceEntry id="a545-5d4f-2ec7-2632" name="EC Corsair Fleet Raiding Company [FW]" hidden="false">
       <profiles/>
@@ -8200,6 +8237,13 @@ If this unit suffers Perils of the Warp, or is hit by an attack that specificall
       <infoLinks/>
       <modifiers/>
       <description>Wing Leaders are free upgrades for Flyers.  One model in each Flyer wing can be upgraded to a Wing Leader at no additional points cost.  At the start of any game, immediately after determining your Warlord Trait, roll on the Wing Leader table for each Wing Leader to determine their special rule.</description>
+    </rule>
+    <rule id="4764-48d9-da41-afaa" name="Objective Secured" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A unit with this special rule controls objectives even if an enemy scoring unit is within range of the objective marker, unless the enemy unit also has this special rule.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
