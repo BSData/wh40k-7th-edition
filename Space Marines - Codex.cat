@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="032c-f467-12f6-fc58" name="Space Marines: Codex" revision="5" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="032c-f467-12f6-fc58" name="Space Marines: Codex" revision="6" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="bab5-1920-a2ed-5b27" name="Vulkan&apos;s Teachings" book="Supplement: Angels of Death" hidden="false">
@@ -17701,6 +17701,15 @@ If several models are in a position to capture Cypher, some of which are Dark An
               <conditions/>
               <conditionGroups/>
             </modifier>
+            <modifier type="decrement" field="c1b0-2cac-7cfb-744f" value="1">
+              <repeats>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ddc-dd64-7958-a11c" repeats="1"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="188b-5a1d-4610-8cc0" repeats="1"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05aa-0742-e6bb-28a7" repeats="1"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1b0-2cac-7cfb-744f" type="max"/>
@@ -17873,7 +17882,7 @@ If several models are in a position to capture Cypher, some of which are Dark An
             <cost name="pts" costTypeId="points" value="14.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1867-a396-a3f6-ea9f" name="Neophyte" hidden="false" collective="false" type="model">
+        <selectionEntry id="1867-a396-a3f6-ea9f" name="Neophyte" hidden="false" collective="false" type="upgrade">
           <profiles>
             <profile id="78b6-e455-c8b8-a071" name="Neophyte" book="Codex: Space Marines" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
               <profiles/>
@@ -17898,7 +17907,12 @@ If several models are in a position to capture Cypher, some of which are Dark An
           <infoLinks/>
           <modifiers>
             <modifier type="increment" field="c20c-9d7e-8ffe-cd4d" value="1">
-              <repeats/>
+              <repeats>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9574-f093-6a99-ebac" repeats="1"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ddc-dd64-7958-a11c" repeats="1"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="188b-5a1d-4610-8cc0" repeats="1"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05aa-0742-e6bb-28a7" repeats="1"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
