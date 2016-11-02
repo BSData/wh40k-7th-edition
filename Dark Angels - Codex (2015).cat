@@ -217,7 +217,7 @@ If your force contains either a Ravenwing Support Squadron or a Ravenwing Strike
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c2fa-fe4a-4e54-9c0f" name="Show Forgeworld" hidden="false" collective="false" categoryEntryId="2aa2-d9e3-bef6-09be" type="upgrade">
+    <selectionEntry id="c2fa-fe4a-4e54-9c0f" name="Show Forgeworld" hidden="false" collective="false" categoryEntryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1228,6 +1228,13 @@ If your force contains either a Ravenwing Support Squadron or a Ravenwing Strike
       <constraints/>
     </entryLink>
     <entryLink id="3543-dc28-d0c4-5469" hidden="false" targetId="94bc-a395-9577-3618" type="selectionEntry" categoryEntryId="c888f08a-6cea-4a01-8126-d374a9231554">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="5efd-b266-208d-5ef5" name="Sokar" hidden="false" targetId="3572-d36f-40f7-312e" type="selectionEntry" categoryEntryId="c888f08a-6cea-4a01-8126-d374a9231554">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -4953,7 +4960,7 @@ the laser destroyer’s rate of fire. Stability is required for this overcharged
       </modifiers>
       <constraints/>
       <selectionEntries>
-        <selectionEntry id="0099-aed3-7c5e-66d7" name="Four Wing-mounted Stormstrike Missles" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+        <selectionEntry id="0099-aed3-7c5e-66d7" name="Four Wing-mounted Stormstrike Missiles" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks>
@@ -8677,7 +8684,6 @@ Cover saves of enemy targets suffer -1 modifier</description>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <selectionEntries/>
@@ -30106,6 +30112,293 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3572-d36f-40f7-312e" name="* Sokar Pattern Stormbird" hidden="true" collective="false" type="model">
+      <profiles/>
+      <rules>
+        <rule id="149b-5367-b6a9-adcb" name="Shield Projection" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>So long as the Sokar is in Hover mode and remains stationary this turn, its controlling player may declare that it is projecting its 
+void shields at the start of their turn. This means that their area extends to cover all units within 12&quot; of the Sokar’s main hull and 
+wings in their protection.</description>
+        </rule>
+        <rule id="ef36-3a75-a529-223f" name="Reinforced Structure" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>The Sokar has an invulnerable save of 5+ against any attacks that have breached its void shields.</description>
+        </rule>
+        <rule id="be95-2555-9a17-d67a" name="Sokar Transport Capacity" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>he Sokar pattern Stormbird has a transport capacity of 50 models and may carry Dreadnoughts of any type (each counting as 10 models – these Dreadnoughts may only embark/
+disembark using the rear ramp), Jump Infantry, Rapier batteries, and Bikes*. The Sokar may also transport a single Rhino, including a squad within, occupying 25 models of its transport capacity. The Rhino may only use the rear ramp.*Counting as Extremely Bulky models. One access point at each side and the rear.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6ba2-2a9f-97ff-006d" name="New InfoLink" hidden="false" targetId="e522-c4da-9fa1-1c07" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="64d4-88bb-8762-6820" name="New InfoLink" hidden="false" targetId="901362b0-6b08-ec25-5807-77468746511d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="7fa8-ac9a-a329-c1b6" name="New InfoLink" hidden="false" targetId="8024-df0a-ec75-95c0" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="89e4-f93d-c0cc-2fae" name="New InfoLink" hidden="false" targetId="528d-4089-aaeb-bc3c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61a02f94-5e73-0bcc-48f0-22910b91bb1c" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c1d8b47-3c09-6633-198d-d5013d916ae4" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints/>
+      <selectionEntries>
+        <selectionEntry id="7299-4c65-5984-2934" name="Three twin-linked Heavy Bolters" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="3031-ac9c-18fd-87c2" name="New InfoLink" hidden="false" targetId="3002-de38-7230-fbc6" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="6ae6-0477-108c-4d56" name="New InfoLink" hidden="false" targetId="e2b0-b9f1-6c38-584c" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c0de-7a3b-437c-f930" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d03-eccc-206b-5a9a" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="2835-9644-b0b4-2d8f" name="Dual Void Shield Generator" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="73d0-624e-7a37-18b6" name="Dual Void Shield Generator" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Whilst the model’s void shields are active, any hits scored by shooting attacks against it strike its void shields instead. The Sokar 
+has two void shields, each with an Armour value of 12. A Glancing hit or Penetrating hit or any hit by a Destroyer weapon 
+scored against a shield causes it to collapse. After this, further hits strike the original target instead. At the end of each of its 
+controlling player’s turns, roll a D6 for each collapsed shield – a roll of 5+ instantly restores it.</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b39b-5816-6138-733c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bd6b-79fe-69c5-60d8" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="bec4-57ae-f112-0b62" name="Orbital Strike" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="775f-865e-713b-01d8" name="New InfoLink" hidden="false" targetId="98ac-5132-9ebd-c355" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f47a-eae0-59e8-b5d3" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="150.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a917-4da5-00b1-148f" name="Wing-Mount" hidden="false" collective="false" defaultSelectionEntryId="596c-3698-3ad8-a965">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b52-2b96-ffe9-6b68" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7eeb-1acc-fad8-7621" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="596c-3698-3ad8-a965" name="Six wing-mounted Dreadstrike Missiles" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="8e87-43f1-5bb9-c8e9" name="Six wing-mounted Dreadstrike Missiles" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="120&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="10"/>
+                    <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
+                    <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Ordnance, Blast, One Use"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="f50c-2f70-a792-aa12" name="Macro-Bomb Cluster Payload" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="7f9d-ac3e-9de9-259b" name="Macro-Bomb Cluster Payload" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+                    <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="8"/>
+                    <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="3"/>
+                    <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Bomb 1, Sunder, Apocalyptic Barrage (3D6), One use"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="50.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="681f-db0a-1312-ebeb" name="Turret Mounts" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="305e-04f7-1b68-3871" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bd1-4ae0-a9cb-3f29" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b995-340e-da1b-0537" name="Quad Heavy Bolter" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="9497-372d-337d-b61c" name="New InfoLink" hidden="false" targetId="d3cd0b96-99a0-a766-63a6-f98e309d324d" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="2acb-34a9-5739-ea59" name="Twin-Linked Lascannon" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="882d-e19c-38c4-d4c2" name="New InfoLink" hidden="false" targetId="3002-de38-7230-fbc6" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="28b0-9884-ea22-a3f9" name="New InfoLink" hidden="false" targetId="f14a-07e5-5465-69cf" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b429-ec0c-9086-7c08" hidden="false" targetId="e4248d8e-65dc-4484-e0ce-e3df7da24af2" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="850.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e85931aa-e6b5-524d-49d1-41c146286129" name="Assault Basic Wargear" hidden="false" collective="false">
@@ -32172,7 +32465,10 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b970-d2ca-d8f6-72d2" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="defa-e94a-d435-facc" type="max"/>
+          </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -37419,6 +37715,23 @@ of this Wing Leader will not scatter.</description>
         <characteristic name="Rear" characteristicTypeId="0a9f33cb-0412-420a-89d2-20707c360bd2" value="10"/>
         <characteristic name="HP" characteristicTypeId="ae95a1af-719f-4365-b951-33cd3ca9148a" value="3"/>
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Tank"/>
+      </characteristics>
+    </profile>
+    <profile id="e522-c4da-9fa1-1c07" name="Sokar Pattern Stormbird" hidden="false" profileTypeId="3a08-ea03-a598-8615" profileTypeName="Flyer">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="BS" characteristicTypeId="9878-e3f6-b7b4-7225" value="4"/>
+        <characteristic name="Front" characteristicTypeId="3a4e-bc1d-4a12-7176" value="14"/>
+        <characteristic name="Side" characteristicTypeId="d12e-7bdb-191c-4849" value="13"/>
+        <characteristic name="Rear" characteristicTypeId="a4cb-791a-6a75-4e4a" value="12"/>
+        <characteristic name="HP" characteristicTypeId="93e6-d4b1-28a8-944b" value="12"/>
+        <characteristic name="Type" characteristicTypeId="eb65-838c-8eaa-8b5d" value="Super Heavy Flyer (Hover, Transport)"/>
+        <characteristic name="Combat Role" characteristicTypeId="d477-c087-173f-9f1c" value="Attack Flyer"/>
+        <characteristic name="Pursuit" characteristicTypeId="e04d-332e-8b52-0071" value="4"/>
+        <characteristic name="Agility" characteristicTypeId="ae34-f5c0-19af-4883" value="1"/>
       </characteristics>
     </profile>
   </sharedProfiles>
