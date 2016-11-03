@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" name="Chaos Space Marines: Codex (2012)" revision="1" battleScribeVersion="2.00" authorName=" BSData team" authorUrl="http://battlescribedata.appspot.com/#/repos" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" name="Chaos Space Marines: Codex (2012)" revision="2" battleScribeVersion="2.00" authorName=" BSData team1" authorUrl="http://battlescribedata.appspot.com/#/repos" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -291,73 +291,12 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fd4a97da-8715-c45c-ef20-59c507b3359f" name="Hidden Units and Dataslates (Select first and once per roster)" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="f03040f6-c518-3af5-aff3-813f24c753fe" name="Show all hidden Force Org options" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7210cb58-5119-e657-7c18-da30e9918cc8" name="Show Dataslate entries" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="f4b8d750-4a35-5e39-7d8b-650b29543b48" name="Primary Detachment" hidden="false" collective="false" categoryEntryId="7fc5b655-812e-45ed-98ff-db8847d356da" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="caf5-714c-6faf-3ea0" name="Show Forgeworld" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-      </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -1641,6 +1580,20 @@
       <constraints/>
     </entryLink>
     <entryLink id="d107-9ec4-8a58-19d6" name="New EntryLink" hidden="false" targetId="d97c-202c-ee3d-e6d7" type="selectionEntry" categoryEntryId="8dbf948c-125b-4886-b21e-3ccabc1e1188">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="bc9e-9215-6ce2-3870" name="New EntryLink" hidden="false" targetId="caf5-714c-6faf-3ea0" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="1a7b-d327-b327-7443" name="New EntryLink" hidden="false" targetId="fd4a97da-8715-c45c-ef20-59c507b3359f" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -21765,7 +21718,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1"/>
               </repeats>
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d17-fd64-f8e0-7079" type="notInstanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="1d17-fd64-f8e0-7079" type="notInstanceOf"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -22180,7 +22133,7 @@ Hellflame, Las-Destructor, Shellstorm</description>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <selectionEntries>
@@ -24602,7 +24555,7 @@ The nominated unit has Fearless and +1 Strength for the entire game.</descriptio
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="increment" field="points" value="1">
+            <modifier type="increment" field="points" value="2">
               <repeats>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1"/>
               </repeats>
@@ -31585,9 +31538,7 @@ TL Plasma Gun</description>
               <repeats>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1"/>
               </repeats>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d17-fd64-f8e0-7079" type="notInstanceOf"/>
-              </conditions>
+              <conditions/>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -35847,6 +35798,13 @@ These hits are S4 AP2 and Ignores Cover. This attack does not affect Typhus.</de
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="set" field="points" value="0.0">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d17-fd64-f8e0-7079" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
@@ -36284,13 +36242,11 @@ These hits are S4 AP2 and Ignores Cover. This attack does not affect Typhus.</de
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="increment" field="points" value="3">
+            <modifier type="increment" field="points" value="2">
               <repeats>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1"/>
               </repeats>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d17-fd64-f8e0-7079" type="notInstanceOf"/>
-              </conditions>
+              <conditions/>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -38997,6 +38953,67 @@ Carry out the first set of attacks to completion, then carry out the second set 
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f7c8-4618-9b71-ef2e" type="max"/>
       </constraints>
       <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="caf5-714c-6faf-3ea0" name="Show Forgeworld" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6528-2b3f-dc33-524c" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd4a97da-8715-c45c-ef20-59c507b3359f" name="Hidden Units and Dataslates (Select first and once per roster)" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6a31-1abc-9364-d9d9" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="f03040f6-c518-3af5-aff3-813f24c753fe" name="Show all hidden Force Org options" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff3f-7d05-1068-5bd2" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7210cb58-5119-e657-7c18-da30e9918cc8" name="Show Dataslate entries" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b73-fba0-1acc-f594" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
