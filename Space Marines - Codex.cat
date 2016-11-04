@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="032c-f467-12f6-fc58" name="Space Marines: Codex" revision="8" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="032c-f467-12f6-fc58" name="Space Marines: Codex" revision="9" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="bab5-1920-a2ed-5b27" name="Vulkan&apos;s Teachings" book="Supplement: Angels of Death" hidden="false">
@@ -22834,11 +22834,19 @@ If several models are in a position to capture Cypher, some of which are Dark An
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="dd58-9e4c-0f40-40ac" name="Chainsword Hand" hidden="false" collective="false" defaultSelectionEntryId="2259-bf55-f4ff-28d2">
+            <selectionEntryGroup id="dd58-9e4c-0f40-40ac" name="Chainsword Hand" hidden="false" collective="false">
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="90e8-57b6-86bd-c2c2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05e0-6d2f-d195-033e" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d3be-5ff0-1426-9d5b" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4213-29ac-bb47-c110" type="max"/>
@@ -22864,11 +22872,19 @@ If several models are in a position to capture Cypher, some of which are Dark An
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="cb18-0e38-4e85-877e" name="Bolt Pistol Hand" hidden="false" collective="false" defaultSelectionEntryId="d92f-5701-65ed-8a9c">
+            <selectionEntryGroup id="cb18-0e38-4e85-877e" name="Bolt Pistol Hand" hidden="false" collective="false">
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="90e8-57b6-86bd-c2c2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05e0-6d2f-d195-033e" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc4b-0425-cbf8-38c5" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b640-95ca-722c-a810" type="max"/>
@@ -22920,6 +22936,23 @@ If several models are in a position to capture Cypher, some of which are Dark An
               <infoLinks/>
               <modifiers/>
               <constraints/>
+            </entryLink>
+            <entryLink id="702d-b746-b206-b714" name="" hidden="false" targetId="05e0-6d2f-d195-033e" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="aded-50fa-6e54-ef3d" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="a6c9-f21f-d27f-3721" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3454-af47-b9dd-44f3" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aded-50fa-6e54-ef3d" type="max"/>
+              </constraints>
             </entryLink>
           </entryLinks>
           <costs>
@@ -23159,26 +23192,11 @@ If several models are in a position to capture Cypher, some of which are Dark An
                   <repeats/>
                   <conditions/>
                   <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
-                        <condition field="selections" scope="a6c9-f21f-d27f-3721" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7556-3a37-21ca-4514" type="atLeast"/>
+                        <condition field="selections" scope="a6c9-f21f-d27f-3721" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="equalTo"/>
                       </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="a6c9-f21f-d27f-3721" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c309-77b6-1bb8-8a65" type="atLeast"/>
-                            <condition field="selections" scope="a6c9-f21f-d27f-3721" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7556-3a37-21ca-4514" type="atLeast"/>
-                          </conditions>
-                          <conditionGroups/>
-                        </conditionGroup>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="a6c9-f21f-d27f-3721" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7556-3a37-21ca-4514" type="atLeast"/>
-                            <condition field="selections" scope="a6c9-f21f-d27f-3721" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c309-77b6-1bb8-8a65" type="atLeast"/>
-                          </conditions>
-                          <conditionGroups/>
-                        </conditionGroup>
-                      </conditionGroups>
+                      <conditionGroups/>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -23189,16 +23207,6 @@ If several models are in a position to capture Cypher, some of which are Dark An
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
-                <entryLink id="1267-772b-7f93-1358" name="" hidden="false" targetId="fd49-81fb-9716-fb24" type="selectionEntry">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="273d-09d3-b88a-3c90" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d23a-e9a6-b88a-222f" type="max"/>
-                  </constraints>
-                </entryLink>
                 <entryLink id="65b3-d981-73bf-0e5b" name="" hidden="false" targetId="2f28-0a8e-362d-a945" type="selectionEntry">
                   <profiles/>
                   <rules/>
