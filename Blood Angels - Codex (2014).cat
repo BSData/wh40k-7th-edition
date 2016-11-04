@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6cacb5fc-d6bf-078d-307e-6f16c72d5f2a" name="Blood Angels: Codex (2014)" book="Codex: Blood Angels" revision="2" battleScribeVersion="2.00" authorName="Kangodo (and others)" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repos" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6cacb5fc-d6bf-078d-307e-6f16c72d5f2a" name="Blood Angels: Codex (2014)" book="Codex: Blood Angels" revision="3" battleScribeVersion="2.00" authorName="Kangodo (and others)" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repos" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -25180,7 +25180,22 @@
               <modifiers/>
             </infoLink>
           </infoLinks>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="maxSelections" value="0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="cc78-114c-c6f4-651a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8203-5d00-a4bb-f6a5" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="minSelections" value="0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="cc78-114c-c6f4-651a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8203-5d00-a4bb-f6a5" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -43481,7 +43496,7 @@
                 <cost name="pts" costTypeId="points" value="25.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8203-5d00-a4bb-f6a5" name="The Guilded Crozius" hidden="true" collective="false" categoryEntryId="(No Category)" type="upgrade">
+            <selectionEntry id="8203-5d00-a4bb-f6a5" name="The Guilded Crozius" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
               <profiles>
                 <profile id="a96d-666b-a959-23aa" name="The Guilded Crozius" book="Angel&apos;s Blade" page="133" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
                   <profiles/>
@@ -43508,10 +43523,10 @@
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="hidden" value="true">
                   <repeats/>
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cc78-114c-c6f4-651a" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cc78-114c-c6f4-651a" type="notInstanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
