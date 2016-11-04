@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="032c-f467-12f6-fc58" name="Space Marines: Codex" revision="7" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="032c-f467-12f6-fc58" name="Space Marines: Codex" revision="8" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="bab5-1920-a2ed-5b27" name="Vulkan&apos;s Teachings" book="Supplement: Angels of Death" hidden="false">
@@ -383,7 +383,15 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="5c28-1a33-3726-9eec" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e275-392c-6fc5-767f" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="626f-c9f3-85d7-f243" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="5c28-1a33-3726-9eec" type="max"/>
@@ -7100,7 +7108,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
             <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="5"/>
             <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="2"/>
             <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="10"/>
-            <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+"/>
+            <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/4+"/>
           </characteristics>
         </profile>
       </profiles>
@@ -7180,7 +7188,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="407.0"/>
+        <cost name="pts" costTypeId="points" value="140.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="25d2-9097-bbfc-0545" name="Chaplain Grimaldus" hidden="false" collective="false" type="model">
@@ -23226,57 +23234,13 @@ If several models are in a position to capture Cypher, some of which are Dark An
           <modifiers>
             <modifier type="increment" field="points" value="3">
               <repeats>
-                <repeat field="selections" scope="a6c9-f21f-d27f-3721" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="90e8-57b6-86bd-c2c2" repeats="1"/>
+                <repeat field="selections" scope="a6c9-f21f-d27f-3721" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="points" value="3">
-              <repeats>
-                <repeat field="selections" scope="a6c9-f21f-d27f-3721" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7556-3a37-21ca-4514" repeats="1"/>
-              </repeats>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="points" value="15">
-              <repeats/>
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="a6c9-f21f-d27f-3721" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7556-3a37-21ca-4514" type="equalTo"/>
-                    <condition field="selections" scope="a6c9-f21f-d27f-3721" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3454-af47-b9dd-44f3" type="equalTo"/>
-                    <condition field="selections" scope="a6c9-f21f-d27f-3721" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c309-77b6-1bb8-8a65" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="points" value="15">
               <repeats/>
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="a6c9-f21f-d27f-3721" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7556-3a37-21ca-4514" type="atLeast"/>
-                    <condition field="selections" scope="a6c9-f21f-d27f-3721" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3454-af47-b9dd-44f3" type="atLeast"/>
-                    <condition field="selections" scope="a6c9-f21f-d27f-3721" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c309-77b6-1bb8-8a65" type="atLeast"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" field="points" value="3">
-              <repeats>
-                <repeat field="selections" scope="a6c9-f21f-d27f-3721" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3454-af47-b9dd-44f3" repeats="1"/>
-              </repeats>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="points" value="3">
-              <repeats>
-                <repeat field="selections" scope="a6c9-f21f-d27f-3721" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c309-77b6-1bb8-8a65" repeats="1"/>
-              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -31374,7 +31338,7 @@ Harassing Fire: Any unit that suffers one or more unsaved Wounds from a unit tha
                 <modifier type="set" field="hidden" value="true">
                   <repeats/>
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="20b8-569d-7a0a-0d17" type="notInstanceOf"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5aca-640d-4e58-9f54" type="lessThan"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -50021,7 +49985,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <repeats/>
               <conditions/>
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a60e-8075-ad49-55de" type="notInstanceOf"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="21a6-2cd3-ea38-02ac" type="notInstanceOf"/>
