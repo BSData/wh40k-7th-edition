@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2000" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2001" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1698,6 +1698,54 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6dd6-c94f-055e-850c" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d91e-71c9-9c2b-8b74" type="max"/>
+          </constraints>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
+    <forceEntry id="f1c4-09e2-1971-7362" name="Kill Team Detachment" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="7010-b7e7-df21-feff" name="Formation Restrictions" book="Kill Team Dataslate" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>• Minimum 4 models present in roster.
+• No models may have armor saves better than 3+.
+• No vehicles may have armour values totalling greater than 33 (Front + Side + Back).
+• No models may have more than 3 Wounds or Hull Points.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" name="Elites" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5379-1caa-f401-479a" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="c274d0b0-5866-44bc-9810-91c136ae7438" name="Fast Attack" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c822-dbe6-5747-4731" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" name="Troops" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5428-5794-7baf-8635" type="max"/>
           </constraints>
         </categoryEntry>
       </categoryEntries>
