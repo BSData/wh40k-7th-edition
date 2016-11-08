@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="4" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="5" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
   <costTypes>
-    <costType id="points" name="pts"/>
+    <costType id="points" name="pts" defaultCostLimit="0.0"/>
   </costTypes>
   <profileTypes>
     <profileType id="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Unit">
@@ -7699,6 +7699,99 @@ If this unit suffers Perils of the Warp, or is hit by an attack that specificall
       <infoLinks/>
       <modifiers/>
       <description>A unit with this special rule controls objectives even if an enemy scoring unit is within range of the objective marker, unless the enemy unit also has this special rule.</description>
+    </rule>
+    <rule id="092c-188d-753d-404e" name="Stomp" book="BRB" page="" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Super-heavy walkers or Gargantuan Creatures engageed in combat may make a special type of attack called a Stomp attack.  The Stomp attack is made in addition to the Super-heavy Walker&apos;s normal attacks. Stomp attacks are resolved during the Fight sub-phase at the Initiative 1 step.  This does not grant the model an additional Pile In move at the Initiative 1 step.
+
+A Stomp attack consists of D3 Stomps.  Buildings, Flyers, Swooping Flying Monstrous Creatures, Gargantuan Creatures, Flying Gargantuan Creatures, Super-heavy Vehicles, Super-heavy Walkers, and Super-heavy Flyers cannot be stomped; do not roll on the Stomp table for them if they fall under the blast marker.  Any other units with models under the blast marker are stomped as normal.</description>
+    </rule>
+    <rule id="c6d4-50ae-eef2-e963" name="Stomp Table" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Non Vehicle:
+1: No Effect.
+2-5: Each Model from the unit being stomped that is even partially under the blast marker suffers a S6 AP4 hit.
+6: Each model from the unit being stomped that is even partially under the blast marker is removed as a casualty.
+
+Vehicle: 
+1: No Effect
+2-5: One vehicle in the unit being stomped that is even partially under the blast marker (stomping model&apos;s choice) suffers a penetrating hit.
+6: One vehicle in the unit being stomped that is even partially under the blast marker (stomping model&apos;s choice) scatters D6&quot; and then suffers an Explodes! result.</description>
+    </rule>
+    <rule id="8065-2f17-bb00-d535" name="Thunderblitz" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Super-heavy vehicles may Tank Shock or Ram.  When they do so, roll once on teh Thunderblitz table immediately before taking the Morale check for the unit being Tank Shocked, or immediately before rolling for armour penetrating when performing a Ram.
+
+Do not roll on the Thunderblitz table when Tank Shocking a Gargantuan Creature or Flying Gargantuan Creature, or when Ramming a Super-heavy vheicle or Super-heavy Walker.  Instead, simply carry out the Tank Shock or Ram as normal.</description>
+    </rule>
+    <rule id="5dfe-0b9b-26b3-edb4" name="Thunderblitz Table" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Tank Shock:
+1: No Effect. Then, Carry on with the Tank Shock as normal.
+2-5: The unit being Tank Shocked suffers D6 S6 AP4 hits. Then, Carry on with the Tank Shock as normal.
+6: The unit being Tank Shocked suffers 2D6 S10 AP2 hits. Then, Carry on with the Tank Shock as normal.
+
+Ram: 
+1: No Effect. Then, Carry on with the Ram as normal.
+2-5:  The Super-heavy vehicle adds D6 to the armour penetration roll for the Ram. Then, Carry on with the Ram as normal.
+6: The vehicle being rammed scatters D6&quot; and then suffers an Explodes! result from the Vehicle Damage Table.</description>
+    </rule>
+    <rule id="082a-9900-f5df-7bb3" name="Invincible Behemoth" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A super-heavy vehicle is so large and strongly built that weapons which degrade the armour of smaller vehicles will not effect it.  Because of this, any attack that says that the target model is destroyed, wrecked, Explodes! or is otherwise removed from play inflicts D3 Hull Points of damage on a Super-heavy vehicle instead.
+
+In addition, any attacks or special abilities that permanently lower the Armour Values of a target vehicle do not affect a Super-heavy vehicle.  Note that attacks or abilities that count the Armour Value as being lower, but do not actually change it, work normally.</description>
+    </rule>
+    <rule id="288b-7bed-3048-9428" name="Unstoppable" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Any attack that normally inflicts Instant Death or says that the target model is removed from play inflicts D3 Wounds on a Gargantuan Creature of Flying Gargantuan Creature instead.
+
+In addition, attacks with the Sniper special rule only cause a Wound on a roll of a 6.  Attacks with the Poisoned special rule only cause a Wound on a roll of a 6 (unless the attack&apos;s Strength would cause a Wound on a lower result)</description>
+    </rule>
+    <rule id="e663-99e0-6b3e-a7ea" name="Gargantuan Creature" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Gargantuan Creatures and Flying Gargantuan Creatures have the following Special Rules:
+
+Fear, Fearless, Feel No Pain, Hammer of Wrath, Move Through Cover, Relentless, Smash, Strikedown, Vector Strike (Flying Gargantuan Creatures Only)</description>
+    </rule>
+    <rule id="f14f-8413-de9b-ed19" name="Super-Heavy Vehicle" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Super-heavy vehicles have the following special rules:
+
+Fear, Move Through Cover, Invincible Behemoth.</description>
+    </rule>
+    <rule id="f8b2-c433-0765-f1e7" name="Super-Heavy Walker" book="BRB" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>All Super-Heavy Walkers have the following special rules:
+
+Fear, Hammer of Wrath, Invincible Behemoth, Move Through Cover, Relentless, Smash, Strikedown.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
