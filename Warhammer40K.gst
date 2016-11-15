@@ -8588,120 +8588,146 @@ Fear, Hammer of Wrath, Invincible Behemoth, Move Through Cover, Relentless, Smas
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>At the start of any Fight sub-phase, this model gains an additional D3 attacks if they are locked in combat with more than one enemy model. A model that has made a disordered charge that turn receives no benefit from Berserk Fighter.</description>
     </rule>
     <rule id="d784-9fdb-622e-32a5" name="Deathblow" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>If a target suffers an unsaved Wound from a close combat attack made by this model, the target is reduced to 0 Wounds and is removed as a casualty.</description>
     </rule>
     <rule id="b66d-46a8-2300-c2ed" name="Killer Instinct" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>This model always wounds on a 2+ when making close combat attacks against non-vehicle models. </description>
     </rule>
     <rule id="146b-5651-feff-cf72" name="Warrior Adept" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>This model has +1 WS.</description>
     </rule>
     <rule id="c1bc-2d6c-ed91-1a1c" name="Bane of Vehicles" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>When making shooting attacks, this model re-rolls failed armour penetration rolls against vehicles and can choose to re-roll glancing hits, in an attempt to instead get a penetrating hit – but the second result must be kept</description>
     </rule>
     <rule id="0048-f0df-7559-f9c3" name="Eagle-Eye" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>The range of any ranged weapons fired by this model is increased by half. For example, this model could fire a boltgun (Range 24&quot;) up to 36&quot; instead. This increased range also affects Rapid Fire and Melta distances, but has no effect on Template weapons.</description>
     </rule>
     <rule id="784b-fcd8-d2e1-1631" name="Expert Shot" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>This model has +1 BS.</description>
     </rule>
     <rule id="7467-2946-8f8c-fa81" name="Machine Saboteur" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>When this model hits a vehicle in close combat, roll a D6 to determine the effect rather than rolling for armour penetration normally:
+D6 Result
+1     No effect
+2-4  Glancing hit
+5-6  Penetrating hit</description>
     </rule>
     <rule id="f1d4-5b05-ff67-81d4" name="Master-Craftsman" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>When selecting this special rule, pick a ranged weapon carried by this model. You can re-roll one failed To Hit roll per turn with that weapon.</description>
     </rule>
     <rule id="9f0c-d4f2-94ee-c3a8" name="Reaping Volley" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>When attacking with a ranged weapon that fires more than one shot, this model may target different enemy models with each shot. Announce the intended target of every shot before making any To Hit rolls.</description>
     </rule>
     <rule id="dfe1-2bfb-7c50-092f" name="Sharpshooter" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Cover saves cannot be taken against Wounds, glancing or penetrating hits caused by shooting attacks made this model. </description>
     </rule>
     <rule id="d4ca-a14b-89b0-9f96" name="Supressing Fire" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>f a non-vehicle model suffers one or more hits from a shooting attack made by this model, the target must take a Leadership test once this model has finished its attacks for that phase. This is called a Pinning test. 
+If the target fails the test, it must immediately Go to Ground (see Warhammer 40,000: The Rules ). As the target has already taken its saves, Going to Ground does not protect it against the fire of the weapon that caused the test – it’s too late! As long as the test is passed, a target can be called upon to take multiple Pinning tests in a single turn, but only once for each model shooting at them. If a model has already Gone to Ground, no further Pinning tests are taken.
+If the special rules of a model specify that they can never be Pinned, they automatically pass this test. Such models can still Go to Ground voluntarily if they wish.</description>
     </rule>
     <rule id="2353-5421-d842-34fb" name="Blinding Distraction" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Any target hit in close combat by this model must take an Initiative test at the end of the current phase. If the test is passed, all is well – they have seen through the distraction. If the Initiative test is failed, the target is reduced to Weapon Skill and Ballistic Skill 1 until the end of their next turn. Any model that does not have an Initiative characteristic (for example, non-Walker vehicles, buildings etc.) is unaffected by this special rule.</description>
     </rule>
     <rule id="7ab3-3bf5-f878-42cb" name="Exploit Weakness" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>When this model makes a close combat attack, for each To Wound roll of a 6, the target automatically suffers a Wound, regardless of its Toughness. These Wounds are resolved at AP2. Against vehicles, each armour penetration roll of 6 allows a further D3 to be added to the total. These hits are resolved using their normal AP value.</description>
     </rule>
     <rule id="2053-118c-c2b7-c8ac" name="Executioner" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>This model re-rolls all failed To Wound rolls against targets with a Wounds characteristic of 2 or more.</description>
     </rule>
     <rule id="0046-4495-afce-fb83" name="Low Blow" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>A target that suffers one or more hits in close combat from this model is reduced to Initiative 1 until the end of the following Assault phase</description>
     </rule>
     <rule id="0c2a-421a-69a1-4444" name="Murderous Blows" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>This model re-rolls failed To Wound rolls in close combat.</description>
     </rule>
     <rule id="1345-b808-628a-f6e1" name="Poisoned Weapons" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>When attacking in close combat, this model always wounds their target on a 4+, unless a lower result would be required. In addition, if the Strength of this model is higher than the Toughness of their target, this model re-rolls failed rolls To Wound in close combat. This special rule has no effect against vehicles.</description>
     </rule>
     <rule id="97cf-222e-0229-0ab5" name="Smackdown" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Any non-vehicle model that suffers one or more hits from this model in close combat moves as if it is in difficult terrain until the end of its next turn. </description>
     </rule>
     <rule id="92e1-df2b-07ca-179c" name="Prometheum Charges" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>This model counts as being equipped with assault grenades (see Warhammer 40,000: The Rules ). However, cover saves cannot be taken against Wounds caused by promethium charges in the Shooting phase. </description>
     </rule>
   </sharedRules>
   <sharedProfiles>
