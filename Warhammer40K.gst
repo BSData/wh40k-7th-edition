@@ -1496,21 +1496,27 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="3c6f-d590-738a-c264" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="271a-3c9c-9c91-a611" type="min"/>
+          </constraints>
         </categoryEntry>
         <categoryEntry id="ef2b-83bd-1bad-5742" name="Auxiliary" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="3c6f-d590-738a-c264" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b34-146c-8b4c-e94b" type="min"/>
+          </constraints>
         </categoryEntry>
         <categoryEntry id="9050-d437-3301-7e42" name="Command" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="3c6f-d590-738a-c264" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4706-972b-14e1-2bb0" type="max"/>
+          </constraints>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
