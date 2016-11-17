@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2f40acf-4ce2-862a-6856-dcb472106abb" name="Tyranids: Codex (2014)" revision="2000" battleScribeVersion="2.00" authorName="Spartacusbob/ Randobar / Arnestig" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f2f40acf-4ce2-862a-6856-dcb472106abb" name="Tyranids: Codex (2014)" revision="2001" battleScribeVersion="2.00" authorName="Spartacusbob/ Randobar / Arnestig" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -41785,21 +41785,24 @@ own, unless their own would be higher for any reason.</description>
       <rules/>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <repeats/>
+        <modifier type="increment" field="0a31-2253-0968-e491" value="1">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ee8-78a4-e8ec-2a83" repeats="1"/>
+          </repeats>
           <conditions/>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21ba-5efc-7b5a-215a" type="lessThan"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ee8-78a4-e8ec-2a83" type="lessThan"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="0a31-2253-0968-e491" value="1">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="21ba-5efc-7b5a-215a" repeats="1"/>
+          </repeats>
+          <conditions/>
+          <conditionGroups/>
         </modifier>
       </modifiers>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0a31-2253-0968-e491" type="max"/>
+      </constraints>
       <selectionEntries>
         <selectionEntry id="5541-980a-c16b-e017" name="Tyrant Guard" book="Codex: Tyranids" page="86" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
           <profiles/>
