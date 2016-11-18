@@ -28915,7 +28915,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="maxSelections" value="2.0">
+            <modifier type="set" field="eca9-2794-df09-8015" value="2">
               <repeats/>
               <conditions>
                 <condition field="selections" scope="6f16-d12c-fb04-e3fd" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7b6-71a0-43b0-d116" type="equalTo"/>
@@ -28924,7 +28924,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eca9-2794-df09-8015" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -32493,14 +32493,7 @@ controlling player’s turns, roll a D6 for each collapsed shield – a roll of 
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInRoster" type="min"/>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-        <constraint field="points" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minPoints" type="min"/>
-        <constraint field="points" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -36130,12 +36123,14 @@ controlling player’s turns, roll a D6 for each collapsed shield – a roll of 
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="1362-3eff-15cb-f829" name="Special Weapons" hidden="true" collective="false">
+    <selectionEntryGroup id="1362-3eff-15cb-f829" name="Special Weapons" hidden="false" collective="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1564-f2ba-37aa-9b4e" type="max"/>
+      </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
