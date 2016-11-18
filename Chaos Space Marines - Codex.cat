@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" name="Chaos Space Marines: Codex (2012)" revision="2002" battleScribeVersion="2.00" authorName=" BSData team1" authorUrl="http://battlescribedata.appspot.com/#/repos" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" name="Chaos Space Marines: Codex (2012)" revision="2003" battleScribeVersion="2.00" authorName=" BSData team1" authorUrl="http://battlescribedata.appspot.com/#/repos" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1068,7 +1068,7 @@
       <modifiers/>
       <constraints/>
     </entryLink>
-    <entryLink id="28de-0019-49c0-4d27" hidden="false" targetId="b73e-1f6c-89d6-165e" type="selectionEntry" categoryEntryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
+    <entryLink id="28de-0019-49c0-4d27" hidden="false" targetId="b73e-1f6c-89d6-165e" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15902,7 +15902,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       </infoLinks>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7855-7aa1-bbfd-c53f" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="8371-ff3a-f522-c3c2" name="Twin-Linked Heavy Bolter" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -18380,7 +18380,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             <cost name="pts" costTypeId="points" value="13.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="de14-10c5-326a-70dd" name="Swap Boltgun with CCW" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+        <selectionEntry id="de14-10c5-326a-70dd" name="Swap Boltgun with CCW" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -18418,7 +18418,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9d09-846a-def2-01f1" name="Take CCW" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+        <selectionEntry id="9d09-846a-def2-01f1" name="Take CCW" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -18982,6 +18982,13 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               </repeats>
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d17-fd64-f8e0-7079" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="decrement" field="points" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc1c-035e-1f9e-7a5d" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -21722,6 +21729,13 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="decrement" field="points" value="2">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc1c-035e-1f9e-7a5d" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints/>
         </entryLink>
@@ -24031,26 +24045,41 @@ The nominated unit has Fearless and +1 Strength for the entire game.</descriptio
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="eb18-d85e-9391-2df6" name="Weapons" hidden="false" collective="false">
+            <selectionEntryGroup id="8a72-92fb-9173-1f9e" name="Ranged Weapons" hidden="false" collective="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8317-2419-d108-e8ee" type="min"/>
               </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks>
-                <entryLink id="492d-8cd9-0316-1d12" hidden="false" targetId="c08263bd-fddb-134f-7bdb-f04b39af1e2f" type="selectionEntryGroup">
+              <selectionEntries>
+                <selectionEntry id="f808-8a26-2e94-6e3c" name="Boltgun" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
                   <profiles/>
                   <rules/>
-                  <infoLinks/>
+                  <infoLinks>
+                    <infoLink id="d2dd-0386-0cdb-ff87" hidden="false" targetId="3d4b-95ea-f860-dd22" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
                   <modifiers/>
-                  <constraints/>
-                </entryLink>
-                <entryLink id="4825-a45c-86f5-1a33" hidden="false" targetId="0c03faa1-c49d-b0f7-2e58-d86fce11656c" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71c1-4f13-bf81-07c3" type="max"/>
+                  </constraints>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="bc26-9ff9-5ad5-967b" hidden="false" targetId="0c03faa1-c49d-b0f7-2e58-d86fce11656c" type="selectionEntryGroup">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -24069,6 +24098,13 @@ The nominated unit has Fearless and +1 Strength for the entire game.</descriptio
               <constraints/>
             </entryLink>
             <entryLink id="f4d8-5f28-7f92-44cc" name="New EntryLink" hidden="false" targetId="2486-fac0-a7b8-b110" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="12c7-0dbf-3d33-98aa" hidden="false" targetId="c08263bd-fddb-134f-7bdb-f04b39af1e2f" type="selectionEntryGroup">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -27673,6 +27709,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cc5-ca52-90cb-1578" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -27698,6 +27735,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bfd-9354-ed4a-dc2b" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -27723,6 +27761,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30d6-9363-1ea5-58b1" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -27748,6 +27787,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a75-1ea7-d9a7-6718" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -27773,6 +27813,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f69f-afcf-4380-9091" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -27798,6 +27839,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44bf-81fb-0c33-ef20" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -27838,6 +27880,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98a5-e471-f849-cec7" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -27863,6 +27906,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a2a-d096-d18e-6c3f" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -27888,6 +27932,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53c8-39d8-33a0-7949" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -27913,6 +27958,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f157-ac30-269f-ad00" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -27938,6 +27984,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4c2-3078-3e16-fc9a" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -27963,6 +28010,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbc8-fcac-473b-0a20" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -27995,6 +28043,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="659c-7a81-1aaa-ffc0" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -28027,6 +28076,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d51-fece-23ad-ec6e" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -28059,6 +28109,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0b0-62ac-eeb5-2e3f" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -28091,6 +28142,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3265-a1a4-8ba2-2860" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -28116,6 +28168,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3522-e19a-abba-89d6" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -28141,6 +28194,7 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2c9-6735-3021-9fe5" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -37771,7 +37825,7 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="set" field="maxSelections" value="5">
+                <modifier type="set" field="7855-7aa1-bbfd-c53f" value="5">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -39568,28 +39622,36 @@ Carry out the first set of attacks to completion, then carry out the second set 
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caf5-714c-6faf-3ea0" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="09243f44-531e-9560-4eee-88482d38ddbe" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caf5-714c-6faf-3ea0" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
-        <modifier type="set" field="maxSelections" value="0.0">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09243f44-531e-9560-4eee-88482d38ddbe" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="increment" field="maxSelections" value="1">
+        <modifier type="increment" field="maxInForce" value="1">
           <repeats>
-            <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="no child" repeats="1"/>
+            <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1"/>
           </repeats>
           <conditions/>
           <conditionGroups/>
         </modifier>
-        <modifier type="increment" field="maxInForce" value="1.0">
+        <modifier type="increment" field="maxSelections" value="1">
           <repeats>
-            <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="no child" repeats="1"/>
+            <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1"/>
+          </repeats>
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="09243f44-531e-9560-4eee-88482d38ddbe" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="decrement" field="maxInForce" value="1">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="48064679-8bfe-230a-befd-c38cb590f9b9" repeats="1"/>
           </repeats>
           <conditions/>
           <conditionGroups/>
@@ -39597,9 +39659,9 @@ Carry out the first set of attacks to completion, then carry out the second set 
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -39834,42 +39896,53 @@ Carry out the first set of attacks to completion, then carry out the second set 
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="48064679-8bfe-230a-befd-c38cb590f9b9" name="Legacies of Ruin (Walkers)" hidden="true" collective="false">
+    <selectionEntryGroup id="48064679-8bfe-230a-befd-c38cb590f9b9" name="Legacies of Ruin (Walkers)" hidden="false" collective="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caf5-714c-6faf-3ea0" type="atLeast"/>
-          </conditions>
+        <modifier type="increment" field="maxInForce" value="1">
+          <repeats>
+            <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1"/>
+          </repeats>
+          <conditions/>
           <conditionGroups/>
         </modifier>
         <modifier type="increment" field="maxSelections" value="1">
           <repeats>
-            <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="no child" repeats="1"/>
+            <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1"/>
+          </repeats>
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="09243f44-531e-9560-4eee-88482d38ddbe" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="decrement" field="maxSelections" value="1">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9be57471-9796-716e-1145-bd67dedf8425" repeats="1"/>
           </repeats>
           <conditions/>
           <conditionGroups/>
         </modifier>
-        <modifier type="increment" field="maxInForce" value="1">
-          <repeats>
-            <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="no child" repeats="1"/>
-          </repeats>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
           <conditions/>
-          <conditionGroups/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="09243f44-531e-9560-4eee-88482d38ddbe" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caf5-714c-6faf-3ea0" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInRoster" type="min"/>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-        <constraint field="points" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minPoints" type="min"/>
-        <constraint field="points" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
