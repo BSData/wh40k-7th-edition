@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="555e-9663-fc05-f0db" name="Eldar Craftworlds: Codex (2015)" book="Codex: Eldar Craftworlds (2015), Imperial Armour 11: Second Edition (2015), Death From the Skies (2016)" revision="2004" battleScribeVersion="2.00" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="555e-9663-fc05-f0db" name="Eldar Craftworlds: Codex (2015)" book="Codex: Eldar Craftworlds (2015), Imperial Armour 11: Second Edition (2015), Death From the Skies (2016)" revision="2003" battleScribeVersion="2.00" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -3886,7 +3886,38 @@
       </infoLinks>
       <modifiers/>
       <constraints/>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="de62-f04e-ae68-e962" name="Starshot Missiles for the Dark Reapers" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="8ae4-8a59-1eb9-99bf" hidden="false" targetId="5207-45cd-580d-a21f" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="increment" field="points" value="8.0">
+              <repeats>
+                <repeat field="selections" scope="189b-6717-365d-4afe" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="afe0-56cc-3534-e1c1" repeats="1"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="afe0-56cc-3534-e1c1" name="Members - 3 to 10" hidden="false" collective="false" defaultSelectionEntryId="a791-99d9-9fac-5cb8">
           <profiles/>
@@ -4000,7 +4031,7 @@
                 <cost name="pts" costTypeId="points" value="25.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f2f7-f1c2-80be-429b" name="Dark Reaper Exarch" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+            <selectionEntry id="f2f7-f1c2-80be-429b" name="Dark Reaper Exarch" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
               <profiles>
                 <profile id="d122-5719-edec-1e0f" name="Dark Reaper Exarch" book="Codex: Eldar Craftworlds (2015)" page="129" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd">
                   <profiles/>
@@ -4219,37 +4250,7 @@
               </selectionEntryGroups>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="14e1-302a-ea21-49c3" name="Starshot Missiles" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="3d49-ab66-7589-ec30" hidden="false" targetId="5207-45cd-580d-a21f" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers>
-                <modifier type="increment" field="points" value="8">
-                  <repeats>
-                    <repeat field="selections" scope="189b-6717-365d-4afe" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a791-99d9-9fac-5cb8" repeats="1"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2021-cedf-4e6e-66ff" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="40.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -29063,9 +29064,7 @@ Deliverance (1 warp charge): This is a Blessing which targets a single friendly 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
+      <costs/>
     </selectionEntry>
     <selectionEntry id="4d4f-24e2-e942-41b7" name="Warlock Conclave" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
       <profiles>
