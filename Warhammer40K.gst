@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2007" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2008" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -413,6 +413,26 @@
       </categoryEntries>
       <forceEntries/>
     </forceEntry>
+    <forceEntry id="c551-cfba-54eb-2dec" name="Air Superiority Detachment" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="8c73-dac2-10f4-9b50" name="Flyer Wing" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6dd6-c94f-055e-850c" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d91e-71c9-9c2b-8b74" type="max"/>
+          </constraints>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
     <forceEntry id="3bfe125e-5674-06d5-082f-f7f577ea26fc" name="Apocalypse" hidden="false">
       <profiles/>
       <rules/>
@@ -493,9 +513,79 @@
       </categoryEntries>
       <forceEntries/>
     </forceEntry>
+    <forceEntry id="f1c4-09e2-1971-7362" name="Kill Team Detachment" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="7010-b7e7-df21-feff" name="Formation Restrictions" book="Kill Team Dataslate" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>• Minimum 4 models present in roster.
+• No models may have armor saves better than 3+.
+• No vehicles may have armour values totalling greater than 33 (Front + Side + Back).
+• No models may have more than 3 Wounds or Hull Points.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" name="Elites" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5379-1caa-f401-479a" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="c274d0b0-5866-44bc-9810-91c136ae7438" name="Fast Attack" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c822-dbe6-5747-4731" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" name="Troops" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5428-5794-7baf-8635" type="max"/>
+          </constraints>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
     <forceEntry id="4a305c84-80cf-9722-7d7f-5ecd9dd2f6de" name="Planetstrike Attacker" hidden="false">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="ea70-9b8c-3f35-ede1" name="Ideal Mission Commander" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>You can re-roll the result on the Planetstrike Attacker Warlord Trait table.</description>
+        </rule>
+        <rule id="bafb-31c8-dcc0-6f78" name="Invading Battle Force" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Once, in each of your turns, you can choose one unit before making any Reserve Rolls. You can choose to pass or fail the Reserve Roll for that unit automatically (it must still arrive on the fourth turn).</description>
+        </rule>
+        <rule id="7c15-9f58-5eb9-3774" name="Offensive Strategy" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If this is your Primary Detachment, you have +1 Stratagem Point to spend when selecting Planetstrike stratagems.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -558,7 +648,29 @@
     </forceEntry>
     <forceEntry id="1ac30c14-b42d-637f-fe93-7b29d5ca3d6b" name="Planetstrike Defender" hidden="false">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="fd71-b463-01bd-03d6" name="Ideal Mission Commander" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>You can re-roll the result on the Planetstrike Defender Warlord table.</description>
+        </rule>
+        <rule id="e009-4d59-ce4c-7cb4" name="Defending Battle Force" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Once, in each of your turns, you can choose one unit before making any Reserve Rolls. You can choose to pass or fail the Reserve Roll for that unit automatically (it must still arrive on the fourth turn).</description>
+        </rule>
+        <rule id="22cb-b93f-36fc-e389" name="Defensive Strategy" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If this is your Primary Detachment, you have +1 Stratagem Point to spend when selecting Planetstrike stratagems.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -614,6 +726,176 @@
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
+          </constraints>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
+    <forceEntry id="fa36-51b1-cf51-2945" name="Siege War Attacker Detachment" book="Planetary Onslaught" page="34" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="86a3-1bb1-430f-c76b" name="Siege Force" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All units in this Detachment have the Preferred Enemy (Fortifications) special rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="360b-d885-4017-b1e9" name="New InfoLink" hidden="false" targetId="f217-b311-e5b1-c8c7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="848a6ff2-0def-4c72-8433-ff7da70e6bc7" name="HQ" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2742-a1ce-9f98-781b" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb45-92b4-0465-379b" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" name="Elites" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b1b-8649-5998-605a" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" name="Troops" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91b8-7d17-4ed0-6b19" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4799-3123-2269-123f" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="c274d0b0-5866-44bc-9810-91c136ae7438" name="Fast Attack" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85b4-fee1-16a2-5b5f" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" name="Heavy Support" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dd3-b213-f7be-9f3c" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="d713cda3-5d0f-40d8-b621-69233263ec2a" name="Fortification" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb16-83db-638d-1a28" type="max"/>
+          </constraints>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
+    <forceEntry id="9ce4-7ecb-cdf1-0f2a" name="Siege War Defender Detachment" book="Planetary Onslaught" page="34" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="3630-6684-8a54-445a" name="Deadly Defences" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Automated Fire from Fortifications in this Detachment is resolved with a BS of 3, rather than 2 and can target any unit within range and line of sight, not just the nearest.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="848a6ff2-0def-4c72-8433-ff7da70e6bc7" name="HQ" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccbe-3b03-3926-f981" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8db1-e86c-8ce6-d81f" type="min"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" name="Elites" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a437-3461-4559-f1bf" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" name="Troops" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32b0-5e8a-4018-a1f3" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef8d-e38b-874e-91de" type="min"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="c274d0b0-5866-44bc-9810-91c136ae7438" name="Fast Attack" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63ea-1da1-12c1-7c2d" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" name="Heavy Support" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b36-2adc-10e4-bd96" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="d713cda3-5d0f-40d8-b621-69233263ec2a" name="Fortification" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a145-d90c-eca4-a2a1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3162-b0b1-6829-c7dc" type="min"/>
           </constraints>
         </categoryEntry>
       </categoryEntries>
@@ -971,6 +1253,36 @@
       </categoryEntries>
       <forceEntries/>
     </forceEntry>
+    <forceEntry id="a545-5d4f-2ec7-2632" name="EC Corsair Fleet Raiding Company [FW]" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="3d2b-0608-48aa-2fb2" name="Cotorie" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="4bd4-7f76-50ee-7417" name="Command Crew" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="maxSelections" type="max"/>
+          </constraints>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
     <forceEntry id="11c0369c-edc5-0912-3e24-0f09c27c419f" name="SW The Wolves Unleashed Detachment" hidden="false">
       <profiles/>
       <rules/>
@@ -1178,74 +1490,6 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
-        </categoryEntry>
-      </categoryEntries>
-      <forceEntries/>
-    </forceEntry>
-    <forceEntry id="c551-cfba-54eb-2dec" name="Air Superiority Detachment" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryEntries>
-        <categoryEntry id="8c73-dac2-10f4-9b50" name="Flyer Wing" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6dd6-c94f-055e-850c" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d91e-71c9-9c2b-8b74" type="max"/>
-          </constraints>
-        </categoryEntry>
-      </categoryEntries>
-      <forceEntries/>
-    </forceEntry>
-    <forceEntry id="f1c4-09e2-1971-7362" name="Kill Team Detachment" hidden="false">
-      <profiles/>
-      <rules>
-        <rule id="7010-b7e7-df21-feff" name="Formation Restrictions" book="Kill Team Dataslate" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>• Minimum 4 models present in roster.
-• No models may have armor saves better than 3+.
-• No vehicles may have armour values totalling greater than 33 (Front + Side + Back).
-• No models may have more than 3 Wounds or Hull Points.</description>
-        </rule>
-      </rules>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryEntries>
-        <categoryEntry id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" name="Elites" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5379-1caa-f401-479a" type="max"/>
-          </constraints>
-        </categoryEntry>
-        <categoryEntry id="c274d0b0-5866-44bc-9810-91c136ae7438" name="Fast Attack" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c822-dbe6-5747-4731" type="max"/>
-          </constraints>
-        </categoryEntry>
-        <categoryEntry id="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" name="Troops" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5428-5794-7baf-8635" type="max"/>
-          </constraints>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
@@ -1500,9 +1744,16 @@
       <modifiers/>
       <constraints/>
     </entryLink>
+    <entryLink id="2f77-f036-4580-4a84" name="New EntryLink" hidden="false" targetId="348f-2143-adaa-708a" type="selectionEntry" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="a505-05af-bd44-56b6" name="Aegis Defense Line" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+    <selectionEntry id="a505-05af-bd44-56b6" name="Aegis Defense Line" book="Planetary Onslaught" page="79" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
       <profiles>
         <profile id="42dc-7ed9-3812-a07d" name="Aegis Defence Line" book="Warhammer 40k rulebook" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
           <profiles/>
@@ -1540,37 +1791,8 @@
         <cost name="pts" costTypeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="16d6-25c4-af92-4329" name="Aquila Strongpoint" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
-      <profiles>
-        <profile id="ed07-c91e-5623-e9a4" name="Aquila Strongpoint Bunker Annex" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="15"/>
-            <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="20"/>
-            <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
-            <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
-            <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="4"/>
-            <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Medium Building with Battlements"/>
-          </characteristics>
-        </profile>
-        <profile id="e304-4640-a65f-276d" name="Aquila Strongpoint Main Strongpoint" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="15"/>
-            <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="30"/>
-            <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
-            <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
-            <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="5"/>
-            <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Large Building with Battlements"/>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry id="16d6-25c4-af92-4329" name="Aquila Strongpoint" book="Planetary Onslaught" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles/>
       <rules/>
       <infoLinks>
         <infoLink id="b62a-cebb-fba0-5f26" hidden="false" targetId="d9b9-6c13-981a-0f07" type="rule">
@@ -1599,9 +1821,7 @@
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c399-b9fd-366f-c3cb" type="max"/>
-      </constraints>
+      <constraints/>
       <selectionEntries>
         <selectionEntry id="6fa8-8893-f930-33a0" name="Heavy Bolter" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
           <profiles/>
@@ -1625,6 +1845,110 @@
             <cost name="pts" costTypeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="db22-e7d7-6c53-6f48" name="Main Strongpoint" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="69b2-b8c1-db7c-2595" name="Aquila Strongpoint Main Strongpoint" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="15"/>
+                <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="30"/>
+                <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+                <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
+                <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="5"/>
+                <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Large Building with Battlements"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="786f-0e00-7ad2-74de" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="094f-b1fd-06f2-6c21" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="34db-6d83-205b-e63d" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="33e2-ef31-b7a2-774a" value="3">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="e56d-a80c-198c-2ca1" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="12af-64b0-135f-41b8" name="Bunker Annex" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="94fc-914e-3acd-eb08" name="Aquila Strongpoint Bunker Annex" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="15"/>
+                <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="20"/>
+                <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+                <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
+                <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="4"/>
+                <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Medium Building with Battlements"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1447-3e03-72e0-a141" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af2f-3760-c7b6-ff1b" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="003c-97b3-b1f5-847b" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="33e2-ef31-b7a2-774a" value="2">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="5963-2570-6353-7c1f" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="0112-e580-26e8-d161" name="Emplaced Weapons" hidden="false" collective="false" defaultSelectionEntryId="0850-e5c5-08f4-8b73">
@@ -1637,17 +1961,19 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="855e-bdc5-b26f-aff2" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="ca24-07c9-9eb1-2316" name="Vortex Missle Battery" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+            <selectionEntry id="ca24-07c9-9eb1-2316" name="Vortex Missle Battery" book="Planetary Onslaught" page="90" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
               <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="eaec-876c-7216-7018" hidden="false" targetId="57e2-2b5e-5b21-32e8" type="profile">
+              <rules>
+                <rule id="9fc4-7349-4383-c40c" name="Containment Failure" book="Stronghold Assault" page="" hidden="false">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                </infoLink>
-                <infoLink id="c385-b4d3-1a1c-c3aa" hidden="false" targetId="91f0-544c-2fcf-bb56" type="rule">
+                  <description>If the main strongpoint suffers a Total Collapse or Detonation! result, roll one dice for each remaining vortex missile.  On a roll of 1-2, the missile explodes.  Place the vortex&apos;s blast marker on the center of the main strongpoint, then scatter 2D6&quot;</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="eaec-876c-7216-7018" hidden="false" targetId="57e2-2b5e-5b21-32e8" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -1671,7 +1997,7 @@
                 <cost name="pts" costTypeId="points" value="110.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0850-e5c5-08f4-8b73" name="Macro Cannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+            <selectionEntry id="0850-e5c5-08f4-8b73" name="Macro Cannon" book="Planetary Onslaught" page="88" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
@@ -1732,7 +2058,6 @@
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8c0-b737-4c95-ab5a" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c6a4-96b9-5bc6-39fe" type="max"/>
               </constraints>
               <selectionEntries/>
@@ -1747,34 +2072,12 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="7801-ce4e-8d90-36e6" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="a352-e38f-f64f-a3f1" hidden="false" targetId="c40a-dc06-d93f-f027" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="b24f-5d8d-43c5-6a58" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-      </entryLinks>
+      <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="425.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a172-78de-aaa6-2201" name="Firestorm Redoubt" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+    <selectionEntry id="a172-78de-aaa6-2201" name="Wall of Martyrs Firestorm Redoubt" book="Planetary Onslaught" page="85" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
       <profiles>
         <profile id="f9b7-3296-350c-2df8" name="Firestorm Redoubt" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
           <profiles/>
@@ -1918,11 +2221,17 @@
           <modifiers/>
           <constraints/>
         </entryLink>
-        <entryLink id="c3fe-c15c-57f6-dbe0" hidden="false" targetId="c40a-dc06-d93f-f027" type="selectionEntryGroup">
+        <entryLink id="c3fe-c15c-57f6-dbe0" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="33e2-ef31-b7a2-774a" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
       </entryLinks>
@@ -1930,51 +2239,8 @@
         <cost name="pts" costTypeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8300-7ced-aafd-2a27" name="Fortress of Redemption" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
-      <profiles>
-        <profile id="d091-8ecd-d471-7118" name="Fortress of Redemption Main Tower" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="14"/>
-            <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="20"/>
-            <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
-            <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
-            <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="4"/>
-            <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Medium Building with Battlements"/>
-          </characteristics>
-        </profile>
-        <profile id="9ec7-9e40-274c-f964" name="Fortress of Redemption Bunker Annexes" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="14"/>
-            <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="10"/>
-            <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
-            <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
-            <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="3"/>
-            <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Small Building with Battlements"/>
-          </characteristics>
-        </profile>
-        <profile id="aee9-4517-0535-1ba3" name="Fortress of Redemption Connecting Walkway" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="14"/>
-            <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="10"/>
-            <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
-            <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
-            <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="3"/>
-            <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Small Building with Battlements"/>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry id="8300-7ced-aafd-2a27" name="Fortress of Redemption" book="Planetary Onslaught" page="91" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles/>
       <rules/>
       <infoLinks>
         <infoLink id="f80c-dace-cc6a-5fd2" hidden="false" targetId="d9b9-6c13-981a-0f07" type="rule">
@@ -1985,9 +2251,7 @@
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="91f9-6d44-2de9-ed99" type="max"/>
-      </constraints>
+      <constraints/>
       <selectionEntries>
         <selectionEntry id="8e09-08f5-ffb1-9f09" name="Heavy Bolters" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
           <profiles/>
@@ -2056,9 +2320,132 @@
             <cost name="pts" costTypeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="d237-7d3e-c4a1-5f28" name="Main Tower" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="d359-353b-5ead-4acd" name="Fortress of Redemption Main Tower" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="14"/>
+                <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="20"/>
+                <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+                <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
+                <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="4"/>
+                <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Medium Building with Battlements"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd26-d743-35a0-8a91" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a38-72b9-baeb-0831" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="31d1-eea8-06fe-1c38" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="33e2-ef31-b7a2-774a" value="2">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5c02-234b-7c98-8053" name="Bunker Annex" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="2fab-60f7-9d41-963c" name="Fortress of Redemption Bunker Annex" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="14"/>
+                <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="10"/>
+                <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+                <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
+                <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="3"/>
+                <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Small Building with Battlements"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdf1-f4b4-b1e3-f254" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89c7-3b99-f35b-75ab" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="90b7-ab9a-af21-1b12" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b9b0-baf0-7bf6-da86" name="Connecting Walkway" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="cdb1-8424-386d-8323" name="Fortress of Redemption Connecting Walkway" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="14"/>
+                <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="10"/>
+                <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+                <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
+                <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="3"/>
+                <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Small Building with Battlements"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ed-7ecc-e22f-1728" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16b8-f1ac-bb4b-e319" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="9b8d-0c28-d79f-acb0" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b6ea-ed2e-5ad6-5190" name="Missile Silo" hidden="false" collective="false">
+        <selectionEntryGroup id="b6ea-ed2e-5ad6-5190" name="Missile Silo" hidden="false" collective="false" defaultSelectionEntryId="1910-869f-d561-4228">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2119,35 +2506,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="326b-0177-fe20-5906" hidden="false" targetId="4eb7-0ed0-198c-6178" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="0866-a9f3-ee22-d6e0" hidden="false" targetId="4eb7-0ed0-198c-6178" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
         <entryLink id="f152-8bad-52f4-2928" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="7eed-ff89-70f3-85bf" hidden="false" targetId="4eb7-0ed0-198c-6178" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="3ccc-b11e-be8f-50a5" hidden="false" targetId="c40a-dc06-d93f-f027" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2159,7 +2518,7 @@
         <cost name="pts" costTypeId="points" value="220.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0fe6-096b-23ae-1134" name="Honoured Imperium" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+    <selectionEntry id="0fe6-096b-23ae-1134" name="Honoured Imperium" book="Planetary Onslaught" page="102" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -2189,9 +2548,7 @@
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5d2-0ef0-b303-ebce" type="max"/>
-      </constraints>
+      <constraints/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
@@ -2207,7 +2564,7 @@
         <cost name="pts" costTypeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="55c6-268b-357f-d070" name="Imperial Bastion" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+    <selectionEntry id="55c6-268b-357f-d070" name="Imperial Bastion" book="Planetary Onslaught" page="80" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
       <profiles>
         <profile id="bb3b-38ff-3104-e4bc" name="Imperial Bastion" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
           <profiles/>
@@ -2234,9 +2591,7 @@
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c41f-fb5a-1fab-db42" type="max"/>
-      </constraints>
+      <constraints/>
       <selectionEntries>
         <selectionEntry id="3b9b-aa9a-4bde-6304" name="Heavy Bolters" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
           <profiles/>
@@ -2278,11 +2633,17 @@
           <modifiers/>
           <constraints/>
         </entryLink>
-        <entryLink id="cf72-0899-cf02-9b67" hidden="false" targetId="c40a-dc06-d93f-f027" type="selectionEntryGroup">
+        <entryLink id="cf72-0899-cf02-9b67" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="33e2-ef31-b7a2-774a" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
       </entryLinks>
@@ -2290,7 +2651,7 @@
         <cost name="pts" costTypeId="points" value="75.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0116-c81b-1c0f-251c" name="Imperial Bunker" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+    <selectionEntry id="0116-c81b-1c0f-251c" name="Wall of Martyrs Imperial Bunker" book="Planetary Onslaught" page="84" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
       <profiles>
         <profile id="3f5f-041b-dd9c-5d79" name="Imperial Bunker" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
           <profiles/>
@@ -2336,11 +2697,17 @@
           <modifiers/>
           <constraints/>
         </entryLink>
-        <entryLink id="9823-47d6-d48e-f8e4" hidden="false" targetId="c40a-dc06-d93f-f027" type="selectionEntryGroup">
+        <entryLink id="9823-47d6-d48e-f8e4" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="33e2-ef31-b7a2-774a" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
         <entryLink id="3e92-a2ce-c94c-06bf" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
@@ -2355,7 +2722,7 @@
         <cost name="pts" costTypeId="points" value="55.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="df05-8179-624e-f8b2" name="Imperial Defence Emplacement" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+    <selectionEntry id="df05-8179-624e-f8b2" name="Wall of Martyrs Imperial Defence Emplacement" book="Planetary Onslaught" page="83" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
       <profiles>
         <profile id="6dc5-9c5e-cd8c-b3dd" name="Imperial Defence Emplacement" book="Stronghold Assault" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
           <profiles/>
@@ -2405,7 +2772,7 @@
         <cost name="pts" costTypeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0f73-97f2-b832-f6d0" name="Imperial Defence Line" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+    <selectionEntry id="0f73-97f2-b832-f6d0" name="Wall of Martyrs Imperial Defence Line" book="Planetary Onslaught" page="82" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
       <profiles>
         <profile id="25a5-9814-148e-6891" name="Imperial Defence Line" book="Stronghold Assault" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
           <profiles/>
@@ -2495,17 +2862,21 @@
       </rules>
       <infoLinks/>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f06-22f8-ede1-0494" type="max"/>
-      </constraints>
+      <constraints/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="1507-2d5a-de74-5155" hidden="false" targetId="c40a-dc06-d93f-f027" type="selectionEntryGroup">
+        <entryLink id="1507-2d5a-de74-5155" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="33e2-ef31-b7a2-774a" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
         <entryLink id="cc86-25af-c8be-c52b" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
@@ -2520,7 +2891,7 @@
         <cost name="pts" costTypeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1a59-dd0f-a7f2-32be" name="Promethium Relay Pipes" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+    <selectionEntry id="1a59-dd0f-a7f2-32be" name="Promethium Relay Pipes" book="Planetary Onslaught" page="103" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
       <profiles>
         <profile id="477a-9ca4-6ee5-3072" name="Promethium Relay Pipes" book="Stronghold Assault" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
           <profiles/>
@@ -2528,7 +2899,7 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Battlefield Debris. Fuel Siphon. A model in cover behind a fuel pipe has a 4+ cover save. However, each time a unit successfully makes this cover save on the roll of a6, immediately roll a further D6. On a roll of 1, the shot has caused a minor explosion and the unit thatmade that cover save immediately suffers an additional D6 Strength 4 AP5 hits with the Ignores Cover special rule. These additional hits use Random Allocation, and vehicles are hit on the armour facing nearest to the Promethium Relay Pipes."/>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Battlefield Debris. Fuel Siphon. A model in cover behind a fuel pipe has a 4+ cover save. However, each time a unit successfully makes this cover save on the roll of a6, immediately roll a further D6. On a roll of 1, the shot has caused a minor explosion and the unit thatmade that cover save immediately suffers an additional D6 S4 AP5 hits with the Ignores Cover special rule. These additional hits use Random Allocation, and vehicles are hit on the armour facing nearest to the Promethium Relay Pipes."/>
           </characteristics>
         </profile>
       </profiles>
@@ -2548,9 +2919,7 @@
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5478-f6be-f8c6-cdad" type="max"/>
-      </constraints>
+      <constraints/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
@@ -2566,7 +2935,7 @@
         <cost name="pts" costTypeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5cdd-edbb-07c3-0ba5" name="Skyshield Landing Pad" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+    <selectionEntry id="5cdd-edbb-07c3-0ba5" name="Skyshield Landing Pad" book="Planetary Onslaught" page="101" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
       <profiles>
         <profile id="ef2c-8ef5-ae77-2dc6" name="Skyshield Landing Pad" book="Stronghold Assault" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
           <profiles/>
@@ -2578,43 +2947,32 @@
           </characteristics>
         </profile>
       </profiles>
-      <rules/>
-      <infoLinks>
-        <infoLink id="9223-1f65-0e5e-c745" name="New InfoLink" hidden="false" targetId="bec8-659e-1d2c-c696" type="rule">
+      <rules>
+        <rule id="00e0-238b-93a5-e67c" name="Ready for Takeoff" book="Stronghold Assault" page="" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b07-2f38-6433-2621" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="1575-fba1-a604-45c2" name="Ready for Takeoff" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <description>When deploying your army, you can deploy one of your Flyers with the Hover type on top of each of your Skyshield Landing Pads that has this upgrade, even though Flyers normally have to start the game in Reserve.  Flyers that deploy in this way start the game hovering and cannot Zoom in the first game turn.</description>
+        </rule>
+        <rule id="a954-e6a8-015d-2500" name="Landing Pad Configuration" book="Stronghold Assault" page="" hidden="false">
           <profiles/>
           <rules/>
-          <infoLinks>
-            <infoLink id="327e-c45b-1d26-405d" name="New InfoLink" hidden="false" targetId="4a67-bf5f-4008-c425" type="rule">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
+          <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2af4-b69e-26d5-4010" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+          <description>A Skyshield Landing Pad has certain rules depending on its current configuration, shielded or unfurled. 
+
+At the beginning of the Movement phase, before rolling for Reserves, a model in base contact with a Skyshield Landing pad can change its configuration from Shielded to Unfurled (or vice versa). If there are models from both sides in base contact with the landing pad, its configuration cannot be changed.
+
+Shielded: Units on top of a shielded Skyshield Landing pad have a 4+ invulnerable save against shooting attacks.
+
+Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it will never scatter.  Jump units, Jet Pack units, Jetbikes, and Skimmers do not need to take Dangerous Terrain tests for moving on to or off of an unfurled Skyshield Landing Pad.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="a933-58ff-5278-276a" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
@@ -2629,7 +2987,7 @@
         <cost name="pts" costTypeId="points" value="75.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="04bf-6c22-19fb-4e46" name="Vengeance Weapons Battery" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+    <selectionEntry id="04bf-6c22-19fb-4e46" name="Wall of Martyrs Vengeance Weapon Battery" book="Planetary Onslaught" page="86" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
       <profiles>
         <profile id="feb2-09c9-8448-483f" name="Vengeance Weapons Battery" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
           <profiles/>
@@ -2662,12 +3020,10 @@
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c8d-f844-9528-4400" type="max"/>
-      </constraints>
+      <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6825-f204-cf29-7e45" name="Emplaced Weapons" hidden="false" collective="false" defaultSelectionEntryId="be8e-67f0-7341-3b7f">
+        <selectionEntryGroup id="6825-f204-cf29-7e45" name="Emplaced Weapons" hidden="false" collective="false" defaultSelectionEntryId="a85e-04f2-f5b5-6397">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2694,7 +3050,15 @@
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
-              <entryLinks/>
+              <entryLinks>
+                <entryLink id="8e7c-94b2-4433-8c62" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="pts" costTypeId="points" value="75.0"/>
               </costs>
@@ -2716,7 +3080,15 @@
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
-              <entryLinks/>
+              <entryLinks>
+                <entryLink id="2a29-1df8-fe76-2921" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="pts" costTypeId="points" value="85.0"/>
               </costs>
@@ -2738,7 +3110,15 @@
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
-              <entryLinks/>
+              <entryLinks>
+                <entryLink id="a0e3-4077-0192-84bc" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="pts" costTypeId="points" value="75.0"/>
               </costs>
@@ -2748,28 +3128,12 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="827b-2c11-4137-62c5" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="increment" field="c578-839e-cf7f-c301" value="6">
-              <repeats/>
-              <conditions>
-                <condition field="selections" scope="04bf-6c22-19fb-4e46" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6825-f204-cf29-7e45" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints/>
-        </entryLink>
-      </entryLinks>
+      <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bbd4-5f41-35d1-6c5f" name="Void Shield Generator" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+    <selectionEntry id="bbd4-5f41-35d1-6c5f" name="Void Shield Generator" book="Planetary Onslaught" page="92" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
       <profiles>
         <profile id="6965-66cd-f500-6956" name="Void Shield Generator" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
           <profiles/>
@@ -2787,22 +3151,25 @@
         </profile>
       </profiles>
       <rules/>
-      <infoLinks>
-        <infoLink id="fd12-f6da-3ad1-183d" hidden="false" targetId="f0bb-9197-0eaf-b4ac" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
+      <infoLinks/>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b86-106b-03ab-66cd" type="max"/>
-      </constraints>
+      <constraints/>
       <selectionEntries>
         <selectionEntry id="0310-1a15-0bf1-9df2" name="Projected Void Shields" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
           <profiles/>
-          <rules/>
+          <rules>
+            <rule id="0ace-afe5-43b6-14db" name="Projected Void Shields" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Each projected void shield has a 12&quot; area of effect (measured from any point on the Void Shield Generator building) known as a Void Shield Zone. Any shooting attack that originates from outside a Void Shield Zone and hits a unit that is wholly within the Void Shield Zone instead his the projected void shield. If a unit is wholly within 12&quot; of multiple Void Shield Generators, and so within more than one Void Shield Zone when it is hit, randomly determine which of the buildings&apos; projected void shields is hit.
+
+Projected void shields have no effect against witchfire powers that do not ave a S value (Psychic Shriek, Haemorrhage, Purge Soul, etc).
+
+Each projected void shield has an Armour Value of 12. A glancing or penetrating hit (or any hit from a D weapon) scored against a projected void shield causes it to collapse. If all the projected void shields have collapsed, further hits strike the original target instead. At the end of each of the controlling player&apos;s turns, roll a die for each projected void shield that has collapsed; each roll of 5+ instantly restores one shield.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="ad80-d3e1-3a78-4ee0" hidden="false" targetId="e144-1293-ec28-d3a9" type="profile">
               <profiles/>
@@ -2838,7 +3205,7 @@
         <cost name="pts" costTypeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0d50-24ac-a53e-5db7" name="Wall of Martyrs Imperial Defence Network" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="unit">
+    <selectionEntry id="0d50-24ac-a53e-5db7" name="Wall of Martyrs Imperial Defence Network" book="Planetary Onslaught" page="87" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2915,7 +3282,6 @@
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="06ee-360a-dc1c-9c4c" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d6c-77b6-c082-8393" type="max"/>
           </constraints>
           <selectionEntries/>
@@ -2936,7 +3302,6 @@
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b31-4e9d-9970-4432" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c1b-c569-f02d-9f67" type="max"/>
           </constraints>
           <selectionEntries/>
@@ -2957,7 +3322,7 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="796a-21c2-7281-17a8" name="Void Relay Network" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="unit">
+    <selectionEntry id="796a-21c2-7281-17a8" name="Void Relay Network" book="Planetary Onslaught" page="93" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2971,7 +3336,6 @@
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="20e3-c288-3485-cd1e" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63d3-74d4-95c4-06fb" type="max"/>
           </constraints>
           <selectionEntries/>
@@ -3034,7 +3398,7 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ed7e-757a-4ced-adff" name="Imperial Strongpoint" book="Stronghold Assault" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="unit">
+    <selectionEntry id="ed7e-757a-4ced-adff" name="Imperial Strongpoint" book="Planetary Onslaught" page="81" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3224,7 +3588,6 @@
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1578-0f71-e80c-1966" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5efb-e51d-c0aa-4ec5" type="max"/>
               </constraints>
               <selectionEntries/>
@@ -3244,9 +3607,7 @@
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3184-86a2-fa41-d7b3" type="min"/>
-              </constraints>
+              <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -3264,9 +3625,7 @@
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="be52-c46b-9092-4431" type="min"/>
-              </constraints>
+              <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -3284,9 +3643,7 @@
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="461f-86bb-f785-010f" type="min"/>
-              </constraints>
+              <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -3304,9 +3661,7 @@
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b6a-f426-249d-7690" type="min"/>
-              </constraints>
+              <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -3325,7 +3680,6 @@
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f025-f8e4-6d47-1a7e" type="min"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f35-1c37-4d19-e292" type="max"/>
               </constraints>
               <selectionEntries/>
@@ -3346,7 +3700,6 @@
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="08a2-3ec7-3606-72c2" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8719-d939-ad44-51b5" type="max"/>
               </constraints>
               <selectionEntries/>
@@ -3387,7 +3740,6 @@
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90f7-2f33-9e76-7fed" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1dcc-9968-1748-2a75" type="max"/>
               </constraints>
               <selectionEntries/>
@@ -3971,7 +4323,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="33e2-ef31-b7a2-774a" value="3">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
       </entryLinks>
@@ -3979,7 +4337,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
         <cost name="pts" costTypeId="points" value="650.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0691-eea7-d812-ba9a" name="Munitorum Armoured Container Cache" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+    <selectionEntry id="0691-eea7-d812-ba9a" name="Munitorum Armoured Container Cache" book="Planetary Onslaught" page="98" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3998,7 +4356,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
 
 1 - Xenos Creature: The container was transporting a rare and deadly xenos creature that immediately lashes out in anger as it escapes. All units within 6&quot; of the armoured container take D6 S 4 AP 6 hits with the Ignores Cover special rule. Wounds are randomly allocated.
 2 - Nothing of Note: The container contains vital supplies of red berets en route to an Astra Militarum regiment, but has no additional effect on the game.
-3 - Uplifting Primers: The container was transporting boxes of the Imperial Infantryman&apos;s Uplifting Primer. All units from the Armies of the Imperium add 1 to their Ld whilst they are within 6&quot; of this armoured container.
+3 - Uplifting Primers: The container was transporting boxes of the Imperial Infantryman&apos;s Uplifting Primer. All units from the Armies of the Imperium add +1 Ld whilst they are within 6&quot; of this armoured container.
 4 - Archeotech Ammunition: The container was shipping crates of rare and powerful ammunition. Add +1 S of all Assault and Rapid Fire weapons fired by models that are within 6&quot; of this armoured container.
 5 - Shield Generator: A shield generator hums to life once the container is opened. All models have a 4+ invulnerable save whilst they are within 6&quot; of this armoured container.
 6 - Orbital Comms Array: Inside the container is simply a nav-map and a flashing red button. The player who identified this container can immedicately call down an orbital strike anywhere on the battlefield, after which the armoured container has no additional effect on the game.</description>
@@ -4053,7 +4411,15 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                   </characteristics>
                 </profile>
               </profiles>
-              <rules/>
+              <rules>
+                <rule id="dc8b-f312-6782-9bdf" name="Munitorum Armoured Container" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>A model in cover behind an armoured container has a 4+ cover save. One non-vehicle model in base contact with an armoured container can fire all of the container&apos;s storm bolters instead of firing their own weapon, following the normal rules for shooting. The armoured container can be shot at and attacked in close combat. it is hit automatically in close combat.</description>
+                </rule>
+              </rules>
               <infoLinks/>
               <modifiers/>
               <constraints>
@@ -4121,7 +4487,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A model in cover behind a fuel drum has a 5+ cover save. However, each time a unit successfully makes this cover save on the roll of a 6, immediately roll another D6. If the result of this roll is a 1, the shot has caused a minor explosion and the unit that made teh cover save immediately suffers an additional D3 S4 AP5 hits with the Ignores Cover special rule. These additional hits use Random Allocation, and vehicles are hit on the armour facing nearest to the Fuel Drum.  Any Flamer weapon (as defined in BRB) fired by a non-vehicle model within 2&quot; of a fuel drum in the shooting phase can change its weapon type from Assault to Heavy, or from Pistol to Heavy. If it does so, the weapon gains the Torrent special rule until the end of that phase."/>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A model in cover behind a fuel drum has a 5+ cover save. However, each time a unit successfully makes this cover save on the roll of a 6, immediately roll another D6. If the result of this roll is a 1, the unit that made the cover save immediately suffers an additional D3 S4 AP5 hits with the Ignores Cover special rule. These additional hits use Random Allocation, and vehicles are hit on the armour facing nearest to the Fuel Drum.  Any Flamer weapon (as defined in BRB) fired by a non-vehicle model within 2&quot; of a fuel drum in the shooting phase can change its weapon type from Assault to Heavy, or from Pistol to Heavy. If it does so, the weapon gains the Torrent special rule until the end of that phase."/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5856,153 +6222,290 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-  </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="4eb7-0ed0-198c-6178" name="Small Buildings List" hidden="false" collective="false">
-      <profiles/>
-      <rules/>
+    <selectionEntry id="474a-96df-3847-a5d8" name="Twisted Copse" book="Planetary Onslaught" page="100" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="40c0-a746-d960-4a11" name="Twisted Copse" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Difficult Terrain"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b432-c82f-e99d-88ba" name="Dense Thicket" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>With the exception of vehicles and monstrous creatures, a model on the base of a Citadel Wood model receives a 5+ cover save, regardless of whether or not it is 25% obscured.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d494-27ba-98e6-527b" type="max"/>
-      </constraints>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9c0c-da48-1f31-e478" name="Shrine of the Aquila" book="Planetary Onslaught" page="97" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="5d59-8fe7-69f6-be52" name="Shrine of the Aquila" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Ruins"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="797b-bdb8-1503-c691" name="The Eagle&apos;s Gaze" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If a unit from The Armies of the Imperium (as defined in BRB) has any of its models within a Shrine of the Aquila, it re-rolls failed Morale checks. Any other model that is in a Shrine of the Aquila has the Hatred (Armies of the Imperium) special rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="874a-ac4d-20a8-18f0" name="New InfoLink" hidden="false" targetId="12af-0798-6659-e21e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="187a-4e21-33c0-e858" name="Sanctum Imperialis" book="Planetary Onslaught" page="96" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="f2a2-02b8-c794-1ea4" name="Sanctum Imperialis" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Ruins"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="512f-5c6b-cf46-4d37" name="Benevolent Light" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Models in a Sanctum Imperialis have the Adamantium Will and Night Vision special rules.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="eb56-f0ad-05ba-28a6" name="New InfoLink" hidden="false" targetId="8714-46ad-62c0-ce35" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b3e3-c689-31c9-c4fa" name="New InfoLink" hidden="false" targetId="218a-1cc5-0a99-4b7d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="a4e9-d587-5e2b-e7c9" name="New InfoLink" hidden="false" targetId="12af-0798-6659-e21e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d065-8909-c64b-9deb" name="Manufactorum" book="Planetary Onslaught" page="95" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="df8e-4f5b-11df-c228" name="Manufactorum" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Ruins"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="4637-ddf8-74a7-f316" name="The Omnissiah&apos;s Benediction" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Models in a Manufactorum that are firing weapons with the Gets Hot special rule re-roll failed saving throws for Wounds inflicted upon themselves as a result of the Gets Hot special rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="5748-8a39-763b-bb36" name="New InfoLink" hidden="false" targetId="12af-0798-6659-e21e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e10f-7b90-ecd3-80a5" name="Basilica Administratum" book="Planetary Onslaught" page="94" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="0951-4e5c-ef9d-6e97" name="Basilica Administratum" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Ruins"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="62ec-d745-e285-6548" name="The Eternal Progress to Victory" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>A unit that identifies a Mysterious Objective (see BRB) that is in a Basilica Administratum can choose to re-roll the dice to determine what it is.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="164b-c010-2a1c-401f" name="New InfoLink" hidden="false" targetId="12af-0798-6659-e21e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="348f-2143-adaa-708a" name="Haemotrope Reactors" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules>
+        <rule id="3cfc-12e1-bdd3-1ca7" name="Plasma Feed" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Any plasma weapon (as defined in BRB) fired by a non-vehicle model within 2&quot; of a Haemotrop Reactor in the Shooting phase may use the extra power to supercharge their weapon. If they do then until the end of the phase their plasma weapon gains the Blast special rule (weapons that already have the Blast special rule gain the Large Blast special rule instead), however, their weapon also Gets Hot! on rolls of a 1 or 2, instead of just 2. </description>
+        </rule>
+        <rule id="56c0-0d1e-5c81-bec4" name="Power Supply" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Haemotrope Reactors can bolster the effectiveness of Void Shield Generators and Plasma Obliterators as follows:
+
+If at least two Haemotrope Reactors are either within 6&quot; of a Void Shield Generator, or are connected to the Void Shield Generator via Promethium Relay Pipes, you can re-rollt he dice when attempting to restore collapsed shields.
+
+If at least two Haemotrope Reactors are within 6&quot; of a Plasma Obliterator, or are connected to the Plasma Obliterator via Promethium Relay Pipes, increase the Strength of the weapon to S 8.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
       <selectionEntries>
-        <selectionEntry id="0140-9f64-f122-f7d0" name="Ammo Store" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="49e1-3cbe-5f52-68cf" hidden="false" targetId="d4b6-7a3a-aee5-d293" type="profile">
+        <selectionEntry id="4b24-1446-75e5-c1ba" name="Pair of Haemotrope Reactors" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="ea3d-67e4-7c8a-97e2" name="Pair of Haemotrope Reactors" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-            </infoLink>
-          </infoLinks>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Battlefield Debris (Reactor)"/>
+              </characteristics>
+            </profile>
+            <profile id="66f0-8ea3-2002-9f70" name="Reactor" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Terrain"/>
+                <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="-"/>
+                <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="-"/>
+                <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="-"/>
+                <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="6"/>
+                <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="6"/>
+                <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="-"/>
+                <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="-"/>
+                <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="-"/>
+                <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="4+"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="1590-480b-474e-3e23" name="Reactor" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>With the exception of vehicles and mostrous creatures, a model in cover behind a reactor has a 4+ save. However, each time a unit successfully makes this cover save ont he roll of a 6, immediately roll a further D6. On a roll of 1, the showt has caused a power leak and the unit that made that cover save immediately suffers an additional D6 S6 AP- hits with the Ignores Cover special rule. These additional hits use Random Allocation, and vehicles are hit on the armour facing nearest to the reactor. 
+
+A reactor can be shot at and attacked in close combat. If destroyed, the closest unit to it immediately suffers hits as if they were the victims of a power leak, as described above. A Reactor is hit automatically in close combat. </description>
+            </rule>
+          </rules>
+          <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f0e-0fc6-fdac-576b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15dc-3f2a-e07e-e7fd" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="132e-9536-9e6c-1171" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6661-6f59-4bee-f24e" name="Booby Traps" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="6cbf-2027-6179-9cb6" hidden="false" targetId="2a6f-53c2-d2ea-092f" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e11-5286-62c7-c1ee" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="20.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6b06-442f-5bf3-fa55" name="Void Shield" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="55c3-d007-c80a-1e8d" hidden="false" targetId="e144-1293-ec28-d3a9" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e63-b7ec-86a0-dc81" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="25.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="993d-d6ca-a8f9-561c" name="Searchlight" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="ae4d-fabe-9486-444d" hidden="false" targetId="4b04-2a83-8ae7-d134" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="23d2-eb81-5b44-dfba" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a1fb-0f75-a27d-5428" name="Escape Hatch" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="f2e2-6551-e760-01a6" hidden="false" targetId="4986-b80f-dc78-d02f" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="954c-c039-b529-183f" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="25.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="f1ac-b3c2-64c9-d55b" name="Magos Machine Spirit" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="1c6d-abfe-17a7-8e89" hidden="false" targetId="31ba-2b94-6600-22f3" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae6d-c65c-c94c-d141" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="30.0"/>
+            <cost name="pts" costTypeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks/>
-    </selectionEntryGroup>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
     <selectionEntryGroup id="ad42-921f-358f-2970" name="Obstacles List" hidden="false" collective="false">
       <profiles/>
       <rules/>
@@ -6082,158 +6585,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <selectionEntryGroups/>
       <entryLinks/>
     </selectionEntryGroup>
-    <selectionEntryGroup id="c40a-dc06-d93f-f027" name="Medium Buildings List" hidden="false" collective="false">
+    <selectionEntryGroup id="6bfa-e532-4165-63ce" name="Buildings List" hidden="false" collective="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4384-9c56-3641-6a11" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="4a87-42cc-ca07-a643" name="Ammo Store" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="a632-f535-a353-9761" hidden="false" targetId="d4b6-7a3a-aee5-d293" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf3e-f1cc-cdf3-1c9a" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ea63-ea67-e65b-4363" name="Booby Traps" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="ae3b-6608-f643-7341" hidden="false" targetId="2a6f-53c2-d2ea-092f" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec43-0377-3bc3-9121" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="20.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="947c-1563-7be7-c437" name="Void Shield" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="1aed-cb1d-d698-5687" hidden="false" targetId="e144-1293-ec28-d3a9" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63ce-c304-2e24-542f" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="25.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a323-44ed-6f33-4783" name="Searchlight" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="9f03-75fa-d868-4a97" hidden="false" targetId="4b04-2a83-8ae7-d134" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="84e3-0c41-a9eb-c17e" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ba97-81de-e6a2-6190" name="Escape Hatch" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="af0f-9cac-715b-b9af" hidden="false" targetId="4986-b80f-dc78-d02f" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e0c-9c50-59c6-9bd1" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="25.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b087-436d-8e03-81c2" name="Magos Machine Spirit" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="9a99-ad82-f063-13b0" hidden="false" targetId="31ba-2b94-6600-22f3" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4a7c-e0c8-7b34-2fbf" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="30.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
-      <entryLinks/>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="6bfa-e532-4165-63ce" name="Large Buildings List" hidden="false" collective="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="33e2-ef31-b7a2-774a" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="33e2-ef31-b7a2-774a" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="e06f-a0c7-6967-ff1e" name="Ammo Store" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -8208,7 +8566,7 @@ Wounds from Precision Strikes are allocated against an engaged model (or models)
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>A building with this special rule can use automated fire against enemy units, even if it is unoccupied. In addition, enemy units can shoot at and charge a building with this special rule, even if it is unoccupied. </description>
+      <description>A building with this special rule can use automated fire against enemy units, even if it is unoccupied. The weapons are emplaced and cannot be used as gun emplacements - another model may not fire them. In addition, enemy units can shoot at and charge a building with this special rule, even if it is unoccupied. </description>
     </rule>
     <rule id="1794-e0e0-bedf-e46b" name="Scout" book="BRB" page="" hidden="false">
       <profiles/>
@@ -8298,13 +8656,6 @@ Against vehicles, shooting attacks from weapons and models with the Sniper speci
       <modifiers/>
       <description>After firing a quake shell, draw a straight line between the Aquila macro-cannon and the central hole of the apocalyptic mega-blast template.  Roll a dice for each Flyer, Flying Monstrous Creature, or Flying Gargantuan Creature model crossed by this line.  On a roll of 1, a Flyer will Crash and Burn, while a Clying Monstrous Creature or Flying Gargantuan Creature will take D3 Wounds with no saving throws allowed.</description>
     </rule>
-    <rule id="91f0-544c-2fcf-bb56" name="Containment Failure" book="Stronghold Assault" page="" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>If the main strongpoint suffers a Total Collapse or Detonation! result, roll one dice for each remaining vortex missile.  On a roll of 1-2, the missile explodes.  Place the vortex&apos;s blast marker on the center of the main strongpoint, then scatter 2D6&quot;</description>
-    </rule>
     <rule id="d04c-20b3-dc49-ea06" name="Very Wide Fire Point" book="Stronghold Assault" page="" hidden="false">
       <profiles/>
       <rules/>
@@ -8367,24 +8718,6 @@ Against vehicles, shooting attacks from weapons and models with the Sniper speci
       <infoLinks/>
       <modifiers/>
       <description>Any flamer weapon fired by a non-vehicle model within 2&quot; of a Promethium Relay Pipe in the shooting phase can change its weapon type from Assault to Heavy, or from Pistol to Heavy. If it does so, the weapon gains the Torrent special rule until the end of that phase.</description>
-    </rule>
-    <rule id="bec8-659e-1d2c-c696" name="Landing Pad Configuration" book="Stronghold Assault" page="" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>A Skyshield Landing Pad has certain rules depending on its current configuration, shielded or unfurled. At the beginning of the Movement phase, before rolling for Reserves, a model in base contact with a Skyshield Landing pad can change its configuration from shielded to unfurled (or vice versa). If there are models from both sides in base contact with the landing pad, its configuration cannot be changed.
-
-Shielded: Units on top of a shielded Skyshield Landing pad have a 4+ invulnerable save against shooting attacks.
-
-Unfurled: If a unit deep strieks on top of an unfurled Skyshield Landing Pad, it will never scatter.  Jump units, Jet Pack units, Jetbikes, and SKimmers do not need to take Dangerous Terrain tests for moving on to or off of an unfurled Skyshield Landing Pad.</description>
-    </rule>
-    <rule id="4a67-bf5f-4008-c425" name="Ready for Takeoff" book="Stronghold Assault" page="" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>When deploying your army, you can deploy one of your Flyers with the Hover type on top of each of your Skyshield Landing Pads that has this upgrade, even though Flyers normally have to start the game in reserves.  Flyers that deploy in this way start the game hovering and cannot Zoom in the first game turn.</description>
     </rule>
     <rule id="97df-06a3-356e-02a8" name="Missile Battery" book="Stronghold Assault" hidden="false">
       <profiles/>
@@ -8699,6 +9032,13 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <modifiers/>
       <description>This model counts as being equipped with assault grenades (see Warhammer 40,000: The Rules ). However, cover saves cannot be taken against Wounds caused by promethium charges in the Shooting phase. </description>
     </rule>
+    <rule id="12af-0798-6659-e21e" name="Ruins" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Ruins are difficult terrain. Models in ruins recieve a 4+ cover save, regardless of whether or not they are 25% obscured.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="fcde-3e6a-e240-1157" name="Autogun" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -8758,7 +9098,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="72&quot;"/>
         <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="8"/>
         <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="3"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Ordnance 1, Large Blast (5&quot;)"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Ordnance 1, Large Blast"/>
       </characteristics>
     </profile>
     <profile id="e6d5-677a-d8ed-f6a5" name="Bolt Pistol" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -9505,7 +9845,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1, Blast, Blind"/>
       </characteristics>
     </profile>
-    <profile id="d4b6-7a3a-aee5-d293" name="Ammo Store" book="Stronghold Assault" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
+    <profile id="d4b6-7a3a-aee5-d293" name="Ammo Store" book="Planetary Onslaught" page="110" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -9514,13 +9854,13 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A unit occupying this building re-rolls To Hit rolls of a 1 when firing out of the building’s fire points. Note this does not apply to a model manually firing an emplaced weapon."/>
       </characteristics>
     </profile>
-    <profile id="58a2-c92e-57cc-d44c" name="Ammunition Dump" book="Stronghold Assault" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
+    <profile id="58a2-c92e-57cc-d44c" name="Ammunition Dump" book="Planetary Onslaught" page="110" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Any model within 2&quot; of an ammunition dump re-rolls failed To Hit rolls of 1 in the Shooting phase. A model in cover behind an ammunition dump has a 5+ cover save."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A model in cover behind an ammunition dump has a 5+ cover save. Any model within 2&quot; of an ammunition dump re-rolls failed To Hit rolls of 1 in the Shooting phase."/>
       </characteristics>
     </profile>
     <profile id="e144-1293-ec28-d3a9" name="Void Shield" book="Stronghold Assault" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
@@ -9530,20 +9870,6 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Each hit scored against the model will instead hit a void shield (whilst they remain). Close combat attacks come from inside the shield and therefore are not stopped. Void shields have an Armour Value of 12. A glancing or penetrating hit (or any hit from a Destroyer weapon) scored against a void shield causes it to collapse. After all the void shields have collapsed, further hits strike the model instead. At the end of each of the controlling player&apos;s turns, roll one dice for each collapsed void  shield: each roll of 5+ instantly restores one collapsed shield.  If a weapon uses a template or blast marker and it hits one or more units protected by a Void Shield Zone, ignore the number of hits it would normally cause to the units &amp; instead roll to pen the void shield once using the weapons normal rules &amp; profile for each template or blast marker that hits."/>
-      </characteristics>
-    </profile>
-    <profile id="f0bb-9197-0eaf-b4ac" name="Void Shield Generator" book="Stronghold Assault" page="" hidden="false" profileTypeId="725a358c-765b-498c-8de5-399fc0c0725f">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="2"/>
-        <characteristic name="Front" characteristicTypeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" value="13"/>
-        <characteristic name="Side" characteristicTypeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" value="13"/>
-        <characteristic name="Rear" characteristicTypeId="0a9f33cb-0412-420a-89d2-20707c360bd2" value="13"/>
-        <characteristic name="HP" characteristicTypeId="ae95a1af-719f-4365-b951-33cd3ca9148a"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Impassable Building, Battlements, Projected Void Shields"/>
       </characteristics>
     </profile>
     <profile id="31ba-2b94-6600-22f3" name="Magos Machine Spirit" book="Stronghold Assault" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
@@ -9564,13 +9890,13 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="When this building is first occupied, the owning player can place an escape hatch marker anywhere within 12&quot; of the building that is not impassable terrain or within another building. The escape hatch marker is an additional Access Point for the building, but models using it cannot use the Repel the Enemy special rule."/>
       </characteristics>
     </profile>
-    <profile id="2a6f-53c2-d2ea-092f" name="Booby Traps" book="Stronghold Assault" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
+    <profile id="2a6f-53c2-d2ea-092f" name="Booby Traps" book="Planetary Onslaught" page="110" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="The first unit to occupy this building (friend or foe) immediately suffers 2D6 Strength 4 AP5 hits with the Ignores Cover special rule."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="The first unit to occupy this building (friend or foe) immediately suffers 2D6 S4 AP5 hits with the Ignores Cover special rule."/>
       </characteristics>
     </profile>
     <profile id="68d8-f686-c260-76db" name="Barricades" book="Stronghold Assault" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
@@ -9636,7 +9962,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Any player with an unengaged model within 2&quot; of a comms relay can re-roll Reserves rolls. A model in cover behind a comms relay has a 5+ cover save."/>
       </characteristics>
     </profile>
-    <profile id="39bf-dff4-053a-7360" name="Macro Shell" book="Stronghold Assault" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="39bf-dff4-053a-7360" name="Macro Shell" book="Planetary Onslaught" page="111" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -9645,10 +9971,10 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="72"/>
         <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="D"/>
         <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="1"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Primary Weapon 2, 5&quot; Blast"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Primary Weapon 2, Large Blast"/>
       </characteristics>
     </profile>
-    <profile id="0293-567f-c305-724a" name="Quake Shell" book="Stronghold Assault" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="0293-567f-c305-724a" name="Quake Shell" book="Planetary Onslaught" page="111" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -9660,7 +9986,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Primary Weapon 1, Apocalyptic Mega-blast, Sonic Boom"/>
       </characteristics>
     </profile>
-    <profile id="57e2-2b5e-5b21-32e8" name="Vortex Missile Battery" book="Stronghold Assault" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="57e2-2b5e-5b21-32e8" name="Vortex Missile Battery" book="Planetary Onslaught" page="111" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -9669,7 +9995,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Infinite"/>
         <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="D"/>
         <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="1"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Ordnance 1, 5&quot; Blast, Vortex"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Ordnance 1, Large Blast, Vortex"/>
       </characteristics>
     </profile>
     <profile id="d503-4001-e4b8-c804" name="Quad Icarus Lascannon" book="Stronghold Assault" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -9684,7 +10010,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 2, Interceptor, Skyfire, Twin-linked"/>
       </characteristics>
     </profile>
-    <profile id="458f-1e34-27a8-2cbb" name="Krakstorm missile" book="Stronghold Assault" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="458f-1e34-27a8-2cbb" name="Krakstorm missile" book="Planetary Onslaught" page="111" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -9693,10 +10019,10 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18-96"/>
         <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="8"/>
         <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="3"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Ordnance 1, Barrage, 5&quot; Blast"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Ordnance 1, Barrage, Large Blast"/>
       </characteristics>
     </profile>
-    <profile id="becf-8670-0c83-dc94" name="Fragstorm missile" book="Stronghold Assault" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="becf-8670-0c83-dc94" name="Fragstorm missile" book="Planetary Onslaught" page="111" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -9705,7 +10031,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18-96"/>
         <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="4"/>
         <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="5"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Ordnance 1, Barrage, 5&quot; Blast"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Ordnance 1, Barrage, Large Blast"/>
       </characteristics>
     </profile>
     <profile id="7571-d9f2-17b0-c3e0" name="Imperial Statuary" book="Stronghold Assault" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
