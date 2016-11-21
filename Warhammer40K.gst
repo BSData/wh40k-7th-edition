@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2009" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2010" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -6849,6 +6849,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="b575-4dce-f108-c7c1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7517-2fd8-8115-b4fa" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups>
@@ -6859,6 +6860,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c580-b009-435f-65cf" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b53e-6a19-bd12-1751" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="ca2f-3595-c83e-eccb" name="Berserk Fighter" hidden="false" collective="false" type="upgrade">
@@ -7076,6 +7078,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="a194-497b-0f1b-c970" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdd5-c8a2-cead-d549" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups>
@@ -7086,6 +7089,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="882d-5695-1756-f7cf" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7169-0a12-693a-22fa" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="c91d-476a-b47d-87da" name="Sniper" hidden="false" collective="false" type="upgrade">
@@ -7303,6 +7307,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="2693-e2bb-ff2f-7eb9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb97-1e7e-c92d-02c1" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups>
@@ -7313,6 +7318,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="098c-7258-5bbb-4dff" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a197-396a-b993-3b72" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="0005-3d44-0135-84e0" name="Blinding Distraction" hidden="false" collective="false" type="upgrade">
@@ -7508,6 +7514,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="3b45-1c0e-5c7b-dbb3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6e1-d16e-0da0-d6c1" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups>
@@ -7518,6 +7525,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7031-5243-d8e0-941e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb8a-52a3-43f9-d72b" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="4930-5311-00f2-173f" name="Prometheum Charges" hidden="false" collective="false" type="upgrade">
@@ -7735,6 +7743,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="6301-37e2-934c-ca5b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e33b-4833-6551-6875" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups>
@@ -7745,6 +7754,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f84d-3147-2e67-c54f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6732-0edd-5600-d770" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="f064-93d9-7842-654b" name="Smackdown" hidden="false" collective="false" type="upgrade">

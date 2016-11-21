@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f840-ed73-44ab-3d6a" name="Genestealer Cults - Codex" book="Codex: Genestealer Cults" revision="2000" battleScribeVersion="2.00" authorName="GenWilhelm" authorContact="" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f840-ed73-44ab-3d6a" name="Genestealer Cults - Codex" book="Codex: Genestealer Cults" revision="2001" battleScribeVersion="2.00" authorName="GenWilhelm" authorContact="" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -557,6 +557,33 @@
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="aac5-e6d8-7955-a656" name="Kill Team Specialists" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="notInstanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="3ea3-0f49-3368-491b" name="New EntryLink" hidden="false" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs/>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -1688,18 +1715,18 @@
             </infoLink>
           </infoLinks>
           <modifiers>
-            <modifier type="set" field="minSelections" value="0.0">
-              <repeats>
-                <repeat field="selections" scope="f34c-0b93-4f83-7830" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3b00-7dc0-fb48-5eff" repeats="1"/>
-              </repeats>
-              <conditions/>
+            <modifier type="set" field="minSelections" value="0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="f34c-0b93-4f83-7830" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4aa1-358d-aaba-3af0" type="atLeast"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="set" field="maxSelections" value="0.0">
-              <repeats>
-                <repeat field="selections" scope="f34c-0b93-4f83-7830" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3b00-7dc0-fb48-5eff" repeats="1"/>
-              </repeats>
-              <conditions/>
+            <modifier type="set" field="maxSelections" value="0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="f34c-0b93-4f83-7830" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4aa1-358d-aaba-3af0" type="atLeast"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -1767,43 +1794,16 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="a6ae-9d65-7b14-8681" name="Sacred Relics of the Cult" hidden="false" collective="false">
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="f5e5-c123-1418-e9c2" name="New EntryLink" hidden="false" targetId="4d30-9ce8-5eca-bca0" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="8a80-62bb-c540-e90f" hidden="false" targetId="ee36-00b3-599c-3eb2" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="3914-3a0e-0a10-6dd3" hidden="false" targetId="8a5a-d6c3-8e5d-356d" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="3b00-7dc0-fb48-5eff" hidden="false" targetId="4aa1-358d-aaba-3af0" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="65.0"/>
       </costs>
@@ -6644,49 +6644,16 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
           <selectionEntryGroups/>
           <entryLinks/>
         </selectionEntryGroup>
-        <selectionEntryGroup id="27aa-faa9-1703-7122" name="Sacred Relics of the Cult" hidden="false" collective="false">
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b4fc-7b82-a910-74ba" name="New EntryLink" hidden="false" targetId="4d30-9ce8-5eca-bca0" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="78ee-4750-89ec-dd82" hidden="false" targetId="ee36-00b3-599c-3eb2" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="2539-a25d-35cc-785b" hidden="false" targetId="3b71-90a5-5ca2-2abc" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="e3cc-bc83-c319-1054" hidden="false" targetId="9ed2-f8c1-b38e-d181" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="30ff-e837-6964-18a1" hidden="false" targetId="8a5a-d6c3-8e5d-356d" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="40.0"/>
       </costs>
@@ -8572,17 +8539,17 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
           </infoLinks>
           <modifiers>
             <modifier type="set" field="minSelections" value="0.0">
-              <repeats>
-                <repeat field="selections" scope="f6c9-f5a0-5a66-c0a1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ec0-5681-d67d-baed" repeats="1"/>
-              </repeats>
-              <conditions/>
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="f6c9-f5a0-5a66-c0a1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f70-ee71-181e-de94" type="atLeast"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
             <modifier type="set" field="maxSelections" value="0.0">
-              <repeats>
-                <repeat field="selections" scope="f6c9-f5a0-5a66-c0a1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ec0-5681-d67d-baed" repeats="1"/>
-              </repeats>
-              <conditions/>
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="f6c9-f5a0-5a66-c0a1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f70-ee71-181e-de94" type="atLeast"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -8673,43 +8640,16 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="0852-1f05-4356-c58a" name="Sacred Relics of the Cult" hidden="false" collective="false">
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="243c-6c6e-9d77-5b40" name="New EntryLink" hidden="false" targetId="4d30-9ce8-5eca-bca0" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="6907-3c06-ac79-7108" hidden="false" targetId="ee36-00b3-599c-3eb2" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="11a2-0efb-ad67-695e" hidden="false" targetId="8a5a-d6c3-8e5d-356d" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="3ec0-5681-d67d-baed" hidden="false" targetId="8f70-ee71-181e-de94" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="75.0"/>
       </costs>
@@ -10141,16 +10081,7 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInRoster" type="min"/>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-        <constraint field="points" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minPoints" type="min"/>
-        <constraint field="points" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
-      </constraints>
+      <constraints/>
       <selectionEntries>
         <selectionEntry id="2fbc-5df6-20b7-6676" name="Dozer Blade" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
           <profiles/>
@@ -10264,14 +10195,8 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInRoster" type="min"/>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-        <constraint field="points" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minPoints" type="min"/>
-        <constraint field="points" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="822c-9412-20c2-15c6" type="min"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="93cb-2d42-96d4-4974" name="Heavy Stubber" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -10364,12 +10289,6 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInRoster" type="min"/>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-        <constraint field="points" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minPoints" type="min"/>
-        <constraint field="points" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="5486-b72d-a9e9-82b3" name="Mortar" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -10521,14 +10440,7 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInRoster" type="min"/>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-        <constraint field="points" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minPoints" type="min"/>
-        <constraint field="points" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="9fab-ca21-979f-18f0" name="Chainsword" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -10607,14 +10519,7 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInRoster" type="min"/>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-        <constraint field="points" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minPoints" type="min"/>
-        <constraint field="points" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="2aaf-cf22-a3ae-4799" name="Laspistol" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -10693,14 +10598,7 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInRoster" type="min"/>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
-        <constraint field="points" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minPoints" type="min"/>
-        <constraint field="points" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -10716,7 +10614,15 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f34c-0b93-4f83-7830" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
         <entryLink id="799c-da94-2f14-196c" hidden="false" targetId="8a5a-d6c3-8e5d-356d" type="selectionEntry">
@@ -10730,21 +10636,45 @@ In addition, when Patriarch Ghosar and the Purestrain Princelings deploy using t
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbb3-abbb-10d8-62ac" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
         <entryLink id="b0de-cfac-6bf5-a8ce" hidden="false" targetId="8f70-ee71-181e-de94" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f6c9-f5a0-5a66-c0a1" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
         <entryLink id="5a46-54af-cce6-cade" hidden="false" targetId="3b71-90a5-5ca2-2abc" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbb3-abbb-10d8-62ac" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
       </entryLinks>
