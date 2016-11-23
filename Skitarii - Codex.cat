@@ -3781,34 +3781,6 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f281-caac-e94b-0b5e" name="Stasis Field" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks>
-        <infoLink id="5f1e-03cd-ac5a-02b1" hidden="false" targetId="784d-869e-5f14-54b1" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers>
-        <modifier type="set" field="points" value="0">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce48-9bc2-217e-89d8" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="15.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="dfd6-2d1b-d370-8f89" name="Stubcarbines and Power Swords" book="Codex: Skitarii" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
       <profiles/>
       <rules/>
@@ -4856,13 +4828,6 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
               </modifiers>
               <constraints/>
             </entryLink>
-            <entryLink id="068d-2577-1538-1dfb" name="New EntryLink" hidden="false" targetId="4981-22ba-1965-a771" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="45.0"/>
@@ -5574,13 +5539,6 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
               <modifiers/>
               <constraints/>
             </entryLink>
-            <entryLink id="7f64-80e6-ef0c-9906" hidden="false" targetId="f281-caac-e94b-0b5e" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5596,7 +5554,15 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f92d-33a5-7235-3fb1" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
       </entryLinks>
