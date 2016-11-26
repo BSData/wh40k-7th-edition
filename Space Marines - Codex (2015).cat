@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" name="Space Marines: Codex" revision="2006" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" name="Space Marines: Codex" revision="2008" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="bab5-1920-a2ed-5b27" name="Vulkan&apos;s Teachings" book="Supplement: Angels of Death" hidden="false">
@@ -315,13 +315,6 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
       </modifiers>
       <description>At the end of your Shooting phase, your Warlord can nominate himself or another vehicle from this Detachment that is within 24&quot; of him.  That vehicle can immediately fire its weapons again.</description>
     </rule>
-    <rule id="df34-55e6-1910-ca16" name="God-engine" book="HH: Volume 5" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>All Mechanicum units within 24&quot; and on the same side of a model with this special rule are Fearless.</description>
-    </rule>
   </rules>
   <infoLinks/>
   <costTypes/>
@@ -456,7 +449,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="8947-3bbf-3a81-2207" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="8947-3bbf-3a81-2207" type="max"/>
           </constraints>
         </categoryEntry>
         <categoryEntry id="ef2b-83bd-1bad-5742" name="Auxiliary" hidden="false">
@@ -480,7 +473,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5917-b2ae-3037-a123" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5917-b2ae-3037-a123" type="min"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf1c-812b-fa43-10ac" type="max"/>
           </constraints>
         </categoryEntry>
@@ -2591,7 +2584,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
       </modifiers>
       <constraints/>
     </entryLink>
-    <entryLink id="0595-1bfe-b72c-8154" name="" hidden="false" targetId="34e9-e466-5276-0696" type="selectionEntry" categoryEntryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
+    <entryLink id="0595-1bfe-b72c-8154" name="" hidden="false" targetId="34e9-e466-5276-0696" type="selectionEntry" categoryEntryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3226,20 +3219,29 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
       <modifiers/>
       <constraints/>
     </entryLink>
-    <entryLink id="8393-55cd-3014-29db" name="" hidden="false" targetId="34e9-e466-5276-0696" type="selectionEntry" categoryEntryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
+    <entryLink id="4f08-1222-6542-f411" name="" hidden="false" targetId="8687-f896-6f59-bff7" type="selectionEntry" categoryEntryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="5b48-9bc0-15ad-3f69" name="New EntryLink" hidden="false" targetId="5c26-6cae-53d4-3ede" type="selectionEntry" categoryEntryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="points" value="175">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions/>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="notInstanceOf"/>
+          </conditions>
           <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints/>
     </entryLink>
-    <entryLink id="4f08-1222-6542-f411" name="" hidden="false" targetId="8687-f896-6f59-bff7" type="selectionEntry" categoryEntryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
+    <entryLink id="d8b0-3d1b-e46d-7f2e" name="New EntryLink" hidden="false" targetId="f64e-6871-1e3d-b32a" type="selectionEntry" categoryEntryId="c888f08a-6cea-4a01-8126-d374a9231554">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7626,6 +7628,26 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
                               <modifiers/>
                               <constraints/>
                             </entryLink>
+                            <entryLink id="436d-1b80-31e1-dc92" name="" hidden="false" targetId="9a53-c9f3-3b25-33a9" type="selectionEntryGroup">
+                              <profiles/>
+                              <rules/>
+                              <infoLinks/>
+                              <modifiers>
+                                <modifier type="set" field="hidden" value="true">
+                                  <repeats/>
+                                  <conditions/>
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditions>
+                                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a41c-c287-c158-aa08" type="equalTo"/>
+                                      </conditions>
+                                      <conditionGroups/>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </modifier>
+                              </modifiers>
+                              <constraints/>
+                            </entryLink>
                           </entryLinks>
                         </selectionEntryGroup>
                         <selectionEntryGroup id="e37d-bb3a-96a1-cb87" name="Storm Bolter Hand" hidden="false" collective="false" defaultSelectionEntryId="dbfb-de06-4aee-cfc0">
@@ -7681,6 +7703,26 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
                               <constraints>
                                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6931-3bef-0db7-0bc5" type="max"/>
                               </constraints>
+                            </entryLink>
+                            <entryLink id="92f7-a56a-2dbf-c03f" name="" hidden="false" targetId="00a5-9d03-0586-7ee8" type="selectionEntryGroup">
+                              <profiles/>
+                              <rules/>
+                              <infoLinks/>
+                              <modifiers>
+                                <modifier type="set" field="hidden" value="true">
+                                  <repeats/>
+                                  <conditions/>
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditions>
+                                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3390-2289-dc00-60d4" type="equalTo"/>
+                                      </conditions>
+                                      <conditionGroups/>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </modifier>
+                              </modifiers>
+                              <constraints/>
                             </entryLink>
                           </entryLinks>
                         </selectionEntryGroup>
@@ -10386,7 +10428,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
                       <modifiers/>
                       <constraints/>
                     </entryLink>
-                    <entryLink id="af21-170a-936c-9bba" name="" hidden="false" targetId="9a53-c9f3-3b25-33a9" type="selectionEntryGroup">
+                    <entryLink id="a93e-a759-f2cc-60ce" name="" hidden="false" targetId="00a5-9d03-0586-7ee8" type="selectionEntryGroup">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -13028,7 +13070,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="cefb-0626-a460-f6dd" name="Wingtip Weapons" hidden="false" collective="false" defaultSelectionEntryId="02cd-a0c1-50b2-9a86">
+        <selectionEntryGroup id="cefb-0626-a460-f6dd" name="Side Hull Weapons" hidden="false" collective="false" defaultSelectionEntryId="02cd-a0c1-50b2-9a86">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -13099,6 +13141,22 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <infoLinks/>
           <modifiers/>
           <constraints/>
+        </entryLink>
+        <entryLink id="a06f-23f9-d08f-dd99" name="" hidden="false" targetId="f516-c09b-16b2-ca64" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42c6-f1a7-fba8-27ba" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="874f-3283-7801-99e8" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -14938,7 +14996,13 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
                   <profiles/>
                   <rules/>
                   <infoLinks/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="points" value="0.0">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9063-f84c-f5c9-85f1" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03f9-69a0-1014-494d" type="max"/>
@@ -19568,7 +19632,7 @@ If several models are in a position to capture Cypher, some of which are Dark An
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="f5ab-d932-fa79-c315" name="" hidden="false" targetId="2608-8425-4f4f-7f41" type="profile">
+                <infoLink id="3967-6f19-e127-9abb" name="" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -19606,7 +19670,7 @@ If several models are in a position to capture Cypher, some of which are Dark An
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="6822-94fa-7d44-5c1d" name="" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile">
+                <infoLink id="a298-73a1-c476-e0f4" name="" hidden="false" targetId="2608-8425-4f4f-7f41" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -19897,7 +19961,7 @@ If several models are in a position to capture Cypher, some of which are Dark An
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="c3a5-8a95-11c8-e1f3" name="" hidden="false" targetId="2608-8425-4f4f-7f41" type="profile">
+                <infoLink id="e56a-acf8-a6dc-699c" name="" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -19935,7 +19999,7 @@ If several models are in a position to capture Cypher, some of which are Dark An
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="98b7-6422-046d-6574" name="" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile">
+                <infoLink id="9fe7-3a12-2fad-ca40" name="" hidden="false" targetId="2608-8425-4f4f-7f41" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -20316,7 +20380,9 @@ If several models are in a position to capture Cypher, some of which are Dark An
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="7939-6f34-b041-2992" name="Chainfist w/ Built-In Melta Gun" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -20358,7 +20424,9 @@ If several models are in a position to capture Cypher, some of which are Dark An
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -25723,7 +25791,7 @@ If several models are in a position to capture Cypher, some of which are Dark An
             </modifier>
             <modifier type="decrement" field="1a6d-3292-ccf1-00e9" value="1">
               <repeats>
-                <repeat field="selections" scope="5d2a-0445-c94b-74ff" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="21a6-2cd3-ea38-02ac" repeats="1"/>
+                <repeat field="selections" scope="5d2a-0445-c94b-74ff" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="21a6-2cd3-ea38-02ac" repeats="1"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -26746,18 +26814,64 @@ If several models are in a position to capture Cypher, some of which are Dark An
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="b34c-af50-4c2e-6d20" name="" hidden="false" targetId="5d06-fec0-cdb5-f771" type="selectionEntry">
+            <selectionEntryGroup id="32e1-5037-242d-f80c" name="Demi-Company Captain" hidden="false" collective="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="154f-ac22-e693-20fe" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c52-3ce2-def4-3334" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ecd8-d552-dae6-2611" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9dc7-155f-d504-5667" type="min"/>
               </constraints>
-            </entryLink>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="48c0-fe0b-6dd0-8995" name="" hidden="false" targetId="5d06-fec0-cdb5-f771" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="47e1-4e01-5ec8-3a7c" name="" hidden="false" targetId="de7e-a420-de5d-4ead" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="5c51-ce0a-6e0c-92a5" name="" hidden="false" targetId="fd37-8037-001f-8caf" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="971c-cbb7-b08a-c9d0" name="" hidden="false" targetId="2ba5-e1bb-8c8a-db3c" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="79d0-394f-2c29-2413" name="" hidden="false" targetId="7ad0-cd95-c9ec-d71d" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="b8b4-69fd-4b9b-c72c" name="" hidden="false" targetId="bc5e-6ce7-4447-040f" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
             <entryLink id="dbdd-3dd1-33d7-b577" name="" hidden="false" targetId="041e-c0d4-9ca5-a0ee" type="selectionEntry">
               <profiles/>
               <rules/>
@@ -26916,6 +27030,41 @@ If several models are in a position to capture Cypher, some of which are Dark An
                   <constraints/>
                 </entryLink>
                 <entryLink id="c6c9-1f1c-79cb-b1ed" name="" hidden="false" targetId="0ea4-8a62-96b6-77d0" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a999-0139-b311-d4cd" name="Demi-Company Chaplain" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="27be-a998-e77a-e451" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dfe4-fae6-8aa1-cc35" type="min"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="914c-7527-0e72-f6a9" name="" hidden="false" targetId="25d2-9097-bbfc-0545" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="2dec-1189-3c57-0ed9" name="" hidden="false" targetId="379f-15a3-99a9-b728" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="032d-bf51-0e3d-ce9a" name="" hidden="false" targetId="f8b2-45c8-889e-00d3" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -32070,7 +32219,7 @@ Harassing Fire: Any unit that suffers one or more unsaved Wounds from a unit tha
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="155.0"/>
+        <cost name="pts" costTypeId="points" value="175.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="71fd-d717-3dad-4429" name="Kheres Pattern Assault Cannon" hidden="false" collective="false" type="upgrade">
@@ -47241,7 +47390,7 @@ The Warlord Titan is completely immune to the effects of Haywire attacks, danger
         <cost name="pts" costTypeId="points" value="750.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b941-e395-01ee-4ef1" name="(Apoc) Warlord Battle Titan" hidden="false" collective="false" type="model">
+    <selectionEntry id="b941-e395-01ee-4ef1" name="(Apoc) Warlord Battle Titan [30k Rules]" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="1133-f9b2-a1df-b0ba" name="Mars Warlord Battle Titan" book="HH: Volume 5" hidden="false" profileTypeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413">
           <profiles/>
@@ -49750,6 +49899,37 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <cost name="pts" costTypeId="points" value="175.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5c26-6cae-53d4-3ede" name="Kill Team Specialist Selection" book="" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="f887-3bdd-6738-f869" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f887-3bdd-6738-f869" type="min"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="8d13-a137-07ad-acc5" name="New EntryLink" hidden="false" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="cb1c-f2ee-4578-1e2f" name="Ranged Weapons" book="Codex: Space Marines" hidden="false" collective="false" defaultSelectionEntryId="a15f-dbe3-abeb-72a0">
@@ -50846,14 +51026,26 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="points" value="10">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
         <entryLink id="7258-6a11-e9bd-d3f3" name="" hidden="false" targetId="08d1-a140-70d4-1996" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="points" value="5">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
         <entryLink id="03fa-fea8-1bb1-e7b3" name="" hidden="false" targetId="253c-b2c6-1345-e619" type="selectionEntry">
@@ -50862,6 +51054,11 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <infoLinks/>
           <modifiers>
             <modifier type="append" field="name" value=" - Twin Linked">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="points" value="15">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -50879,6 +51076,11 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <conditions/>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="points" value="5">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints/>
         </entryLink>
@@ -50888,6 +51090,11 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <infoLinks/>
           <modifiers>
             <modifier type="append" field="name" value=" - Twin Linked">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="points" value="5">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -50905,6 +51112,11 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <conditions/>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="points" value="5">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints/>
         </entryLink>
@@ -50912,7 +51124,13 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="points" value="0">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
       </entryLinks>
