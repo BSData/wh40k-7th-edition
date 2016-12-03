@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" name="Chaos Space Marines: Codex (2012)" revision="2005" battleScribeVersion="2.00" authorName=" BSData team" authorUrl="http://battlescribedata.appspot.com/#/repos" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" name="Chaos Space Marines: Codex (2012)" revision="2006" battleScribeVersion="2.00" authorName=" BSData team" authorUrl="http://battlescribedata.appspot.com/#/repos" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1979,6 +1979,13 @@
       <constraints/>
     </entryLink>
     <entryLink id="03a2-8743-fcbf-cdb0" name="New EntryLink" hidden="false" targetId="35a7-8970-54e7-57c0" type="selectionEntry" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="7c0e-8b0a-8503-d6b2" name="New EntryLink" hidden="false" targetId="c8ba-1df2-c188-f6b8" type="selectionEntry" categoryEntryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -35872,6 +35879,16 @@ THIS WILL NOT BE IMPLEMENTED UNTIL BATTLESCRIBE 2.0. </description>
                 <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
               </characteristics>
             </profile>
+            <profile id="0fcb-da1b-5457-baa4" name="Aspiring Sorcerer" hidden="false" profileTypeId="bc97-dea9-9e88-bb7d" profileTypeName="Psyker">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Mastery Level" characteristicTypeId="ca56-02c3-af4b-ea2a" value="1"/>
+                <characteristic name="Disciplines" characteristicTypeId="ea53-f5c7-08e4-980c" value="Tzeentch"/>
+              </characteristics>
+            </profile>
           </profiles>
           <rules/>
           <infoLinks>
@@ -35939,37 +35956,63 @@ THIS WILL NOT BE IMPLEMENTED UNTIL BATTLESCRIBE 2.0. </description>
                 <cost name="pts" costTypeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6de4-9d84-ebc3-3630" name="Bolt Pistol" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="ef2e-1191-dd79-4a32" name="Pistol" hidden="false" collective="false" defaultSelectionEntryId="a4d2-c157-c32c-e151">
               <profiles/>
               <rules/>
-              <infoLinks>
-                <infoLink id="a568-b68f-de62-5d75" hidden="false" targetId="e6d5-677a-d8ed-f6a5" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="0480-16fd-370d-f8c2" hidden="false" targetId="5ac9c484-7f7f-b299-64d9-d9ffddb1f66e" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
+              <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e17-34ce-4677-7812" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c6a3-8de2-939f-7f4a" type="min"/>
               </constraints>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="a4d2-c157-c32c-e151" name="Inferno Bolt Pistol" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="53f2-064a-96e9-8cbd" hidden="false" targetId="eb36-32eb-0b13-37f0" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="bd46-8186-c274-e883" name="Warpflame Pistol" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="99bd-0882-d6ea-2873" name="New InfoLink" hidden="false" targetId="6123-30ed-6821-dcf8" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="6fec-2f7d-7c21-8d7e" hidden="false" targetId="510d2050-e668-b844-1ab4-221cd947e968" type="selectionEntryGroup">
               <profiles/>
@@ -36063,6 +36106,66 @@ THIS WILL NOT BE IMPLEMENTED UNTIL BATTLESCRIBE 2.0. </description>
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="23.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5100-3c95-779f-654b" name="Replace Inferno Boltgun with Warpflamer" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="e306-2aa6-f7d0-302e" name="New InfoLink" hidden="false" targetId="375d-4346-2104-6cb7" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="increment" field="48b4-93ec-6200-a5d5" value="1">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df89-fe83-8f3b-387c" repeats="1"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48b4-93ec-6200-a5d5" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="7.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fc42-016e-894a-a4e6" name="Soulreaper Cannon" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="258d-fa47-f0cf-eebd" name="New InfoLink" hidden="false" targetId="bee4-e35b-3786-b5f3" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="increment" field="d0a5-8370-23a1-2e85" value="1">
+              <repeats>
+                <repeat field="selections" scope="7142-e365-1c12-efd6" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0a5-8370-23a1-2e85" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -43452,6 +43555,27 @@ Athanaeans - Telepathy</description>
           <modifiers/>
           <constraints/>
         </entryLink>
+        <entryLink id="95cb-68ac-1307-af8f" name="New EntryLink" hidden="false" targetId="26b6-b7ed-c897-7509" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="38d4-06eb-5220-1ccb" name="New EntryLink" hidden="false" targetId="8eea-aeee-a479-53b9" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="c469-7e81-296d-7a59" name="New EntryLink" hidden="false" targetId="4742-b01e-2efc-4b59" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3fef-a176-fad9-561a" name="Chaos Artefacts" hidden="false" collective="false">
@@ -43530,6 +43654,27 @@ Athanaeans - Telepathy</description>
           <constraints/>
         </entryLink>
         <entryLink id="6f8f-ef50-c1e0-857a" hidden="false" targetId="04cb0539-11e5-51a2-f2de-5a13db595959" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="0eae-c149-c4f1-519e" name="New EntryLink" hidden="false" targetId="1e5a-09d8-daa1-d0b7" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="ac34-3bc0-f0cc-40c0" name="New EntryLink" hidden="false" targetId="9619-17b2-7ac0-07da" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="4368-e519-0189-6c79" name="New EntryLink" hidden="false" targetId="8ea9-ad95-4670-5a52" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
