@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" name="Chaos Space Marines: Codex (2012)" revision="2006" battleScribeVersion="2.00" authorName=" BSData team" authorUrl="http://battlescribedata.appspot.com/#/repos" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5af86795-95c1-a1eb-c333-17137242b62f" name="Chaos Space Marines: Codex (2012)" revision="2007" battleScribeVersion="2.00" authorName=" BSData team" authorUrl="http://battlescribedata.appspot.com/#/repos" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1699,15 +1699,15 @@
       <modifiers/>
       <constraints/>
     </entryLink>
-    <entryLink id="31c4-df92-82ab-40b0" name="New EntryLink" hidden="true" targetId="4454-be9a-5d49-12d4" type="selectionEntry" categoryEntryId="ef2b-83bd-1bad-5742">
+    <entryLink id="31c4-df92-82ab-40b0" name="New EntryLink" hidden="false" targetId="4454-be9a-5d49-12d4" type="selectionEntry" categoryEntryId="ef2b-83bd-1bad-5742">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d17-fd64-f8e0-7079" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d17-fd64-f8e0-7079" type="notInstanceOf"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -14895,7 +14895,29 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="increment" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a3cf-b4c3-5ac4-4802" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a3cf-b4c3-5ac4-4802" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Jetbike (Character)">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a3cf-b4c3-5ac4-4802" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantry"/>
             <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="5"/>
@@ -15026,6 +15048,28 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a3cf-b4c3-5ac4-4802" name="Disc of Tzeetch" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="2318-c45c-547f-aa53" hidden="false" targetId="b277ee69-b8ec-7ba1-3ffd-41ba05d845f5" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81d2-ee71-9e83-5fe2" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -39838,15 +39882,7 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
         </rule>
       </rules>
       <infoLinks/>
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d17-fd64-f8e0-7079" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
@@ -41387,12 +41423,6 @@ The sokar may also transport a single Rhino, including a squad within, occupying
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="30d2-ea6e-9dcc-1c50" name="New InfoLink" hidden="false" targetId="bf29-d706-2c5e-4b28" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
       </infoLinks>
       <modifiers/>
       <constraints>
@@ -41423,6 +41453,12 @@ The sokar may also transport a single Rhino, including a squad within, occupying
           <modifiers/>
         </infoLink>
         <infoLink id="77d1-312b-beb4-f493" name="New InfoLink" hidden="false" targetId="fd9a1651-2e3e-e050-0aac-87937ab7e2c0" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="c07a-f28b-fef2-23c4" name="New InfoLink" hidden="false" targetId="f7153095-5189-cd0c-d397-3c5c13fd1168" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -41709,13 +41745,6 @@ The sokar may also transport a single Rhino, including a squad within, occupying
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc30-f5b1-eafc-2eac" type="max"/>
           </constraints>
-        </entryLink>
-        <entryLink id="e0ae-ce6f-4210-4081" hidden="false" targetId="68928713-5871-66c8-3b3d-e0c69217216a" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
         </entryLink>
       </entryLinks>
       <costs>
