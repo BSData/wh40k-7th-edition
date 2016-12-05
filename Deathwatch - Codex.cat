@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ee8b-68c8-02226-2d18" name="Deathwatch: Codex (2016)" book="Codex: Adeptus Astartes Deathwatch" revision="2012" battleScribeVersion="2.00" authorName="https://gitter.im/BSData/wh40k" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ee8b-68c8-02226-2d18" name="Deathwatch: Codex (2016)" book="Codex: Adeptus Astartes Deathwatch" revision="2013" battleScribeVersion="2.00" authorName="https://gitter.im/BSData/wh40k" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -11559,7 +11559,7 @@ This is NOT validated through BattleScribe.</description>
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="216d-e39c-1ce6-1323" name="Weapon Options" hidden="false" collective="false">
+        <selectionEntryGroup id="216d-e39c-1ce6-1323" name="Weapon Options" hidden="false" collective="false" defaultSelectionEntryId="578f-42d9-f707-1299">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -11588,6 +11588,32 @@ This is NOT validated through BattleScribe.</description>
                 <cost name="pts" costTypeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="578f-42d9-f707-1299" name="Boltgun &amp; Chainsword" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="2b40-8617-4585-deba" name="New InfoLink" hidden="false" targetId="b84737b6-d86b-893c-5615-727ace6b72c3" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="99b1-682a-b5a1-6cee" name="New InfoLink" hidden="false" targetId="0c19a0e9-8130-09dd-6826-32b2946a7d48" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e150-65f1-1589-b804" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="1587-797a-b146-9c95" name="Choose 2" hidden="false" collective="false">
@@ -11597,17 +11623,29 @@ This is NOT validated through BattleScribe.</description>
               <modifiers>
                 <modifier type="set" field="65b3-d0e5-400b-4ef3" value="0.0">
                   <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b07-2e30-1d2e-ba0f" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b07-2e30-1d2e-ba0f" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578f-42d9-f707-1299" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" field="2368-d357-875d-64ba" value="0.0">
                   <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b07-2e30-1d2e-ba0f" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b07-2e30-1d2e-ba0f" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578f-42d9-f707-1299" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
