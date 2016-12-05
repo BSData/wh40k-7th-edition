@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="83d27dcf-7aba-2f77-c5c0-6dbf86c8e185" name="Chaos Daemons: Codex" revision="2001" battleScribeVersion="2.00" authorName="BSData team" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="83d27dcf-7aba-2f77-c5c0-6dbf86c8e185" name="Chaos Daemons: Codex" revision="2002" battleScribeVersion="2.00" authorName="BSData team" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
   <costTypes/>
   <profileTypes/>
   <forceEntries>
-    <forceEntry id="8111-5066-a5a7-fee8" name="Chaos CD Daemonic Incursion" hidden="false">
+    <forceEntry id="8111-5066-a5a7-fee8" name="CD Daemonic Incursion" hidden="false">
       <profiles/>
       <rules>
         <rule id="cc2d-4275-21cd-b469" name="The Warp Unleashed" hidden="false">
@@ -67,6 +67,58 @@
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="2179-aa0e-b35f-3a99" type="min"/>
+          </constraints>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
+    <forceEntry id="a129-1f4b-1aa2-f3fa" name="CD Pandemoniad of Tzeentch" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="8559-5f31-f0c5-932c" name="Ephemeral Form" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Models from this Detachment add 1 to their invulnerable saves (to a maximum of 3++) instead of re-rolling save rolls of 1.</description>
+        </rule>
+        <rule id="5d54-0acb-8e76-39ee" name="Master of Fate" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If this Detachment is your Primary Detachment, you can re-roll the result when rolling on the Tzeentch Warlord Traits table and can re-roll the result when rolling on the Tzeentchian Warp Storm table.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="bf93-7277-bf48-16f7" name="Core" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df7f-4402-6354-a4df" type="min"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="9050-d437-3301-7e42" name="Command" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0d7-7160-157a-2d2a" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="ef2b-83bd-1bad-5742" name="Auxiliary" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdb5-eaea-878c-50f3" type="min"/>
           </constraints>
         </categoryEntry>
       </categoryEntries>
@@ -1400,25 +1452,65 @@ If there is no space for the pink horrors, or no models, they are then destroyed
       <modifiers/>
       <constraints/>
     </entryLink>
-    <entryLink id="fbdc-87ed-7574-0c61" hidden="false" targetId="f457-2e18-4b93-4bcb" type="selectionEntry" categoryEntryId="bf93-7277-bf48-16f7">
+    <entryLink id="fbdc-87ed-7574-0c61" hidden="true" targetId="f457-2e18-4b93-4bcb" type="selectionEntry" categoryEntryId="bf93-7277-bf48-16f7">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8111-5066-a5a7-fee8" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a129-1f4b-1aa2-f3fa" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
-    <entryLink id="dab6-4d44-781e-ad34" hidden="false" targetId="21a5-9eb3-eda1-39da" type="selectionEntry" categoryEntryId="bf93-7277-bf48-16f7">
+    <entryLink id="dab6-4d44-781e-ad34" hidden="true" targetId="21a5-9eb3-eda1-39da" type="selectionEntry" categoryEntryId="bf93-7277-bf48-16f7">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8111-5066-a5a7-fee8" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
     <entryLink id="0320-bbe1-b4c9-d13a" hidden="false" targetId="d28f-a8b9-6af1-ae20" type="selectionEntry" categoryEntryId="ef2b-83bd-1bad-5742">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8111-5066-a5a7-fee8" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
     <entryLink id="7417-cdce-5613-f565" hidden="false" targetId="2572-b8b0-35d7-814a" type="selectionEntry" categoryEntryId="ef2b-83bd-1bad-5742">
@@ -1432,7 +1524,21 @@ If there is no space for the pink horrors, or no models, they are then destroyed
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8111-5066-a5a7-fee8" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a129-1f4b-1aa2-f3fa" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
     <entryLink id="cd17-3c68-14bf-1b42" hidden="false" targetId="3e57-8b86-1e1f-e2fd" type="selectionEntry" categoryEntryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
@@ -1477,11 +1583,24 @@ If there is no space for the pink horrors, or no models, they are then destroyed
       <modifiers/>
       <constraints/>
     </entryLink>
-    <entryLink id="a1ca-1130-d39a-cd1e" hidden="false" targetId="e0b0-ac29-3689-5cd0" type="selectionEntry" categoryEntryId="bf93-7277-bf48-16f7">
+    <entryLink id="a1ca-1130-d39a-cd1e" hidden="true" targetId="e0b0-ac29-3689-5cd0" type="selectionEntry" categoryEntryId="bf93-7277-bf48-16f7">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8111-5066-a5a7-fee8" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
     <entryLink id="0fc3-1294-0196-e702" hidden="false" targetId="e0b0-ac29-3689-5cd0" type="selectionEntry" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
@@ -1502,7 +1621,20 @@ If there is no space for the pink horrors, or no models, they are then destroyed
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8111-5066-a5a7-fee8" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
     <entryLink id="a9e3-d5f0-1f80-56db" hidden="false" targetId="3bc2-20f7-a09f-3be4" type="selectionEntry" categoryEntryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
@@ -1642,7 +1774,21 @@ If there is no space for the pink horrors, or no models, they are then destroyed
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8111-5066-a5a7-fee8" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a129-1f4b-1aa2-f3fa" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
     <entryLink id="9aa2-a3e7-0281-e7b7" hidden="false" targetId="9cda-7277-c184-6ce6" type="selectionEntry" categoryEntryId="ef2b-83bd-1bad-5742">
@@ -1716,6 +1862,135 @@ If there is no space for the pink horrors, or no models, they are then destroyed
       <constraints/>
     </entryLink>
     <entryLink id="7059-fd3e-a535-4ccd" name="New EntryLink" hidden="false" targetId="d7aa-f4dc-450b-ee0b" type="selectionEntry" categoryEntryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="a527-c103-7dac-1301" name="New EntryLink" hidden="true" targetId="15a6-d042-2b2d-cc9d" type="selectionEntry" categoryEntryId="bf93-7277-bf48-16f7">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a129-1f4b-1aa2-f3fa" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints/>
+    </entryLink>
+    <entryLink id="56ef-3cda-17f0-c4cb" name="New EntryLink" hidden="false" targetId="15a6-d042-2b2d-cc9d" type="selectionEntry" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="e187-df64-9264-e38f" name="New EntryLink" hidden="true" targetId="25eb-e12f-75c5-55f2" type="selectionEntry" categoryEntryId="9050-d437-3301-7e42">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a129-1f4b-1aa2-f3fa" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints/>
+    </entryLink>
+    <entryLink id="1930-a098-3dd8-e487" name="New EntryLink" hidden="false" targetId="25eb-e12f-75c5-55f2" type="selectionEntry" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="2d52-24e3-2c51-a4bc" name="New EntryLink" hidden="true" targetId="e12b-0dd4-fdf2-c581" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a129-1f4b-1aa2-f3fa" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints/>
+    </entryLink>
+    <entryLink id="fff1-fe20-9a0a-f6b0" name="New EntryLink" hidden="false" targetId="a878-d3ce-4e86-d227" type="selectionEntry" categoryEntryId="ef2b-83bd-1bad-5742">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a129-1f4b-1aa2-f3fa" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints/>
+    </entryLink>
+    <entryLink id="b388-5efe-1132-236b" name="New EntryLink" hidden="false" targetId="d633-a25a-cf63-7966" type="selectionEntry" categoryEntryId="ef2b-83bd-1bad-5742">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8111-5066-a5a7-fee8" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a129-1f4b-1aa2-f3fa" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints/>
+    </entryLink>
+    <entryLink id="471f-61af-e1fd-70e0" name="New EntryLink" hidden="false" targetId="d633-a25a-cf63-7966" type="selectionEntry" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="91af-642a-6242-4c80" name="New EntryLink" hidden="false" targetId="a878-d3ce-4e86-d227" type="selectionEntry" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2057,7 +2332,7 @@ Super-heavies, Gargantuan Creatures and buildings cannot be dragged by the impal
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c764-6b3b-f49f-c61e" name="[FW] Cor&apos;bax Utterblight" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+    <selectionEntry id="c764-6b3b-f49f-c61e" name="[FW] Cor&apos;bax Utterblight" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
       <profiles>
         <profile id="5be2-af17-a4c1-0472" name="Cor&apos;bax Utterblight" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd">
           <profiles/>
@@ -2142,7 +2417,7 @@ Cor’bax Utterblight inflicts D3 Hammer of Wrath hits when charging. He ignores
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="355.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a025-4bcd-12e9-b8be" name="[FW] Giant Chaos Spawn" book="Imperial Armour 13" page="0" hidden="false" collective="false" categoryEntryId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" type="upgrade">
@@ -15210,6 +15485,406 @@ On a roll of a 2-5, it remains wrecked but the controlling player may attempt to
         <cost name="pts" costTypeId="points" value="140.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="15a6-d042-2b2d-cc9d" name="Lorestealer Host" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="96e4-08af-bee5-d514" name="The Blue Scribes" hidden="false" collective="false" defaultSelectionEntryId="900d-14bf-c234-6186">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="628f-10d3-7a98-8efc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="947f-dc61-2ea7-c032" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="900d-14bf-c234-6186" name="New EntryLink" hidden="false" targetId="1844-1826-3675-2a90" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0b7f-7ab7-ff5d-0a64" name="Blue Horrors" hidden="false" collective="false" defaultSelectionEntryId="be1a-1285-a223-8bf7">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="705f-7ef6-70af-45c2" type="min"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2f4-f182-40d9-3226" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="be1a-1285-a223-8bf7" name="New EntryLink" hidden="false" targetId="0fa8-a8f6-98ab-08d6" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="0fa8-a8f6-98ab-08d6" name="Blue Horrors" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="5aea-13d9-82ae-99fc" name="Blue Horrors" hidden="false" profileTypeId="bc97-dea9-9e88-bb7d" profileTypeName="Psyker">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Mastery Level" characteristicTypeId="ca56-02c3-af4b-ea2a"/>
+            <characteristic name="Disciplines" characteristicTypeId="ea53-f5c7-08e4-980c" value="Change"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="7efd-2a34-348f-ff17" name="Mage&apos;s Offspring" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>A unit of 11-20 Blue Horrors generates 2 Warp Charge points instead of 1.</description>
+        </rule>
+        <rule id="bcc9-1100-f587-54f3" name="Split" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If a friendly unit of Pink Horrors suffers any casualties, the slain Horrors will split and create Blue Horrors at the end of that phase (after all other units have performed their actions and made their attacks). Two Blue Horrors are created for each slain Pink Horror - if there is already a friendly Blue HOrror unit within 6&quot; of the Pink Horrors, add the newly created Blue Horrors to that unit, otherwise set them up as a new unit within 6&quot; of the unit of Pink Horrors. If a rule causes a whole unit of Pink Horrors to be removed at once (excluding Daemonic Instability), you can immediately create a unit of Blue HOrrors, just before removing the last model from the Pink Horrors unit. The unit of Blue Horrors has two models for each model in the unit of Pink Horrors at the point at which it is removed, and must be set up with all models within 6&quot; of the last model from the Pink Horrors unit.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="289b-0634-d44f-49d0" name="New InfoLink" hidden="false" targetId="ca5ce6c3-c53f-bcd2-b9ec-c35e5680ad35" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="4304-b55b-4d1e-ccfc" name="New InfoLink" hidden="false" targetId="521fb0b8-870d-f3e9-6f25-483767d3b77e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="256f-b65d-fb6d-8bba" name="New InfoLink" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries>
+        <selectionEntry id="b77b-9911-3d41-85b9" name="Blue Horrors" hidden="false" collective="false" type="model">
+          <profiles>
+            <profile id="4439-09ba-8cd3-5894" name="Blue Horrors" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantry"/>
+                <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="3"/>
+                <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="3"/>
+                <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="2"/>
+                <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="2"/>
+                <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1"/>
+                <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="3"/>
+                <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1"/>
+                <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="7"/>
+                <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="-"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c331-0b7b-603f-8f48" type="max"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbac-278e-f5df-6967" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="eb1c-d321-ca9f-474f" name="New EntryLink" hidden="false" targetId="a567e325-4907-1e0f-0a93-b2e3f562a1f8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="25eb-e12f-75c5-55f2" name="Omniscient Oracles" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="070c-6069-a433-92bf" name="Kairos Fateweaver" hidden="false" collective="false" defaultSelectionEntryId="f8b6-b5a0-69c7-7373">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c1d-1883-7cf3-d939" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d6c-3e7a-f730-5fab" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="f8b6-b5a0-69c7-7373" name="New EntryLink" hidden="false" targetId="34da-cb86-e965-3aec" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c347-189f-7b42-1652" name="Lords of Change" hidden="false" collective="false" defaultSelectionEntryId="8893-d3ea-6dc1-e87d">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2789-fb49-1dd5-8779" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1fd-1fab-5919-58ad" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="8893-d3ea-6dc1-e87d" name="New EntryLink" hidden="false" targetId="dac2-d0ef-2a14-4bb4" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="e12b-0dd4-fdf2-c581" name="Agents of Tzeentch" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4769-f281-7a8d-825c" name="Choose One" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b99-bdf8-10b9-07ee" type="max"/>
+            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ed8-cf66-7444-6107" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="9e7b-01be-da22-a590" name="New EntryLink" hidden="false" targetId="1844-1826-3675-2a90" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="b5c6-0c3c-b526-5e08" name="New EntryLink" hidden="false" targetId="cecc-a6c2-65b8-5f8c" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="a878-d3ce-4e86-d227" name="Brimstone Conflagration" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8af5-855e-0f9a-89c8" name="Exalted Flamer" hidden="false" collective="false" defaultSelectionEntryId="2230-afd3-3e1f-53bc">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f63-2b58-948e-d528" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a3-1bf9-83c6-20a2" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="2230-afd3-3e1f-53bc" name="New EntryLink" hidden="false" targetId="a5d2-c03a-c9d8-8e2a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b1ba-c7ed-545f-67f9" name="Brimstone Horrors" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e700-0dc8-befa-5975" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24cc-b708-c6cd-3bd0" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="888b-af2a-7384-790e" name="New EntryLink" hidden="false" targetId="dce2-43d7-4057-ad49" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="dce2-43d7-4057-ad49" name="Brimstone Horrors" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="d633-a25a-cf63-7966" name="Heralds Anarchic" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0562-cf47-4533-9f8d" name="Heralds of Tzeentch" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d199-d491-269e-5a22" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d6b-1339-54e2-5b7a" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="59b6-e3e9-9e5e-240b" name="New EntryLink" hidden="false" targetId="eeb8-23a2-fd50-af88" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="2315-81d3-e3ec-f919" name="Lord of Pandemonium" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9753-7518-379d-fd0d" name="Choose One" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ee2-3462-0ae9-bbaa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51e9-e5ed-a6d6-472e" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="e8f9-54bc-d94e-e2a0" name="New EntryLink" hidden="false" targetId="96fb-4c60-2a63-3e5d" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="10d2-3273-0d70-d8d3" name="New EntryLink" hidden="false" targetId="34da-cb86-e965-3aec" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="d601-c5b9-fd75-e269" name="New EntryLink" hidden="false" targetId="dac2-d0ef-2a14-4bb4" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="31a3-5643-b86d-4f58" name="New EntryLink" hidden="false" targetId="eeb8-23a2-fd50-af88" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="beefcd38-5e93-0f5e-0b6e-9843ecc07bd1" name="Daemonic Psyker Level" hidden="false" collective="false">
@@ -16300,6 +16975,12 @@ If you roll The Dark Prince Thirsts, you may re-roll a single dice roll to deter
       <infoLinks/>
       <modifiers/>
       <description>You can choose to re-roll any Daemonic Instability tests for units from this Detachment.</description>
+    </rule>
+    <rule id="ff41-9173-6353-3d38" name="Split Again" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
     </rule>
   </sharedRules>
   <sharedProfiles>
