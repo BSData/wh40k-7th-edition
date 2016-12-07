@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3ae4-9ad8-c53f-c5c3" name="Eldar: Corsairs (2015)" book="Imperial Armour 11: Second Edition (2015)" revision="2000" battleScribeVersion="2.00" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3ae4-9ad8-c53f-c5c3" name="Eldar: Corsairs (2015)" book="Imperial Armour 11: Second Edition (2015)" revision="2002" battleScribeVersion="2.00" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -3431,7 +3431,15 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="b7b2-57a7-03f0-30b1" name="New EntryLink" hidden="false" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
@@ -5081,7 +5089,15 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="253b-a34d-032b-fc20" name="New EntryLink" hidden="false" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
@@ -6388,7 +6404,15 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="06b3-7710-606a-6ae0" name="New EntryLink" hidden="false" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
@@ -6686,7 +6710,15 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <selectionEntries>
         <selectionEntry id="09d4-f485-c8b9-b7b7" name="Corsair Kinetic Shrouds" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -6902,7 +6934,15 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <selectionEntries>
         <selectionEntry id="4715-4ca4-abb5-c3c2" name="Corsair Kinetic Shroud" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -7889,18 +7929,9 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                   <profiles/>
                   <rules/>
                   <infoLinks/>
-                  <modifiers>
-                    <modifier type="increment" field="maxSelections" value="1.0">
-                      <repeats/>
-                      <conditions>
-                        <condition field="selections" scope="c585-e929-41db-275b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf08-a9b4-dc7c-4cfe" type="atLeast"/>
-                      </conditions>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
+                  <modifiers/>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
                   <selectionEntries/>
                   <selectionEntryGroups>
@@ -7908,7 +7939,15 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                       <profiles/>
                       <rules/>
                       <infoLinks/>
-                      <modifiers/>
+                      <modifiers>
+                        <modifier type="set" field="maxSelections" value="0.0">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5321-16cc-1fd6-43f7" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
                       <constraints>
                         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                       </constraints>
@@ -8019,12 +8058,33 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                         <modifier type="set" field="minSelections" value="0.0">
                           <repeats/>
                           <conditions/>
-                          <conditionGroups/>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf08-a9b4-dc7c-4cfe" type="atLeast"/>
+                                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5321-16cc-1fd6-43f7" type="equalTo"/>
+                              </conditions>
+                              <conditionGroups/>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="set" field="355f-3630-db8b-4fbb" value="0.0">
+                          <repeats/>
+                          <conditions/>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf08-a9b4-dc7c-4cfe" type="atLeast"/>
+                                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5321-16cc-1fd6-43f7" type="equalTo"/>
+                              </conditions>
+                              <conditionGroups/>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="355f-3630-db8b-4fbb" type="max"/>
                       </constraints>
                       <selectionEntries>
                         <selectionEntry id="a7b3-b561-3bb8-cfd3" name="Lasblaster" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -8102,7 +8162,14 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                         <selectionEntry id="0951-04b8-6050-f2e1" name="CCW and Pistols" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
                           <profiles/>
                           <rules/>
-                          <infoLinks/>
+                          <infoLinks>
+                            <infoLink id="dca1-c9fd-b609-d764" name="New InfoLink" hidden="false" targetId="e294-a5c7-e01e-0a82" type="profile">
+                              <profiles/>
+                              <rules/>
+                              <infoLinks/>
+                              <modifiers/>
+                            </infoLink>
+                          </infoLinks>
                           <modifiers/>
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -8138,33 +8205,7 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                                 </infoLink>
                               </infoLinks>
                               <modifiers/>
-                              <constraints>
-                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                              </constraints>
-                              <selectionEntries/>
-                              <selectionEntryGroups/>
-                              <entryLinks/>
-                              <costs>
-                                <cost name="pts" costTypeId="points" value="0.0"/>
-                              </costs>
-                            </selectionEntry>
-                            <selectionEntry id="dffb-02ba-1ff8-688d" name="Close Combat Weapon" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks>
-                                <infoLink id="1159-385a-52e3-3a54" hidden="false" targetId="e294-a5c7-e01e-0a82" type="profile">
-                                  <profiles/>
-                                  <rules/>
-                                  <infoLinks/>
-                                  <modifiers/>
-                                </infoLink>
-                              </infoLinks>
-                              <modifiers/>
-                              <constraints>
-                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                              </constraints>
+                              <constraints/>
                               <selectionEntries/>
                               <selectionEntryGroups/>
                               <entryLinks/>
@@ -8188,9 +8229,11 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                       <rules/>
                       <infoLinks/>
                       <modifiers>
-                        <modifier type="increment" field="maxSelections" value="1.0">
+                        <modifier type="increment" field="maxSelections" value="1">
                           <repeats/>
-                          <conditions/>
+                          <conditions>
+                            <condition field="selections" scope="6602-7acd-8055-3a88" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atLeast"/>
+                          </conditions>
                           <conditionGroups/>
                         </modifier>
                       </modifiers>
@@ -8369,14 +8412,7 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
               <modifiers>
                 <modifier type="increment" field="maxSelections" value="2">
                   <repeats>
-                    <repeat field="selections" scope="6602-7acd-8055-3a88" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecc4-aad3-fa3a-e298" repeats="1"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="decrement" field="maxSelections" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="ecc4-aad3-fa3a-e298" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5321-16cc-1fd6-43f7" repeats="1"/>
+                    <repeat field="selections" scope="6602-7acd-8055-3a88" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecc4-aad3-fa3a-e298" repeats="1"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -8856,6 +8892,13 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
           <constraints/>
         </entryLink>
         <entryLink id="1461-a912-a3a5-a030" hidden="false" targetId="69c7-03bf-36e0-cbc5" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="6036-ea6c-3e24-dda5" name="New EntryLink" hidden="false" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10636,6 +10679,13 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
               <conditionGroups/>
             </modifier>
           </modifiers>
+          <constraints/>
+        </entryLink>
+        <entryLink id="03f4-630b-35bd-df8e" name="New EntryLink" hidden="false" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
           <constraints/>
         </entryLink>
       </entryLinks>
