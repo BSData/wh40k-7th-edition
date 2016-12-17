@@ -7856,7 +7856,7 @@ If the test is passed, choose a direction – then roll 3D6. As long as the dist
 
 A Hit &amp; Run move is not slowed by difficult terrain, but takes Dangerous Terrain tests as normal. It may not be used to move into base or hull contact with enemy units, and models instead stop 1&quot; away. If there are units with this rule on both sides who wish to disengage, roll-off to determine who goes first and then alternate disengaging them. If the last of these ends up no longer in combat, it Consolidates instead.</description>
     </rule>
-    <rule id="ef3b-09c6-4024-cd37" name="Independant Character" book="BRB" hidden="false">
+    <rule id="ef3b-09c6-4024-cd37" name="Independent Character" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
