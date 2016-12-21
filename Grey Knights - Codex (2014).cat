@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="987d0372-0952-75b7-886f-6ef3ba934216" name="Grey Knights: Codex (2014)" book="Codex: Grey Knights" revision="2008" battleScribeVersion="2.00" authorName="BSData on GitHub" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="987d0372-0952-75b7-886f-6ef3ba934216" name="Grey Knights: Codex (2014)" book="Codex: Grey Knights" revision="2009" battleScribeVersion="2.00" authorName="BSData on GitHub" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -106,12 +106,12 @@
     <forceEntry id="8f7c-3ee7-3264-063f" name="Deamonhunter Strike Force" hidden="false">
       <profiles/>
       <rules>
-        <rule id="046e-5931-632a-65f7" name="Deamonhunter Strike Force" hidden="false">
+        <rule id="a0ef-e589-7c2b-5385" name="Rites of Teleportation" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>May take One Troops or One Fast Attack.</description>
+          <description>Instead of making Reserve Rolls from the start of your turn two, you can make Reserve Rolls for any unit in this Detachment that is placed in Deep Strike Reserve from the start of your turn one. These units will arrive from Deep Strike Reserve on turn one on the roll of 3+. In addition, all units from this Detachment can both Run and Shoot, in any order, in the same turn that they arrive from Deep Strike Reserve.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -122,38 +122,75 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
-          <constraints/>
+          <modifiers>
+            <modifier type="set" field="f545-488a-c6e6-42e4" value="0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="8f7c-3ee7-3264-063f" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="8f7c-3ee7-3264-063f" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c274d0b0-5866-44bc-9810-91c136ae7438" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="f545-488a-c6e6-42e4" type="max"/>
+          </constraints>
         </categoryEntry>
         <categoryEntry id="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" name="Troops" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="a111-e4c6-cb43-0714" value="0">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c274d0b0-5866-44bc-9810-91c136ae7438" type="instanceOf"/>
+                <condition field="selections" scope="8f7c-3ee7-3264-063f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c274d0b0-5866-44bc-9810-91c136ae7438" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="424d-fe5e-c520-ce3b" value="0.0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="8f7c-3ee7-3264-063f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c274d0b0-5866-44bc-9810-91c136ae7438" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="a111-e4c6-cb43-0714" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="424d-fe5e-c520-ce3b" type="min"/>
+          </constraints>
         </categoryEntry>
         <categoryEntry id="c274d0b0-5866-44bc-9810-91c136ae7438" name="Fast Attack" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="8a56-0b26-63c9-e31e" value="0">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="instanceOf"/>
+                <condition field="selections" scope="8f7c-3ee7-3264-063f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="b8b7-c752-6691-4082" value="0.0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="8f7c-3ee7-3264-063f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="8a56-0b26-63c9-e31e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8b7-c752-6691-4082" type="min"/>
+          </constraints>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
