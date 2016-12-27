@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="818a0a0f-43c3-6587-c690-9b14d0a7ba96" name="Adepta Sororitas: Codex (2013)" book="Adepta Sororitas: Codex (2013)" revision="2005" battleScribeVersion="2.00" authorName="Alphalas" authorContact="@Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="818a0a0f-43c3-6587-c690-9b14d0a7ba96" name="Adepta Sororitas: Codex (2013)" book="Adepta Sororitas: Codex (2013)" revision="2006" battleScribeVersion="2.00" authorName="Alphalas" authorContact="@Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -298,6 +298,13 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <constraints/>
+    </entryLink>
+    <entryLink id="12eb-d309-aa4a-5648" name="New EntryLink" hidden="false" targetId="6dd0-0db4-dcb9-0aab" type="selectionEntry" categoryEntryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
       <constraints/>
     </entryLink>
   </entryLinks>
@@ -7654,18 +7661,30 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a02-7b6d-7cc7-bd27" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c37-a163-f4f3-a15e" type="min"/>
+          </constraints>
         </entryLink>
         <entryLink id="a4ee-b1d6-1046-5e5f" name="New EntryLink" hidden="false" targetId="db6c-d75c-53a8-d2cd" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
-          <constraints/>
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d7d-1bef-cec7-c58b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3787-651a-2ebe-27c9" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="65.0"/>
+        <cost name="pts" costTypeId="points" value="85.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="63a4-5e15-5f5f-26f8" name="Saint Celestine" book="Codex: Adepta Sororitas" page="76" hidden="false" collective="false" categoryEntryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="model">
@@ -7824,7 +7843,15 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
       </entryLinks>
