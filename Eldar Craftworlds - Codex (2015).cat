@@ -2040,7 +2040,7 @@
                 <modifier type="set" field="7325-4b6b-370d-3d60" value="1">
                   <repeats/>
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec5e-b158-cdae-f876" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2bfc-5f7b-de87-49a3" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -18539,6 +18539,14 @@ Instead of firing their heavy D-Scythes normally, the formation may place a blas
           <modifiers/>
           <description>A Vampire Raider taken as part of this Formation may transport Artillery models, with crewman using up a single Transport Capacity point and each Artillery model using up 3 Transport Capacity points.</description>
         </rule>
+        <rule id="142f-96eb-5ffd-b6b9" name="Skyreaver Raiding Echelon [FW]" book="Imperial Armour 11: Second Edition (2015)" page="184" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>- All non-vehicle units in this Formation must begin play embarked on the Vampire Raider.
+- This Formation may not include more Vaul&apos;s Wrath Support Batteries than it does Guardian Defender units.</description>
+        </rule>
       </rules>
       <infoLinks/>
       <modifiers/>
@@ -18587,7 +18595,7 @@ Instead of firing their heavy D-Scythes normally, the formation may place a blas
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="22b0-5c70-6e9f-acd4" name="Guardians - 1 or more" hidden="false" collective="false" defaultSelectionEntryId="5e10-e9f8-3fe9-81e9">
+        <selectionEntryGroup id="22b0-5c70-6e9f-acd4" name="Guardian Units" hidden="false" collective="false" defaultSelectionEntryId="5e10-e9f8-3fe9-81e9">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -24186,7 +24194,7 @@ Instead of firing their heavy D-Scythes normally, the formation may place a blas
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -27294,102 +27302,115 @@ Farseer Skyrunner, Warlock Skyrunner Council, Windrider Jetbikes or Vyper Squadr
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1e57-0c5a-1aae-d921" name="Farseer Skyrunner" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="579c-7811-2021-7764" hidden="false" targetId="1a67-1c2b-96bf-4b52" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="1199-b45e-17b6-7a17" name="Warlock Skyrunner Conclaves" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="136f-8b4a-035c-b6c3" hidden="false" targetId="54c1-d90c-1827-d5bd" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="5506-4883-a538-063a" name="Windriders - 2 required" hidden="false" collective="false">
+        <selectionEntryGroup id="0a98-9aa2-c3db-5520" name="Windrider Host Units" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae83-9fe6-adf8-5b36" type="min"/>
+            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3490-ad75-04c0-2b9d" type="min"/>
           </constraints>
           <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="e886-7803-bc08-d283" hidden="false" targetId="5926-905e-64dd-70c2" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="4052-f646-5a5f-543b" name="Autarch Skyrunner" hidden="false" collective="false" defaultSelectionEntryId="9b5e-03f8-61fb-4633">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e357-dfdb-a066-7112" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bf8-374b-4fff-0c48" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="9b5e-03f8-61fb-4633" name="New EntryLink" hidden="false" targetId="af77-ef9a-47fb-8b49" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="ed5f-00d4-3ed0-0b3a" name="Farseer Skyrunner" hidden="false" collective="false" defaultSelectionEntryId="d07a-8232-356a-37e9">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="7951-4b29-5045-3a80" name="Vyper Squadrons - 1 required" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="99d7-a4d3-a85c-b9da" type="min"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="2e94-3166-5ab9-c2e1" hidden="false" targetId="bc01-daa0-b610-0ec2" type="selectionEntry">
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="d07a-8232-356a-37e9" hidden="false" targetId="1a67-1c2b-96bf-4b52" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="c7b6-21a0-07c6-9ab3" name="Warlock Skyrunner Conclaves" hidden="false" collective="false" defaultSelectionEntryId="d9f3-7af8-d5d5-bb90">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="1944-06f6-96cd-b6db" name="Autarch Skyrunner" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cec8-245f-7669-59c1" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5431-d5d6-3af2-f41b" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="104f-3c93-1fdb-a7e7" name="New EntryLink" hidden="false" targetId="af77-ef9a-47fb-8b49" type="selectionEntry">
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="d9f3-7af8-d5d5-bb90" hidden="false" targetId="54c1-d90c-1827-d5bd" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="b317-eb61-7a31-fb72" name="Vyper Squadrons - 1 required" hidden="false" collective="false" defaultSelectionEntryId="c6bc-82d2-044f-ae09">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints/>
-            </entryLink>
-          </entryLinks>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="299e-e67f-907d-f899" type="min"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="c6bc-82d2-044f-ae09" hidden="false" targetId="bc01-daa0-b610-0ec2" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="cc8a-3376-c03d-8d51" name="Windriders - 2 required" hidden="false" collective="false" defaultSelectionEntryId="7412-d18d-a5cc-c62f">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d3f-d64f-10df-bf8b" type="min"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="7412-d18d-a5cc-c62f" hidden="false" targetId="5926-905e-64dd-70c2" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
