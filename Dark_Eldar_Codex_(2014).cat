@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="635e04e0-204e-2672-055e-6d081ee0fc93" name="Dark Eldar: Codex (2014)" book="Dark Eldar: Codex (2014)" revision="2003" battleScribeVersion="2.00" authorName="BSData on GitHub" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="635e04e0-204e-2672-055e-6d081ee0fc93" name="Dark Eldar: Codex (2014)" book="Dark Eldar: Codex (2014)" revision="2004" battleScribeVersion="2.00" authorName="BSData on GitHub" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -790,6 +790,20 @@
       <modifiers/>
       <constraints/>
     </entryLink>
+    <entryLink id="fcb7-cd49-b1c4-f70f" name="" hidden="false" targetId="2574-7ebb-5993-95c6" type="selectionEntry" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="3b4c-f17a-9e66-ae19" name="" hidden="false" targetId="65a2-bc9f-67ca-0a7f" type="selectionEntry" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d55d275d-f0e3-8d5c-040e-4825503ca30b" name="Agoniser" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -1330,7 +1344,15 @@
                   <modifiers/>
                 </infoLink>
               </infoLinks>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65a2-bc9f-67ca-0a7f" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -1362,7 +1384,15 @@
                   <modifiers/>
                 </infoLink>
               </infoLinks>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65a2-bc9f-67ca-0a7f" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -3455,7 +3485,15 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="15">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2574-7ebb-5993-95c6" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -4386,12 +4424,18 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="minSelections" value="1.0">
+            <modifier type="set" field="minSelections" value="1">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fa41ab81-6358-c413-cbe6-34a002720f57" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbbff194-9df1-4bc7-87d3-0fb30df5d994" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="65a2-bc9f-67ca-0a7f" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints/>
@@ -4816,12 +4860,18 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="minSelections" value="1.0">
+            <modifier type="set" field="minSelections" value="1">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbbff194-9df1-4bc7-87d3-0fb30df5d994" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbbff194-9df1-4bc7-87d3-0fb30df5d994" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="65a2-bc9f-67ca-0a7f" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints/>
@@ -6924,7 +6974,15 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="10">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2574-7ebb-5993-95c6" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -9757,6 +9815,189 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="2574-7ebb-5993-95c6" name="Formation: The Murderflock" book="War Zone Valedor" page="52" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules>
+        <rule id="fdee-4244-abc4-2d93" name="Restrictions (The Murderflock)" book="War Zone Valedor" page="52" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>
+- All Hellion units must consist of at least 15 models.
+- All Scourge units must consist of 10 models.</description>
+        </rule>
+        <rule id="fe63-21a2-0782-3fdd" name="Vicious Descent (The Murderflock)" book="War Zone Valedor" page="52" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All units in a Murderflock begin the game in Strategic Reserve. When they become available, you may delpoy a single unit from the formation by Deep Strike without scattering. All other units in the formation must then deploy by Deep Strike without scattering, and within 6&quot; of a model from the first unit deployed.
+
+Once this is done, enemy units within 3&quot; of any model from this formation suffer 2D6 Strength 4 AP5 hits with the Redning special rule (vehicles are hit on thier side armour). Keep track of unsaved wounds caused. Once this process is complete, every unit in the formation gains a pain token for every five unsaved Wounds (or part thereof) caused. For instance, if a Murderflock causes 11 unsaved Wounds with its Vicious Descent, all of the units in the Murderflock gain three pain tokens.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bd70-ceb3-9482-b5b1" name="Hellions" hidden="false" collective="false" defaultSelectionEntryId="3048-4525-7770-6a88">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90e8-be92-ce5b-f6c6" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="3048-4525-7770-6a88" hidden="false" targetId="77c4799f-3512-6940-bf28-fcc41fd40996" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="969f-358d-c0ac-e4d6" name="Scourges" hidden="false" collective="false" defaultSelectionEntryId="930e-94e3-d91c-27cc">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a65-4a9b-05ef-141f" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="930e-94e3-d91c-27cc" hidden="false" targetId="587464b9-230d-ceca-7b26-46d74cfb3cd5" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="65a2-bc9f-67ca-0a7f" name="Formation: Storm of Blades" book="War Zone Valedor" page="53" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules>
+        <rule id="66d9-6508-d74e-fe0d" name="Restrictions (Storm of Blades)" book="War Zone Valedor" page="53" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>
+- All Archons, Kabalite Warriors, and Kabalite Trueborn units in the formation must begin the game embarked upon Dedicated Transports.
+- All Raiders in the formation must have the enhanced aethersails upgrade.</description>
+        </rule>
+        <rule id="c025-4148-6807-b30d" name="Skybound (Storm of Blades)" book="War Zone Valedor" page="53" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Units from this battle formation may not voluntarily disembark or Go to Ground. Any unit that disembarks, for any reason, immediately loses a pain token. If it has no pain tokens, it instead takes a Pinning test. At the beginning of each Dark Eldar Shooting phase, a unit from this formation may choose to have the Skyfire special rule for the duration of that phase.</description>
+        </rule>
+        <rule id="3469-8b9a-15b1-29ed" name="Storm of Blades (Storm of Blades)" book="War Zone Valedor" page="53" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Raiders from this formation, and units embarked on them, may shoot in the same turn they use the bonus move from their enhanced aethersails. They may then move Flat Out as if they had not shot that turn.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bde6-db3c-634f-76dd" name="Storm Of Blades - At Least 3 Units Required" book="War Zone Valedor" page="53" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="728d-a943-feff-855c" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="5de0-4368-a886-c3af" name="" hidden="false" targetId="5f906016-1d30-7424-444b-c347f752e913" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="4736-bfa2-f73c-65c1" name="" hidden="false" targetId="587464b9-230d-ceca-7b26-46d74cfb3cd5" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="4ce3-13ef-fae9-9c0c" name="" hidden="false" targetId="77c4799f-3512-6940-bf28-fcc41fd40996" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="2ac2-a36e-5ba5-eb24" name="" hidden="false" targetId="775786c3-a7e0-95c5-996b-96a0cc7c8408" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="956d-a2a4-0a5e-d8c4" name="" hidden="false" targetId="a79ae54e-65f3-1fef-5573-cfd087189d5e" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="27c4-9cb8-6cfc-4ac8" name="" hidden="false" targetId="06bf7507-1e32-7ef4-c192-c62b16759fe1" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1e7d-b554-1aa9-de99" name="Archon" hidden="false" collective="false" defaultSelectionEntryId="a643-3d10-06a0-4e95">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="74f8-00b9-c47a-8e0f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="332e-96d5-a78c-27f1" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="a643-3d10-06a0-4e95" hidden="false" targetId="5b3b28ee-e8a0-d196-45ac-d07b144c4712" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="359216fa-43af-366a-a5dc-b73b1fca678e" name="1- 12 of the Court of the Archon" hidden="false" collective="false" defaultSelectionEntryId="a15ebb48-3bb4-8291-dd58-e7489e55818c">
@@ -10534,9 +10775,18 @@
               <modifiers/>
             </infoLink>
           </infoLinks>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="9205-cd2d-2e82-076a" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="65a2-bc9f-67ca-0a7f" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9205-cd2d-2e82-076a" type="min"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>

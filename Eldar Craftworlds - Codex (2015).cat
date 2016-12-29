@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="555e-9663-fc05-f0db" name="Eldar Craftworlds: Codex (2015)" book="Codex: Eldar Craftworlds (2015), Imperial Armour 11: Second Edition (2015), Death From the Skies (2016)" revision="2017" battleScribeVersion="2.00" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="555e-9663-fc05-f0db" name="Eldar Craftworlds: Codex (2015)" book="Codex: Eldar Craftworlds (2015), Imperial Armour 11: Second Edition (2015), Death From the Skies (2016)" revision="2018" battleScribeVersion="2.00" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -976,27 +976,6 @@
       <constraints/>
     </entryLink>
     <entryLink id="87e1-f078-ef53-82ca" name="New EntryLink" hidden="false" targetId="f9ba-9cb2-9028-54b1" type="selectionEntry" categoryEntryId="c274d0b0-5866-44bc-9810-91c136ae7438">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-    </entryLink>
-    <entryLink id="135c-b812-26fa-113b" name="New EntryLink" hidden="false" targetId="54c1-d90c-1827-d5bd" type="selectionEntry" categoryEntryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-    </entryLink>
-    <entryLink id="2193-9024-db2b-ab2c" name="" hidden="false" targetId="4256-b23e-3d52-a9c8" type="selectionEntry" categoryEntryId="fff3-0f04-089b-9ec7">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-    </entryLink>
-    <entryLink id="ac9c-5c8d-a36e-4e9b" name="" hidden="false" targetId="4256-b23e-3d52-a9c8" type="selectionEntry" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -6820,7 +6799,15 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="fea1-13cc-a04b-5f5b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3904-d6dd-405e-c851" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="0c73-4856-65ac-6631" hidden="false" targetId="ef3b-09c6-4024-cd37" type="rule">
           <profiles/>
@@ -6880,9 +6867,25 @@
               <modifiers/>
             </infoLink>
           </infoLinks>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="e2eb-f9e7-5d47-5564" value="1">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f7e-c8fb-818d-6f56" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a0a-73f2-b709-71b3" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2fe1-5281-165b-3e95" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e2eb-f9e7-5d47-5564" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="2f13-4581-94d9-63e1" name="Twin-Linked Shuriken Catapult" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -7126,283 +7129,6 @@
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1a67-1c2b-96bf-4b52" name="Farseer Skyrunner" book="Codex: Eldar Craftworlds (2015)" page="109" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
-      <profiles>
-        <profile id="902c-d1d0-a9b6-a883" name="Farseer" book="Codex: Eldar Craftworlds (2015)" page="109" hidden="false" profileTypeId="bc97-dea9-9e88-bb7d">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Mastery Level" characteristicTypeId="ca56-02c3-af4b-ea2a" value="3"/>
-            <characteristic name="Disciplines" characteristicTypeId="ea53-f5c7-08e4-980c" value="Daemonology (Sanctic), Divination, Runes of Fate, Telepathy"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules/>
-      <infoLinks>
-        <infoLink id="3d95-bbf6-93ba-aaaa" hidden="false" targetId="80e8-2653-cfa1-0d13" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="815b-f89f-5e7b-29a2" hidden="false" targetId="4df2-e7af-24be-0674" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="a7e2-7fa2-8904-9f38" hidden="false" targetId="39c6-1f20-a156-47f4" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="36ca-d1bc-66e7-450b" hidden="false" targetId="ef3b-09c6-4024-cd37" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="c597-c68b-9cf4-7357" hidden="false" targetId="7a42-bcc8-95a0-302d" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="c9b1-55b4-cf5e-01e8" hidden="false" targetId="ed92-4bd2-7f00-1801" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers/>
-      <constraints/>
-      <selectionEntries>
-        <selectionEntry id="2121-54f3-a99a-ce7a" name="Eldar Jetbike" book="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles>
-            <profile id="7fb3-0af8-e33c-0023" name="Farseer Skyrunner" book="Codex: Eldar Craftworlds (2015)" page="109" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Eldar Jetbike (Character)"/>
-                <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="5"/>
-                <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="5"/>
-                <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="3"/>
-                <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
-                <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="3"/>
-                <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="5"/>
-                <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1"/>
-                <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="10"/>
-                <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="60ab-a372-ea35-0035" name="Twin-linked Shuriken Catapult" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="fbf6-6c1e-d0ea-2220" hidden="false" targetId="f63e-332a-4ff5-ed8f" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="fe2c-6628-a2d3-d8c6" hidden="false" targetId="ce57-25dd-7d75-6574" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="3b0b-0036-fd40-0fc5" name="New InfoLink" hidden="false" targetId="3002-de38-7230-fbc6" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="2f58-28b7-3ecc-f896" name="Rune Armour" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="51c4-d773-f2a9-5660" hidden="false" targetId="5ea3-45bc-4196-f789" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a978-d484-f717-45f3" name="Ghosthelm" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="7a94-b214-b4d7-d9ba" hidden="false" targetId="ca07-70a6-88ea-513a" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="bcad-6200-5801-a4a4" name="Shuriken Pistol" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="d032-261e-408d-48a1" hidden="false" targetId="acaa-8094-58c1-5117" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-            <infoLink id="22ad-fee1-a0aa-d2fd" hidden="false" targetId="ce57-25dd-7d75-6574" type="rule">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="c684-1cd3-acc2-e422" name="Weapon - choose 1" hidden="false" collective="false" defaultSelectionEntryId="1aa7-96a8-fcef-0a71">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="1aa7-96a8-fcef-0a71" name="Witchblade" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="9e44-20c3-311c-dc48" hidden="false" targetId="3a00-c9d9-111e-037f" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="836b-5c38-8391-5d30" name="Singing Spear" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="3b6c-e9e8-2bf1-d0af" hidden="false" targetId="c5c2-9bff-1ce5-eac1" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="4eb3-b1df-70d6-9cd4" hidden="false" targetId="2cb5-ecca-c583-8543" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="8515-0e25-fe76-6df8" hidden="false" targetId="eedf-9490-0d7d-483e" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" costTypeId="points" value="100.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4e7b-ba68-4a42-df94" name="Fighter Ace" book="Shield of Baal: Leviathan" page="44" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -8566,9 +8292,17 @@
         </rule>
       </rules>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="minSelections" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="category" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de73-85df-c3fe-ec66" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <selectionEntries/>
@@ -9277,7 +9011,7 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="da32-a196-f027-e1cc" hidden="false" targetId="8a20-b1dc-51d0-dd32" type="selectionEntry">
+            <entryLink id="da32-a196-f027-e1cc" hidden="false" targetId="4d4f-24e2-e942-41b7" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -10420,7 +10154,7 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="adc0-34f4-c68c-e7ec" hidden="false" targetId="8a20-b1dc-51d0-dd32" type="selectionEntry">
+            <entryLink id="adc0-34f4-c68c-e7ec" hidden="false" targetId="4d4f-24e2-e942-41b7" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14076,7 +13810,7 @@ Instead of firing their heavy D-Scythes normally, the formation may place a blas
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="3883-e47c-1624-6fb2" hidden="false" targetId="8a20-b1dc-51d0-dd32" type="selectionEntry">
+            <entryLink id="3883-e47c-1624-6fb2" hidden="false" targetId="4d4f-24e2-e942-41b7" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14840,7 +14574,7 @@ Instead of firing their heavy D-Scythes normally, the formation may place a blas
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="b48c-453f-c506-e4a7" hidden="false" targetId="8a20-b1dc-51d0-dd32" type="selectionEntry">
+            <entryLink id="b48c-453f-c506-e4a7" hidden="false" targetId="4d4f-24e2-e942-41b7" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -15814,7 +15548,7 @@ Instead of firing their heavy D-Scythes normally, the formation may place a blas
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="25d5-abd0-f237-d91f" hidden="false" targetId="1a67-1c2b-96bf-4b52" type="selectionEntry">
+            <entryLink id="25d5-abd0-f237-d91f" hidden="false" targetId="fea1-13cc-a04b-5f5b" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -16152,7 +15886,7 @@ Instead of firing their heavy D-Scythes normally, the formation may place a blas
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="b217-8fa3-feee-b0aa" name="" hidden="false" targetId="8a20-b1dc-51d0-dd32" type="selectionEntry">
+            <entryLink id="b217-8fa3-feee-b0aa" name="" hidden="false" targetId="4d4f-24e2-e942-41b7" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -22391,280 +22125,6 @@ Instead of firing their heavy D-Scythes normally, the formation may place a blas
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8a20-b1dc-51d0-dd32" name="Warlock Conclave (Seer Council)" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
-      <profiles>
-        <profile id="9348-54bf-f173-256e" name="Warlock Conclave" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" profileTypeId="bc97-dea9-9e88-bb7d">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Mastery Level" characteristicTypeId="ca56-02c3-af4b-ea2a" value="*"/>
-            <characteristic name="Disciplines" characteristicTypeId="ea53-f5c7-08e4-980c" value="Daemonology (Sanctic), Runes of Battle"/>
-          </characteristics>
-        </profile>
-        <profile id="574d-7f28-a769-c42a" name="Warlock" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantry"/>
-            <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="4"/>
-            <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="4"/>
-            <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="3"/>
-            <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="3"/>
-            <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1"/>
-            <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="5"/>
-            <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1"/>
-            <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="8"/>
-            <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="-/4++"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="b394-eaaa-cf00-19d8" name="Communion of Minds" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>A unit containing 1-3 Warlocks or Warlock Skyrunners is Mastery Level 1; a unit containing 4-6 is Mastery Level 2; a unit containing 7 or more is Mastery Level 3. If a unit&apos;s Mastery level is reduced as the result of models being removed as casualties, select one psychic power known to the unit for each Mastery Level lost. That power is immediately lost, and cannot be used for the rest of the battle. This unit generates one Warp Charge point at the beginning of each Psychic Phase for each Warlock or Warlock Skyrunner in the unit, regardless of its current Mastery Level.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="c3e7-4d12-dd18-5c29" hidden="false" targetId="80e8-2653-cfa1-0d13" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="5be9-2260-9d99-736b" hidden="false" targetId="4df2-e7af-24be-0674" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="34ad-048c-ed22-54b3" hidden="false" targetId="39c6-1f20-a156-47f4" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="7586-a458-95a1-2f31" hidden="false" targetId="8e59-1172-280d-75e8" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers/>
-      <constraints/>
-      <selectionEntries/>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="0bb8-fb60-93b0-9d7f" name="Members - 5 to 10" hidden="false" collective="false" defaultSelectionEntryId="abd3-1b8e-55e0-e86f">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="1412-84f5-8c1e-f8d6" name="Warlock with Singing Spear" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries>
-                <selectionEntry id="d4dd-a4d5-b96c-550e" name="Rune Armour" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="a699-b9d3-3ac0-0aa2" hidden="false" targetId="5ea3-45bc-4196-f789" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="af00-9a77-9694-ac2f" name="Shuriken Pistol" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="2997-405c-4dd2-0eeb" hidden="false" targetId="acaa-8094-58c1-5117" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="3ac3-2c7d-830f-cfda" hidden="false" targetId="ce57-25dd-7d75-6574" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="e3d4-02d4-1df2-f83c" name="Singing Spear" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="24a7-232f-df45-cb3a" hidden="false" targetId="c5c2-9bff-1ce5-eac1" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="35de-9483-d8b0-dd9e" hidden="false" targetId="2cb5-ecca-c583-8543" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="5.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="35.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="abd3-1b8e-55e0-e86f" name="Warlock with Witchblade" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries>
-                <selectionEntry id="4ee5-b3da-3459-31a1" name="Rune Armour" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="ec9c-8733-a198-b100" hidden="false" targetId="5ea3-45bc-4196-f789" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d138-638a-856e-7dae" name="Shuriken Pistol" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="c222-def9-dcd0-16b0" hidden="false" targetId="acaa-8094-58c1-5117" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="67a0-87f0-c090-4b51" hidden="false" targetId="ce57-25dd-7d75-6574" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="edb9-e235-d9b7-8125" name="Witchblade" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="b063-6d0b-a2c3-41aa" hidden="false" targetId="3a00-c9d9-111e-037f" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="35.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="2e27-450d-bac7-6412" name="Warlock Leader" book="Codex: Eldar Craftworlds (2015)" page="111" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
       <profiles>
         <profile id="ce13-e215-6864-de25" name="Warlock Leader" book="Codex: Eldar Craftworlds (2015)" page="111" hidden="false" profileTypeId="bc97-dea9-9e88-bb7d">
@@ -22832,442 +22292,6 @@ Instead of firing their heavy D-Scythes normally, the formation may place a blas
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="35.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="54c1-d90c-1827-d5bd" name="Warlock Skyrunner Conclave" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
-      <profiles>
-        <profile id="5d3b-156a-8bc0-e3dd" name="Warlock Conclave" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" profileTypeId="bc97-dea9-9e88-bb7d">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Mastery Level" characteristicTypeId="ca56-02c3-af4b-ea2a" value="*"/>
-            <characteristic name="Disciplines" characteristicTypeId="ea53-f5c7-08e4-980c" value="Daemonology (Sanctic), Runes of Battle"/>
-          </characteristics>
-        </profile>
-        <profile id="f1f7-0e61-c8f5-1d97" name="Warlock Skyrunner" book="Codex: Eldar Craftworlds (2015)" page="" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Eldar Jetbike"/>
-            <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="4"/>
-            <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="4"/>
-            <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="3"/>
-            <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
-            <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1"/>
-            <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="5"/>
-            <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1"/>
-            <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="8"/>
-            <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="7dc5-bdfd-210d-d578" name="Communion of Minds" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>A unit containing 1-3 Warlocks or Warlock Skyrunners is Mastery Level 1; a unit containing 4-6 is Mastery Level 2; a unit containing 7 or more is Mastery Level 3. If a unit&apos;s Mastery level is reduced as the result of models being removed as casualties, select one psychic power known to the unit for each Mastery Level lost. That power is immediately lost, and cannot be used for the rest of the battle. This unit generates one Warp Charge point at the beginning of each Psychic Phase for each Warlock or Warlock Skyrunner in the unit, regardless of its current Mastery Level.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="9b6c-5c12-1784-7ca1" hidden="false" targetId="80e8-2653-cfa1-0d13" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="677e-891d-b7ab-caba" hidden="false" targetId="4df2-e7af-24be-0674" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="b73c-0c37-a141-c717" hidden="false" targetId="8e59-1172-280d-75e8" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers/>
-      <constraints/>
-      <selectionEntries/>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="3cee-77d8-3575-7ede" name="Members - 1 to 10" hidden="false" collective="false" defaultSelectionEntryId="3ea1-bff6-15b2-b2a5">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="7f40-14b0-793a-880b" name="Warlock with Singing Spear" hidden="false" collective="true" categoryEntryId="(No Category)" type="model">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries>
-                <selectionEntry id="3864-e0d4-7293-e7e4" name="Rune Armour" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="13b7-6762-a8aa-0362" hidden="false" targetId="5ea3-45bc-4196-f789" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a216-7b9d-3560-305c" name="Shuriken Pistol" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="cb79-e106-43d1-3a85" hidden="false" targetId="acaa-8094-58c1-5117" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="ef41-a6eb-b052-958e" hidden="false" targetId="ce57-25dd-7d75-6574" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="91e6-144f-a0a6-abda" name="Singing Spear" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="5ade-c807-2b94-72ad" hidden="false" targetId="c5c2-9bff-1ce5-eac1" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="c06c-4e3c-22e9-728b" hidden="false" targetId="2cb5-ecca-c583-8543" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="5.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9913-b170-3850-34a5" name="Eldar Jetbikes" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles>
-                    <profile id="c37b-f1a5-a048-c919" name="Warlock Skyrunner" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <characteristics>
-                        <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Eldar Jetbike"/>
-                        <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="4"/>
-                        <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="4"/>
-                        <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="3"/>
-                        <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
-                        <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1"/>
-                        <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="5"/>
-                        <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1"/>
-                        <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="8"/>
-                        <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="1936-0d8d-5a70-4842" hidden="false" targetId="61d6-8501-533f-1470" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="c13a-019a-d4ac-9d9c" hidden="false" targetId="67f9-80c5-207b-16da" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="0398-e215-b6d2-e094" name="Twin-linked Shuriken Catapult" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks>
-                        <infoLink id="15cc-9d2e-f615-07fe" hidden="false" targetId="f63e-332a-4ff5-ed8f" type="profile">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                        </infoLink>
-                        <infoLink id="f8b0-3862-3e2a-7194" hidden="false" targetId="ce57-25dd-7d75-6574" type="rule">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                        </infoLink>
-                        <infoLink id="2c28-58ab-6570-ccf6" name="New InfoLink" hidden="false" targetId="3002-de38-7230-fbc6" type="rule">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                        </infoLink>
-                      </infoLinks>
-                      <modifiers/>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                      </constraints>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="35.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3ea1-bff6-15b2-b2a5" name="Warlock with Witchblade" hidden="false" collective="true" categoryEntryId="(No Category)" type="model">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries>
-                <selectionEntry id="8810-94ec-ef38-5239" name="Rune Armour" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="c56c-3143-3dda-736b" hidden="false" targetId="5ea3-45bc-4196-f789" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="01a7-475e-5860-cbd1" name="Shuriken Pistol" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="f66a-c867-3c14-0f10" hidden="false" targetId="acaa-8094-58c1-5117" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="2347-b19c-63ea-d170" hidden="false" targetId="ce57-25dd-7d75-6574" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9d8d-42af-f7fa-8696" name="Witchblade" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="b87f-7bdf-15a0-c775" hidden="false" targetId="3a00-c9d9-111e-037f" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a9fa-2666-8ba9-4d59" name="Eldar Jetbikes" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles>
-                    <profile id="cb5c-d3fe-4d24-c0d0" name="Warlock Skyrunner" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <characteristics>
-                        <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Eldar Jetbike"/>
-                        <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="4"/>
-                        <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="4"/>
-                        <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="3"/>
-                        <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
-                        <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1"/>
-                        <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="5"/>
-                        <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1"/>
-                        <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="8"/>
-                        <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="abee-622a-eec1-e78d" hidden="false" targetId="61d6-8501-533f-1470" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="dec5-a4a0-a939-4bfa" hidden="false" targetId="67f9-80c5-207b-16da" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="06c1-5702-6101-f3eb" name="Twin-linked Shuriken Catapult" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks>
-                        <infoLink id="7b4c-6a33-99a7-0238" hidden="false" targetId="f63e-332a-4ff5-ed8f" type="profile">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                        </infoLink>
-                        <infoLink id="70f5-2061-3e55-8a46" hidden="false" targetId="ce57-25dd-7d75-6574" type="rule">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                        </infoLink>
-                        <infoLink id="4234-b7f0-c609-4049" name="New InfoLink" hidden="false" targetId="3002-de38-7230-fbc6" type="rule">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                        </infoLink>
-                      </infoLinks>
-                      <modifiers/>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                      </constraints>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="35.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4c48-a983-43db-226d" name="Warp Hunters [FW]" book="Imperial Armour 11: Second Edition (2015)" page="209" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
@@ -24157,7 +23181,7 @@ Instead of firing their heavy D-Scythes normally, the formation may place a blas
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="6c71-ec13-e859-5849" hidden="false" targetId="1a67-1c2b-96bf-4b52" type="selectionEntry">
+            <entryLink id="6c71-ec13-e859-5849" hidden="false" targetId="fea1-13cc-a04b-5f5b" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -24178,7 +23202,7 @@ Instead of firing their heavy D-Scythes normally, the formation may place a blas
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="85a9-5e6b-c06e-2835" hidden="false" targetId="54c1-d90c-1827-d5bd" type="selectionEntry">
+            <entryLink id="85a9-5e6b-c06e-2835" hidden="false" targetId="4d4f-24e2-e942-41b7" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -26457,84 +25481,6 @@ Deliverance (1 warp charge): This is a Blessing which targets a single friendly 
         <cost name="pts" costTypeId="points" value="140.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4256-b23e-3d52-a9c8" name="Seer Council (Skyrunners)" book="Codex: Eldar Craftworlds (2015)" page="141" hidden="false" collective="false" type="unit">
-      <profiles/>
-      <rules>
-        <rule id="1c73-c24e-211d-020b" name="Path of the Seer" book="Codex: Eldar Craftworlds (2015)" page="141" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>If this Formation is chosen as your Primary Detachment, you can re-roll the result when rolling on the Warlord Traits table in Codex: Craftworlds.</description>
-        </rule>
-        <rule id="6ba7-cccf-75aa-3f8f" name="Psychic Bond" book="Codex: Eldar Craftworlds (2015)" page="141" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Both Farseers must join the Warlock Conclave before deployment, and cannot leave the unit.</description>
-        </rule>
-        <rule id="1f49-a882-318b-c68b" name="Psychic Might" book="Codex: Eldar Craftworlds (2015)" page="141" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>When models from this Formation make Psychic tests, results of 3+ will harness a Warp Charge point instead of results of 4+.</description>
-        </rule>
-      </rules>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <selectionEntries/>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="3c97-1c7d-2d09-993f" name="Farseer Skyrunners - 2 Required" hidden="false" collective="false" defaultSelectionEntryId="bf67-d3fe-6327-1ffe">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="60f3-535a-86d4-2e2f" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="222a-47c7-bc54-445a" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="bf67-d3fe-6327-1ffe" name="" hidden="false" targetId="1a67-1c2b-96bf-4b52" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="0800-99e3-0c37-7480" name="Warlock Skyrunner Conclave - Min 5 Warlocks" hidden="false" collective="false" defaultSelectionEntryId="37a5-964b-8e78-5454">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="79bc-169a-fc3c-8fc4" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="47fe-36c1-60df-b2c7" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="37a5-964b-8e78-5454" name="" hidden="false" targetId="175b-55e7-ce1d-a928" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="4d4f-24e2-e942-41b7" name="Warlock Conclave" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
       <profiles>
         <profile id="790b-6bfd-9702-cbbf" name="Warlock Conclave" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" profileTypeId="bc97-dea9-9e88-bb7d">
@@ -26551,7 +25497,15 @@ Deliverance (1 warp charge): This is a Blessing which targets a single friendly 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="4d4f-24e2-e942-41b7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a5e-cb1e-65ad-60ce" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantry"/>
             <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="4"/>
@@ -26592,7 +25546,15 @@ Deliverance (1 warp charge): This is a Blessing which targets a single friendly 
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="4d4f-24e2-e942-41b7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0a5e-cb1e-65ad-60ce" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </infoLink>
         <infoLink id="0fb5-2735-47b4-f776" hidden="false" targetId="8e59-1172-280d-75e8" type="rule">
           <profiles/>
@@ -26603,13 +25565,125 @@ Deliverance (1 warp charge): This is a Blessing which targets a single friendly 
       </infoLinks>
       <modifiers/>
       <constraints/>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="0a5e-cb1e-65ad-60ce" name="Eldar Jetbikes" book="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles>
+            <profile id="fbcc-0b0d-602b-2811" name="Warlock Skyrunner" book="Codex: Eldar Craftworlds (2015)" page="109" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Eldar Jetbike (Character)"/>
+                <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="4"/>
+                <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="4"/>
+                <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="3"/>
+                <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
+                <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1"/>
+                <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="5"/>
+                <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1"/>
+                <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="8"/>
+                <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks>
+            <infoLink id="1a90-347c-ddf8-9df5" hidden="false" targetId="61d6-8501-533f-1470" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="6e40-cd35-579b-bf75" hidden="false" targetId="67f9-80c5-207b-16da" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="fc2e-0550-8329-5389" value="1">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="edc9-2b8d-4571-6b81" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="2fe1-5281-165b-3e95" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="points" value="15">
+              <repeats>
+                <repeat field="selections" scope="4d4f-24e2-e942-41b7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1338-0d99-0a93-80de" repeats="1"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ef5-69ba-f2c8-2a0f" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc2e-0550-8329-5389" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b8d7-f1f5-8265-f0f3" name="Twin-Linked Shuriken Catapult" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="5502-7a28-0b42-806d" hidden="false" targetId="f63e-332a-4ff5-ed8f" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="89a1-acf1-bf9d-b474" hidden="false" targetId="ce57-25dd-7d75-6574" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="9b53-c140-6fd4-949b" name="New InfoLink" hidden="false" targetId="3002-de38-7230-fbc6" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9829-a8cf-1748-c0f4" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e4e-30cb-7c0c-00f6" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1338-0d99-0a93-80de" name="Members - 1 to 10" hidden="false" collective="false" defaultSelectionEntryId="8685-46c1-2eba-feb2">
+        <selectionEntryGroup id="1338-0d99-0a93-80de" name="Members" hidden="false" collective="false" defaultSelectionEntryId="8685-46c1-2eba-feb2">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="c4b4-00fd-097b-24b2" value="5">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="c247-a310-f563-6418" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c4b4-00fd-097b-24b2" type="min"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c2d-0b48-f651-aaa6" type="max"/>
@@ -26809,442 +25883,6 @@ Deliverance (1 warp charge): This is a Blessing which targets a single friendly 
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="175b-55e7-ce1d-a928" name="Warlock Skyrunner Conclave (Seer Council)" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
-      <profiles>
-        <profile id="7e40-1a44-3811-5375" name="Warlock Conclave" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" profileTypeId="bc97-dea9-9e88-bb7d">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Mastery Level" characteristicTypeId="ca56-02c3-af4b-ea2a" value="*"/>
-            <characteristic name="Disciplines" characteristicTypeId="ea53-f5c7-08e4-980c" value="Daemonology (Sanctic), Runes of Battle"/>
-          </characteristics>
-        </profile>
-        <profile id="5aa0-7c50-c452-7772" name="Warlock Skyrunner" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Eldar Jetbike"/>
-            <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="4"/>
-            <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="4"/>
-            <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="3"/>
-            <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
-            <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1"/>
-            <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="5"/>
-            <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1"/>
-            <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="8"/>
-            <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="80d4-0067-6d1f-0cc3" name="Communion of Minds" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>A unit containing 1-3 Warlocks or Warlock Skyrunners is Mastery Level 1; a unit containing 4-6 is Mastery Level 2; a unit containing 7 or more is Mastery Level 3. If a unit&apos;s Mastery level is reduced as the result of models being removed as casualties, select one psychic power known to the unit for each Mastery Level lost. That power is immediately lost, and cannot be used for the rest of the battle. This unit generates one Warp Charge point at the beginning of each Psychic Phase for each Warlock or Warlock Skyrunner in the unit, regardless of its current Mastery Level.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="385d-1af4-9433-c8ad" hidden="false" targetId="80e8-2653-cfa1-0d13" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="3bbb-825e-2f5c-3c8d" hidden="false" targetId="4df2-e7af-24be-0674" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="e8bb-6863-8f74-419c" hidden="false" targetId="8e59-1172-280d-75e8" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers/>
-      <constraints/>
-      <selectionEntries/>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="b52a-f51c-8a76-5e93" name="Members - 5 to 10" hidden="false" collective="false" defaultSelectionEntryId="19c1-888f-384c-44ee">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0691-1147-2adc-5cbe" type="min"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="671c-09ea-f5ae-0c68" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="68a6-da38-b17b-a30f" name="Warlock with Singing Spear" hidden="false" collective="true" categoryEntryId="(No Category)" type="model">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries>
-                <selectionEntry id="66ed-82f7-b379-3c59" name="Rune Armour" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="75c0-2de1-b10e-e006" hidden="false" targetId="5ea3-45bc-4196-f789" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b58f-68cd-0bd4-3ea6" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2af-54ed-689a-cbe0" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="17a2-9bca-0746-5acb" name="Shuriken Pistol" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="cbb6-8a7b-ee59-3e76" hidden="false" targetId="acaa-8094-58c1-5117" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="baec-25e7-40f8-b9ac" hidden="false" targetId="ce57-25dd-7d75-6574" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a4e5-fd08-767a-3c34" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5cfb-2276-1e6b-3cea" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="8f5a-110e-205e-15fa" name="Singing Spear" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="9ce7-6aa8-3b98-feaf" hidden="false" targetId="c5c2-9bff-1ce5-eac1" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="7b7d-e7e0-f44b-63ea" hidden="false" targetId="2cb5-ecca-c583-8543" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a081-76fc-22a1-78ae" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a29e-425e-47c0-da6d" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="5.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="3b6a-0ee9-7646-bc3b" name="Eldar Jetbikes" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles>
-                    <profile id="8c9a-549c-92e0-d809" name="Warlock Skyrunner" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <characteristics>
-                        <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Eldar Jetbike"/>
-                        <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="4"/>
-                        <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="4"/>
-                        <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="3"/>
-                        <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
-                        <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1"/>
-                        <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="5"/>
-                        <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1"/>
-                        <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="8"/>
-                        <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="54dc-7167-8ed0-b8a1" hidden="false" targetId="61d6-8501-533f-1470" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="0860-04a2-dda2-11b7" hidden="false" targetId="67f9-80c5-207b-16da" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f14-9a22-292a-4829" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d880-5bbf-4fc3-f2dc" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="51c2-2888-304f-9f71" name="Twin-linked Shuriken Catapult" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks>
-                        <infoLink id="1726-a73d-1a9d-1d23" hidden="false" targetId="f63e-332a-4ff5-ed8f" type="profile">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                        </infoLink>
-                        <infoLink id="bed3-36ee-d949-c60a" hidden="false" targetId="ce57-25dd-7d75-6574" type="rule">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                        </infoLink>
-                        <infoLink id="89f3-25ad-dbb9-53aa" name="New InfoLink" hidden="false" targetId="3002-de38-7230-fbc6" type="rule">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                        </infoLink>
-                      </infoLinks>
-                      <modifiers/>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f1d-e24e-e85d-f3c0" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4788-2187-426e-f277" type="max"/>
-                      </constraints>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="35.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="19c1-888f-384c-44ee" name="Warlock with Witchblade" hidden="false" collective="true" categoryEntryId="(No Category)" type="model">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries>
-                <selectionEntry id="edad-d5e8-8690-ff07" name="Rune Armour" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="ac02-dd85-9415-f3aa" hidden="false" targetId="5ea3-45bc-4196-f789" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b59-c54a-bd47-b02c" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ed6-0ad2-5648-fb00" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="81a4-fcd8-b1a1-3034" name="Shuriken Pistol" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="c9bf-3426-ce78-4361" hidden="false" targetId="acaa-8094-58c1-5117" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="3d11-38a9-30c7-f79c" hidden="false" targetId="ce57-25dd-7d75-6574" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f848-c515-ebb8-89e2" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="04c7-ff39-b268-5458" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="fd99-ca5a-3a62-0864" name="Witchblade" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="c7b8-f481-c507-e5c4" hidden="false" targetId="3a00-c9d9-111e-037f" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab85-1d3f-ee5a-a4e4" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="815d-9d0a-186f-ae26" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6cb2-851e-e736-2d93" name="Eldar Jetbikes" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles>
-                    <profile id="7da7-ba8d-38e6-cde6" name="Warlock Skyrunner" book="Codex: Eldar Craftworlds (2015)" page="110" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <characteristics>
-                        <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Eldar Jetbike"/>
-                        <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="4"/>
-                        <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="4"/>
-                        <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="3"/>
-                        <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
-                        <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1"/>
-                        <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="5"/>
-                        <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1"/>
-                        <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="8"/>
-                        <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="d3be-b836-1818-8e72" hidden="false" targetId="61d6-8501-533f-1470" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="ba3e-4500-0dfa-97ef" hidden="false" targetId="67f9-80c5-207b-16da" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b89-5254-8108-fc7c" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b14c-c425-f7e2-71d7" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="b6f9-6d06-f41d-c9ab" name="Twin-linked Shuriken Catapult" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks>
-                        <infoLink id="6047-76ff-f6e5-ddc5" hidden="false" targetId="f63e-332a-4ff5-ed8f" type="profile">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                        </infoLink>
-                        <infoLink id="78e7-8255-34da-f467" hidden="false" targetId="ce57-25dd-7d75-6574" type="rule">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                        </infoLink>
-                        <infoLink id="8212-54b9-7f6f-99e4" name="New InfoLink" hidden="false" targetId="3002-de38-7230-fbc6" type="rule">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                        </infoLink>
-                      </infoLinks>
-                      <modifiers/>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b95-47bc-a03a-1f36" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f0f-a832-9c6d-8c1d" type="max"/>
-                      </constraints>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="35.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="3e25-44d2-a1a1-df2c" name="+1 Weapon Skill" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
@@ -27342,7 +25980,7 @@ Farseer Skyrunner, Warlock Skyrunner Council, Windrider Jetbikes or Vyper Squadr
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
-                <entryLink id="d07a-8232-356a-37e9" hidden="false" targetId="1a67-1c2b-96bf-4b52" type="selectionEntry">
+                <entryLink id="d07a-8232-356a-37e9" hidden="false" targetId="fea1-13cc-a04b-5f5b" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -27360,7 +25998,7 @@ Farseer Skyrunner, Warlock Skyrunner Council, Windrider Jetbikes or Vyper Squadr
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
-                <entryLink id="d9f3-7af8-d5d5-bb90" hidden="false" targetId="54c1-d90c-1827-d5bd" type="selectionEntry">
+                <entryLink id="d9f3-7af8-d5d5-bb90" hidden="false" targetId="4d4f-24e2-e942-41b7" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
