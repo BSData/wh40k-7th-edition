@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" name="Space Marines: Codex (2015)" revision="2012" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" name="Space Marines: Codex (2015)" revision="2013" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="bab5-1920-a2ed-5b27" name="Vulkan&apos;s Teachings" book="Supplement: Angels of Death" hidden="false">
@@ -442,7 +442,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
           <modifiers>
             <modifier type="increment" field="8947-3bbf-3a81-2207" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="bf93-7277-bf48-16f7" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="bf93-7277-bf48-16f7" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -459,14 +459,14 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
           <modifiers>
             <modifier type="increment" field="5917-b2ae-3037-a123" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="bf93-7277-bf48-16f7" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="bf93-7277-bf48-16f7" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
             <modifier type="increment" field="bf1c-812b-fa43-10ac" value="10">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="bf93-7277-bf48-16f7" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="bf93-7277-bf48-16f7" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -1394,7 +1394,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
         </modifier>
         <modifier type="increment" field="0a89-f619-ac99-1af8" value="3">
           <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" repeats="1"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" repeats="1" roundUp="false"/>
           </repeats>
           <conditions/>
           <conditionGroups/>
@@ -9134,7 +9134,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
             </modifier>
             <modifier type="decrement" field="6523-17b3-d339-71f3" value="1">
               <repeats>
-                <repeat field="selections" scope="801e-f41e-be72-5e0b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e68e-e111-3653-7067" repeats="1"/>
+                <repeat field="selections" scope="801e-f41e-be72-5e0b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e68e-e111-3653-7067" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -12226,7 +12226,36 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
               <infoLinks/>
               <modifiers/>
               <constraints/>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="99bb-d194-3d24-33e6" name="Narthecium" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="8530-049c-69c8-4eab" name="" hidden="false" targetId="4413-04f2-67bb-3b97" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="937e-5387-3588-0c10" type="lessThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69ae-d712-0cf1-fa3f" type="max"/>
+                  </constraints>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs/>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
                 <entryLink id="99a8-41e0-21f4-cdac" name="" hidden="false" targetId="87b6-1fe6-7a33-b107" type="selectionEntry">
@@ -15677,21 +15706,21 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <modifiers>
             <modifier type="increment" field="points" value="2">
               <repeats>
-                <repeat field="selections" scope="a086-0fc3-ba8c-121b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b144-cab5-eb32-675e" repeats="1"/>
+                <repeat field="selections" scope="a086-0fc3-ba8c-121b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b144-cab5-eb32-675e" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
             <modifier type="increment" field="points" value="2">
               <repeats>
-                <repeat field="selections" scope="a086-0fc3-ba8c-121b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="41ac-7dab-24ad-97ce" repeats="1"/>
+                <repeat field="selections" scope="a086-0fc3-ba8c-121b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="41ac-7dab-24ad-97ce" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
             <modifier type="increment" field="points" value="2">
               <repeats>
-                <repeat field="selections" scope="a086-0fc3-ba8c-121b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a207-5742-522a-6718" repeats="1"/>
+                <repeat field="selections" scope="a086-0fc3-ba8c-121b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a207-5742-522a-6718" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -17730,18 +17759,18 @@ If several models are in a position to capture Cypher, some of which are Dark An
           <modifiers>
             <modifier type="decrement" field="e9e8-10ee-365f-578a" value="1">
               <repeats>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="188b-5a1d-4610-8cc0" repeats="1"/>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05aa-0742-e6bb-28a7" repeats="1"/>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ddc-dd64-7958-a11c" repeats="1"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="188b-5a1d-4610-8cc0" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05aa-0742-e6bb-28a7" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ddc-dd64-7958-a11c" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
             <modifier type="decrement" field="c1b0-2cac-7cfb-744f" value="1">
               <repeats>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ddc-dd64-7958-a11c" repeats="1"/>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="188b-5a1d-4610-8cc0" repeats="1"/>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05aa-0742-e6bb-28a7" repeats="1"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ddc-dd64-7958-a11c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="188b-5a1d-4610-8cc0" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05aa-0742-e6bb-28a7" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -17944,10 +17973,10 @@ If several models are in a position to capture Cypher, some of which are Dark An
           <modifiers>
             <modifier type="increment" field="c20c-9d7e-8ffe-cd4d" value="1">
               <repeats>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9574-f093-6a99-ebac" repeats="1"/>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ddc-dd64-7958-a11c" repeats="1"/>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="188b-5a1d-4610-8cc0" repeats="1"/>
-                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05aa-0742-e6bb-28a7" repeats="1"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9574-f093-6a99-ebac" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ddc-dd64-7958-a11c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="188b-5a1d-4610-8cc0" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f045-1994-f825-8e4c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="05aa-0742-e6bb-28a7" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -22223,7 +22252,7 @@ If several models are in a position to capture Cypher, some of which are Dark An
           <modifiers>
             <modifier type="decrement" field="dfbc-0660-93ed-910e" value="1">
               <repeats>
-                <repeat field="selections" scope="b5e9-0208-9699-7ed2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d991-3c1e-505b-554d" repeats="1"/>
+                <repeat field="selections" scope="b5e9-0208-9699-7ed2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d991-3c1e-505b-554d" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -23444,7 +23473,7 @@ If several models are in a position to capture Cypher, some of which are Dark An
           <modifiers>
             <modifier type="increment" field="points" value="3">
               <repeats>
-                <repeat field="selections" scope="a6c9-f21f-d27f-3721" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1"/>
+                <repeat field="selections" scope="a6c9-f21f-d27f-3721" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -24438,7 +24467,7 @@ If several models are in a position to capture Cypher, some of which are Dark An
               <modifiers>
                 <modifier type="decrement" field="74e4-15ec-ed21-727d" value="1">
                   <repeats>
-                    <repeat field="selections" scope="2a42-0b14-bec5-8f2b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6450-976d-2953-9b2b" repeats="1"/>
+                    <repeat field="selections" scope="2a42-0b14-bec5-8f2b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6450-976d-2953-9b2b" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -25862,14 +25891,14 @@ If several models are in a position to capture Cypher, some of which are Dark An
             </modifier>
             <modifier type="increment" field="points" value="3">
               <repeats>
-                <repeat field="selections" scope="4d03-650f-fbcd-c9a3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5a8d-4e28-2941-2824" repeats="1"/>
+                <repeat field="selections" scope="4d03-650f-fbcd-c9a3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5a8d-4e28-2941-2824" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
             <modifier type="increment" field="points" value="3">
               <repeats>
-                <repeat field="selections" scope="4d03-650f-fbcd-c9a3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2fc7-df5b-5d7d-f6c6" repeats="1"/>
+                <repeat field="selections" scope="4d03-650f-fbcd-c9a3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2fc7-df5b-5d7d-f6c6" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -25963,14 +25992,14 @@ If several models are in a position to capture Cypher, some of which are Dark An
           <modifiers>
             <modifier type="decrement" field="e744-2138-4837-74eb" value="1">
               <repeats>
-                <repeat field="selections" scope="5d2a-0445-c94b-74ff" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="21a6-2cd3-ea38-02ac" repeats="1"/>
+                <repeat field="selections" scope="5d2a-0445-c94b-74ff" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="21a6-2cd3-ea38-02ac" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
             <modifier type="decrement" field="1a6d-3292-ccf1-00e9" value="1">
               <repeats>
-                <repeat field="selections" scope="5d2a-0445-c94b-74ff" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="21a6-2cd3-ea38-02ac" repeats="1"/>
+                <repeat field="selections" scope="5d2a-0445-c94b-74ff" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="21a6-2cd3-ea38-02ac" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -47210,8 +47239,8 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers>
             <modifier type="decrement" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1">
               <repeats>
-                <repeat field="selections" scope="df56-2051-0a89-6bd2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f07b-22c9-9c48-5fef" repeats="1"/>
-                <repeat field="selections" scope="df56-2051-0a89-6bd2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ab3-1a7e-645e-93c4" repeats="1"/>
+                <repeat field="selections" scope="df56-2051-0a89-6bd2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f07b-22c9-9c48-5fef" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="df56-2051-0a89-6bd2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ab3-1a7e-645e-93c4" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -51778,14 +51807,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                   <description>Any Tactical squad Sergeant or Veteran Sergeant with Chapter Tactics (Red Scorpions) may be made a member of the Chapter’s Apothecarion and upgraded to carry a Narthecium for no additional points cost. This does not otherwise alter their wargear, additional options or profile, and should always be appropriately represented on the model.</description>
                 </rule>
               </rules>
-              <infoLinks>
-                <infoLink id="c698-4a8d-5373-3607" name="" hidden="false" targetId="4413-04f2-67bb-3b97" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
+              <infoLinks/>
               <modifiers/>
               <constraints/>
               <selectionEntries/>
