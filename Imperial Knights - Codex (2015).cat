@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6940-50fe-5175-21fa" name="Imperial Knights: Codex (2015)" book="Imperial Knights: Codex" revision="2005" battleScribeVersion="2.00" authorName="Hisop" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6940-50fe-5175-21fa" name="Imperial Knights: Codex (2015)" book="Imperial Knights: Codex" revision="2006" battleScribeVersion="2.00" authorName="Hisop" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -46,20 +46,13 @@
       </categoryEntries>
       <forceEntries/>
     </forceEntry>
-    <forceEntry id="b97a-4438-a9db-9418" name="AdM War Convocation (Knights)" hidden="false">
+    <forceEntry id="b97a-4438-a9db-9418" name="AdM War Convocation" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
       <categoryEntries>
-        <categoryEntry id="e1f7-e8a9-a738-b87c" name="Instructions War Convocation" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryEntry>
         <categoryEntry id="1b48-fb4b-9b33-0bd5" name="Formation (War Conv.)" hidden="false">
           <profiles/>
           <rules/>
@@ -68,6 +61,41 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae19-0cb1-3d27-44b8" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d04-ab59-4539-21dc" type="max"/>
+          </constraints>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
+    <forceEntry id="ce1d-9f90-3a48-3685" name="AdM Conclave Aquisitorius" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="6571-9440-3596-fa2d" name="Formation (Conclave Aquisitorius)" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="3232-1b5e-389a-7609" name="Lords of War" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="1e5b-72a0-7c6f-fa43" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad1a-b097-1ad9-0b8d" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e5b-72a0-7c6f-fa43" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df9d-f714-4ab5-2602" type="max"/>
           </constraints>
         </categoryEntry>
       </categoryEntries>
@@ -1590,195 +1618,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints/>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="961d-0b5b-5045-2d63" name="Baronial Court" hidden="false" collective="false" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="upgrade">
-      <profiles/>
-      <rules>
-        <rule id="74f3-2aa1-0713-3dfb" name="Ionic Shieldwall" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>As long as an Imperial Knight from this Formation is within 6&quot; of one or more other Imperial Knights from this Formation, it adds 1 to any invulnerable saving throw it makes for its ion shield on the front arc.</description>
-        </rule>
-        <rule id="aa2a-2026-a549-f456" name="Knight Commander" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>If this Formation is your Primary Detachment, you can re-roll the result when rolling on the Warlord Traits table in Codex: Imperial Knights. Furthermore, when fighting in a challenge, your Warlord re-rolls failed To Hit rolls.</description>
-        </rule>
-        <rule id="f402-c03c-9be1-6d49" name="Knightly Vassals" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>The Formation&apos;s Baron (see below) and all Imperial Knights in the Formation within 12&quot; of him have the Counter-attack special rule and can fire Overwatch, even though they are Super-heavy Walkers.</description>
-        </rule>
-        <rule id="5953-d267-f62e-381f" name="Lord Baron" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Before deployment, nominate one model from this Formation to be the Formation&apos;s Baron. This model has the Vehicle (Super-heavy Walker, Character) unit type, and can choose to select from the Heirlooms of the Knightly Houses list at the points cost shown. Furthermore, add 1 to the Weapon Skill and Ballistic Skill characteristics of this model.</description>
-        </rule>
-      </rules>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <selectionEntries/>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="4f16-ea9c-21af-f4b1" name="3-5 Imperial Knights" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="b108-820b-18d7-2874" hidden="false" targetId="17ee-cd8e-8b95-3d38" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="293e-a1f1-b60c-cec9" type="notEqualTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-            </entryLink>
-            <entryLink id="ae5c-f154-df4f-313b" hidden="false" targetId="81d9-a250-9afa-6dbf" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="fad5-9f1f-18d6-3ace" hidden="false" targetId="3fb9-3b50-076a-ffc0" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="00f4-392c-f703-b5d3" hidden="false" targetId="e346-5226-5b14-faba" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="8ba2-501e-ddd9-4806" hidden="false" targetId="a348-89a8-f145-4476" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="a358-fd02-0d48-4a3c" hidden="false" targetId="2452-061c-4f52-7ff7" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="5478-fc9c-a720-7c82" hidden="false" targetId="9e56-0ab7-efd7-f3d0" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="293e-a1f1-b60c-cec9" type="notEqualTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-            </entryLink>
-            <entryLink id="e199-971c-2fa1-f19d" hidden="false" targetId="dd31-499f-5351-57d7" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="293e-a1f1-b60c-cec9" type="notEqualTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-            </entryLink>
-            <entryLink id="1bfa-83c9-c40b-fa22" hidden="false" targetId="5246-abcd-738d-14ad" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="293e-a1f1-b60c-cec9" type="notEqualTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-            </entryLink>
-            <entryLink id="55d6-d9f0-1258-07a9" hidden="false" targetId="d86d-5b45-51f6-5c6d" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="5073-23d9-3820-67a7" hidden="false" targetId="21f2-5614-1166-84d9" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="293e-a1f1-b60c-cec9" type="notEqualTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-            </entryLink>
-            <entryLink id="79cd-bf56-a85d-62a7" hidden="false" targetId="6a37-7a24-962b-5d8c" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="293e-a1f1-b60c-cec9" type="notEqualTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
               <constraints/>
             </entryLink>
           </entryLinks>
@@ -3370,27 +3209,6 @@ Knight Crusader - Precision Bombardment: Blast weapons fired by models in this F
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1ee7-c105-56fc-1a17" name="How to create War Convocation Formation" hidden="false" collective="false" categoryEntryId="e1f7-e8a9-a738-b87c" type="model">
-      <profiles/>
-      <rules>
-        <rule id="f85a-864d-dd65-97b7" name="Instructions" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>First, add Forces for each of the 3 Codexes involved: Skitarii, Cult Mechanicus and Imperial Knights. Use the respective Force types (AdM War Convocation (Skitarii), AdM War Convocation (Cult) and AdM War Convocation (Knights)) and add the only formation available in those detachments. All 3 together will form the Adeptus Mechanicus War Convocation. They can in theory be used without each other, but that would create an illegal list!</description>
-        </rule>
-      </rules>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="098e-ab96-83b1-84b3" name="War Convocation" hidden="false" collective="false" categoryEntryId="1b48-fb4b-9b33-0bd5" type="upgrade">
       <profiles/>
       <rules/>
@@ -3540,6 +3358,40 @@ Knight Crusader - Precision Bombardment: Blast weapons fired by models in this F
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ad1a-b097-1ad9-0b8d" name="Baronial Court" hidden="false" collective="false" categoryEntryId="6571-9440-3596-fa2d" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="7169-b548-e68b-5041" value="0.0">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3232-1b5e-389a-7609" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7169-b548-e68b-5041" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="c0f0-6910-6748-1f30" name="New EntryLink" hidden="false" targetId="d6b7-fde1-de75-abd4" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79a3-b2bc-a3fa-2446" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0170-a40b-ccf0-40fa" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
@@ -5783,7 +5635,7 @@ Catastrophic Damage table.</description>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98a7-f82b-5884-85ed" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="961d-0b5b-5045-2d63" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d6b7-fde1-de75-abd4" type="instanceOf"/>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e6a-6004-ba0d-0558" type="instanceOf"/>
               </conditions>
               <conditionGroups/>
@@ -6446,7 +6298,7 @@ Catastrophic Damage table.</description>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98a7-f82b-5884-85ed" type="instanceOf"/>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="961d-0b5b-5045-2d63" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d6b7-fde1-de75-abd4" type="instanceOf"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -6877,6 +6729,195 @@ Catastrophic Damage table.</description>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d6b7-fde1-de75-abd4" name="Baronial Court" hidden="false" collective="false" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="upgrade">
+      <profiles/>
+      <rules>
+        <rule id="cb7d-9d2f-fc86-7d0b" name="Ionic Shieldwall" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>As long as an Imperial Knight from this Formation is within 6&quot; of one or more other Imperial Knights from this Formation, it adds 1 to any invulnerable saving throw it makes for its ion shield on the front arc.</description>
+        </rule>
+        <rule id="eb15-337e-2507-28e1" name="Knight Commander" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If this Formation is your Primary Detachment, you can re-roll the result when rolling on the Warlord Traits table in Codex: Imperial Knights. Furthermore, when fighting in a challenge, your Warlord re-rolls failed To Hit rolls.</description>
+        </rule>
+        <rule id="9298-bc9b-f3a7-ddad" name="Knightly Vassals" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>The Formation&apos;s Baron (see below) and all Imperial Knights in the Formation within 12&quot; of him have the Counter-attack special rule and can fire Overwatch, even though they are Super-heavy Walkers.</description>
+        </rule>
+        <rule id="25e2-e7e4-9671-6eae" name="Lord Baron" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Before deployment, nominate one model from this Formation to be the Formation&apos;s Baron. This model has the Vehicle (Super-heavy Walker, Character) unit type, and can choose to select from the Heirlooms of the Knightly Houses list at the points cost shown. Furthermore, add 1 to the Weapon Skill and Ballistic Skill characteristics of this model.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5195-9881-6c20-08c4" name="3-5 Imperial Knights" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="db22-139a-7061-5b93" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d02b-b8ba-ebff-95ff" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="b958-6371-b77d-2f53" hidden="false" targetId="17ee-cd8e-8b95-3d38" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="293e-a1f1-b60c-cec9" type="notEqualTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="f6d1-c221-74aa-7562" hidden="false" targetId="81d9-a250-9afa-6dbf" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="ebc9-d6b5-0ff4-8e88" hidden="false" targetId="3fb9-3b50-076a-ffc0" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="0da7-1f56-78a1-5419" hidden="false" targetId="e346-5226-5b14-faba" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="2030-48c4-300b-9980" hidden="false" targetId="a348-89a8-f145-4476" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="dd21-d6de-37b5-0da7" hidden="false" targetId="2452-061c-4f52-7ff7" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="591d-8343-2cb1-8a2b" hidden="false" targetId="9e56-0ab7-efd7-f3d0" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="293e-a1f1-b60c-cec9" type="notEqualTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="abde-a355-70f3-edb3" hidden="false" targetId="dd31-499f-5351-57d7" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="293e-a1f1-b60c-cec9" type="notEqualTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="9c8c-3f29-1078-580d" hidden="false" targetId="5246-abcd-738d-14ad" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="293e-a1f1-b60c-cec9" type="notEqualTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="5f4a-7fa7-4da9-0602" hidden="false" targetId="d86d-5b45-51f6-5c6d" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="3c6a-2c5b-2572-1455" hidden="false" targetId="21f2-5614-1166-84d9" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="293e-a1f1-b60c-cec9" type="notEqualTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="56f2-5e96-a538-0369" hidden="false" targetId="6a37-7a24-962b-5d8c" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="293e-a1f1-b60c-cec9" type="notEqualTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
