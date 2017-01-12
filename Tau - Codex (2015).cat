@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="24a0-49b6-ecef-1c5a" name="Tau Empire: Codex (2015)" book="Codex: Tau Empire (2015), Kau&apos;yon (2015), Mont&apos;ka (2015), Imperial Armour 4: Second Edition (2012), Death From the Skies (2016)" revision="2005" battleScribeVersion="2.00" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="24a0-49b6-ecef-1c5a" name="Tau Empire: Codex (2015)" book="Codex: Tau Empire (2015), Kau&apos;yon (2015), Mont&apos;ka (2015), Imperial Armour 4: Second Edition (2012), Death From the Skies (2016)" revision="2006" battleScribeVersion="2.00" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="6135c936-2580-cc18-495b-4d0d526486ee" name="About author" hidden="true">
@@ -2861,6 +2861,13 @@ updated by Eric Falsken, eric@everylittlething.net</description>
       <constraints/>
     </entryLink>
     <entryLink id="b2b7-cae2-0454-f4c1" name="" hidden="false" targetId="2553-017c-46ae-e61e" type="selectionEntry" categoryEntryId="38cf4ccf-0665-45cb-a773-fea06ee1467a">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="2258-7b51-d243-ae88" name="" hidden="false" targetId="1742-d634-5a59-4962" type="selectionEntry" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -24822,7 +24829,15 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="maxSelections" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1742-d634-5a59-4962" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -25839,7 +25854,15 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="maxSelections" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1742-d634-5a59-4962" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -26798,6 +26821,86 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="1742-d634-5a59-4962" name="Targeted Reconnaissance Cadre" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules>
+        <rule id="5ce7-2b98-6b14-21fd" name="Mobile Insertion Force" book="Dataslate: Targeted Reconnaissance Cadre" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>As long as the Commander from this Formation is on the battlefield at the beginning of your turn, you can choose one unit from this Formation to move up to 6&quot; before your Movement phase begins. The unit you choose cannot be locked in combat, Falling Back, or Pinned. If the unit doesn&apos;t move in the subsequent Movement phase, they are considered to be stationary.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="9a17-7e9d-e844-c933" name="" hidden="false" targetId="7316b9dd-cd51-4e03-b198-f7492f3cb15a" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4c3-4149-ed38-e576" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9e0-9ef4-6688-39c0" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4a3e-1019-c218-074b" name="" hidden="false" targetId="30c7-d50a-37d8-3e4f" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8c7-f36e-6d29-fdba" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25b5-1558-ca6d-1e0d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1dcf-50e0-4bf3-2c61" name="" hidden="false" targetId="490bcf2a-9457-48c1-aa7d-8180048b2d1b" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad73-656f-d25e-f855" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e08c-d809-fed2-6a09" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4d17-984e-6f16-5da6" name="" hidden="false" targetId="b4b37bde-b8c3-48f4-af53-bdc989ad2cfd" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60fe-96dd-84d6-37af" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7897-ebd6-8ced-2ba6" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7735-86f4-262e-353c" name="" hidden="false" targetId="b7cd5334-aab0-8f76-3cab-7bd6582c5183" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89aa-9288-252e-cc1c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04f2-bd86-8100-e621" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5a96-89f0-de13-395e" name="" hidden="false" targetId="bfd56338-fe82-4182-9e79-ca579c29e949" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="597c-a4a4-4c0d-9943" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3280-1622-706a-de43" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -28380,7 +28483,7 @@ Immediately before a unit from the Tau Empire Faction shoots at a target that ha
 
 Note that a unit cannot benefit from its own markerlights.
 
-Destroyer: (Markerlight Cost 1+) For each markerlight counter expended on this ability, a single Destroyer Missile fired by the unit at the target changes its Strenght from 8 to D.
+Destroyer: (Markerlight Cost 1+) For each markerlight counter expended on this ability, a single Destroyer Missile fired by the unit at the target changes its Strength from 8 to D.
 
 Pinpoint: (Markerlight Cost 1+) All models firing at the target as part of this shooting attack gain a bonus to their BS for the duration of the shooting attack. The size of this bonus is equal to the number of markerlight counters expended on this ability. Can increase the BS of Snap Shots and Overwatch.
 
