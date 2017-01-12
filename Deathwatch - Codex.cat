@@ -3469,18 +3469,48 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6214-9b58-6cf1-a907" name="Weapon Options" hidden="false" collective="false">
+        <selectionEntryGroup id="96ac-8e29-519e-e37d" name="Weapon Options" hidden="false" collective="false" defaultSelectionEntryId="d138-e94c-ba35-2ac9">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
-          <constraints/>
+          <modifiers>
+            <modifier type="set" field="734d-4587-5a64-d7f6" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d138-e94c-ba35-2ac9" type="notEqualTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9650-fa3a-071c-00a1" type="notEqualTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="44e8-7275-0337-d9cb" value="1">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d138-e94c-ba35-2ac9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9650-fa3a-071c-00a1" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44e8-7275-0337-d9cb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="734d-4587-5a64-d7f6" type="min"/>
+          </constraints>
           <selectionEntries>
-            <selectionEntry id="94ad-3f12-b9cc-953b" name="Heavy Thunder Hammer" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+            <selectionEntry id="9650-fa3a-071c-00a1" name="Heavy Thunder Hammer" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="589b-de77-c3a8-ed82" hidden="false" targetId="c5a3-0133-5d5e-2ddc" type="profile">
+                <infoLink id="e786-524f-fb46-d175" hidden="false" targetId="c5a3-0133-5d5e-2ddc" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -3489,7 +3519,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
               </infoLinks>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9c8-c386-9031-9125" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e57a-26af-272e-0113" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -3498,83 +3528,81 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
                 <cost name="pts" costTypeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="d138-e94c-ba35-2ac9" name="Boltgun &amp; Chainsword" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="a747-6ccc-77ec-d27d" name="New InfoLink" hidden="false" targetId="3d4b-95ea-f860-dd22" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="5c87-a5c8-0b36-1ea1" name="New InfoLink" hidden="false" targetId="0c19a0e9-8130-09dd-6826-32b2946a7d48" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3af5-2020-a6f6-9a34" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8b87-b4f5-4dab-4ba4" name="Storm Shield" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="d2b5-9b45-927b-79a6" hidden="false" targetId="658fd15b-771f-375a-d3fb-87367b9c46b0" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1fb-ea70-cdd2-0277" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="58fa-7b9f-5319-26e1" name="Choose 2" hidden="false" collective="false">
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="d2bf-cb44-88d1-472c" name="" hidden="false" targetId="d91a-6d3d-7c50-ab0c" type="selectionEntryGroup">
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="b693-ac20-3bdd-2fcf" value="0.0">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94ad-3f12-b9cc-953b" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="set" field="44ed-9cdb-ea64-3434" value="0.0">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="94ad-3f12-b9cc-953b" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b693-ac20-3bdd-2fcf" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44ed-9cdb-ea64-3434" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="fb2d-c744-deeb-356b" name="Storm Shield" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="ddbd-e5c5-7f04-f878" name="New InfoLink" hidden="false" targetId="658fd15b-771f-375a-d3fb-87367b9c46b0" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b632-be61-8edc-2802" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks>
-                <entryLink id="ca6f-7a7a-663f-cf3d" name="" hidden="false" targetId="d91a-6d3d-7c50-ab0c" type="selectionEntryGroup">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </entryLink>
-                <entryLink id="e5c6-0203-b9eb-7357" name="" hidden="false" targetId="73aa-7a3f-cc29-d541" type="selectionEntryGroup">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </entryLink>
-                <entryLink id="67a1-ee3c-b5e8-9348" name="" hidden="false" targetId="4782-59ab-8af5-40b6" type="selectionEntryGroup">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="2c56-dd98-3537-51bf" name="" hidden="false" targetId="73aa-7a3f-cc29-d541" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="57c1-46ba-3da4-23a7" name="" hidden="false" targetId="4782-59ab-8af5-40b6" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
@@ -13267,18 +13295,48 @@ This is NOT validated through BattleScribe.</description>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3a79-e164-f65b-6aae" name="Weapon Options" hidden="false" collective="false">
+        <selectionEntryGroup id="76cb-adc0-c83b-0201" name="Weapon Options" hidden="false" collective="false" defaultSelectionEntryId="5619-f63b-c517-6230">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
-          <constraints/>
+          <modifiers>
+            <modifier type="set" field="7292-6bd1-a80c-d99b" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5619-f63b-c517-6230" type="notEqualTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2cd0-4b38-c2d9-0294" type="notEqualTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="934d-7c47-b3ba-37cd" value="1">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5619-f63b-c517-6230" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2cd0-4b38-c2d9-0294" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="934d-7c47-b3ba-37cd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7292-6bd1-a80c-d99b" type="min"/>
+          </constraints>
           <selectionEntries>
-            <selectionEntry id="3535-eabd-f69a-5daa" name="Heavy Thunder Hammer" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+            <selectionEntry id="2cd0-4b38-c2d9-0294" name="Heavy Thunder Hammer" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="cb37-b09d-e184-4fe7" hidden="false" targetId="c5a3-0133-5d5e-2ddc" type="profile">
+                <infoLink id="8644-7863-4a36-a1e9" hidden="false" targetId="c5a3-0133-5d5e-2ddc" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -13287,7 +13345,7 @@ This is NOT validated through BattleScribe.</description>
               </infoLinks>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5565-0c45-7af7-55ba" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1176-9efb-32af-f9fe" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -13296,111 +13354,109 @@ This is NOT validated through BattleScribe.</description>
                 <cost name="pts" costTypeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="5619-f63b-c517-6230" name="Boltgun &amp; Chainsword" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="a15c-8c10-3630-3a73" name="New InfoLink" hidden="false" targetId="3d4b-95ea-f860-dd22" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="622d-e3d5-5fd2-575e" name="New InfoLink" hidden="false" targetId="0c19a0e9-8130-09dd-6826-32b2946a7d48" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="396b-18ad-0cb5-2fcb" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9833-6bda-7447-59fe" name="Storm Shield" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="5eb4-cdf6-d68e-26f8" hidden="false" targetId="658fd15b-771f-375a-d3fb-87367b9c46b0" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39a3-6b84-500d-85d1" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4f88-8113-2742-2b3a" name="Xenophase Blade" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="1a3d-4b9f-aa00-4a71" name="New InfoLink" hidden="false" targetId="4aef-0cda-e925-5ea4" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="ec60-382e-0c66-013e" name="New InfoLink" hidden="false" targetId="f688-6c6c-2cce-8120" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd16-caec-fead-47d3" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="88e2-ca55-fba7-d6ed" name="Choose 2" hidden="false" collective="false">
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="dc88-79ba-5e5c-90ca" name="" hidden="false" targetId="d91a-6d3d-7c50-ab0c" type="selectionEntryGroup">
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="ab56-89c1-8234-8798" value="0.0">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3535-eabd-f69a-5daa" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="set" field="9a70-6bdb-3b2b-7008" value="0.0">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3535-eabd-f69a-5daa" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab56-89c1-8234-8798" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a70-6bdb-3b2b-7008" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="5bd9-27e0-b24e-6d7b" name="Storm Shield" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="84d0-1419-0fad-ac7b" name="New InfoLink" hidden="false" targetId="658fd15b-771f-375a-d3fb-87367b9c46b0" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="805f-df41-9637-a2ce" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="305b-9c6e-4714-9930" name="Xenophase Blade" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="50bd-6f83-fc67-4bdb" name="New InfoLink" hidden="false" targetId="4aef-0cda-e925-5ea4" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="9ecf-e01c-ccb7-7be6" name="New InfoLink" hidden="false" targetId="f688-6c6c-2cce-8120" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c066-0cb5-f8f8-5e3a" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="25.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks>
-                <entryLink id="6471-e631-1e19-1400" name="" hidden="false" targetId="d91a-6d3d-7c50-ab0c" type="selectionEntryGroup">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </entryLink>
-                <entryLink id="7980-de87-ad81-9513" name="" hidden="false" targetId="73aa-7a3f-cc29-d541" type="selectionEntryGroup">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </entryLink>
-                <entryLink id="f22b-7f0a-d481-cbce" name="" hidden="false" targetId="4782-59ab-8af5-40b6" type="selectionEntryGroup">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="e133-9c1f-7ec4-e07f" name="" hidden="false" targetId="73aa-7a3f-cc29-d541" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="51ad-eef0-5c19-c968" name="" hidden="false" targetId="4782-59ab-8af5-40b6" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -16777,7 +16833,7 @@ You must accept the second roll , even if it is worse than the first.</descripti
         <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
       </characteristics>
     </profile>
-    <profile id="9eed41e0-fdb6-c69a-1adb-483ac8dbb658" name="Plasma Cannon" book="Warhammer 40,00: The Rules" page="177" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="9eed41e0-fdb6-c69a-1adb-483ac8dbb658" name="Plasma Cannon" book="Warhammer 40,000: The Rules" page="177" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
