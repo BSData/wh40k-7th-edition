@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2018" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2019" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -6434,9 +6434,8 @@ BENEDICTION OF OMNISCIENCE
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description></description>
         </rule>
-        <rule id="5081-bd9c-4e2d-b3da" name="Warlord Trait: Mster of Interrogation" hidden="false">
+        <rule id="5081-bd9c-4e2d-b3da" name="Warlord Trait: Master of Interrogation" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6479,7 +6478,7 @@ BENEDICTION OF OMNISCIENCE
                 <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1 or 3"/>
                 <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="-"/>
                 <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="12&quot;"/>
-                <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value=""/>
+                <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Target must take a pinning test; even if test is passed, target cannot run, turbo-boost, perform sweeping advances, or fire overwatch. Alternatively, you can attempt to manefest this power at WC3, the power affects all enemy units within 12&quot; of the caster."/>
               </characteristics>
             </profile>
           </profiles>
@@ -6493,7 +6492,9 @@ BENEDICTION OF OMNISCIENCE
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8641-e8bd-fb26-9a70" name="Master-crafted Power Sword" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -6520,7 +6521,9 @@ BENEDICTION OF OMNISCIENCE
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="7bba-e7af-55dd-7a5a" name="Master-crafted condemnor boltgun" hidden="false" collective="false" type="upgrade">
           <profiles>
@@ -6551,7 +6554,9 @@ BENEDICTION OF OMNISCIENCE
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4f58-0e12-9dd0-36a3" name="Frag and Krak Grenades" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
           <profiles>
@@ -6611,7 +6616,9 @@ BENEDICTION OF OMNISCIENCE
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -6905,7 +6912,9 @@ BENEDICTION OF OMNISCIENCE
           </constraints>
         </entryLink>
       </entryLinks>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -8786,9 +8795,7 @@ BENEDICTION OF OMNISCIENCE
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Bearer has a 4+ Invulnerable.  Enemy units cannot Deep-Strike within 12&quot; of the bearer.  If they scatter within 12&quot; of the Bearer, they suffer an automatic Deep Strike Mishap.
-
-"/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Bearer has a 4+ Invulnerable.  Enemy units cannot Deep-Strike within 12&quot; of the bearer.  If they scatter within 12&quot; of the Bearer, they suffer an automatic Deep Strike Mishap.  "/>
               </characteristics>
             </profile>
           </profiles>
@@ -8802,7 +8809,9 @@ BENEDICTION OF OMNISCIENCE
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
