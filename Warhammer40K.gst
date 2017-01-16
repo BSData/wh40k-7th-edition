@@ -6114,7 +6114,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5bc2-e061-a439-c689" name="Belisarius Cawl" hidden="true" collective="false" type="unit">
+    <selectionEntry id="5bc2-e061-a439-c689" name="Belisarius Cawl" book="Fall of Cadia" page="120" hidden="true" collective="false" type="unit">
       <profiles>
         <profile id="e35f-4510-a623-128e" name="Belisarius Cawl" book="Fall of Cadia" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
           <profiles/>
@@ -6141,6 +6141,22 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Below are three Canticles of the Archmagos that can only be used if Belisarius Cawl is on the battlefield. These work in exactly the same way as Canticles of the Omnissiah, except they also affect friendly vehicle units from the Armies of the Imperium within 12&quot; of him, even if they don’t have the Canticles of the Omnissiah special rule.
+
+HARMONY OF METALURGY
+1-3  It Will Not Die.
+4-7  It Will Not Die. Make two It Will Not Die rolls for affected units instead of only 1.
+8+I  t Will Not Die. Make three It Will Not Die rolls for affected units instead of only 1.
+
+UTTERANCE OF NEUTRALISATION
+1-3 +1 Ballistic Skill.
+4-7 + 2 Ballistic Skill.
+8+  +3 Ballistic Skill.
+
+WAR HYMNAL OF FORTITUDE
+1-3  6+ invulnerable save.
+4-7  5+ invulnerable save.
+8+  4+ invulnerable save.</description>
         </rule>
         <rule id="d598-ba00-b250-a5de" name="Artificer Self-repair Mechanism" hidden="false">
           <profiles/>
@@ -6156,7 +6172,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <modifiers/>
           <description>Belisarius Cawl may re-roll Feel No Pain rolls.</description>
         </rule>
-        <rule id="987f-cab3-d603-f911" name="Canticles of the Omnissiah (CotO)" book="Codex: Cult Mechanicus" page="73" hidden="false">
+        <rule id="987f-cab3-d603-f911" name="Canticles of the Omnissiah" book="Codex: Cult Mechanicus" page="73" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6223,10 +6239,37 @@ BENEDICTION OF OMNISCIENCE
       </constraints>
       <selectionEntries>
         <selectionEntry id="f2a4-dc3b-acc0-d0c0" name="Arc Scourge" book="" hidden="false" collective="false" type="upgrade">
-          <profiles/>
-          <rules/>
+          <profiles>
+            <profile id="e40b-2b25-add2-1fa8" name="Arc Scourge" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="+1"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="4"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Haywire, Machine Scourge, Master-crafted"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="ddf5-eddf-6b32-1b2f" name="Machine Scourge" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>A model equipped with this weapon can re-roll the result when rolling to determine the effect of the Haywire special rule.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="3da0-3a21-56ed-71c3" name="New InfoLink" hidden="false" targetId="719f-69cb-c032-d0ef" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="2b1d-64cf-83d3-e5a6" name="New InfoLink" hidden="false" targetId="609e-1ee4-78c1-0ba1" type="rule">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -6275,9 +6318,50 @@ BENEDICTION OF OMNISCIENCE
           </costs>
         </selectionEntry>
         <selectionEntry id="397f-95e1-8fd9-1df0" name="Mechadentrite Hive" hidden="false" collective="false" type="upgrade">
-          <profiles/>
+          <profiles>
+            <profile id="6929-c106-114a-0469" name="Mechadendrite" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="4"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="-"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+              </characteristics>
+            </profile>
+            <profile id="fae9-954b-dde1-4ab1" name="Dataspike" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="User"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="-"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Haywiire"/>
+              </characteristics>
+            </profile>
+            <profile id="228e-816d-38e1-e3db" name="Mechadentrite Hive" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="When a model equipped with a mechadendrite hive makes Melee attacks, it makes an additional 2D6 attacks with its mechadendrites, and a single attack with its dataspike, all at the Initiative 10 step. These attacks do not grant the model an additional Pile In mov"/>
+              </characteristics>
+            </profile>
+          </profiles>
           <rules/>
-          <infoLinks/>
+          <infoLinks>
+            <infoLink id="272f-cb4f-ffdf-c675" name="New InfoLink" hidden="false" targetId="719f-69cb-c032-d0ef" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d22-6756-d584-8b9a" type="min"/>
@@ -8425,7 +8509,7 @@ BENEDICTION OF OMNISCIENCE
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <description>Once per game, can fire this instead of another ranged weapon.  Automatically targets and hits all enemy units (including Flyers and Flying Monstrous Creatures) within range, regardless of LoS.</description>
+              <description>Once per game, the bearer can choose to unleash Numinasta’s Casket instead of using another ranged weapon. This attack automatically targets and hits all enemy units (including Flyers and Flying Monstrous Creatures) within range of the attack, regardless of line of sight.</description>
             </rule>
           </rules>
           <infoLinks/>
@@ -8462,7 +8546,7 @@ BENEDICTION OF OMNISCIENCE
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <description>Each time it fires, roll 2d6 to determine strength after target unit has been chosen.  If it rolls above 10, it wounds automatically with Instant Death rule (or is an auto Pen against vehicles)</description>
+              <description>Each time the bearer fires this weapon, roll 2D6 to determine the Strength of all its attacks that turn, after the target unit has been chosen. If the roll is above 10, any successful rolls To Hit will automatically wound non-vehicle targets and gain the Instant Death special rule, and will automatically inflict a penetrating hit against vehicle targets</description>
             </rule>
           </rules>
           <infoLinks/>
@@ -8486,7 +8570,7 @@ BENEDICTION OF OMNISCIENCE
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value=" Enemies charging the bearer or their unit suffer a -2 Charge Penalty that stacks with any other penalty"/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Any unit attempting to charge the bearer or their unit must subtract 2 from its charge range (to a minimum of 0). This effect is cumulative with any other modifiers to charge range that may be applicable."/>
               </characteristics>
             </profile>
           </profiles>
@@ -8538,7 +8622,7 @@ BENEDICTION OF OMNISCIENCE
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models charging the bearer and their unit do not get extra attacks for charging.  All models that are locked in combat with the bearer and their unit must pass a Toughness test at I10 step, or suffer 1 Wound for each test failed (can take saves as normal)."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models charging the bearer and their unit do not gain bonus Attacks for charging. In addition, all models in any units that are locked in combat with the bearer and their unit must pass a Toughness test at the Initiative 10 step. The unit suffers one Wound for each Toughness test that is failed. Saves can be taken as normal against Wounds caused in this manner."/>
               </characteristics>
             </profile>
           </profiles>
@@ -8564,7 +8648,7 @@ BENEDICTION OF OMNISCIENCE
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="At the start of each of your turns, choose a rule to apply to the bearer and their unit (or weapons as appropriate): Cognis, Monster Hunter, Skyfire or Tank Hunter"/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="At the start of each of your turns, choose one of the following special rules to apply to the bearer and their unit (or their weapons, as appropriate), until the start of your next turn: Cognis Weapons, Monster Hunter, Skyfire or Tank Hunters"/>
               </characteristics>
             </profile>
           </profiles>
@@ -8574,7 +8658,7 @@ BENEDICTION OF OMNISCIENCE
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <description>Snap shots at Ballistic Skill 2 instead of 1.</description>
+              <description>Snap shots at Ballistic Skill 2 instead of 1, template weapons cause automatically 3 hits instead of D3 in Overwatch.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -8628,7 +8712,7 @@ BENEDICTION OF OMNISCIENCE
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Bearer, and all models in a unit they join, have a 6+ Invuln."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="The bearer of the Skull of Petronella, and all models in any unit they join, have a 6+ invulnerable save."/>
               </characteristics>
             </profile>
           </profiles>
@@ -8690,7 +8774,7 @@ BENEDICTION OF OMNISCIENCE
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <description>At the start of the Fight Sub-phase, the bearer makes a Ld test.  If they pass, the sword uses the second profile for the duration of the phase.</description>
+              <description>If the bearer is locked in combat at the start of the Fight sub-phase, they must take a Leadership test. If this test is failed, use the first profile for both Strength and AP for the duration of the phase; if this test is passed, use the second profile for both for the duration of the phase.</description>
             </rule>
           </rules>
           <infoLinks/>
@@ -8764,7 +8848,7 @@ BENEDICTION OF OMNISCIENCE
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <description>becomes Poison 2+ against enemy units with Chaos Space Marine, Chaos Demon or Khorne Demonkin faction</description>
+              <description>The Font of Fury has the Poisoned (2+) special rule instead of Poisoned (4+) against enemy units with the Chaos Daemons, Chaos Space Marines or Khorne Daemonkin Faction</description>
             </rule>
             <rule id="387e-d5b6-15d4-6c90" name="The Font of Fury " hidden="false">
               <profiles/>
@@ -8795,7 +8879,7 @@ BENEDICTION OF OMNISCIENCE
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Bearer has a 4+ Invulnerable.  Enemy units cannot Deep-Strike within 12&quot; of the bearer.  If they scatter within 12&quot; of the Bearer, they suffer an automatic Deep Strike Mishap.  "/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="The bearer of Desvalle’s Holy Circle has a 4+ invulnerable save. Furthermore, enemy units cannot arrive via Deep Strike anywhere within 12&quot; of the bearer. If an enemy unit arriving via Deep Strike scatters within 12&quot; of the bearer, they automatically suffer a Deep Strike Mishap."/>
               </characteristics>
             </profile>
           </profiles>

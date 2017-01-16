@@ -1282,11 +1282,37 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       <rules/>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-9911-5219-7dc5" type="instanceOf"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-9911-5219-7dc5" type="notInstanceOf"/>
           </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+    </entryLink>
+    <entryLink id="b0d9-7c2f-3276-e508" name="New EntryLink" hidden="false" targetId="bdee-f95e-fcbd-01ec" type="selectionEntry" categoryEntryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+    </entryLink>
+    <entryLink id="5ed9-17c4-6923-1644" name="New EntryLink" hidden="false" targetId="6755-ac2f-6fcf-d8ac" type="selectionEntry" categoryEntryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
           <conditionGroups/>
         </modifier>
       </modifiers>
@@ -4181,7 +4207,7 @@ This Formation counts as three units for the purposes of Canticles of the Omniss
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="d62f-a958-4f38-3178" name="The Scryerskull Perspicatus" book="Codex: Cult Mechanicus" page="78" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -4216,6 +4242,7 @@ This Formation counts as three units for the purposes of Canticles of the Omniss
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="727b-a0e7-fb3b-f109" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -4261,6 +4288,7 @@ This Formation counts as three units for the purposes of Canticles of the Omniss
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce39-8792-f5a1-4722" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -4308,6 +4336,7 @@ This Formation counts as three units for the purposes of Canticles of the Omniss
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01c0-6d1a-956a-db37" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -4349,6 +4378,7 @@ This Formation counts as three units for the purposes of Canticles of the Omniss
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfc9-5cb0-1904-63bb" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -4382,6 +4412,7 @@ This Formation counts as three units for the purposes of Canticles of the Omniss
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f47-f3bd-4450-54c4" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -4412,6 +4443,7 @@ This Formation counts as three units for the purposes of Canticles of the Omniss
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0079-169e-cfdc-8398" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -4422,7 +4454,38 @@ This Formation counts as three units for the purposes of Canticles of the Omniss
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="c41b-d2b1-ea48-e306" name="New EntryLink" hidden="true" targetId="80a5-f64a-d9dd-9e73" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5bc2-e061-a439-c689" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+        </entryLink>
+        <entryLink id="cb9c-671d-2dbf-9165" name="New EntryLink" hidden="true" targetId="fd88-921b-3770-129a" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdee-f95e-fcbd-01ec" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3981-75d8-2438-be5e" name="Special Issue Wargear" hidden="false" collective="false">
       <profiles/>
