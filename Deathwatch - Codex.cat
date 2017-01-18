@@ -2631,7 +2631,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
       <modifiers/>
       <constraints/>
     </entryLink>
-    <entryLink id="89e7-e2aa-d228-2487" hidden="false" targetId="55d9-82be-6a7e-6416" type="selectionEntry" categoryEntryId="bf93-7277-bf48-16f7">
+    <entryLink id="89e7-e2aa-d228-2487" name="Kill Team" hidden="false" targetId="55d9-82be-6a7e-6416" type="selectionEntry" categoryEntryId="bf93-7277-bf48-16f7">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2827,6 +2827,13 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
       </modifiers>
       <constraints/>
     </entryLink>
+    <entryLink id="6034-d073-9763-d1b6" name="" hidden="false" targetId="b013-d63a-bc4b-442d" type="selectionEntry" categoryEntryId="ef2b-83bd-1bad-5742">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6e8e-b821-2e9b-4611" name="Ancient" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -2837,12 +2844,15 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ca2a-cfa7-7154-1e7a" name="Ancient" hidden="false" collective="false">
+        <selectionEntryGroup id="ca2a-cfa7-7154-1e7a" name="Ancient" hidden="false" collective="false" defaultSelectionEntryId="0849-4f3e-e02d-cfda">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1e5-c5cd-a4be-9fb2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd8d-8a9a-09af-adc6" type="min"/>
+          </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -3189,7 +3199,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="26ac-4ade-ee61-182e" name="Armour" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+    <selectionEntry id="26ac-4ade-ee61-182e" name="Armour" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3197,30 +3207,33 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="54f8-ba18-03b3-eec3" name="Armour" hidden="false" collective="false">
+        <selectionEntryGroup id="e5c8-c98e-9666-3b25" name="Armour" hidden="false" collective="false" defaultSelectionEntryId="5630-4d8d-91c2-4ae1">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3677-7711-eaf8-b999" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c19-8cd9-2053-db2a" type="min"/>
+          </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="df2b-d358-fb44-25ca" hidden="false" targetId="3ddf-7701-a92c-054d" type="selectionEntry">
+            <entryLink id="5630-4d8d-91c2-4ae1" hidden="false" targetId="3ddf-7701-a92c-054d" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </entryLink>
-            <entryLink id="b8bb-3427-1523-5219" hidden="false" targetId="117a-4b0a-60c7-c882" type="selectionEntry">
+            <entryLink id="f33b-ed50-b40c-e474" hidden="false" targetId="117a-4b0a-60c7-c882" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </entryLink>
-            <entryLink id="aef1-bb2c-2cc5-b58d" hidden="false" targetId="b399-2dc7-ed23-83a3" type="selectionEntry">
+            <entryLink id="4951-5f5b-79a1-eea5" hidden="false" targetId="b399-2dc7-ed23-83a3" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -3800,6 +3813,36 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="bf27-45c6-ca9a-3357" name="New EntryLink" hidden="true" targetId="80a5-f64a-d9dd-9e73" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9972-3d64-8ee1-7a7d" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+        </entryLink>
+        <entryLink id="fa42-aafe-16f8-f671" name="New EntryLink" hidden="true" targetId="fd88-921b-3770-129a" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cdb-6c23-3ba1-7638" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
       </entryLinks>
@@ -7279,6 +7322,36 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="5969-687a-3fe9-1d0d" name="New EntryLink" hidden="true" targetId="80a5-f64a-d9dd-9e73" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9972-3d64-8ee1-7a7d" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+        </entryLink>
+        <entryLink id="d374-b1f6-ffe1-afe0" name="New EntryLink" hidden="true" targetId="fd88-921b-3770-129a" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cdb-6c23-3ba1-7638" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
       </entryLinks>
@@ -12135,7 +12208,15 @@ This is NOT validated through BattleScribe.</description>
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="name" value="Kill Team">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5e0-22e2-9b94-0e97" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
@@ -13313,6 +13394,36 @@ This is NOT validated through BattleScribe.</description>
           <modifiers/>
           <constraints/>
         </entryLink>
+        <entryLink id="5193-68a3-2e7d-d246" name="New EntryLink" hidden="true" targetId="fd88-921b-3770-129a" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9cdb-6c23-3ba1-7638" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+        </entryLink>
+        <entryLink id="19e5-6548-8e3a-34e2" name="New EntryLink" hidden="true" targetId="80a5-f64a-d9dd-9e73" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9972-3d64-8ee1-7a7d" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="175.0"/>
@@ -13800,6 +13911,39 @@ This is NOT validated through BattleScribe.</description>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="b013-d63a-bc4b-442d" name="Dropship" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0e38-fc63-9575-b9b5" name="Dropship" hidden="false" collective="false" defaultSelectionEntryId="550b-eea0-6712-fd51">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2281-19c1-9f18-b2bd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b069-ba50-39de-476b" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="550b-eea0-6712-fd51" name="" hidden="false" targetId="5065-046e-d1b4-6d33" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
