@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ee8b-68c8-02226-2d18" name="Deathwatch: Codex (2016)" book="Codex: Adeptus Astartes Deathwatch" revision="2022" battleScribeVersion="2.00" authorName="https://gitter.im/BSData/wh40k" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ee8b-68c8-02226-2d18" name="Deathwatch: Codex (2016)" book="Codex: Adeptus Astartes Deathwatch" revision="2023" battleScribeVersion="2.00" authorName="https://gitter.im/BSData/wh40k" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -113,7 +113,10 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de4f-475f-ea49-1355" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7641-7646-c309-a439" type="min"/>
+          </constraints>
         </categoryEntry>
         <categoryEntry id="848a6ff2-0def-4c72-8433-ff7da70e6bc7" name="HQ" hidden="false">
           <profiles/>
@@ -5061,7 +5064,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="2141-fa54-f417-d5f4" hidden="false" targetId="e6d6-8533-5d6f-def8" type="profile">
+                <infoLink id="2141-fa54-f417-d5f4" hidden="false" targetId="4a5c-eb01-94a3-e612" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -8668,8 +8671,8 @@ This is NOT validated through BattleScribe.</description>
       </infoLinks>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d632-c475-bab9-bd9f" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ff6-ffa5-b35e-7835" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="f882-1eaf-3b9f-f1dd" name="Watch Sergeant Crull" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -11956,7 +11959,7 @@ This is NOT validated through BattleScribe.</description>
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="6897-1a05-27f4-9ba4" hidden="false" targetId="e6d6-8533-5d6f-def8" type="profile">
+        <infoLink id="6897-1a05-27f4-9ba4" hidden="false" targetId="4a5c-eb01-94a3-e612" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -12069,40 +12072,8 @@ This is NOT validated through BattleScribe.</description>
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers>
-        <modifier type="set" field="c670-6a5c-6b82-37eb" value="-1">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9c8-9bdd-8f8e-da7e" type="notInstanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="set" field="0deb-2a53-10f2-bfb9" value="0">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d9c8-9bdd-8f8e-da7e" type="notInstanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="decrement" field="c670-6a5c-6b82-37eb" value="1">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec36-ddfd-3798-a6b6" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="decrement" field="0deb-2a53-10f2-bfb9" value="1">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ec36-ddfd-3798-a6b6" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c670-6a5c-6b82-37eb" type="max"/>
-        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0deb-2a53-10f2-bfb9" type="min"/>
-      </constraints>
+      <modifiers/>
+      <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="f465-0e4d-7c70-909b" name="Dedicated Transport" hidden="false" collective="false">
@@ -17364,24 +17335,6 @@ You must accept the second roll , even if it is worse than the first.</descripti
       </characteristics>
     </profile>
     <profile id="4a5c-eb01-94a3-e612" name="Veteran" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantry"/>
-        <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="4"/>
-        <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="4"/>
-        <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="4"/>
-        <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
-        <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="1"/>
-        <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="4"/>
-        <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="2"/>
-        <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="9"/>
-        <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
-      </characteristics>
-    </profile>
-    <profile id="e6d6-8533-5d6f-def8" name="Veteran With Heavy Weapon" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd">
       <profiles/>
       <rules/>
       <infoLinks/>
