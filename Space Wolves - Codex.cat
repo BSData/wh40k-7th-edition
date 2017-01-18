@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="21e36b7e-84ee-2ec0-53f2-2c32fd8bd981" name="Space Wolves: Codex (2014)" book="" revision="2023" battleScribeVersion="2.00" authorName="BSData" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="21e36b7e-84ee-2ec0-53f2-2c32fd8bd981" name="Space Wolves: Codex (2014)" book="" revision="2024" battleScribeVersion="2.00" authorName="BSData" authorContact="" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -24226,7 +24226,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <cost name="pts" costTypeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="207caa95-ad6e-e0e5-66fd-e30e608759ba" name="Pair of Wolf Claws" page="0" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
+    <selectionEntry id="207caa95-ad6e-e0e5-66fd-e30e608759ba" name="Pair of Wolf Claws" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -24239,14 +24239,13 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       </infoLinks>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="30.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="75747f46-5328-674c-f7fd-b6107d182cf8" name="Permits One Lone Wolf" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -31608,7 +31607,22 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="8408-4d55-b8c4-c298" value="1">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="0594875d-61e7-9c6e-d44f-d65e421ad33f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a588-cee4-f728-d00b" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="b590-3b9d-f01d-6bc8" value="1">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="0594875d-61e7-9c6e-d44f-d65e421ad33f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a588-cee4-f728-d00b" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8408-4d55-b8c4-c298" type="min"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b590-3b9d-f01d-6bc8" type="max"/>
@@ -31703,13 +31717,30 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc26-a7d6-28fa-d3cd" type="max"/>
                       </constraints>
                     </entryLink>
+                    <entryLink id="a588-cee4-f728-d00b" name="" hidden="false" targetId="207caa95-ad6e-e0e5-66fd-e30e608759ba" type="selectionEntry">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75f1-9452-9c50-a564" type="max"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="b1c7-7fb8-8b5c-b5a5" name="Ranged Weapons" hidden="false" collective="false" defaultSelectionEntryId="8c2d-2deb-1987-0d9d">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="1efc-1a97-8104-9e40" value="0.0">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="0594875d-61e7-9c6e-d44f-d65e421ad33f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a588-cee4-f728-d00b" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1efc-1a97-8104-9e40" type="max"/>
                   </constraints>
