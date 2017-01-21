@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ee8b-68c8-02226-2d18" name="Deathwatch: Codex (2016)" book="Codex: Adeptus Astartes Deathwatch" revision="2024" battleScribeVersion="2.00" authorName="https://gitter.im/BSData/wh40k" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ee8b-68c8-02226-2d18" name="Deathwatch: Codex (2016)" book="Codex: Adeptus Astartes Deathwatch" revision="2025" battleScribeVersion="2.00" authorName="https://gitter.im/BSData/wh40k" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -2828,6 +2828,13 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
       <constraints/>
     </entryLink>
     <entryLink id="6034-d073-9763-d1b6" name="" hidden="false" targetId="b013-d63a-bc4b-442d" type="selectionEntry" categoryEntryId="ef2b-83bd-1bad-5742">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="9a6d-d24c-1dfb-9731" name="New EntryLink" hidden="false" targetId="ccae-2cf0-5dd4-a47c" type="selectionEntry" categoryEntryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -10426,8 +10433,6 @@ This is NOT validated through BattleScribe.</description>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a875-a5d2-9a7d-36fe" type="equalTo"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf63-53b7-ed9c-b937" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e460-dea6-cef3-5e67" type="equalTo"/>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3dfa-6b3d-f0ef-cb5c" type="equalTo"/>
                       </conditions>
@@ -11955,6 +11960,13 @@ This is NOT validated through BattleScribe.</description>
           <rules/>
           <infoLinks/>
           <modifiers>
+            <modifier type="set" field="d1ca-fb5f-9266-7427" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578f-42d9-f707-1299" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
             <modifier type="set" field="c467-d701-9c8b-f8b9" value="2">
               <repeats/>
               <conditions/>
@@ -11963,19 +11975,6 @@ This is NOT validated through BattleScribe.</description>
                   <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578f-42d9-f707-1299" type="notEqualTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b07-2e30-1d2e-ba0f" type="notEqualTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" field="d1ca-fb5f-9266-7427" value="1">
-              <repeats/>
-              <conditions/>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="578f-42d9-f707-1299" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b07-2e30-1d2e-ba0f" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -12066,21 +12065,45 @@ This is NOT validated through BattleScribe.</description>
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="b5ba-7c52-aa6a-2b53" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="3433-e03b-cecc-aedf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b07-2e30-1d2e-ba0f" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints/>
             </entryLink>
             <entryLink id="6a2a-05d0-2c05-ccd8" name="" hidden="false" targetId="73aa-7a3f-cc29-d541" type="selectionEntryGroup">
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="f776-0869-b031-74aa" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="3433-e03b-cecc-aedf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b07-2e30-1d2e-ba0f" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints/>
             </entryLink>
             <entryLink id="7cfb-93ca-65e6-6a22" name="" hidden="false" targetId="4782-59ab-8af5-40b6" type="selectionEntryGroup">
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="575f-9426-f201-ab3d" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="3433-e03b-cecc-aedf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b07-2e30-1d2e-ba0f" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints/>
             </entryLink>
           </entryLinks>
@@ -12704,6 +12727,28 @@ This is NOT validated through BattleScribe.</description>
                     <cost name="pts" costTypeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="96f1-d35f-e511-860f" name="Storm Shield" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="0f14-f366-fb60-ee0e" name="New InfoLink" hidden="false" targetId="658fd15b-771f-375a-d3fb-87367b9c46b0" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc45-14e3-1037-863b" type="max"/>
+                  </constraints>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups>
                 <selectionEntryGroup id="4945-e32c-ec92-de40" name="Weapon Options" hidden="false" collective="false" defaultSelectionEntryId="0485-b9b5-a5fb-f764">
@@ -13274,6 +13319,12 @@ This is NOT validated through BattleScribe.</description>
           <modifiers/>
         </infoLink>
         <infoLink id="8387-92e3-a5e5-bb94" hidden="false" targetId="3da2-55ef-928b-dee7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="06e1-65cc-73d4-be6b" name="New InfoLink" hidden="false" targetId="deaa33cb-d0a7-5bd2-c810-d77f2f26d12c" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -13947,9 +13998,133 @@ This is NOT validated through BattleScribe.</description>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="ccae-2cf0-5dd4-a47c" name="Psychic Powers" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a068-bc41-70b1-c66c" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a509-73d9-4558-fc73" name="Psychic Powers" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="7f2e-99ff-09fe-df19" name="New EntryLink" hidden="false" targetId="7b9c-cc71-5fb2-f287" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18b2-463b-e31d-eab6" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="bdbe-c214-544f-d5b6" name="New EntryLink" hidden="false" targetId="5ae3-21ce-7903-74a1" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c6d-ad59-bd7d-e5a8" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="671c-3edc-9dbc-d01f" name="New EntryLink" hidden="false" targetId="2e19-c945-9ee7-338f" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dd5-c307-d86c-3042" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="3f39-273c-e53f-35da" name="New EntryLink" hidden="false" targetId="aec7-f89f-3f7c-596b" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b85-f2ca-6ad3-6ac8" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="94e6-d0a5-ffa5-1764" name="New EntryLink" hidden="false" targetId="5037-da8a-7eb7-507f" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d971-ffdf-8909-c849" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="0132-a866-3bc6-fe61" name="New EntryLink" hidden="false" targetId="a4a8-ec73-9df4-913b" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4797-363c-9ffc-06f1" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8834-cb19-227a-232c" name="New EntryLink" hidden="false" targetId="fa56-41f6-7241-e842" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="147f-5dec-dafa-6ff1" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="e03d-d4ae-e0d5-b497" name="New EntryLink" hidden="false" targetId="94c0-771b-4dc2-a9a9" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f606-e04c-2131-55b9" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="899a-7fb3-7270-f4dc" name="New EntryLink" hidden="false" targetId="a2b7-900b-fd71-721d" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c6a-2f0b-135d-c1cc" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ae84-0ee7-d0c8-8cff" name="New EntryLink" hidden="false" targetId="e05c-cec2-bad0-4445" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b494-e4e6-5554-456c" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="77cd-2826-4406-9e1a" name="New EntryLink" hidden="false" targetId="f3dd-c529-d047-3c68" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0818-4893-7a49-2ae5" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="ed92-144b-96e7-403a" name="Dreadought Weapons" hidden="false" collective="false" defaultSelectionEntryId="be90-1949-fb5d-5ce9">
+    <selectionEntryGroup id="ed92-144b-96e7-403a" name="Dreadnought Weapons" hidden="false" collective="false" defaultSelectionEntryId="be90-1949-fb5d-5ce9">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14327,9 +14502,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c1d-4cfc-89d7-7267" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14349,9 +14522,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfa9-6552-34b6-4868" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14371,9 +14542,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="785f-8da6-4821-f7f8" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14393,9 +14562,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7f7-c462-646d-b396" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14415,9 +14582,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="351d-0dae-6955-563c" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14437,9 +14602,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4576-81fc-9d63-ab8f" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14459,9 +14622,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42f2-fd64-4c14-4f58" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14481,9 +14642,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be3d-93e0-92bf-3b65" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14649,7 +14808,7 @@ This is NOT validated through BattleScribe.</description>
           </infoLinks>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5d9-f91e-d1a5-86a8" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f51d-fca7-6fd7-968f" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -14670,9 +14829,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cca-b509-651f-543c" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14692,9 +14849,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e2c-de90-32d5-bddf" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14714,9 +14869,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70cd-f4a0-4c5c-e179" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14736,9 +14889,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dabf-e639-b806-cea3" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14758,9 +14909,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dbf-0872-02bf-edb3" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14780,9 +14929,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e467-3eff-0dea-da17" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14802,9 +14949,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64bb-9dc8-66d1-4d8b" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14824,9 +14969,7 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1505-3208-d969-1246" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14885,13 +15028,13 @@ This is NOT validated through BattleScribe.</description>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa4d-48b4-bc1e-7223" type="max"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -15175,7 +15318,7 @@ This is NOT validated through BattleScribe.</description>
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb19-7818-6b11-aa73" type="max"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="575f-9426-f201-ab3d" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="f116-d507-3eb6-ff26" name="Flamer" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -15302,7 +15445,9 @@ This is NOT validated through BattleScribe.</description>
             </infoLink>
           </infoLinks>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3ed-fe32-a7ef-6729" type="max"/>
+          </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
