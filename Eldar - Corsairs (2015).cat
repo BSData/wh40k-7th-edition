@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3ae4-9ad8-c53f-c5c3" name="Eldar: Corsairs (2015)" book="Imperial Armour 11: Second Edition (2015)" revision="2002" battleScribeVersion="2.00" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3ae4-9ad8-c53f-c5c3" name="Eldar: Corsairs (2015)" book="Imperial Armour 11: Second Edition (2015)" revision="2004" battleScribeVersion="2.00" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -496,7 +496,7 @@
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <description>Durring any Assault phase in which at least one model from a unit with this special rule is engaged in a Challenge, the entire unit (including the model engaged in a Challenge) may re-roll To Wound rolls of 1 for the ruration of that combat.</description>
+                  <description>During any Assault phase in which at least one model from a unit with this special rule is engaged in a Challenge, the entire unit (including the model engaged in a Challenge) may re-roll To Wound rolls of 1 for the duration of that combat.</description>
                 </rule>
               </rules>
               <infoLinks/>
@@ -959,7 +959,7 @@ Any other character model chosen as part of the same Detachment as a Corsair Pri
           <modifiers>
             <modifier type="increment" field="points" value="5.0">
               <repeats>
-                <repeat field="selections" scope="ec6c-8056-2b8d-ce13" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d0de-65bb-046f-8efe" repeats="1"/>
+                <repeat field="selections" scope="ec6c-8056-2b8d-ce13" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d0de-65bb-046f-8efe" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -1191,7 +1191,7 @@ Any other character model chosen as part of the same Detachment as a Corsair Pri
                       <modifiers>
                         <modifier type="decrement" field="maxSelections" value="2.0">
                           <repeats>
-                            <repeat field="selections" scope="db3d-2652-57fa-e971" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fadf-b63c-0fe9-340b" repeats="1"/>
+                            <repeat field="selections" scope="db3d-2652-57fa-e971" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fadf-b63c-0fe9-340b" repeats="1" roundUp="false"/>
                           </repeats>
                           <conditions/>
                           <conditionGroups/>
@@ -1203,7 +1203,7 @@ Any other character model chosen as part of the same Detachment as a Corsair Pri
                       <selectionEntries/>
                       <selectionEntryGroups/>
                       <entryLinks>
-                        <entryLink id="f9b7-70c7-2967-e187" hidden="false" targetId="3404-9054-e736-086e" type="selectionEntry">
+                        <entryLink id="f9b7-70c7-2967-e187" hidden="false" targetId="1eda-269f-76b1-2c66" type="selectionEntryGroup">
                           <profiles/>
                           <rules/>
                           <infoLinks/>
@@ -1738,7 +1738,7 @@ Any other character model chosen as part of the same Detachment as a Corsair Pri
               <modifiers>
                 <modifier type="increment" field="points" value="5.0">
                   <repeats>
-                    <repeat field="selections" scope="ec6c-8056-2b8d-ce13" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d0de-65bb-046f-8efe" repeats="1"/>
+                    <repeat field="selections" scope="ec6c-8056-2b8d-ce13" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d0de-65bb-046f-8efe" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -2466,7 +2466,15 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
                   <profiles/>
                   <rules/>
                   <infoLinks/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="1">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="e555-e92e-86d7-ac40" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4094-1b36-50cb-456a" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -2515,40 +2523,50 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
                   </selectionEntries>
                   <selectionEntryGroups/>
                   <entryLinks>
-                    <entryLink id="5685-4c80-83e9-c082" hidden="false" targetId="3404-9054-e736-086e" type="selectionEntry">
+                    <entryLink id="5685-4c80-83e9-c082" hidden="false" targetId="1eda-269f-76b1-2c66" type="selectionEntryGroup">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
                       <modifiers/>
-                      <constraints/>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02b3-1ea6-6b30-3ab4" type="max"/>
+                      </constraints>
                     </entryLink>
                     <entryLink id="1f0e-2493-40f7-22a0" hidden="false" targetId="df2f-818b-0cc8-b8df" type="selectionEntry">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
                       <modifiers/>
-                      <constraints/>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cbc-34b1-c5ec-f81f" type="max"/>
+                      </constraints>
                     </entryLink>
                     <entryLink id="b170-cbd3-279a-3af7" hidden="false" targetId="1e62-ac1d-cd03-d6b6" type="selectionEntry">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
                       <modifiers/>
-                      <constraints/>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef2e-8017-45ff-6e22" type="max"/>
+                      </constraints>
                     </entryLink>
                     <entryLink id="7a58-ba5b-90f2-5869" hidden="false" targetId="fb3e-3455-bf37-2cf1" type="selectionEntry">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
                       <modifiers/>
-                      <constraints/>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50ba-af23-0db4-c117" type="max"/>
+                      </constraints>
                     </entryLink>
                     <entryLink id="d182-775a-ff29-9b2e" hidden="false" targetId="3e65-8239-999a-c0c3" type="selectionEntry">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
                       <modifiers/>
-                      <constraints/>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbb8-49d6-1a5f-6cb8" type="max"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -2785,7 +2803,7 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
               <modifiers>
                 <modifier type="decrement" field="minSelections" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="43e3-8243-4e1c-0d42" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e555-e92e-86d7-ac40" repeats="1"/>
+                    <repeat field="selections" scope="43e3-8243-4e1c-0d42" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e555-e92e-86d7-ac40" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -3969,7 +3987,7 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
           <modifiers>
             <modifier type="increment" field="points" value="15.0">
               <repeats>
-                <repeat field="selections" scope="c15c-a172-bb72-9b9b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ed1-3cb0-262c-a7ad" repeats="1"/>
+                <repeat field="selections" scope="c15c-a172-bb72-9b9b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ed1-3cb0-262c-a7ad" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -4005,7 +4023,7 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
           <modifiers>
             <modifier type="increment" field="points" value="5.0">
               <repeats>
-                <repeat field="selections" scope="c15c-a172-bb72-9b9b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ed1-3cb0-262c-a7ad" repeats="1"/>
+                <repeat field="selections" scope="c15c-a172-bb72-9b9b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ed1-3cb0-262c-a7ad" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -4251,7 +4269,7 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
           <modifiers>
             <modifier type="increment" field="points" value="15.0">
               <repeats>
-                <repeat field="selections" scope="94da-180f-0c69-cfc6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d45-185b-85b3-cec4" repeats="1"/>
+                <repeat field="selections" scope="94da-180f-0c69-cfc6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d45-185b-85b3-cec4" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -4287,7 +4305,7 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
           <modifiers>
             <modifier type="increment" field="points" value="5.0">
               <repeats>
-                <repeat field="selections" scope="94da-180f-0c69-cfc6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d45-185b-85b3-cec4" repeats="1"/>
+                <repeat field="selections" scope="94da-180f-0c69-cfc6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d45-185b-85b3-cec4" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -4702,7 +4720,7 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
           <modifiers>
             <modifier type="increment" field="points" value="5.0">
               <repeats>
-                <repeat field="selections" scope="2c56-cd0a-ffb6-51bf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4480-8843-e273-684d" repeats="1"/>
+                <repeat field="selections" scope="2c56-cd0a-ffb6-51bf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4480-8843-e273-684d" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -4888,7 +4906,7 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
               <modifiers>
                 <modifier type="increment" field="maxSelections" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="2c56-cd0a-ffb6-51bf" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4480-8843-e273-684d" repeats="1"/>
+                    <repeat field="selections" scope="2c56-cd0a-ffb6-51bf" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4480-8843-e273-684d" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -5144,7 +5162,7 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
           <modifiers>
             <modifier type="increment" field="points" value="15.0">
               <repeats>
-                <repeat field="selections" scope="d765-6f2d-51ef-cbd5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cfd7-eb10-0354-2f79" repeats="1"/>
+                <repeat field="selections" scope="d765-6f2d-51ef-cbd5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cfd7-eb10-0354-2f79" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -5174,7 +5192,7 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
           <modifiers>
             <modifier type="increment" field="points" value="5.0">
               <repeats>
-                <repeat field="selections" scope="d765-6f2d-51ef-cbd5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cfd7-eb10-0354-2f79" repeats="1"/>
+                <repeat field="selections" scope="d765-6f2d-51ef-cbd5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cfd7-eb10-0354-2f79" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -5210,7 +5228,7 @@ No more than one Corsair Baron may be assigned to any single unit, and a Cloud D
           <modifiers>
             <modifier type="increment" field="points" value="5.0">
               <repeats>
-                <repeat field="selections" scope="d765-6f2d-51ef-cbd5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cfd7-eb10-0354-2f79" repeats="1"/>
+                <repeat field="selections" scope="d765-6f2d-51ef-cbd5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cfd7-eb10-0354-2f79" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -5771,7 +5789,7 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1f8d-194d-da31-7f57" name="Starcannon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -5793,7 +5811,7 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d6f1-3d0c-c4e6-c774" name="Bright Lance" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -5821,7 +5839,7 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5835,7 +5853,9 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8437-4831-117f-1b7d" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -5869,7 +5889,7 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Any unit, friendly or enemy, within the Faction Craftworld Eldar, Dark Eldar, Eldar Corsairs or Harlequin suffers a -1 modifier to their Leadership value while within 12&quot; of at least one Corsair Malevolent Band. In addition, a Corsair Melevolent Band never counts as a Scoring unit under any circumstances.</description>
+          <description>Any unit, friendly or enemy, within the Faction Craftworld Eldar, Dark Eldar, Eldar Corsairs or Harlequin suffers a -1 modifier to their Leadership value while within 12&quot; of at least one Corsair Malevolent Band. In addition, a Corsair Malevolent Band never counts as a Scoring unit under any circumstances.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -5927,7 +5947,7 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
           <modifiers>
             <modifier type="increment" field="points" value="5.0">
               <repeats>
-                <repeat field="selections" scope="8191-275e-c1e9-3440" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f9f1-faf2-3a6e-c08c" repeats="1"/>
+                <repeat field="selections" scope="8191-275e-c1e9-3440" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f9f1-faf2-3a6e-c08c" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -6063,9 +6083,9 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="increment" field="maxSelections" value="1.0">
+                <modifier type="increment" field="maxSelections" value="2">
                   <repeats>
-                    <repeat field="selections" scope="8191-275e-c1e9-3440" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f9f1-faf2-3a6e-c08c" repeats="2"/>
+                    <repeat field="selections" scope="8191-275e-c1e9-3440" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9f1-faf2-3a6e-c08c" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -6322,9 +6342,7 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
               <conditionGroups/>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-          </constraints>
+          <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -6383,7 +6401,7 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
               <modifiers>
                 <modifier type="increment" field="points" value="5.0">
                   <repeats>
-                    <repeat field="selections" scope="8191-275e-c1e9-3440" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f9f1-faf2-3a6e-c08c" repeats="1"/>
+                    <repeat field="selections" scope="8191-275e-c1e9-3440" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f9f1-faf2-3a6e-c08c" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -6438,7 +6456,7 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
           <modifiers>
             <modifier type="increment" field="points" value="15.0">
               <repeats>
-                <repeat field="selections" scope="fda6-d7c2-81bd-325d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b55-32ab-9b71-bdf8" repeats="1"/>
+                <repeat field="selections" scope="fda6-d7c2-81bd-325d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b55-32ab-9b71-bdf8" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -6468,7 +6486,7 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
           <modifiers>
             <modifier type="increment" field="points" value="5.0">
               <repeats>
-                <repeat field="selections" scope="fda6-d7c2-81bd-325d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b55-32ab-9b71-bdf8" repeats="1"/>
+                <repeat field="selections" scope="fda6-d7c2-81bd-325d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b55-32ab-9b71-bdf8" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -6728,7 +6746,7 @@ The controlling player may choose to have a Corsair Lynx deployed on the table i
           <modifiers>
             <modifier type="increment" field="points" value="15.0">
               <repeats>
-                <repeat field="selections" scope="68ad-0fa3-11cf-9fac" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2958-3344-0c17-5930" repeats="1"/>
+                <repeat field="selections" scope="68ad-0fa3-11cf-9fac" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2958-3344-0c17-5930" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -6876,7 +6894,9 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <constraints/>
+                  <constraints>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c10-476d-3874-43fa" type="max"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -6959,7 +6979,7 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
           <modifiers>
             <modifier type="increment" field="points" value="15.0">
               <repeats>
-                <repeat field="selections" scope="ea66-58df-1bf1-1417" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="63b4-740e-fa7d-2d06" repeats="1"/>
+                <repeat field="selections" scope="ea66-58df-1bf1-1417" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="63b4-740e-fa7d-2d06" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -7210,7 +7230,9 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <constraints/>
+                  <constraints>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4d3f-da44-1e9b-bee5" type="max"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -7487,12 +7509,12 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
               </modifiers>
               <constraints/>
             </entryLink>
-            <entryLink id="b9d7-0997-6a21-6dd0" hidden="false" targetId="c9ea-99d4-91ed-efc9" type="selectionEntry">
+            <entryLink id="b9d7-0997-6a21-6dd0" hidden="true" targetId="c9ea-99d4-91ed-efc9" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="hidden" value="false">
                   <repeats/>
                   <conditions>
                     <condition field="selections" scope="019b-7b76-fa95-6052" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f59d-e187-1122-693c" type="equalTo"/>
@@ -7728,7 +7750,7 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
           <modifiers>
             <modifier type="increment" field="points" value="5.0">
               <repeats>
-                <repeat field="selections" scope="6602-7acd-8055-3a88" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecc4-aad3-fa3a-e298" repeats="1"/>
+                <repeat field="selections" scope="6602-7acd-8055-3a88" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecc4-aad3-fa3a-e298" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -7878,7 +7900,7 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
               <modifiers>
                 <modifier type="increment" field="points" value="5.0">
                   <repeats>
-                    <repeat field="selections" scope="6602-7acd-8055-3a88" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecc4-aad3-fa3a-e298" repeats="1"/>
+                    <repeat field="selections" scope="6602-7acd-8055-3a88" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecc4-aad3-fa3a-e298" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -7939,15 +7961,7 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                       <profiles/>
                       <rules/>
                       <infoLinks/>
-                      <modifiers>
-                        <modifier type="set" field="maxSelections" value="0.0">
-                          <repeats/>
-                          <conditions>
-                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5321-16cc-1fd6-43f7" type="equalTo"/>
-                          </conditions>
-                          <conditionGroups/>
-                        </modifier>
-                      </modifiers>
+                      <modifiers/>
                       <constraints>
                         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                       </constraints>
@@ -7964,7 +7978,9 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                             </infoLink>
                           </infoLinks>
                           <modifiers/>
-                          <constraints/>
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5189-e631-02d0-1c3c" type="max"/>
+                          </constraints>
                           <selectionEntries/>
                           <selectionEntryGroups/>
                           <entryLinks/>
@@ -7984,7 +8000,9 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                             </infoLink>
                           </infoLinks>
                           <modifiers/>
-                          <constraints/>
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcb0-bc04-93d0-8d91" type="max"/>
+                          </constraints>
                           <selectionEntries/>
                           <selectionEntryGroups/>
                           <entryLinks/>
@@ -8010,7 +8028,9 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                             </infoLink>
                           </infoLinks>
                           <modifiers/>
-                          <constraints/>
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64ef-fd0f-5dbe-c4e8" type="max"/>
+                          </constraints>
                           <selectionEntries/>
                           <selectionEntryGroups/>
                           <entryLinks/>
@@ -8030,7 +8050,9 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                             </infoLink>
                           </infoLinks>
                           <modifiers/>
-                          <constraints/>
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea16-229a-0f51-e6d2" type="max"/>
+                          </constraints>
                           <selectionEntries/>
                           <selectionEntryGroups/>
                           <entryLinks/>
@@ -8041,7 +8063,7 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                       </selectionEntries>
                       <selectionEntryGroups/>
                       <entryLinks>
-                        <entryLink id="5307-0f63-1361-7685" hidden="false" targetId="3404-9054-e736-086e" type="selectionEntry">
+                        <entryLink id="5307-0f63-1361-7685" hidden="false" targetId="1eda-269f-76b1-2c66" type="selectionEntryGroup">
                           <profiles/>
                           <rules/>
                           <infoLinks/>
@@ -8057,29 +8079,17 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                       <modifiers>
                         <modifier type="set" field="minSelections" value="0.0">
                           <repeats/>
-                          <conditions/>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf08-a9b4-dc7c-4cfe" type="atLeast"/>
-                                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5321-16cc-1fd6-43f7" type="equalTo"/>
-                              </conditions>
-                              <conditionGroups/>
-                            </conditionGroup>
-                          </conditionGroups>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf08-a9b4-dc7c-4cfe" type="atLeast"/>
+                          </conditions>
+                          <conditionGroups/>
                         </modifier>
                         <modifier type="set" field="355f-3630-db8b-4fbb" value="0.0">
                           <repeats/>
-                          <conditions/>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf08-a9b4-dc7c-4cfe" type="atLeast"/>
-                                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5321-16cc-1fd6-43f7" type="equalTo"/>
-                              </conditions>
-                              <conditionGroups/>
-                            </conditionGroup>
-                          </conditionGroups>
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf08-a9b4-dc7c-4cfe" type="atLeast"/>
+                          </conditions>
+                          <conditionGroups/>
                         </modifier>
                       </modifiers>
                       <constraints>
@@ -8224,127 +8234,6 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
                       <selectionEntryGroups/>
                       <entryLinks/>
                     </selectionEntryGroup>
-                    <selectionEntryGroup id="5321-16cc-1fd6-43f7" name="Special Weapon - 2 for every 5 members" hidden="false" collective="false">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers>
-                        <modifier type="increment" field="maxSelections" value="1">
-                          <repeats/>
-                          <conditions>
-                            <condition field="selections" scope="6602-7acd-8055-3a88" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atLeast"/>
-                          </conditions>
-                          <conditionGroups/>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                      </constraints>
-                      <selectionEntries>
-                        <selectionEntry id="6dfd-80af-932d-2354" name="Blaster" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks>
-                            <infoLink id="333e-0ec6-ffd5-49cd" hidden="false" targetId="9893-05c2-1a6b-77a9" type="profile">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                            </infoLink>
-                            <infoLink id="f72e-6503-9a76-1e97" hidden="false" targetId="cb0d-87b3-87a2-81d6" type="rule">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                            </infoLink>
-                          </infoLinks>
-                          <modifiers/>
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                          </constraints>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="10.0"/>
-                          </costs>
-                        </selectionEntry>
-                        <selectionEntry id="ef1f-0d2e-dd57-5678" name="Flamer" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks>
-                            <infoLink id="5174-43fe-b325-1029" hidden="false" targetId="cdc3-3459-a28c-a9cf" type="profile">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                            </infoLink>
-                          </infoLinks>
-                          <modifiers/>
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                          </constraints>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="5.0"/>
-                          </costs>
-                        </selectionEntry>
-                        <selectionEntry id="2917-f7d4-4115-05c2" name="Fusion Gun" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks>
-                            <infoLink id="02c0-8169-43c4-5bdd" hidden="false" targetId="3dd8-32ac-8904-2f0d" type="profile">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                            </infoLink>
-                          </infoLinks>
-                          <modifiers/>
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                          </constraints>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="10.0"/>
-                          </costs>
-                        </selectionEntry>
-                        <selectionEntry id="4946-d0e2-e35d-8a26" name="Shredder" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks>
-                            <infoLink id="ec63-8c05-e60a-1994" hidden="false" targetId="a8ec-ac8a-6e36-fba0" type="profile">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                            </infoLink>
-                            <infoLink id="b034-1569-f586-19be" hidden="false" targetId="5770-35c6-7341-5527" type="rule">
-                              <profiles/>
-                              <rules/>
-                              <infoLinks/>
-                              <modifiers/>
-                            </infoLink>
-                          </infoLinks>
-                          <modifiers/>
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                          </constraints>
-                          <selectionEntries/>
-                          <selectionEntryGroups/>
-                          <entryLinks/>
-                          <costs>
-                            <cost name="pts" costTypeId="points" value="5.0"/>
-                          </costs>
-                        </selectionEntry>
-                      </selectionEntries>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                    </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks/>
                 </selectionEntryGroup>
@@ -8412,7 +8301,7 @@ In addition, Zooming Flyers of the Interceptor type always count as having the S
               <modifiers>
                 <modifier type="increment" field="maxSelections" value="2">
                   <repeats>
-                    <repeat field="selections" scope="6602-7acd-8055-3a88" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecc4-aad3-fa3a-e298" repeats="1"/>
+                    <repeat field="selections" scope="6602-7acd-8055-3a88" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecc4-aad3-fa3a-e298" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -9847,7 +9736,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
             <modifier type="set" field="hidden" value="true">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="32ef-a338-6ac8-b805" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76f6-2ffb-6169-209a" type="equalTo"/>
+                <condition field="selections" scope="32ef-a338-6ac8-b805" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="213e-a08b-3de7-153f" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -9935,7 +9824,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
           <modifiers>
             <modifier type="increment" field="points" value="5.0">
               <repeats>
-                <repeat field="selections" scope="32ef-a338-6ac8-b805" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2bef-b845-8ba0-f801" repeats="1"/>
+                <repeat field="selections" scope="32ef-a338-6ac8-b805" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2bef-b845-8ba0-f801" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -9974,6 +9863,58 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="439b-58a0-5bb0-492e" name="Void Hardened Armour" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="1fe4-ba7a-7546-7331" hidden="false" targetId="b721-2622-12b1-0aea" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d92c-1e05-509b-2783" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="213e-a08b-3de7-153f" name="Voidplate Harnesses" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="1970-3470-711b-9856" hidden="false" targetId="9bee-1704-ecd0-8ca2" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="increment" field="points" value="10.0">
+              <repeats>
+                <repeat field="selections" scope="32ef-a338-6ac8-b805" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2bef-b845-8ba0-f801" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8dce-a46b-c9d4-48a5" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="2bef-b845-8ba0-f801" name="Members - 5 to 10" hidden="false" collective="false">
@@ -9992,9 +9933,9 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="decrement" field="minSelections" value="1.0">
+                <modifier type="decrement" field="minSelections" value="1">
                   <repeats>
-                    <repeat field="selections" scope="32ef-a338-6ac8-b805" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b80-d022-e68c-dacb" repeats="1"/>
+                    <repeat field="selections" scope="32ef-a338-6ac8-b805" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b80-d022-e68c-dacb" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -10037,14 +9978,14 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
                   </selectionEntries>
                   <selectionEntryGroups/>
                   <entryLinks>
-                    <entryLink id="8a68-bcbf-fbc2-52fe" hidden="false" targetId="c222-f62e-62b2-a8ad" type="selectionEntryGroup">
+                    <entryLink id="ffa5-043f-2802-5691" hidden="false" targetId="155d-ac00-1c9e-e8a6" type="selectionEntryGroup">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
                       <modifiers/>
                       <constraints/>
                     </entryLink>
-                    <entryLink id="ffa5-043f-2802-5691" hidden="false" targetId="155d-ac00-1c9e-e8a6" type="selectionEntryGroup">
+                    <entryLink id="046d-b17f-b9f6-36b5" name="" hidden="false" targetId="c222-f62e-62b2-a8ad" type="selectionEntryGroup">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -10089,14 +10030,14 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
                   </selectionEntries>
                   <selectionEntryGroups/>
                   <entryLinks>
-                    <entryLink id="37f1-ff31-aca2-03a2" hidden="false" targetId="c222-f62e-62b2-a8ad" type="selectionEntryGroup">
+                    <entryLink id="2a6c-8c15-59fd-a43e" hidden="false" targetId="155d-ac00-1c9e-e8a6" type="selectionEntryGroup">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
                       <modifiers/>
                       <constraints/>
                     </entryLink>
-                    <entryLink id="2a6c-8c15-59fd-a43e" hidden="false" targetId="155d-ac00-1c9e-e8a6" type="selectionEntryGroup">
+                    <entryLink id="a7f8-b32e-b6c1-6a91" name="" hidden="false" targetId="c222-f62e-62b2-a8ad" type="selectionEntryGroup">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -10147,14 +10088,14 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
                   </selectionEntries>
                   <selectionEntryGroups/>
                   <entryLinks>
-                    <entryLink id="5490-3e3e-ba39-85d6" hidden="false" targetId="c222-f62e-62b2-a8ad" type="selectionEntryGroup">
+                    <entryLink id="f542-bf59-1fe8-d114" hidden="false" targetId="155d-ac00-1c9e-e8a6" type="selectionEntryGroup">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
                       <modifiers/>
                       <constraints/>
                     </entryLink>
-                    <entryLink id="f542-bf59-1fe8-d114" hidden="false" targetId="155d-ac00-1c9e-e8a6" type="selectionEntryGroup">
+                    <entryLink id="dca0-cc9e-d6ed-7618" name="" hidden="false" targetId="c222-f62e-62b2-a8ad" type="selectionEntryGroup">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -10214,11 +10155,11 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
                         <cost name="pts" costTypeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="4093-a2ed-f155-5980" name="Close Combat Weapon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+                    <selectionEntry id="0af0-d9e2-c84a-e49f" name="Close Combat Weapon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
                       <profiles/>
                       <rules/>
                       <infoLinks>
-                        <infoLink id="e660-7114-affd-debe" hidden="false" targetId="e294-a5c7-e01e-0a82" type="profile">
+                        <infoLink id="7878-8ba0-24c8-76e3" hidden="false" targetId="e294-a5c7-e01e-0a82" type="profile">
                           <profiles/>
                           <rules/>
                           <infoLinks/>
@@ -10227,8 +10168,8 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
                       </infoLinks>
                       <modifiers/>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e89e-2f2b-734c-cd72" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9937-c827-5d0c-48d9" type="max"/>
                       </constraints>
                       <selectionEntries/>
                       <selectionEntryGroups/>
@@ -10240,14 +10181,14 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
                   </selectionEntries>
                   <selectionEntryGroups/>
                   <entryLinks>
-                    <entryLink id="5f37-19cc-d09b-e7f4" hidden="false" targetId="c222-f62e-62b2-a8ad" type="selectionEntryGroup">
+                    <entryLink id="88a6-5057-ddb3-7913" hidden="false" targetId="155d-ac00-1c9e-e8a6" type="selectionEntryGroup">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
                       <modifiers/>
                       <constraints/>
                     </entryLink>
-                    <entryLink id="88a6-5057-ddb3-7913" hidden="false" targetId="155d-ac00-1c9e-e8a6" type="selectionEntryGroup">
+                    <entryLink id="0483-937e-e670-09ce" name="" hidden="false" targetId="c222-f62e-62b2-a8ad" type="selectionEntryGroup">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -10270,7 +10211,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
               <modifiers>
                 <modifier type="increment" field="maxSelections" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="32ef-a338-6ac8-b805" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2bef-b845-8ba0-f801" repeats="1"/>
+                    <repeat field="selections" scope="32ef-a338-6ac8-b805" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2bef-b845-8ba0-f801" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -10542,71 +10483,6 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="0bfe-1863-0151-4939" name="Armour - up to 1" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="7d1f-70cd-7c44-34f9" name="Voidplate Harnesses" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="57ee-e398-518b-7620" hidden="false" targetId="9bee-1704-ecd0-8ca2" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers>
-                <modifier type="increment" field="points" value="10.0">
-                  <repeats>
-                    <repeat field="selections" scope="32ef-a338-6ac8-b805" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2bef-b845-8ba0-f801" repeats="1"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="76f6-2ffb-6169-209a" name="Void Hardened Armour" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="e167-7a14-6fb7-1e54" hidden="false" targetId="b721-2622-12b1-0aea" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-        </selectionEntryGroup>
         <selectionEntryGroup id="3052-dbbf-7637-6d7a" name="Dedicated Transport - up to 1" hidden="false" collective="false">
           <profiles/>
           <rules/>
@@ -10727,7 +10603,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
           <modifiers>
             <modifier type="increment" field="points" value="5.0">
               <repeats>
-                <repeat field="selections" scope="e395-23d5-76d9-f794" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1239-3341-0679-1ca3" repeats="1"/>
+                <repeat field="selections" scope="e395-23d5-76d9-f794" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1239-3341-0679-1ca3" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -10757,7 +10633,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
           <modifiers>
             <modifier type="increment" field="points" value="15.0">
               <repeats>
-                <repeat field="selections" scope="e395-23d5-76d9-f794" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1239-3341-0679-1ca3" repeats="1"/>
+                <repeat field="selections" scope="e395-23d5-76d9-f794" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1239-3341-0679-1ca3" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -10787,7 +10663,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
           <modifiers>
             <modifier type="increment" field="points" value="15.0">
               <repeats>
-                <repeat field="selections" scope="e395-23d5-76d9-f794" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1239-3341-0679-1ca3" repeats="1"/>
+                <repeat field="selections" scope="e395-23d5-76d9-f794" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1239-3341-0679-1ca3" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -10817,7 +10693,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
           <modifiers>
             <modifier type="increment" field="points" value="5.0">
               <repeats>
-                <repeat field="selections" scope="e395-23d5-76d9-f794" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1239-3341-0679-1ca3" repeats="1"/>
+                <repeat field="selections" scope="e395-23d5-76d9-f794" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1239-3341-0679-1ca3" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -11107,7 +10983,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
                       <selectionEntryGroups/>
                       <entryLinks/>
                       <costs>
-                        <cost name="pts" costTypeId="points" value="0.0"/>
+                        <cost name="pts" costTypeId="points" value="5.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="498d-acc3-ff0c-c3ef" name="Bright Lance" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -11243,7 +11119,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
           <modifiers>
             <modifier type="increment" field="points" value="15.0">
               <repeats>
-                <repeat field="selections" scope="7845-35f3-945c-f191" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f998-d543-3e20-7084" repeats="1"/>
+                <repeat field="selections" scope="7845-35f3-945c-f191" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f998-d543-3e20-7084" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -11279,7 +11155,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
           <modifiers>
             <modifier type="increment" field="points" value="5.0">
               <repeats>
-                <repeat field="selections" scope="7845-35f3-945c-f191" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f998-d543-3e20-7084" repeats="1"/>
+                <repeat field="selections" scope="7845-35f3-945c-f191" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f998-d543-3e20-7084" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -11400,7 +11276,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry id="36d9-bd22-8b35-e121" name="Twin-linked Shruiken Catapult" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+                    <selectionEntry id="36d9-bd22-8b35-e121" name="Twin-linked Shuriken Catapult" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
                       <profiles/>
                       <rules/>
                       <infoLinks>
@@ -11453,7 +11329,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
                       <selectionEntryGroups/>
                       <entryLinks/>
                       <costs>
-                        <cost name="pts" costTypeId="points" value="0.0"/>
+                        <cost name="pts" costTypeId="points" value="10.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="55ff-f00f-6ca9-26a5" name="Splinter Cannon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -11557,7 +11433,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
           <modifiers>
             <modifier type="increment" field="points" value="5.0">
               <repeats>
-                <repeat field="selections" scope="dab4-3aae-05b4-3ce2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b99f-d17e-ef32-31f6" repeats="1"/>
+                <repeat field="selections" scope="dab4-3aae-05b4-3ce2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b99f-d17e-ef32-31f6" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -12168,19 +12044,6 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3404-9054-e736-086e" name="Power Weapon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="15.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="c9ea-99d4-91ed-efc9" name="Rage" hidden="true" collective="false" categoryEntryId="(No Category)" type="upgrade">
       <profiles/>
       <rules/>
@@ -12271,7 +12134,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8aea-66f9-87ca-b06b" name="Shadow Field" book="Codex: Dark Eldar (2014)" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+    <selectionEntry id="8aea-66f9-87ca-b06b" name="Shadowfield" book="Codex: Dark Eldar (2014)" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -12517,7 +12380,7 @@ During the Dogfight phase, if a player has any Air Leviathan in Reserves or Ongo
         <cost name="pts" costTypeId="points" value="15.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1cd4-252a-0e8e-51c1" name="Weilder of Profane Powers" book="Imperial Armour 11: SE (2015)" page="159" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+    <selectionEntry id="1cd4-252a-0e8e-51c1" name="Wielder of Profane Powers" book="Imperial Armour 11: SE (2015)" page="159" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
       <profiles/>
       <rules>
         <rule id="b2c4-21cd-ba19-a8da" name="Wielder of Profane Powers" book="Imperial Armour 11: SE (2015)" page="159" hidden="false">
@@ -13026,7 +12889,7 @@ Lust for Dark Power: The power of his ancestors sings through him, encouraging t
       <selectionEntryGroups/>
       <entryLinks/>
     </selectionEntryGroup>
-    <selectionEntryGroup id="c222-f62e-62b2-a8ad" name="Felarch Weapons - up to 2" hidden="false" collective="false">
+    <selectionEntryGroup id="c222-f62e-62b2-a8ad" name="Felarch Weapons - up to 2" hidden="false" collective="false" defaultSelectionEntryId="b2c5-e775-aa4a-6665">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -13065,7 +12928,7 @@ Lust for Dark Power: The power of his ancestors sings through him, encouraging t
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="5864-94bd-65f5-9b84" hidden="false" targetId="3404-9054-e736-086e" type="selectionEntry">
+        <entryLink id="5864-94bd-65f5-9b84" hidden="false" targetId="1eda-269f-76b1-2c66" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -13962,7 +13825,7 @@ Lust for Dark Power: The power of his ancestors sings through him, encouraging t
           <modifiers/>
           <constraints/>
         </entryLink>
-        <entryLink id="972f-c5ae-adfc-d929" hidden="false" targetId="3404-9054-e736-086e" type="selectionEntry">
+        <entryLink id="972f-c5ae-adfc-d929" hidden="false" targetId="1eda-269f-76b1-2c66" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -13974,44 +13837,149 @@ Lust for Dark Power: The power of his ancestors sings through him, encouraging t
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25cc-85c4-9ab8-712d" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="c754-6a21-7001-0c81" hidden="false" targetId="df2f-818b-0cc8-b8df" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fe1-242f-29fb-6f5c" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="71c6-56dc-b662-131e" hidden="false" targetId="fb3e-3455-bf37-2cf1" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="210b-37c0-609f-5230" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="3a32-01e8-9c4e-3b19" hidden="false" targetId="a9d0-ea73-6382-48ba" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3399-8422-f6bb-5b88" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="7e4f-1718-99b3-ef26" hidden="false" targetId="3e65-8239-999a-c0c3" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f0f-54e1-2287-f73e" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="0df3-ba34-4651-942b" hidden="false" targetId="92a5-0dae-44f3-d32d" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="956b-fde6-9574-2950" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="1eda-269f-76b1-2c66" name="Power Weapon" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="721d-58e6-0f83-508e" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="c717-3a01-28f4-fd34" name="Power Axe" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="31af-0e19-91e0-07d2" name="" hidden="false" targetId="4635-64e7-2344-ea7c" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="46d4-3060-932d-beea" name="Power Lance" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="cc1e-aa6e-bef7-a38b" name="" hidden="false" targetId="de62-5c9a-e27d-3fa3" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8587-ceaf-61ab-b23a" name="Power Maul" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="a1ed-aa52-e148-2a33" name="" hidden="false" targetId="ca27-e5ee-f6eb-652d" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9420-60c9-f9c3-8534" name="Power Sword" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="bb2a-3b2c-1087-fd47" name="" hidden="false" targetId="47df-8e01-d0cf-58e8" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -14047,7 +14015,7 @@ Lust for Dark Power: The power of his ancestors sings through him, encouraging t
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Before deployment, roll a D6 on the following table and apply the effects of the rule to all units with the Corsair Combat Drugs special rule for the duration of the battle:
+      <description>Before deployment, roll a D6 on the following table and apply the effects of the result to all units with the Corsair Combat Drugs special rule for the duration of the battle:
 
 1         Adrenalight: +1 Attack
 2         Grave Lotus: +1 Strength
@@ -14169,14 +14137,14 @@ Lust for Dark Power: The power of his ancestors sings through him, encouraging t
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>A unit that suffers any hits from a weapon with this specialrule must take an immediate Strength test. If it is failed, the unit has its Initiative and WS values reduced by half until the end of its controlling player&apos;s next turn.</description>
+      <description>A unit that suffers any hits from a weapon with this special rule must take an immediate Strength test. If it is failed, the unit has its Initiative and WS values reduced by half until the end of its controlling player&apos;s next turn.</description>
     </rule>
     <rule id="d66f-7e7d-2554-87bc" name="Vibro-pulse" book="Imperial Armour 11: SE (2015)" page="155" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>For each model from the same unit that scores a 6 To Hit when firing a weapon with this specialrule, while targeting the same target unit, add +1 to the Strength (to a maximum of 10) and subtract -1 from the AP (to a minimum of 1) when resolving To Wound rolls for all weapons with this special rule during this Shooting attack only.</description>
+      <description>For each model from the same unit that scores a 6 To Hit when firing a weapon with this special rule, while targeting the same target unit, add +1 to the Strength (to a maximum of 10) and subtract -1 from the AP (to a minimum of 1) when resolving To Wound rolls for all weapons with this special rule during this Shooting attack only.</description>
     </rule>
     <rule id="cea4-fe6a-8796-d4dc" name="Warlord" hidden="false">
       <profiles/>
@@ -14196,7 +14164,7 @@ D6     Result
    
           *Daemon of Slaanesh: a model with this special rule gains the Daemon, Hatred (Daemons of Khorne) and Rend special rules, and may Run an additional 3&quot;.
 
-2-3     Soul-wracked: The cruel ceasses of the minions of Slaanesh send the psyker into a paroxysm of pain and twist the intent of their art to murderous purposes. This model and any unit is has joined is treated as though it had failed a Pinning test and Goes to Ground. The opposing player then chooses a new target for the Psychic power the model was attempting to manifest, and may choose for the power to treat units under their control as friendly or enemy for the purposes of targeting the power. The new target unit must be a permissible target as noted under the power&apos;s description, and the opposing player may choose to have the power simply fail if no alternative targets are available or possible.
+2-3     Soul-wracked: The cruel caresses of the minions of Slaanesh send the psyker into a paroxysm of pain and twist the intent of their art to murderous purposes. This model and any unit it has joined is treated as though it had failed a Pinning test and Goes to Ground. The opposing player then chooses a new target for the Psychic power the model was attempting to manifest, and may choose for the power to treat units under their control as friendly or enemy for the purposes of targeting the power. The new target unit must be a permissible target as noted under the power&apos;s description, and the opposing player may choose to have the power simply fail if no alternative targets are available or possible.
 
 4-5     Warp Terrors: Daemons swirl close about the frayed veil that separates realspace from the Warp, taunting the Eldar witch and their kin with the doom that awaits them. All friendly units with the Faction Eldar Corsair within 6&quot;, including this model and any unit it has joined, must make an immediate Morale check, rolling three D6 and keeping the two highest dice to determine the result.
 
@@ -14254,7 +14222,7 @@ D6     Result
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A model with this special rule counts as being armed with two Shuriken Pistols and two Splinter Pistols, which do not need to be represended on the model and may be used in any combination in a given Shooting phase or Assault phase."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A model with this special rule counts as being armed with two Shuriken Pistols and two Splinter Pistols, which do not need to be represented on the model and may be used in any combination in a given Shooting phase or Assault phase."/>
       </characteristics>
     </profile>
     <profile id="c3d3-1bd6-b338-a698" name="Bright Lance" book="Codex: Eldar Craftworlds (2015)" page="149" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -14311,7 +14279,7 @@ D6     Result
         <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="5"/>
         <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="2"/>
         <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="9/6"/>
-        <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="4+"/>
+        <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="5+"/>
       </characteristics>
     </profile>
     <profile id="b4b56e8a-6b0d-d0bc-72b9-6af02bfca302" name="Corsair Jet Pack" book="Imperial Armour 11: SE (2015)" page="156" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
@@ -14320,7 +14288,7 @@ D6     Result
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A model equipped with a Corsair Jet Pack has the unit typer Jet Pack Infantry, and a Corsair Prince, Void Dreamer or Felarch who takes a Corsair Jet Pack gains the sub-type (Character) as well. In addition, a Corsair Jet Pack grants a 4+ Armour save."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A model equipped with a Corsair Jet Pack has the unit type Jet Pack Infantry, and a Corsair Prince, Void Dreamer or Felarch who takes a Corsair Jet Pack gains the sub-type (Character) as well. In addition, a Corsair Jet Pack grants a 4+ Armour save."/>
       </characteristics>
     </profile>
     <profile id="cffe-337b-5a22-dec8" name="Corsair Kinetic Shroud" book="Imperial Armour 11: SE (2015)" page="156" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
@@ -14599,7 +14567,7 @@ D6     Result
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A model with a multiphase key generator gains the Deep Strike special rule (and may use this special rule in games of Zone Mortalis), representing its ability to carve temporary gateways in the very fabric of the Webway. In addition, the Multiphase Key Generator may be activated during any Shooting phase instead of firing any weapons and allows the controlling player to place a Webway Gate marker anywhere within 3&quot; of the mode. Any friendly non-vehicle unit from the same Detachment that enters play from Reserves may choose to enter play within 3&quot; of the Webway Gate marker as if they had entered play by Deep Striking, but without rolling to scatter or for any Mishap. Any friendly non-vehicle unit that ends its Movement phase with all models within 3&quot; of a Webway Gate marker and is not Falling Back, may choose to immediately return to Ongoing Reserves."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A model with a multiphase key generator gains the Deep Strike special rule (and may use this special rule in games of Zone Mortalis), representing its ability to carve temporary gateways in the very fabric of the Webway. In addition, the Multiphase Key Generator may be activated during any Shooting phase instead of firing any weapons and allows the controlling player to place a Webway Gate marker anywhere within 3&quot; of the model. Any friendly non-vehicle unit from the same Detachment that enters play from Reserves may choose to enter play within 3&quot; of the Webway Gate marker as if they had entered play by Deep Striking, but without rolling to scatter or for any Mishap. Any friendly non-vehicle unit that ends its Movement phase with all models within 3&quot; of a Webway Gate marker and is not Falling Back, may choose to immediately return to Ongoing Reserves."/>
       </characteristics>
     </profile>
     <profile id="19f4-45a0-e9fd-7c9b" name="Nightfire Missile Launcher" book="Imperial Armour 11: SE (2015)" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -14710,13 +14678,13 @@ D6     Result
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 4"/>
       </characteristics>
     </profile>
-    <profile id="9345-b07e-665b-c6a6" name="Shadow Field" book="Codex: Dark Eldar (2014)" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
+    <profile id="9345-b07e-665b-c6a6" name="Shadowfield" book="Codex: Dark Eldar (2014)" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A Shadow Field confers a 2+ Invulnerable Save. The Shadow Field save is lost for the rest of the battle at the end of any phase in which the model suffers one or more unsaved Wounds."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A Shadowfield confers a 2+ Invulnerable Save. The Shadowfield save is lost for the rest of the battle at the end of any phase in which the model suffers one or more unsaved Wounds."/>
       </characteristics>
     </profile>
     <profile id="3f36-4f02-f6f0-de12" name="Shadowwave Grenade" book="Imperial Armour 11: SE (2015)" page="155" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
