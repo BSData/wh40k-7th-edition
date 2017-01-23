@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6cacb5fc-d6bf-078d-307e-6f16c72d5f2a" name="Blood Angels: Codex (2014)" book="Codex: Blood Angels" revision="2009" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repos" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6cacb5fc-d6bf-078d-307e-6f16c72d5f2a" name="Blood Angels: Codex (2014)" book="Codex: Blood Angels" revision="2010" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repos" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -9449,10 +9449,7 @@
           <conditionGroups/>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-      </constraints>
+      <constraints/>
       <selectionEntries>
         <selectionEntry id="4b45f04d-16d1-96cf-cf8f-33248a580d36" name="Land Speeder Tempest" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
           <profiles>
@@ -17616,7 +17613,7 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="a6ac-e9cd-d203-59d0" name="&quot;10th Company Abmush Force&quot;" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+    <selectionEntry id="a6ac-e9cd-d203-59d0" name="&quot;10th Company Ambush Force&quot;" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
       <profiles/>
       <rules>
         <rule id="043d-8d16-0548-9e7e" name="Concealed Positions" book="Angel&apos;s Blade" page="111" hidden="false">
@@ -22418,7 +22415,7 @@
             <characteristic name="Side" characteristicTypeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" value="12"/>
             <characteristic name="Rear" characteristicTypeId="0a9f33cb-0412-420a-89d2-20707c360bd2" value="10"/>
             <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="4"/>
-            <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="3"/>
+            <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="5"/>
             <characteristic name="HP" characteristicTypeId="ae95a1af-719f-4365-b951-33cd3ca9148a" value="3"/>
             <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Vehicle (Walker, Character)"/>
           </characteristics>
@@ -28137,6 +28134,46 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="84e1-280f-2def-66ac" name="Overcharged engines" hidden="true" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles>
+            <profile id="de78-7d85-cf80-00cd" name="Overcharged engines" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Gains Vehicle (Fast)"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e3b0-c0f8-b9af-d757" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e3b0-c0f8-b9af-d757" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d75c-24d2-ddd9-4ca2" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
@@ -28939,6 +28976,46 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="852d-599a-b0f7-5f8a" name="Overcharged engines" hidden="true" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles>
+            <profile id="421a-5e80-ce53-dab8" name="Overcharged engines" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Gains Vehicle (Fast)"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e3b0-c0f8-b9af-d757" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e3b0-c0f8-b9af-d757" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f197-845c-9700-d50b" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
@@ -29357,6 +29434,46 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1b42-d8ca-f128-4a50" name="Overcharged engines" hidden="true" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles>
+            <profile id="5661-1d94-0886-6a1f" name="Overcharged engines" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Gains Vehicle (Fast)"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e3b0-c0f8-b9af-d757" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e3b0-c0f8-b9af-d757" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="676c-a6d0-4a14-2c26" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -31357,7 +31474,7 @@
             <characteristic name="Side" characteristicTypeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e" value="12"/>
             <characteristic name="Rear" characteristicTypeId="0a9f33cb-0412-420a-89d2-20707c360bd2" value="10"/>
             <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="4"/>
-            <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="2"/>
+            <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="4"/>
             <characteristic name="HP" characteristicTypeId="ae95a1af-719f-4365-b951-33cd3ca9148a" value="3"/>
             <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Vehicle (Walker, Character)"/>
           </characteristics>
@@ -32698,7 +32815,15 @@
           </profiles>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e3b0-c0f8-b9af-d757" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
@@ -37092,6 +37217,38 @@
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="28cf-70e6-c3e7-8395" name="Combi-Grav" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="ee0d-b3bb-83fd-5fde" hidden="false" targetId="3d4b-95ea-f860-dd22" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                    <infoLink id="e216-12e2-7e17-e58e" hidden="false" targetId="a3d2-b0d7-70bc-695e" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                    <infoLink id="cddf-452a-dd9f-f079" hidden="false" targetId="9cf8-e693-2882-a2ca" type="rule">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="10.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
