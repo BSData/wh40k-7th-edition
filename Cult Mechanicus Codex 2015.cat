@@ -3651,7 +3651,16 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers>
             <modifier type="set" field="points" value="10">
               <repeats/>
-              <conditions/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d00-59e5-8d39-b7dc" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="points" value="0.0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d00-59e5-8d39-b7dc" type="instanceOf"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -3930,7 +3939,15 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="points" value="0.0">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d00-59e5-8d39-b7dc" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b2a4-6e70-b7ad-95fc" type="max"/>
       </constraints>
