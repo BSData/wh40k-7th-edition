@@ -35274,50 +35274,28 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         </infoLink>
                       </infoLinks>
                       <modifiers>
-                        <modifier type="set" field="5479-91de-645d-b53c" value="1">
+                        <modifier type="increment" field="5479-91de-645d-b53c" value="1">
                           <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" type="atLeast"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                        <modifier type="increment" field="5479-91de-645d-b53c" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" type="atLeast"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                        <modifier type="decrement" field="5479-91de-645d-b53c" value="1">
+                          <repeats>
+                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5394-2000-8396-bd86" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4524db08-4b1f-2257-cf2f-c1c2ff3611b7" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="712b-a918-816e-7f01" repeats="1" roundUp="false"/>
+                          </repeats>
                           <conditions/>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions/>
-                              <conditionGroups>
-                                <conditionGroup type="and">
-                                  <conditions>
-                                    <condition field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" type="atLeast"/>
-                                    <condition field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4524db08-4b1f-2257-cf2f-c1c2ff3611b7" type="equalTo"/>
-                                    <condition field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="712b-a918-816e-7f01" type="equalTo"/>
-                                  </conditions>
-                                  <conditionGroups/>
-                                </conditionGroup>
-                                <conditionGroup type="and">
-                                  <conditions>
-                                    <condition field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" type="atLeast"/>
-                                  </conditions>
-                                  <conditionGroups>
-                                    <conditionGroup type="or">
-                                      <conditions/>
-                                      <conditionGroups>
-                                        <conditionGroup type="and">
-                                          <conditions>
-                                            <condition field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4524db08-4b1f-2257-cf2f-c1c2ff3611b7" type="equalTo"/>
-                                            <condition field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="712b-a918-816e-7f01" type="lessThan"/>
-                                          </conditions>
-                                          <conditionGroups/>
-                                        </conditionGroup>
-                                        <conditionGroup type="and">
-                                          <conditions>
-                                            <condition field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="712b-a918-816e-7f01" type="equalTo"/>
-                                            <condition field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4524db08-4b1f-2257-cf2f-c1c2ff3611b7" type="lessThan"/>
-                                          </conditions>
-                                          <conditionGroups/>
-                                        </conditionGroup>
-                                      </conditionGroups>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </conditionGroup>
-                          </conditionGroups>
+                          <conditionGroups/>
                         </modifier>
                       </modifiers>
                       <constraints>
@@ -35342,9 +35320,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         </infoLink>
                       </infoLinks>
                       <modifiers/>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c57f-0624-6a08-2c7f" type="max"/>
-                      </constraints>
+                      <constraints/>
                       <selectionEntries/>
                       <selectionEntryGroups/>
                       <entryLinks/>
@@ -35364,8 +35340,52 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         </infoLink>
                       </infoLinks>
                       <modifiers/>
+                      <constraints/>
+                      <selectionEntries/>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="7f7c-20dd-14cf-9d5f" name="Heavy Flamer" hidden="false" collective="false" type="upgrade">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks>
+                        <infoLink id="685d-1660-4598-c50a" name="New InfoLink" hidden="false" targetId="2608-8425-4f4f-7f41" type="profile">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                        </infoLink>
+                      </infoLinks>
+                      <modifiers>
+                        <modifier type="increment" field="3b90-32b3-8a3d-7d1b" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" type="atLeast"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                        <modifier type="increment" field="3b90-32b3-8a3d-7d1b" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" type="atLeast"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                        <modifier type="decrement" field="3b90-32b3-8a3d-7d1b" value="1">
+                          <repeats>
+                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5394-2000-8396-bd86" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4524db08-4b1f-2257-cf2f-c1c2ff3611b7" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="712b-a918-816e-7f01" repeats="1" roundUp="false"/>
+                          </repeats>
+                          <conditions/>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c7f-cfc3-cd43-2b9d" type="max"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b90-32b3-8a3d-7d1b" type="max"/>
                       </constraints>
                       <selectionEntries/>
                       <selectionEntryGroups/>
@@ -36108,8 +36128,10 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         </modifier>
                         <modifier type="decrement" field="21fc-792c-31c3-92b1" value="1">
                           <repeats>
-                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4524db08-4b1f-2257-cf2f-c1c2ff3611b7" repeats="1" roundUp="false"/>
-                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1434-b665-6656-1601" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4524db08-4b1f-2257-cf2f-c1c2ff3611b7" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1434-b665-6656-1601" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f7c-20dd-14cf-9d5f" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5394-2000-8396-bd86" repeats="1" roundUp="false"/>
                           </repeats>
                           <conditions/>
                           <conditionGroups/>
@@ -36137,9 +36159,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         </infoLink>
                       </infoLinks>
                       <modifiers/>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5b8a-621b-4b9d-4cea" type="max"/>
-                      </constraints>
+                      <constraints/>
                       <selectionEntries/>
                       <selectionEntryGroups/>
                       <entryLinks/>
@@ -36159,8 +36179,53 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                         </infoLink>
                       </infoLinks>
                       <modifiers/>
+                      <constraints/>
+                      <selectionEntries/>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="5394-2000-8396-bd86" name="Heavy Flamer" hidden="false" collective="false" type="upgrade">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks>
+                        <infoLink id="3fcd-a662-f4f8-b903" name="New InfoLink" hidden="false" targetId="2608-8425-4f4f-7f41" type="profile">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                        </infoLink>
+                      </infoLinks>
+                      <modifiers>
+                        <modifier type="increment" field="69ee-a6ea-7c7c-53d9" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" type="atLeast"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                        <modifier type="increment" field="69ee-a6ea-7c7c-53d9" value="1">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b388af6d-414a-7ecf-cb18-dd02ce0dc5eb" type="atLeast"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                        <modifier type="decrement" field="69ee-a6ea-7c7c-53d9" value="1">
+                          <repeats>
+                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1434-b665-6656-1601" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f7c-20dd-14cf-9d5f" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4524db08-4b1f-2257-cf2f-c1c2ff3611b7" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="b644a899-4226-4b28-a533-6a648bf93e46" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="712b-a918-816e-7f01" repeats="1" roundUp="false"/>
+                          </repeats>
+                          <conditions/>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cfe6-c435-e17b-2343" type="max"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69ee-a6ea-7c7c-53d9" type="max"/>
                       </constraints>
                       <selectionEntries/>
                       <selectionEntryGroups/>
