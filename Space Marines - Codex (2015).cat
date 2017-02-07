@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" name="Space Marines: Codex (2015)" revision="2020" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" name="Space Marines: Codex (2015)" revision="2022" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="bab5-1920-a2ed-5b27" name="Vulkan&apos;s Teachings" book="Supplement: Angels of Death" hidden="false">
@@ -12479,9 +12479,18 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="70e3-1aca-b4df-035f" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3cf-eec3-7a40-38f8" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f57-33f5-0423-a556" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="70e3-1aca-b4df-035f" type="min"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -12511,9 +12520,17 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" field="095b-50ae-962c-8dd2" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3cf-eec3-7a40-38f8" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d124-7a7a-d25d-fba8" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="095b-50ae-962c-8dd2" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="2219-e5b8-165b-606a" name="" hidden="false" targetId="d9c9-fc8b-a273-b614" type="selectionEntry">
@@ -12528,8 +12545,23 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
                   </conditions>
                   <conditionGroups/>
                 </modifier>
+                <modifier type="set" field="f1fe-bc8d-e1de-cc20" value="0.0">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3cf-eec3-7a40-38f8" type="instanceOf"/>
+                        <condition field="selections" scope="5dc8-7589-0feb-bdda" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="fe93-1cb5-d7b7-b731" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
-              <constraints/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1fe-bc8d-e1de-cc20" type="max"/>
+              </constraints>
             </entryLink>
             <entryLink id="6828-dad2-826a-d649" name="" hidden="false" targetId="510f-fd1e-5e14-4f70" type="selectionEntry">
               <profiles/>
@@ -19029,9 +19061,23 @@ If several models are in a position to capture Cypher, some of which are Dark An
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" field="9046-480f-1b4e-f631" value="1">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="041e-c0d4-9ca5-a0ee" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7ffa-b85b-7b08-714e" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3cf-eec3-7a40-38f8" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98e0-6f13-3d1c-67e8" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9046-480f-1b4e-f631" type="min"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -19055,9 +19101,17 @@ If several models are in a position to capture Cypher, some of which are Dark An
                   </conditions>
                   <conditionGroups/>
                 </modifier>
+                <modifier type="set" field="a471-56f8-3a5d-44bf" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3cf-eec3-7a40-38f8" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f56-1bb3-0094-9bb2" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a471-56f8-3a5d-44bf" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="f514-8bb0-7705-3270" name="" hidden="false" targetId="d9c9-fc8b-a273-b614" type="selectionEntry">
@@ -23321,9 +23375,23 @@ If several models are in a position to capture Cypher, some of which are Dark An
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="0b9e-ae04-3d39-3574" value="1">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="a6c9-f21f-d27f-3721" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c7a-2c1a-388a-ffb9" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3cf-eec3-7a40-38f8" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2474-acb9-cd7f-5909" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b9e-ae04-3d39-3574" type="min"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -23347,9 +23415,17 @@ If several models are in a position to capture Cypher, some of which are Dark An
                   </conditions>
                   <conditionGroups/>
                 </modifier>
+                <modifier type="set" field="3487-f55e-ca86-cec8" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3cf-eec3-7a40-38f8" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d7d2-b3a2-fbf6-ef20" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3487-f55e-ca86-cec8" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="e8b1-8f1b-10bb-7cee" name="" hidden="false" targetId="d9c9-fc8b-a273-b614" type="selectionEntry">
@@ -23364,8 +23440,23 @@ If several models are in a position to capture Cypher, some of which are Dark An
                   </conditions>
                   <conditionGroups/>
                 </modifier>
+                <modifier type="set" field="048f-04bd-255a-794a" value="0.0">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="d3cf-eec3-7a40-38f8" type="instanceOf"/>
+                        <condition field="selections" scope="a6c9-f21f-d27f-3721" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="7baf-023d-18f1-9312" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
-              <constraints/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="048f-04bd-255a-794a" type="max"/>
+              </constraints>
             </entryLink>
             <entryLink id="13d6-77d3-156a-7cb8" name="" hidden="false" targetId="510f-fd1e-5e14-4f70" type="selectionEntry">
               <profiles/>
@@ -24806,9 +24897,18 @@ If several models are in a position to capture Cypher, some of which are Dark An
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="7d01-ad87-660f-7402" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3cf-eec3-7a40-38f8" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d1c-cc7a-f684-b6a4" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d01-ad87-660f-7402" type="min"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -24833,9 +24933,17 @@ If several models are in a position to capture Cypher, some of which are Dark An
                   </conditions>
                   <conditionGroups/>
                 </modifier>
+                <modifier type="set" field="7668-9743-d8ba-4fb4" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3cf-eec3-7a40-38f8" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73c0-877b-1dd0-ef6f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7668-9743-d8ba-4fb4" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="095b-9e69-b454-7acd" name="" hidden="false" targetId="d9c9-fc8b-a273-b614" type="selectionEntry">
@@ -24850,8 +24958,23 @@ If several models are in a position to capture Cypher, some of which are Dark An
                   </conditions>
                   <conditionGroups/>
                 </modifier>
+                <modifier type="set" field="aca0-9f71-814b-a86c" value="0.0">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3cf-eec3-7a40-38f8" type="instanceOf"/>
+                        <condition field="selections" scope="aae9-8c44-9063-93f8" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="31ad-c60f-2da9-c9a8" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
-              <constraints/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aca0-9f71-814b-a86c" type="max"/>
+              </constraints>
             </entryLink>
             <entryLink id="ca22-7846-9476-109b" name="" hidden="false" targetId="510f-fd1e-5e14-4f70" type="selectionEntry">
               <profiles/>
@@ -25007,7 +25130,10 @@ If several models are in a position to capture Cypher, some of which are Dark An
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1144-1f77-e10c-daa5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dcc-9ff1-8ac7-5063" type="max"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="163b-57ea-0d01-8bac" name="Space Marine Sergeant" hidden="false" collective="false" type="model">
               <profiles/>
@@ -25028,7 +25154,15 @@ If several models are in a position to capture Cypher, some of which are Dark An
                   </modifiers>
                 </infoLink>
               </infoLinks>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="e42c-ccc9-b2a2-ad84" value="0.0">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5870-f49d-432a-20e0" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="97ca-d7e2-9cf4-602c" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e42c-ccc9-b2a2-ad84" type="min"/>
@@ -25170,7 +25304,9 @@ If several models are in a position to capture Cypher, some of which are Dark An
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20a8-05d0-7515-e2a5" type="max"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -46950,7 +47086,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2f3f-0846-de83-57d5" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5870-f49d-432a-20e0" type="lessThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -47030,7 +47166,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="60.0"/>
+        <cost name="pts" costTypeId="points" value="74.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0a21-cf0a-18de-a785" name="(FW) Hecaton Aiakos" page="" hidden="false" collective="false" categoryEntryId="" type="model">
@@ -47085,7 +47221,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2f3f-0846-de83-57d5" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5870-f49d-432a-20e0" type="lessThan"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="instanceOf"/>
               </conditions>
               <conditionGroups/>
@@ -51822,7 +51958,9 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
