@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2019" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2020" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0.0"/>
+    <costType id="25b9-0d85-6722-e0a6" name="Lord of War Role" defaultCostLimit="-1.0"/>
+    <costType id="4c33-9ad6-8146-dcd9" name="Elites Role" defaultCostLimit="0.0"/>
+    <costType id="9eb2-32b3-6d5d-5f2d" name="Fast Attack Role" defaultCostLimit="0.0"/>
+    <costType id="754b-211a-0f4d-d3f2" name="Troops Role" defaultCostLimit="0.0"/>
+    <costType id="043f-e79f-80fc-f087" name="HQ Role" defaultCostLimit="0.0"/>
+    <costType id="74ca-5658-1e29-0d95" name="Heavy Support Role" defaultCostLimit="0.0"/>
+    <costType id="af91-6387-bd5d-1757" name="Total Armor Value" defaultCostLimit="0.0"/>
   </costTypes>
   <profileTypes>
     <profileType id="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Unit">
@@ -326,6 +333,7 @@
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="76b2-ad66-abe6-e2e4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c46-ca1a-a4f1-c053" type="max"/>
           </constraints>
         </categoryEntry>
         <categoryEntry id="2aa2-d9e3-bef6-09be" name="Other" hidden="false">
@@ -1399,6 +1407,13 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="50.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="16d6-25c4-af92-4329" name="Aquila Strongpoint" book="Planetary Onslaught" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
@@ -1453,6 +1468,13 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="10.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="db22-e7d7-6c53-6f48" name="Main Strongpoint" hidden="false" collective="false" type="upgrade">
@@ -1505,6 +1527,13 @@
           </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="12af-64b0-135f-41b8" name="Bunker Annex" hidden="false" collective="false" type="upgrade">
@@ -1557,6 +1586,13 @@
           </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1605,6 +1641,13 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="110.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0850-e5c5-08f4-8b73" name="Macro Cannon" book="Planetary Onslaught" page="88" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -1647,6 +1690,13 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="110.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="348d-729c-685f-e6d8" name="Plasma Obliterator" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -1675,6 +1725,13 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1685,6 +1742,13 @@
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="425.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a172-78de-aaa6-2201" name="Wall of Martyrs Firestorm Redoubt" book="Planetary Onslaught" page="85" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
@@ -1765,6 +1829,13 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="946a-febb-a589-40bc" name="Punisher Gatling Cannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -1787,6 +1858,13 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1e4b-95c6-4acd-39e9" name="Battle Cannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -1809,6 +1887,13 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1847,6 +1932,13 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="200.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8300-7ced-aafd-2a27" name="Fortress of Redemption" book="Planetary Onslaught" page="91" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
@@ -1883,6 +1975,13 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="10.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1837-f874-577f-3651" name="Twin-linked Icarus Lascannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -1906,6 +2005,13 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="cc6f-415e-fe5f-4cd0" name="Remote Fire" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -1928,6 +2034,13 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="10.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d237-7d3e-c4a1-5f28" name="Main Tower" hidden="false" collective="false" type="upgrade">
@@ -1973,6 +2086,13 @@
           </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5c02-234b-7c98-8053" name="Bunker Annex" hidden="false" collective="false" type="upgrade">
@@ -2012,6 +2132,13 @@
           </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b9b0-baf0-7bf6-da86" name="Connecting Walkway" hidden="false" collective="false" type="upgrade">
@@ -2051,6 +2178,13 @@
           </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2086,6 +2220,13 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="828c-a00a-8846-e4e7" name="Krakstorm missiles" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -2108,6 +2249,13 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="30.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2126,6 +2274,13 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="220.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0fe6-096b-23ae-1134" name="Honoured Imperium" book="Planetary Onslaught" page="102" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
@@ -2172,6 +2327,13 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="40.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="55c6-268b-357f-d070" name="Imperial Bastion" book="Planetary Onslaught" page="80" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
@@ -2224,6 +2386,13 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2259,6 +2428,13 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="75.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0116-c81b-1c0f-251c" name="Wall of Martyrs Imperial Bunker" book="Planetary Onslaught" page="84" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
@@ -2330,6 +2506,13 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="55.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="df05-8179-624e-f8b2" name="Wall of Martyrs Imperial Defence Emplacement" book="Planetary Onslaught" page="83" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
@@ -2380,6 +2563,13 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="40.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0f73-97f2-b832-f6d0" name="Wall of Martyrs Imperial Defence Line" book="Planetary Onslaught" page="82" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
@@ -2430,6 +2620,13 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="80.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="47e8-03be-a35b-8329" name="Plasma Obliterator" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
@@ -2499,6 +2696,13 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="230.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1a59-dd0f-a7f2-32be" name="Promethium Relay Pipes" book="Planetary Onslaught" page="103" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
@@ -2543,6 +2747,13 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="40.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5cdd-edbb-07c3-0ba5" name="Skyshield Landing Pad" book="Planetary Onslaught" page="101" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
@@ -2595,6 +2806,13 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="75.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="04bf-6c22-19fb-4e46" name="Wall of Martyrs Vengeance Weapon Battery" book="Planetary Onslaught" page="86" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
@@ -2671,6 +2889,13 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               </entryLinks>
               <costs>
                 <cost name="pts" costTypeId="points" value="75.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="be8e-67f0-7341-3b7f" name="Battle Cannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -2701,6 +2926,13 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               </entryLinks>
               <costs>
                 <cost name="pts" costTypeId="points" value="85.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="38bd-45b9-fcec-44fc" name="Quad Icarus lascannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -2731,6 +2963,13 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               </entryLinks>
               <costs>
                 <cost name="pts" costTypeId="points" value="75.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2741,6 +2980,13 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bbd4-5f41-35d1-6c5f" name="Void Shield Generator" book="Planetary Onslaught" page="92" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
@@ -2798,6 +3044,13 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="25.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2813,6 +3066,13 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="25.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0d50-24ac-a53e-5db7" name="Wall of Martyrs Imperial Defence Network" book="Planetary Onslaught" page="87" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="unit">
@@ -2930,6 +3190,13 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="796a-21c2-7281-17a8" name="Void Relay Network" book="Planetary Onslaught" page="93" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="unit">
@@ -3006,6 +3273,13 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ed7e-757a-4ced-adff" name="Imperial Strongpoint" book="Planetary Onslaught" page="81" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="unit">
@@ -3104,6 +3378,13 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f8d7-aead-6174-1e2f" name="Firestorm Nexus" book="Warzone Armageddon" page="" hidden="false" collective="false" categoryEntryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit">
@@ -3159,6 +3440,13 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="313e-4ded-d611-0bf5" name="Grand Redoubt" book="40k Apocalypse 2nd Ed" page="" hidden="false" collective="false" categoryEntryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit">
@@ -3371,6 +3659,13 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="053a-fd01-be65-238e" name="Wall of Martyrs Defence Strongpoint" book="Warzone Damnos" page="" hidden="false" collective="false" categoryEntryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit">
@@ -3480,6 +3775,13 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="612b-8029-7441-c92b" name="Primus Redoubt" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
@@ -3577,6 +3879,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3616,6 +3925,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5424-800f-1fec-b912" name="Twin-linked Heavy Flamer" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -3644,6 +3960,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3c3a-df3c-0b9f-dce4" name="Twin-linked Lascannon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -3672,6 +3995,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="20.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="500e-f7d6-1350-dce5" name="Multi-melta &amp; Searchlight" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -3707,6 +4037,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c061-c3a3-07a3-9e07" name="Hyperios missle Launcher" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -3722,6 +4059,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="30.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="38c2-8e8b-02b8-4d31" name="Icarus Lascannon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -3744,6 +4088,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="35.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4d0e-f36f-3aec-bf55" name="Quad-gun" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -3766,6 +4117,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="50.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="41d3-fdae-dcfe-56a2" name="Battle Cannon Turret" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -3781,6 +4139,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="50.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="094c-3b4d-2028-66d7" name="Icarus Quad Lascannon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -3803,6 +4168,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="75.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3850,6 +4222,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="35.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="87df-e16b-b4dd-3dad" name="Hyperios Air Defense Missles" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -3876,6 +4255,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3914,6 +4300,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3945,6 +4338,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="650.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0691-eea7-d812-ba9a" name="Munitorum Armoured Container Cache" book="Planetary Onslaught" page="98" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -4057,6 +4457,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -4064,6 +4471,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f6a6-efdd-aef3-98ea" name="Munitorum Supply Crates" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -4087,6 +4501,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7d6b-87a5-3ce0-3093" name="Munitorum Promethium Barrels" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -4113,6 +4534,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4120,6 +4548,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="40.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4127,6 +4562,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0b55-7df5-6a9b-5bb5" name="BRB: Command Traits" hidden="false" collective="false" type="upgrade">
@@ -4202,6 +4644,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="73c8-d406-de8b-c737" name="BRB: Strategic Traits" hidden="false" collective="false" type="upgrade">
@@ -4307,6 +4756,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8e36-5536-b939-49d4" name="BRB: Personal Traits" hidden="false" collective="false" type="upgrade">
@@ -4412,6 +4868,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0f45-5929-8943-b671" name="BRB: Tactical Traits" hidden="false" collective="false" type="upgrade">
@@ -4480,6 +4943,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7b9c-cc71-5fb2-f287" name="Discipline: Biomancy" hidden="false" collective="false" type="upgrade">
@@ -4615,6 +5085,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e19-c945-9ee7-338f" name="Discipline: Daemonology (Sanctic)" hidden="false" collective="false" type="upgrade">
@@ -4738,6 +5215,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aec7-f89f-3f7c-596b" name="Discipline: Divination" hidden="false" collective="false" type="upgrade">
@@ -4849,6 +5333,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a4a8-ec73-9df4-913b" name="Discipline: Geokinesis" book="" hidden="false" collective="false" type="upgrade">
@@ -4966,6 +5457,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5037-da8a-7eb7-507f" name="Discipline: Fulmination" book="" hidden="false" collective="false" type="upgrade">
@@ -5080,6 +5578,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fa56-41f6-7241-e842" name="Discipline: Librarius" book="" hidden="false" collective="false" type="upgrade">
@@ -5203,6 +5708,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e05c-cec2-bad0-4445" name="Discipline: Telekinesis" book="" hidden="false" collective="false" type="upgrade">
@@ -5335,6 +5847,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ae3-21ce-7903-74a1" name="Discipline: Daemonology (Malefic)" book="" hidden="false" collective="false" type="upgrade">
@@ -5464,6 +5983,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="94c0-771b-4dc2-a9a9" name="Discipline: Pyromancy" book="" hidden="false" collective="false" type="upgrade">
@@ -5593,6 +6119,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a2b7-900b-fd71-721d" name="Discipline: Technomancy" book="" hidden="false" collective="false" type="upgrade">
@@ -5707,6 +6240,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f3dd-c529-d047-3c68" name="Discipline: Telepathy" book="" hidden="false" collective="false" type="upgrade">
@@ -5830,6 +6370,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="474a-96df-3847-a5d8" name="Twisted Copse" book="Planetary Onslaught" page="100" hidden="false" collective="false" type="model">
@@ -5861,6 +6408,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="10.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9c0c-da48-1f31-e478" name="Shrine of the Aquila" book="Planetary Onslaught" page="97" hidden="false" collective="false" type="model">
@@ -5899,6 +6453,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="187a-4e21-33c0-e858" name="Sanctum Imperialis" book="Planetary Onslaught" page="96" hidden="false" collective="false" type="model">
@@ -5949,6 +6510,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d065-8909-c64b-9deb" name="Manufactorum" book="Planetary Onslaught" page="95" hidden="false" collective="false" type="model">
@@ -5987,6 +6555,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e10f-7b90-ecd3-80a5" name="Basilica Administratum" book="Planetary Onslaught" page="94" hidden="false" collective="false" type="model">
@@ -6025,6 +6600,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="348f-2143-adaa-708a" name="Haemotrope Reactors" hidden="false" collective="false" type="upgrade">
@@ -6105,6 +6687,13 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="40.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6112,6 +6701,13 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5bc2-e061-a439-c689" name="Belisarius Cawl" book="Fall of Cadia" page="120" hidden="true" collective="false" type="unit">
@@ -6286,6 +6882,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9cb4-953c-4da7-e6f0" name="Master-crafted power axe" hidden="false" collective="false" type="upgrade">
@@ -6315,6 +6918,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="397f-95e1-8fd9-1df0" name="Mechadentrite Hive" hidden="false" collective="false" type="upgrade">
@@ -6372,6 +6982,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4a4e-fc28-0dc8-d153" name="Solar Atomiser" book="Fall of Cadia" hidden="false" collective="false" type="upgrade">
@@ -6414,6 +7031,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8dce-5512-678f-e634" name="Refractor field" book="Codex: Cult Mechanicus" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -6440,6 +7064,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e4f6-079a-7567-55af" name="Scryerskull" book="Codex: Cult Mechanicus" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -6466,6 +7097,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6473,6 +7111,13 @@ BENEDICTION OF OMNISCIENCE
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="200.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6755-ac2f-6fcf-d8ac" name="Inquisitor Greyfax" hidden="true" collective="false" type="unit">
@@ -6578,6 +7223,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8641-e8bd-fb26-9a70" name="Master-crafted Power Sword" hidden="false" collective="false" type="upgrade">
@@ -6607,6 +7259,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7bba-e7af-55dd-7a5a" name="Master-crafted condemnor boltgun" hidden="false" collective="false" type="upgrade">
@@ -6640,6 +7299,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4f58-0e12-9dd0-36a3" name="Frag and Krak Grenades" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -6676,6 +7342,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b474-c86d-2d3a-3318" name="Psyk-Out Grenades" hidden="false" collective="false" type="upgrade">
@@ -6702,6 +7375,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6709,6 +7389,13 @@ BENEDICTION OF OMNISCIENCE
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="150.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bdee-f95e-fcbd-01ec" name="Celestine, The Living Saint (FoC)" book="Fall of Cadia" page="" hidden="true" collective="false" categoryEntryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" type="unit">
@@ -6805,6 +7492,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="788b-fe18-3cec-228c" name="Saint Celestine" hidden="false" collective="false" type="upgrade">
@@ -6929,6 +7623,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -6936,6 +7637,13 @@ BENEDICTION OF OMNISCIENCE
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="200.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="df58-def7-a0b2-f493" name="Triumvirate of the Imperium" book="Fall of Cadia" page="125" hidden="true" collective="false" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d" type="unit">
@@ -6998,6 +7706,13 @@ BENEDICTION OF OMNISCIENCE
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+        <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+        <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+        <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+        <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+        <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+        <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -7031,6 +7746,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="5.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="dedd-369e-f614-b4c6" name="Barricades" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -7053,6 +7775,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="10.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="14f7-0f49-e062-ee60" name="Tank Traps" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -7075,6 +7804,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="15.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7110,6 +7846,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="15.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="000d-69ea-e095-7266" name="Booby Traps" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -7132,6 +7875,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="20.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c834-ef3d-29b3-06f5" name="Void Shield" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -7154,6 +7904,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="25.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7f0f-3a08-4730-77a7" name="Searchlight" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -7176,6 +7933,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="5.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d194-f922-5bc0-9fde" name="Escape Hatch" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -7198,6 +7962,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="25.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="558a-2c12-0c9e-636a" name="Magos Machine Spirit" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -7220,6 +7991,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="30.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7255,6 +8033,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="20.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b3eb-c36f-2f5f-b50f" name="Comms Relay" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -7277,6 +8062,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="20.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6bf0-460a-6ba3-97df" name="Gun Emplacement with Icarus Lascannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -7311,6 +8103,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="35.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="93a0-0a4a-8145-a4b8" name="Gun Emplacement with Quad-gun" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -7345,6 +8144,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="50.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7417,6 +8223,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="ff4f-f8b3-c090-2461" name="Deathblow" hidden="false" collective="false" type="upgrade">
@@ -7439,6 +8252,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="8861-d40f-73e7-5d6f" name="Killer Instinct" hidden="false" collective="false" type="upgrade">
@@ -7461,6 +8281,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1ca4-bea3-5e9a-d599" name="Warrior Adept" hidden="false" collective="false" type="upgrade">
@@ -7483,6 +8310,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="48da-9812-332e-01fe" name="Counter-Attack" hidden="false" collective="false" type="upgrade">
@@ -7505,6 +8339,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="6a91-d1cf-a6d7-f67c" name="Furious Charge" hidden="false" collective="false" type="upgrade">
@@ -7527,6 +8368,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="2c1b-7fa9-67e5-5418" name="Hatred" hidden="false" collective="false" type="upgrade">
@@ -7549,6 +8397,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="72a0-d797-c1a9-3a99" name="Rage" hidden="false" collective="false" type="upgrade">
@@ -7571,6 +8426,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d15e-d972-ece1-eeba" name="Hammer of Wrath" hidden="false" collective="false" type="upgrade">
@@ -7593,6 +8455,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -7603,6 +8472,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d637-f0fb-a28e-0327" name="Weapon Specialist" hidden="false" collective="false" type="upgrade">
@@ -7646,6 +8522,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="b1c6-50bb-72f7-2419" name="Bane of Vehicles" hidden="false" collective="false" type="upgrade">
@@ -7668,6 +8551,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="eaeb-2759-0a64-fa56" name="Eagle-Eye" hidden="false" collective="false" type="upgrade">
@@ -7690,6 +8580,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="8ba3-bdee-f281-a41d" name="Expert Shot" hidden="false" collective="false" type="upgrade">
@@ -7712,6 +8609,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="57dd-fd3d-e685-62be" name="Machine Saboteur" hidden="false" collective="false" type="upgrade">
@@ -7734,6 +8638,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="c448-f6a1-4548-cf54" name="Master-Craftsman" hidden="false" collective="false" type="upgrade">
@@ -7756,6 +8667,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="2754-d605-3516-920f" name="Reaping Volley" hidden="false" collective="false" type="upgrade">
@@ -7778,6 +8696,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="7a7e-dd1c-2eb9-f604" name="Sharpshooter" hidden="false" collective="false" type="upgrade">
@@ -7800,6 +8725,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e899-5331-0fee-d2b9" name="Supressing Fire" hidden="false" collective="false" type="upgrade">
@@ -7822,6 +8754,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -7832,6 +8771,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="97e0-3f5f-68ce-4a17" name="Dirty Fighter Specialist" hidden="false" collective="false" type="upgrade">
@@ -7875,6 +8821,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="10a6-5bdf-5939-0510" name="Exploit Weakness" hidden="false" collective="false" type="upgrade">
@@ -7897,6 +8850,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="5858-4e0d-bdf9-965f" name="Executioner" hidden="false" collective="false" type="upgrade">
@@ -7919,6 +8879,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="335b-4ed2-b09a-f035" name="Low Blow" hidden="false" collective="false" type="upgrade">
@@ -7941,6 +8908,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="f38f-eafa-75f3-dae4" name="Murderous Blows" hidden="false" collective="false" type="upgrade">
@@ -7963,6 +8937,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="df80-db85-270d-273c" name="Poisoned Weapons" hidden="false" collective="false" type="upgrade">
@@ -7985,6 +8966,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1f65-84ed-e3a7-11e2" name="Fear" hidden="false" collective="false" type="upgrade">
@@ -8007,6 +8995,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="7615-4920-1821-d654" name="Soul Blaze" hidden="false" collective="false" type="upgrade">
@@ -8029,6 +9024,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -8039,6 +9041,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a794-9167-a24d-0f5b" name="Guerilla Specialist" hidden="false" collective="false" type="upgrade">
@@ -8082,6 +9091,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="8f97-208e-8c77-bff7" name="Fleet" hidden="false" collective="false" type="upgrade">
@@ -8104,6 +9120,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="23dc-6d94-99a5-9b62" name="Hit and Run" hidden="false" collective="false" type="upgrade">
@@ -8126,6 +9149,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="a01b-e545-9152-f9eb" name="Infiltrate" hidden="false" collective="false" type="upgrade">
@@ -8148,6 +9178,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="0f76-d2cf-dd14-4fa0" name="Move Through Cover" hidden="false" collective="false" type="upgrade">
@@ -8170,6 +9207,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="05a2-afa6-e90b-6a2b" name="Night Vision" hidden="false" collective="false" type="upgrade">
@@ -8192,6 +9236,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="3389-9f60-7997-b422" name="Preferred Enemy" hidden="false" collective="false" type="upgrade">
@@ -8214,6 +9265,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="812d-0368-ae42-4418" name="Scout" hidden="false" collective="false" type="upgrade">
@@ -8236,6 +9294,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="2dec-a8c5-704a-17e4" name="Stealth" hidden="false" collective="false" type="upgrade">
@@ -8258,6 +9323,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -8268,6 +9340,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f420-b0b7-db28-3f29" name="Indomitable Specialist" hidden="false" collective="false" type="upgrade">
@@ -8311,6 +9390,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="8446-5a9f-0e2f-7c8b" name="Adamantium Will" hidden="false" collective="false" type="upgrade">
@@ -8333,6 +9419,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1791-a222-53cb-a9fc" name="Crusader" hidden="false" collective="false" type="upgrade">
@@ -8355,6 +9448,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="5206-af08-0a69-ddc3" name="Eternal Warrior" hidden="false" collective="false" type="upgrade">
@@ -8377,6 +9477,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="f010-1326-5162-705c" name="Fearless" hidden="false" collective="false" type="upgrade">
@@ -8399,6 +9506,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="8553-e297-f585-e0df" name="Feel No Pain" hidden="false" collective="false" type="upgrade">
@@ -8421,6 +9535,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="2701-6fb2-1c69-b847" name="Relentless" hidden="false" collective="false" type="upgrade">
@@ -8443,6 +9564,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1b66-cb00-27b9-686a" name="Stubborn" hidden="false" collective="false" type="upgrade">
@@ -8465,6 +9593,13 @@ BENEDICTION OF OMNISCIENCE
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+                    <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+                    <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+                    <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+                    <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+                    <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+                    <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -8475,6 +9610,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8523,6 +9665,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="30.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f1c6-e84a-4d3a-b25b" name="Quantum Annihilator" hidden="false" collective="false" type="upgrade">
@@ -8560,6 +9709,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="30.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="be05-803f-2c30-3657" name="Sacrifactum Autorepulsor" hidden="false" collective="false" type="upgrade">
@@ -8586,6 +9742,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="15.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="21b4-66a1-2f9d-ad24" name="Omnissiah&apos;s Grace" hidden="false" collective="false" type="upgrade">
@@ -8612,6 +9775,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="10.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7609-e1d0-701f-66f0" name="Saint Curia&apos;s Autopurger " hidden="false" collective="false" type="upgrade">
@@ -8638,6 +9808,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="25.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b27c-5fa6-5bd2-6978" name="Memento-Mortispex" hidden="false" collective="false" type="upgrade">
@@ -8691,6 +9868,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="30.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8728,6 +9912,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="30.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3d4b-c170-5ff9-f7e1" name="Shroud of the Anti-Martyr" hidden="false" collective="false" type="upgrade">
@@ -8751,6 +9942,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="35.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a8cc-b76f-8802-0a42" name="Blade of the Worthy" hidden="false" collective="false" type="upgrade">
@@ -8788,6 +9986,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="30.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4eee-585e-7f74-7bd9" name="Castigator" hidden="false" collective="false" type="upgrade">
@@ -8825,6 +10030,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="15.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3a4e-3711-a8ca-526f" name="The Font of Fury " hidden="false" collective="false" type="upgrade">
@@ -8869,6 +10081,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="10.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e224-5d7e-dc8a-2275" name="Desvalle&apos;s Holy Circle" hidden="false" collective="false" type="upgrade">
@@ -8895,6 +10114,13 @@ BENEDICTION OF OMNISCIENCE
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="Lord of War Role" costTypeId="25b9-0d85-6722-e0a6" value="0.0"/>
+            <cost name="Elites Role" costTypeId="4c33-9ad6-8146-dcd9" value="0.0"/>
+            <cost name="Fast Attack Role" costTypeId="9eb2-32b3-6d5d-5f2d" value="0.0"/>
+            <cost name="Troops Role" costTypeId="754b-211a-0f4d-d3f2" value="0.0"/>
+            <cost name="HQ Role" costTypeId="043f-e79f-80fc-f087" value="0.0"/>
+            <cost name="Heavy Support Role" costTypeId="74ca-5658-1e29-0d95" value="0.0"/>
+            <cost name="Total Armor Value" costTypeId="af91-6387-bd5d-1757" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
