@@ -11290,15 +11290,22 @@ If this Detachment contains four units, its units can roll to arrive from Deep S
                   <modifiers>
                     <modifier type="increment" field="0e9a-bbbf-c7e7-760d" value="2">
                       <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3363-78e4-f770-3b5c" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="4161-e029-1703-1556" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3363-78e4-f770-3b5c" repeats="1" roundUp="false"/>
+                      </repeats>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="minSelections" value="2">
+                      <repeats>
+                        <repeat field="selections" scope="4161-e029-1703-1556" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3363-78e4-f770-3b5c" repeats="1" roundUp="false"/>
                       </repeats>
                       <conditions/>
                       <conditionGroups/>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="3363-78e4-f770-3b5c" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                    <constraint field="selections" scope="3363-78e4-f770-3b5c" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e9a-bbbf-c7e7-760d" type="max"/>
+                    <constraint field="selections" scope="3363-78e4-f770-3b5c" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+                    <constraint field="selections" scope="3363-78e4-f770-3b5c" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e9a-bbbf-c7e7-760d" type="max"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry id="8fe0-dd5d-e1f0-4344" name="Shuriken Cannon" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
@@ -11318,9 +11325,16 @@ If this Detachment contains four units, its units can roll to arrive from Deep S
                           <modifiers/>
                         </infoLink>
                       </infoLinks>
-                      <modifiers/>
+                      <modifiers>
+                        <modifier type="set" field="5ecf-eed4-1dc0-65b4" value="0.0">
+                          <repeats/>
+                          <conditions/>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
                       <constraints>
                         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ecf-eed4-1dc0-65b4" type="min"/>
                       </constraints>
                       <selectionEntries/>
                       <selectionEntryGroups/>
