@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="818a0a0f-43c3-6587-c690-9b14d0a7ba96" name="Adepta Sororitas: Codex (2013)" book="Adepta Sororitas: Codex (2013)" revision="2016" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="818a0a0f-43c3-6587-c690-9b14d0a7ba96" name="Adepta Sororitas: Codex (2013)" book="Adepta Sororitas: Codex (2013)" revision="2017" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -140,8 +140,13 @@
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fdd4-da37-a8e7-8b34" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="6f30-ae61-1249-7811" type="atLeast"/>
           </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="append" field="name" value="(C:IA)">
+          <repeats/>
+          <conditions/>
           <conditionGroups/>
         </modifier>
       </modifiers>
@@ -492,6 +497,51 @@
       <infoLinks/>
       <modifiers/>
       <constraints/>
+    </entryLink>
+    <entryLink id="6f30-ae61-1249-7811" name="New EntryLink" hidden="false" targetId="9e7a-cab6-1036-3f3b" type="selectionEntry" categoryEntryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f783-133b-ed65-7dde" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fdd4-da37-a8e7-8b34" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints/>
+    </entryLink>
+    <entryLink id="7d72-2eb2-1c84-f7ed" name="New EntryLink" hidden="false" targetId="9e7a-cab6-1036-3f3b" type="selectionEntry" categoryEntryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f783-133b-ed65-7dde" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="a9dc-dbbf-d583-9e58" value="1">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e1bb-8fd1-939d-8952" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9dc-dbbf-d583-9e58" type="max"/>
+      </constraints>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -9511,7 +9561,29 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       </infoLinks>
       <modifiers/>
       <constraints/>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="0bd5-e000-d601-79b0" name="Storm Bolter" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="95af-ce8f-c2ba-e50a" name="" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70c3-0ec5-f488-dc61" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af33-0881-fbb7-1422" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="ff4d-a251-b4aa-3444" hidden="false" targetId="d6e879f5-e072-db8c-af1b-7161ef28adaa" type="selectionEntryGroup">
@@ -9520,22 +9592,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <infoLinks/>
           <modifiers/>
           <constraints/>
-        </entryLink>
-        <entryLink id="01c4-7bf1-9982-e600" name="New EntryLink" hidden="false" targetId="fb18-8f04-85c1-f401" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="points" value="0.0">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7ca-53d4-5c26-e365" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7757-1e5d-0907-d225" type="max"/>
-          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
