@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2021" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2023" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -326,7 +326,6 @@
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="76b2-ad66-abe6-e2e4" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c46-ca1a-a4f1-c053" type="max"/>
           </constraints>
         </categoryEntry>
         <categoryEntry id="2aa2-d9e3-bef6-09be" name="Other" hidden="false">
@@ -4485,7 +4484,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
     </selectionEntry>
     <selectionEntry id="7b9c-cc71-5fb2-f287" name="Discipline: Biomancy" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="1c43-781d-eb48-6745" name="Enfeeble" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="1c43-781d-eb48-6745" name="2 - Enfeeble" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4497,7 +4496,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target unit suffers a -1 penalty to both Strength and Toughness, and treats all terrain (even open ground) as difficult terrain."/>
           </characteristics>
         </profile>
-        <profile id="c754-648b-8a40-643d" name="Iron Arm" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power (Witchfire)">
+        <profile id="c754-648b-8a40-643d" name="1 - Iron Arm" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power (Witchfire)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4509,7 +4508,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker has +3 to his Strength and Toughness and he gains the Smash special rule."/>
           </characteristics>
         </profile>
-        <profile id="37f6-b18d-a4d2-532a" name="Life Leech" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
+        <profile id="37f6-b18d-a4d2-532a" name="3 - Life Leech" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4524,7 +4523,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value="If Life Leech causes at least one unsaved Wound, the Psyker, or one friendly model within 6&quot; of the Psyker, immediately regains a Wound lost earlier in the battle."/>
           </characteristics>
         </profile>
-        <profile id="2914-b123-8e58-6846" name="Warp Speed" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="2914-b123-8e58-6846" name="4 - Warp Speed" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4536,7 +4535,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker has +3 to his Initiative and Attacks and he gains the Fleet special rule."/>
           </characteristics>
         </profile>
-        <profile id="5175-2366-13ba-0ebe" name="Endurance" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="5175-2366-13ba-0ebe" name="5 - Endurance" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4548,7 +4547,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all models in the target unit gain the Eternal Warrior, Feel No Pain (4+) and Relentless special rules."/>
           </characteristics>
         </profile>
-        <profile id="2651-844e-6be1-79db" name="Haemorrhage" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="2651-844e-6be1-79db" name="6 - Haemorrhage" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4557,7 +4556,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Focussed Witchfire"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The target must pass two separate Toughness tests or suffer a Wound with no armour or cover saves allowed for each test that was failed.  If the target is removed as a casualty, randomly select another model (friend or foe) within 2&quot; of him.  That model must pass a single Toughness test or suffer a Wound with no armour or cover saves allowed.  If that model is removed as a casualty, continue the process of selecting anothe rmodel and taking a single Toughness test until either a model survives or there are no more suitable targets within range."/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The target must pass two separate Toughness tests or suffer a Wound with no armour or cover saves allowed for each test that was failed.  If the target is removed as a casualty, randomly select another model (friend or foe) within 2&quot; of him.  That model must pass a single Toughness test or suffer a Wound with no armour or cover saves allowed.  If that model is removed as a casualty, continue the process of selecting another model and taking a single Toughness test until either a model survives or there are no more suitable targets within range."/>
           </characteristics>
         </profile>
         <profile id="2f6a-2920-62e2-42b1" name="(Primaris) Smite" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
@@ -4620,7 +4619,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
     </selectionEntry>
     <selectionEntry id="2e19-c945-9ee7-338f" name="Discipline: Daemonology (Sanctic)" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="b98d-1f5a-3130-77ce" name="Hammerhand" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="b98d-1f5a-3130-77ce" name="2 - Hammerhand" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4644,7 +4643,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, all models in the target Daemon unit suffer a -1 penalty to their invulnerable save (normally reducing it to a 6+). This is cumulative with any other modifiers to a Daemon&apos;s invulnerable save, but cannot make it worse than 6+."/>
           </characteristics>
         </profile>
-        <profile id="625f-df3f-5476-6a1d" name="Gate of Infinity" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="625f-df3f-5476-6a1d" name="1 - Gate of Infinity" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4656,7 +4655,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Unless the target is Zooming or Swooping, remove the target and his unit from the board. It then immediately arrives anywhere on the board using the rules for Deep Strike."/>
           </characteristics>
         </profile>
-        <profile id="096a-1034-2338-7dba" name="Sanctuary" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="096a-1034-2338-7dba" name="3 - Sanctuary" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4668,7 +4667,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect the Psyker and all models in his unit receive a +1 bonus to their invulnerable save (models that do not have an invulnerable save gain a 6+ invulnerable save whilst this power is in effect instead). In addition, all units with the Daemon special rule (friend or foe) treat allterrain, including open ground, within 12&quot; of the Psyker as dangerous terrain."/>
           </characteristics>
         </profile>
-        <profile id="cbc0-3749-e487-0223" name="Purge Soul" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="cbc0-3749-e487-0223" name="4 - Purge Soul" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4680,7 +4679,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Both the Psyker and thetarget model roll a D6 and add their respective Leadership values. If the target’s total isgreater than the Psyker’s total, nothing happens. If the Psyker’s total is greater than orequal to the target’s total, the target model suffers an automatic Wound with no armouror cover saves allowed. Purge Soul has no effect on vehicles."/>
           </characteristics>
         </profile>
-        <profile id="c1cc-0e41-1c5f-940e" name="Cleansing Flame" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="c1cc-0e41-1c5f-940e" name="5 - Cleansing Flame" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4695,7 +4694,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="651d-7ee7-bed9-c874" name="Vortex of Doom" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="651d-7ee7-bed9-c874" name="6 - Vortex of Doom" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4743,7 +4742,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
     </selectionEntry>
     <selectionEntry id="aec7-f89f-3f7c-596b" name="Discipline: Divination" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="a981-3964-345e-e4ff" name="Perfect Timing" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="a981-3964-345e-e4ff" name="3 - Perfect Timing" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4752,10 +4751,10 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker and his unit&apos;s weapons ahve the Ignores Cover special rule."/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker and his unit&apos;s weapons have the Ignores Cover special rule."/>
           </characteristics>
         </profile>
-        <profile id="7f98-1c08-8501-1cbf" name="Precognition" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="7f98-1c08-8501-1cbf" name="4 - Precognition" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4767,7 +4766,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker re-rolls all failed To Hit and To Wound rolls. In addition, while the power is in effect, the Psyker re-rolls failed saving throws."/>
           </characteristics>
         </profile>
-        <profile id="0620-1710-32d7-8ba2" name="Misfortunre" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="0620-1710-32d7-8ba2" name="5 - Misfortunre" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4779,7 +4778,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all attacks that hit the target unit have the Rending special rule."/>
           </characteristics>
         </profile>
-        <profile id="e90a-a38a-8241-3d31" name="Scrier&apos;s Gaze" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="e90a-a38a-8241-3d31" name="6 - Scrier&apos;s Gaze" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4791,7 +4790,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, you can re-roll the dice when rolling for Reserves, Outflank, and when any of your units identifies a Mysterious Objective.  In addition, if the mission has the Tactical Objectives special rule, you can immediately choose to discard one of your active Tactical Objectives and generate a new one."/>
           </characteristics>
         </profile>
-        <profile id="0567-1afe-e856-cbef" name="Foreboding" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="0567-1afe-e856-cbef" name="1 - Foreboding" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4803,7 +4802,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker and his unit have the Counter-attack special rule and fire Overwatch using their full Ballistic Skill, rather than Ballistic Skill 1."/>
           </characteristics>
         </profile>
-        <profile id="2339-7cdf-3379-2801" name="Forewarning" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="2339-7cdf-3379-2801" name="2 - Forewarning" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4866,7 +4865,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="All models in the enemy unit must immediately take a Dangerous Terrain test with no armour saves allowed (invulnerable saves can be taken normally). This psychic power has no effect on Swooping or Zooming units."/>
           </characteristics>
         </profile>
-        <profile id="84a6-8dfa-345a-34d7" name="Earth Blood" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="84a6-8dfa-345a-34d7" name="1 - Earth Blood" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4878,7 +4877,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The target immediately regains D3 wounds lost earlier during the battle. In addition, whilst the power is in effect, the target and all models in their unit have the It Will Not Die special rule."/>
           </characteristics>
         </profile>
-        <profile id="f714-21b7-067a-87bf" name="Phase Form" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="f714-21b7-067a-87bf" name="4 - Phase Form" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4890,7 +4889,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the unit has the Move Through Cover special rule and all of its weapons have the Ignores Cover special rule. In addition, the unit does not need line of sight in order to attack an enemy unit in the Shooting phase; as long as the target is in range, it can be shot at."/>
           </characteristics>
         </profile>
-        <profile id="bef7-b9d0-2e9d-7fa4" name="Shifting Worldscape" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="bef7-b9d0-2e9d-7fa4" name="6 - Shifting Worldscape" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4902,7 +4901,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The targetted terrain feature must be one that can be physically picked up and placed in a different location on battlefield. Move the terrain to an area of open ground anywhere on the battlefield within 24&quot; of its starting position, so long as it is more than 1&quot; away from any other models or other terrain features after the relocation is complete. Any units that have all of their models on the piece of terrain are moved with it. If a unit has only a portion of its models on the terrain feature, then the models that occupy the terrain piece are immediately moved off it by their player, in the same manner as a model disembarking from a vehicle (treating the edge of the terrain as an Access Point and ending this move wholly within 6&quot; of the terrain and in coherency). Models moved in this way must then take a Dangerous Terrain test."/>
           </characteristics>
         </profile>
-        <profile id="ac30-7294-05da-5ac3" name="Warp Quake" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="ac30-7294-05da-5ac3" name="5 - Warp Quake" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4914,7 +4913,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If you targeted a building, roll a dice; on a roll of 1-3, the building suffers a glancing hit, and on a roll of 4-6, it suffers a penetrating hit. If you targeted a piece of Ruins terrain, roll a dice for each unit that is even partially within those ruins: on a 4 or more, that unit suffers D6 Strength 6 AP-hits as they are struck by falling debris. These hits are Randomly Allocated."/>
           </characteristics>
         </profile>
-        <profile id="8938-d3f2-4c57-6c20" name="Scorched Earth" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="8938-d3f2-4c57-6c20" name="2 - Scorched Earth" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4926,7 +4925,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Choose the point on the battlefield when the power is manifested. Each unit within 6&quot; of that point immediately suffers a single Strength 5 AP4 hit with the Ignores Cover special rule (hits are Randomly Allocated). In addition, whilst the power is in effect, all terrain (including open ground) within 6&quot; of the point chosen is treated as being dangerous terrain."/>
           </characteristics>
         </profile>
-        <profile id="8954-4a45-8483-42cc" name="Landquake" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="8954-4a45-8483-42cc" name="3 - Landquake" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4986,7 +4985,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd"/>
           </characteristics>
         </profile>
-        <profile id="6a2b-b11a-0864-f363" name="Electroshield" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="6a2b-b11a-0864-f363" name="1 - Electroshield" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4998,7 +4997,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker has a 3+ invulnerable save."/>
           </characteristics>
         </profile>
-        <profile id="e458-c8bf-f49b-5217" name="Electropulse" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="e458-c8bf-f49b-5217" name="2 - Electropulse" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5013,7 +5012,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="76b8-1518-0181-7e59" name="Lightning Arc" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="76b8-1518-0181-7e59" name="3 - Lightning Arc" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5028,7 +5027,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value="After this attack has been resolved against the target, roll a dice for every other enemy unit within 6&quot; of the target. On the roll of a 4 or more, that unit suffers D6 Strength 5 AP4 hits that are Randomly Allocated"/>
           </characteristics>
         </profile>
-        <profile id="1892-bb69-96a6-66d2" name="Electrodisplacement" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="1892-bb69-96a6-66d2" name="6 - Electrodisplacement" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5040,7 +5039,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Remove all models in the target unit except one, then swap the position of the Psyker with that model. Then, set up all models from the Psyker&apos;s unit (if any) within 6&quot; and unit coherency of the Psyker, and set up all remaining models from the swapped model&apos;s unit within 6&quot; and unit coherency of that model. If either unit was locked in combat, the displaced unit is now locked in combat with that enemy; models cannot otherwise be placed within 1&quot; of an enemy model. Unless locked in close combat, these units can charge in the same turn."/>
           </characteristics>
         </profile>
-        <profile id="4b0c-59fd-9ec5-b571" name="Fists of Lightning" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="4b0c-59fd-9ec5-b571" name="4 - Fists of Lightning" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5052,7 +5051,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker adds I to both his Strength and Attacks. In addition, each time the Psyker hits an enemy unit in close combat, that unit suffers two additional Strength 5 AP- Hits."/>
           </characteristics>
         </profile>
-        <profile id="0c4e-66cf-cd43-01da" name="Magnetokinesis" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="0c4e-66cf-cd43-01da" name="5 - Magnetokinesis" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5100,7 +5099,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="d259-73d0-94c9-3564" name="Veil of Time" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="d259-73d0-94c9-3564" name="1 - Veil of Time" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5112,7 +5111,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker and his unit can re-roll all failed saving throws."/>
           </characteristics>
         </profile>
-        <profile id="65a4-eef8-9f6a-d013" name="Fury of the Ancients" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
+        <profile id="65a4-eef8-9f6a-d013" name="2 - Fury of the Ancients" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5127,7 +5126,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="d950-37e8-60c0-3164" name="Psychic Scourge" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="d950-37e8-60c0-3164" name="5 - Psychic Scourge" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5139,7 +5138,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The Psyker manifesting this power rolls two dice and adds their Mastery Level to the highest result. The target Psykerrolls a single dice and adds their Mastery Level to the result. If the enemy Psyker&apos;s result is higher, there is no effect. If the scores are drawn, or your result is higher than the enemy Psyker&apos;s, the target suffers a Wound with no saves of any kind allowed and, whilst this power is in effect, can only successfully manifest Warp Charge points on the roll of a 6. Finally, if your result is at least 3 points higher than that of the enemy Psyker&apos;s, then they also lose a randomly chosen psychic power; they cannot use it for the rest of the battle."/>
           </characteristics>
         </profile>
-        <profile id="102b-f301-522a-d4ef" name="Psychic Fortress" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="102b-f301-522a-d4ef" name="3 - Psychic Fortress" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5151,7 +5150,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Psychic Fortress is a blessing that targets the Psyker. Whilst the power is in effect, all friendly units within 12&quot; of the Psyker have the Fearless and Adamantium Will special rules. ln addition, whilst this power is in effect, all friendly units within 12&quot; of the Psyker have a 4+ invulnerable save against any Wounds caused by witchfire powers."/>
           </characteristics>
         </profile>
-        <profile id="a1bf-28e0-278b-4c37" name="Null Zone" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="a1bf-28e0-278b-4c37" name="6 - Null Zone" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5163,7 +5162,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all models in the target unit suffer a -2 penalty to any invulnerable saves they have. This is cumulative with any other modifiers to a model&apos;s invulnerable save, but cannot make it worse than 6+."/>
           </characteristics>
         </profile>
-        <profile id="6524-8906-aa00-2d25" name="Might of Heroes" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="6524-8906-aa00-2d25" name="4 - Might of Heroes" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5208,7 +5207,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
     </selectionEntry>
     <selectionEntry id="e05c-cec2-bad0-4445" name="Discipline: Telekinesis" book="" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="a501-4cdf-a11a-9e44" name="Psychic Maelstrom" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="a501-4cdf-a11a-9e44" name="6 - Psychic Maelstrom" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5223,7 +5222,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="8c6b-328f-aea3-774f" name="Shockwave" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="8c6b-328f-aea3-774f" name="3 - Shockwave" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5253,7 +5252,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd"/>
           </characteristics>
         </profile>
-        <profile id="672f-8e1d-9b0c-39aa" name="Crush" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="672f-8e1d-9b0c-39aa" name="1 - Crush" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5265,7 +5264,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Roll 2D6. The target model suffers a hit with a Strength equal to the result (a result of an 11 or 12 wounds automatically or, in the case of a vehicle, causes an automatic penetrating hit) with APD6."/>
           </characteristics>
         </profile>
-        <profile id="ac53-c9c2-70e3-3833" name="Telekine Dome" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="ac53-c9c2-70e3-3833" name="5 - Telekine Dome" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5277,7 +5276,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker, and all friendly models within 12&quot; of the Psyker, have a 5+ invulnerable save against any shooting attack."/>
           </characteristics>
         </profile>
-        <profile id="ba00-1f90-ebe5-38b2" name="Objuration Mechanicum" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="ba00-1f90-ebe5-38b2" name="2 - Objuration Mechanicum" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5289,7 +5288,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all of the target’s ranged weapons have the Gets Hot special rule. In addition, if the target is a vehicle (or vehicle squadron), each vehicle in the unit suffers a single Strength 1 hit with the Haywire special rule."/>
           </characteristics>
         </profile>
-        <profile id="7529-7927-ba76-fa28" name="Levitation" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="7529-7927-ba76-fa28" name="4 - Levitation" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5340,7 +5339,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
     </selectionEntry>
     <selectionEntry id="5ae3-21ce-7903-74a1" name="Discipline: Daemonology (Malefic)" book="" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="3f7a-aa78-3e38-377b" name="Possession" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="3f7a-aa78-3e38-377b" name="6 - Possession" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5352,7 +5351,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Possession creates one of the following new units (your choice): 1 Bloodthirster, 1 Lord of Change, 1 Great Unclean One or 1 Keeper of Secrets. If this power is successfully manifested, the Psyker is immediately removed as a casualty (if the Psyker was part of a unit with the Brotherhood of Psykers/Sorcerers special rule, remove the entire unit as casualties). If, when using this power, the Psyker fails his Psychic test, he automatically suffers Perils of the Warp."/>
           </characteristics>
         </profile>
-        <profile id="af54-54d8-16f9-b90d" name="Infernal Gaze" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="af54-54d8-16f9-b90d" name="3 - Infernal Gaze" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5367,7 +5366,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="e579-d56c-ba5e-1215" name="Cursed Earth" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="e579-d56c-ba5e-1215" name="1 - Cursed Earth" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5391,7 +5390,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Summoning creates one of the following units (your choice): 10 Bloodletters of Khorne, 10 Pink Horrors of Tzeentch, 10 Plaguebearers of Nurgle, 10 Daemonettes of Slaanesh, 5 Flesh Hounds of Khorne, 3 Flamers ofTzeentch, 3 Nurgling swarms or 5 Seekers of Slaanesh."/>
           </characteristics>
         </profile>
-        <profile id="ddb5-c920-136d-7138" name="Dark Flame" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="ddb5-c920-136d-7138" name="2 - Dark Flame" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5406,7 +5405,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="42c7-cc1f-c2aa-4845" name="Sacrifice" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="42c7-cc1f-c2aa-4845" name="4 - Sacrifice" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5418,7 +5417,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Sacrifice creates one of the following units (your choice): 1 Herald of Khorne, 1 Herald of Tzeentch, 1 Herald of Nurgle or 1 Herald of Slaanesh, with up to 30 points’ worth of options. If this power is successfully manifested, one friendly model within 6&quot; of the Psyker (or the Psyker himself) immediately suffers a single Wound with no saves of any kind allowed."/>
           </characteristics>
         </profile>
-        <profile id="14b9-1bdd-9f54-579b" name="Incursion" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="14b9-1bdd-9f54-579b" name="5 - Incursion" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5484,7 +5483,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value="Soul Blaze"/>
           </characteristics>
         </profile>
-        <profile id="e642-7eb0-79e1-fa36" name="Fiery Form" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="e642-7eb0-79e1-fa36" name="1 - Fiery Form" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5496,7 +5495,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker gains a 4+ invulnerable save and his close combat attacks have the Soul Blaze special rule. Whilst the power is in effect, the Psyker re-rolls failed To Wound rolls inflicted by any further Pyromancy powers he manifests."/>
           </characteristics>
         </profile>
-        <profile id="cc81-c7d5-2015-4c6a" name="Fire Shield" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="cc81-c7d5-2015-4c6a" name="2 - Fire Shield" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5508,7 +5507,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target unit has a 4+ cover save and all enemy units treat all terrain within 6&quot; of the target as Dangerous Terrain."/>
           </characteristics>
         </profile>
-        <profile id="e380-f4c0-2eaf-e4cc" name="Sunburst" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="e380-f4c0-2eaf-e4cc" name="4 - Sunburst" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5523,7 +5522,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="19c4-3573-0b4f-46e2" name="Inferno" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="19c4-3573-0b4f-46e2" name="5 - Inferno" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5538,7 +5537,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="d074-9134-acf0-ca25" name="Spontaneous Combustion" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="d074-9134-acf0-ca25" name="3 - Spontaneous Combustion" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5550,7 +5549,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The target model suffers a Strength 6 AP3 hit with the Soul Blaze special rule. If the model is slainby this hit in the Psychic phase, centre the small blast marker over the target before removing him as a casualty. All other models under the marker suffer a Strength 5 AP4 hit with the Ignores Cover and Soul Blaze special rules."/>
           </characteristics>
         </profile>
-        <profile id="3c4e-16d1-e107-d5d5" name="Molten Beam" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="3c4e-16d1-e107-d5d5" name="6 - Molten Beam" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5610,7 +5609,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If this power is successfully manifested, randomly select one of the vehicle&apos;s weapons (do not include Bombs, weapons with the One Use Only/One Shot Only special rule that have already fired, and weapons that have been destroyed). Then, you and your opponent each roll a dice and look up the result below: If your opponent rolls higher, nothing happens. If the results are drawn, then that weapon can only fire Snap Shots whilst this power is in effect. If you roll higher, you can immediately shoot with that weapon at another enemy unit; the weapon fires using the vehicle&apos;s Ballistic Skill, unless the vehicle is Crew Stunned or Shaken, in which case the weapon can only fire Snap Shts. "/>
           </characteristics>
         </profile>
-        <profile id="fa40-8b54-4728-8ec3" name="Blessing of the Machine" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="fa40-8b54-4728-8ec3" name="1 - Blessing of the Machine" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5622,7 +5621,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target vehicle ignores the effects of Crew Shaken and/or Crew Stunned damage results and has the Power of the Machine Spirit special rule. If the vehicle already has this special rule, it instead increases its Ballistic Skill by 1 whilst this power is in effect. "/>
           </characteristics>
         </profile>
-        <profile id="1328-b03f-3b23-e5f7" name="Machine Curse" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="1328-b03f-3b23-e5f7" name="2 - Machine Curse" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5634,7 +5633,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Machine Curse is a focussed witchfire power that targets a single enemy vehicle unit within 18&quot;. The target model immediately surfers D3 Strength 1 AP- hits with the Haywire special rule. "/>
           </characteristics>
         </profile>
-        <profile id="1967-e966-7041-edb2" name="Reforge" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="1967-e966-7041-edb2" name="3 - Reforge" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5646,7 +5645,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The controlling player can choose for the target vehicle either to immediately recover one Hull Point lost earlier in the battle, or repair a Weapon Destroyed or Immobilised result suffered earlier in the battle. In addition, the target vehicle has the It Will Not Die special rule whilst this power is in effect. If the Psyker is embarked on a Transport vehicle, he may still attempt to manifest this psychic power, but may only target the vehicle he is embarked upon."/>
           </characteristics>
         </profile>
-        <profile id="b3a8-524b-158f-b49c" name="Warpmetal Armour" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="b3a8-524b-158f-b49c" name="4 - Warpmetal Armour" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5658,7 +5657,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If this power targets a vehicle unit, then whilst it is in effect add 1 to all the Armour Values (Front, Sides and Rear) of models in that unit. If this power targets a non-vehicle unit, then whilst it is in effect add 1 to the Toughness of all models in the target unit. If the Psyker is embarked on a Transport vehicle, he may still attempt to manifest this psychic power, but may only target the vehicle he is embarked upon."/>
           </characteristics>
         </profile>
-        <profile id="84fd-9915-a915-4907" name="Machine Flense" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="84fd-9915-a915-4907" name="6 - Machine Flense" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5670,7 +5669,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The target immediately loses D3 Hull Points. For each Hull Point that the vehicle loses, the Psyker inflicts D6 Strength 4 AP6 hits with the Rending special rule on a single enemy unit within 12&quot; of the target vehicle. You can choose a different target for each Hull Point lost in this way if you wish."/>
           </characteristics>
         </profile>
-        <profile id="019a-2a74-4efb-b71e" name="Fury of Mars" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="019a-2a74-4efb-b71e" name="5 - Fury of Mars" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5712,7 +5711,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
     </selectionEntry>
     <selectionEntry id="f3dd-c529-d047-3c68" name="Discipline: Telepathy" book="" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="4d8b-0d09-bcf2-78c2" name="Hallucination" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="4d8b-0d09-bcf2-78c2" name="6 - Hallucination" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5724,7 +5723,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Roll once this power has been successfully manifested to determine the manner of hallucinations the target is suffering from (roll once for the whole unit).  1-2: The unit must take a Pinning Test. 3-4: Whilst the power is in effect, all models in the unit suffer a -1 penalty to their Weapon Skill, Ballistic Skill, Initiative and Attacks (to a minimum of 1). 5-6: Randomly select one character in the target unit. That model suffers a single Strength 3 hit for every other model in the target unit. Cover saves cannot be taken against these hits, and they can never be allocated to another model. If there are no character models in the target unit, or if there are no other modelsapart from the character model, treat this result as 3-4 instead."/>
           </characteristics>
         </profile>
-        <profile id="6732-6af1-5355-c18a" name="Dominate" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="6732-6af1-5355-c18a" name="1 - Dominate" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5736,7 +5735,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target unit must pass a Leadership test each time it attempts to move, manifest a psychic power, shoot, Run or declare a charge – if the test is failed, the action is forfeit and the unit can do nothing else that phase. A unit that fails this test when attempting to fire Overwatch does not fire any shots, but acts normally in the ensuing Fight sub-phase."/>
           </characteristics>
         </profile>
-        <profile id="8d4f-c8e5-88ab-0b34" name="Terrify" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="8d4f-c8e5-88ab-0b34" name="3 - Terrify" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5760,7 +5759,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Roll 3D6 and subtract the target’s Leadership – the target unit suffers a number of Wounds equal to the result. Armour and cover saves cannot be taken against Wounds caused by Psychic Shriek."/>
           </characteristics>
         </profile>
-        <profile id="e462-f8d5-8bd3-99a0" name="Mental Fortitude" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="e462-f8d5-8bd3-99a0" name="2 - Mental Fortitude" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5772,7 +5771,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If the target is falling back, it immediately Regroups. In addition, whilst the power is in effect, the target gains the Fearless special rule."/>
           </characteristics>
         </profile>
-        <profile id="81c8-ea64-7b60-1147" name="Invisibility" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="81c8-ea64-7b60-1147" name="5 - Invisibility" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5784,7 +5783,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, enemy units can only fire Snap Shots at the target unit and in close combat will only hit models in it on To Hit rolls of a 6."/>
           </characteristics>
         </profile>
-        <profile id="338a-8761-09fd-5e65" name="Shrouding" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="338a-8761-09fd-5e65" name="4 - Shrouding" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
