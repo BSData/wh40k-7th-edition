@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="24a0-49b6-ecef-1c5a" name="Tau Empire: Codex (2015)" book="Codex: Tau Empire (2015), Kau&apos;yon (2015), Mont&apos;ka (2015), Imperial Armour 4: Second Edition (2012), Death From the Skies (2016)" revision="2009" battleScribeVersion="2.00" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="24a0-49b6-ecef-1c5a" name="Tau Empire: Codex (2015)" book="Codex: Tau Empire (2015), Kau&apos;yon (2015), Mont&apos;ka (2015), Imperial Armour 4: Second Edition (2012), Death From the Skies (2016)" revision="2010" battleScribeVersion="2.00" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="6135c936-2580-cc18-495b-4d0d526486ee" name="About author" hidden="true">
@@ -9096,15 +9096,7 @@ Killing Blade: Rending until the end of the current phase.</description>
         </rule>
       </rules>
       <infoLinks/>
-      <modifiers>
-        <modifier type="set" field="maxSelections" value="0.0">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f63e-d7f0-c83b-21d3" type="lessThan"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
@@ -28033,8 +28025,18 @@ Vector Evasion: The model gains the Jink special rule, and when Thrusting or Swo
               <modifiers/>
             </infoLink>
           </infoLinks>
-          <modifiers/>
-          <constraints/>
+          <modifiers>
+            <modifier type="set" field="0fac-d8e9-667a-4bcc" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab72-0b15-9a80-e11e" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fac-d8e9-667a-4bcc" type="min"/>
+          </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
