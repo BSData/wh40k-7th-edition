@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2301-1cab-6d58-f23b" name="Skitarii: Codex (2015)" book="Codex: Skitarii" revision="2008" battleScribeVersion="2.00" authorName="True_Hisop" authorContact="" authorUrl="https://github.com/BSData/wh40k/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2301-1cab-6d58-f23b" name="Skitarii: Codex (2015)" book="Codex: Skitarii" revision="2009" battleScribeVersion="2.00" authorName="True_Hisop" authorContact="" authorUrl="https://github.com/BSData/wh40k/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -178,6 +178,68 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
+    <forceEntry id="2086-3a89-9082-e522" name="AdM Grand Convocation" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="848a6ff2-0def-4c72-8433-ff7da70e6bc7" name="HQ" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" name="Elites" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" name="Troops" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="c274d0b0-5866-44bc-9810-91c136ae7438" name="Fast Attack" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" name="Heavy Support" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="c888f08a-6cea-4a01-8126-d374a9231554" name="Lord of War" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="41a4-c4a9-7790-4259" name="Primary Detachment" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="491e-8183-b43b-4136" type="max"/>
+            <constraint field="points" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="2806-3748-0613-2126" type="max"/>
+          </constraints>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
@@ -1668,6 +1730,38 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4953-0739-9273-f1c9" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="d281-9ebf-05eb-3683" name="New EntryLink" hidden="false" targetId="030d-a973-2604-0b66" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="192e-829f-150a-0969" value="3">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="55a7-fa88-bc7e-b9b2" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="192e-829f-150a-0969" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55a7-fa88-bc7e-b9b2" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
@@ -2266,6 +2360,38 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
             </modifier>
           </modifiers>
           <constraints/>
+        </entryLink>
+        <entryLink id="1734-3e8f-f0b8-196b" name="New EntryLink" hidden="false" targetId="030d-a973-2604-0b66" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="3fec-2ce8-4249-304d" value="3">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="0a82-03b1-45aa-568c" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3fec-2ce8-4249-304d" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a82-03b1-45aa-568c" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -3715,6 +3841,38 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
           <modifiers/>
           <constraints/>
         </entryLink>
+        <entryLink id="0d64-89fe-acaa-8d44" name="New EntryLink" hidden="false" targetId="c6e2-f98a-521e-3114" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="9080-e94e-dba6-9b65" value="6">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="90c8-6e64-0c1e-304c" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9080-e94e-dba6-9b65" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90c8-6e64-0c1e-304c" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
@@ -3834,6 +3992,30 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
           <modifiers/>
           <constraints/>
         </entryLink>
+        <entryLink id="76b6-03da-9a3d-18f8" name="New EntryLink" hidden="false" targetId="4a94-2847-e6c2-df4c" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="8344-bcde-484b-e31a" value="4">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8344-bcde-484b-e31a" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
@@ -3929,6 +4111,30 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
           <infoLinks/>
           <modifiers/>
           <constraints/>
+        </entryLink>
+        <entryLink id="976d-b759-289e-2e26" name="New EntryLink" hidden="false" targetId="4a94-2847-e6c2-df4c" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="dae8-820f-09f7-e2e2" value="4">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dae8-820f-09f7-e2e2" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -4121,6 +4327,38 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9fc2-a574-caf2-ec14" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="64b1-4f95-af93-5956" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="216b-bc91-46d0-77b8" name="New EntryLink" hidden="false" targetId="4acc-8e07-b1d5-49ac" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="d4b1-581c-29f6-cff9" value="6">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="68ed-3362-795a-8328" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d4b1-581c-29f6-cff9" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68ed-3362-795a-8328" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -5092,6 +5330,38 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
           <infoLinks/>
           <modifiers/>
           <constraints/>
+        </entryLink>
+        <entryLink id="301c-8eb9-5be9-cc21" name="New EntryLink" hidden="false" targetId="c6e2-f98a-521e-3114" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="e24f-3271-2f6d-459c" value="6">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="ef9b-6179-4383-8c5b" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e24f-3271-2f6d-459c" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef9b-6179-4383-8c5b" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
