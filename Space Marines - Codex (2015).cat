@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" name="Space Marines: Codex (2015)" revision="2028" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" name="Space Marines: Codex (2015)" revision="2029" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="bab5-1920-a2ed-5b27" name="Vulkan&apos;s Teachings" book="Supplement: Angels of Death" hidden="false">
@@ -104,21 +104,6 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
         </modifier>
       </modifiers>
       <description>If this Detachment is your Primary Detachment, all models in it have the Stubborn special rule while your Warlord is alive.</description>
-    </rule>
-    <rule id="fe25-fc92-77f7-0864" name="Extensive Planning" book="Supplement: Angels of Death" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="9706-acb7-53b0-3761" type="notInstanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <description>If your Warlord is part of this Detachment, you can choose to re-roll the result on the Mission Table, re-roll the result when rolling for a Random Deployment Zone, and re-roll your dice when rolling off to see who deploys first.</description>
     </rule>
     <rule id="0dff-53fa-437a-8fbf" name="Ideal Mission Commander" book="Codex: Space Marines" hidden="false">
       <profiles/>
@@ -314,6 +299,21 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
         </modifier>
       </modifiers>
       <description>At the end of your Shooting phase, your Warlord can nominate himself or another vehicle from this Detachment that is within 24&quot; of him.  That vehicle can immediately fire its weapons again.</description>
+    </rule>
+    <rule id="d5ce-16d6-5cd5-8e0d" name="Extensive Planning" book="Supplement: Angels of Death" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="9706-acb7-53b0-3761" type="notInstanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <description>If your Warlord is part of this Detachment, you can choose to re-roll the result on the Mission Table, re-roll the result when rolling for a Random Deployment Zone, and re-roll your dice when rolling off to see who deploys first.</description>
     </rule>
   </rules>
   <infoLinks/>
@@ -655,6 +655,88 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e06-df76-a738-3af0" type="min"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
+    <forceEntry id="906b-a39f-8e33-298d" name="SM UM Victrix Strike Force" book="Gathering Storm: Rise of the Primarch" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="ee76-d719-0025-b00e" name="Objective Secured (Non-Vehicles)" book="Gathering Storm: Rise of the Primarch" page="" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All non-vehicle units in this Detachment have the Objective Secured special rule.  A unit with this special rule controls objective markers even if an enemy scoring unit is within range of the Objective Marker, unless the enemy unit also has this special rule.</description>
+        </rule>
+        <rule id="6f2e-0964-5abe-edb3" name="Son of Ultramar" book="Gathering Storm: Rise of the Primarch" page="" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If this Detachment is your Primary Detachment, you can choose to re-roll the result on the Ultramarines Warlord Trait table.</description>
+        </rule>
+        <rule id="74a2-bb68-ce0b-b9f0" name="Perfect Doctrine" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>You can choose to enact the Devastator, Assault and Tactical Doctrines once each per game.  When one of these Combat Doctrines is enacted, all Ultramarines models in your army are affected.  In addition, you can choose to enact any combination of Devastator Doctrine, Assault Doctrine, and Tactical Doctrine in any of your turns, subject to the normal number of times you are able to use each doctrine.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="bf93-7277-bf48-16f7" name="Core" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8627-066a-03b2-b92c" type="min"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="9050-d437-3301-7e42" name="Command" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="190a-becc-e39e-1052" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="ef2b-83bd-1bad-5742" name="Auxiliary" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="3b40-8743-a364-e72f" value="1">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf93-7277-bf48-16f7" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="3fc5-dbdd-328d-af34" value="1">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf93-7277-bf48-16f7" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b40-8743-a364-e72f" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3fc5-dbdd-328d-af34" type="max"/>
           </constraints>
         </categoryEntry>
         <categoryEntry id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Force Org Slot" hidden="false">
@@ -3315,6 +3397,13 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
       </modifiers>
       <constraints/>
     </entryLink>
+    <entryLink id="ad2f-3656-35f5-8b08" name="" hidden="false" targetId="f19a-2c17-8523-6b78" type="selectionEntry" categoryEntryId="c888f08a-6cea-4a01-8126-d374a9231554">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2f3f-0846-de83-57d5" name="Show Forgeworld/Apocalypse Entries" book="Imperial Armor" hidden="false" collective="false" type="unit">
@@ -5051,7 +5140,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="31d8-022b-1ad5-fa16" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="31d8-022b-1ad5-fa16" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="f892-69f4-ca81-868e" name="Chapter Relic: Hood of Hellfire" hidden="false" collective="false" type="upgrade">
@@ -6040,6 +6129,80 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry id="8318-cf5a-df3f-1973" name="Ultramarines" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="791f-ddf9-c117-f6c8" name="Warlord Trait: Paragon of War" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Your Warlord has the Preferred Enemy special rule."/>
+                  </characteristics>
+                </profile>
+                <profile id="76db-8020-88cf-933f" name="Warlord Trait: Master of Tactics" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="As long as your Warlord is alive, at the beginning of each of your turns, you can discard an active Tactical Objective.  If you do so, you can generate a new Tactical Objective.  Re-roll this result if you are not playing a mission with the Tactical Objectives special rule."/>
+                  </characteristics>
+                </profile>
+                <profile id="e004-2bc6-d643-4fae" name="Warlord Trait: Adept of the Codex" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Your Warlord and all friendly units within 6&quot; of him have the Split Fire special rule."/>
+                  </characteristics>
+                </profile>
+                <profile id="a9f5-781e-9522-b72d" name="Warlord Trait: Noble Visage" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Your Warlord, and all friendly units within 12&quot; of your Warlord with a Faction that is part of the Armies of the Imperium, must re-roll failed Morale checks, Pinning Tests, and Fear tests."/>
+                  </characteristics>
+                </profile>
+                <profile id="9c02-e06b-cdfa-20c9" name="Warlord Trait: Master of Strategy" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="You can add 4 to any roll to Seize the Initiative."/>
+                  </characteristics>
+                </profile>
+                <profile id="469b-45a2-ec4e-a3d1" name="Warlord Trait: Warden of Ultramar" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Your Warlord has the Counter-attack special rule"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="lessThan"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -13062,7 +13225,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition field="selections" scope="5dc8-7589-0feb-bdda" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c23-bc1d-d40b-e05f" type="lessThan"/>
+                        <condition field="selections" scope="5dc8-7589-0feb-bdda" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
                         <condition field="selections" scope="5dc8-7589-0feb-bdda" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f47d-e774-81fc-8f79" type="equalTo"/>
                       </conditions>
                       <conditionGroups/>
@@ -13125,8 +13288,8 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
+                        <condition field="selections" scope="5dc8-7589-0feb-bdda" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
                         <condition field="selections" scope="5dc8-7589-0feb-bdda" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="209b-420d-3889-caaf" type="equalTo"/>
-                        <condition field="selections" scope="5dc8-7589-0feb-bdda" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c23-bc1d-d40b-e05f" type="lessThan"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -13178,7 +13341,9 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f6d-8efb-8edf-3ba6" type="max"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -18062,6 +18227,7 @@ If several models are in a position to capture Cypher, some of which are Dark An
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <description>Cypher can shoot both of his pistols twice each in his Shooting phase, or can fire them once each either before or after making a Run move.  When taking Overwatch shots, Cypher uses his full Ballistic Skill.  In the Assault phase, half of Cypher&apos;s close combat attakcs (rounding up) are Strength 4 and AP5 and all remaining attacks are Strength 7 and AP2.</description>
         </rule>
         <rule id="37f5-97f7-674a-1f3e" name="Shadowy Herald of Strife" book="Dataslate: Cypher" hidden="false">
           <profiles/>
@@ -26527,7 +26693,7 @@ If several models are in a position to capture Cypher, some of which are Dark An
           <modifiers>
             <modifier type="decrement" field="e744-2138-4837-74eb" value="1">
               <repeats>
-                <repeat field="selections" scope="5d2a-0445-c94b-74ff" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="21a6-2cd3-ea38-02ac" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5d2a-0445-c94b-74ff" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="21a6-2cd3-ea38-02ac" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -50241,7 +50407,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="instanceOf"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f3f-0846-de83-57d5" type="lessThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -52250,6 +52416,316 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f19a-2c17-8523-6b78" name="Roboute Guilliman, Primarch of the Ultramarines" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="a888-c02a-d50c-4502" name="Roboute Guilliman" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Monstrous Creature (Character)"/>
+            <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="9"/>
+            <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="6"/>
+            <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="6"/>
+            <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="6"/>
+            <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="6"/>
+            <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="6"/>
+            <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="6"/>
+            <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="10"/>
+            <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/3++"/>
+          </characteristics>
+        </profile>
+        <profile id="b730-1720-31e6-4dcd" name="The Emperor&apos;s Sword and the Hand of Dominion" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="These weapons are used together, using the profiles below.  It may be used as both a melee weapon and a ranged weapon in the same turn."/>
+          </characteristics>
+        </profile>
+        <profile id="da23-ae6c-f82b-41a8" name="Warlord Trait: Absolute Mastery" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Rouboute Guilliman has all of the Command Traits from Warhammer 40,000: The Rules."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="07aa-fed1-ceca-04cf" name="Lord Commander of the Imperium" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Friendly units from the Armies of the Imperium re-roll failed Morale checks and Fear and Pinning tests while Guilliman is on the battlefield.</description>
+        </rule>
+        <rule id="aa2c-1675-ce7f-0d0d" name="Unyielding Will" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Roboute Guilliman&apos;s Leadership is not subject to negative modifiers of any kind and he may re-roll failed Deny the Witch tests.</description>
+        </rule>
+        <rule id="9ad4-42c6-c60c-349d" name="Primarch of the XIII Legion" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>You can choose to enact the Devastator, Assault and Tactical Doctrines once each per game (in addition to any you can already use).  When one of these Combat Doctrines is enacted, all Ultramarines models in your army are affected.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="f7fa-b655-2372-5ffa" name="" hidden="false" targetId="894f-81b4-7aca-8eda" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="name" value=" (Ultramarines)">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ea77-b0b3-0537-4685" name="" hidden="false" targetId="39c6-1f20-a156-47f4" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="56a7-8e36-1a47-5158" name="" hidden="false" targetId="f172-03fe-1e9f-c363" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b1d1-98c2-6811-1783" name="" hidden="false" targetId="3c7d-11d6-e265-abb4" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="f84f-6014-f70a-13e0" name="" hidden="false" targetId="8714-46ad-62c0-ce35" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="12ed-ad87-24cb-0b42" name="" hidden="false" targetId="8d37-2e47-4a04-58f7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="a73c-14c1-e440-60e0" name="" hidden="false" targetId="540d-b15f-f709-3bf9" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="5e54-8e00-a76d-c4da" name="" hidden="false" targetId="80c8-1041-d0f1-6e58" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8300-ebb5-f82a-e858" name="" hidden="false" targetId="f217-b311-e5b1-c8c7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="name" value="(Chaos)">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae1a-0131-077a-64f8" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0d2-d3e2-3633-e20e" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f06a-a66c-4b4c-f931" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e7-20c3-9381-df2d" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="658d-34d6-85f2-053b" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d232-11fa-c968-6c10" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="d876-9bfb-1612-9091" name="The Hand of Dominion" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="24bc-1cf7-c52e-975d" name="Hand of Dominion" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="6"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 3, Rending"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks>
+            <infoLink id="2ed5-88c1-9018-430c" name="New InfoLink" hidden="false" targetId="6a76-59d1-822c-59c9" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e7f-d868-9ce7-26d3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f27-f743-5856-ab02" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8016-95ff-d078-c4fd" name="The Emperor&apos;s Sword" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="ebb6-5334-1990-6886" name="The Empereor&apos;s Sword" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="10"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="1"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Armourbane, Concussion, Soul Blaze, Touch of the Emperor, Whirling Flame"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="6ecd-8766-8445-0bcc" name="Touch of the Emperor" book="Gathering Storm: Rise of the Primarch" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Any attacks with this weapon with a To Hit roll of 6 are resolved at Strength D rather than Strength 10.</description>
+            </rule>
+            <rule id="4087-2ed2-9895-4700" name="Whirling Flame" book="Gathering Storm: Rise of the Primarch" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>In the Fight sub-phase, rather than making attacks normally, Guilliman can make a number of attacks with this weapon against each enemy unit engaged in his combat equal to the number of models from that unit within 1&quot; of him.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="1159-db20-9781-20ba" name="New InfoLink" hidden="false" targetId="3498-7560-3a1a-9e27" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="0cd6-11f5-f553-8fc9" name="New InfoLink" hidden="false" targetId="acb1-64c4-ef54-3a55" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="e587-a076-d37d-48bb" name="New InfoLink" hidden="false" targetId="d0ea-e2a6-032d-8754" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0233-c83c-f06a-998f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="050f-19ef-99d2-2ee7" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b4e9-0ba5-8e0a-b391" name="Armour of Fate" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="e6b5-97d1-1f99-30e0" name="Armour of Fate" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="The Armour of Fate confers a 3+ invulnerable save.  In addition, if Rouboute Guilliman is slain, place a marker at the spot at which he was slain.  At the beginning of your next turn, roll a dice.  On a 4 or more Guilliman is restored by his armour - place him as close as possible to the marker, more than 1&quot; from any units, with D3 wounds remaining.  Otherwise Guilliman is slain.  If the marker is on the battlefield at the end of the game, Guilliman is considered to be slain."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfca-e19e-24d5-e167" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b2e-3b34-6fdf-e461" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="350.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e8da-4376-f352-15a4" name="Chapter Relic (UM): The Standard of Macragge Involate" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="65c0-a56a-5485-aec1" name="Chapter Relic (UM): The Standard of Macragge Involate" book="Gathering Storm: Rise of the Primarch" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Friendly Ultramarines units within 12&quot; of the bearer of this standard add 1 to their Leadership characteristic.  In addition, the bearer and his unit have +1 attack while the bearer is alive.  Finally, roll a dice each time a friendly Ultramarines Infantry model is killed within 6&quot; of this standard, before removing the model as a casualty; on a 6+ that Space Marine can make an out-of-sequence shooting attack if it is the Movement, Psychic or Shooting phase, or pile in and make its attacks if it is the Fight sub-phase (at the normal Initiative step)."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a187-1926-d5ec-815e" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="60.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -55230,6 +55706,21 @@ Centurion Assault Squads can be taken as fast attack choices as well as elites c
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dbe6-9931-e303-3b2c" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="0f5f-a279-cb8e-dd1b" name="" hidden="false" targetId="fc7a-da99-259f-656f" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="40">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b7af-34cb-14d2-6685" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1ef4-c6ad-4280-9f3b" name="(FW) Legacies of Glory (Walker)" hidden="false" collective="false">
@@ -55986,6 +56477,15 @@ Centurion Assault Squads can be taken as fast attack choices as well as elites c
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="66d9-42b4-5a32-774f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6524-a8df-ae7d-bcae" name="" hidden="false" targetId="fc7a-da99-259f-656f" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="86c7-a36b-fdfc-1c0f" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
