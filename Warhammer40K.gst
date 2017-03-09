@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2027" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2028" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -7130,6 +7130,211 @@ BENEDICTION OF OMNISCIENCE
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1595-cd9a-be0f-b396" name="Cypher, Lord of the Fallen" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="a5e6-8ade-856f-8982" name="Cypher" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantry (Character)"/>
+            <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="7"/>
+            <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="10"/>
+            <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="4"/>
+            <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
+            <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="3"/>
+            <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="8"/>
+            <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="3"/>
+            <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="10"/>
+            <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="2f5f-ec01-4ea9-b9eb" name="At Any Cost" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>In missions that include both Dark Angels Models and either Cypher or units of Fallen, the following additional objectives must be used:
+
+If Cypher is captured (see Divine Protection) by a Dark Angel model, the player whose army includes the Dark Angels scores 3 Victory Points.
+If the Cypher is forced to escape or is captured by a model that is not a Dark Angel, neither side receives any additional Victory Points.
+If Cypher is neither captured nor forced to escape before the end of the battle, the player whose army includes Cypher scores D3 Victory Points.
+
+If several models are in a position to capture Cypher, some of which are Dark Angels and some of which are not, randomly decide which of the models is the one that captures him.</description>
+        </rule>
+        <rule id="d1ed-8dba-a3ea-7ac9" name="Blazing Weapons" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Cypher can shoot both of his pistols twice each in his Shooting phase, or can fire them once each either before or after making a Run move.  When making Overwatch shots, Cypher uses his full Ballistic Skill.  In the Assault phase, half of Cypher&apos;s close combat attakcs (rounding up) are Strength 4 and AP5, and all remaining attacks are Strength 7 and AP2.</description>
+        </rule>
+        <rule id="f8c3-6d32-b452-394f" name="As Ye Sow, So Shall Ye Reap" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Cypher cannot be selected as the Warlord of an army. In addition, the Leadership characteristic of the Warlord of an army that includes Cypher suffers a -1 penalty.</description>
+        </rule>
+        <rule id="3a12-8dfc-0e43-2668" name="Never Forgive" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>In missions that include both Dark Angels Models and either Cypher or units of Fallen, all Dark Angels models with the Deathwing special rule also receive the Zealot special rule.</description>
+        </rule>
+        <rule id="a232-9c5c-0677-a04d" name="Divine Protection" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If there is an enemy model within D6&quot; of Cypher when he loses his last Wound or is otherwise removed as a casualty, then Cypher is assumed to have been captured alive. If there are no enemy models within this range when Cypher is removed as a casualty, then he has made a miraculous escape. If Cypher escapes, then he is not considered to be a casualty for the purposes of awarding Victory Points. If he is captured, then Victory Points are awarded normally.</description>
+        </rule>
+        <rule id="aa2d-0512-f888-c2a6" name="Cypher (Details)" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Cypher cannot be taken in any army that contains models from Codex: Dark Angels.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="bf81-ef89-6a65-5463" name="" hidden="false" targetId="2e56-6b02-4343-0e40" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ab2b-f26f-2c0d-eb76" name="" hidden="false" targetId="1b52-f89b-6c9b-c3c2" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="eb65-19bf-02b1-427e" name="" hidden="false" targetId="39c6-1f20-a156-47f4" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="0940-b6cd-8fc7-6fbd" name="" hidden="false" targetId="ef3b-09c6-4024-cd37" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6aab-4c27-8377-8816" name="" hidden="false" targetId="7182-6dce-dc98-9f7c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="a6b3-672d-7d6b-a3a2" name="" hidden="false" targetId="0b11-a0ff-f0ba-5341" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="c297-f678-0285-d053" name="" hidden="false" targetId="f172-03fe-1e9f-c363" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f5b-7b57-b780-b630" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="1510-c1d8-f2d7-2dda" name="Relic: Cypher&apos;s Pistols" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="9bd1-712f-25a3-0f96" name="Cypher&apos;s Bolt Pistol" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="16&quot;"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="4"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="5"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol"/>
+              </characteristics>
+            </profile>
+            <profile id="1a38-efdc-5220-f75c" name="Cypher&apos;s Plasma Pistol" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="7"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b7a-4ac0-a144-7aa4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e991-8c6f-34cd-27c2" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d2d7-a81e-0aae-bb80" name="Frag and Krak Grenades" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="5d76-c537-47a2-1242" name="" hidden="false" targetId="fdd8-1a5f-5722-d6ee" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="493f-78da-2ab9-2d8b" name="" hidden="false" targetId="3bf6-b4f7-6b2f-bb7b" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ef4b-117a-03e8-3950" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10b5-2cf1-5ab1-e84e" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="190.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
