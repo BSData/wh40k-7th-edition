@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" name="Space Marines: Codex (2015)" revision="2031" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" name="Space Marines: Codex (2015)" revision="2032" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="bab5-1920-a2ed-5b27" name="Vulkan&apos;s Teachings" book="Supplement: Angels of Death" hidden="false">
@@ -8963,7 +8963,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
         <cost name="pts" costTypeId="points" value="185.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f1ac-89a0-918d-0acd" name="High Marshal Helbrecht" hidden="true" collective="false" type="model">
+    <selectionEntry id="f1ac-89a0-918d-0acd" name="High Marshal Helbrecht" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="140b-dea9-c305-1d5d" name="High Marshal Helbrecht" book="Codex: Space Marines" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
           <profiles/>
@@ -9029,13 +9029,13 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions/>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="276a-f653-dc2c-9f1a" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="276a-f653-dc2c-9f1a" type="lessThan"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -52448,7 +52448,25 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           </modifiers>
         </infoLink>
       </infoLinks>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="lessThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae1a-0131-077a-64f8" type="lessThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0d2-d3e2-3633-e20e" type="lessThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f06a-a66c-4b4c-f931" type="lessThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e7-20c3-9381-df2d" type="lessThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="658d-34d6-85f2-053b" type="lessThan"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d232-11fa-c968-6c10" type="max"/>
       </constraints>
@@ -52728,7 +52746,9 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           </constraints>
         </entryLink>
       </entryLinks>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d4eb-84ff-a7ef-e053" name="Chapter Relic (UM): Tarentian Cloak" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -52951,7 +52971,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41db-9558-4271-fca0" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="feae-332a-2806-1f40" name="New EntryLink" hidden="false" targetId="5d45-f3d4-edf2-f775" type="selectionEntry">
+        <entryLink id="feae-332a-2806-1f40" name="New EntryLink" hidden="false" targetId="01cb-069b-1e31-75ee" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -52962,237 +52982,8 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           </constraints>
         </entryLink>
       </entryLinks>
-      <costs/>
-    </selectionEntry>
-    <selectionEntry id="5d45-f3d4-edf2-f775" name="Grand Master Voldus, Warden of the Librarius" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="model">
-      <profiles>
-        <profile id="46e3-59f6-a235-0596" name="Grand Master Voldus" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantry (Character)"/>
-            <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="6"/>
-            <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="5"/>
-            <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="4"/>
-            <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
-            <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="3"/>
-            <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="5"/>
-            <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="4"/>
-            <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="10"/>
-            <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/4++"/>
-          </characteristics>
-        </profile>
-        <profile id="8d86-1a11-c7ce-0ccb" name="Warlord Trait: Lore Master" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Voldus knows one or more power than is normal for his Master Level.  This must be generated from the Daemonology (Sanctic) discipline."/>
-          </characteristics>
-        </profile>
-        <profile id="c2fb-ddd0-9e24-c8d3" name="Grand Master Voldus (Psyker)" book="Gathering Storm: Rise of the Primarch" page="" hidden="false" profileTypeId="bc97-dea9-9e88-bb7d" profileTypeName="Psyker">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Mastery Level" characteristicTypeId="ca56-02c3-af4b-ea2a" value="3"/>
-            <characteristic name="Disciplines" characteristicTypeId="ea53-f5c7-08e4-980c" value="Daemonology (Sanctic), Divination, Fulmination, Geokinesis, Librarius, Pyromancy, Technomancy, Telekinesis, and Telepathy"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="458b-f928-cedb-9226" name="The Aegis" book="Gathering Storm: Rise of the Primarch" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>A unit that contains at least one model with this special rule re-rolls results of 1 when making Deny the Witch tests.</description>
-        </rule>
-        <rule id="fb1e-a43a-36f9-1ea4" name="Purity of Spirit" book="Gathering Storm: Rise of the Primarch" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Grey Knights Psykers can generate psychic powers from the Daemonology (Sanctic) discipline.  In addition, unless otherwise stated, when attempting to manifest psychic powers from the Daemonology discipline, Grey Knights Psykers only suffer Perils of the Warp if two or more 6s are rolled when taking a psychic test.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="9e18-3911-98e8-1c0c" name="New InfoLink" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="ca2a-8369-7fcb-7f7b" name="New InfoLink" hidden="false" targetId="b4c1-e1df-b875-92a6" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="bd51-c291-b94c-5320" name="New InfoLink" hidden="false" targetId="7674-690c-ab59-1444" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="7c51-c55b-9ee8-d286" name="New InfoLink" hidden="false" targetId="2e56-6b02-4343-0e40" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="d047-b82f-5ea0-4273" name="New InfoLink" hidden="false" targetId="ef3b-09c6-4024-cd37" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="c80c-e1ae-efc1-7118" name="New InfoLink" hidden="false" targetId="f217-b311-e5b1-c8c7" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="append" field="name" value="(Daemons)">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink id="d6a6-966b-2833-5eb2" name="New InfoLink" hidden="false" targetId="7a42-bcc8-95a0-302d" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="append" field="name" value="(Mastery Level 3)">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b115-549d-14b0-8bd0" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="beb2-48ac-0577-c994" name="Psyk-out Grenades" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="0204-aaac-5a27-0d07" name="Psyk-out Grenades" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="8&quot;"/>
-                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="2"/>
-                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="-"/>
-                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1, Blast, Psi-shock, Assault Grenades"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="e43c-def4-381f-7132" name="Psi-shock" book="Gathering Storm: Rise of the Primarch" hidden="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <description>If a unit containing at least one Psyker (i.e. a model with the Psyker, Brotherhood of Psykers/Sorcerers or Psychic Pilot special rule) is hit by a weapon with the Psi-shock special rule, one randomly determined Psyker model in that unit suffers Perils of the Warp in addition to any other damage.</description>
-            </rule>
-          </rules>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e72-f1bf-a52b-de47" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1f4-238d-f21b-500e" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs/>
-        </selectionEntry>
-        <selectionEntry id="73f1-8d71-f7bc-a07e" name="Malleus Argyrum" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="cff3-92b8-f5e7-626a" name="Malleus Argyrum" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
-                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="2x"/>
-                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
-                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Force, Concussive, Daemonbane, Specialist Weapon"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="9eb7-f474-434a-3512" name="Daemonbane" book="Gathering Storm: Rise of the Primarch" hidden="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <description>If the Force psychic power is successfully manifested and targets a unit with one or more weapons with this special rule then, in addition to the usual effects, all weapons with this special rule re-roll failed To Wound and armour penetration rolls against models with the Daemon special rule whist the blessing is in effect.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="87de-a05c-6e87-8c0e" name="New InfoLink" hidden="false" targetId="d0ea-e2a6-032d-8754" type="rule">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-            <infoLink id="e47d-4afd-5103-fe05" name="New InfoLink" hidden="false" targetId="f588-4e5a-a032-0aee" type="rule">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18dc-32bd-fc16-5940" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23ba-f206-e0f4-b083" type="min"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs/>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="5247-6505-8bc8-f7e4" name="New EntryLink" hidden="false" targetId="333f-a8ca-83c9-e7d7" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="points" value="0.0">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1788-e0c1-7b6b-5ae8" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bde-b977-3be0-ace7" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="1b93-010b-491b-c483" name="New EntryLink" hidden="false" targetId="2f28-0a8e-362d-a945" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-      </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="240.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
