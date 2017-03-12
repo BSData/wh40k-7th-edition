@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="987d0372-0952-75b7-886f-6ef3ba934216" name="Grey Knights: Codex (2014)" book="Codex: Grey Knights" revision="2014" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="987d0372-0952-75b7-886f-6ef3ba934216" name="Grey Knights: Codex (2014)" book="Codex: Grey Knights" revision="2015" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1785,7 +1785,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       <modifiers/>
       <constraints/>
     </entryLink>
-    <entryLink id="5aa29d07-a934-7ce1-fba2-a58bda90f16a" hidden="false" targetId="dd923150-7811-a990-7b08-6a7cb936294f" type="selectionEntry">
+    <entryLink id="5aa29d07-a934-7ce1-fba2-a58bda90f16a" hidden="false" targetId="dd923150-7811-a990-7b08-6a7cb936294f" type="selectionEntry" categoryEntryId="c888f08a-6cea-4a01-8126-d374a9231554">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1849,7 +1849,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       </modifiers>
       <constraints/>
     </entryLink>
-    <entryLink id="d7dc-66f8-0c26-1358" name="New EntryLink" hidden="false" targetId="bdee-f95e-fcbd-01ec" type="selectionEntry">
+    <entryLink id="d7dc-66f8-0c26-1358" name="New EntryLink" hidden="false" targetId="bdee-f95e-fcbd-01ec" type="selectionEntry" categoryEntryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1870,7 +1870,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       </modifiers>
       <constraints/>
     </entryLink>
-    <entryLink id="2a49-c575-a544-b6c0" name="New EntryLink" hidden="false" targetId="6755-ac2f-6fcf-d8ac" type="selectionEntry">
+    <entryLink id="2a49-c575-a544-b6c0" name="New EntryLink" hidden="false" targetId="6755-ac2f-6fcf-d8ac" type="selectionEntry" categoryEntryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2172,30 +2172,34 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="hidden" value="false">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdee-f95e-fcbd-01ec" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdee-f95e-fcbd-01ec" type="atLeast"/>
               </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="594e-acdb-a462-99e7" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="0672-8e90-cb42-3526" name="New EntryLink" hidden="false" targetId="80a5-f64a-d9dd-9e73" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="hidden" value="false">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="860f-30d5-84cc-67ad" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5bc2-e061-a439-c689" type="atLeast"/>
               </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e1e-eb65-78da-9703" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -7420,30 +7424,34 @@ All squads must include 10 models.</description>
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="hidden" value="false">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="860f-30d5-84cc-67ad" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5bc2-e061-a439-c689" type="atLeast"/>
               </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70c1-60ae-5f74-ad9e" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="f1a6-dc7f-215b-a197" name="New EntryLink" hidden="false" targetId="fd88-921b-3770-129a" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="hidden" value="false">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdee-f95e-fcbd-01ec" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdee-f95e-fcbd-01ec" type="atLeast"/>
               </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="025a-0534-276c-c191" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -10682,7 +10690,29 @@ All squads must include 10 models.</description>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="4256-cf9f-9f81-8730" name="Storm Bolter" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="074b-608a-49fa-c5de" name="New InfoLink" hidden="false" targetId="487d141d-f136-ff65-41e0-438c617e86d1" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73fd-0b5d-146a-5a47" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a11d-e3ef-cbea-0bf6" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
         <entryLink id="1ba94c55-0a7e-0dc1-039f-35e275017158" hidden="false" targetId="440a616c-4c35-0c02-e1b1-4f18ab13971c" type="selectionEntryGroup">
@@ -12161,30 +12191,34 @@ Wing Leaders are free upgrades for Flyers. One model in each Flyer Wing can be u
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="hidden" value="false">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdee-f95e-fcbd-01ec" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bdee-f95e-fcbd-01ec" type="atLeast"/>
               </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c143-11a3-c31d-b5d9" type="max"/>
+          </constraints>
         </entryLink>
         <entryLink id="2b30-2297-3797-f7e9" name="New EntryLink" hidden="false" targetId="80a5-f64a-d9dd-9e73" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="hidden" value="false">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="860f-30d5-84cc-67ad" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5bc2-e061-a439-c689" type="atLeast"/>
               </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d774-839c-6ee7-c6d5" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
