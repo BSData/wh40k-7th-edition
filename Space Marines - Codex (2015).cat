@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" name="Space Marines: Codex (2015)" revision="2032" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" name="Space Marines: Codex (2015)" revision="2033" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="bab5-1920-a2ed-5b27" name="Vulkan&apos;s Teachings" book="Supplement: Angels of Death" hidden="false">
@@ -3409,11 +3409,19 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
       </modifiers>
       <constraints/>
     </entryLink>
-    <entryLink id="ad2f-3656-35f5-8b08" name="" hidden="false" targetId="f19a-2c17-8523-6b78" type="selectionEntry" categoryEntryId="c888f08a-6cea-4a01-8126-d374a9231554">
+    <entryLink id="ad2f-3656-35f5-8b08" name="" hidden="false" targetId="42fe-b322-a2a3-0ed8" type="selectionEntry" categoryEntryId="c888f08a-6cea-4a01-8126-d374a9231554">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
     <entryLink id="871b-fb5e-1ef4-c284" name="" hidden="false" targetId="f7fc-bd16-5771-2dbf" type="selectionEntry" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
@@ -3454,6 +3462,13 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
       <constraints/>
     </entryLink>
     <entryLink id="ec06-bdea-5eaa-0130" name="" hidden="false" targetId="e8a1-d0a8-a2fc-be98" type="selectionEntry" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="f97a-4dc9-1d5c-30ff" name="" hidden="false" targetId="01cb-069b-1e31-75ee" type="selectionEntry" categoryEntryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -4910,7 +4925,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
         <cost name="pts" costTypeId="points" value="60.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="de7e-a420-de5d-4ead" name="Captain Sicarius" hidden="true" collective="false" type="model">
+    <selectionEntry id="de7e-a420-de5d-4ead" name="Captain Sicarius" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="f525-fb3f-6e9c-2070" name="Captain Sicarius" book="Codex: Space Marines" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
           <profiles/>
@@ -4953,7 +4968,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Ultramarines)">
+            <modifier type="append" field="name" value="(Ultramarines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -4992,22 +5007,12 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae1a-0131-077a-64f8" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0d2-d3e2-3633-e20e" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f06a-a66c-4b4c-f931" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e7-20c3-9381-df2d" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="658d-34d6-85f2-053b" type="atLeast"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -5089,7 +5094,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
         <cost name="pts" costTypeId="points" value="175.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e58c-dea3-2d92-df99" name="Chief Librarian Tigurius" hidden="true" collective="false" type="model">
+    <selectionEntry id="e58c-dea3-2d92-df99" name="Chief Librarian Tigurius" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="095a-7795-b686-9d4e" name="Chapter Relic: Hood of Hellfire" book="Codex: Space Marines" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
           <profiles/>
@@ -5150,7 +5155,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Ultramarines)">
+            <modifier type="append" field="name" value="(Ultramarines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -5177,22 +5182,12 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae1a-0131-077a-64f8" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0d2-d3e2-3633-e20e" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f06a-a66c-4b4c-f931" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e7-20c3-9381-df2d" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="658d-34d6-85f2-053b" type="atLeast"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -5332,7 +5327,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="379f-15a3-99a9-b728" name="Chaplain Cassius" hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="379f-15a3-99a9-b728" name="Chaplain Cassius" hidden="false" collective="false" type="upgrade">
       <profiles>
         <profile id="dde2-f6c3-7699-61cc" name="Warlord Trait: Angel of Death" book="Codex: Space Marines" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
           <profiles/>
@@ -5369,7 +5364,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Ultramarines)">
+            <modifier type="append" field="name" value="(Ultramarines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -5399,7 +5394,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Tyranids)">
+            <modifier type="append" field="name" value="(Tyranids)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -5414,22 +5409,12 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae1a-0131-077a-64f8" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0d2-d3e2-3633-e20e" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f06a-a66c-4b4c-f931" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e7-20c3-9381-df2d" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="658d-34d6-85f2-053b" type="atLeast"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -6301,7 +6286,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="78fb-5d32-275c-1577" name="Sergeant Telion" hidden="true" collective="false" type="model">
+    <selectionEntry id="78fb-5d32-275c-1577" name="Sergeant Telion" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="c61a-3e7e-0f34-eee8" name="Sergeant Telion" book="Codex: Space Marines" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
           <profiles/>
@@ -6357,7 +6342,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Ultramarines)">
+            <modifier type="append" field="name" value="(Ultramarines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -6408,22 +6393,12 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae1a-0131-077a-64f8" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0d2-d3e2-3633-e20e" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f06a-a66c-4b4c-f931" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e7-20c3-9381-df2d" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="658d-34d6-85f2-053b" type="atLeast"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -6514,7 +6489,7 @@ Devastator: Affected models can re-roll To Hit rolls of 1 in the Shooting phase 
         <cost name="pts" costTypeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="59e3-26c3-f10f-42f1" name="Sergeant Chronus" hidden="true" collective="false" type="model">
+    <selectionEntry id="59e3-26c3-f10f-42f1" name="Sergeant Chronus" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="c95e-d3d4-cfef-5cc4" name="Sergeant Chronus" book="Codex: Space Marines" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
           <profiles/>
@@ -6552,7 +6527,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Ultramarines)">
+            <modifier type="append" field="name" value="(Ultramarines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -6579,22 +6554,12 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae1a-0131-077a-64f8" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0d2-d3e2-3633-e20e" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f06a-a66c-4b4c-f931" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e7-20c3-9381-df2d" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="658d-34d6-85f2-053b" type="atLeast"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -6782,7 +6747,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (White Scars)">
+            <modifier type="append" field="name" value="(White Scars)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -6988,7 +6953,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Salamanders)">
+            <modifier type="append" field="name" value="(Salamanders)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -7205,7 +7170,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Raven Guard)">
+            <modifier type="append" field="name" value="(Raven Guard)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -7349,7 +7314,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
         <cost name="pts" costTypeId="points" value="185.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5c14-3341-3994-2b11" name="The Emperor&apos;s Champion" hidden="true" collective="false" type="model">
+    <selectionEntry id="5c14-3341-3994-2b11" name="The Emperor&apos;s Champion" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="71ff-3813-9e1d-72ec" name="Chapter Relic: Black Sword" book="Codex: Space Marines" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
           <profiles/>
@@ -7413,7 +7378,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Black Templars)">
+            <modifier type="append" field="name" value="(Black Templars)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -7434,17 +7399,12 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="276a-f653-dc2c-9f1a" type="atLeast"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="276a-f653-dc2c-9f1a" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -7475,7 +7435,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
         <cost name="pts" costTypeId="points" value="140.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="25d2-9097-bbfc-0545" name="Chaplain Grimaldus" hidden="true" collective="false" type="model">
+    <selectionEntry id="25d2-9097-bbfc-0545" name="Chaplain Grimaldus" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="c96e-306d-23f4-a54b" name="Chaplain Grimaldus" book="Codex: Space Marines" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
           <profiles/>
@@ -7511,7 +7471,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Black Templars)">
+            <modifier type="append" field="name" value="(Black Templars)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -7544,17 +7504,12 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="276a-f653-dc2c-9f1a" type="atLeast"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="276a-f653-dc2c-9f1a" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -7652,7 +7607,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Ultramarines)">
+            <modifier type="append" field="name" value="(Ultramarines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -8605,7 +8560,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bc5e-6ce7-4447-040f" name="Captain Lysander" hidden="true" collective="false" type="model">
+    <selectionEntry id="bc5e-6ce7-4447-040f" name="Captain Lysander" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="84e5-38a0-0547-0ab5" name="Captain Lysander" book="Codex: Space Marines" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
           <profiles/>
@@ -8658,7 +8613,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Imperial Fists)">
+            <modifier type="append" field="name" value="(Imperial Fists)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -8705,14 +8660,14 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions/>
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dc7-a061-d8cc-5b1b" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="819d-ff65-9d7a-a84b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dc7-a061-d8cc-5b1b" type="lessThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="819d-ff65-9d7a-a84b" type="lessThan"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -8802,7 +8757,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
         <cost name="pts" costTypeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6d87-7851-f01c-5a02" name="Pedro Kantor" hidden="true" collective="false" type="model">
+    <selectionEntry id="6d87-7851-f01c-5a02" name="Pedro Kantor" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="84bb-5483-6a67-115c" name="Pedro Kantor" book="Codex: Space Marines" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
           <profiles/>
@@ -8854,7 +8809,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Imperial Fists)">
+            <modifier type="append" field="name" value="(Imperial Fists)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -8875,14 +8830,14 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions/>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dc7-a061-d8cc-5b1b" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="819d-ff65-9d7a-a84b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dc7-a061-d8cc-5b1b" type="lessThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="819d-ff65-9d7a-a84b" type="lessThan"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -9008,7 +8963,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Black Templars)">
+            <modifier type="append" field="name" value="(Black Templars)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -9031,15 +8986,10 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="276a-f653-dc2c-9f1a" type="lessThan"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="276a-f653-dc2c-9f1a" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -15626,7 +15576,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
         <cost name="pts" costTypeId="points" value="240.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d1e1-af35-d888-d961" name="Marneus Calgar" book="Codex: Space Marines" hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="d1e1-af35-d888-d961" name="Marneus Calgar" book="Codex: Space Marines" hidden="false" collective="false" type="upgrade">
       <profiles>
         <profile id="4103-e49e-7d0b-e0f8" name="Marneus Calgar" book="Codex: Space Marines" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
           <profiles/>
@@ -15695,7 +15645,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Ultramarines)">
+            <modifier type="append" field="name" value="(Ultramarines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -15704,22 +15654,12 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae1a-0131-077a-64f8" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0d2-d3e2-3633-e20e" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f06a-a66c-4b4c-f931" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e7-20c3-9381-df2d" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="658d-34d6-85f2-053b" type="atLeast"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <constraints>
@@ -18251,7 +18191,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Black Templars)">
+            <modifier type="append" field="name" value="(Black Templars)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -28127,7 +28067,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Tyranids)">
+            <modifier type="append" field="name" value="(Tyranids)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -28139,7 +28079,7 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Ultramarines)">
+            <modifier type="append" field="name" value="(Ultramarines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -30801,7 +30741,7 @@ Harassing Fire: Any unit that suffers one or more unsaved Wounds from a unit tha
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Raven Guard)">
+            <modifier type="append" field="name" value="(Raven Guard)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -30910,7 +30850,7 @@ Harassing Fire: Any unit that suffers one or more unsaved Wounds from a unit tha
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Raven Guard)">
+            <modifier type="append" field="name" value="(Raven Guard)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -31352,7 +31292,7 @@ Harassing Fire: Any unit that suffers one or more unsaved Wounds from a unit tha
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Raven Guard)">
+            <modifier type="append" field="name" value="(Raven Guard)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -32407,7 +32347,7 @@ Harassing Fire: Any unit that suffers one or more unsaved Wounds from a unit tha
               <modifiers/>
               <constraints/>
             </entryLink>
-            <entryLink id="7959-1deb-c6db-5ddd" name="" hidden="false" targetId="f19a-2c17-8523-6b78" type="selectionEntry">
+            <entryLink id="7959-1deb-c6db-5ddd" name="" hidden="false" targetId="42fe-b322-a2a3-0ed8" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -36317,7 +36257,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Red Scorpions)">
+            <modifier type="append" field="name" value="(Red Scorpions)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -36523,7 +36463,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Red Scorpions)">
+            <modifier type="append" field="name" value="(Red Scorpions)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -36700,7 +36640,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Carcharodons)">
+            <modifier type="append" field="name" value="(Carcharodons)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -36890,7 +36830,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Ultramarines)">
+            <modifier type="append" field="name" value="(Ultramarines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -37108,7 +37048,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Ultramarines)">
+            <modifier type="append" field="name" value="(Ultramarines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -37324,7 +37264,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Ultramarines)">
+            <modifier type="append" field="name" value="(Ultramarines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -37552,7 +37492,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Raptors)">
+            <modifier type="append" field="name" value="(Raptors)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -37757,7 +37697,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Ultramarines)">
+            <modifier type="append" field="name" value="(Ultramarines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -37939,7 +37879,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Salamanders)">
+            <modifier type="append" field="name" value="(Salamanders)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -38127,7 +38067,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Salamanders)">
+            <modifier type="append" field="name" value="(Salamanders)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -38312,7 +38252,7 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Salamanders)">
+            <modifier type="append" field="name" value="(Salamanders)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -38480,7 +38420,7 @@ Mirage is a blessing that targets the psyker, as well as any unit he has joined 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Mantis Warriors)">
+            <modifier type="append" field="name" value="(Mantis Warriors)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -38622,7 +38562,7 @@ Mirage is a blessing that targets the psyker, as well as any unit he has joined 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Executioners)">
+            <modifier type="append" field="name" value="(Executioners)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -38819,7 +38759,7 @@ Mirage is a blessing that targets the psyker, as well as any unit he has joined 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Star Phantoms)">
+            <modifier type="append" field="name" value="(Star Phantoms)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -38970,7 +38910,7 @@ Mirage is a blessing that targets the psyker, as well as any unit he has joined 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Iron Hands)">
+            <modifier type="append" field="name" value="(Iron Hands)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -39112,7 +39052,7 @@ Mirage is a blessing that targets the psyker, as well as any unit he has joined 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Fire Hawks)">
+            <modifier type="append" field="name" value="(Fire Hawks)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -39315,7 +39255,7 @@ In addition, when an opponent currently fighting a challenge against Silas Alber
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Excorcists)">
+            <modifier type="append" field="name" value="(Excorcists)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -39528,7 +39468,7 @@ Note that if this attack scatters, it will always scatter the full 2D6&quot; –
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Astral Claws)">
+            <modifier type="append" field="name" value="(Astral Claws)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -39693,7 +39633,7 @@ Note that if this attack scatters, it will always scatter the full 2D6&quot; –
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Astral Claws)">
+            <modifier type="append" field="name" value="(Astral Claws)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -39921,7 +39861,7 @@ Note that if this attack scatters, it will always scatter the full 2D6&quot; –
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Astral Claws)">
+            <modifier type="append" field="name" value="(Astral Claws)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -40103,7 +40043,7 @@ Note that if this attack scatters, it will always scatter the full 2D6&quot; –
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Astral Claws)">
+            <modifier type="append" field="name" value="(Astral Claws)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -40269,7 +40209,7 @@ Note that if this attack scatters, it will always scatter the full 2D6&quot; –
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Minotaurs)">
+            <modifier type="append" field="name" value="(Minotaurs)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -40293,7 +40233,7 @@ Note that if this attack scatters, it will always scatter the full 2D6&quot; –
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Space Marines)">
+            <modifier type="append" field="name" value="(Space Marines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -40487,7 +40427,7 @@ Note that if this attack scatters, it will always scatter the full 2D6&quot; –
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Minotaurs)">
+            <modifier type="append" field="name" value="(Minotaurs)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -45664,7 +45604,7 @@ If a unit of Automated Artillery loses an assault, nothing happens - there are n
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Chaos Space Marines)">
+            <modifier type="append" field="name" value="(Chaos Space Marines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -45765,7 +45705,7 @@ If a unit of Automated Artillery loses an assault, nothing happens - there are n
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Chaos Daemons)">
+            <modifier type="append" field="name" value="(Chaos Daemons)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -45860,7 +45800,7 @@ If a unit of Automated Artillery loses an assault, nothing happens - there are n
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Chaos Space Marines)">
+            <modifier type="append" field="name" value="(Chaos Space Marines)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -46114,7 +46054,7 @@ If a unit of Automated Artillery loses an assault, nothing happens - there are n
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Orks)">
+            <modifier type="append" field="name" value="(Orks)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -46152,7 +46092,7 @@ If a unit of Automated Artillery loses an assault, nothing happens - there are n
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Orks)">
+            <modifier type="append" field="name" value="(Orks)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -46375,7 +46315,7 @@ If a unit of Automated Artillery loses an assault, nothing happens - there are n
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Red Scorpions)">
+            <modifier type="append" field="name" value="(Red Scorpions)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -46546,7 +46486,7 @@ If a unit of Automated Artillery loses an assault, nothing happens - there are n
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Red Scorpions)">
+            <modifier type="append" field="name" value="(Red Scorpions)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -47255,7 +47195,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Raven Guard)">
+            <modifier type="append" field="name" value="(Raven Guard)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -47418,7 +47358,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="name" value=" (Infantry, Jump Infantry, Jet Pack Infantry, Bikes, Jet Bikes)">
+            <modifier type="append" field="name" value="(Infantry, Jump Infantry, Jet Pack Infantry, Bikes, Jet Bikes)">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -52318,291 +52258,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f19a-2c17-8523-6b78" name="Roboute Guilliman, Primarch of the Ultramarines" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="model">
-      <profiles>
-        <profile id="a888-c02a-d50c-4502" name="Roboute Guilliman" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Monstrous Creature (Character)"/>
-            <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="9"/>
-            <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="6"/>
-            <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="6"/>
-            <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="6"/>
-            <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="6"/>
-            <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="6"/>
-            <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="6"/>
-            <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="10"/>
-            <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/3++"/>
-          </characteristics>
-        </profile>
-        <profile id="b730-1720-31e6-4dcd" name="The Emperor&apos;s Sword and the Hand of Dominion" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="These weapons are used together, using the profiles below.  It may be used as both a melee weapon and a ranged weapon in the same turn."/>
-          </characteristics>
-        </profile>
-        <profile id="da23-ae6c-f82b-41a8" name="Warlord Trait: Absolute Mastery" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Rouboute Guilliman has all of the Command Traits from Warhammer 40,000: The Rules."/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="07aa-fed1-ceca-04cf" name="Lord Commander of the Imperium" book="Gathering Storm: Rise of the Primarch" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Friendly units from the Armies of the Imperium re-roll failed Morale checks and Fear and Pinning tests while Guilliman is on the battlefield.</description>
-        </rule>
-        <rule id="aa2c-1675-ce7f-0d0d" name="Unyielding Will" book="Gathering Storm: Rise of the Primarch" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Roboute Guilliman&apos;s Leadership is not subject to negative modifiers of any kind and he may re-roll failed Deny the Witch tests.</description>
-        </rule>
-        <rule id="9ad4-42c6-c60c-349d" name="Primarch of the XIII Legion" book="Gathering Storm: Rise of the Primarch" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>You can choose to enact the Devastator, Assault and Tactical Doctrines once each per game (in addition to any you can already use).  When one of these Combat Doctrines is enacted, all Ultramarines models in your army are affected.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="f7fa-b655-2372-5ffa" name="" hidden="false" targetId="894f-81b4-7aca-8eda" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="append" field="name" value=" (Ultramarines)">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink id="ea77-b0b3-0537-4685" name="" hidden="false" targetId="39c6-1f20-a156-47f4" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="56a7-8e36-1a47-5158" name="" hidden="false" targetId="f172-03fe-1e9f-c363" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="b1d1-98c2-6811-1783" name="" hidden="false" targetId="3c7d-11d6-e265-abb4" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="f84f-6014-f70a-13e0" name="" hidden="false" targetId="8714-46ad-62c0-ce35" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="12ed-ad87-24cb-0b42" name="" hidden="false" targetId="8d37-2e47-4a04-58f7" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="a73c-14c1-e440-60e0" name="" hidden="false" targetId="540d-b15f-f709-3bf9" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="5e54-8e00-a76d-c4da" name="" hidden="false" targetId="80c8-1041-d0f1-6e58" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="8300-ebb5-f82a-e858" name="" hidden="false" targetId="f217-b311-e5b1-c8c7" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="append" field="name" value="(Chaos)">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="lessThan"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae1a-0131-077a-64f8" type="lessThan"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0d2-d3e2-3633-e20e" type="lessThan"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f06a-a66c-4b4c-f931" type="lessThan"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7e7-20c3-9381-df2d" type="lessThan"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="658d-34d6-85f2-053b" type="lessThan"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d232-11fa-c968-6c10" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="d876-9bfb-1612-9091" name="The Hand of Dominion" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="24bc-1cf7-c52e-975d" name="Hand of Dominion" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
-                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="6"/>
-                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
-                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 3, Rending"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules/>
-          <infoLinks>
-            <infoLink id="2ed5-88c1-9018-430c" name="New InfoLink" hidden="false" targetId="6a76-59d1-822c-59c9" type="rule">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e7f-d868-9ce7-26d3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f27-f743-5856-ab02" type="min"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8016-95ff-d078-c4fd" name="The Emperor&apos;s Sword" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="ebb6-5334-1990-6886" name="The Empereor&apos;s Sword" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
-                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="10"/>
-                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="1"/>
-                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Armourbane, Concussion, Soul Blaze, Touch of the Emperor, Whirling Flame"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="6ecd-8766-8445-0bcc" name="Touch of the Emperor" book="Gathering Storm: Rise of the Primarch" hidden="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <description>Any attacks with this weapon with a To Hit roll of 6 are resolved at Strength D rather than Strength 10.</description>
-            </rule>
-            <rule id="4087-2ed2-9895-4700" name="Whirling Flame" book="Gathering Storm: Rise of the Primarch" hidden="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <description>In the Fight sub-phase, rather than making attacks normally, Guilliman can make a number of attacks with this weapon against each enemy unit engaged in his combat equal to the number of models from that unit within 1&quot; of him.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="1159-db20-9781-20ba" name="New InfoLink" hidden="false" targetId="3498-7560-3a1a-9e27" type="rule">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-            <infoLink id="0cd6-11f5-f553-8fc9" name="New InfoLink" hidden="false" targetId="acb1-64c4-ef54-3a55" type="rule">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-            <infoLink id="e587-a076-d37d-48bb" name="New InfoLink" hidden="false" targetId="d0ea-e2a6-032d-8754" type="rule">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0233-c83c-f06a-998f" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="050f-19ef-99d2-2ee7" type="min"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b4e9-0ba5-8e0a-b391" name="Armour of Fate" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="e6b5-97d1-1f99-30e0" name="Armour of Fate" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="The Armour of Fate confers a 3+ invulnerable save.  In addition, if Rouboute Guilliman is slain, place a marker at the spot at which he was slain.  At the beginning of your next turn, roll a dice.  On a 4 or more Guilliman is restored by his armour - place him as close as possible to the marker, more than 1&quot; from any units, with D3 wounds remaining.  Otherwise Guilliman is slain.  If the marker is on the battlefield at the end of the game, Guilliman is considered to be slain."/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfca-e19e-24d5-e167" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b2e-3b34-6fdf-e461" type="min"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="350.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="e8da-4376-f352-15a4" name="Chapter Relic (UM): The Standard of Macragge Involate" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
       <profiles>
         <profile id="65c0-a56a-5485-aec1" name="The Standard of Macragge Involate" book="Gathering Storm: Rise of the Primarch" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
@@ -52691,7 +52346,15 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </rule>
       </rules>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
@@ -52946,7 +52609,15 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </rule>
       </rules>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -52961,7 +52632,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c67-1cdb-2744-024f" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="b593-c31c-bc33-3bac" name="New EntryLink" hidden="false" targetId="f19a-2c17-8523-6b78" type="selectionEntry">
+        <entryLink id="b593-c31c-bc33-3bac" name="New EntryLink" hidden="false" targetId="42fe-b322-a2a3-0ed8" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
