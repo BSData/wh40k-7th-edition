@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2301-1cab-6d58-f23b" name="Skitarii: Codex (2015)" book="Codex: Skitarii" revision="2009" battleScribeVersion="2.00" authorName="True_Hisop" authorContact="" authorUrl="https://github.com/BSData/wh40k/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2301-1cab-6d58-f23b" name="Skitarii: Codex (2015)" book="Codex: Skitarii" revision="2011" battleScribeVersion="2.00" authorName="True_Hisop" authorContact="" authorUrl="https://github.com/BSData/wh40k/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -841,7 +841,7 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
       <modifiers/>
       <constraints/>
     </entryLink>
-    <entryLink id="b133-f7f6-9104-3552" name="w" hidden="false" targetId="40ff-ce13-d176-71a8" type="selectionEntry">
+    <entryLink id="b133-f7f6-9104-3552" name="w" hidden="false" targetId="40ff-ce13-d176-71a8" type="selectionEntry" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1499,22 +1499,92 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <selectionEntries/>
-      <selectionEntryGroups/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="eb77-2f10-dafe-70eb" name="Ranged Weapons" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="46c0-5b90-83ea-2235" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="d166-3bbf-7d1c-0a7e" hidden="false" targetId="2eaa-5228-339d-7099" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="ec66-b613-816b-4b36" hidden="false" targetId="678f-fa9a-29f5-ab12" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="e16d-739c-3cc7-8377" hidden="false" targetId="b939-8233-3381-e0ac" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5bd1-e404-a017-a9f4" name="Melee Weapons" hidden="false" collective="false" defaultSelectionEntryId="35fa-8f92-ce8f-f1bd">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fc36-225e-bc47-3a4b" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9d84-7cf5-b3dc-0c76" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="6957-50ba-d034-278b" hidden="false" targetId="3ae0-0beb-303f-c347" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="b611-ce72-7130-3a55" hidden="false" targetId="7ac2-7461-59fa-ceb6" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="1cbe-0c9d-1e31-975d" hidden="false" targetId="21d5-c2f0-54b1-504e" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="35fa-8f92-ce8f-f1bd" hidden="false" targetId="3c91-f131-40a7-1b2e" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="298a-ddfc-52f8-5e94" hidden="false" targetId="2572-5e03-2b6d-b4f2" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="e240-85b5-4e64-0ddb" hidden="false" targetId="f1c1-9ab9-f615-90ec" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
         <entryLink id="eaaf-6d31-1ce2-67a0" hidden="false" targetId="8690-5b39-f5d0-b390" type="selectionEntryGroup">
           <profiles/>
           <rules/>
@@ -1764,7 +1834,7 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
               </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="set" field="192e-829f-150a-0969" value="3">
+            <modifier type="set" field="192e-829f-150a-0969" value="6">
               <repeats/>
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
@@ -2395,7 +2465,7 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
               </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="set" field="3fec-2ce8-4249-304d" value="3">
+            <modifier type="set" field="3fec-2ce8-4249-304d" value="6">
               <repeats/>
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2086-3a89-9082-e522" type="instanceOf"/>
@@ -5921,15 +5991,15 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
           <modifiers/>
           <constraints/>
         </entryLink>
-        <entryLink id="b083-6199-e595-31f9" hidden="true" targetId="5388-253a-2cef-1ec4" type="selectionEntry">
+        <entryLink id="b083-6199-e595-31f9" hidden="false" targetId="5388-253a-2cef-1ec4" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" field="hidden" value="true">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b46-d8cd-2068-98f7" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b46-d8cd-2068-98f7" type="notInstanceOf"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -6128,7 +6198,7 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
             <modifier type="set" field="hidden" value="false">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5bc2-e061-a439-c689" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5bc2-e061-a439-c689" type="atLeast"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -6143,7 +6213,7 @@ Until the start of your next turn, all friendly models with the Doctrina Imperat
             <modifier type="set" field="hidden" value="false">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdee-f95e-fcbd-01ec" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdee-f95e-fcbd-01ec" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </modifier>
