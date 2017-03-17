@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2031" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2032" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -10826,6 +10826,27 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <infoLinks/>
       <modifiers/>
       <description>Ruins are difficult terrain. Models in ruins recieve a 4+ cover save, regardless of whether or not they are 25% obscured.</description>
+    </rule>
+    <rule id="6fcc-26d1-ea1b-1e61" name="Zealous Defenders" book="Gathering Storm: Fall of Cadia" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>All units in this Detachment have the Hatred special rule.  However, if this Detachment&apos;s Force Organisation Chart contains the maximum number of units (excluding troops), then all units in the Detachment have the Zealot special rule instead.</description>
+    </rule>
+    <rule id="4bd2-8f9f-71d0-c7d4" name="Flock to the Front Line" book="Gathering Storm: Fall of Cadia" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Each time a Troops unit from this Detachment is completely destroyed, roll a D6. On a 5+, you can immediately place a new unit into Ongoing Reserves that is identical, in terms of the original number of models, weapons and upgrades, to the unit that was just destroyed. This new unit counts as being part of the original Detachment, so roll a D6 as described above if they are subsequently destroyed. Victory points are awarded as normal for new units in this Detachment that have been completely destroyed.</description>
+    </rule>
+    <rule id="1497-66f9-23dd-1aa4" name="Lord Castellan" book="Gathering Storm: Fall of Cadia" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If this Detachment is chosen as your Primary Detachment, you can choose to re-roll the result on the Warlord Trait table.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

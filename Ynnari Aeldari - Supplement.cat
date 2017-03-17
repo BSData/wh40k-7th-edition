@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d744-5cc5-263e-13ca" name="Ynnari Aeldari: Fracture of Biel-Tan (2017)" book="Gathering Storm: Fracture of Biel-Tan" revision="2009" battleScribeVersion="2.00" authorName="Earl Bishop" authorContact="https://gitter.im/BSData/wh40k" authorUrl="https://github.com/BSData/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d744-5cc5-263e-13ca" name="Ynnari Aeldari: Fracture of Biel-Tan (2017)" book="Gathering Storm: Fracture of Biel-Tan" revision="2010" battleScribeVersion="2.00" authorName="Earl Bishop" authorContact="https://gitter.im/BSData/wh40k" authorUrl="https://github.com/BSData/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -3891,7 +3891,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="61e5-b406-1335-c188" name="New InfoLink" hidden="false" targetId="bed4-744a-a68d-dea0" type="profile">
+        <infoLink id="61e5-b406-1335-c188" name="" hidden="false" targetId="bed4-744a-a68d-dea0" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6038,16 +6038,20 @@
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="set" field="c2a4-f82b-460c-4d19" value="1">
+                <modifier type="set" field="49bf-f437-a900-881d" value="1">
                   <repeats/>
                   <conditions>
                     <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="da43-f6a5-fc4d-ec25" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
+                <modifier type="set" field="points" value="15">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2a4-f82b-460c-4d19" type="min"/>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49bf-f437-a900-881d" type="min"/>
               </constraints>
             </entryLink>
@@ -12453,7 +12457,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c68-5588-bb59-0c49" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="0d0e-1e90-a85d-9348" name="New EntryLink" hidden="false" targetId="aab3-d53c-e629-0818" type="selectionEntry">
+                <entryLink id="0d0e-1e90-a85d-9348" name="" hidden="false" targetId="aab3-d53c-e629-0818" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -12462,7 +12466,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cee-21b2-e8cc-006c" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="01bc-18ec-0e0b-2eb7" name="New EntryLink" hidden="false" targetId="a7fc-0df2-c750-e96e" type="selectionEntry">
+                <entryLink id="01bc-18ec-0e0b-2eb7" name="" hidden="false" targetId="a7fc-0df2-c750-e96e" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -12471,7 +12475,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d06e-ea9a-ebae-e644" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="2d51-4bf2-bd89-a79f" name="New EntryLink" hidden="false" targetId="4de1-3419-5ae5-cc7d" type="selectionEntry">
+                <entryLink id="2d51-4bf2-bd89-a79f" name="" hidden="false" targetId="4de1-3419-5ae5-cc7d" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -12525,17 +12529,29 @@
           <modifiers>
             <modifier type="decrement" field="ed0a-48bf-6a78-592a" value="1">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="7771-7674-8093-ae23" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc67-c990-85eb-6ed4" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="7771-7674-8093-ae23" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc67-c990-85eb-6ed4" type="equalTo"/>
+                    <condition field="selections" scope="7771-7674-8093-ae23" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f2-a2d7-84d2-2445" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="e10e-6a24-dc04-2650" value="1">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="7771-7674-8093-ae23" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc67-c990-85eb-6ed4" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="7771-7674-8093-ae23" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc67-c990-85eb-6ed4" type="equalTo"/>
+                    <condition field="selections" scope="7771-7674-8093-ae23" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f2-a2d7-84d2-2445" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -12653,7 +12669,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b144-096c-a030-80d7" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="e2f7-7ce7-4ec0-f671" name="New EntryLink" hidden="false" targetId="4de1-3419-5ae5-cc7d" type="selectionEntry">
+                <entryLink id="e2f7-7ce7-4ec0-f671" name="" hidden="false" targetId="4de1-3419-5ae5-cc7d" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -12662,7 +12678,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a93b-99f0-936d-6274" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="7213-6c04-15d8-c80c" name="New EntryLink" hidden="false" targetId="aab3-d53c-e629-0818" type="selectionEntry">
+                <entryLink id="7213-6c04-15d8-c80c" name="" hidden="false" targetId="aab3-d53c-e629-0818" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -12671,7 +12687,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ef4-0f45-2f57-43c8" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="3dd3-bae1-5106-00bc" name="New EntryLink" hidden="false" targetId="a7fc-0df2-c750-e96e" type="selectionEntry">
+                <entryLink id="3dd3-bae1-5106-00bc" name="" hidden="false" targetId="a7fc-0df2-c750-e96e" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -13808,7 +13824,7 @@
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="a310-6185-dee2-d4ba" name="New InfoLink" hidden="false" targetId="979d-eb3d-3030-2ff6" type="profile">
+            <infoLink id="a310-6185-dee2-d4ba" name="" hidden="false" targetId="979d-eb3d-3030-2ff6" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -16430,7 +16446,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="bbd6-1eb5-2665-1e3e" name="New InfoLink" hidden="false" targetId="bb60-e3f2-c256-eb63" type="rule">
+        <infoLink id="bbd6-1eb5-2665-1e3e" name="" hidden="false" targetId="bb60-e3f2-c256-eb63" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -18025,7 +18041,7 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="6d82-8173-79a1-2cc8" name="New EntryLink" hidden="false" targetId="9aa5-3967-bba0-e509" type="selectionEntry">
+            <entryLink id="6d82-8173-79a1-2cc8" name="" hidden="false" targetId="9aa5-3967-bba0-e509" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -21709,7 +21725,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="e13a-152d-b5fd-5e60" name="New InfoLink" hidden="false" targetId="465a-9a29-90aa-ccb5" type="profile">
+        <infoLink id="e13a-152d-b5fd-5e60" name="" hidden="false" targetId="465a-9a29-90aa-ccb5" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -23894,7 +23910,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="72b8-8439-611d-1d40" name="New InfoLink" hidden="false" targetId="dc63-6a3c-c612-4b50" type="profile">
+        <infoLink id="72b8-8439-611d-1d40" name="" hidden="false" targetId="dc63-6a3c-c612-4b50" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -27056,7 +27072,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="20cf-31e7-addd-5154" name="New InfoLink" hidden="false" targetId="979d-eb3d-3030-2ff6" type="profile">
+        <infoLink id="20cf-31e7-addd-5154" name="" hidden="false" targetId="979d-eb3d-3030-2ff6" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -27415,7 +27431,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="ebfc-374e-0744-c358" name="New InfoLink" hidden="false" targetId="979d-eb3d-3030-2ff6" type="profile">
+        <infoLink id="ebfc-374e-0744-c358" name="" hidden="false" targetId="979d-eb3d-3030-2ff6" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -27781,7 +27797,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="0497-68a8-92d9-3fd5" name="New InfoLink" hidden="false" targetId="bb60-e3f2-c256-eb63" type="rule">
+        <infoLink id="0497-68a8-92d9-3fd5" name="" hidden="false" targetId="bb60-e3f2-c256-eb63" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28089,7 +28105,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="02ed-eea6-fc29-4910" name="New InfoLink" hidden="false" targetId="c123-da0e-d291-b5c0" type="profile">
+        <infoLink id="02ed-eea6-fc29-4910" name="" hidden="false" targetId="c123-da0e-d291-b5c0" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28133,7 +28149,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="f96d-df6f-62ee-7360" name="New InfoLink" hidden="false" targetId="d68c-51ae-1dfa-de7e" type="profile">
+        <infoLink id="f96d-df6f-62ee-7360" name="" hidden="false" targetId="d68c-51ae-1dfa-de7e" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28153,7 +28169,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="7cca-216e-525d-cd16" name="New InfoLink" hidden="false" targetId="0f74-be70-56ec-4a1a" type="profile">
+        <infoLink id="7cca-216e-525d-cd16" name="" hidden="false" targetId="0f74-be70-56ec-4a1a" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28179,13 +28195,13 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="68ef-3437-aa25-3466" name="New InfoLink" hidden="false" targetId="4e3b-8399-4faf-547c" type="profile">
+        <infoLink id="68ef-3437-aa25-3466" name="" hidden="false" targetId="4e3b-8399-4faf-547c" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="9959-5014-6305-c094" name="New InfoLink" hidden="false" targetId="51fe-970c-dac2-cb2d" type="profile">
+        <infoLink id="9959-5014-6305-c094" name="" hidden="false" targetId="51fe-970c-dac2-cb2d" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28243,7 +28259,7 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="ae50-fbf3-ab58-b25f" name="New EntryLink" hidden="false" targetId="b767-a00a-9d09-310c" type="selectionEntry">
+        <entryLink id="ae50-fbf3-ab58-b25f" name="" hidden="false" targetId="b767-a00a-9d09-310c" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28326,7 +28342,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="21d7-1242-f200-ef80" name="New InfoLink" hidden="false" targetId="9f78-99ed-ba8d-7f88" type="profile">
+        <infoLink id="21d7-1242-f200-ef80" name="" hidden="false" targetId="9f78-99ed-ba8d-7f88" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28346,7 +28362,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="eeca-b5aa-9122-86c8" name="New InfoLink" hidden="false" targetId="5112-5c68-0924-d135" type="profile">
+        <infoLink id="eeca-b5aa-9122-86c8" name="" hidden="false" targetId="5112-5c68-0924-d135" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28366,7 +28382,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="7c6e-770a-fb44-a04f" name="New InfoLink" hidden="false" targetId="e628-1678-68ad-fdc7" type="profile">
+        <infoLink id="7c6e-770a-fb44-a04f" name="" hidden="false" targetId="e628-1678-68ad-fdc7" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28496,7 +28512,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="43e7-876d-5664-09b5" name="New InfoLink" hidden="false" targetId="f449-edb6-fca4-6cfb" type="profile">
+        <infoLink id="43e7-876d-5664-09b5" name="" hidden="false" targetId="f449-edb6-fca4-6cfb" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28522,7 +28538,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="fbae-f495-45b4-b32b" name="New InfoLink" hidden="false" targetId="bed4-744a-a68d-dea0" type="profile">
+        <infoLink id="fbae-f495-45b4-b32b" name="" hidden="false" targetId="bed4-744a-a68d-dea0" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28542,7 +28558,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="33aa-029d-c87c-8da5" name="New InfoLink" hidden="false" targetId="956c-3f85-2085-6ffd" type="profile">
+        <infoLink id="33aa-029d-c87c-8da5" name="" hidden="false" targetId="956c-3f85-2085-6ffd" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28792,7 +28808,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="f60c-9ac2-57d9-957c" name="New InfoLink" hidden="false" targetId="ae12-b885-9c9c-a0a3" type="profile">
+        <infoLink id="f60c-9ac2-57d9-957c" name="" hidden="false" targetId="ae12-b885-9c9c-a0a3" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28823,7 +28839,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="d5c9-ab87-b354-ea7a" name="New InfoLink" hidden="false" targetId="ae12-b885-9c9c-a0a3" type="profile">
+        <infoLink id="d5c9-ab87-b354-ea7a" name="" hidden="false" targetId="ae12-b885-9c9c-a0a3" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28875,7 +28891,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="c566-a097-e369-3191" name="New InfoLink" hidden="false" targetId="295a-ab98-7f23-076c" type="profile">
+        <infoLink id="c566-a097-e369-3191" name="" hidden="false" targetId="295a-ab98-7f23-076c" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28895,7 +28911,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="27df-1b08-5b1e-bb0b" name="New InfoLink" hidden="false" targetId="a607-006d-85ae-3f08" type="profile">
+        <infoLink id="27df-1b08-5b1e-bb0b" name="" hidden="false" targetId="a607-006d-85ae-3f08" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28938,7 +28954,7 @@
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="b0a3-2756-8fb8-2c9b" name="New InfoLink" hidden="false" targetId="771f-cae7-afcb-93ff" type="profile">
+        <infoLink id="b0a3-2756-8fb8-2c9b" name="" hidden="false" targetId="771f-cae7-afcb-93ff" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -28990,7 +29006,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="d390-209e-af03-3df8" name="New InfoLink" hidden="false" targetId="465a-9a29-90aa-ccb5" type="profile">
+        <infoLink id="d390-209e-af03-3df8" name="" hidden="false" targetId="465a-9a29-90aa-ccb5" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
