@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2027" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2032" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -7132,6 +7132,736 @@ BENEDICTION OF OMNISCIENCE
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1595-cd9a-be0f-b396" name="Cypher, Lord of the Fallen" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="a5e6-8ade-856f-8982" name="Cypher" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantry (Character)"/>
+            <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="7"/>
+            <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="10"/>
+            <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="4"/>
+            <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
+            <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="3"/>
+            <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="8"/>
+            <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="3"/>
+            <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="10"/>
+            <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="3+"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="2f5f-ec01-4ea9-b9eb" name="At Any Cost" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>In missions that include both Dark Angels Models and either Cypher or units of Fallen, the following additional objectives must be used:
+
+If Cypher is captured (see Divine Protection) by a Dark Angel model, the player whose army includes the Dark Angels scores 3 Victory Points.
+If the Cypher is forced to escape or is captured by a model that is not a Dark Angel, neither side receives any additional Victory Points.
+If Cypher is neither captured nor forced to escape before the end of the battle, the player whose army includes Cypher scores D3 Victory Points.
+
+If several models are in a position to capture Cypher, some of which are Dark Angels and some of which are not, randomly decide which of the models is the one that captures him.</description>
+        </rule>
+        <rule id="d1ed-8dba-a3ea-7ac9" name="Blazing Weapons" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Cypher can shoot both of his pistols twice each in his Shooting phase, or can fire them once each either before or after making a Run move.  When making Overwatch shots, Cypher uses his full Ballistic Skill.  In the Assault phase, half of Cypher&apos;s close combat attakcs (rounding up) are Strength 4 and AP5, and all remaining attacks are Strength 7 and AP2.</description>
+        </rule>
+        <rule id="f8c3-6d32-b452-394f" name="As Ye Sow, So Shall Ye Reap" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Cypher cannot be selected as the Warlord of an army. In addition, the Leadership characteristic of the Warlord of an army that includes Cypher suffers a -1 penalty.</description>
+        </rule>
+        <rule id="3a12-8dfc-0e43-2668" name="Never Forgive" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>In missions that include both Dark Angels Models and either Cypher or units of Fallen, all Dark Angels models with the Deathwing special rule also receive the Zealot special rule.</description>
+        </rule>
+        <rule id="a232-9c5c-0677-a04d" name="Divine Protection" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If there is an enemy model within D6&quot; of Cypher when he loses his last Wound or is otherwise removed as a casualty, then Cypher is assumed to have been captured alive. If there are no enemy models within this range when Cypher is removed as a casualty, then he has made a miraculous escape. If Cypher escapes, then he is not considered to be a casualty for the purposes of awarding Victory Points. If he is captured, then Victory Points are awarded normally.</description>
+        </rule>
+        <rule id="aa2d-0512-f888-c2a6" name="Cypher (Details)" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Cypher cannot be taken in any army that contains models from Codex: Dark Angels.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="bf81-ef89-6a65-5463" name="" hidden="false" targetId="2e56-6b02-4343-0e40" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ab2b-f26f-2c0d-eb76" name="" hidden="false" targetId="1b52-f89b-6c9b-c3c2" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="eb65-19bf-02b1-427e" name="" hidden="false" targetId="39c6-1f20-a156-47f4" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="0940-b6cd-8fc7-6fbd" name="" hidden="false" targetId="ef3b-09c6-4024-cd37" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6aab-4c27-8377-8816" name="" hidden="false" targetId="7182-6dce-dc98-9f7c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="a6b3-672d-7d6b-a3a2" name="" hidden="false" targetId="0b11-a0ff-f0ba-5341" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="c297-f678-0285-d053" name="" hidden="false" targetId="f172-03fe-1e9f-c363" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5f5b-7b57-b780-b630" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="1510-c1d8-f2d7-2dda" name="Cypher&apos;s Pistols" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="9bd1-712f-25a3-0f96" name="Cypher&apos;s Bolt Pistol" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="16&quot;"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="4"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="5"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol"/>
+              </characteristics>
+            </profile>
+            <profile id="1a38-efdc-5220-f75c" name="Cypher&apos;s Plasma Pistol" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="7"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b7a-4ac0-a144-7aa4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e991-8c6f-34cd-27c2" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d2d7-a81e-0aae-bb80" name="Frag and Krak Grenades" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="5d76-c537-47a2-1242" name="" hidden="false" targetId="fdd8-1a5f-5722-d6ee" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="493f-78da-2ab9-2d8b" name="" hidden="false" targetId="3bf6-b4f7-6b2f-bb7b" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ef4b-117a-03e8-3950" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10b5-2cf1-5ab1-e84e" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="190.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="42fe-b322-a2a3-0ed8" name="Roboute Guilliman, Primarch of the Ultramarines" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="67d1-7ad6-40e6-fc1c" name="Roboute Guilliman" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Monstrous Creature (Character)"/>
+            <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="9"/>
+            <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="6"/>
+            <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="6"/>
+            <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="6"/>
+            <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="6"/>
+            <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="6"/>
+            <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="6"/>
+            <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="10"/>
+            <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/3++"/>
+          </characteristics>
+        </profile>
+        <profile id="8269-2014-f110-8f4e" name="The Emperor&apos;s Sword and the Hand of Dominion" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="These weapons are used together, using the profiles below.  It may be used as both a melee weapon and a ranged weapon in the same turn."/>
+          </characteristics>
+        </profile>
+        <profile id="0c80-03fa-671d-a43c" name="Warlord Trait: Absolute Mastery" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Rouboute Guilliman has all of the Command Traits from Warhammer 40,000: The Rules."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="671e-c5a0-8d41-bd65" name="Lord Commander of the Imperium" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Friendly units from the Armies of the Imperium re-roll failed Morale checks and Fear and Pinning tests while Guilliman is on the battlefield.</description>
+        </rule>
+        <rule id="5984-39a0-1e5a-d2b5" name="Unyielding Will" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Roboute Guilliman&apos;s Leadership is not subject to negative modifiers of any kind and he may re-roll failed Deny the Witch tests.</description>
+        </rule>
+        <rule id="1730-fd13-b04f-09d3" name="Primarch of the XIII Legion" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>You can choose to enact the Devastator, Assault and Tactical Doctrines once each per game (in addition to any you can already use).  When one of these Combat Doctrines is enacted, all Ultramarines models in your army are affected.</description>
+        </rule>
+        <rule id="7601-03f3-5c23-9a17" name="Chapter Tactics (Ultramarines)" book="Codex: Space Marines" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When choosing an army, all models in the same Detachment or Formation must be drawn from the same Chapter.  If a unit&apos;s datasheet contains a Chapter in brackets after the Chapter Tactics special rule - for example, &quot;Chapter Tactics (Ultramarines)&quot; - the unit must always be drawn from this Chapter, and therefore cannot be included in a Detachment or Formation with any units that are drawn from other Chapters. All models drawn from a given Chapter benefit from that Chapter&apos;s Special Rule. If a unit contains models drawn from two different Chapters, it counts as from neither Chapter, and thus benefits from neither Chapter Tactic.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="bb21-aa87-cc2b-9176" name="" hidden="false" targetId="39c6-1f20-a156-47f4" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="40f9-4c32-20c2-c167" name="" hidden="false" targetId="f172-03fe-1e9f-c363" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="c9f5-479f-ea0f-8521" name="" hidden="false" targetId="3c7d-11d6-e265-abb4" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="5173-a127-a35a-29af" name="" hidden="false" targetId="8714-46ad-62c0-ce35" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="2a80-28ad-a5d0-caca" name="" hidden="false" targetId="8d37-2e47-4a04-58f7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="59b0-6882-4ed4-d11d" name="" hidden="false" targetId="540d-b15f-f709-3bf9" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="bb79-56db-821e-b1f2" name="" hidden="false" targetId="80c8-1041-d0f1-6e58" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="142f-0613-b4eb-66a1" name="" hidden="false" targetId="f217-b311-e5b1-c8c7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="name" value="(Chaos)">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ad4b-5a22-ed2a-2f6b" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="1f44-00cb-c4b4-9754" name="The Hand of Dominion" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="d999-1628-1064-b6e3" name="Hand of Dominion" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="6"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 3, Rending"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks>
+            <infoLink id="38e4-cc7e-bccf-a92c" name="New InfoLink" hidden="false" targetId="6a76-59d1-822c-59c9" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edeb-6d4e-711f-72d2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de3b-2e06-b43c-0cbf" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d015-b58a-7b67-4dab" name="The Emperor&apos;s Sword" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="4533-2ca3-fb9e-650b" name="The Empereor&apos;s Sword" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="10"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="1"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Armourbane, Concussion, Soul Blaze, Touch of the Emperor, Whirling Flame"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="1c2d-2ad7-4b59-f977" name="Touch of the Emperor" book="Gathering Storm: Rise of the Primarch" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Any attacks with this weapon with a To Hit roll of 6 are resolved at Strength D rather than Strength 10.</description>
+            </rule>
+            <rule id="7380-6765-47f9-a29a" name="Whirling Flame" book="Gathering Storm: Rise of the Primarch" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>In the Fight sub-phase, rather than making attacks normally, Guilliman can make a number of attacks with this weapon against each enemy unit engaged in his combat equal to the number of models from that unit within 1&quot; of him.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="fd31-734f-6cb6-e53a" name="New InfoLink" hidden="false" targetId="3498-7560-3a1a-9e27" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="6bdb-d1e7-ef33-7572" name="New InfoLink" hidden="false" targetId="acb1-64c4-ef54-3a55" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="eab3-f945-d393-d9c1" name="New InfoLink" hidden="false" targetId="d0ea-e2a6-032d-8754" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0762-4fd1-7ddc-879a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0725-57ef-0453-c9bf" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="166b-62b8-9518-a837" name="Armour of Fate" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="f3a6-576c-3c57-3b5b" name="Armour of Fate" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="The Armour of Fate confers a 3+ invulnerable save.  In addition, if Rouboute Guilliman is slain, place a marker at the spot at which he was slain.  At the beginning of your next turn, roll a dice.  On a 4 or more Guilliman is restored by his armour - place him as close as possible to the marker, more than 1&quot; from any units, with D3 wounds remaining.  Otherwise Guilliman is slain.  If the marker is on the battlefield at the end of the game, Guilliman is considered to be slain."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d12b-2272-4e9c-4d83" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef5e-fd41-7009-938d" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="350.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="01cb-069b-1e31-75ee" name="Grand Master Voldus, Warden of the Librarius" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="304f-8733-b6ce-6060" name="Grand Master Voldus" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" profileTypeName="Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantry (Character)"/>
+            <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="6"/>
+            <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="5"/>
+            <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="4"/>
+            <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="4"/>
+            <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="3"/>
+            <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="5"/>
+            <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="4"/>
+            <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="10"/>
+            <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="2+/4++"/>
+          </characteristics>
+        </profile>
+        <profile id="c09a-b9e7-4bbb-5de5" name="Warlord Trait: Lore Master" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Voldus knows one or more power than is normal for his Master Level.  This must be generated from the Daemonology (Sanctic) discipline."/>
+          </characteristics>
+        </profile>
+        <profile id="0822-c0ce-fa4a-7523" name="Grand Master Voldus (Psyker)" book="Gathering Storm: Rise of the Primarch" page="" hidden="false" profileTypeId="bc97-dea9-9e88-bb7d" profileTypeName="Psyker">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Mastery Level" characteristicTypeId="ca56-02c3-af4b-ea2a" value="3"/>
+            <characteristic name="Disciplines" characteristicTypeId="ea53-f5c7-08e4-980c" value="Daemonology (Sanctic), Divination, Fulmination, Geokinesis, Librarius, Pyromancy, Technomancy, Telekinesis, and Telepathy"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="fae2-5d92-7658-903d" name="The Aegis" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>A unit that contains at least one model with this special rule re-rolls results of 1 when making Deny the Witch tests.</description>
+        </rule>
+        <rule id="a829-d84c-76b6-0068" name="Purity of Spirit" book="Gathering Storm: Rise of the Primarch" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Grey Knights Psykers can generate psychic powers from the Daemonology (Sanctic) discipline.  In addition, unless otherwise stated, when attempting to manifest psychic powers from the Daemonology discipline, Grey Knights Psykers only suffer Perils of the Warp if two or more 6s are rolled when taking a psychic test.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="34d6-ca06-efa5-86a7" name="New InfoLink" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="3ca2-0047-9ba7-624e" name="New InfoLink" hidden="false" targetId="b4c1-e1df-b875-92a6" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="685d-7d33-ddc6-00a7" name="New InfoLink" hidden="false" targetId="7674-690c-ab59-1444" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8b51-21d8-9dc1-af78" name="New InfoLink" hidden="false" targetId="2e56-6b02-4343-0e40" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="f00b-4e39-1193-f7e8" name="New InfoLink" hidden="false" targetId="ef3b-09c6-4024-cd37" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="a9a2-7112-1fb7-bf26" name="New InfoLink" hidden="false" targetId="f217-b311-e5b1-c8c7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="name" value="(Daemons)">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="db6f-6000-fdcd-d00b" name="New InfoLink" hidden="false" targetId="7a42-bcc8-95a0-302d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="name" value="(Mastery Level 3)">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6382-6461-36bf-433c" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="2cc5-39d4-5e05-3c5f" name="Psyk-out Grenades" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="7aa1-1514-59c1-68a8" name="Psyk-out Grenades" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="8&quot;"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="2"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="-"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1, Blast, Psi-shock, Assault Grenades"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="a966-fd59-8713-8012" name="Psi-shock" book="Gathering Storm: Rise of the Primarch" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>If a unit containing at least one Psyker (i.e. a model with the Psyker, Brotherhood of Psykers/Sorcerers or Psychic Pilot special rule) is hit by a weapon with the Psi-shock special rule, one randomly determined Psyker model in that unit suffers Perils of the Warp in addition to any other damage.</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6316-e37d-a9c7-0cfd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f78e-8960-ee53-dfcd" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="07a5-5557-897f-ac3b" name="Malleus Argyrum" book="Gathering Storm: Rise of the Primarch" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="bd5e-f97d-300e-55dc" name="Malleus Argyrum" book="Gathering Storm: Rise of the Primarch" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="2x"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Force, Concussive, Daemonbane, Specialist Weapon"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="6d18-8967-a8d5-c807" name="Daemonbane" book="Gathering Storm: Rise of the Primarch" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>If the Force psychic power is successfully manifested and targets a unit with one or more weapons with this special rule then, in addition to the usual effects, all weapons with this special rule re-roll failed To Wound and armour penetration rolls against models with the Daemon special rule whist the blessing is in effect.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="5625-5a62-c0b9-dc33" name="New InfoLink" hidden="false" targetId="d0ea-e2a6-032d-8754" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="c172-4789-80f0-afd5" name="New InfoLink" hidden="false" targetId="f588-4e5a-a032-0aee" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c4d-9b55-7ff1-ea0f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80e6-a89e-bc1c-3fc4" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4a15-5b36-e35a-20ec" name="Frag and Krak Grenades" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="7f1a-7b42-71c2-4468" name="" hidden="false" targetId="fdd8-1a5f-5722-d6ee" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="f082-cc00-0583-e01a" name="" hidden="false" targetId="3bf6-b4f7-6b2f-bb7b" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="37dc-4a2b-fef2-955e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13c5-469b-a080-e43f" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1957-6201-9be3-9d20" name="Storm Bolter" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="59b6-be96-d1d7-44f9" name="" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6639-e1ae-7c9b-d026" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb38-92fe-4769-bb42" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="240.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="ad42-921f-358f-2970" name="Obstacles List" hidden="false" collective="false">
@@ -10096,6 +10826,27 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <infoLinks/>
       <modifiers/>
       <description>Ruins are difficult terrain. Models in ruins recieve a 4+ cover save, regardless of whether or not they are 25% obscured.</description>
+    </rule>
+    <rule id="6fcc-26d1-ea1b-1e61" name="Zealous Defenders" book="Gathering Storm: Fall of Cadia" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>All units in this Detachment have the Hatred special rule.  However, if this Detachment&apos;s Force Organisation Chart contains the maximum number of units (excluding troops), then all units in the Detachment have the Zealot special rule instead.</description>
+    </rule>
+    <rule id="4bd2-8f9f-71d0-c7d4" name="Flock to the Front Line" book="Gathering Storm: Fall of Cadia" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Each time a Troops unit from this Detachment is completely destroyed, roll a D6. On a 5+, you can immediately place a new unit into Ongoing Reserves that is identical, in terms of the original number of models, weapons and upgrades, to the unit that was just destroyed. This new unit counts as being part of the original Detachment, so roll a D6 as described above if they are subsequently destroyed. Victory points are awarded as normal for new units in this Detachment that have been completely destroyed.</description>
+    </rule>
+    <rule id="1497-66f9-23dd-1aa4" name="Lord Castellan" book="Gathering Storm: Fall of Cadia" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If this Detachment is chosen as your Primary Detachment, you can choose to re-roll the result on the Warlord Trait table.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
