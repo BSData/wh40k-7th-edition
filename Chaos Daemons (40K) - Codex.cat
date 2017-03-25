@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="83d27dcf-7aba-2f77-c5c0-6dbf86c8e185" name="Chaos Daemons: Codex" revision="2006" battleScribeVersion="2.00" authorName="BSData team" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="83d27dcf-7aba-2f77-c5c0-6dbf86c8e185" name="Chaos Daemons: Codex" revision="2007" battleScribeVersion="2.00" authorName="BSData team" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1909,13 +1909,13 @@ If there is no space for the pink horrors, or no models, they are then destroyed
       <rules/>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions/>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a129-1f4b-1aa2-f3fa" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a129-1f4b-1aa2-f3fa" type="notInstanceOf"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -1966,14 +1966,13 @@ If there is no space for the pink horrors, or no models, they are then destroyed
       <rules/>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions/>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8111-5066-a5a7-fee8" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a129-1f4b-1aa2-f3fa" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a129-1f4b-1aa2-f3fa" type="notInstanceOf"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -8928,7 +8927,7 @@ Wounds / Effect
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="minSelections" value="1.0">
+            <modifier type="set" field="minSelections" value="1">
               <repeats/>
               <conditions>
                 <condition field="selections" scope="category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77e0-abe4-f8f5-e6d3" type="equalTo"/>
@@ -9021,7 +9020,7 @@ Wounds / Effect
               <modifiers>
                 <modifier type="set" field="maxSelections" value="0.0">
                   <repeats>
-                    <repeat field="selections" scope="eeb8-23a2-fd50-af88" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2ded-e7c4-a7cb-6c5d" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="eeb8-23a2-fd50-af88" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6cfb-078a-837e-fb78" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -9119,26 +9118,26 @@ Wounds / Effect
           </modifiers>
           <constraints/>
         </entryLink>
-        <entryLink id="2ded-e7c4-a7cb-6c5d" hidden="false" targetId="6a22-750e-232d-a582" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="maxSelections" value="0.0">
-              <repeats>
-                <repeat field="selections" scope="eeb8-23a2-fd50-af88" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1189-2667-ee43-e2bf" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints/>
-        </entryLink>
         <entryLink id="b386-ba64-41a8-2e21" name="New EntryLink" hidden="false" targetId="77ca-60f0-dbde-9eaa" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="6cfb-078a-837e-fb78" name="New EntryLink" hidden="false" targetId="6a22-750e-232d-a582" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="maxSelections" value="0.0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="eeb8-23a2-fd50-af88" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1189-2667-ee43-e2bf" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
       </entryLinks>
@@ -16659,10 +16658,6 @@ On a roll of a 2-5, it remains wrecked but the controlling player may attempt to
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInForce" type="min"/>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="minInRoster" type="min"/>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
         <constraint field="points" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minPoints" type="min"/>
         <constraint field="points" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxPoints" type="max"/>
       </constraints>
