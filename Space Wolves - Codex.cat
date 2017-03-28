@@ -36235,13 +36235,16 @@ If a model with this special rule charges a building or vehicle, the hit is reso
                 <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Vehicle (Tank, Transport)"/>
               </characteristics>
             </profile>
-            <profile id="4e4d-6dc4-8c21-e73a" name="Servo-skull Hub" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
+            <profile id="87e4-e303-d90a-bb94" name="Orbital Alpha Strike" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="At the start of your Shooting phase, you can select one friendly unit within 12&quot; of this model and immediately apply one of the effects described below to that unit. Each of these effects can only be used once per game.  - Targeting Data Skull: The target unit cn fire Snap Shots (including Overwatch) using their full Ballistic Skill charateristic untill the start of your next turn.  - Repair Skull: Vehicle models only. Roll a D6; on a 2+, the target model regains 1 Hull Point lost earlier in that battle.  - Vox Skull: The target unit gains the Fearless special rule until the start of your next turn."/>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Infinite"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="10"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="1"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Ordnance 1, Barrage, Massive Blast, One Use Only, Orbital"/>
               </characteristics>
             </profile>
           </profiles>
@@ -36252,8 +36255,32 @@ If a model with this special rule charges a building or vehicle, the hit is reso
               <infoLinks/>
               <modifiers/>
             </rule>
+            <rule id="4c1b-db8c-5b87-a50e" name="Orbital Array" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>At the start of each of your turns after the first, if this vehicle is on the battlefield you can choose to Coordinate Reinforcements or, once per game, call an Orbital Alpha Strike. To Coordinate Reinforcements, select one friendly unit that is is Reserves; that unit automatically arrives from Reserves.</description>
+            </rule>
+            <rule id="ae1f-f361-dfd6-220a" name="Servo-skull Hub" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>At the start of your Shooting phase, you can select one friendly unit within 12&quot; of this model and immediately apply one of the effects described below to that unit. Each of these effects can only be used once per game.
+- Targeting Data Skull: The target unit cn fire Snap Shots (including Overwatch) using their full Ballistic Skill charateristic untill the start of your next turn.
+- Repair Skull: Vehicle models only. Roll a D6; on a 2+, the target model regains 1 Hull Point lost earlier in that battle.
+- Vox Skull: The target unit gains the Fearless special rule until the start of your next turn.</description>
+            </rule>
           </rules>
-          <infoLinks/>
+          <infoLinks>
+            <infoLink id="2025-dff5-d95b-c0cd" name="New InfoLink" hidden="false" targetId="0a50-8f46-c9e4-be2a" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
@@ -36287,44 +36314,6 @@ If a model with this special rule charges a building or vehicle, the hit is reso
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f55-d1d8-f5a6-526f" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8326-da6e-4a96-0387" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9c59-39ce-b8cc-527c" name="Orbital Array" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles>
-                <profile id="bf0e-458f-a361-92f2" name="Orbital Alpha Strike" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Infinite"/>
-                    <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="10"/>
-                    <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="1"/>
-                    <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Ordnance 1, Barrage, Massive Blast, One Use Only, Orbital"/>
-                  </characteristics>
-                </profile>
-                <profile id="f4aa-ca6c-3d2a-ed35" name="Orbital Array" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="At the start of each of your turns after the first, if this vehicle is on the battlefield you can choose to Coordinate Reinforcements or once per game, call an Orbital Alpha Strike. To Coordinate Reinforcements, select one friendly unit that is is Reserves; that unit automatically arrives from Reserves."/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
