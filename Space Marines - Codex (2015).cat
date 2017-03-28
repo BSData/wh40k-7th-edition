@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7ab0-ceb9-0a9f-f0b6" name="Space Marines: Codex (2015)" revision="2039" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7ab0-ceb9-0a9f-f0b6" name="Space Marines: Codex (2015)" revision="2040" battleScribeVersion="2.00" authorName="Earl Bishop (Kohato)" authorContact="iam@earlb3.com" authorUrl="https://github.com/BSData/wh40kbs2/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="bab5-1920-a2ed-5b27" name="Vulkan&apos;s Teachings" book="Supplement: Angels of Death" hidden="false">
@@ -3834,6 +3834,13 @@
           <conditionGroups/>
         </modifier>
       </modifiers>
+      <constraints/>
+    </entryLink>
+    <entryLink id="b586-d5d9-053f-00bb" name="" hidden="false" targetId="d769-1321-8c9a-46c4" type="selectionEntry" categoryEntryId="c888f08a-6cea-4a01-8126-d374a9231554">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
       <constraints/>
     </entryLink>
   </entryLinks>
@@ -12253,6 +12260,46 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5883-6c78-d1fe-8625" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="d142-1027-4006-ba80" name="New EntryLink" hidden="false" targetId="29e5-eb99-563b-681b" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="6cfa-a3de-b45f-5cc9" value="4">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="1db4-d300-18b6-d58d" value="2">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="3aae-87cf-7f82-2bb6" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aae-87cf-7f82-2bb6" type="min"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6cfa-a3de-b45f-5cc9" type="max"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1db4-d300-18b6-d58d" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="65.0"/>
@@ -14105,10 +14152,22 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
             </modifier>
             <modifier type="set" field="hidden" value="false">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="041e-c0d4-9ca5-a0ee" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6c9-f21f-d27f-3721" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f045-1994-f825-8e4c" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5dc8-7589-0feb-bdda" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d2a-0445-c94b-74ff" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d03-650f-fbcd-c9a3" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="638b-2384-da7e-6dd1" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -14275,10 +14334,22 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
             </modifier>
             <modifier type="set" field="hidden" value="false">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="041e-c0d4-9ca5-a0ee" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6c9-f21f-d27f-3721" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f045-1994-f825-8e4c" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5dc8-7589-0feb-bdda" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d2a-0445-c94b-74ff" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d03-650f-fbcd-c9a3" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="638b-2384-da7e-6dd1" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -14425,10 +14496,25 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
             </modifier>
             <modifier type="set" field="hidden" value="false">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="041e-c0d4-9ca5-a0ee" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6c9-f21f-d27f-3721" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f045-1994-f825-8e4c" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5dc8-7589-0feb-bdda" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5d2a-0445-c94b-74ff" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb1b-d00b-3c7b-605e" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="638b-2384-da7e-6dd1" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d03-650f-fbcd-c9a3" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0ea4-8a62-96b6-77d0" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="26d6-4c1c-d787-d28f" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -16337,10 +16423,20 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
             </modifier>
             <modifier type="set" field="hidden" value="false">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f57-bb5b-91fe-bc82" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a100-6a6a-3b17-268e" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b5e9-0208-9699-7ed2" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b65-f1d6-c438-aba1" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="638b-2384-da7e-6dd1" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -16505,10 +16601,20 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
             </modifier>
             <modifier type="set" field="hidden" value="false">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f57-bb5b-91fe-bc82" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a100-6a6a-3b17-268e" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b5e9-0208-9699-7ed2" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b65-f1d6-c438-aba1" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f045-1994-f825-8e4c" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -16668,10 +16774,19 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
             </modifier>
             <modifier type="set" field="hidden" value="false">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f57-bb5b-91fe-bc82" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a100-6a6a-3b17-268e" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b5e9-0208-9699-7ed2" type="notInstanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4b65-f1d6-c438-aba1" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -18283,10 +18398,16 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
             </modifier>
             <modifier type="set" field="hidden" value="false">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c60-ad86-831c-7b7c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a086-0fc3-ba8c-121b" type="notInstanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -33218,16 +33339,7 @@ Harassing Fire: Any unit that suffers one or more unsaved Wounds from a unit tha
               <characteristics>
                 <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="10."/>
                 <characteristic name="Fire Points" characteristicTypeId="fe20-e124-2c11-86ee" value="None."/>
-                <characteristic name="Access Points" characteristicTypeId="21e5-4518-a31c-7e56" value="3. One on each side and one on the front."/>
-              </characteristics>
-            </profile>
-            <profile id="c512-0630-150d-17d4" name="Aquila Aegis Field" book="Warhammer World Exclusive" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="An Aquila aegis field confers a 6+ invulnerable save.  In addition, a model with an Aquila aegis field ignores Crew Shaken and Crew Stunned results on the Vehicle Damage table (but still loses a Hull Point)"/>
+                <characteristic name="Access Points" characteristicTypeId="21e5-4518-a31c-7e56" value="3 (One on each side and one at the rear)."/>
               </characteristics>
             </profile>
           </profiles>
@@ -33266,7 +33378,34 @@ Harassing Fire: Any unit that suffers one or more unsaved Wounds from a unit tha
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="355f-e134-c5d0-1537" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c7d6-66e5-4088-710e" type="min"/>
           </constraints>
-          <selectionEntries/>
+          <selectionEntries>
+            <selectionEntry id="d55a-0298-602f-93d3" name="Aquila Aegis Field" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="e830-dd6c-fcb8-2ac6" name="Aquila Aegis Field" book="Warhammer World Exclusive" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="An Aquila aegis field confers a 6+ invulnerable save.  In addition, a model with an Aquila aegis field ignores Crew Shaken and Crew Stunned results on the Vehicle Damage table (but still loses a Hull Point)"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a77f-e307-63f7-3c26" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9042-2f59-00ad-7d92" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="b6c4-9b65-5d7b-a6e1" name="Command Item" hidden="false" collective="false">
               <profiles/>
@@ -33392,13 +33531,28 @@ Harassing Fire: Any unit that suffers one or more unsaved Wounds from a unit tha
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="10 (No Bulky, Very Bulky, or Extremely Bulky)."/>
+                <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="6 (No Bulky, Very Bulky, or Extremely Bulky)."/>
                 <characteristic name="Fire Points" characteristicTypeId="fe20-e124-2c11-86ee" value="None."/>
                 <characteristic name="Access Points" characteristicTypeId="21e5-4518-a31c-7e56" value="3 (One on each side and one at the rear)."/>
               </characteristics>
             </profile>
           </profiles>
-          <rules/>
+          <rules>
+            <rule id="5fa9-1a54-7200-1bab" name="Orbital Array" book="Warhammer World Exclusive" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>At the start of each of your turns after the first, if this vehicle is on the battlefield you can choose to Coordinate Reinforcements or, once per game, call an Orbital Alpha Strike.  To Coordinate Reinforcements, select one friendly unit that is in Reserves; that unit automatically arrives from Reserves.  If you choose to call an Orbital Alpha Strike, your Thino Primaris can make an attack using the below profile in the Shooting phase.</description>
+            </rule>
+            <rule id="50e4-96e3-f93d-5acc" name="Servo-Skull Hub" book="Warhammer World Exclusive" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>At the start of your Shooting phase, you can select one friendly unit within 12&quot; of this model and immediately apply one of the effects described below to that unit.  Each of these effects can only be used once per game:  Targeting Data Skull:  The target unit can fire Snap Shots (including Overwatch) using their full Ballistic Skill characteristic until the start of your next turn. Repair Skull: Vehicl emodels only.  Roll a D6; on a 2+, the target model regains 1 Hull Point lost earlier in the battle. Vox Skull: The target unit gains the Fearless epcial rule until the start of your next turn.</description>
+            </rule>
+          </rules>
           <infoLinks/>
           <modifiers/>
           <constraints>
@@ -33406,43 +33560,8 @@ Harassing Fire: Any unit that suffers one or more unsaved Wounds from a unit tha
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09f7-36fb-a057-d4b2" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="1489-29d2-a20e-9369" name="Servo-Skull Hub" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5321-f270-65e2-6a2f" name="Orbital Alpha Strike" hidden="false" collective="false" type="upgrade">
               <profiles>
-                <profile id="ec6b-d2c7-35df-5619" name="Servo-Skull Hub" book="Warhammer World Exclusive" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="At the start of your Shooting phase, you can select one friendly unit within 12&quot; of this model and immediately apply one of the effects described below to that unit.  Each of these effects can only be used once per game:  Targeting Data Skull:  The target unit can fire Snap Shots (including Overwatch) using their full Ballistic Skill characteristic until the start of your next turn. Repair Skull: Vehicl emodels only.  Roll a D6; on a 2+, the target model regains 1 Hull Point lost earlier in the battle. Vox Skull: The target unit gains the Fearless epcial rule until the start of your next turn."/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e904-60ab-f736-609e" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09c8-1fd2-17a6-ed15" type="min"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5321-f270-65e2-6a2f" name="Orbital Array" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="6f65-2aeb-430f-dcb6" name="Orbital Array" book="Warhammer World Exclusive" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="At the start of each of your turns after the first, if this vehicle is on the battlefield you can choose to Coordinate Reinforcements or, once per game, call an Orbital Alpha Strike.  To Coordinate Reinforcements, select one friendly unit that is in Reserves; that unit automatically arrives from Reserves.  If you choose to call an Orbital Alpha Strike, your Thino Primaris can make an attack using the below profile in the Shooting phase."/>
-                  </characteristics>
-                </profile>
                 <profile id="5b4e-e72d-7dd8-6a14" name="Orbital Alpha Strike" book="Warhammer World Exclusive" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
                   <profiles/>
                   <rules/>
@@ -33492,6 +33611,23 @@ Harassing Fire: Any unit that suffers one or more unsaved Wounds from a unit tha
               <infoLinks/>
               <modifiers/>
               <constraints/>
+            </entryLink>
+            <entryLink id="674f-5147-1c6c-79a4" name="" hidden="false" targetId="eb53-cd56-7d70-e009" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="3055-a805-f0fc-cdfd" name="" hidden="false" targetId="0320-c5a4-23a6-51b9" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80ea-2c68-0420-3f73" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f88-22b1-1057-9ff6" type="min"/>
+              </constraints>
             </entryLink>
           </entryLinks>
           <costs>
@@ -54992,6 +55128,44 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0320-c5a4-23a6-51b9" name="Twin-Linked Plasma Gun" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="7f4f-79c3-2885-0faa" name="" hidden="false" targetId="03e5-60f2-4726-5cdd" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value=", Twin-Linked">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9cef-ee46-8316-bec4" name="" hidden="false" targetId="4e9f-4f6f-6fbc-6418" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="5994-a698-e724-1121" name="" hidden="false" targetId="3002-de38-7230-fbc6" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
