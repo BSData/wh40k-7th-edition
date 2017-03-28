@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="578f-d512-a02e-7d0b" name="Dark Angels: Codex (2015)" book="Dark Angels Codex 2015, 7th Edition" revision="2013" battleScribeVersion="2.00" authorName="Thairne" authorContact="Interrogatorchaplain@gmx.de" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="578f-d512-a02e-7d0b" name="Dark Angels: Codex (2015)" book="Dark Angels Codex 2015, 7th Edition" revision="2014" battleScribeVersion="2.00" authorName="Thairne" authorContact="Interrogatorchaplain@gmx.de" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -8517,7 +8517,7 @@ Cover saves of enemy targets suffer -1 modifier</description>
         <cost name="pts" costTypeId="points" value="120.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8b75-5822-83dd-6677" name="* Space Marine Command Tanks" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
+    <selectionEntry id="8b75-5822-83dd-6677" name="Space Marine HQ Command Tanks" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -8744,7 +8744,10 @@ Cover saves of enemy targets suffer -1 modifier</description>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <constraints/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="108a-fd05-3eb3-93ce" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a913-b8dd-5da3-31de" type="max"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -8764,11 +8767,16 @@ Cover saves of enemy targets suffer -1 modifier</description>
               </rules>
               <infoLinks/>
               <modifiers/>
-              <constraints/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c613-7c08-253f-6515" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55a6-1818-786a-c3e4" type="max"/>
+              </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -38082,7 +38090,29 @@ of this Wing Leader will not scatter.</description>
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="15aa-1916-a38b-d223" value="6">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b75-5822-83dd-6677" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="fe20-e124-2c11-86ee" value="0.0">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b75-5822-83dd-6677" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="name" value="Rhino Primaris">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b75-5822-83dd-6677" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="10"/>
         <characteristic name="Fire Points" characteristicTypeId="fe20-e124-2c11-86ee" value="2"/>
