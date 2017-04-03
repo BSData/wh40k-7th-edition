@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4fe1-8588-ca35-920b" name="Cult Mechanicus: Codex (2015)" book="Codex: Cult Mechanicus" revision="2016" battleScribeVersion="2.00" authorName="True_Hisop" authorContact="" authorUrl="https://github.com/BSData/wh40k/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4fe1-8588-ca35-920b" name="Cult Mechanicus: Codex (2015)" book="Codex: Cult Mechanicus" revision="2017" battleScribeVersion="2.00" authorName="True_Hisop" authorContact="" authorUrl="https://github.com/BSData/wh40k/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1831,6 +1831,22 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <infoLinks/>
           <modifiers/>
           <constraints/>
+        </entryLink>
+        <entryLink id="771c-b9fc-8f2f-4c1a" hidden="false" targetId="19ea-60a8-a57c-adcd" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6a1-95dc-98c2-8095" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f41c-28c3-524a-56ec" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -5000,6 +5016,13 @@ This Formation counts as three units for the purposes of Canticles of the Omniss
               <repeats/>
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a1b3-c303-2051-20f0" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0909-cd10-dc33-e5ef" type="instanceOf"/>
               </conditions>
               <conditionGroups/>
             </modifier>
