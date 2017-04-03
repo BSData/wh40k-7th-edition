@@ -20141,13 +20141,6 @@ If the tank is Wrecked or suffers an Explodes! result, Sergeant Chronus is treat
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="026f-3836-59b3-efc2" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="5769-d69b-56d6-ba13" name="" hidden="false" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
@@ -38830,9 +38823,16 @@ The Knight has a 4+ invulnerable save against all hits on that facing until the 
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f3f-0846-de83-57d5" type="lessThan"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="lessThan"/>
               </conditions>
-              <conditionGroups/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bed2-6bd4-f664-9cdf" type="lessThan"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f06a-a66c-4b4c-f931" type="lessThan"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
