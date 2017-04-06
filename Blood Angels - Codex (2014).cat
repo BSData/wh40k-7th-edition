@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6cacb5fc-d6bf-078d-307e-6f16c72d5f2a" name="Blood Angels: Codex (2014)" book="Codex: Blood Angels" revision="2019" battleScribeVersion="2.00" authorName="GenWilhelm" authorContact="" authorUrl="https://github.com/BSData/wh40k/" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6cacb5fc-d6bf-078d-307e-6f16c72d5f2a" name="Blood Angels: Codex (2014)" book="Codex: Blood Angels" revision="2020" battleScribeVersion="2.00" authorName="GenWilhelm" authorContact="" authorUrl="https://github.com/BSData/wh40k/" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -3689,6 +3689,49 @@
           </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="14.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e497-08cf-28b7-c0e0" name="Replace weapons with Eviscerator" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles>
+            <profile id="d048-4d58-f93b-afc2" name="Eviscerator" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="x2"/>
+                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Two-handed, Armourbane, Unwieldy"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="maxSelections" value="1.0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="f7fcd2ff-1ccf-971b-bd89-b12482276459" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e2172cb-3c27-cd9b-c1d2-ab928137c075" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="decrement" field="maxSelections" value="1.0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="f7fcd2ff-1ccf-971b-bd89-b12482276459" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d845-f964-afe3-9d96" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
