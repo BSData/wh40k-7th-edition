@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4fe1-8588-ca35-920b" name="Cult Mechanicus: Codex (2015)" book="Codex: Cult Mechanicus" revision="2015" battleScribeVersion="2.00" authorName="True_Hisop" authorContact="" authorUrl="https://github.com/BSData/wh40k/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4fe1-8588-ca35-920b" name="Cult Mechanicus: Codex (2015)" book="Codex: Cult Mechanicus" revision="2018" battleScribeVersion="2.00" authorName="True_Hisop" authorContact="" authorUrl="https://github.com/BSData/wh40k/issues" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -4998,10 +4998,16 @@ This Formation counts as three units for the purposes of Canticles of the Omniss
           <modifiers>
             <modifier type="set" field="f227-1489-8dce-7b50" value="1">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a1b3-c303-2051-20f0" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0909-cd10-dc33-e5ef" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a1b3-c303-2051-20f0" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>

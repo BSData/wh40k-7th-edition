@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="987d0372-0952-75b7-886f-6ef3ba934216" name="Grey Knights: Codex (2014)" book="Codex: Grey Knights" revision="2015" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="987d0372-0952-75b7-886f-6ef3ba934216" name="Grey Knights: Codex (2014)" book="Codex: Grey Knights" revision="2018" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1909,10 +1909,31 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5374616e6461726423232344415441232323" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="416c6c696564204465746163686d656e7423232344415441232323" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
     <entryLink id="5ddf-6ece-497c-3ffe" name="New EntryLink" hidden="false" targetId="1595-cd9a-be0f-b396" type="selectionEntry" categoryEntryId="848a6ff2-0def-4c72-8433-ff7da70e6bc7">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="bbe5-86fa-b6a5-ff80" name="Bulwark of Purity" hidden="false" targetId="0a97-8b37-7990-e884" type="selectionEntry" categoryEntryId="28b94f51-e66b-4096-aa59-0c9df620a77d">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -8669,7 +8690,15 @@ All squads must include 10 models.</description>
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbe5-86fa-b6a5-ff80" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
         <entryLink id="9569470c-7f07-f0ca-9bd2-6914664909a5" hidden="false" targetId="669bc11f-0d98-bd3b-c9fd-7e8bcf06f8a9" type="selectionEntry">
@@ -10710,7 +10739,9 @@ All squads must include 10 models.</description>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -12712,7 +12743,15 @@ Wing Leaders are free upgrades for Flyers. One model in each Flyer Wing can be u
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbe5-86fa-b6a5-ff80" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
         <entryLink id="a7134768-16aa-4b6b-2e9d-8431663d40f5" hidden="false" targetId="669bc11f-0d98-bd3b-c9fd-7e8bcf06f8a9" type="selectionEntry">
@@ -14377,6 +14416,98 @@ These effects last until the Warlord&apos;s next turn.</description>
           <selectionEntryGroups/>
           <entryLinks>
             <entryLink id="b710-1816-c8f3-3e2e" hidden="false" targetId="cb57b9cf-b8da-3fb4-b9de-c107ac23f80e" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0a97-8b37-7990-e884" name="Bulwark of Purity" book="Gathering Storm III: Rise of the Primarch" page="125" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules>
+        <rule id="64ba-09d4-5d54-41ae" name="Bulwark Formation" book="Gathering Storm III: Rise of the Primarch" page="125" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>While three or more units from this Formation are on the battlefield, you can add 1 to the result when making Deny the Witch tests.</description>
+        </rule>
+        <rule id="dd90-972c-5672-4a0f" name="Aura of Purity" book="Gathering Storm III: Rise of the Primarch" page="125" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>While three or more units from this Formation are on the battlefield, if any unit from this Formation successfully manifests the Banishment psychic power, all units with the Daemon special rule within 12&quot; of any unit from this Formation are affected.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0a7f-bcc1-4f12-3606" name="1 Librarian" hidden="false" collective="false" defaultSelectionEntryId="9010-fc23-bbb0-677c">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d583-ea7c-9081-2275" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07c7-c627-1468-b072" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="9010-fc23-bbb0-677c" name="New EntryLink" hidden="false" targetId="01971006-e9c2-92c1-df25-5847338f31b1" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5493-e2e7-c7c8-c2d2" name="2 Paladin Squads" hidden="false" collective="false" defaultSelectionEntryId="1a7d-ee8a-b5bb-ef5f">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4679-6669-7bce-696e" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec94-ae20-24f0-e04d" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="1a7d-ee8a-b5bb-ef5f" name="New EntryLink" hidden="false" targetId="7b3014fb-e19d-5d25-564e-72bf8841fc8f" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b219-f7e5-d3a4-8f5c" name="2 Terminator Squads" hidden="false" collective="false" defaultSelectionEntryId="bb34-123f-30bc-8fde">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10d7-a806-ec48-6a8c" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2543-c28f-29bd-219b" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="bb34-123f-30bc-8fde" name="New EntryLink" hidden="false" targetId="2a375239-5bc3-0ee5-6e24-56b60fb4bac6" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
