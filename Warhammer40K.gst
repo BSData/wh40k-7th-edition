@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2038" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2039" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -4773,14 +4773,14 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker re-rolls all failed To Hit and To Wound rolls. In addition, while the power is in effect, the Psyker re-rolls failed saving throws."/>
           </characteristics>
         </profile>
-        <profile id="0620-1710-32d7-8ba2" name="5 - Misfortunre" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="0620-1710-32d7-8ba2" name="5 - Misfortune" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Maledictio"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all attacks that hit the target unit have the Rending special rule."/>
           </characteristics>
@@ -11874,7 +11874,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Each time a unit (or model) is targeted by an enemy psychic power and is within 12&quot; of a friendly model with a psychic hood, the wearer of the hood can attempt to Deny the Witch in their stead, as if he were in the target unit.  If the Deny the Witch attempt is failed, the psychic power is resolved as norma, but effects only the initial target, not the wearer of the hood.  If a model with a psychic hood is embarked in a vehicle or building, he can only use the hood to nullify powers targeting the vehicle or building he is embarked within."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Each time a unit (or model) is targeted by an enemy psychic power and is within 12&quot; of a friendly model with a psychic hood, the wearer of the hood can attempt to Deny the Witch in their stead, as if he were in the target unit.  If the Deny the Witch attempt is failed, the psychic power is resolved as normal, but effects only the initial target, not the wearer of the hood.  If a model with a psychic hood is embarked in a vehicle or building, he can only use the hood to nullify powers targeting the vehicle or building he is embarked within."/>
       </characteristics>
     </profile>
     <profile id="98ac-5132-9ebd-c355" name="Orbital Strike" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
