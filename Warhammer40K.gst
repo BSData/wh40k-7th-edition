@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2037" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e1ebd931-a209-3ce4-87b4-d9918d25530b" name="Warhammer 40,000 7th Edition" revision="2040" battleScribeVersion="2.00" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -3511,7 +3511,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="The Primus Redoubt is protected from enemy attack by a projected force shield intended primarily to ward off bombardments from planetary assault vessels in low orbit or from strategic bombardments fired from a great distance away. The redoubt has a 4+ invulnerable save against direct shooting attacks, increased to 3+ against barrage attacks that are fired without being adjusted by the firer’s or an observer’s Ballistic Skill."/>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="The Primus Redoubt is protected from enemy attack by a projected force shield intended primarily to ward off bombardments from planetary assault vessels in low orbit or from strategic bombardments fired from a great distance away. The redoubt has a 4+ invulnerable save against direct shooting attacks, increased to 3+ against barrage attacks that are fired without being adjusted by the firer&apos;s or an observer&apos;s Ballistic Skill."/>
           </characteristics>
         </profile>
       </profiles>
@@ -3521,9 +3521,9 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>The Primus Redoubt may only be claimed by an opposing player by embarking models within it – simply moving models onto a Battlement is insufficient to claim it. If no enemy troops are embarked within the redoubt, it is always claimed by the owning side.
+          <description>The Primus Redoubt may only be claimed by an opposing player by embarking models within it - simply moving models onto a Battlement is insufficient to claim it. If no enemy troops are embarked within the redoubt, it is always claimed by the owning side.
 
-The Primus Redoubt’s turbo laser turret is never rendered unable to fire as a result of rolls on the Building Damage table. The turret is never removed as a result of a Structural Collapse or Catastrophic Breach damage result – only the total destruction of the Primus Redoubt destroys the turret weapon.
+The Primus Redoubt&apos;s turbo laser turret is never rendered unable to fire as a result of rolls on the Building Damage table. The turret is never removed as a result of a Structural Collapse or Catastrophic Breach damage result - only the total destruction of the Primus Redoubt destroys the turret weapon.
 
 While counted as a single building, multiple units may be embarked within the Primus
 Redoubt. Multiple units may enter or exit the building each turn, so long as each uses a different Access Point.</description>
@@ -3568,7 +3568,7 @@ Redoubt. Multiple units may enter or exit the building each turn, so long as eac
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <description>This weapon is controlled by a crew of dedicated gunners, located far below the turret and protected by metres-thick heavy armour. The owning side always fires the turbo laser destructor and it may not be fired by embarked models. The crew count as having a Ballistic Skill of 3, increased to 4 when firing at Super-heavy vehicles or Gargantuan Creatures. The weapon may fire independently and need not target the same enemy as the redoubt’s other weapons.
+              <description>This weapon is controlled by a crew of dedicated gunners, located far below the turret and protected by metres-thick heavy armour. The owning side always fires the turbo laser destructor and it may not be fired by embarked models. The crew count as having a Ballistic Skill of 3, increased to 4 when firing at Super-heavy vehicles or Gargantuan Creatures. The weapon may fire independently and need not target the same enemy as the redoubt&apos;s other weapons.
 
 In the event of enemy models embarking inside the Primus Redoubt, the Battle Crew are slain and the weapon may not be fired again for the remainder of the battle.</description>
             </rule>
@@ -4683,7 +4683,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Focussed Witchfire"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Both the Psyker and thetarget model roll a D6 and add their respective Leadership values. If the target’s total isgreater than the Psyker’s total, nothing happens. If the Psyker’s total is greater than orequal to the target’s total, the target model suffers an automatic Wound with no armouror cover saves allowed. Purge Soul has no effect on vehicles."/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Both the Psyker and thetarget model roll a D6 and add their respective Leadership values. If the target&apos;s total isgreater than the Psyker&apos;s total, nothing happens. If the Psyker&apos;s total is greater than orequal to the target&apos;s total, the target model suffers an automatic Wound with no armouror cover saves allowed. Purge Soul has no effect on vehicles."/>
           </characteristics>
         </profile>
         <profile id="c1cc-0e41-1c5f-940e" name="5 - Cleansing Flame" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
@@ -4773,14 +4773,14 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker re-rolls all failed To Hit and To Wound rolls. In addition, while the power is in effect, the Psyker re-rolls failed saving throws."/>
           </characteristics>
         </profile>
-        <profile id="0620-1710-32d7-8ba2" name="5 - Misfortunre" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="0620-1710-32d7-8ba2" name="5 - Misfortune" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Maledictio"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all attacks that hit the target unit have the Rending special rule."/>
           </characteristics>
@@ -5292,7 +5292,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all of the target’s ranged weapons have the Gets Hot special rule. In addition, if the target is a vehicle (or vehicle squadron), each vehicle in the unit suffers a single Strength 1 hit with the Haywire special rule."/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all of the target&apos;s ranged weapons have the Gets Hot special rule. In addition, if the target is a vehicle (or vehicle squadron), each vehicle in the unit suffers a single Strength 1 hit with the Haywire special rule."/>
           </characteristics>
         </profile>
         <profile id="7529-7927-ba76-fa28" name="4 - Levitation" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
@@ -5382,7 +5382,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all models with the Daemon special rule (friend or foe) within 12&quot; of the Psyker have a +1 bonus to their invulnerable save (normally increasing it to 4+). This is cumulative withany other modifiers to a Daemon’s invulnerable save. In addition, whilst the power is in effect, friendly units with the Daemon special rule will not scatter when arriving from Deep Strike Reserve so long as the first model is placed within 12&quot; of the Psyker."/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all models with the Daemon special rule (friend or foe) within 12&quot; of the Psyker have a +1 bonus to their invulnerable save (normally increasing it to 4+). This is cumulative withany other modifiers to a Daemon&apos;s invulnerable save. In addition, whilst the power is in effect, friendly units with the Daemon special rule will not scatter when arriving from Deep Strike Reserve so long as the first model is placed within 12&quot; of the Psyker."/>
           </characteristics>
         </profile>
         <profile id="09ad-5655-b5a6-061f" name="(Primaris) Summoning" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
@@ -5421,7 +5421,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Conjuration"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="6&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Sacrifice creates one of the following units (your choice): 1 Herald of Khorne, 1 Herald of Tzeentch, 1 Herald of Nurgle or 1 Herald of Slaanesh, with up to 30 points’ worth of options. If this power is successfully manifested, one friendly model within 6&quot; of the Psyker (or the Psyker himself) immediately suffers a single Wound with no saves of any kind allowed."/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Sacrifice creates one of the following units (your choice): 1 Herald of Khorne, 1 Herald of Tzeentch, 1 Herald of Nurgle or 1 Herald of Slaanesh, with up to 30 points&apos; worth of options. If this power is successfully manifested, one friendly model within 6&quot; of the Psyker (or the Psyker himself) immediately suffers a single Wound with no saves of any kind allowed."/>
           </characteristics>
         </profile>
         <profile id="14b9-1bdd-9f54-579b" name="5 - Incursion" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
@@ -5739,7 +5739,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target unit must pass a Leadership test each time it attempts to move, manifest a psychic power, shoot, Run or declare a charge – if the test is failed, the action is forfeit and the unit can do nothing else that phase. A unit that fails this test when attempting to fire Overwatch does not fire any shots, but acts normally in the ensuing Fight sub-phase."/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target unit must pass a Leadership test each time it attempts to move, manifest a psychic power, shoot, Run or declare a charge - if the test is failed, the action is forfeit and the unit can do nothing else that phase. A unit that fails this test when attempting to fire Overwatch does not fire any shots, but acts normally in the ensuing Fight sub-phase."/>
           </characteristics>
         </profile>
         <profile id="8d4f-c8e5-88ab-0b34" name="3 - Terrify" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
@@ -5763,7 +5763,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Witchfire"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Roll 3D6 and subtract the target’s Leadership – the target unit suffers a number of Wounds equal to the result. Armour and cover saves cannot be taken against Wounds caused by Psychic Shriek."/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Roll 3D6 and subtract the target&apos;s Leadership - the target unit suffers a number of Wounds equal to the result. Armour and cover saves cannot be taken against Wounds caused by Psychic Shriek."/>
           </characteristics>
         </profile>
         <profile id="e462-f8d5-8bd3-99a0" name="2 - Mental Fortitude" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
@@ -6148,7 +6148,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Below are three Canticles of the Archmagos that can only be used if Belisarius Cawl is on the battlefield. These work in exactly the same way as Canticles of the Omnissiah, except they also affect friendly vehicle units from the Armies of the Imperium within 12&quot; of him, even if they don’t have the Canticles of the Omnissiah special rule.
+          <description>Below are three Canticles of the Archmagos that can only be used if Belisarius Cawl is on the battlefield. These work in exactly the same way as Canticles of the Omnissiah, except they also affect friendly vehicle units from the Armies of the Imperium within 12&quot; of him, even if they don&apos;t have the Canticles of the Omnissiah special rule.
 
 HARMONY OF METALURGY
 1-3  It Will Not Die.
@@ -6859,7 +6859,7 @@ BENEDICTION OF OMNISCIENCE
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="The first time Saint Celestine is removed as a casualty, She must take a LD test. If this test is failed, She is slain as normal; If successful, leave a suitable counter on the spot where Saint Celestinelost her last wound. At the start of your next turn, place Saint Celestine back on the battlefield, all her Wounds restored, within 1&quot; of the counter(or as close to it as possible). Saint Celestine can act normally in a turn in which she ‘resurrects’, and can even use her Healing Tears abilities to restore one of her slain Geminae Superia. If Saint Celestine is your Warlord, her Martyrdom special rule will only take effect, and she will only award Victory Points for objectives such as ‘Slay the Warlord’, if she fails her Act of Faith test or if she has been removed as a casualty for the second time. If Celestine has been slain and the game ends before she can return to the battlefeild, she counts as destroyed."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="The first time Saint Celestine is removed as a casualty, She must take a LD test. If this test is failed, She is slain as normal; If successful, leave a suitable counter on the spot where Saint Celestinelost her last wound. At the start of your next turn, place Saint Celestine back on the battlefield, all her Wounds restored, within 1&quot; of the counter(or as close to it as possible). Saint Celestine can act normally in a turn in which she &apos;resurrects&apos;, and can even use her Healing Tears abilities to restore one of her slain Geminae Superia. If Saint Celestine is your Warlord, her Martyrdom special rule will only take effect, and she will only award Victory Points for objectives such as &apos;Slay the Warlord&apos;, if she fails her Act of Faith test or if she has been removed as a casualty for the second time. If Celestine has been slain and the game ends before she can return to the battlefeild, she counts as destroyed."/>
               </characteristics>
             </profile>
             <profile id="c11a-7488-e9d9-1548" name="Saint Celestine" book="Codex: Adepta Sororitas" page="0" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd">
@@ -6923,7 +6923,7 @@ BENEDICTION OF OMNISCIENCE
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <description>All friendly models that are within 12&quot; of the Warlord use the Warlord’s Leadership value when taking Act of Faith or War Hymns Leadership tests, unless their own is higher.</description>
+              <description>All friendly models that are within 12&quot; of the Warlord use the Warlord&apos;s Leadership value when taking Act of Faith or War Hymns Leadership tests, unless their own is higher.</description>
             </rule>
             <rule id="e01a-2d9f-c5e1-ada4" name="Healing Tears" hidden="false">
               <profiles/>
@@ -7109,7 +7109,7 @@ BENEDICTION OF OMNISCIENCE
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="19a8-e620-6e04-d5a9" name="Lord of War" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="19a8-e620-6e04-d5a9" name="Lord of War" hidden="true" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -9378,7 +9378,7 @@ If several models are in a position to capture Cypher, some of which are Dark An
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <description>Once per game, the bearer can choose to unleash Numinasta’s Casket instead of using another ranged weapon. This attack automatically targets and hits all enemy units (including Flyers and Flying Monstrous Creatures) within range of the attack, regardless of line of sight.</description>
+              <description>Once per game, the bearer can choose to unleash Numinasta&apos;s Casket instead of using another ranged weapon. This attack automatically targets and hits all enemy units (including Flyers and Flying Monstrous Creatures) within range of the attack, regardless of line of sight.</description>
             </rule>
           </rules>
           <infoLinks/>
@@ -9748,7 +9748,7 @@ If several models are in a position to capture Cypher, some of which are Dark An
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="The bearer of Desvalle’s Holy Circle has a 4+ invulnerable save. Furthermore, enemy units cannot arrive via Deep Strike anywhere within 12&quot; of the bearer. If an enemy unit arriving via Deep Strike scatters within 12&quot; of the bearer, they automatically suffer a Deep Strike Mishap."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="The bearer of Desvalle&apos;s Holy Circle has a 4+ invulnerable save. Furthermore, enemy units cannot arrive via Deep Strike anywhere within 12&quot; of the bearer. If an enemy unit arriving via Deep Strike scatters within 12&quot; of the bearer, they automatically suffer a Deep Strike Mishap."/>
               </characteristics>
             </profile>
           </profiles>
@@ -9805,7 +9805,7 @@ If several models are in a position to capture Cypher, some of which are Dark An
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Any unit hit by one or more models or weapons with this special rule must take an Initiative test at the end of the current phase. If the test is passed, all is well – a shouted warning has caused the warriors to avert their gaze. If the Initiative test is failed, all models in the unit are reduced to Weapon Skill and Ballistic Skill 1 until the end of their next turn. Should the attacking unit hit themselves, we assume they are prepared and they automatically pass the test. Any model that does not have an Initiative characteristic (for example, non-Walker vehicles, buildings etc.) is unaffected by this special rule. </description>
+      <description>Any unit hit by one or more models or weapons with this special rule must take an Initiative test at the end of the current phase. If the test is passed, all is well - a shouted warning has caused the warriors to avert their gaze. If the Initiative test is failed, all models in the unit are reduced to Weapon Skill and Ballistic Skill 1 until the end of their next turn. Should the attacking unit hit themselves, we assume they are prepared and they automatically pass the test. Any model that does not have an Initiative characteristic (for example, non-Walker vehicles, buildings etc.) is unaffected by this special rule. </description>
     </rule>
     <rule id="b4c1-e1df-b875-92a6" name="Bulky" book="BRB" hidden="false">
       <profiles/>
@@ -9848,7 +9848,7 @@ If, when charged, the unit was already locked in combat, the Counter-attack spec
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>At the start of each Fight sub-phase, a unit in base contact with one or more enemy models that cause Fear must take a Leadership test (called a Fear test) before any blows are struck. If the test is passed, all is well and there is no effect. If the test is failed, the unit succumbs to fear – all models in the unit have their Weapon Skill reduced to 1 for the remainder of that Fight sub-phase. Note that a model that causes Fear is not itself immune to Fear, and will still need to take a Fear test if it is base contact with any enemy models that cause Fear.</description>
+      <description>At the start of each Fight sub-phase, a unit in base contact with one or more enemy models that cause Fear must take a Leadership test (called a Fear test) before any blows are struck. If the test is passed, all is well and there is no effect. If the test is failed, the unit succumbs to fear - all models in the unit have their Weapon Skill reduced to 1 for the remainder of that Fight sub-phase. Note that a model that causes Fear is not itself immune to Fear, and will still need to take a Fear test if it is base contact with any enemy models that cause Fear.</description>
     </rule>
     <rule id="8d37-2e47-4a04-58f7" name="Fearless" book="BRB" hidden="false">
       <profiles/>
@@ -9862,13 +9862,13 @@ If, when charged, the unit was already locked in combat, the Counter-attack spec
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being wounded (this is not a saving throw and so can be used against attacks that state that ‘no saves of any kind are allowed’, for example those inflicted by Perils of the Warp).
+      <description>When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being wounded (this is not a saving throw and so can be used against attacks that state that &apos;no saves of any kind are allowed&apos;, for example those inflicted by Perils of the Warp).
 
 Feel No Pain saves may not be taken against Destroyer attacks or against unsaved Wounds that have the Instant Death special rule.
 
-Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved  Wound is discounted – treat it as having been saved.
+Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved  Wound is discounted - treat it as having been saved.
 
-If a unit has the Feel No Pain special rule with a number in brackets afterwards –Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
+If a unit has the Feel No Pain special rule with a number in brackets afterwards -Feel No Pain (6+), for example - then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
     <rule id="39c6-1f20-a156-47f4" name="Fleet" book="BRB" hidden="false">
       <profiles/>
@@ -9896,7 +9896,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>If a model with this special rule ends its charge move in base or hull contact with an enemy model, it makes one additional Attack that hits automatically and is resolved at the model’s unmodified Strength with AP-. This Attack does not benefit from any of the model’s special rules (such as Furious Charge, Rending etc.). This Attack is resolved during the Fight sub-phase at the Initiative 10 step, but does not grant the model an additional Pile In move.
+      <description>If a model with this special rule ends its charge move in base or hull contact with an enemy model, it makes one additional Attack that hits automatically and is resolved at the model&apos;s unmodified Strength with AP-. This Attack does not benefit from any of the model&apos;s special rules (such as Furious Charge, Rending etc.). This Attack is resolved during the Fight sub-phase at the Initiative 10 step, but does not grant the model an additional Pile In move.
 
 If a model with this special rule charges a building or vehicle, the hit is resolved against the Armour Value of the facing the charging model is touching. If a model with this special rule charges a building or vehicle that is a Transport or a Chariot, the hit is resolved against the building or vehicle, not the occupants or the rider.</description>
     </rule>
@@ -9909,7 +9909,7 @@ If a model with this special rule charges a building or vehicle, the hit is reso
 
 If the test is failed, nothing happens and the models remain locked in the fight.
 
-If the test is passed, choose a direction – then roll 3D6. As long as the distance rolled, in inches, is sufficient to allow the entire unit to move over 1&quot; away from all of the enemy units they are locked in combat with, the unit breaks away from combat and must immediately move a number of inches in the chosen direction equal to the 3D6 result, ignoring the models they were locked in combat with. No Sweeping Advance rolls are made. Enemy units that are no longer locked in combat immediately Consolidate D6&quot;.
+If the test is passed, choose a direction - then roll 3D6. As long as the distance rolled, in inches, is sufficient to allow the entire unit to move over 1&quot; away from all of the enemy units they are locked in combat with, the unit breaks away from combat and must immediately move a number of inches in the chosen direction equal to the 3D6 result, ignoring the models they were locked in combat with. No Sweeping Advance rolls are made. Enemy units that are no longer locked in combat immediately Consolidate D6&quot;.
 
 A Hit &amp; Run move is not slowed by difficult terrain, but takes Dangerous Terrain tests as normal. It may not be used to move into base or hull contact with enemy units, and models instead stop 1&quot; away. If there are units with this rule on both sides who wish to disengage, roll-off to determine who goes first and then alternate disengaging them. If the last of these ends up no longer in combat, it Consolidates instead.</description>
     </rule>
@@ -9977,7 +9977,7 @@ If a unit has both the Infiltrate and Scout special rule, that unit can deploy a
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>If a model with this special rule rolls a 6 To Hit with a shooting weapon, that shot is a ‘Precision Shot’.
+      <description>If a model with this special rule rolls a 6 To Hit with a shooting weapon, that shot is a &apos;Precision Shot&apos;.
 
 Wounds from Precision Shots are allocated against a model (or models) of your choice in the target unit, as long as it is in range and line of sight of the firer, rather than following the normal rules for Wound allocation. A character that has a Precision Shot Wound allocated to it can still make a Look Out, Sir roll.
 
@@ -9995,7 +9995,7 @@ Note that Snap Shots and shots from weapons that scatter, or do not roll To Hit,
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>At the start of any Fight sub-phase, models with the Rampage special rule gain +D3 attacks if the combat they are in contains more enemy models than friendly models – count all models locked in the combat, not just those models that are engaged. Roll once to determine the number of bonus Attacks all Rampaging models involved in that combat receive that phase. A model that has made a disordered charge that turn receives no benefit from Rampage.</description>
+      <description>At the start of any Fight sub-phase, models with the Rampage special rule gain +D3 attacks if the combat they are in contains more enemy models than friendly models - count all models locked in the combat, not just those models that are engaged. Roll once to determine the number of bonus Attacks all Rampaging models involved in that combat receive that phase. A model that has made a disordered charge that turn receives no benefit from Rampage.</description>
     </rule>
     <rule id="7674-690c-ab59-1444" name="Relentless" book="BRB" hidden="false">
       <profiles/>
@@ -10013,7 +10013,7 @@ Note that Snap Shots and shots from weapons that scatter, or do not roll To Hit,
 
 Similarly, if a model makes a shooting attack with a weapon that has the Rending special rule, a To Wound roll of 6 Wounds automatically, regardless of Toughness, and is resolved at AP2.
 
-In either case, against vehicles, each armour penetration roll of 6 allows a further D3 to be rolled, with the result added to the total. These hits are not resolved at AP2, but are instead resolved using the model/weapon’s AP value.</description>
+In either case, against vehicles, each armour penetration roll of 6 allows a further D3 to be rolled, with the result added to the total. These hits are not resolved at AP2, but are instead resolved using the model/weapon&apos;s AP value.</description>
     </rule>
     <rule id="5770-35c6-7341-5527" name="Shred" book="BRB" hidden="false">
       <profiles/>
@@ -10029,7 +10029,7 @@ Similarly, if a model makes a shooting attack with a weapon that has the Shred s
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>A unit that contains at least one model with this special rule counts its cover save as being 2 points better than normal. Note that this means a model with the Shrouded special rule always has a cover save of at least 5+, even if it’s in the open.
+      <description>A unit that contains at least one model with this special rule counts its cover save as being 2 points better than normal. Note that this means a model with the Shrouded special rule always has a cover save of at least 5+, even if it&apos;s in the open.
 
 Cover save bonuses from the Shrouded and Stealth special rules are cumulative (to a maximum of a 2+ cover save).</description>
     </rule>
@@ -10045,7 +10045,7 @@ Cover save bonuses from the Shrouded and Stealth special rules are cumulative (t
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>All of the close combat attacks, except Hammer of Wrath attacks, of a model with this special rule are resolved at AP2 (unless it’s attacking with an AP1 weapon). Additionally, when it makes its close combat attacks, it can choose instead to make a single Smash Attack. If it does so, roll To Hit as normal, but resolve the Attack at double the model’s Strength (to a maximum of 10). Furthermore, a model making a Smash Attack can re-roll its armour penetration rolls, but must abide by the second result.</description>
+      <description>All of the close combat attacks, except Hammer of Wrath attacks, of a model with this special rule are resolved at AP2 (unless it&apos;s attacking with an AP1 weapon). Additionally, when it makes its close combat attacks, it can choose instead to make a single Smash Attack. If it does so, roll To Hit as normal, but resolve the Attack at double the model&apos;s Strength (to a maximum of 10). Furthermore, a model making a Smash Attack can re-roll its armour penetration rolls, but must abide by the second result.</description>
     </rule>
     <rule id="6981-e5a9-c7d1-9332" name="Specialist Weapon" book="BRB" hidden="false">
       <profiles/>
@@ -10094,7 +10094,7 @@ Cover save bonuses from the Shrouded and Stealth special rules are cumulative (t
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>A unit that contains at least one model with this special rule re-rolls failed armour penetration rolls against vehicles (both with shooting and in close combat) and can choose to re-roll glancing hits, in an attempt to instead get a penetrating hit – but the second result must be kept.</description>
+      <description>A unit that contains at least one model with this special rule re-rolls failed armour penetration rolls against vehicles (both with shooting and in close combat) and can choose to re-roll glancing hits, in an attempt to instead get a penetrating hit - but the second result must be kept.</description>
     </rule>
     <rule id="20e0-3f6c-f3ac-fda2" name="Very Bulky" book="BRB" hidden="false">
       <profiles/>
@@ -10110,7 +10110,7 @@ Cover save bonuses from the Shrouded and Stealth special rules are cumulative (t
       <modifiers/>
       <description>A unit containing one or more models with the Zealot special rule automatically passes Pinning, Fear and Regroup tests and Morale checks, but cannot Go to Ground and cannot choose to fail a Morale check due to the Our Weapons Are Useless rule. If a unit gains the Zealot special rule when it has Gone to Ground, all the effects of Go to Ground are immediately cancelled.
 
-In addition, units containing one or more models with the Zealot special rule re-roll all failed To Hit rolls during the first round of each close combat – they do not get to re-roll failed To Hit rolls in subsequent rounds.</description>
+In addition, units containing one or more models with the Zealot special rule re-roll all failed To Hit rolls during the first round of each close combat - they do not get to re-roll failed To Hit rolls in subsequent rounds.</description>
     </rule>
     <rule id="6428-979b-5904-7475" name="Extremely Bulky" book="BRB" hidden="false">
       <profiles/>
@@ -10128,14 +10128,14 @@ In addition, units containing one or more models with the Zealot special rule re
 
 The marker for a Vortex weapon is not removed from play after damage has been resolved. Leave it in play on the tabletop. The marker is impassable terrain as long as it remains in play.
 
-At the beginning of every subsequent player turn, the marker scatters 2D6&quot; (use the little arrow if you roll a Hit!). If a double is rolled, the marker is removed from play instead. Any unit under the marker’s new location is hit. Apply damage as described above.</description>
+At the beginning of every subsequent player turn, the marker scatters 2D6&quot; (use the little arrow if you roll a Hit!). If a double is rolled, the marker is removed from play instead. Any unit under the marker&apos;s new location is hit. Apply damage as described above.</description>
     </rule>
     <rule id="3002-de38-7230-fbc6" name="Twin-Linked" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>If a shooting weapon has the twin-linked special rule, or is described in a model’s wargear entry as twin-linked, it re-rolls all failed To Hit rolls.
+      <description>If a shooting weapon has the twin-linked special rule, or is described in a model&apos;s wargear entry as twin-linked, it re-rolls all failed To Hit rolls.
 
 For a Blast weapon, if the scatter dice does not roll a hit, you can choose to re-roll the dice with a Twin-linked Blast weapon. If you choose to do so, you must re-roll both the 2D6 and the scatter dice. 
 
@@ -10160,9 +10160,9 @@ Twin-linked Template weapons are fired just like a single weapon, but must re-ro
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>If a unit suffers one or more unsaved Wounds from an attack with this special rule, it is set ablaze and continues to burn – mark it with a coin or counter as a reminder.
+      <description>If a unit suffers one or more unsaved Wounds from an attack with this special rule, it is set ablaze and continues to burn - mark it with a coin or counter as a reminder.
 
-At the end of each turn, roll a D6 for each unit with a Soul Blaze counter on it. On a 3 or less, the flames die out and the unit is no longer ablaze – remove your reminder counter. On a 4+, the unit takes D3 Strength 4 AP5 hits with the Ignores Cover special rule. These Wounds are Randomly Allocated. A unit cannot have more than one Soul Blaze counter on it at a time.</description>
+At the end of each turn, roll a D6 for each unit with a Soul Blaze counter on it. On a 3 or less, the flames die out and the unit is no longer ablaze - remove your reminder counter. On a 4+, the unit takes D3 Strength 4 AP5 hits with the Ignores Cover special rule. These Wounds are Randomly Allocated. A unit cannot have more than one Soul Blaze counter on it at a time.</description>
     </rule>
     <rule id="d0ea-e2a6-032d-8754" name="Concussive" book="BRB" hidden="false">
       <profiles/>
@@ -10194,7 +10194,7 @@ In either case, this special rule has no effect against vehicles or buildings.</
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>When Swooping or Zooming, this model may savage its prey. At the end of the Movement phase, nominate one enemy unit not locked in combat that the model has moved over that turn. That unit takes 1 hit (if the unit is an enemy Flyer in Zoom mode, or an enemy Swooping Flying Monstrous Creature, it instead takes D3 hits). Unless stated otherwise, Vector Strike hits are resolved at the model’s unmodified Strength and AP2, using Random Allocation. These hits have the Ignores Cover special rule. These hits do not benefit from any of the model’s special rules, such as Furious Charge, Poisoned, Rending etc. Against vehicles, these hits are resolved against the target&apos;s side armour.
+      <description>When Swooping or Zooming, this model may savage its prey. At the end of the Movement phase, nominate one enemy unit not locked in combat that the model has moved over that turn. That unit takes 1 hit (if the unit is an enemy Flyer in Zoom mode, or an enemy Swooping Flying Monstrous Creature, it instead takes D3 hits). Unless stated otherwise, Vector Strike hits are resolved at the model&apos;s unmodified Strength and AP2, using Random Allocation. These hits have the Ignores Cover special rule. These hits do not benefit from any of the model&apos;s special rules, such as Furious Charge, Poisoned, Rending etc. Against vehicles, these hits are resolved against the target&apos;s side armour.
 
 A model that made a Vector Strike in its Movement phase counts as having already fired one weapon in its following Shooting phase. However, any additional weapons it fires that turn can choose a different target to that of the Vector Strike.</description>
     </rule>
@@ -10246,9 +10246,9 @@ Force is a blessing psychic power that targets the Psyker and his unit. All of t
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>When firing a weapon that Gets Hot, roll To Hit as normal. For each To Hit roll of 1, the firing model immediately suffers a Wound (armour or invulnerable saves can be taken) – this Wound cannot be allocated to any other model in the unit. A character cannot make a Look Out, Sir attempt to avoid a Wound caused by the Gets Hot special rule. A vehicle instead rolls a D6 for each roll of a 1 to hit. On a roll of a 1, 2 or 3 it suffers a glancing hit.
+      <description>When firing a weapon that Gets Hot, roll To Hit as normal. For each To Hit roll of 1, the firing model immediately suffers a Wound (armour or invulnerable saves can be taken) - this Wound cannot be allocated to any other model in the unit. A character cannot make a Look Out, Sir attempt to avoid a Wound caused by the Gets Hot special rule. A vehicle instead rolls a D6 for each roll of a 1 to hit. On a roll of a 1, 2 or 3 it suffers a glancing hit.
 
-Weapons that do not roll To Hit (such as Blast weapons) must roll a D6 for each shot immediately before firing. On a 2+, the shot is resolved as normal. For each roll of a 1, the weapon Gets Hot; that shot is not fired and the firing model immediately suffers a single Wound (armour saves or invulnerable saves can be taken) – this Wound cannot be allocated to any other model in the unit. A character cannot make a Look Out, Sir attempt to avoid a Wound caused by the Gets Hot special rule. A vehicle instead suffers a glancing hit on a further roll of a 1, 2 or 3.
+Weapons that do not roll To Hit (such as Blast weapons) must roll a D6 for each shot immediately before firing. On a 2+, the shot is resolved as normal. For each roll of a 1, the weapon Gets Hot; that shot is not fired and the firing model immediately suffers a single Wound (armour saves or invulnerable saves can be taken) - this Wound cannot be allocated to any other model in the unit. A character cannot make a Look Out, Sir attempt to avoid a Wound caused by the Gets Hot special rule. A vehicle instead suffers a glancing hit on a further roll of a 1, 2 or 3.
 
 If a model has the ability to re-roll its rolls To Hit (including because of BS6+ or the Twin-linked special rule), a Wound is only suffered if the To Hit re-roll is also a 1; it may also re-roll Gets Hot results of 1 for weapons that do not roll To Hit.</description>
     </rule>
@@ -10294,16 +10294,16 @@ If a model has the ability to re-roll its rolls To Hit (including because of BS6
       <modifiers/>
       <description>During deployment, players can declare that any unit that contains at least one model with this special rule is attempting to Outflank the enemy. This means they are making a wide sweeping move to get behind enemy lines or come at the foe from an unexpected direction.
 
-When an Outflanking unit arrives from Reserves, but not Ongoing Reserve, the controlling player rolls a D6: on a 1-2, the unit comes in from the table edge to the left of their controlling player’s own table edge; on a 3-4, they come on from the right; on a 5-6, the player can choose left or right. Models move onto the table as described for other Reserves. If such a unit deploys inside a Dedicated Transport, they may Outflank along with their Transport.</description>
+When an Outflanking unit arrives from Reserves, but not Ongoing Reserve, the controlling player rolls a D6: on a 1-2, the unit comes in from the table edge to the left of their controlling player&apos;s own table edge; on a 3-4, they come on from the right; on a 5-6, the player can choose left or right. Models move onto the table as described for other Reserves. If such a unit deploys inside a Dedicated Transport, they may Outflank along with their Transport.</description>
     </rule>
     <rule id="bc4c-234f-0293-98a7" name="Melta" book="BRB" page="" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Ranged weapons with this special rule roll an additional D6 when rolling to penetrate a vehicle’s armour at half range or less. If the weapon is more than half its maximum range away, it rolls to penetrate as normal.
+      <description>Ranged weapons with this special rule roll an additional D6 when rolling to penetrate a vehicle&apos;s armour at half range or less. If the weapon is more than half its maximum range away, it rolls to penetrate as normal.
 
-If a weapon has both the Melta and Blast special rules, measure the distance to the centre of the blast marker after it has scattered. If this is half the weapon’s range or less, all hits caused by the blast marker roll an addition D6 when rolling to penetrate a vehicle’s armour. If the centre of the blast marker is more than half the weapon’s maximum range away after scatter, roll to penetrate as normal.</description>
+If a weapon has both the Melta and Blast special rules, measure the distance to the centre of the blast marker after it has scattered. If this is half the weapon&apos;s range or less, all hits caused by the blast marker roll an addition D6 when rolling to penetrate a vehicle&apos;s armour. If the centre of the blast marker is more than half the weapon&apos;s maximum range away after scatter, roll to penetrate as normal.</description>
     </rule>
     <rule id="46ca-9255-0e77-e9f5" name="Missile Lock" book="BRB" hidden="false">
       <profiles/>
@@ -10317,7 +10317,7 @@ If a weapon has both the Melta and Blast special rules, measure the distance to 
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>If a non-vehicle unit suffers one or more unsaved Wounds from a weapon with the Pinning special rule, it must take a Leadership test once the firing unit has finished its shooting attacks for that phase. This is called a Pinning test. If the unit fails the test, it is Pinned and must immediately Go to Ground. As the unit has already taken its saves, Going to Ground does not protect it against the fire of the Pinning weapon that caused the test – it’s too late! As long as the test is passed, a unit can be called upon to take multiple Pinning tests in a single turn, but only once for each unit shooting at them. If a unit has already Gone to Ground, no further Pinning tests are taken. If the special rules of a unit specify that the unit can never be Pinned, the unit automatically passes Pinning tests. Such units can still Go to Ground voluntarily if they wish.</description>
+      <description>If a non-vehicle unit suffers one or more unsaved Wounds from a weapon with the Pinning special rule, it must take a Leadership test once the firing unit has finished its shooting attacks for that phase. This is called a Pinning test. If the unit fails the test, it is Pinned and must immediately Go to Ground. As the unit has already taken its saves, Going to Ground does not protect it against the fire of the Pinning weapon that caused the test - it&apos;s too late! As long as the test is passed, a unit can be called upon to take multiple Pinning tests in a single turn, but only once for each unit shooting at them. If a unit has already Gone to Ground, no further Pinning tests are taken. If the special rules of a unit specify that the unit can never be Pinned, the unit automatically passes Pinning tests. Such units can still Go to Ground voluntarily if they wish.</description>
     </rule>
     <rule id="a5ff-1cb1-bee4-d809" name="Poisoned" book="BRB" hidden="false">
       <profiles/>
@@ -10331,7 +10331,7 @@ If a weapon has both the Melta and Blast special rules, measure the distance to 
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>If a model with this special rule rolls a 6 To Hit with a Melee weapon, that hit is a ‘Precision Strike’.
+      <description>If a model with this special rule rolls a 6 To Hit with a Melee weapon, that hit is a &apos;Precision Strike&apos;.
 
 Wounds from Precision Strikes are allocated against an engaged model (or models) of your choice in the unit you are attacking, rather than following the normal rules for Wound allocation. If a Precision Strike Wound is allocated to a character, they can still make their Look Out, Sir roll.</description>
     </rule>
@@ -10369,7 +10369,7 @@ Wounds from Precision Strikes are allocated against an engaged model (or models)
       <infoLinks/>
       <modifiers/>
       <description>After both sides have deployed (including Infiltrators), but before the first player begins his first turn, a unit containing at least one model with this special rule can choose to redeploy. If the unit is Infantry, Artillery, a Walker or a Monstrous Creature, each model can redeploy anywhere entirely within 6&quot; of its current position. If it is any other unit type, each model can instead
-redeploy anywhere entirely within 12&quot; of its current position. During this redeployment, Scouts can move outside the owning player’s deployment zone, but must remain more than 12&quot; away from any enemy unit. A unit that makes a Scout redeployment cannot charge in the first game turn. A unit cannot embark or disembark as part of a Scout redeployment. 
+redeploy anywhere entirely within 12&quot; of its current position. During this redeployment, Scouts can move outside the owning player&apos;s deployment zone, but must remain more than 12&quot; away from any enemy unit. A unit that makes a Scout redeployment cannot charge in the first game turn. A unit cannot embark or disembark as part of a Scout redeployment. 
 
 If both sides have Scouts, roll-off; the winner decides who redeploys first. Then alternate redeploying Scout units.
 
@@ -10396,9 +10396,9 @@ If a unit has both the Infiltrate and Scout special rule, that unit can deploy a
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>If a weapon has the Sniper special rule, or is fired by a model with the Sniper special rule, and rolls a 6 To Hit, that shot is a ‘Precision Shot’. Wounds from Precision Shots are allocated against a model (or models) of your choice in the target unit, as long as it is in range and line of sight of the firer, rather than following the normal rules for Wound allocation. A character that has a Precision Shot Wound allocated to it can still make a Look Out, Sir roll. Note that Snap Shots can never be Precision Shots.
+      <description>If a weapon has the Sniper special rule, or is fired by a model with the Sniper special rule, and rolls a 6 To Hit, that shot is a &apos;Precision Shot&apos;. Wounds from Precision Shots are allocated against a model (or models) of your choice in the target unit, as long as it is in range and line of sight of the firer, rather than following the normal rules for Wound allocation. A character that has a Precision Shot Wound allocated to it can still make a Look Out, Sir roll. Note that Snap Shots can never be Precision Shots.
 
-If a weapon has the Sniper special rule, or is fired by a model with the Sniper special rule, its shooting attacks always wound on a To Wound roll of 4+, regardless of the victim’s Toughness. In addition, any To Wound roll of a 6 is resolved at AP2.
+If a weapon has the Sniper special rule, or is fired by a model with the Sniper special rule, its shooting attacks always wound on a To Wound roll of 4+, regardless of the victim&apos;s Toughness. In addition, any To Wound roll of a 6 is resolved at AP2.
 
 Against vehicles, shooting attacks from weapons and models with the Sniper special rule count as Strength 4.</description>
     </rule>
@@ -10407,7 +10407,7 @@ Against vehicles, shooting attacks from weapons and models with the Sniper speci
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>When a unit that contains at least one model with this special rule shoots, one model in the unit can shoot at a different target to the rest of his unit. Once this shooting attack has been resolved, resolve the shooting attacks made by the rest of the unit. These must be at a different target, which cannot be a unit forced to disembark as a result of the Split Firing unit’s initial shooting attack.</description>
+      <description>When a unit that contains at least one model with this special rule shoots, one model in the unit can shoot at a different target to the rest of his unit. Once this shooting attack has been resolved, resolve the shooting attacks made by the rest of the unit. These must be at a different target, which cannot be a unit forced to disembark as a result of the Split Firing unit&apos;s initial shooting attack.</description>
     </rule>
     <rule id="9079-7061-f12c-a6ba" name="Swarms" book="BRB" page="" hidden="false">
       <profiles/>
@@ -10533,9 +10533,9 @@ Against vehicles, shooting attacks from weapons and models with the Sniper speci
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>A unit containing at least one model with this special rule is a Psyker unit – if no Mastery Level is shown, then that unit has a Mastery Level of 1. Rules for generating and manifesting psychic powers can be found in the Psychic phase section. The unit follows all the normal rules for Psykers, with the following clarifications:
+      <description>A unit containing at least one model with this special rule is a Psyker unit - if no Mastery Level is shown, then that unit has a Mastery Level of 1. Rules for generating and manifesting psychic powers can be found in the Psychic phase section. The unit follows all the normal rules for Psykers, with the following clarifications:
 
-When manifesting a psychic power, this unit measures range and line of sight from, and uses the characteristics profile (if required) of, any one model in the unit that has the Brotherhood of Psykers/Sorcerers special rule (controlling player’s choice).
+When manifesting a psychic power, this unit measures range and line of sight from, and uses the characteristics profile (if required) of, any one model in the unit that has the Brotherhood of Psykers/Sorcerers special rule (controlling player&apos;s choice).
 
 If this unit suffers Perils of the Warp, or is hit by an attack that specifically targets Psykers, the hits are Randomly Allocated amongst models with the Brotherhood of Psykers/Sorcerers special rule. If a model with this special rule gains or loses a psychic power, all other models with this special rule in their unit also gain or lose that power.</description>
     </rule>
@@ -10714,7 +10714,7 @@ Fear, Hammer of Wrath, Invincible Behemoth, Move Through Cover, Relentless, Smas
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>When making shooting attacks, this model re-rolls failed armour penetration rolls against vehicles and can choose to re-roll glancing hits, in an attempt to instead get a penetrating hit – but the second result must be kept</description>
+      <description>When making shooting attacks, this model re-rolls failed armour penetration rolls against vehicles and can choose to re-roll glancing hits, in an attempt to instead get a penetrating hit - but the second result must be kept</description>
     </rule>
     <rule id="0048-f0df-7559-f9c3" name="Eagle-Eye" hidden="false">
       <profiles/>
@@ -10768,7 +10768,7 @@ D6 Result
       <infoLinks/>
       <modifiers/>
       <description>f a non-vehicle model suffers one or more hits from a shooting attack made by this model, the target must take a Leadership test once this model has finished its attacks for that phase. This is called a Pinning test. 
-If the target fails the test, it must immediately Go to Ground (see Warhammer 40,000: The Rules ). As the target has already taken its saves, Going to Ground does not protect it against the fire of the weapon that caused the test – it’s too late! As long as the test is passed, a target can be called upon to take multiple Pinning tests in a single turn, but only once for each model shooting at them. If a model has already Gone to Ground, no further Pinning tests are taken.
+If the target fails the test, it must immediately Go to Ground (see Warhammer 40,000: The Rules ). As the target has already taken its saves, Going to Ground does not protect it against the fire of the weapon that caused the test - it&apos;s too late! As long as the test is passed, a target can be called upon to take multiple Pinning tests in a single turn, but only once for each model shooting at them. If a model has already Gone to Ground, no further Pinning tests are taken.
 If the special rules of a model specify that they can never be Pinned, they automatically pass this test. Such models can still Go to Ground voluntarily if they wish.</description>
     </rule>
     <rule id="2353-5421-d842-34fb" name="Blinding Distraction" hidden="false">
@@ -10776,7 +10776,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Any target hit in close combat by this model must take an Initiative test at the end of the current phase. If the test is passed, all is well – they have seen through the distraction. If the Initiative test is failed, the target is reduced to Weapon Skill and Ballistic Skill 1 until the end of their next turn. Any model that does not have an Initiative characteristic (for example, non-Walker vehicles, buildings etc.) is unaffected by this special rule.</description>
+      <description>Any target hit in close combat by this model must take an Initiative test at the end of the current phase. If the test is passed, all is well - they have seen through the distraction. If the Initiative test is failed, the target is reduced to Weapon Skill and Ballistic Skill 1 until the end of their next turn. Any model that does not have an Initiative characteristic (for example, non-Walker vehicles, buildings etc.) is unaffected by this special rule.</description>
     </rule>
     <rule id="7ab3-3bf5-f878-42cb" name="Exploit Weakness" hidden="false">
       <profiles/>
@@ -11667,7 +11667,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A unit occupying this building re-rolls To Hit rolls of a 1 when firing out of the building’s fire points. Note this does not apply to a model manually firing an emplaced weapon."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A unit occupying this building re-rolls To Hit rolls of a 1 when firing out of the building&apos;s fire points. Note this does not apply to a model manually firing an emplaced weapon."/>
       </characteristics>
     </profile>
     <profile id="58a2-c92e-57cc-d44c" name="Ammunition Dump" book="Planetary Onslaught" page="110" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
@@ -11694,7 +11694,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This building’s automated fire is resolved using BS3."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This building&apos;s automated fire is resolved using BS3."/>
       </characteristics>
     </profile>
     <profile id="4986-b80f-dc78-d02f" name="Escape Hatch" book="Stronghold Assault" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82">
@@ -11874,7 +11874,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Each time a unit (or model) is targeted by an enemy psychic power and is within 12&quot; of a friendly model with a psychic hood, the wearer of the hood can attempt to Deny the Witch in their stead, as if he were in the target unit.  If the Deny the Witch attempt is failed, the psychic power is resolved as norma, but effects only the initial target, not the wearer of the hood.  If a model with a psychic hood is embarked in a vehicle or building, he can only use the hood to nullify powers targeting the vehicle or building he is embarked within."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Each time a unit (or model) is targeted by an enemy psychic power and is within 12&quot; of a friendly model with a psychic hood, the wearer of the hood can attempt to Deny the Witch in their stead, as if he were in the target unit.  If the Deny the Witch attempt is failed, the psychic power is resolved as normal, but effects only the initial target, not the wearer of the hood.  If a model with a psychic hood is embarked in a vehicle or building, he can only use the hood to nullify powers targeting the vehicle or building he is embarked within."/>
       </characteristics>
     </profile>
     <profile id="98ac-5132-9ebd-c355" name="Orbital Strike" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
