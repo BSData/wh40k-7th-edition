@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="555e-9663-fc05-f0db" name="Eldar Craftworlds: Codex (2015)" book="Codex: Eldar Craftworlds (2015), Imperial Armour 11: Second Edition (2015), Death From the Skies (2016)" revision="2022" battleScribeVersion="2.00" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="555e-9663-fc05-f0db" name="Eldar Craftworlds: Codex (2015)" book="Codex: Eldar Craftworlds (2015), Imperial Armour 11: Second Edition (2015), Death From the Skies (2016)" revision="2024" battleScribeVersion="2.00" authorName="Eric Falsken" authorContact="eric@everylittlething.net" authorUrl="https://github.com/BSData/wh40k#warhammer-40000" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -9,7 +9,7 @@
     <forceEntry id="c2a1-7d99-4258-6821" name="E Craftworld Warhost" hidden="false">
       <profiles/>
       <rules>
-        <rule id="7692-eb45-de4f-7385" name="Matchless Agility" hidden="false">
+        <rule id="7692-eb45-de4f-7385" name="Matchless Agility" book="Codex: Eldar Craftworlds (2015)" page="95" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -90,6 +90,13 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="c68f-0b12-a64a-b33f" type="max"/>
           </constraints>
         </categoryEntry>
+        <categoryEntry id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
       </categoryEntries>
       <forceEntries/>
     </forceEntry>
@@ -144,37 +151,6 @@ If this Detachment contains four units, its units can roll to arrive from Deep S
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="419f-ef62-cf8c-0546" name="Command Benefits (Craftworlds Warhost)" hidden="false" collective="false" categoryEntryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="upgrade">
-      <profiles/>
-      <rules>
-        <rule id="47f7-b75f-a929-7b43" name="Matchless Agility" book="Codex: Eldar Craftworlds (2015)" page="95" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>If a unit comprised entirely of models from this Detachment Runs, do not roll a D6 to determine its Run distance. Instead, it automatically counts as having rolled a 6 (this will normally mean the unit can Run up to 6&quot;).</description>
-        </rule>
-      </rules>
-      <infoLinks/>
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="c2a1-7d99-4258-6821" type="notInstanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-      </constraints>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="95fbf510-1c74-4db6-b711-b54400737146" name="Primary Detachment" page="0" hidden="false" collective="false" categoryEntryId="7fc5b655-812e-45ed-98ff-db8847d356da" type="upgrade">
       <profiles/>
       <rules/>
@@ -188,16 +164,26 @@ If this Detachment contains four units, its units can roll to arrive from Deep S
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8434-ec05-4961-5633" name="Show Iyanden Supplement" hidden="false" collective="false" categoryEntryId="7fc5b655-812e-45ed-98ff-db8847d356da" type="upgrade">
+    <selectionEntry id="8434-ec05-4961-5633" name="Show Iyanden Supplement" hidden="false" collective="false" categoryEntryId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="ebfa-e1a2-70ce-41dd" name="Heroes of Iyanden" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>You may choose a single Wraithlord or Wraithknight model in your army to be your Warlord, even though it is not an HQ choice.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -352,14 +338,42 @@ If this Detachment contains four units, its units can roll to arrive from Deep S
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8434-ec05-4961-5633" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d421-22ec-4df1-b213" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
     <entryLink id="5fc0-0644-f47e-d46f" hidden="false" targetId="ed78-b211-4a69-7b55" type="selectionEntry" categoryEntryId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8434-ec05-4961-5633" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d421-22ec-4df1-b213" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
     <entryLink id="aadd-205d-29ac-d4e6" hidden="false" targetId="20e1-7f96-5ac8-047f" type="selectionEntry" categoryEntryId="c274d0b0-5866-44bc-9810-91c136ae7438">
@@ -1179,6 +1193,48 @@ If this Detachment contains four units, its units can roll to arrive from Deep S
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8434-ec05-4961-5633" type="lessThan"/>
           </conditions>
           <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+    </entryLink>
+    <entryLink id="dcc9-754e-23d3-f450" hidden="false" targetId="5190-023c-32bf-09ee" type="selectionEntry" categoryEntryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8434-ec05-4961-5633" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d421-22ec-4df1-b213" type="lessThan"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints/>
+    </entryLink>
+    <entryLink id="2c0b-64df-931b-22e6" hidden="false" targetId="ed78-b211-4a69-7b55" type="selectionEntry" categoryEntryId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8434-ec05-4961-5633" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d421-22ec-4df1-b213" type="lessThan"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints/>
@@ -29557,195 +29613,32 @@ Farseer Skyrunner, Warlock Skyrunner Council, Windrider Jetbikes or Vyper Squadr
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="35dd-6d57-25d0-05a2" name="Members - 1 to 5" book="" hidden="false" collective="false" defaultSelectionEntryId="ba90-2a71-9683-9d2d">
+        <selectionEntryGroup id="35dd-6d57-25d0-05a2" name="Members - 1 to 5" book="" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5de1-ccd2-aef4-8957" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba22-f84c-b02d-f903" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="ba90-2a71-9683-9d2d" name="Spiritseers (Iyanden)" book="Iyanden Supplement" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
-              <profiles>
-                <profile id="6e11-b4f5-cacc-1fe6" name="Spiritseer" book="Codex: Eldar Craftworlds (2015)" page="111" hidden="false" profileTypeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Unit Type" characteristicTypeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantry (Character)"/>
-                    <characteristic name="WS" characteristicTypeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e" value="5"/>
-                    <characteristic name="BS" characteristicTypeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" value="5"/>
-                    <characteristic name="S" characteristicTypeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b" value="3"/>
-                    <characteristic name="T" characteristicTypeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd" value="3"/>
-                    <characteristic name="W" characteristicTypeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8" value="2"/>
-                    <characteristic name="I" characteristicTypeId="a558b3ef-04d0-440e-a312-bac3255bf592" value="5"/>
-                    <characteristic name="A" characteristicTypeId="5dff3e7c-e024-4030-a71d-03195ec06ea7" value="1"/>
-                    <characteristic name="Ld" characteristicTypeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" value="9"/>
-                    <characteristic name="Save" characteristicTypeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" value="-"/>
-                  </characteristics>
-                </profile>
-                <profile id="781e-406a-32c0-c274" name="Spiritseer" book="Codex: Eldar Craftworlds (2015)" page="111" hidden="false" profileTypeId="bc97-dea9-9e88-bb7d">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Mastery Level" characteristicTypeId="ca56-02c3-af4b-ea2a" value="2"/>
-                    <characteristic name="Disciplines" characteristicTypeId="ea53-f5c7-08e4-980c" value="Daemonology (Sanctic), Runes of Battle, Telepathy"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="beef-59ba-65b8-0047" name="Spirit Mark" book="Codex: Eldar Craftworlds (2015)" page="111" hidden="false">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <description>Wraithguard, Wraithblades, Wraithlords, Wraithknights, and Hemlock Wraithfighters can re-roll To-Hit rolls of 1 against enemy units that are within 12&quot; of a model with this special rule.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="dc13-ebc1-bd55-1b42" hidden="false" targetId="80e8-2653-cfa1-0d13" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="c228-bf32-e464-799f" hidden="false" targetId="4df2-e7af-24be-0674" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="4d92-ce3b-91ab-e262" hidden="false" targetId="39c6-1f20-a156-47f4" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="2965-b445-0f66-d30e" hidden="false" targetId="ef3b-09c6-4024-cd37" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="c5b1-65d6-493e-5405" hidden="false" targetId="7a42-bcc8-95a0-302d" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries>
-                <selectionEntry id="707b-0e9d-50a8-d0b8" name="Rune Armour" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="4664-b1ec-9c84-9535" hidden="false" targetId="5ea3-45bc-4196-f789" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a63f-d6f1-9162-f8a5" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1320-ebaf-059b-bb9d" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="25fd-0ad5-b479-4e38" name="Shuriken Pistol" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="f9c8-bede-bf42-253f" hidden="false" targetId="acaa-8094-58c1-5117" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="aeac-2aea-1776-daed" hidden="false" targetId="ce57-25dd-7d75-6574" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81a2-85a3-b415-efda" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="004d-069b-d1a1-bf56" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="0570-a8e3-d30c-c81f" name="Witch Staff" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="0b22-78c5-1de4-3379" hidden="false" targetId="869b-65b0-2efd-de69" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="94dd-6c80-07a5-7903" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c7a1-12e3-797d-d21a" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks>
-                <entryLink id="f8e2-1d52-c550-9bbf" hidden="false" targetId="eedf-9490-0d7d-483e" type="selectionEntryGroup">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </entryLink>
-                <entryLink id="0159-06af-86b9-c68c" name="" hidden="false" targetId="efbf-4f34-7421-2a88" type="selectionEntryGroup">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" costTypeId="points" value="70.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <constraints/>
+          <selectionEntries/>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="248d-0ea3-131b-9b19" name="" hidden="false" targetId="d421-22ec-4df1-b213" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aac4-fdcd-2223-0860" type="min"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d99-764e-edc4-95d2" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -30648,39 +30541,14 @@ Farseer Skyrunner, Warlock Skyrunner Council, Windrider Jetbikes or Vyper Squadr
       </constraints>
       <selectionEntries>
         <selectionEntry id="7c4b-1337-47bd-e37f" name="The Celestial Lance" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="5d86-a7ef-3165-3e2b" name="The Celestial Lance" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="6&quot;"/>
-                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="8"/>
-                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
-                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1, Lance, Spirit Shatter"/>
-              </characteristics>
-            </profile>
-            <profile id="a3e2-19c5-9127-5ec6" name="The Celestial Lance" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
-                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="+3"/>
-                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
-                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Impact, Lance, Spirit Shatter"/>
-              </characteristics>
-            </profile>
-          </profiles>
+          <profiles/>
           <rules>
             <rule id="6203-df4d-0138-e6aa" name="Impact" hidden="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <description>The MElee profile given above is only used during a Assault phase in which the weilder made a sucessful charge. In all other Assault phases, the Celestial Lance is treated as a close combat weapon.</description>
+              <description>The Melee profile given above is only used during a Assault phase in which the wielder made a sucessful charge. In all other Assault phases, the Celestial Lance is treated as a close combat weapon.</description>
             </rule>
             <rule id="b607-7980-0ec2-8a37" name="Spirit Shatter" hidden="false">
               <profiles/>
@@ -30692,6 +30560,18 @@ Farseer Skyrunner, Warlock Skyrunner Council, Windrider Jetbikes or Vyper Squadr
           </rules>
           <infoLinks>
             <infoLink id="1047-c0a5-2d13-a182" name="" hidden="false" targetId="cb0d-87b3-87a2-81d6" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="59c7-ba0f-9513-8c53" name="" hidden="false" targetId="5e41-1a1d-ee36-0756" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="33f3-10b5-69b0-52fc" name="" hidden="false" targetId="915a-a366-ea08-38fe" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -30774,7 +30654,9 @@ Farseer Skyrunner, Warlock Skyrunner Council, Windrider Jetbikes or Vyper Squadr
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="30.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="3cf9-0f64-5882-51cc" name="Guardian Helm of Xellethon" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -30800,33 +30682,8 @@ Farseer Skyrunner, Warlock Skyrunner Council, Windrider Jetbikes or Vyper Squadr
             <cost name="pts" costTypeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1663-c3b3-7adf-6e38" name="Spear of Teuthlas (Psyker Only)" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="2dbe-69bc-466a-0c9c" name="Spear of Teuthlas" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18&quot;"/>
-                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="9"/>
-                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="-"/>
-                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1, Fleshbane, Rending"/>
-              </characteristics>
-            </profile>
-            <profile id="739a-9b44-6137-ae16" name="Spear of Teuthlas" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
-                <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="User"/>
-                <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="-"/>
-                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Armourbane, Fleshbane, Rending"/>
-              </characteristics>
-            </profile>
-          </profiles>
+        <selectionEntry id="1663-c3b3-7adf-6e38" name="Spear of Teuthlas (Psyker Only)" hidden="true" collective="false" type="upgrade">
+          <profiles/>
           <rules/>
           <infoLinks>
             <infoLink id="9631-1330-a666-5ff4" name="" hidden="false" targetId="3498-7560-3a1a-9e27" type="rule">
@@ -30847,8 +30704,34 @@ Farseer Skyrunner, Warlock Skyrunner Council, Windrider Jetbikes or Vyper Squadr
               <infoLinks/>
               <modifiers/>
             </infoLink>
+            <infoLink id="bf47-8121-1a71-e5dd" name="" hidden="false" targetId="f625-87ca-fac7-2fbb" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="1ad7-b3ca-abee-a65f" name="" hidden="false" targetId="11ba-2fe1-b134-8c54" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
           </infoLinks>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fea1-13cc-a04b-5f5b" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d421-22ec-4df1-b213" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d2b-b5b7-5591-1cd1" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="41af-1d29-61d3-bc5e" type="max"/>
@@ -32833,6 +32716,54 @@ A unit can only make a Soulburst action once per turn.</description>
         <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="D"/>
         <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1"/>
+      </characteristics>
+    </profile>
+    <profile id="5e41-1a1d-ee36-0756" name="The Celestial Lance" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="6&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="8"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1, Lance, Spirit Shatter"/>
+      </characteristics>
+    </profile>
+    <profile id="915a-a366-ea08-38fe" name="The Celestial Lance (Melee)" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="+3"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="2"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Impact, Lance, Spirit Shatter"/>
+      </characteristics>
+    </profile>
+    <profile id="f625-87ca-fac7-2fbb" name="Spear of Teuthlas" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="9"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="-"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1, Fleshbane, Rending"/>
+      </characteristics>
+    </profile>
+    <profile id="11ba-2fe1-b134-8c54" name="Spear of Teuthlas (Melee)" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="User"/>
+        <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="-"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Armourbane, Fleshbane, Rending"/>
       </characteristics>
     </profile>
   </sharedProfiles>
