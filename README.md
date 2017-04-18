@@ -1,7 +1,7 @@
 Warhammer 40,000
 ================
 
-##Important
+## Important
 
 [![Join the chat at https://gitter.im/BSData/wh40k](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BSData/wh40k?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -9,7 +9,7 @@ __BattleScribe v1.15 users Notice__: _However we don't support BattleScribe v1.1
 
 __6th ed users Notice__: _However we don't support the 6th Edition, all the files in their last revisions for 6th are available [here](https://github.com/BSData/wh40k/releases/tag/v3.1.4). Downloading .bsr file (green button) and importing it in BattleScribe_ __won't__ _mess with 7th ed files._
 
-####Contents####
+#### Contents ####
 
 * [Important][]
 * [Overview][]
@@ -22,7 +22,7 @@ __6th ed users Notice__: _However we don't support the 6th Edition, all the file
 [Links]: #links
 
 
-##Overview##
+## Overview ##
 
 * __What's this?__
 * _BSData organisation created this project. It's GitHub repository of datafiles. Maintained by community, in no way endorsed by BattleScribe. If you want to develop - cool! We need you! Take a look at [Getting Started wiki][]_
@@ -31,7 +31,7 @@ __6th ed users Notice__: _However we don't support the 6th Edition, all the file
 * _Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]_
 
 
-##Reporting bugs & contact us##
+## Reporting bugs & contact us ##
 
 * __I found a bug!__
 * _Great, thank you! Now you have two options:_
@@ -45,7 +45,7 @@ __6th ed users Notice__: _However we don't support the 6th Edition, all the file
 [Report it on Appspot]: http://battlescribedata.appspot.com/#/repo/wh40k
 [Open Issue directly]: https://github.com/BSData/wh40k/issues
 
-##Links##
+## Links ##
 
 * [BattleScribe homepage][]
 * [BattleScribe Data on Appspot][]
