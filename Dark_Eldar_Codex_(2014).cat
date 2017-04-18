@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="635e04e0-204e-2672-055e-6d081ee0fc93" name="Dark Eldar: Codex (2014)" book="Dark Eldar: Codex (2014)" revision="2007" battleScribeVersion="2.00" authorName="BSData on GitHub" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="635e04e0-204e-2672-055e-6d081ee0fc93" name="Dark Eldar: Codex (2014)" book="Dark Eldar: Codex (2014)" revision="2009" battleScribeVersion="2.00" authorName="BSData on GitHub" authorContact="@BSData" authorUrl="https://github.com/BSData/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="0" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -838,6 +838,41 @@
       <modifiers/>
       <constraints/>
     </entryLink>
+    <entryLink id="badd-ceb5-9c40-d667" name="New EntryLink" hidden="false" targetId="23d0-041d-6c56-5e1e" type="selectionEntry" categoryEntryId="8dbf948c-125b-4886-b21e-3ccabc1e1188">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="4271-532b-1c41-689c" name="New EntryLink" hidden="false" targetId="42fe-1008-fd38-e8f9" type="selectionEntry" categoryEntryId="8dbf948c-125b-4886-b21e-3ccabc1e1188">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="4822-b55a-64ca-d645" name="New EntryLink" hidden="false" targetId="4303-d016-2308-c84b" type="selectionEntry" categoryEntryId="8dbf948c-125b-4886-b21e-3ccabc1e1188">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="a062-365c-8db2-ca6b" name="New EntryLink" hidden="false" targetId="8e0f-1ae6-2438-7501" type="selectionEntry" categoryEntryId="8dbf948c-125b-4886-b21e-3ccabc1e1188">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="1fe2-adda-702a-0fc8" name="New EntryLink" hidden="false" targetId="42f3-1c26-3d05-f6cd" type="selectionEntry" categoryEntryId="8dbf948c-125b-4886-b21e-3ccabc1e1188">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d55d275d-f0e3-8d5c-040e-4825503ca30b" name="Agoniser" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -1160,7 +1195,22 @@
     <selectionEntry id="06bf7507-1e32-7ef4-c192-c62b16759fe1" name="Beastmasters" book="" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
       <profiles/>
       <rules/>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="1935-41b7-4303-3d25" name="New InfoLink" hidden="false" targetId="15f93ba6-0292-9789-c7f2-221d0ce7e6e2" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="42fe-1008-fd38-e8f9" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints/>
       <selectionEntries/>
@@ -4015,12 +4065,18 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="minSelections" value="1.0">
+            <modifier type="set" field="minSelections" value="1">
               <repeats/>
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbbff194-9df1-4bc7-87d3-0fb30df5d994" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbbff194-9df1-4bc7-87d3-0fb30df5d994" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4303-d016-2308-c84b" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints/>
@@ -4464,6 +4520,7 @@
                   <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbbff194-9df1-4bc7-87d3-0fb30df5d994" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="65a2-bc9f-67ca-0a7f" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4303-d016-2308-c84b" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -4900,6 +4957,7 @@
                   <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbbff194-9df1-4bc7-87d3-0fb30df5d994" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="65a2-bc9f-67ca-0a7f" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4303-d016-2308-c84b" type="instanceOf"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -10538,6 +10596,363 @@ Once this is done, enemy units within 3&quot; of any model from this formation s
         <cost name="pts" costTypeId="points" value="275.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="23d0-041d-6c56-5e1e" name="Battle Formation: Carnival of Pain" book="Apocalypse - Second Edition" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules>
+        <rule id="9dc1-8625-a4eb-fe9a" name="Pain Amplifiers" book="Apocalypse - Second Edition" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All non-vehicle enemy units within 12&quot; of a Talos Pain Engine or a Cronos Parasite Engine from the Carnival of Pain have their Toughness characteristic reduced by one.
+In addition, friendly units chosen from Codex: Dark Eldar that are within 12&quot; of at least one model in this formation and have one or more pain tokens have their Feel No Pain special rule improved by one - usually to Feel No Pain (4+). A Dark Eldar unit with four or more pain tokens instead has its Feel No Pain special rule improved by two - usually to Feel No Pain (3+).</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f27e-1068-7b4c-744e" name="Leader" hidden="false" collective="false" defaultSelectionEntryId="5d7b-a24d-73ac-a043">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edb7-6a04-d4d2-c727" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be60-7b65-6515-aa5f" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="5d7b-a24d-73ac-a043" name="New EntryLink" hidden="false" targetId="18bec4ba-3aa3-640e-b32b-30cb095be41f" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="7aea-122f-8b82-e9b2" name="New EntryLink" hidden="false" targetId="91ada884-f1b2-6fb5-a31c-4d5e0b328977" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b9a1-8734-b285-0b92" name="Pain Engines" hidden="false" collective="false" defaultSelectionEntryId="21ce-c40e-ecbc-eff5">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3db7-3c91-ca69-b55a" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="16fb-495a-a90b-d517" name="New EntryLink" hidden="false" targetId="2ceedc75-5633-aaf8-e250-8f8197f1223d" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="21ce-c40e-ecbc-eff5" name="New EntryLink" hidden="false" targetId="6d3661b9-39c6-4353-91b4-6fc7e0249613" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2bdb-33ba-a61a-b20e" name="New EntryLink" hidden="false" targetId="18bec4ba-3aa3-640e-b32b-30cb095be41f" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="3706-428f-01a7-b473" name="New EntryLink" hidden="false" targetId="dd7557e4-07da-0796-4d73-44cc898531dc" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="6a4a-e239-5389-7287" name="New EntryLink" hidden="false" targetId="e4869455-eda2-cb43-57eb-4bd8df1c914b" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="42fe-1008-fd38-e8f9" name="Battle Formation: Dark Olympaid" book="Apocalypse - Second Edition" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules>
+        <rule id="cea0-9aa8-810b-70a0" name="Frenzied Beasts" book="Apocalypse - Second Edition" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Beastmasters, Donorian Clawed Fiends, Khymerae and Razorwing Flocks in a Dark Olympiad all have combat drugs in addition to their other wargear.</description>
+        </rule>
+        <rule id="5851-daeb-92f7-afe7" name="The Grand Finale" book="Apocalypse - Second Edition" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>An army that includes a Dark Olympiad rolls an extra dice on the chart when determining which combat drugs are available, and applies two of the results generated instead of the usual one. Note that an army that includes a both a Dark Olympiad and Duke Sliscus could roll three dice and choose two results.</description>
+        </rule>
+        <rule id="579e-6c99-8ed8-8a7a" name="Orgy of Scarlet" book="Apocalypse - Second Edition" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Once the game has begun, whenever a unit from the Dark Olympiad gains a pain token for destroying an enemy unit, choose a Dark Eldar unit within 24&quot; and within line of sight; that unit also gains a pain token.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="573a-a78c-32a5-9b9f" name="Leader" hidden="false" collective="false" defaultSelectionEntryId="0fa0-fa50-2962-c1c6">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3752-d954-39af-3516" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba8b-d091-d99b-e2cc" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="0fa0-fa50-2962-c1c6" name="New EntryLink" hidden="false" targetId="ae6fb802-062f-fb53-dce7-d7be879c9c7e" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="410d-d089-b9c0-f785" name="New EntryLink" hidden="false" targetId="be6eeaa7-1b22-3afe-b5e6-8fe2914008ed" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3aa8-a3dd-8679-729f" name="New EntryLink" hidden="false" targetId="0a07206d-7a1e-42bc-231b-1293710a8f8e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1346-2846-af2b-6395" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="20a7-f3ac-a02c-bf18" name="New EntryLink" hidden="false" targetId="77c4799f-3512-6940-bf28-fcc41fd40996" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39d9-a489-b833-9099" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="791e-6071-f6e0-1bb1" name="New EntryLink" hidden="false" targetId="cf2b35c4-d0d7-a558-a6c8-51bf3f43a5db" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="c0a2-7be3-3112-525b" name="New EntryLink" hidden="false" targetId="06bf7507-1e32-7ef4-c192-c62b16759fe1" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="6642-d724-4ba8-3de2" name="New EntryLink" hidden="false" targetId="5f906016-1d30-7424-444b-c347f752e913" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="547a-69d2-d549-978f" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="4303-d016-2308-c84b" name="Battle Formation: Kabalite Web Strike" book="Apocalypse - Second Edition" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules>
+        <rule id="0753-efcc-e3f9-2fcc" name="Arterial Strike" book="Apocalypse - Second Edition" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All units in the formation must be held in Strategic Reserve embarked in Raider or Venom Transports. They may enter play in any of the owning player&apos;s turns. To represent the element of surprise, in the Shooting phase of the turn they enter play, all units in this formation may re-roll failed To Hit rolls.</description>
+        </rule>
+        <rule id="a965-2811-ef86-3192" name="Arterial Webway Portal" book="Apocalypse - Second Edition" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When deploying fortifications at the start of the battle, you must set up an Arterial Webway Portal. The Arterial Webway Portal uses the large blast marker and can be used by vehicles. It may be placed anywhere on the table outside of the opposing side&apos;s deployment zone.
+
+Any of your units arriving from reserve may move onto the board from the portal marker&apos;s edge instead of entering as normal (it does not matter whether these units were intending to Deep Strike, Outflank, simply move on from their own table edge, and so on). The portal counts as impassable terrain and cannot be destroyed.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="dc5e-f628-41af-ddbd" name="New EntryLink" hidden="false" targetId="775786c3-a7e0-95c5-996b-96a0cc7c8408" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1628-ea6c-d2c6-a85f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="81bf-146f-5c89-7385" name="New EntryLink" hidden="false" targetId="4962acff-09a1-c58d-d500-4c661d50ab71" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a1a-1744-f496-dd66" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5a0e-30eb-e27f-0bbf" name="New EntryLink" hidden="false" targetId="a79ae54e-65f3-1fef-5573-cfd087189d5e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="6c47-cd37-57fb-36ab" name="New EntryLink" hidden="false" targetId="5b3b28ee-e8a0-d196-45ac-d07b144c4712" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b00-59cd-0c01-fe0f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84ee-64a0-74fb-a0dd" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1eb8-e779-abe8-11b9" name="New EntryLink" hidden="false" targetId="17205c6d-c270-e476-1d59-511a646fa92f" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d04-3400-db0a-5425" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="42f3-1c26-3d05-f6cd" name="Armoured Spearhead: Ravager Titan Hunters" book="Apocalypse - Second Edition" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="312e-1481-720d-98da" name="Shadow Ray" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="1"/>
+            <characteristic name="AP" characteristicTypeId="6abee736-f8d3-498e-97ac-a5c68445609f" value="-"/>
+            <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="58f3-0885-8408-496e" name="Shadow Dancing" book="Apocalypse - Second Edition" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Any Ravager in the spearhead within 6&quot; of the Command Vehicle (including the Command Vehicle itself) has the Shrouded special rule.</description>
+        </rule>
+        <rule id="fb68-bacb-d580-c4b8" name="Shadow Ray" book="Apocalypse - Second Edition" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>The Command Vehicle has a shadow ray built into the heavy weapon on its prow in addition to its other armaments. This is treated as being part of the heavy weapon on its prow in all respects, and is fired in addition to the heavy weapon when it fires. Resolve the shadow ray&apos;s attack first, before any other shooting attacks are made by the squadron.
+
+If the ray hits a target, then for the rest of the turn, any subsequent hits inflicted on that target by any Ravager in the same squadron will ignore the effects of all void shields, power fields and Eldar Titan holo-fields.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="4ad1-f1d4-d882-d4ca" name="New EntryLink" hidden="false" targetId="17205c6d-c270-e476-1d59-511a646fa92f" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f457-5f29-3f28-ec1d" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d728-987e-e081-9095" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="8e0f-1ae6-2438-7501" name="Flyer Wing: Sickle Squadron" book="Apocalypse - Second Edition" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules>
+        <rule id="5947-d314-53e7-020b" name="Sicklewing Fields" book="Apocalypse - Second Edition" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>In the Movement phase, the Sickle Squadron may attack with its sicklewing fields. Pick one non-vehicle enemy unit that was moved over by at least one model from the formation. Units that are locked in combat may not be selected. The target unit suffers D3 Strength 8 AP3 hits for each Razorwing from the Flyer Wing that moved over it this turn. Furthermore, you may allocate a single Wound caused by this attack to any single model in the enemy unit for each Razorwing that moved over the unit this turn. The rest of the Wounds are distributed using Random Allocation.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="6cbd-8f6e-55ee-4ca5" name="New EntryLink" hidden="false" targetId="5fe16e24-3b9c-2c66-fcd1-0d9f086691a4" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcf2-5143-7e8f-2fff" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7bc-3586-7218-f003" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs/>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="359216fa-43af-366a-a5dc-b73b1fca678e" name="1- 12 of the Court of the Archon" hidden="false" collective="false" defaultSelectionEntryId="a15ebb48-3bb4-8291-dd58-e7489e55818c">
@@ -11179,7 +11594,7 @@ Once this is done, enemy units within 3&quot; of any model from this formation s
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="maxSelections" value="1.0">
+            <modifier type="set" field="maxSelections" value="1">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -11973,11 +12388,11 @@ A Hit &amp; Run move is not slowed by difficult terrain, but takes Dangerous Ter
       <modifiers/>
       <description>Wing Leaders are free upgrades for Flyers. One model in each Flyer Wing can be upgraded to a Wing Leader at no additional points cost. At the start of any game, immediately after determining your Warlord Trait, roll on the Wing Leader table relevant to their Faction for each Wing Leader to determine their special rule.
 
-1-2 Bloodthirsty Hunter: Add 1 to the Wing Leader’s Pursuit value. Add an additional 1 when making Engagement rolls for the Wing Leader in a Dogfight.
+1-2 Bloodthirsty Hunter: Add 1 to the Wing Leader&apos;s Pursuit value. Add an additional 1 when making Engagement rolls for the Wing Leader in a Dogfight.
 
 3-4 Arrogant Perfectionist: You can re-roll one dice roll for the Wing Leader each turn.
 
-5-6 Selfish Leader: You can add 1 to this Wing Leader’s Ballistic Skill if they attack before the other Flyers in their Wing (there must still be at least one other Flyer from the Flyer Wing on the battlefield). </description>
+5-6 Selfish Leader: You can add 1 to this Wing Leader&apos;s Ballistic Skill if they attack before the other Flyers in their Wing (there must still be at least one other Flyer from the Flyer Wing on the battlefield). </description>
     </rule>
     <rule id="8718-198f-596c-4b5d" name="Strength from Death" book="Gathering Storm: Fracture of Biel-Tan" hidden="false">
       <profiles/>
