@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Astra Militarum: Codex (2014)" revision="2036" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Astra Militarum: Codex (2014)" revision="2037" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks>
@@ -1857,7 +1857,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ca0e-c6d1-2321-f720" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
   </entryLinks>
@@ -54207,18 +54215,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="9d31-75d7-3c69-1627" name="New InfoLink" hidden="false" targetId="3510125f-eabc-3c4f-9e6d-94d13c88a1bf" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="5ab9-49cf-4600-a00a" name="New InfoLink" hidden="false" targetId="98e7-94e5-fbb4-3263" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
         <infoLink id="932b-6e7e-e006-85c3" name="New InfoLink" hidden="false" targetId="991e-bce5-33ca-9549" type="rule">
           <profiles/>
           <rules/>
@@ -54302,16 +54298,97 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           <modifiers/>
           <constraints/>
         </entryLink>
-        <entryLink id="4f99-f3e7-dc7d-5ef6" name="New EntryLink" hidden="false" targetId="817d1d89-a150-658d-837c-02417b24437b" type="selectionEntry">
+        <entryLink id="3e3f-0e0d-f538-c79d" name="New EntryLink" hidden="false" targetId="817d1d89-a150-658d-837c-02417b24437b" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="0">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2756-7fe5-2ad4-c47b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db47-a40b-e5d0-e98c" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="824e-5b7d-e357-4096" name="New EntryLink" hidden="false" targetId="8fab-a59b-177c-e358" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dc3-edfb-d32b-da66" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d2b-a948-f9f1-d388" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7f2d-dc68-40af-01da" name="New EntryLink" hidden="false" targetId="8cdc-f782-a815-3aa0" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="478d-c174-be50-45b6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efdd-d30d-81e3-66a1" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8cdc-f782-a815-3aa0" name="Envenomed Blade" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="3990-3da3-35b3-7dc0" name="New InfoLink" hidden="false" targetId="98e7-94e5-fbb4-3263" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="eea8-715f-962f-2912" name="New InfoLink" hidden="false" targetId="a5ff-1cb1-bee4-d809" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8fab-a59b-177c-e358" name="Ripper Pistol" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="2fc7-8530-e13f-a53e" name="New InfoLink" hidden="false" targetId="3510125f-eabc-3c4f-9e6d-94d13c88a1bf" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ec71-aaad-0847-6958" name="New InfoLink" hidden="false" targetId="f0641044-7a43-de6d-428a-3a41903cd2cd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
