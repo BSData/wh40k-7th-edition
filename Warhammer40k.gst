@@ -4909,7 +4909,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="9.0"/>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
