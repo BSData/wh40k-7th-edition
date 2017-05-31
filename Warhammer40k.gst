@@ -241,6 +241,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="7892-58f7-e769-4d87" name="Beasts" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d513-cbf5-9bfc-7270" name="Super-Heavy Detachment" hidden="false">
