@@ -241,6 +241,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="7892-58f7-e769-4d87" name="Beasts" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d513-cbf5-9bfc-7270" name="Super-Heavy Detachment" hidden="false">
@@ -6967,34 +6974,55 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <modifiers/>
       <description>If this Detachment is chosen as your Primary Detachment, you can choose to re-roll the result on the Warlord Trait table.</description>
     </rule>
+    <rule id="74b3-2e30-9d76-a958" name="Infiltrator" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>During deployment, this unit can be set up anywhere on the battlefield that is not within your opponent&apos;s deployment zone and is more than 12&quot; from any enemy unit.</description>
+    </rule>
+    <rule id="15ea-860d-9eb6-21c3" name="Airborne" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>This model cannot charge, can only be charged by units that can FLY, and can only attack or be attacked in the Fight phase by units that can FLY.</description>
+    </rule>
+    <rule id="9caa-ff00-a5bd-5f04" name="Hard to Hit" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Your opponent must subtract 1 from hit rolls for attacks that target this model in the Shooting phase.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="fcde-3e6a-e240-1157" name="Autogun" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="fcde-3e6a-e240-1157" name="Autogun" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="3"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="2481-001b-00f9-501b" name="Autopistol" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="2481-001b-00f9-501b" name="Autopistol" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="3"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
     <profile id="fa99-0671-b31a-22d7" name="Autocannon" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -7005,10 +7033,10 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <characteristics>
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="48&quot;"/>
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 2"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="7"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
     <profile id="9fac-07c9-3595-784e" name="Punisher Gatling Cannon" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
@@ -7025,7 +7053,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
       </characteristics>
     </profile>
-    <profile id="bc34-f1ec-56fa-2829" name="Battle Cannon" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="bc34-f1ec-56fa-2829" name="Battle Cannon" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7053,7 +7081,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="e2b0-b9f1-6c38-584c" name="Heavy Bolter" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="e2b0-b9f1-6c38-584c" name="Heavy Bolter" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7095,7 +7123,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="This weapon automatically hits its target."/>
       </characteristics>
     </profile>
-    <profile id="ec4c-1132-ddaf-db8e" name="Meltagun" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="ec4c-1132-ddaf-db8e" name="Meltagun" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7179,32 +7207,32 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
       </characteristics>
     </profile>
-    <profile id="f2b7-768f-a270-de64" name="Laspistol" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="f2b7-768f-a270-de64" name="Laspistol" book="" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="3"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="d174-eb55-aaa6-d032" name="Lasgun" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="d174-eb55-aaa6-d032" name="Lasgun" book="" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="3"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
     <profile id="585f-2120-0288-93b5" name="Inferno Cannon" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -7221,7 +7249,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
       </characteristics>
     </profile>
-    <profile id="2608-8425-4f4f-7f41" name="Heavy Flamer" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="2608-8425-4f4f-7f41" name="Heavy Flamer" book="" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7235,18 +7263,18 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="This weapon automatically hits its target"/>
       </characteristics>
     </profile>
-    <profile id="92be-1bfc-f355-f214" name="Multi-laser" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="92be-1bfc-f355-f214" name="Multi-laser" book="" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36"/>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 3"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="6"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
     <profile id="cb26-27b4-9393-a768" name="Icarus Lascannon" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -7347,7 +7375,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
       </characteristics>
     </profile>
-    <profile id="07cb-70d7-15c3-5117" name="Shotgun" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="07cb-70d7-15c3-5117" name="Shotgun" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7355,10 +7383,10 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <characteristics>
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 2"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="3"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="If the target is within half range, add 1 to this weapon&apos;s Strength."/>
       </characteristics>
     </profile>
     <profile id="0031-0314-5b36-a220" name="Heavy Stubber" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -7369,10 +7397,10 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <characteristics>
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 3"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
     <profile id="3b26-3098-155f-0e58" name="Dreadnought Close Combat Weapon" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -7403,7 +7431,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="You can re-roll failed wound rolls for this weapon."/>
       </characteristics>
     </profile>
-    <profile id="3520-0bb4-90f2-084b" name="Power Fist" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="3520-0bb4-90f2-084b" name="Power Fist" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7417,7 +7445,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="When attacking with this weapon, you must subtract 1 from the hit roll."/>
       </characteristics>
     </profile>
-    <profile id="4635-64e7-2344-ea7c" name="Power Axe" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="4635-64e7-2344-ea7c" name="Power Axe" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7431,7 +7459,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="ca27-e5ee-f6eb-652d" name="Power Maul" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="ca27-e5ee-f6eb-652d" name="Power Maul" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7445,7 +7473,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="47df-8e01-d0cf-58e8" name="Power Sword" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="47df-8e01-d0cf-58e8" name="Power Sword" book="" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7459,18 +7487,18 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="de62-5c9a-e27d-3fa3" name="Power Lance" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="de62-5c9a-e27d-3fa3" name="Power Lance" book="" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="+2"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
     <profile id="87b3-3f6b-ada0-da8d" name="Thunder Hammer" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -7501,7 +7529,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="df40-a3f4-91be-f0fe" name="Melta Bomb" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="df40-a3f4-91be-f0fe" name="Melta Bomb" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7529,7 +7557,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="7983-8451-cdc3-ce7e" name="Plasma cannon, Standard" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="7983-8451-cdc3-ce7e" name="Plasma Cannon, Standard" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7656,11 +7684,11 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <modifiers/>
       <characteristics>
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 2"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire 2"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
     <profile id="49ae-4451-9bc0-5238" name="Flamestorm Cannon" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -7823,26 +7851,26 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Force, Unwieldy"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="+1"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-2"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D3"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="ed69-f85e-5982-9ab8" name="Force Stave" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="ed69-f85e-5982-9ab8" name="Force Stave" book="" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Force, Concussive"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="+2"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D3"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
     <profile id="29c5-cff6-7f7c-96d6" name="Force Sword" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -7851,12 +7879,12 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Force"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="User"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D3"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
     <profile id="3a00-c9d9-111e-037f" name="Witchblade" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -8184,7 +8212,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="On a hit roll of 1, the beater is slain."/>
       </characteristics>
     </profile>
-    <profile id="6644-7150-c910-865d" name="Twin heavy bolter" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+    <profile id="6644-7150-c910-865d" name="Twin Heavy Bolter" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -8198,7 +8226,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="fbb2-f4cb-e47d-1d10" name="Plasma cannon, Supercharge" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="fbb2-f4cb-e47d-1d10" name="Plasma Cannon, Supercharge" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
