@@ -8254,5 +8254,19 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time the bearer fights, it can make 1 additional attack with this weapon."/>
       </characteristics>
     </profile>
+    <profile id="9b1e-61f9-4a5b-0044" name="Chainsword" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="User"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time the bearer fights, it can make 1 additional attack with this weapon."/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>
