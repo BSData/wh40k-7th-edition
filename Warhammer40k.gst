@@ -42,8 +42,7 @@
     </profileType>
     <profileType id="bc97-dea9-9e88-bb7d" name="Psyker">
       <characteristicTypes>
-        <characteristicType id="ca56-02c3-af4b-ea2a" name="Mastery Level"/>
-        <characteristicType id="ea53-f5c7-08e4-980c" name="Disciplines"/>
+        <characteristicType id="5afb-9914-904b-d3b3" name="Description"/>
       </characteristicTypes>
     </profileType>
     <profileType id="ae70-4738-0161-bec0" name="Psychic Power">
