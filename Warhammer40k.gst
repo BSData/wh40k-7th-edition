@@ -6694,6 +6694,27 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <modifiers/>
       <description>If this Detachment is chosen as your Primary Detachment, you can choose to re-roll the result on the Warlord Trait table.</description>
     </rule>
+    <rule id="74b3-2e30-9d76-a958" name="Infiltrator" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>During deployment, this unit can be set up anywhere on the battlefield that is not within your opponent&apos;s deployment zone and is more than 12&quot; from any enemy unit.</description>
+    </rule>
+    <rule id="15ea-860d-9eb6-21c3" name="Airborne" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>This model cannot charge, can only be charged by units that can FLY, and can only attack or be attacked in the Fight phase by units that can FLY.</description>
+    </rule>
+    <rule id="9caa-ff00-a5bd-5f04" name="Hard to Hit" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Your opponent must subtract 1 from hit rolls for attacks that target this model in the Shooting phase.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="fcde-3e6a-e240-1157" name="Autogun" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
