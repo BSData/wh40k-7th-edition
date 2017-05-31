@@ -7258,7 +7258,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
         <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-4"/>
         <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="If the target is within half range of this weapon, roll 2 dice when inflicting damage with it and discard the lowest result."/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="If the target is within half range of this weapon, roll two dice when inflicting damage with it and discard the lowest result."/>
       </characteristics>
     </profile>
     <profile id="03e5-60f2-4726-5cdd" name="Plasma gun, Standard" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -7282,25 +7282,25 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <modifiers/>
       <characteristics>
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol, Concussive, Graviton"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="5"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="If the target has a Save characteristic of 3+ or better, this weapon has a Damage characteristic of D3."/>
       </characteristics>
     </profile>
-    <profile id="c76b-4051-dbf4-d5b8" name="Grav-cannon" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="c76b-4051-dbf4-d5b8" name="Grav-cannon and grav-amp" book="" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Salvo 3/5, Concussive, Graviton"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 4"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="5"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="If the target has a Save characteristic of 3+ or better, this weapon has a Damage characteristic of D3."/>
       </characteristics>
     </profile>
     <profile id="4609-79eb-7505-68a5" name="Hot-shot Laspistol" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -7415,7 +7415,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
       </characteristics>
     </profile>
-    <profile id="8161-3b0e-8048-0e83" name="Krak missiles" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="8161-3b0e-8048-0e83" name="Missile launcher, Krak missile" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7429,7 +7429,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="603d-3e82-38f6-c5c3" name="Frag missiles" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="603d-3e82-38f6-c5c3" name="Missile launcher, Frag missile" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7485,18 +7485,18 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
       </characteristics>
     </profile>
-    <profile id="8194-4688-65b3-f996" name="Chainfist" book="BRB" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="8194-4688-65b3-f996" name="Chainfist" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="-"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee, Armourbane, Specialist Weapon, Unwieldy"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="x2"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-4"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="When attacking with this weapon, you must subtract 1 from the hit roll."/>
       </characteristics>
     </profile>
     <profile id="07cb-70d7-15c3-5117" name="Shotgun" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -7639,7 +7639,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="When attacking with this weapon, you must subtract 1 from the hit roll."/>
       </characteristics>
     </profile>
-    <profile id="3bf6-b4f7-6b2f-bb7b" name="Krak Grenades" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="3bf6-b4f7-6b2f-bb7b" name="Krak grenade" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7653,7 +7653,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="df40-a3f4-91be-f0fe" name="Melta Bomb" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="df40-a3f4-91be-f0fe" name="Melta bomb" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7664,7 +7664,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
         <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-4"/>
         <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value=""/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
     <profile id="ff12-161a-ca85-339f" name="Plasma pistol, Standard" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -7681,7 +7681,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="7983-8451-cdc3-ce7e" name="Plasma Cannon, Standard" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="7983-8451-cdc3-ce7e" name="Plasma cannon, Standard" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7752,11 +7752,11 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <modifiers/>
       <characteristics>
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 4, Rending"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 6"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="6"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
     <profile id="3922-981d-ccb7-c169" name="Quad-gun" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -7794,11 +7794,11 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <modifiers/>
       <characteristics>
         <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18&quot;"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Salvo 2/3, Concussive, Graviton"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="5"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="If the target has a Save characteristic of 3+ or better, this weapon has a Damage characteristic of D3."/>
       </characteristics>
     </profile>
     <profile id="505e-a5aa-edab-6d5b" name="Storm Bolter" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -7815,18 +7815,18 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="49ae-4451-9bc0-5238" name="Flamestorm Cannon" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="49ae-4451-9bc0-5238" name="Flamestorm Cannon" book="" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Template"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="8&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy D6"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="6"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-2"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="This weapon automatically hits its target."/>
       </characteristics>
     </profile>
     <profile id="e92d-1654-a3f9-f981" name="Space Marine Shotgun" book="BRB" page="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -8305,7 +8305,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
         <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-2"/>
         <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="A model can only fire each of its hunter killer missiles once per battle"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="A model can only fire each of its hunter killer missiles once per battle."/>
       </characteristics>
     </profile>
     <profile id="acb5-7b58-0d17-a33a" name="Plasma gun, Supercharge" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
@@ -8350,7 +8350,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
-    <profile id="fbb2-f4cb-e47d-1d10" name="Plasma Cannon, Supercharge" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+    <profile id="fbb2-f4cb-e47d-1d10" name="Plasma cannon, Supercharge" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -8376,6 +8376,468 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
         <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time the bearer fights, it can make 1 additional attack with this weapon."/>
+      </characteristics>
+    </profile>
+    <profile id="21ef-7459-ad22-ece0" name="Assault bolter" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 3"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="5"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="3735-f76f-f06c-1d71" name="Astartes grenade launcher, Frag grenade" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault D6"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="3"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="ac6d-bf1b-73d0-e6af" name="Astartes grenade launcher, Krak grenade" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="6"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D3"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="961a-afdd-b0a9-f43d" name="Astartes shotgun" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 2"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="If the target is within half range, add 1 to this weapon&apos;s Strength."/>
+      </characteristics>
+    </profile>
+    <profile id="cddb-d686-f7b9-ec39" name="Bolt rifle" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="30&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="eb60-1a3c-5699-dadb" name="Boltstorm gauntlet (shooting)" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol 3"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="19eb-bb51-72c6-7829" name="Centurion missile launcher" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault D3"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-2"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D3"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="418d-8293-8de6-7cac" name="Cerberus launcher" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy D6"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="0655-6c08-6402-46bf" name="Combi-bolter" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire 2"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="60d6-1b2a-e2a8-5106" name="Conversion beamer" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="42&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy D3"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="6"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Attacks from a conversion beamer that target enemies at over half its range are resolved at Strangth 8, AP -1 and Damage 2."/>
+      </characteristics>
+    </profile>
+    <profile id="5207-ef08-27f7-166d" name="Cyclone missile launcher, Frag missile" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 2D3"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="d9ac-d70c-de0b-1897" name="Cyclone missile launcher, Krak missile" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 2"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-2"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="b1a9-6785-fb1a-a5cb" name="Deathwind launcher" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault D6"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="5"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="d2d1-43d6-8c52-7a6a" name="Demolisher cannon" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy D3"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="10"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="When attacking units with 5 or more models, change this weapon&apos;s Type to Heavy D6."/>
+      </characteristics>
+    </profile>
+    <profile id="c86e-fd57-5a10-6b61" name="Disintegration gun" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="5"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="d015-8e37-8b3f-59b9" name="Disintegration pistol" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="9&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="5"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="9272-c0bc-9bd7-e6e0" name="Heavy plasma cannon, Standard" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy D3"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="7"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="691d-11e2-ebfb-d4ad" name="Heavy plasma cannon, Supercharge" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy D3"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="For each hit roll of 1, the bearer suffers 1 mortal wound after all of this weapon&apos;s shots have been resolved."/>
+      </characteristics>
+    </profile>
+    <profile id="0c32-fc5b-5235-f6ba" name="Hurricane bolter" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire 6"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="b1d1-72ef-a807-dbbc" name="Icarus stormcannon" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="48&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 3"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="7"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Add 1 to all hit rolls made for this weapon against targets that can FLY. Subtract 1 from the hit rolls made for this weapon against all other targets."/>
+      </characteristics>
+    </profile>
+    <profile id="10cf-9931-74ee-504e" name="Kheres pattern assault cannon" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 6"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="7"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="e85f-43e2-24d3-f852" name="Las-talon" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 2"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="9"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="1f2f-512e-9ca3-13f9" name="Master-crafted auto bolt rifle" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 2"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="d6e5-a8cf-4602-28e0" name="Master-crafted boltgun" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="f434-6eb5-9a60-79cf" name="Orbital array" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="72&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy D3"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="10"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-4"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="This weapon can only be fired once per battle. This weapon can target units that are not visible to the beare. When targeting units with 10 or more models, change this weapon&apos;s Type to Heavy D6."/>
+      </characteristics>
+    </profile>
+    <profile id="3937-3d5e-da78-af96" name="Plasma blaster, Standard" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 2"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="7"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="ae8f-c03c-8929-bedc" name="Plasma blaster, Supercharge" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 2"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="On a hit roll of 1, the bearer is slain after all of this weapon&apos;s shots have been resolved."/>
+      </characteristics>
+    </profile>
+    <profile id="614c-c09f-c4b4-504f" name="Plasma cutter, Standard" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="7"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="7eea-38c1-0f2c-ce0f" name="Plasma cutter, Supercharge" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="On a hit roll of 1, the bearer is slain."/>
+      </characteristics>
+    </profile>
+    <profile id="474e-aeec-1b23-c181" name="Plasma incinerator, Standard" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="7"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-4"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="bd7b-6edf-e450-9b4a" name="Plasma incinerator, Supercharge" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Rapid Fire 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-4"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="On a hit roll of 1, the bearer is slain after all of this weapon&apos;s shots have been resolved."/>
+      </characteristics>
+    </profile>
+    <profile id="2c56-ff56-a155-032d" name="Predator autocannon" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="48&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 2D3"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="7"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="3"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="9c2a-cd9e-dc44-ca31" name="Reaper autocannon" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 4"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="7"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
       </characteristics>
     </profile>
   </sharedProfiles>
