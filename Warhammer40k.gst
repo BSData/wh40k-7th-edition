@@ -5,6 +5,7 @@
   <infoLinks/>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0.0"/>
+    <costType id="e356-c769-5920-6e14" name=" PL" defaultCostLimit="-1.0"/>
   </costTypes>
   <profileTypes>
     <profileType id="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Weapon">
@@ -1419,6 +1420,7 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="50.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="16d6-25c4-af92-4329" name="Aquila Strongpoint" book="Planetary Onslaught" page="" hidden="false" collective="false" type="model">
@@ -1483,6 +1485,7 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="10.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="db22-e7d7-6c53-6f48" name="Main Strongpoint" hidden="false" collective="false" type="upgrade">
@@ -1538,6 +1541,7 @@
           </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="12af-64b0-135f-41b8" name="Bunker Annex" hidden="false" collective="false" type="upgrade">
@@ -1593,6 +1597,7 @@
           </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1643,6 +1648,7 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="110.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0850-e5c5-08f4-8b73" name="Macro Cannon" book="Planetary Onslaught" page="88" hidden="false" collective="false" type="upgrade">
@@ -1678,6 +1684,7 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="110.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="348d-729c-685f-e6d8" name="Plasma Obliterator" hidden="false" collective="false" type="upgrade">
@@ -1709,6 +1716,7 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1719,6 +1727,7 @@
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="425.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a172-78de-aaa6-2201" name="Wall of Martyrs Firestorm Redoubt" book="Planetary Onslaught" page="85" hidden="false" collective="false" type="model">
@@ -1810,6 +1819,7 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="946a-febb-a589-40bc" name="Punisher Gatling Cannon" page="" hidden="false" collective="false" type="upgrade">
@@ -1833,6 +1843,7 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1e4b-95c6-4acd-39e9" name="Battle Cannon" page="" hidden="false" collective="false" type="upgrade">
@@ -1856,6 +1867,7 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1897,6 +1909,7 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="200.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8300-7ced-aafd-2a27" name="Fortress of Redemption" book="Planetary Onslaught" page="91" hidden="false" collective="false" type="model">
@@ -1943,6 +1956,7 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="10.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1837-f874-577f-3651" name="Twin-linked Icarus Lascannon" page="" hidden="false" collective="false" type="upgrade">
@@ -1967,6 +1981,7 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="cc6f-415e-fe5f-4cd0" name="Remote Fire" page="" hidden="false" collective="false" type="upgrade">
@@ -1990,6 +2005,7 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="10.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d237-7d3e-c4a1-5f28" name="Main Tower" hidden="false" collective="false" type="upgrade">
@@ -2037,6 +2053,7 @@
           </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5c02-234b-7c98-8053" name="Bunker Annex" hidden="false" collective="false" type="upgrade">
@@ -2078,6 +2095,7 @@
           </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b9b0-baf0-7bf6-da86" name="Connecting Walkway" hidden="false" collective="false" type="upgrade">
@@ -2119,6 +2137,7 @@
           </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2156,6 +2175,7 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="828c-a00a-8846-e4e7" name="Krakstorm missiles" page="" hidden="false" collective="false" type="upgrade">
@@ -2179,6 +2199,7 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="30.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2198,6 +2219,7 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="220.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0fe6-096b-23ae-1134" name="Honoured Imperium" book="Planetary Onslaught" page="102" hidden="false" collective="false" type="model">
@@ -2254,6 +2276,7 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="40.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="55c6-268b-357f-d070" name="Imperial Bastion" book="Planetary Onslaught" page="80" hidden="false" collective="false" type="model">
@@ -2316,6 +2339,7 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2354,6 +2378,7 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="75.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0116-c81b-1c0f-251c" name="Wall of Martyrs Imperial Bunker" book="Planetary Onslaught" page="84" hidden="false" collective="false" type="model">
@@ -2437,6 +2462,7 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="55.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="df05-8179-624e-f8b2" name="Wall of Martyrs Imperial Defence Emplacement" book="Planetary Onslaught" page="83" hidden="false" collective="false" type="model">
@@ -2497,6 +2523,7 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="40.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0f73-97f2-b832-f6d0" name="Wall of Martyrs Imperial Defence Line" book="Planetary Onslaught" page="82" hidden="false" collective="false" type="model">
@@ -2557,6 +2584,7 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="80.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="47e8-03be-a35b-8329" name="Plasma Obliterator" hidden="false" collective="false" type="model">
@@ -2639,6 +2667,7 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="230.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1a59-dd0f-a7f2-32be" name="Promethium Relay Pipes" book="Planetary Onslaught" page="103" hidden="false" collective="false" type="model">
@@ -2693,6 +2722,7 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="40.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5cdd-edbb-07c3-0ba5" name="Skyshield Landing Pad" book="Planetary Onslaught" page="101" hidden="false" collective="false" type="model">
@@ -2755,6 +2785,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="75.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="04bf-6c22-19fb-4e46" name="Wall of Martyrs Vengeance Weapon Battery" book="Planetary Onslaught" page="86" hidden="false" collective="false" type="model">
@@ -2843,6 +2874,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               </entryLinks>
               <costs>
                 <cost name="pts" costTypeId="points" value="75.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="be8e-67f0-7341-3b7f" name="Battle Cannon" page="" hidden="false" collective="false" type="upgrade">
@@ -2875,6 +2907,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               </entryLinks>
               <costs>
                 <cost name="pts" costTypeId="points" value="85.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="38bd-45b9-fcec-44fc" name="Quad Icarus lascannon" page="" hidden="false" collective="false" type="upgrade">
@@ -2907,6 +2940,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               </entryLinks>
               <costs>
                 <cost name="pts" costTypeId="points" value="75.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2917,6 +2951,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bbd4-5f41-35d1-6c5f" name="Void Shield Generator" book="Planetary Onslaught" page="92" hidden="false" collective="false" type="model">
@@ -2984,6 +3019,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="25.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3000,6 +3036,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="25.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0d50-24ac-a53e-5db7" name="Wall of Martyrs Imperial Defence Network" book="Planetary Onslaught" page="87" hidden="false" collective="false" type="unit">
@@ -3136,6 +3173,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="796a-21c2-7281-17a8" name="Void Relay Network" book="Planetary Onslaught" page="93" hidden="false" collective="false" type="unit">
@@ -3227,6 +3265,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ed7e-757a-4ced-adff" name="Imperial Strongpoint" book="Planetary Onslaught" page="81" hidden="false" collective="false" type="unit">
@@ -3342,6 +3381,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="612b-8029-7441-c92b" name="Primus Redoubt" hidden="false" collective="false" type="model">
@@ -3451,6 +3491,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3494,6 +3535,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5424-800f-1fec-b912" name="Twin-linked Heavy Flamer" hidden="false" collective="false" type="upgrade">
@@ -3525,6 +3567,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3c3a-df3c-0b9f-dce4" name="Twin-linked Lascannon" hidden="false" collective="false" type="upgrade">
@@ -3556,6 +3599,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="20.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="500e-f7d6-1350-dce5" name="Multi-melta &amp; Searchlight" hidden="false" collective="false" type="upgrade">
@@ -3594,6 +3638,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c061-c3a3-07a3-9e07" name="Hyperios missle Launcher" hidden="false" collective="false" type="upgrade">
@@ -3610,6 +3655,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="30.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="38c2-8e8b-02b8-4d31" name="Icarus Lascannon" hidden="false" collective="false" type="upgrade">
@@ -3633,6 +3679,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="35.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4d0e-f36f-3aec-bf55" name="Quad-gun" hidden="false" collective="false" type="upgrade">
@@ -3656,6 +3703,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="50.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="41d3-fdae-dcfe-56a2" name="Battle Cannon Turret" hidden="false" collective="false" type="upgrade">
@@ -3672,6 +3720,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="50.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="094c-3b4d-2028-66d7" name="Icarus Quad Lascannon" hidden="false" collective="false" type="upgrade">
@@ -3695,6 +3744,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="75.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3748,6 +3798,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="35.0"/>
+                    <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="87df-e16b-b4dd-3dad" name="Hyperios Air Defense Missles" hidden="false" collective="false" type="upgrade">
@@ -3777,6 +3828,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3817,6 +3869,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3850,6 +3903,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="650.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0691-eea7-d812-ba9a" name="Munitorum Armoured Container Cache" book="Planetary Onslaught" page="98" hidden="false" collective="false" type="upgrade">
@@ -3965,6 +4019,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                   <entryLinks/>
                   <costs>
                     <cost name="pts" costTypeId="points" value="0.0"/>
+                    <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3972,6 +4027,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f6a6-efdd-aef3-98ea" name="Munitorum Supply Crates" hidden="false" collective="false" type="upgrade">
@@ -3996,6 +4052,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7d6b-87a5-3ce0-3093" name="Munitorum Promethium Barrels" hidden="false" collective="false" type="upgrade">
@@ -4023,6 +4080,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4030,6 +4088,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="40.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4037,6 +4096,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="474a-96df-3847-a5d8" name="Twisted Copse" book="Planetary Onslaught" page="100" hidden="false" collective="false" type="model">
@@ -4069,6 +4129,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="10.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9c0c-da48-1f31-e478" name="Shrine of the Aquila" book="Planetary Onslaught" page="97" hidden="false" collective="false" type="model">
@@ -4108,6 +4169,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="187a-4e21-33c0-e858" name="Sanctum Imperialis" book="Planetary Onslaught" page="96" hidden="false" collective="false" type="model">
@@ -4159,6 +4221,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d065-8909-c64b-9deb" name="Manufactorum" book="Planetary Onslaught" page="95" hidden="false" collective="false" type="model">
@@ -4198,6 +4261,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e10f-7b90-ecd3-80a5" name="Basilica Administratum" book="Planetary Onslaught" page="94" hidden="false" collective="false" type="model">
@@ -4237,6 +4301,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="348f-2143-adaa-708a" name="Haemotrope Reactors" hidden="false" collective="false" type="upgrade">
@@ -4318,6 +4383,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="40.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4325,6 +4391,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fd22-6743-2d4c-dd62" name="Flamer" hidden="false" collective="false" type="upgrade">
@@ -4346,6 +4413,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="9.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="05ab-e7cc-e856-c36f" name="Heavy Bolter" hidden="false" collective="false" type="upgrade">
@@ -4367,6 +4435,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="10.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="efc8-c51d-5b02-a3a2" name="Meltagun" hidden="false" collective="false" type="upgrade">
@@ -4388,6 +4457,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="17.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8c14-22cc-93ce-b85a" name="Plasma gun" hidden="false" collective="false" type="upgrade">
@@ -4415,6 +4485,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="13.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="83be-1ba9-c326-4760" name="Plasma pistol" hidden="false" collective="false" type="upgrade">
@@ -4442,6 +4513,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="7.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3292-34e6-f679-d5b9" name="Power axe" hidden="false" collective="false" type="upgrade">
@@ -4463,6 +4535,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="5.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6ea7-1195-7144-438e" name="Power maul" hidden="false" collective="false" type="upgrade">
@@ -4484,6 +4557,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="4.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bc9e-551d-9afb-78d5" name="Power sword" hidden="false" collective="false" type="upgrade">
@@ -4505,6 +4579,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="4.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="09d8-7790-ed3f-4d6d" name="Twin Heavy bolter" hidden="false" collective="false" type="upgrade">
@@ -4526,6 +4601,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="17.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f122-3720-fa32-4215" name="Power fist" hidden="false" collective="false" type="upgrade">
@@ -4547,6 +4623,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="47fd-d497-6125-8ab4" name="Inferno pistol" hidden="false" collective="false" type="upgrade">
@@ -4568,6 +4645,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cddf-945e-1335-e681" name="Frag &amp; Krak grenades" hidden="false" collective="true" type="upgrade">
@@ -4595,6 +4673,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="18bc-b335-29c2-2ae2" name="Heavy Flamer" hidden="false" collective="false" type="upgrade">
@@ -4616,6 +4695,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="17.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1469-1964-7a91-94d4" name="Missile launcher" hidden="false" collective="false" type="upgrade">
@@ -4643,6 +4723,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="25.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c6a1-e0c4-c1b1-dce1" name="Combi-flamer" hidden="false" collective="false" type="upgrade">
@@ -4670,6 +4751,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="11.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fdce-cdf7-21a9-f9ac" name="Combi-plasma" hidden="false" collective="false" type="upgrade">
@@ -4703,6 +4785,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="15.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c445-e211-f316-5d83" name="Combi-melta" hidden="false" collective="false" type="upgrade">
@@ -4730,6 +4813,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="19.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a908-4664-11cd-f8b2" name="Lascannon" hidden="false" collective="false" type="upgrade">
@@ -4751,6 +4835,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="25.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e464-77c1-12bb-e52f" name="Chainfist" hidden="false" collective="false" type="upgrade">
@@ -4772,6 +4857,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="22.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2b37-65ee-9443-b4ef" name="Multi-melta" hidden="false" collective="false" type="upgrade">
@@ -4793,6 +4879,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="27.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="90de-7b01-e401-888b" name="Lightning Claws" hidden="false" collective="true" type="upgrade">
@@ -4824,6 +4911,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5210-8cb2-b5a2-a04f" name="Autocannon" hidden="false" collective="false" type="upgrade">
@@ -4845,6 +4933,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5752-d165-5e03-d38c" name="Autogun" hidden="false" collective="false" type="upgrade">
@@ -4866,6 +4955,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0507-a97d-4f7f-83b4" name="Autopistol" hidden="false" collective="false" type="upgrade">
@@ -4887,6 +4977,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1d7b-4f46-b77b-ead1" name="Battle cannon" hidden="false" collective="false" type="upgrade">
@@ -4908,6 +4999,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cfa3-5fcd-af10-5520" name="Heavy stubber" hidden="false" collective="false" type="upgrade">
@@ -4929,6 +5021,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="4.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2094-c9a6-a426-0970" name="Shotgun" hidden="false" collective="false" type="upgrade">
@@ -4950,6 +5043,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4a0e-0f13-63c2-9aae" name="Force axe" hidden="false" collective="false" type="upgrade">
@@ -4971,6 +5065,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="16.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6f9a-c4fe-3132-d011" name="Force stave" hidden="false" collective="false" type="upgrade">
@@ -4992,6 +5087,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="14.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="07e7-1f9b-4c1c-aad9" name="Force sword" hidden="false" collective="false" type="upgrade">
@@ -5013,6 +5109,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="12.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0334-f487-8229-0c1a" name="Bolt pistol" hidden="false" collective="true" type="upgrade">
@@ -5034,6 +5131,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b61f-a3c1-827d-c5b6" name="Boltgun" hidden="false" collective="false" type="upgrade">
@@ -5055,6 +5153,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0dd1-2e2b-7dd1-5495" name="Chainsword" hidden="false" collective="true" type="upgrade">
@@ -5076,6 +5175,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -5111,6 +5211,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="5.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="dedd-369e-f614-b4c6" name="Barricades" page="" hidden="false" collective="false" type="upgrade">
@@ -5134,6 +5235,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="10.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="14f7-0f49-e062-ee60" name="Tank Traps" page="" hidden="false" collective="false" type="upgrade">
@@ -5157,6 +5259,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="15.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5194,6 +5297,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="15.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="000d-69ea-e095-7266" name="Booby Traps" page="" hidden="false" collective="false" type="upgrade">
@@ -5217,6 +5321,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="20.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c834-ef3d-29b3-06f5" name="Void Shield" page="" hidden="false" collective="false" type="upgrade">
@@ -5240,6 +5345,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="25.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7f0f-3a08-4730-77a7" name="Searchlight" page="" hidden="false" collective="false" type="upgrade">
@@ -5263,6 +5369,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="5.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d194-f922-5bc0-9fde" name="Escape Hatch" page="" hidden="false" collective="false" type="upgrade">
@@ -5286,6 +5393,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="25.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="558a-2c12-0c9e-636a" name="Magos Machine Spirit" page="" hidden="false" collective="false" type="upgrade">
@@ -5309,6 +5417,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="30.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5346,6 +5455,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="20.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b3eb-c36f-2f5f-b50f" name="Comms Relay" page="" hidden="false" collective="false" type="upgrade">
@@ -5369,6 +5479,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="20.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6bf0-460a-6ba3-97df" name="Gun Emplacement with Icarus Lascannon" page="" hidden="false" collective="false" type="upgrade">
@@ -5404,6 +5515,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="35.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="93a0-0a4a-8145-a4b8" name="Gun Emplacement with Quad-gun" page="" hidden="false" collective="false" type="upgrade">
@@ -5439,6 +5551,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="50.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5491,6 +5604,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="30.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f1c6-e84a-4d3a-b25b" name="Quantum Annihilator" hidden="false" collective="false" type="upgrade">
@@ -5531,6 +5645,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="30.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="be05-803f-2c30-3657" name="Sacrifactum Autorepulsor" hidden="false" collective="false" type="upgrade">
@@ -5558,6 +5673,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="15.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="21b4-66a1-2f9d-ad24" name="Omnissiah&apos;s Grace" hidden="false" collective="false" type="upgrade">
@@ -5585,6 +5701,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="10.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7609-e1d0-701f-66f0" name="Saint Curia&apos;s Autopurger " hidden="false" collective="false" type="upgrade">
@@ -5612,6 +5729,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="25.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b27c-5fa6-5bd2-6978" name="Memento-Mortispex" hidden="false" collective="false" type="upgrade">
@@ -5666,6 +5784,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="30.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5705,6 +5824,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="30.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3d4b-c170-5ff9-f7e1" name="Shroud of the Anti-Martyr" hidden="false" collective="false" type="upgrade">
@@ -5729,6 +5849,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="35.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a8cc-b76f-8802-0a42" name="Blade of the Worthy" hidden="false" collective="false" type="upgrade">
@@ -5769,6 +5890,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="30.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4eee-585e-7f74-7bd9" name="Castigator" hidden="false" collective="false" type="upgrade">
@@ -5809,6 +5931,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="15.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3a4e-3711-a8ca-526f" name="The Font of Fury " hidden="false" collective="false" type="upgrade">
@@ -5856,6 +5979,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="10.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e224-5d7e-dc8a-2275" name="Desvalle&apos;s Holy Circle" hidden="false" collective="false" type="upgrade">
@@ -5883,6 +6007,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="35.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8238,20 +8363,6 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
         <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="On a hit roll of 1, the bearer is slain after all of this weapon&apos;s shots have been resolved."/>
-      </characteristics>
-    </profile>
-    <profile id="9b1e-61f9-4a5b-0044" name="Chainsword" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
-        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
-        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="User"/>
-        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time the bearer fights, it can make 1 additional attack with this weapon."/>
       </characteristics>
     </profile>
     <profile id="9b1e-61f9-4a5b-0044" name="Chainsword" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
