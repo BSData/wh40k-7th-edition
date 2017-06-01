@@ -979,7 +979,7 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="9153-b8bd-1f8a-9f1f" name="New CategoryLink" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="false">
+        <categoryLink id="9153-b8bd-1f8a-9f1f" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
