@@ -7554,6 +7554,13 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <modifiers/>
       <description>If this model is reduced to 0 wounds, roll a D6 beofre removing it fom the battlefield and before any embarked models disembark. On a 6 it explodes, and each unit within 6&quot; suffers D3 mortal wounds.</description>
     </rule>
+    <rule id="60db-65f7-ca20-7874" name="Open-topped" book="" page="" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Models embarked on this model can attack in their Shooting phase. Measure the range and draw line of sight from any point on the model. When they do so, any restirictions or modifiers that apply to this model also apply to its passenger; for example, the passengers cannot shoot if this model has Fallen Back in the same turn, cannot shoot (except with Pistols) if this model is within 1&quot; of an enemy unit, and so on.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="fcde-3e6a-e240-1157" name="Autogun" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
