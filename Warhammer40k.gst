@@ -7552,7 +7552,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>If this model is reduced to 0 wounds, roll a D6 beofre removing it fom the battlefield and before any embarked models disembark. On a 6 it explodes, and each unit within 6&quot; suffers D3 mortal wounds.</description>
+      <description>If this model is reduced to 0 wounds, roll a D6 before removing it fom the battlefield and before any embarked models disembark. On a 6 it explodes, and each unit within 6&quot; suffers D3 mortal wounds.</description>
     </rule>
     <rule id="60db-65f7-ca20-7874" name="Open-topped" book="" page="" hidden="false">
       <profiles/>
