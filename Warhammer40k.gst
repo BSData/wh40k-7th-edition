@@ -5181,6 +5181,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="15.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="51b0-3d46-5af4-683e" name="Assault cannon" book="" hidden="false" collective="false" type="upgrade">
@@ -5202,6 +5203,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="21.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b4dd-2ff1-9f8e-ab00" name="Astartes grenade launcher" book="" hidden="false" collective="false" type="upgrade">
@@ -5229,6 +5231,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="11.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ce59-8ed4-4497-8a53" name="Astartes shotgun" hidden="false" collective="false" type="upgrade">
@@ -5248,7 +5251,10 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="fbf3-4fc8-f474-e3db" name="Bolt rifle" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -5267,7 +5273,10 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="689a-17db-7527-5cf8" name="Boltstorm gauntlet" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -5294,6 +5303,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="25.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e2b8-099c-9f60-0faf" name="Centurion missile launcher" hidden="false" collective="false" type="upgrade">
@@ -5315,6 +5325,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="25.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3846-568f-f410-946e" name="Cerberus launcher" hidden="false" collective="false" type="upgrade">
@@ -5336,6 +5347,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="5.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eba0-9fc6-5334-a390" name="Combi-bolter" hidden="false" collective="false" type="upgrade">
@@ -5357,6 +5369,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="2.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c027-24d6-7a3d-cf12" name="Combi-grav" hidden="false" collective="false" type="upgrade">
@@ -5384,6 +5397,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="17.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fbb1-9dd6-aefc-eba2" name="Conversion beamer" hidden="false" collective="false" type="upgrade">
@@ -5405,6 +5419,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="25b3-79f7-73cd-9321" name="Cyclone missile launcher" hidden="false" collective="false" type="upgrade">
@@ -5432,6 +5447,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="50.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5342-99c6-bc9f-770a" name="Deathwind launcher" hidden="false" collective="false" type="upgrade">
@@ -5453,6 +5469,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="5.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1f7e-32c4-61af-510f" name="Demolisher cannon" hidden="false" collective="false" type="upgrade">
@@ -5472,7 +5489,10 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="dc17-09cb-c84b-e837" name="Disintegration combi-gun" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -5497,7 +5517,10 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9728-3bce-75d9-803a" name="Disintegration pistol" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -5516,7 +5539,10 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f09b-e29b-c7e0-c9e1" name="Flamestorm cannon" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -5537,6 +5563,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="30.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f68e-9984-71fe-6bca" name="Frag grenade" hidden="false" collective="false" type="upgrade">
@@ -5556,7 +5583,10 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7b66-cac7-e582-a518" name="Grav-pistol" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -5577,6 +5607,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="8.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2f3b-2b38-8060-efc7" name="Grav-cannon and grav-amp" hidden="false" collective="false" type="upgrade">
@@ -5598,6 +5629,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="28.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c300-04a5-d4eb-3f53" name="Grenade harness" hidden="false" collective="false" type="upgrade">
@@ -5619,6 +5651,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="8.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="221a-6109-61df-015e" name="Heavy plasma cannon" hidden="false" collective="false" type="upgrade">
@@ -5646,6 +5679,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="30.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="32bf-b117-4ecf-5165" name="Hunter-killer missile" hidden="false" collective="false" type="upgrade">
@@ -5667,6 +5701,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="6.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b34a-b0c7-689d-d9a9" name="Hurricane bolter" hidden="false" collective="false" type="upgrade">
@@ -5688,6 +5723,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="4.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="98bf-0664-0b1b-3e27" name="Icarus stormcannon" hidden="false" collective="false" type="upgrade">
@@ -5709,6 +5745,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="17.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="db1d-3a08-13f2-72fa" name="Kheres pattern assault cannon" hidden="false" collective="false" type="upgrade">
@@ -5730,6 +5767,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="25.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0f23-cd69-d106-371e" name="Krak grenade" hidden="false" collective="false" type="upgrade">
@@ -5749,7 +5787,10 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5ca6-11eb-52e7-aad9" name="Las-talon" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -5770,6 +5811,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="40.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f2f6-ed05-f2a9-f46f" name="Master-crafted auto bolt rifle" hidden="false" collective="false" type="upgrade">
@@ -5791,6 +5833,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="4.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c215-aaf9-77ef-27fb" name="Master-crafted boltgun" hidden="false" collective="false" type="upgrade">
@@ -5812,6 +5855,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="3.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8ed2-3e2c-4d52-af79" name="Melta bombs" hidden="false" collective="false" type="upgrade">
@@ -5833,6 +5877,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="5.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6f0c-0f8c-1a73-4052" name="Orbital array" hidden="false" collective="false" type="upgrade">
@@ -5854,6 +5899,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="50.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5aaf-d2e4-ec59-0407" name="Plasma blaster" hidden="false" collective="false" type="upgrade">
@@ -5881,6 +5927,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="17.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eb15-db61-5d4f-b65e" name="Plasma cannon" hidden="false" collective="false" type="upgrade">
@@ -5908,6 +5955,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="21.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d1e1-23e0-2777-dc7b" name="Plasma cutter" hidden="false" collective="false" type="upgrade">
@@ -5935,6 +5983,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="7.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d8c6-5a0f-4e89-c05a" name="Plasma incinerator" hidden="false" collective="false" type="upgrade">
@@ -5962,6 +6011,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="18.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="974d-570e-66b3-e971" name="Predator autocannon" hidden="false" collective="false" type="upgrade">
@@ -5983,6 +6033,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="49.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ab4-1ee7-95ad-7e15" name="Reaper autocannon" hidden="false" collective="false" type="upgrade">
@@ -6004,6 +6055,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="18.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dc9d-4795-4788-d6e6" name="Skyhammer missile launcher" hidden="false" collective="false" type="upgrade">
@@ -6025,6 +6077,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="24.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cd63-9586-da03-ec49" name="Skyspear missile launcher" hidden="false" collective="false" type="upgrade">
@@ -6046,6 +6099,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="30.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ba62-f2c3-d7bb-4f5d" name="Sniper rifle" hidden="false" collective="false" type="upgrade">
@@ -6067,6 +6121,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="4.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cfc3-3735-a2e8-53cd" name="Special issue boltgun" hidden="false" collective="false" type="upgrade">
@@ -6088,6 +6143,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="3.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2b03-8d64-3711-f300" name="Storm bolter" hidden="false" collective="false" type="upgrade">
@@ -6109,6 +6165,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="2.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="38e3-37a8-42a3-e195" name="Stormstrike missile launcher" hidden="false" collective="false" type="upgrade">
@@ -6130,6 +6187,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="21.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="68e5-3818-5a79-d82a" name="Thunderfire cannon" hidden="false" collective="false" type="upgrade">
@@ -6151,6 +6209,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="30.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f787-a3af-72b5-60d1" name="Twin assault cannon" hidden="false" collective="false" type="upgrade">
@@ -6172,6 +6231,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="35.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="afe0-3771-1982-92b4" name="Twin autocannon" hidden="false" collective="false" type="upgrade">
@@ -6193,6 +6253,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="33.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4c54-1c89-299c-05c5" name="Twin boltgun" hidden="false" collective="false" type="upgrade">
@@ -6214,6 +6275,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="2.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8d70-a6af-cbad-f08c" name="Twin heavy flamer" hidden="false" collective="false" type="upgrade">
@@ -6235,6 +6297,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="34.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="353e-3e4d-a6ed-d25c" name="Twin heavy plasma cannon" hidden="false" collective="false" type="upgrade">
@@ -6262,6 +6325,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="34.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ee18-b1cd-6b60-464d" name="Twin lascannon" hidden="false" collective="false" type="upgrade">
@@ -6283,6 +6347,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="50.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d496-bdd5-426e-3e80" name="Twin multi-melta" hidden="false" collective="false" type="upgrade">
@@ -6304,6 +6369,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="54.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3f51-b8fa-86ce-7388" name="Twin plasma gun" hidden="false" collective="false" type="upgrade">
@@ -6331,6 +6397,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6027-7017-756a-600c" name="Typhoon missile launcher" hidden="false" collective="false" type="upgrade">
@@ -6358,6 +6425,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="50.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="250a-10f2-a1c6-36ff" name="Volkite charger" hidden="false" collective="false" type="upgrade">
@@ -6379,6 +6447,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="6.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e640-c148-5944-6874" name="Whirlwind castellan launcher" hidden="false" collective="false" type="upgrade">
@@ -6400,6 +6469,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="25.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="79a5-23f2-b542-a73f" name="Whirlwind vengeance launcher" hidden="false" collective="false" type="upgrade">
@@ -6421,6 +6491,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="34.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f79f-74ef-e0a3-f967" name="Wrist-mounted grenade launcher" hidden="false" collective="false" type="upgrade">
@@ -6442,6 +6513,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="4.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="02d5-5c02-db70-d933" name="Champion&apos;s blade" hidden="false" collective="false" type="upgrade">
@@ -6461,7 +6533,10 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="bc0b-c19f-0b71-081e" name="Combat knife" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -6480,7 +6555,10 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7543-5a4e-0f59-bacc" name="Crozius arcanum" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -6499,7 +6577,10 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b757-4d61-d4bc-52ba" name="Dreadnought chainfist" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -6520,6 +6601,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="46.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a869-5624-fe55-fe95" name="Dreadnought combat weapon" hidden="false" collective="false" type="upgrade">
@@ -6549,6 +6631,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="40.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b993-57b7-93c6-9acb" name="Eviscerator" hidden="false" collective="false" type="upgrade">
@@ -6570,6 +6653,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="22.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7d93-d63c-bfba-c879" name="Master-crafted power sword" hidden="false" collective="false" type="upgrade">
@@ -6589,7 +6673,10 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ba8d-691a-6178-1a60" name="Power lance" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -6610,6 +6697,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="4.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0140-c9f2-0524-34cc" name="Relic blade" hidden="false" collective="false" type="upgrade">
@@ -6631,6 +6719,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="21.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d858-d958-0efe-edbc" name="Seismic hammer" hidden="false" collective="false" type="upgrade">
@@ -6652,6 +6741,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="48.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="61ae-3901-0a79-4ec9" name="Servo-arm" hidden="false" collective="false" type="upgrade">
@@ -6673,6 +6763,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="12.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1898-a013-d489-c5cb" name="Siege drills" hidden="false" collective="false" type="upgrade">
@@ -6692,7 +6783,10 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0e57-eaf5-763f-9c45" name="Thunder hammer" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -6721,6 +6815,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e0df-0e01-4e07-fdec" name="Camo cloak" hidden="false" collective="false" type="upgrade">
@@ -6742,6 +6837,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="3.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2792-c0fb-d72e-cee4" name="Combat shield" hidden="false" collective="false" type="upgrade">
@@ -6763,6 +6859,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="4.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="38b5-ef30-f87f-5275" name="Storm shield" hidden="false" collective="false" type="upgrade">
@@ -6792,6 +6889,28 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="5.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="538c-b8cd-b452-2685" name="Grav-gun" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="7e7e-ed63-bb7a-7c3e" name="Grav-gun" hidden="false" targetId="a3d2-b0d7-70bc-695e" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="15.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
