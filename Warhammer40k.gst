@@ -7568,6 +7568,13 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <modifiers/>
       <description>Once per game, instead of shooting any weapons in the Shooting phase, this models can use its smoke launchers; if it does so, until your next Shooting phase your opponent must subtract 1 from any hit rolls that target it.</description>
     </rule>
+    <rule id="4ea8-94d3-ba39-042f" name="And They Shall Know No Fear" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>You can re-roll failed Morale tests for this unit.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="fcde-3e6a-e240-1157" name="Autogun" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
