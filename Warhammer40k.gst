@@ -18,7 +18,7 @@
         <characteristicType id="837d-5e63-aeb7-1410" name="Abilities"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Wargear Item">
+    <profileType id="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Abilities">
       <characteristicTypes>
         <characteristicType id="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description"/>
       </characteristicTypes>
@@ -261,6 +261,34 @@
       <constraints/>
     </categoryEntry>
     <categoryEntry id="7d5a-227c-079b-c91e" name="Titanic" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="b9f2-d175-d15d-9d09" name="Dreadnought" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="5cf2-2fcb-455a-c3f6" name="Rhino" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="340d-ea04-8a69-8405" name="Land raider" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="27be-adc7-3f54-8b5a" name="Astra Militarum" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -10837,6 +10865,15 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
         <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="1"/>
         <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="0d79-cac9-43e1-de45" name="Explodes" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If this model is reduced to 0 wounds, roll a D6 before removing it fom the battlefield and before any embarked models disembark. On a 6 it explodes, and each unit within 6&quot; suffers D3 mortal wounds."/>
       </characteristics>
     </profile>
   </sharedProfiles>
