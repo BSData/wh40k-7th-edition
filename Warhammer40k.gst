@@ -260,6 +260,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="7d5a-227c-079b-c91e" name="Titanic" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="a0c7-2a71-bae0-215d" name="Patrol Detachment" hidden="false">
