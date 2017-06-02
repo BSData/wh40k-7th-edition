@@ -253,6 +253,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="98dc-f7ed-49d2-1922" name="Imperium" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="a0c7-2a71-bae0-215d" name="Patrol Detachment" hidden="false">
