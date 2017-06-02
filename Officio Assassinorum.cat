@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a7497f68-b4a9-65f6-1d4a-840cd48df801" name="Officio Assassinorum" revision="6" battleScribeVersion="2.01" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a7497f68-b4a9-65f6-1d4a-840cd48df801" name="Officio Assassinorum" revision="7" battleScribeVersion="2.01" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -336,7 +336,7 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228"/>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="During deployment, you can set up this model in disguise instead of placing it on the battlefield.  At the end of any Movement phases this model can revert to its true form - set it up anywhere on the battlefield that is more than D6+3&quot; away from any enemy models.  For example if you roll a 4, the model can be set up anywhere that is more than 7&quot; from any enemy model."/>
           </characteristics>
         </profile>
       </profiles>
@@ -499,7 +499,7 @@
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="80.0"/>
-        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="15d3-57f0-2c9d-f074" name="Culexus Assassin" hidden="false" collective="false" type="unit">
@@ -684,7 +684,7 @@
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="85.0"/>
-        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8e8a-617b-5665-f83f" name="Eversor Assassin" hidden="false" collective="false" type="unit">
@@ -815,16 +815,24 @@
           </costs>
         </selectionEntry>
         <selectionEntry id="226e7674-c226-7edd-3e8c-59e9434a8be7" name="Melta bombs" hidden="false" collective="false" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks>
-            <infoLink id="e36b-d69e-7216-e85d" name="New InfoLink" hidden="false" targetId="df40-a3f4-91be-f0fe" type="profile">
+          <profiles>
+            <profile id="8d15-0eb3-f8c9-2705" name="Melta bombs" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-            </infoLink>
-          </infoLinks>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="4&quot;"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Grenade 1"/>
+                <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
+                <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-4"/>
+                <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
+                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="You can re-roll failed wound rolls for this weapon if the target is a VEHICLE"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
@@ -910,7 +918,7 @@
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="70.0"/>
-        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="4.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8d0f-297a-5547-8a6b" name="Vindicare Assassin" hidden="false" collective="false" type="unit">
@@ -1102,7 +1110,7 @@
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="90.0"/>
-        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="5.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
