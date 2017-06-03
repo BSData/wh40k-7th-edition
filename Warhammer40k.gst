@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="86de-271f-f574-d94f" name="Warhammer 40,000 8th Edition" revision="1" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="86de-271f-f574-d94f" name="Warhammer 40,000 8th Edition" revision="2" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -246,13 +246,6 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
-    <categoryEntry id="84d8-c0e4-1d47-066e" name="Ironclad Dreadnought" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-    </categoryEntry>
     <categoryEntry id="a089-247f-b684-db1c" name="Chariot" hidden="false">
       <profiles/>
       <rules/>
@@ -261,6 +254,27 @@
       <constraints/>
     </categoryEntry>
     <categoryEntry id="7a53-eedc-8dbb-8505" name="Swarm" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="ae37-74e2-8391-d0f8" name="Artillery" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="bdda-36f0-4f32-1639" name="Titanic" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="ad76-d653-9f96-093a" name="Ironclad Dreadnought" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -6863,7 +6877,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
         <modifier type="set" field="points" value="0.0">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84d8-c0e4-1d47-066e" type="instanceOf"/>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad76-d653-9f96-093a" type="instanceOf"/>
           </conditions>
           <conditionGroups/>
         </modifier>
