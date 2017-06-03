@@ -260,6 +260,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="7a53-eedc-8dbb-8505" name="Swarm" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="a0c7-2a71-bae0-215d" name="Patrol Detachment" hidden="false">
