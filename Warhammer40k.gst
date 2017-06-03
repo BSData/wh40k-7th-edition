@@ -7158,7 +7158,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7603-6241-ab8b-4603" name="Lightning Claw (Pair)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="7603-6241-ab8b-4603" name="Lightning Claw (Pair)" hidden="false" collective="true" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks>
