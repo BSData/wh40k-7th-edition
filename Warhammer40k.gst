@@ -18,7 +18,7 @@
         <characteristicType id="837d-5e63-aeb7-1410" name="Abilities"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Wargear Item">
+    <profileType id="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Abilities">
       <characteristicTypes>
         <characteristicType id="21befb24-fc85-4f52-a745-64b2e48f8228" name="Description"/>
       </characteristicTypes>
@@ -5131,15 +5131,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers>
-        <modifier type="set" field="points" value="6.5">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="90de-7b01-e401-888b" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <constraints/>
       <categoryLinks/>
       <selectionEntries/>
