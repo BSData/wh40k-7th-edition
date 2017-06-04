@@ -3259,11 +3259,41 @@ Each time a spore mine launcher missed its target, set up a single Spore Mine mo
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="04a7-33a3-6396-b371" name="Ripper Swarms" hidden="false" collective="false" type="unit">
+    <selectionEntry id="04a7-33a3-6396-b371" name="Ripper Swarm" hidden="false" collective="false" type="unit">
       <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
+      <rules>
+        <rule id="edc9-1c5e-3267-988b" name="Burrowers" book="Index: Xenos 2" page="92" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>During deployment you meay set up a Ripper Swarm underground instead of on the battlefield. At the end of any of your Movement phases, they can tunnel up to the battlefield - set them up anywhere that is more than 9&quot; from any enemy models.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="bd68-69ba-1961-9e0f" name="New InfoLink" hidden="false" targetId="f2b4-59fe-ed69-99fc" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="increment" field="e356-c769-5920-6e14" value="2">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="04a7-33a3-6396-b371" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="e356-c769-5920-6e14" value="2">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="04a7-33a3-6396-b371" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
         <categoryLink id="f146-b2ce-9b7c-b3b1" name="New CategoryLink" hidden="false" targetId="dc2c-fdd5-528b-e9ad" primary="false">
@@ -3280,10 +3310,42 @@ Each time a spore mine launcher missed its target, set up a single Spore Mine mo
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="1e87-4588-aa5a-8646" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="e7a5-3cb5-3346-2fd9" name="New CategoryLink" hidden="false" targetId="7a53-eedc-8dbb-8505" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="397f-bf6e-d858-b3fb" name="Ripper Swarm" hidden="false" collective="false" type="model">
-          <profiles/>
+          <profiles>
+            <profile id="8d46-19d9-6600-f867" name="Ripper Swarm" book="Index: Xenos 2" page="92" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="6&quot;"/>
+                <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="5+"/>
+                <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="5+"/>
+                <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="3"/>
+                <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="3"/>
+                <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="3"/>
+                <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="4"/>
+                <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="4"/>
+                <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="6+"/>
+              </characteristics>
+            </profile>
+          </profiles>
           <rules/>
           <infoLinks/>
           <modifiers/>
@@ -3294,7 +3356,29 @@ Each time a spore mine launcher missed its target, set up a single Spore Mine mo
           <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="0d89-2b23-9e9a-0e16" name="New EntryLink" hidden="false" targetId="2634-0525-7b04-6f89" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b9e-9d47-755b-98a5" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5159-bd0b-0488-80f4" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="4842-2c75-021c-1e27" name="New EntryLink" hidden="false" targetId="8017-6992-ddd7-5882" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e81f-1ef8-6848-d2fb" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="11.0"/>
             <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
@@ -3304,7 +3388,7 @@ Each time a spore mine launcher missed its target, set up a single Spore Mine mo
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="2.0"/>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
