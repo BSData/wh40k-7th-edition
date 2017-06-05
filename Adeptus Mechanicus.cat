@@ -3630,7 +3630,7 @@ Protector Protocol: Whilst this battle protocol is in effect, this unit cannot m
           <characteristics>
             <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="8&quot;"/>
             <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="3+"/>
-            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="3+4"/>
+            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="3+"/>
             <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="4"/>
             <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="3"/>
             <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="2"/>
@@ -4812,6 +4812,33 @@ Protector Protocol: Whilst this battle protocol is in effect, this unit cannot m
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e266-b9ee-ff66-07d0" name="Transonic Razor" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="dc3a-7f24-ce0f-e12f" name="Transonic Razor" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+            <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+            <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="User"/>
+            <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+            <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time you make a wound roll of 6+ with this weapon, the target suffers a mortal wound instead of the normal damage."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="8c49-2d27-f4f9-ca74" name="Adeptus Mechanicus Special Weapons" hidden="false" collective="false">
@@ -5268,7 +5295,7 @@ Protector Protocol: Whilst this battle protocol is in effect, this unit cannot m
       <selectionEntryGroups/>
       <entryLinks/>
     </selectionEntryGroup>
-    <selectionEntryGroup id="7ac4-e733-aeec-fe97" name="Ruststalker weapons" hidden="false" collective="false" defaultSelectionEntryId="c64f-f3aa-1610-9d4f">
+    <selectionEntryGroup id="7ac4-e733-aeec-fe97" name="Ruststalker weapons" hidden="false" collective="false" defaultSelectionEntryId="f949-961f-405f-ec4f">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -5279,23 +5306,8 @@ Protector Protocol: Whilst this battle protocol is in effect, this unit cannot m
       </constraints>
       <categoryLinks/>
       <selectionEntries>
-        <selectionEntry id="c64f-f3aa-1610-9d4f" name="Transonic razor &amp; Chordclaw" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="b568-e023-8a18-f4f6" name="Transonic razor" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
-                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
-                <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="User"/>
-                <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
-                <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
-                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time you make a wound roll of 6+ with this weapon, the target suffers a mortal wound instead of the normal damage."/>
-              </characteristics>
-            </profile>
-          </profiles>
+        <selectionEntry id="f949-961f-405f-ec4f" name="Transonic razor and Chordclaw" hidden="false" collective="false" type="upgrade">
+          <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
@@ -5304,50 +5316,31 @@ Protector Protocol: Whilst this battle protocol is in effect, this unit cannot m
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="5ad9-0abc-cf2d-37c9" name="New EntryLink" hidden="false" targetId="e3e7-466d-b088-2c3a" type="selectionEntry">
+            <entryLink id="24e4-1182-b50e-ed87" name="New EntryLink" hidden="false" targetId="e3e7-466d-b088-2c3a" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21f0-cf5b-fc47-a20e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9fa-359c-0cb9-9ed3" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="810c-13ed-232a-9291" name="New EntryLink" hidden="false" targetId="e266-b9ee-ff66-07d0" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="beb3-569f-e121-4a02" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b671-ce19-f0fd-285d" type="max"/>
+              </constraints>
               <categoryLinks/>
             </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="5.0"/>
-            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1a4e-d4c8-bd0d-e993" name="Transonic blades &amp; Chordclaw" hidden="true" collective="false" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <repeats/>
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70c1-ed78-9472-5068" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints/>
-          <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="987b-b7e4-14fc-6994" name="New EntryLink" hidden="false" targetId="b696-67aa-c975-0a60" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" costTypeId="points" value="10.0"/>
-            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
