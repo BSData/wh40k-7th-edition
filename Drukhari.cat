@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="93c2-8d10-a6dc-ec64" name="Drukhari" revision="5" battleScribeVersion="2.01" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="93c2-8d10-a6dc-ec64" name="Drukhari" revision="6" battleScribeVersion="2.01" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -546,18 +546,19 @@
             <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="5+"/>
           </characteristics>
         </profile>
-      </profiles>
-      <rules>
-        <rule id="dc2f-ebe8-6441-17d1" name="Overlord" hidden="false">
+        <profile id="f9f0-1851-a98d-0650" name="Overlord" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>All friendly &lt;KABAL&gt; units that are withink 6&quot; of this mdoel can use it&apos;s Leadership instead of their own. </description>
-        </rule>
-      </rules>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="All friendly &lt;KABAL&gt; units that are withink 6&quot; of this model can use it&apos;s Leadership instead of their own. "/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
       <infoLinks>
-        <infoLink id="d29a-9b20-0148-dab9" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+        <infoLink id="96e2-b5f8-8be3-d150" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -739,7 +740,10 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -838,10 +842,40 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="bcaa-5a3b-de61-6f41" name="Haemonculus" hidden="false" collective="false" type="model">
-      <profiles/>
+      <profiles>
+        <profile id="810f-5bfe-eb1f-eb6d" name="Haemonculus" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="7&quot;"/>
+            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="2+"/>
+            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="2+"/>
+            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="3"/>
+            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="4"/>
+            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="5"/>
+            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="5"/>
+            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="8"/>
+            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="6+"/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="d497-502a-3a56-e8a3" name="New InfoLink" hidden="false" targetId="3740-c5f4-65ec-2288" type="rule">
+        <infoLink id="d497-502a-3a56-e8a3" name="New InfoLink" hidden="false" targetId="3054-d0fa-72dc-f253" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="7996-9fa2-28e5-2ccf" name="New InfoLink" hidden="false" targetId="8697-63a6-0f4e-66f8" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="cba1-9a44-9ddc-598e" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -852,6 +886,48 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="a41d-078b-986a-286f" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="f432-570c-ea5f-9a48" name="New CategoryLink" hidden="false" targetId="c3cc-22d9-1014-b496" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="f8b0-a11d-b989-cb44" name="New CategoryLink" hidden="false" targetId="6a01-e1fc-d03d-8390" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="fd1d-103b-a5b4-7aa4" name="New CategoryLink" hidden="false" targetId="bd42-0139-0789-e05b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="186e-5077-610d-c8b1" name="New CategoryLink" hidden="false" targetId="ef18-746a-369f-43a4" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="923d-0d67-e380-5a17" name="New CategoryLink" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="5349-d558-8135-16cf" name="New CategoryLink" hidden="false" targetId="8fca-4ed9-4326-8a23" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -979,7 +1055,14 @@
     <selectionEntry id="40a0-6ba1-e19a-1c60" name="Kabalite Warriors" book="" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="2bb7-f614-0c1e-8dcb" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers>
         <modifier type="increment" field="e356-c769-5920-6e14" value="2">
           <repeats>
@@ -1305,25 +1388,29 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="8738-a567-5340-4450" name="Mandrakes" book="" hidden="false" collective="false" type="unit">
-      <profiles/>
-      <rules>
-        <rule id="442a-5f0b-18ea-96ce" name="From Out of the Shadows" hidden="false">
+      <profiles>
+        <profile id="cd85-2261-da44-28c2" name="Shrouded From Sight" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>During deployment, you can set up this unit in the realm of Aelindrach instead of placing it on the battlefield. At the end of any of you Movement phases the Mandrakes can pull themselves into reality - set this unit up anywhere on the battlefield that is more than 9&quot;away from enemy models. </description>
-        </rule>
-        <rule id="9773-8cbe-051e-a25f" name="Shrouded From Sight" hidden="false">
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Your opponent must subtract 1 from the hit rolls of any attacks that target this unit. In addition, models in this unit have a 5+ invulnerable save. "/>
+          </characteristics>
+        </profile>
+        <profile id="a3f7-44ac-546a-809b" name="From Out of the Shadows" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Your opponent must subtract 1 from the hit rolls of any attacks that target this unit. In addition, models in this unit have a 5+ invulnerable save. </description>
-        </rule>
-      </rules>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="During deployment, you can set up this unit in the realm of Aelindrach instead of placing it on the battlefield. At the end of any of you Movement phases the Mandrakes can pull themselves into reality - set this unit up anywhere on the battlefield that is more than 9&quot;away from enemy models. "/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
       <infoLinks>
-        <infoLink id="40b1-24a5-8cfe-4474" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+        <infoLink id="7057-1231-2290-2d5c" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1652,39 +1739,31 @@
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="3909-44ba-b192-4e5a" name="Raider Transport" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>This model can transport 10 INCUBI or DRUKHARI INFANTRY models. Each Grotesque takes the space of two models. </description>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks>
-        <infoLink id="6742-6458-5ddb-fe96" name="New InfoLink" hidden="false" targetId="60db-65f7-ca20-7874" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="append" field="description" value="Note that the passengers cannot shoot if this model Falls Back, even though it can.">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="edaf-6752-5210-8e37" name="New InfoLink" hidden="false" targetId="3541-94a7-a138-358b" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="2d84-c052-e26f-43bf" name="New InfoLink" hidden="false" targetId="0f23-47f3-fe3a-aa82" type="rule">
+        <infoLink id="2d84-c052-e26f-43bf" name="New InfoLink" hidden="false" targetId="568c-92d6-4089-ad34" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
+        </infoLink>
+        <infoLink id="f4be-42c9-238a-60ca" name="New InfoLink" hidden="false" targetId="ce5f-4d5d-cb8b-0559" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="21befb24-fc85-4f52-a745-64b2e48f8228" value="Note that the passengers cannot shoot if this model Falls Back, even though the Raider itself can. ">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </infoLink>
       </infoLinks>
       <modifiers/>
@@ -2038,19 +2117,19 @@
       </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="d060-c018-a465-5edf" name="New InfoLink" hidden="false" targetId="3c50-1798-7ea0-7919" type="rule">
+        <infoLink id="d060-c018-a465-5edf" name="New InfoLink" hidden="false" targetId="6e34-3100-f14f-cff0" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="91cc-94e9-eed7-5068" name="New InfoLink" hidden="false" targetId="15ea-860d-9eb6-21c3" type="rule">
+        <infoLink id="91cc-94e9-eed7-5068" name="New InfoLink" hidden="false" targetId="583f-6e1a-8431-70ff" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="f5d0-3bf2-90e2-3c32" name="New InfoLink" hidden="false" targetId="9caa-ff00-a5bd-5f04" type="rule">
+        <infoLink id="f5d0-3bf2-90e2-3c32" name="New InfoLink" hidden="false" targetId="b6c4-ad82-ad7d-5039" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2329,24 +2408,26 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4da6-8b2a-acaf-d1fe" name="Reavers" book="" hidden="false" collective="false" type="unit">
-      <profiles/>
-      <rules>
-        <rule id="9e33-6ff0-c231-c5a1" name="Matchless Swiftness" hidden="false">
+      <profiles>
+        <profile id="d484-17aa-c039-f7eb" name="Matchless Swiftness" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>When this unit Advances, add 8&quot; to it&apos;s Move characteristic for that Movement phase instead of rolling a dice. </description>
-        </rule>
-      </rules>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="When this unit Advances, add 8&quot; to it&apos;s Move characteristic for that Movement phase instead of rolling a dice. "/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
       <infoLinks>
-        <infoLink id="13ae-0828-1413-754f" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+        <infoLink id="0668-607b-8729-ddc5" name="New InfoLink" hidden="false" targetId="9d5c-7ec3-ca80-423d" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="0668-607b-8729-ddc5" name="New InfoLink" hidden="false" targetId="9d5c-7ec3-ca80-423d" type="rule">
+        <infoLink id="f079-f0cd-7ac6-fcfe" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2824,9 +2905,46 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f82e-71e9-d0fd-dad8" name="Succubus" hidden="false" collective="false" type="upgrade">
-      <profiles/>
+      <profiles>
+        <profile id="03d1-c200-a796-deeb" name="Succubus" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="8&quot;"/>
+            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="2+"/>
+            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="2+"/>
+            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="3"/>
+            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="3"/>
+            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="5"/>
+            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="4"/>
+            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="8"/>
+            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="6+"/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="6b5a-313f-d9a5-5887" name="New InfoLink" hidden="false" targetId="16bf-0302-fcfa-d68c" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="afe1-6dd9-3cc1-14ef" name="New InfoLink" hidden="false" targetId="159c-24c2-fab4-4775" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="da6f-ad5a-3cb3-f768" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints/>
       <categoryLinks>
@@ -2838,7 +2956,33 @@
           <constraints/>
         </categoryLink>
       </categoryLinks>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="fea6-ffc2-cc13-da62" name="Archite Glaive" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="d8d2-d5c0-e588-7560" name="New InfoLink" hidden="false" targetId="2352-4ef0-e785-1948" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ae7-7eb7-edf9-b775" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2096-7a67-2c01-8ba7" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="4.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="c1f7-2828-757e-fabe" name="Off hand" hidden="false" collective="false">
           <profiles/>
@@ -2851,42 +2995,23 @@
           </constraints>
           <categoryLinks/>
           <selectionEntries>
-            <selectionEntry id="9081-9abb-478d-d863" name="Splinter pistol" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e202-807c-7706-5aba" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="468c-f4e8-287a-aee7" name="Blast pistol" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f35-cb10-c45c-5dae" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
-                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="3787-7c7b-cd3b-24a4" name="Impaler" hidden="false" collective="false" type="upgrade">
-              <profiles/>
+              <profiles>
+                <profile id="4f5a-0445-0be1-d425" name="Impaler" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+                    <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+                    <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="User"/>
+                    <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+                    <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
+                    <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+                  </characteristics>
+                </profile>
+              </profiles>
               <rules/>
               <infoLinks/>
               <modifiers/>
@@ -2902,58 +3027,34 @@
                 <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b249-ed18-d0e5-5091" name="Agoniser" hidden="false" collective="false" type="upgrade">
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="d14a-903f-d17d-e412" name="New EntryLink" hidden="false" targetId="277e-79e0-b605-ca05" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bb8-c136-4a73-4022" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="4.0"/>
-                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="7dcb-1dcc-2e0b-b4ee" name="Melee Weapon" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9ed-2a07-dbe3-d153" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5407-2c4f-5dd0-a6b0" type="max"/>
-          </constraints>
-          <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="3332-9872-b6f3-632d" name="Archite Glaive" hidden="false" collective="false" type="upgrade">
+            </entryLink>
+            <entryLink id="64c1-ffa8-7828-73b3" name="New EntryLink" hidden="false" targetId="4a3b-66b2-cd71-a1b6" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a224-398c-c467-5557" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="4.0"/>
-                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+            </entryLink>
+            <entryLink id="445e-97f2-2bc0-b8e3" name="New EntryLink" hidden="false" targetId="a293-6465-2a99-903f" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
@@ -2999,12 +3100,12 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="97ff-d7fc-bca9-cd2f" name="New InfoLink" hidden="false" targetId="60db-65f7-ca20-7874" type="rule">
+        <infoLink id="a9b7-79f1-8705-1c70" name="New InfoLink" hidden="false" targetId="ce5f-4d5d-cb8b-0559" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="append" field="description" value="Note that the passengers cannot shoot if this model Falls Back, even though it can.">
+            <modifier type="append" field="21befb24-fc85-4f52-a745-64b2e48f8228" value="Note that the passengers cannot shoot if this model Falls Back, even though the Venom itself can. ">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -3109,6 +3210,7 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="15.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3179,7 +3281,20 @@
     <selectionEntry id="870e-ddec-7fd6-366a" name="Wracks" book="" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="5cb6-2dad-3c19-6015" name="New InfoLink" hidden="false" targetId="d9cc-aefa-ff9a-e406" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="eba6-1574-ef0c-1fce" name="New InfoLink" hidden="false" targetId="8697-63a6-0f4e-66f8" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers>
         <modifier type="set" field="e356-c769-5920-6e14" value="6">
           <repeats/>
@@ -3627,7 +3742,6 @@
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d93b-f64f-6af4-72eb" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1930-02c0-fcda-30da" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
@@ -3693,13 +3807,13 @@
       </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="0098-1cb9-7542-1d56" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+        <infoLink id="5d58-dc3e-52ce-9416" name="New InfoLink" hidden="false" targetId="0756-0d4a-9810-ff5d" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="5d58-dc3e-52ce-9416" name="New InfoLink" hidden="false" targetId="0756-0d4a-9810-ff5d" type="rule">
+        <infoLink id="cd18-5254-29f4-2948" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3857,13 +3971,13 @@
       </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="09d1-30a4-b83c-f11c" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+        <infoLink id="96a1-2579-949c-42f3" name="New InfoLink" hidden="false" targetId="0756-0d4a-9810-ff5d" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="96a1-2579-949c-42f3" name="New InfoLink" hidden="false" targetId="0756-0d4a-9810-ff5d" type="rule">
+        <infoLink id="ada1-9542-ecf2-510d" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3986,25 +4100,25 @@
             <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="5+"/>
           </characteristics>
         </profile>
+        <profile id="fb34-8f57-f7e5-b486" name="Cold-blooded Bodyguard" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Roll a D6 each time a &lt;KABAL&gt; ARCHON loses a wound whilst they are within 3&quot; of this model; on a 2+ this mdoel intercepts that hit - the Archon does not lose a wound but this model suffers a mortal wound. "/>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule id="6f40-7e58-cc33-8624" name="Insensible to Pain" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Model has a 5+ invulnerable save. </description>
-        </rule>
-        <rule id="2243-a506-fd9b-9ae3" name="Cold-blooded Bodyguard" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Roll a D6 each time a &lt;KABAL&gt; ARCHON loses a wound whilst they are within 3&quot; of this model; on a 2+ this mdoel intercepts that hit - the Archon does not lose a wound but this model suffers a mortal wound. </description>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks>
         <infoLink id="db14-f48a-d8b1-a50f" name="New InfoLink" hidden="false" targetId="0756-0d4a-9810-ff5d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="fe6a-4c2b-4572-9169" name="New InfoLink" hidden="false" targetId="8697-63a6-0f4e-66f8" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4320,7 +4434,20 @@
     <selectionEntry id="6897-8b55-f703-7d4e" name="Grotesques" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="6dfb-8841-162f-6be2" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="d92f-b631-4489-1ad7" name="New InfoLink" hidden="false" targetId="8697-63a6-0f4e-66f8" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints/>
       <categoryLinks>
@@ -4388,15 +4515,15 @@
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779"/>
-                    <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c"/>
-                    <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f"/>
-                    <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939"/>
-                    <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39"/>
-                    <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978"/>
-                    <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f"/>
-                    <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705"/>
-                    <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3"/>
+                    <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="7&quot;"/>
+                    <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="3+"/>
+                    <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="6+"/>
+                    <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="5"/>
+                    <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="5"/>
+                    <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="3"/>
+                    <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="4"/>
+                    <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="8"/>
+                    <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="6+"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4727,23 +4854,25 @@
             <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="5+"/>
           </characteristics>
         </profile>
-      </profiles>
-      <rules>
-        <rule id="3324-7054-bf57-1bcd" name="Beastmaster" hidden="false">
+        <profile id="c548-1db3-7c74-c8c0" name="Beastmaster" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-      </rules>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="All friendly DRUKHARI BEAST units that are within 6&quot; of a Beastmaster in the Fight phase can re-roll hit rolls, and all friendly DRUKHARI BEAST units that are within 6&quot; of a Beastmaster in the Morale phase use the Beastmaster&apos;s Leadership instead of their own. In addition, if your army is Battle-forged, then for each Beastmaster in your army you can take a DRUKHARI BEAST unit in the same Detachment without taking up any of the Detachment&apos;s slots. "/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
       <infoLinks>
-        <infoLink id="ab7e-1730-1415-b365" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+        <infoLink id="2fcc-b32f-9e75-f72a" name="New InfoLink" hidden="false" targetId="9d5c-7ec3-ca80-423d" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="2fcc-b32f-9e75-f72a" name="New InfoLink" hidden="false" targetId="9d5c-7ec3-ca80-423d" type="rule">
+        <infoLink id="0d9f-af11-e1f3-37f3" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4840,12 +4969,15 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c76e-d6d6-69a8-13f0" name="Melee weapon" hidden="false" collective="false">
+        <selectionEntryGroup id="c76e-d6d6-69a8-13f0" name="Melee weapon" hidden="false" collective="false" defaultSelectionEntryId="8820-c11a-8fa2-6170">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3764-0235-890b-3e65" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72c8-e5d1-b147-04ef" type="max"/>
+          </constraints>
           <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="8820-c11a-8fa2-6170" name="Beastmaster&apos;s scourge" hidden="false" collective="false" type="upgrade">
@@ -4869,7 +5001,6 @@
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98e4-422c-5921-7400" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fcb-b79b-9c79-6183" type="max"/>
               </constraints>
               <categoryLinks/>
@@ -4893,6 +5024,44 @@
               <categoryLinks/>
             </entryLink>
             <entryLink id="eea2-7add-82eb-3afe" name="New EntryLink" hidden="false" targetId="bc9e-551d-9afb-78d5" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c32a-37af-a050-cb3b" name="1 Beast Unit" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b122-9f07-cc89-7769" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="1046-bdfa-a1c3-47f4" name="New EntryLink" hidden="false" targetId="dbee-fddd-850a-9571" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="83e6-ee73-7cac-af15" name="New EntryLink" hidden="false" targetId="71d4-0f50-7358-6977" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="8df8-fc32-747f-3250" name="New EntryLink" hidden="false" targetId="2064-05c4-c968-9878" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -5174,31 +5343,35 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1a60-f7ac-212f-41be" name="Hekatrix Bloodbrides" book="" page="" hidden="false" collective="false" type="unit">
-      <profiles/>
-      <rules>
-        <rule id="6996-2234-23d9-6feb" name="Dodge" hidden="false">
+      <profiles>
+        <profile id="1cd7-d2f7-90bc-682a" name="Dodge" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Models in this unit have a 4+ Invulnerable save in the fight phase. </description>
-        </rule>
-        <rule id="663e-773e-bede-0850" name="No Escape" hidden="false">
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models in this unit have a 4+ invulnerable save in the Fight phase. "/>
+          </characteristics>
+        </profile>
+        <profile id="1ae7-bc02-3c13-d421" name="No Escape" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Roll off if an enemy INFANTRY unit withink 1&quot; of any models with this ability wishes to Fall Back. The enemy unit can only Fall Back if the player commanding it wins the roll-off. </description>
-        </rule>
-      </rules>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Roll off if an enemy INFANTRY unit within 1&quot; of any models with this ability wishes to Fall Back. The enemy unit can only Fall Back if the player commanding it wins the roll-off. "/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
       <infoLinks>
-        <infoLink id="194a-a25e-95d2-d5ae" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+        <infoLink id="0851-7087-4aa7-6289" name="New InfoLink" hidden="false" targetId="9d5c-7ec3-ca80-423d" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="0851-7087-4aa7-6289" name="New InfoLink" hidden="false" targetId="9d5c-7ec3-ca80-423d" type="rule">
+        <infoLink id="33cd-3d74-0181-1592" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5871,29 +6044,37 @@
             <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="2+"/>
           </characteristics>
         </profile>
+        <profile id="d65e-6277-2154-684d" name="Murderous Assault" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Each time Drazhar rolls a wound roll of 6+ in the Fight phase, he may make 1 additional attack. These extra attacks cannot generate any additional attacks. "/>
+          </characteristics>
+        </profile>
+        <profile id="a9a5-8f07-1ede-6abc" name="Eternal Warrior" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Drazhar has a 5+ Invulnerable save. "/>
+          </characteristics>
+        </profile>
+        <profile id="e730-7b66-f86f-439f" name="Master of Blades" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Add 1 to the hit rolls of all friendly INCUBI units that are within 6&quot; of Drazhar when they fight in the Fight phase. "/>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule id="3041-c845-9b4a-d423" name="Master of Blades" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
-        <rule id="97ec-5d68-a997-74f3" name="Muderous Assault" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
-        <rule id="021f-7500-5ca3-2e79" name="Eternal Warrior" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks>
-        <infoLink id="6b46-88b2-1a33-455c" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+        <infoLink id="6b46-88b2-1a33-455c" name="New InfoLink" hidden="false" targetId="d9cc-aefa-ff9a-e406" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6025,19 +6206,19 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="75b0-9b8d-261a-852b" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
         <infoLink id="0537-c77d-636d-c65b" name="New InfoLink" hidden="false" targetId="9d5c-7ec3-ca80-423d" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="8144-ea4c-d2e5-d989" name="New InfoLink" hidden="false" targetId="f4a8-a2c0-9aac-f719" type="rule">
+        <infoLink id="8144-ea4c-d2e5-d989" name="New InfoLink" hidden="false" targetId="e762-5343-3c4b-d8ee" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="9100-5b5d-3f53-0961" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6434,7 +6615,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="d742-8cc4-9580-4208" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+        <infoLink id="eb97-92ba-8784-5b28" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6684,7 +6865,14 @@
     <selectionEntry id="8435-5bf3-35df-85a7" name="Kabalite Trueborn" book="" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="3606-2e12-47b5-8731" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers>
         <modifier type="set" field="e356-c769-5920-6e14" value="8">
           <repeats/>
@@ -7050,44 +7238,52 @@
             <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="6+"/>
           </characteristics>
         </profile>
+        <profile id="27b2-e07c-5d11-dc58" name="No Escape" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Roll off if an enemy INFANTRY unit within 1&quot; of any models with this ability wishes to Fall Back. The enemy unit can only Fall Back if the player commanding it wins the roll-off. "/>
+          </characteristics>
+        </profile>
+        <profile id="fe17-c07d-c71e-f57a" name="Brides of Death" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="In the Fight phase you can re-roll all hit rolls of 1 made for friendly WYCH CULT OF STRIFE units that are within 6&quot; of Lelith Hesperax."/>
+          </characteristics>
+        </profile>
+        <profile id="5025-8d56-aca7-3943" name="Quicksilver Dodge" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Lelith Hesperax has a 3+ invulnerable save."/>
+          </characteristics>
+        </profile>
+        <profile id="8f89-13bb-7911-5bc4" name="A League Apart" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Lelith Hesperax re-rolls all failed hit and wound rolls when attacking enemy CHARACTERS in the Fight phase. "/>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule id="bc78-8ca3-8890-d7e9" name="Quicksilver Dodge" page="0" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Lelith Hesperax has a 3+ invulnerable save.</description>
-        </rule>
-        <rule id="f95e-ea1e-10ed-eb0e" name="A League Apart" page="0" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Lelith Hesperax re-rolls all failed hit and wound rolls when attacking enemy CHARACTERS in the Fight phase. </description>
-        </rule>
-        <rule id="8086-4596-2014-7dd0" name="Brides of Death" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>In the Fight phase you can re-roll all hit rolls of 1 made for friendly WYCH CULT OF STRIFE units that are within 6&quot; of Lelith Hesperax.</description>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks>
-        <infoLink id="6c40-54b9-acf7-0d54" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
         <infoLink id="937f-fbc6-b056-5802" name="New InfoLink" hidden="false" targetId="9d5c-7ec3-ca80-423d" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="ef74-51fc-e95a-b988" name="New InfoLink" hidden="false" targetId="0f21-81e0-d9c8-4d59" type="rule">
+        <infoLink id="de21-c219-7ac7-dd4d" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7360,25 +7556,29 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="ac7a-8b7f-4e94-ac7f" name="Scourges" book="" hidden="false" collective="false" type="unit">
-      <profiles/>
-      <rules>
-        <rule id="e4c1-5e1e-22f1-feda" name="Ghostplate Armour" hidden="false">
+      <profiles>
+        <profile id="d3e4-c999-5dbd-8637" name="Winged Strike" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Models in this unit have a 6+ invulnerable save. </description>
-        </rule>
-        <rule id="f689-db60-cbf6-da79" name="Winged Strike" hidden="false">
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="During Deployment, you can set up a Scourge unit flying high in the skies instead of placing it on the battlefield. At the end of any of your Movement phases the Scourge unit can use a winged strike to arrive - set them up anywhere on the battlefield that is more than 9&quot; away from enemy models. "/>
+          </characteristics>
+        </profile>
+        <profile id="bc50-fbe8-387f-fea5" name="Ghostplate Armour" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>During Deployment, you can set up a Scourge unit flying high in the skies instead of placing it on the battlefield. At the end of any of your Movement phases the Scourge unit can use a winged strike to arrive - set them up anywhere on the battlefield that is more than 9&quot; away from enemy models. </description>
-        </rule>
-      </rules>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models in this unit have a 6+ invulnerable save. "/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
       <infoLinks>
-        <infoLink id="acab-2b31-3bf8-6d46" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+        <infoLink id="8b91-522e-9e82-3761" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7453,7 +7653,25 @@
           <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="6e6c-4994-d6b7-59f2" name="Scourge" hidden="false" collective="false" type="model">
-              <profiles/>
+              <profiles>
+                <profile id="504d-4662-36d6-190c" name="Scourge" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="14&quot;"/>
+                    <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="3+"/>
+                    <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="3+"/>
+                    <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="3"/>
+                    <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="3"/>
+                    <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="1"/>
+                    <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="1"/>
+                    <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="7"/>
+                    <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="4+"/>
+                  </characteristics>
+                </profile>
+              </profiles>
               <rules/>
               <infoLinks/>
               <modifiers/>
@@ -7496,7 +7714,25 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="9490-f87b-710e-ea99" name="Solarite" hidden="false" collective="false" type="model">
-              <profiles/>
+              <profiles>
+                <profile id="1cc1-e019-b19f-79c2" name="Solarite" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="14&quot;"/>
+                    <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="3+"/>
+                    <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="3+"/>
+                    <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="3"/>
+                    <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="3"/>
+                    <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="1"/>
+                    <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="2"/>
+                    <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="8"/>
+                    <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="4+"/>
+                  </characteristics>
+                </profile>
+              </profiles>
               <rules/>
               <infoLinks/>
               <modifiers/>
@@ -7748,19 +7984,19 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="d60e-a8f4-cdc7-eeaa" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="2e2a-899d-9c5d-324d" name="New InfoLink" hidden="false" targetId="58f1-6ac0-e433-e340" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
         <infoLink id="f732-e541-c59c-ffdf" name="New InfoLink" hidden="false" targetId="87b3-8262-c57d-8c2b" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="323b-c341-a17e-7d69" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ad8f-0d93-06a0-3b96" name="New InfoLink" hidden="false" targetId="8697-63a6-0f4e-66f8" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7878,24 +8114,16 @@
                   <categoryLinks/>
                   <selectionEntries>
                     <selectionEntry id="1931-90fa-13dd-4943" name="Ichor Injector" page="0" hidden="false" collective="false" type="upgrade">
-                      <profiles>
-                        <profile id="255b-ff05-cd64-6142" name="Ichor Injector" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks>
+                        <infoLink id="fc54-c264-4dab-ac74" name="New InfoLink" hidden="false" targetId="b755-ac2a-2eaa-86dd" type="profile">
                           <profiles/>
                           <rules/>
                           <infoLinks/>
                           <modifiers/>
-                          <characteristics>
-                            <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
-                            <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
-                            <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="user"/>
-                            <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
-                            <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
-                            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="The bearer can make a maximum of one attack with the ichor injector each turn. (any remaingin attacks must be made with a different melee weapon). You can re-roll wound rolls for this weapon. Each time you roll a wound roll of 6+ for this weapon, the target suffers D3 mortal wounds in addition to any other damage. "/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <rules/>
-                      <infoLinks/>
+                        </infoLink>
+                      </infoLinks>
                       <modifiers/>
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4046-0b89-01a7-5c59" type="max"/>
@@ -8163,23 +8391,26 @@
             <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="6+"/>
           </characteristics>
         </profile>
+        <profile id="2ffb-8b94-e451-304a" name="Clone Field" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Urien Rakarth has a 4+ invulnerable save. "/>
+          </characteristics>
+        </profile>
+        <profile id="8be8-921d-d74e-d31b" name="Contempt for Death" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="You can re-roll failed save rolls for Urien Rakarth against attacks that have a Strength of less than 9."/>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule id="3585-58a7-d6f0-c952" name="Clone Field" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Urien Rakarth has a 4+ invulnerable save. </description>
-        </rule>
-        <rule id="4525-92f2-92a2-9fa2" name="Contempt for Death" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>You can re-roll failed save rolls for Urien Rakarth against attacks that have a Strength of less than 9.</description>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks>
         <infoLink id="5965-0a94-125e-5ce6" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
           <profiles/>
@@ -8187,7 +8418,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="9239-46f8-eab5-f1ba" name="New InfoLink" hidden="false" targetId="3740-c5f4-65ec-2288" type="rule">
+        <infoLink id="9239-46f8-eab5-f1ba" name="New InfoLink" hidden="false" targetId="3054-d0fa-72dc-f253" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8328,24 +8559,16 @@
           </costs>
         </selectionEntry>
         <selectionEntry id="841e-6437-8173-9775" name="Ichor Injector" page="0" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="213b-48b9-ccfd-0cd6" name="Ichor Injector" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="fccd-a110-102e-5640" name="New InfoLink" hidden="false" targetId="b755-ac2a-2eaa-86dd" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <characteristics>
-                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
-                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
-                <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="user"/>
-                <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
-                <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
-                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="The bearer can make a maximum of one attack with the ichor injector each turn. (any remaingin attacks must be made with a different melee weapon). You can re-roll wound rolls for this weapon. Each time you roll a wound roll of 6+ for this weapon, the target suffers D3 mortal wounds in addition to any other damage. "/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules/>
-          <infoLinks/>
+            </infoLink>
+          </infoLinks>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="064c-7acf-f5d0-0169" type="max"/>
@@ -8382,6 +8605,7 @@
           <entryLinks/>
           <costs>
             <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8462,19 +8686,19 @@
       </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="5243-a612-b155-74a1" name="New InfoLink" hidden="false" targetId="3c50-1798-7ea0-7919" type="rule">
+        <infoLink id="5243-a612-b155-74a1" name="New InfoLink" hidden="false" targetId="6e34-3100-f14f-cff0" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="a402-4991-c31f-124c" name="New InfoLink" hidden="false" targetId="9caa-ff00-a5bd-5f04" type="rule">
+        <infoLink id="a402-4991-c31f-124c" name="New InfoLink" hidden="false" targetId="b6c4-ad82-ad7d-5039" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="1f47-50a9-5ae5-2452" name="New InfoLink" hidden="false" targetId="15ea-860d-9eb6-21c3" type="rule">
+        <infoLink id="1f47-50a9-5ae5-2452" name="New InfoLink" hidden="false" targetId="583f-6e1a-8431-70ff" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8712,30 +8936,35 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="287c-0434-786c-9ba1" name="Wyches" book="" hidden="false" collective="false" type="unit">
-      <profiles/>
-      <rules>
-        <rule id="05f7-67e7-3102-e131" name="Dodge" hidden="false">
+      <profiles>
+        <profile id="29a9-7cbb-fcb5-369a" name="No Escape" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Models in this unit have a 4+ invulnerable save in the Fight phase. </description>
-        </rule>
-      </rules>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Roll off if an enemy INFANTRY unit within 1&quot; of any models with this ability wishes to Fall Back. The enemy unit can only Fall Back if the player commanding it wins the roll-off. "/>
+          </characteristics>
+        </profile>
+        <profile id="eb1f-cb79-3041-cce3" name="Dodge" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models in this unit have a 4+ invulnerable save in the Fight phase. "/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
       <infoLinks>
-        <infoLink id="5139-5521-857a-bd74" name="New InfoLink" hidden="false" targetId="0f21-81e0-d9c8-4d59" type="rule">
+        <infoLink id="449b-8cb8-6922-4ffc" name="New InfoLink" hidden="false" targetId="16bf-0302-fcfa-d68c" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="2409-3aa1-fe8b-a70d" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="449b-8cb8-6922-4ffc" name="New InfoLink" hidden="false" targetId="9d5c-7ec3-ca80-423d" type="rule">
+        <infoLink id="8ce0-082d-8664-6f3f" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8775,7 +9004,26 @@
           <constraints/>
         </categoryLink>
       </categoryLinks>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="75a8-54fa-eb3a-5ebf" name="Darklight grenades" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="280c-81c0-53ca-7af2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c0a-87d9-26ad-ce9b" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="735d-24d2-301a-597e" name="5 - 15 Wyches" hidden="false" collective="false">
           <profiles/>
@@ -8847,6 +9095,7 @@
                       <entryLinks/>
                       <costs>
                         <cost name="pts" costTypeId="points" value="4.0"/>
+                        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="6e55-0b92-3100-9093" name="Razorflails" hidden="false" collective="false" type="upgrade">
@@ -8878,6 +9127,7 @@
                       <entryLinks/>
                       <costs>
                         <cost name="pts" costTypeId="points" value="4.0"/>
+                        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="35ec-e37f-75f3-e771" name="Shardnet and impaler" hidden="false" collective="false" type="upgrade">
@@ -8909,6 +9159,7 @@
                       <entryLinks/>
                       <costs>
                         <cost name="pts" costTypeId="points" value="5.0"/>
+                        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -8930,15 +9181,15 @@
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779"/>
-                    <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c"/>
-                    <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f"/>
-                    <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939"/>
-                    <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39"/>
-                    <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978"/>
-                    <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f"/>
-                    <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705"/>
-                    <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3"/>
+                    <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="8&quot;"/>
+                    <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="3+"/>
+                    <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="3+"/>
+                    <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="3"/>
+                    <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="3"/>
+                    <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="1"/>
+                    <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="3"/>
+                    <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="8"/>
+                    <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="6+"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9021,7 +9272,10 @@
                       <selectionEntries/>
                       <selectionEntryGroups/>
                       <entryLinks/>
-                      <costs/>
+                      <costs>
+                        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                        <cost name="pts" costTypeId="points" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <selectionEntryGroups/>
@@ -9142,7 +9396,10 @@
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
-                  <costs/>
+                  <costs>
+                    <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups/>
@@ -9409,34 +9666,28 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779"/>
-            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c"/>
-            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f"/>
-            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939"/>
-            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39"/>
-            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978"/>
-            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f"/>
-            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705"/>
-            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3"/>
+            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="8&quot;"/>
+            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="-"/>
+            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="4"/>
+            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="3"/>
+            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="3"/>
+            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="4"/>
+            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="2"/>
+            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="7+"/>
+          </characteristics>
+        </profile>
+        <profile id="3996-aedd-822f-7201" name="Ferocious Charge" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Add 2 to an Ur-Ghul&apos;s Attacks characteristic if it charged in the same turn. "/>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="a8b7-88b2-46fd-782e" name="Insensible to Pain" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Model  has a 5+ invulnerable save. </description>
-        </rule>
-        <rule id="180a-624d-ec43-18f8" name="Ferocious Charge" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Add 2 to an Ur-Ghul&apos;s Attacks characteristic if it charged in the same turn. </description>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks>
         <infoLink id="a191-21cc-9584-4463" name="New InfoLink" hidden="false" targetId="0756-0d4a-9810-ff5d" type="rule">
           <profiles/>
@@ -9444,7 +9695,13 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="3bb3-24df-0cd2-7741" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+        <infoLink id="dace-395b-6d2a-24da" name="New InfoLink" hidden="false" targetId="c068-7501-faac-ec00" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="4759-b482-703d-5d6e" name="New InfoLink" hidden="false" targetId="8697-63a6-0f4e-66f8" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -9669,16 +9926,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="dbee-fddd-850a-9571" name="Khymerae" hidden="false" collective="false" type="upgrade">
-      <profiles/>
-      <rules>
-        <rule id="ca3e-6bfa-f4a1-657d" name="Otherworldly" hidden="false">
+      <profiles>
+        <profile id="dd2e-85eb-0ff2-9e62" name="Otherworldly" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Models in this unit have a 5+ invulnerable save. </description>
-        </rule>
-      </rules>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models in this unit have a 5+ invulnerable save. "/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -9794,7 +10053,10 @@
               </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -9804,6 +10066,7 @@
       <entryLinks/>
       <costs>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="1.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -9950,40 +10213,12 @@ Battle Round 5+ -  Mantle of Agony: Subtract 1 from the Leadership of enemy unit
 5 Serpentin: +1 Weapon Skill 
 6 Splintermind: +2 Leadership</description>
     </rule>
-    <rule id="f4a8-a2c0-9aac-f719" name="Hit and Run" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>If this unit Falls Back it can charge in the same turn.</description>
-    </rule>
     <rule id="0756-0d4a-9810-ff5d" name="Court of the Archon" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>You can re-roll failed hit rolls with this model whilst it is within 3&quot; of a friendly &lt;KABAL&gt; ARCHON. In addition, if your army is Battle-forged, then for each Archon in your army you can take up to four models with this ability in the same Detachment without taking up any of the Detachment&apos;s slots. </description>
-    </rule>
-    <rule id="0f21-81e0-d9c8-4d59" name="No Escape" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Roll off if an enemy INFANTRY unit within 1&quot; of any models with this ability wishes to Fall Back. The enemy unit can only Fall Back if the player commanding it wins the roll-off. </description>
-    </rule>
-    <rule id="881e-ea23-84a5-6afa" name="Open-topped" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Models embarked on this model can attack in their Shooting phase. Measure the range and draw line of sight from any point on this model. When they do so, any restrictions or modifiers that apply to this model also apply to it&apos;s passengers; for example, the passengers cannot shoot if this model has Fallen Back in the same turn, cannot shoot (except with Pistols) if this model is within 1&quot; of an enemy unit, and so on. Note that the passengers cannot shoot if this model Falls Back, even though it can. </description>
-    </rule>
-    <rule id="0f23-47f3-fe3a-aa82" name="Hovering" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Distances and ranges are always measured to and from this models hull, even though it has a base. </description>
     </rule>
     <rule id="87b3-8262-c57d-8c2b" name="Explodes 1" hidden="false">
       <profiles/>
@@ -9998,13 +10233,6 @@ Battle Round 5+ -  Mantle of Agony: Subtract 1 from the Leadership of enemy unit
       <infoLinks/>
       <modifiers/>
       <description>Models in this unit have a 5+ invulnerable save. </description>
-    </rule>
-    <rule id="3740-c5f4-65ec-2288" name="Master of Pain" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Add 1 to the Toughness of frienly PROPHETS OF FLESH units within 6&quot; of one or more models with this ability. </description>
     </rule>
     <rule id="3c50-1798-7ea0-7919" name="Supersonic" hidden="false">
       <profiles/>
@@ -10265,6 +10493,142 @@ Battle Round 5+ -  Mantle of Agony: Subtract 1 from the Leadership of enemy unit
         <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-4"/>
         <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Change the weapon&apos;s Type from Heavy to Assault if it is equipeed on a VEHICLE"/>
+      </characteristics>
+    </profile>
+    <profile id="d9cc-aefa-ff9a-e406" name="Power from Pain" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Battle Round 1 - Inured to Suffering: Roll a D6 each time a model with this ability suffers a wound.  On a 6, it ignores the injury and the wound is not lost. 
+
+Battle Round 2 -  Eager to Flay: You can re-roll the dice when determining how far a unit with this ability moves when it Advances or charges. 
+
+Battle Round 3 -  Flensing Fury: You can add 1 to hit rolls made for a unit with this ability in the Fight phase. 
+
+Battle round 4	-  Emboldened by Bloodshed: Units with this ability automatically pass Morale tests (do not roll the dice).
+
+Battle Round 5+ -  Mantle of Agony: Subtract 1 from the Leadership of enemy units that are within 6&quot; of any units with this ability in the Morale phase. "/>
+      </characteristics>
+    </profile>
+    <profile id="16bf-0302-fcfa-d68c" name="Combat Drugs" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="D6
+1 Adrenalight: +1 Attack
+2 Grave Lotus: +1 Strength
+3 Hypex: +2 Move
+4 Painbringer: +1 Toughness 
+5 Serpentin: +1 Weapon Skill 
+6 Splintermind: +2 Leadership"/>
+      </characteristics>
+    </profile>
+    <profile id="3054-d0fa-72dc-f253" name="Master of Pain" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Add 1 to the Toughness of friendly PROPHETS OF FLESH units within 6&quot; of one or more models with this ability. "/>
+      </characteristics>
+    </profile>
+    <profile id="8697-63a6-0f4e-66f8" name="Insensible to Pain" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models in this unit have a 5+ invulnerable save. "/>
+      </characteristics>
+    </profile>
+    <profile id="b755-ac2a-2eaa-86dd" name="Ichor Injector" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="user"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="The bearer can make a maximum of one attack with the ichor injector each turn. (any remaining attacks must be made with a different melee weapon). You can re-roll wound rolls for this weapon. Each time you roll a wound roll of 6+ for this weapon, the target suffers D3 mortal wounds in addition to any other damage. "/>
+      </characteristics>
+    </profile>
+    <profile id="159c-24c2-fab4-4775" name="Brides of Death" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="In the Fight phase you can re-roll all hit rolls of 1 made for friendly &lt;WYCH CULT&gt; units that are within 6&quot; of this model. "/>
+      </characteristics>
+    </profile>
+    <profile id="43d0-fa61-a437-7911" name="No Escape" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Roll off if an enemy INFANTRY unit within 1&quot; of any models with this ability wishes to Fall Back. The enemy unit can only Fall Back if the player commanding it wins the roll-off. "/>
+      </characteristics>
+    </profile>
+    <profile id="568c-92d6-4089-ad34" name="Hovering" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Distances and ranges are always measured to and from this models hull, even though it has a base. "/>
+      </characteristics>
+    </profile>
+    <profile id="ce5f-4d5d-cb8b-0559" name="Open-topped" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models embarked on this model can attack in their Shooting phase. Measure the range and draw line of sight from any point on this model. When they do so, any restrictions or modifiers that apply to this model also apply to it&apos;s passengers; for example, the passengers cannot shoot if this model has Fallen Back in the same turn, cannot shoot (except with Pistols) if this model is within 1&quot; of an enemy unit, and so on."/>
+      </characteristics>
+    </profile>
+    <profile id="e762-5343-3c4b-d8ee" name="Hit and Run" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If this unit Falls Back it can charge in the same turn."/>
+      </characteristics>
+    </profile>
+    <profile id="583f-6e1a-8431-70ff" name="Airborne" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This model cannot charge, can only be charged by units that can FLY, and can only attack or be attacked in the Fight phase by units that can FLY."/>
+      </characteristics>
+    </profile>
+    <profile id="6e34-3100-f14f-cff0" name="Supersonic" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Each time this model moves, first pivot it on the spot up to 90 degrees (this does not contribute to how far the model moves), and then move the model straight forwards. Note that it cannot pivot again after the initial pivot. When this model Advances, increase it&apos;s Move characteristic by 20&quot; until the end of the phase - do not roll a dice. "/>
+      </characteristics>
+    </profile>
+    <profile id="b6c4-ad82-ad7d-5039" name="Hard to Hit" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Your opponent must subtract 1 from hit rolls for attacks that target this model in the Shooting phase."/>
       </characteristics>
     </profile>
   </sharedProfiles>
