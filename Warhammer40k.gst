@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="86de-271f-f574-d94f" name="Warhammer 40,000 8th Edition" revision="2" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="86de-271f-f574-d94f" name="Warhammer 40,000 8th Edition" revision="4" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1723,7 +1723,10 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="3a15-deb8-1b5e-3626" name="4x Small Shield Section" hidden="false" collective="false" type="model">
           <profiles/>
@@ -1738,7 +1741,10 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8c46-154f-6513-afdd" name="Gun Emplacement" hidden="false" collective="false" type="model">
           <profiles>
@@ -1810,7 +1816,10 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -1970,6 +1979,7 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="80.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1600-8ea4-6f3f-383f" name="Vortex Missile Battery" hidden="false" collective="false" type="upgrade">
@@ -2007,6 +2017,7 @@
               <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="100.0"/>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2325,7 +2336,10 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -2722,7 +2736,10 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -2747,7 +2764,10 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="65e9-e4b4-b7aa-28b4" name="3x Defence Emplacement" hidden="false" collective="false" type="model">
               <profiles/>
@@ -2759,7 +2779,10 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -2880,6 +2903,7 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="40.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3099,6 +3123,7 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="80.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5800,6 +5825,7 @@
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="25.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e50-f562-c0df-3e83" name="Twin Icarus Lascannon" hidden="false" collective="false" type="upgrade">
@@ -5819,7 +5845,10 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="76b1-73c7-7aef-26d3" name="Quad Icarus Lascannon" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -5840,6 +5869,7 @@
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="70.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e4c2-0571-1de7-02e1" name="Quad-gun" hidden="false" collective="false" type="upgrade">
@@ -5861,6 +5891,7 @@
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="30.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3ee3-74ec-d970-9b43" name="Punisher Gatling Cannon" hidden="false" collective="false" type="upgrade">
@@ -5882,6 +5913,91 @@
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3371-814b-4320-12b6" name="Dreadnought combat weapon w/Storm Bolter" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="1232-cec0-b9ce-7da8" name="Dreadnought combat weapon" hidden="false" targetId="3b26-3098-155f-0e58" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="points" value="0.0">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad76-d653-9f96-093a" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="c8f5-623f-463f-b2ac" name="New EntryLink" hidden="false" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="632f-3beb-31c0-c5d2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10f0-5be0-238e-dfec" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="40.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1720-3d63-ee7e-b95e" name="Dreadnought combat weapon w/Heavy Flamer" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="aba2-ecb0-2ab6-32f7" name="Dreadnought combat weapon" hidden="false" targetId="3b26-3098-155f-0e58" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="points" value="0.0">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad76-d653-9f96-093a" type="instanceOf"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="7d67-9ea9-8556-f509" name="New EntryLink" hidden="false" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c062-d49e-c2bb-42b2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20eb-206d-9a9b-cb7e" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="40.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -6823,6 +6939,17 @@ When charging a unit of the opposite side of a defence line, the charge is succe
       <infoLinks/>
       <modifiers/>
       <description>After it is set up, a defence line (excluding its gun emplacement, if any) is treated as a terrain feature. It cannot move for any reason, it is not treated as a friendly or enemy model, and cannot be targeted or affected by any attacks or abilities.</description>
+    </rule>
+    <rule id="ce5a-0526-287b-4ff8" name="Warlord Traits" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If your Warlord is a (Character), it can use a Warlord Trait.  Immediately before either player starts to deploy their army, you can roll a D3 on the Warlord Trait table here to determine what Warlord Trait your Warlord has.  Alternatively, choose the trait that most suits your Warlord&apos;s temperment or style of war.
+
+1) Legendary Fighter: If this Warlord charges in the Charge phase, add 1 to their Attacks characteristic until the end of the ensuing Fight phase.
+2) Inspiring Leader: Friendly units within 6&quot; of this Warlord can add 1 to their Leadership characteristic.
+3) Tenacious Survivor: Roll a dice each time this Warlord loses a wound.  On a 6, the Warlord shrungs off the damage and does not lose the wound.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
