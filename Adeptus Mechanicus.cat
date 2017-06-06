@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="499e-3320-7190-c5cd" name="Adeptus Mechanicus" revision="2" battleScribeVersion="2.01" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="499e-3320-7190-c5cd" name="Adeptus Mechanicus" revision="1" battleScribeVersion="2.01" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -859,6 +859,16 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="3c44-4a96-c440-99ae" name="New EntryLink" hidden="false" targetId="7279-1037-f874-e367" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0e4-6644-39bd-131e" type="max"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -2238,6 +2248,11 @@
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
+                <modifier type="increment" field="points" value="15">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
               </modifiers>
               <constraints/>
               <categoryLinks/>
@@ -2327,9 +2342,7 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d248-4a64-9c54-6b8b" type="max"/>
-      </constraints>
+      <constraints/>
       <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -2619,7 +2632,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="22.0"/>
+        <cost name="pts" costTypeId="points" value="33.0"/>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="3.0"/>
       </costs>
     </selectionEntry>
@@ -3077,7 +3090,7 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Reduce the Toughness oof enemy units (other than VEHICLES) by 1 whilst they are within 1&quot; of any Skitarii Vanguard units."/>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Reduce the Toughness of enemy units (other than VEHICLES) by 1 whilst they are within 1&quot; of any Skitarii Vanguard units."/>
           </characteristics>
         </profile>
       </profiles>
@@ -3645,7 +3658,7 @@
           <characteristics>
             <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="8&quot;"/>
             <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="3+"/>
-            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="3+4"/>
+            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="3+"/>
             <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="4"/>
             <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="3"/>
             <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="2"/>
@@ -3817,7 +3830,7 @@
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e6bb-9709-ba04-631d" name="Ironstrider Ballistarius" hidden="false" collective="false" type="model">
+    <selectionEntry id="e6bb-9709-ba04-631d" name="Ironstrider Balistarii" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="dbb9-d427-5154-118a" name="Ironstrider Balistarii" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
           <profiles/>
@@ -4556,21 +4569,6 @@
                 <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="84b5-861a-5ddf-9eae" name="Twin heavy phosphor blaster" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="30.0"/>
-                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="d986-cfd5-70ad-739a" name="Icarus Array" hidden="false" collective="false" type="upgrade">
               <profiles>
                 <profile id="ae24-eb4c-cfab-463a" name="Daedalus missile launcher" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
@@ -4633,7 +4631,16 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="1e0b-731b-90da-b281" name="New EntryLink" hidden="false" targetId="b75e-10a0-e6da-47a7" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="b942-a239-74d3-b838" name="Wargear" hidden="false" collective="false" defaultSelectionEntryId="9451-38e9-9b9b-7e69">
           <profiles/>
@@ -4817,7 +4824,127 @@
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="3.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e266-b9ee-ff66-07d0" name="Transonic Razor" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="dc3a-7f24-ce0f-e12f" name="Transonic Razor" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+            <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+            <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="User"/>
+            <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+            <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time you make a wound roll of 6+ with this weapon, the target suffers a mortal wound instead of the normal damage."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9336-e096-c99c-a7c9" name="Stubcarbine" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="fd5a-9e70-5bb2-d265" name="Stubcarbine" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18&quot;"/>
+            <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol 3"/>
+            <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
+            <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+            <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="2.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6df9-cd0f-bd44-d767" name="Flechette Blaster" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="e818-ab61-49ab-08e6" name="Flechette Blaster" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
+            <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol 5"/>
+            <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="3"/>
+            <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+            <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="2.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b75e-10a0-e6da-47a7" name="Twin Heavy Phosphor Blaster" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="0fdd-e05f-f232-ae42" name="Twin Heavy Phosphor Blaster" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
+            <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 6"/>
+            <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="6"/>
+            <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-2"/>
+            <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Enemy units do not receive the benefit to their saving throws for being in cover against attacks made with this weapon."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="30.0"/>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4884,7 +5011,7 @@
               <modifiers/>
               <characteristics>
                 <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18&quot;"/>
-                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assazlt 2"/>
+                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 2"/>
                 <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
                 <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
                 <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
@@ -5183,40 +5310,41 @@
       </constraints>
       <categoryLinks/>
       <selectionEntries>
-        <selectionEntry id="5488-3c4f-c847-b6f8" name="Stub carbine &amp; Power sword" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="a8b9-376d-1e1a-d77a" name="Stub carbine" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="18&quot;"/>
-                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol 3"/>
-                <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
-                <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
-                <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
-                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
-              </characteristics>
-            </profile>
-          </profiles>
+        <selectionEntry id="5488-3c4f-c847-b6f8" name="Stubcarbine &amp; Power sword" hidden="false" collective="false" type="upgrade">
+          <profiles/>
           <rules/>
-          <infoLinks>
-            <infoLink id="5ece-3239-c972-4f8e" name="New InfoLink" hidden="false" targetId="47df-8e01-d0cf-58e8" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
+          <infoLinks/>
           <modifiers/>
           <constraints/>
           <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="6737-5d24-5736-760a" name="New EntryLink" hidden="false" targetId="9336-e096-c99c-a7c9" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c219-1c3b-409d-ba05" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f815-263d-92d5-b21e" type="min"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="92ff-5658-b61c-3d5e" name="New EntryLink" hidden="false" targetId="bc9e-551d-9afb-78d5" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31d3-28ec-6d30-c302" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4633-fd10-8edd-dd1d" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
-            <cost name="pts" costTypeId="points" value="6.0"/>
+            <cost name="pts" costTypeId="points" value="2.0"/>
             <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -5227,38 +5355,7 @@
           <modifiers/>
           <constraints/>
           <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="345f-0917-5f13-793c" name="Flechette Blaster" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="1b65-2611-a12f-8c95" name="Flechette blaster" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
-                    <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Pistol 5"/>
-                    <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="3"/>
-                    <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
-                    <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
-                    <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="2.0"/>
-                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
             <entryLink id="4151-c71b-a54e-11ea" name="New EntryLink" hidden="false" targetId="e5ae-672d-bfaa-998f" type="selectionEntry">
@@ -5266,20 +5363,34 @@
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e2a-f427-a594-b8bf" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="631f-4db0-09cb-63d2" type="min"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="8cc8-47d1-c5a6-7e95" name="New EntryLink" hidden="false" targetId="6df9-cd0f-bd44-d767" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab36-577a-3938-7896" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e48-13d3-faa7-899b" type="min"/>
+              </constraints>
               <categoryLinks/>
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" costTypeId="points" value="0.0"/>
             <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks/>
     </selectionEntryGroup>
-    <selectionEntryGroup id="7ac4-e733-aeec-fe97" name="Ruststalker weapons" hidden="false" collective="false" defaultSelectionEntryId="c64f-f3aa-1610-9d4f">
+    <selectionEntryGroup id="7ac4-e733-aeec-fe97" name="Ruststalker weapons" hidden="false" collective="false" defaultSelectionEntryId="f949-961f-405f-ec4f">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -5290,23 +5401,8 @@
       </constraints>
       <categoryLinks/>
       <selectionEntries>
-        <selectionEntry id="c64f-f3aa-1610-9d4f" name="Transonic razor &amp; Chordclaw" hidden="false" collective="false" type="upgrade">
-          <profiles>
-            <profile id="b568-e023-8a18-f4f6" name="Transonic razor" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
-                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
-                <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="User"/>
-                <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
-                <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
-                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time you make a wound roll of 6+ with this weapon, the target suffers a mortal wound instead of the normal damage."/>
-              </characteristics>
-            </profile>
-          </profiles>
+        <selectionEntry id="f949-961f-405f-ec4f" name="Transonic razor and Chordclaw" hidden="false" collective="false" type="upgrade">
+          <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
@@ -5315,50 +5411,32 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="5ad9-0abc-cf2d-37c9" name="New EntryLink" hidden="false" targetId="e3e7-466d-b088-2c3a" type="selectionEntry">
+            <entryLink id="24e4-1182-b50e-ed87" name="New EntryLink" hidden="false" targetId="e3e7-466d-b088-2c3a" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21f0-cf5b-fc47-a20e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9fa-359c-0cb9-9ed3" type="max"/>
+              </constraints>
               <categoryLinks/>
             </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="pts" costTypeId="points" value="5.0"/>
-            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1a4e-d4c8-bd0d-e993" name="Transonic blades &amp; Chordclaw" hidden="true" collective="false" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <repeats/>
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="70c1-ed78-9472-5068" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints/>
-          <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="987b-b7e4-14fc-6994" name="New EntryLink" hidden="false" targetId="b696-67aa-c975-0a60" type="selectionEntry">
+            <entryLink id="810c-13ed-232a-9291" name="New EntryLink" hidden="false" targetId="e266-b9ee-ff66-07d0" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="beb3-569f-e121-4a02" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b671-ce19-f0fd-285d" type="max"/>
+              </constraints>
               <categoryLinks/>
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" costTypeId="points" value="10.0"/>
             <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
