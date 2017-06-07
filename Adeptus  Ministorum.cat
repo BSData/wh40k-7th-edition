@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="818a0a0f-43c3-6587-c690-9b14d0a7ba96" name="Adeptus Ministorum" book="" revision="10" battleScribeVersion="2.01" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="818a0a0f-43c3-6587-c690-9b14d0a7ba96" name="Adeptus Ministorum" book="" revision="11" battleScribeVersion="2.01" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -291,6 +291,14 @@
       <categoryLinks/>
     </entryLink>
     <entryLink id="26f3-d36e-e32c-8968" name="New EntryLink" hidden="false" targetId="24e1-2d7c-8666-2aa5" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="8d73-504a-bb93-6c79" name="New EntryLink" hidden="false" targetId="9be6-1599-e087-859f" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1129,7 +1137,7 @@
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2c1c-4fcd-f444-497f" name="Exorcist" book="Codex: Adepta Sororitas" page="93" hidden="false" collective="false" type="unit">
+    <selectionEntry id="2c1c-4fcd-f444-497f" name="Exorcist" book="Index: Imperium 2" page="103" hidden="false" collective="false" type="unit">
       <profiles>
         <profile id="f5e9-8652-d9bd-609e" name="Exorcist missile launcher" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
           <profiles/>
@@ -1142,24 +1150,60 @@
             <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
             <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-4"/>
             <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D3"/>
-            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410"/>
+            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
           </characteristics>
         </profile>
-        <profile id="e886-ced5-16c7-0f21" name="Exorcist" book="Codex: Adepta Sororitas" page="0" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+        <profile id="e886-ced5-16c7-0f21" name="Exorcist" book="Index: Imperium 2" page="102" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779"/>
-            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c"/>
-            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="4"/>
-            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939"/>
-            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39"/>
-            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978"/>
-            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f"/>
-            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705"/>
-            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3"/>
+            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="*"/>
+            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="6+"/>
+            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="*"/>
+            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="7"/>
+            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="8"/>
+            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="12"/>
+            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="*"/>
+            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="7"/>
+            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="3+"/>
+          </characteristics>
+        </profile>
+        <profile id="6a82-1959-d7bb-fc4c" name="1" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="7-12+"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="12&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="3+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="3"/>
+          </characteristics>
+        </profile>
+        <profile id="6e07-8ed6-f446-8978" name="2" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="4-6"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="6&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="4+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="D3"/>
+          </characteristics>
+        </profile>
+        <profile id="9235-f943-0162-422a" name="3" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="1-3"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="4&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="5+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="1"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1171,13 +1215,13 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="85f1-4f40-8f07-9631" name="New InfoLink" hidden="false" targetId="4b04-2a83-8ae7-d134" type="profile">
+        <infoLink id="e890-2930-065b-2c53" name="New InfoLink" hidden="false" targetId="c883-3078-1367-cc2c" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="e890-2930-065b-2c53" name="New InfoLink" hidden="false" targetId="c883-3078-1367-cc2c" type="profile">
+        <infoLink id="772c-28e3-686e-8a93" name="New InfoLink" hidden="false" targetId="3541-94a7-a138-358b" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1186,13 +1230,98 @@
       </infoLinks>
       <modifiers/>
       <constraints/>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="0887-1018-2e85-53d7" name="New CategoryLink" hidden="false" targetId="9324-1e8e-5e8e-d7c0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="c3b1-d45f-d6b3-4020" name="New CategoryLink" hidden="false" targetId="b57d-c2a9-2713-8872" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="cae0-afcf-2133-df31" name="New CategoryLink" hidden="false" targetId="76ae-cee8-24fc-5d25" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="cd86-c32d-8b8b-a640" name="New CategoryLink" hidden="false" targetId="6c47-3f2b-e345-3800" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="18e5-3b1b-c032-facc" name="New CategoryLink" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="df3a-da43-468b-2034" name="New CategoryLink" hidden="false" targetId="c8fd-783f-3230-493e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="1665-05e2-acdd-7c44" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups/>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="a89b-bb71-d31c-e80b" name="New EntryLink" hidden="false" targetId="32bf-b117-4ecf-5165" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="6">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19fb-a84d-a70b-e711" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b57-a36f-c544-efef" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="be0c-5b93-9087-0a52" name="New EntryLink" hidden="false" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="4">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fdc-b73f-b163-07f7" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f400-0f26-b0ef-5c56" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="125.0"/>
-        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="160.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="8.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="24e1-2d7c-8666-2aa5" name="Penitent Engines" book="Codex Adepta Sororitas" page="94" hidden="false" collective="false" type="unit">
@@ -2673,7 +2802,10 @@
               <categoryLinks/>
             </entryLink>
           </entryLinks>
-          <costs/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -2826,46 +2958,68 @@
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="4.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e9f1-555d-a13e-1c46" name="Immolator" book="Codex: Adepta Sororitas" page="0" hidden="false" collective="false" type="unit">
+    <selectionEntry id="e9f1-555d-a13e-1c46" name="Immolator" book="Index: Imperium 2" page="103" hidden="false" collective="false" type="unit">
       <profiles>
-        <profile id="f314-8310-dca6-9faa" name="Immolation Flamer" book="Index: Imperium 2" page="157" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+        <profile id="e536-47cc-0bae-7e93" name="Immolator" book="Index: Imperium 2" page="103" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
-            <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 2D6"/>
-            <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="5"/>
-            <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
-            <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
-            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="This weapon automatically hits its target."/>
+            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="*"/>
+            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="6+"/>
+            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="*"/>
+            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="6"/>
+            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="7"/>
+            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="10"/>
+            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="*"/>
+            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="8"/>
+            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="3+"/>
           </characteristics>
         </profile>
-        <profile id="e536-47cc-0bae-7e93" name="Immolator" book="Codex: Adepta Sororitas" page="0" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+        <profile id="68d0-05e1-11c3-c5ef" name="Immolator" book="Index: Imperium 2" page="103" hidden="false" profileTypeId="b3a8-0452-7436-44d1" profileTypeName="Transport">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779"/>
-            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c"/>
-            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="4"/>
-            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939"/>
-            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39"/>
-            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978"/>
-            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f"/>
-            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705"/>
-            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3"/>
+            <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="This model can transport 6 ADEPTUS MINISTORUM INFANTRY models. It cannot transport JUMP PACK models or ADEPTA SORORITAS models from a different Order."/>
           </characteristics>
         </profile>
-        <profile id="68d0-05e1-11c3-c5ef" name="Immolator" hidden="false" profileTypeId="b3a8-0452-7436-44d1" profileTypeName="Transport">
+        <profile id="0ba2-f004-7134-1fa4" name="1" book="" page="" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="6. No models with the Bulky, V. Bulky, or E Bulky rules."/>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="6-10+"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="12&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="3+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="3"/>
+          </characteristics>
+        </profile>
+        <profile id="ea6c-f23d-afca-9db0" name="2" book="" page="" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="3-5"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="6&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="4+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="D3"/>
+          </characteristics>
+        </profile>
+        <profile id="210d-b339-0694-4eae" name="3" book="" page="" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="1-2"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="3&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="5+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="1"/>
           </characteristics>
         </profile>
       </profiles>
@@ -2877,13 +3031,13 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="cd72-9805-1ee4-ae76" name="New InfoLink" hidden="false" targetId="4b04-2a83-8ae7-d134" type="profile">
+        <infoLink id="ccd9-4526-b14b-a607" name="New InfoLink" hidden="false" targetId="c883-3078-1367-cc2c" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="ccd9-4526-b14b-a607" name="New InfoLink" hidden="false" targetId="c883-3078-1367-cc2c" type="profile">
+        <infoLink id="f268-83cb-ebe4-da3f" name="New InfoLink" hidden="false" targetId="3541-94a7-a138-358b" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2892,7 +3046,64 @@
       </infoLinks>
       <modifiers/>
       <constraints/>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="4598-9f0b-273f-0088" name="New CategoryLink" hidden="false" targetId="9324-1e8e-5e8e-d7c0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="e4ff-2958-1883-87d7" name="New CategoryLink" hidden="false" targetId="b57d-c2a9-2713-8872" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="84c3-4a07-9ca1-8b60" name="New CategoryLink" hidden="false" targetId="76ae-cee8-24fc-5d25" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="ca1e-e2a3-4c93-832e" name="New CategoryLink" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="f851-8be6-67c6-ff66" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="4776-2c7c-bf58-ef6c" name="New CategoryLink" hidden="false" targetId="707c-6510-b116-7c12" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="f754-14c3-4be7-5aa0" name="New CategoryLink" hidden="false" targetId="c8fd-783f-3230-493e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="1cba-21bf-4a59-1750" name="New CategoryLink" hidden="false" targetId="6cc4-1b62-8e8a-05cd" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="e54b-5f8d-5b1d-e503" name="Weapon" hidden="false" collective="false" defaultSelectionEntryId="a7fe-a15c-3d98-907b">
@@ -2906,17 +3117,25 @@
           </constraints>
           <categoryLinks/>
           <selectionEntries>
-            <selectionEntry id="a7fe-a15c-3d98-907b" name="Twin-Linked Heavy Flamer" book="40k BRB" page="0" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="30b3-b9ee-123e-3d73" hidden="false" targetId="2608-8425-4f4f-7f41" type="profile">
+            <selectionEntry id="a7fe-a15c-3d98-907b" name="Immolation Flamer" book="Index: Imperium 2" page="103" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="fe3b-af37-407e-03eb" name="Immolation Flamer" book="Index: Imperium 2" page="157" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                </infoLink>
-              </infoLinks>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="12&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 2D6"/>
+                    <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="5"/>
+                    <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+                    <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="This weapon automatically hits its target."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="973d-cd97-a83e-c507" type="max"/>
@@ -2926,21 +3145,29 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="35.0"/>
                 <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0198-a826-b4aa-7adc" name="Twin-Linked Heavy Bolter" book="40k BRB" page="0" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="7a8b-309e-667c-c996" hidden="false" targetId="e2b0-b9f1-6c38-584c" type="profile">
+            <selectionEntry id="0198-a826-b4aa-7adc" name="Twin Heavy Bolter" book="Index: Imperium 2" page="103" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="5b5c-297e-bdbf-73c5" name="Twin Heavy Bolter" book="Index: Imperium 2" page="103" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                </infoLink>
-              </infoLinks>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 6"/>
+                    <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="5"/>
+                    <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+                    <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45f3-fd50-c5a0-eff7" type="max"/>
@@ -2950,15 +3177,15 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="17.0"/>
                 <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="100c-4e0a-c0c5-9676" name="Twin-Linked Multi-Melta" book="40k BRB" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="100c-4e0a-c0c5-9676" name="Twin Multi-Melta" book="Index: Imperium 2" page="103" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="ed3b-944f-3d88-fb37" hidden="false" targetId="1768-d7b9-37ba-f3bf" type="profile">
+                <infoLink id="c22d-c181-4e77-ea3a" name="New InfoLink" hidden="false" targetId="c3c9-08d7-bfae-4ff7" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -2974,7 +3201,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="54.0"/>
                 <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -2983,10 +3210,45 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="6d26-c939-19f2-8534" name="New EntryLink" hidden="false" targetId="32bf-b117-4ecf-5165" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="6">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24c3-ea15-de7c-122f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4390-162b-3edd-7a8e" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="1130-49c3-2ceb-8eff" name="New EntryLink" hidden="false" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="4">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d637-5bdc-7a3b-c5f7" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f697-0ca2-b5e7-1ee6" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="60.0"/>
-        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="68.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="caaf-8409-e170-3286" name="Celestine, The Living Saint" book="" page="" hidden="true" collective="false" type="unit">
@@ -3453,23 +3715,23 @@
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9be6-1599-e087-859f" name="Sororitas Rhino" book="Codex: Adepta Sororitas" page="0" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="9be6-1599-e087-859f" name="Sororitas Rhino" book="Index: Imperium 2" page="102" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="ac26-2205-871c-4817" name="Sororitas Rhino" book="Codex: Adepta Sororitas" page="0" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+        <profile id="ac26-2205-871c-4817" name="Sororitas Rhino" book="Index: Imperium 2" page="102" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779"/>
-            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c"/>
-            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="4"/>
-            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939"/>
-            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39"/>
-            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978"/>
-            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f"/>
-            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705"/>
-            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3"/>
+            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="*"/>
+            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="6+"/>
+            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="*"/>
+            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="6"/>
+            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="7"/>
+            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="10"/>
+            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="*"/>
+            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="8"/>
+            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="3+"/>
           </characteristics>
         </profile>
         <profile id="90cc-d343-0adb-bd7c" name="Sororitas Rhino" hidden="false" profileTypeId="b3a8-0452-7436-44d1" profileTypeName="Transport">
@@ -3478,27 +3740,57 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="10, no models with the Bulky, Very Bulky, or Extremely Bulk special Rules"/>
+            <characteristic name="Capacity" characteristicTypeId="15aa-1916-a38b-d223" value="This model can transport 10 ADEPTUS MINISTORUM INFANTRY models. It cannot transport JUMP PACK models or ADEPTA SORORITAS models from a different Order."/>
+          </characteristics>
+        </profile>
+        <profile id="aaa1-403d-acbf-5111" name="1" book="" page="" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="6-10+"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="12&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="3+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="3"/>
+          </characteristics>
+        </profile>
+        <profile id="a426-371c-6b5f-7159" name="2" book="" page="" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="3-5"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="6&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="4+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="D3"/>
+          </characteristics>
+        </profile>
+        <profile id="8b06-6ba6-ed12-9e74" name="3" book="" page="" hidden="false" profileTypeId="5f4f-ea74-0630-4afe" profileTypeName="Wound Track">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Remaining W" characteristicTypeId="8e45-c866-b2d4-c9ab" value="1-2"/>
+            <characteristic name="Characteristic 1" characteristicTypeId="bf41-c860-50bc-2a7e" value="3&quot;"/>
+            <characteristic name="Characteristic 2" characteristicTypeId="dc18-e51f-309b-8efa" value="5+"/>
+            <characteristic name="Characteristic 3" characteristicTypeId="df06-8eca-150f-90ba" value="1"/>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule id="aab0-dc7a-b057-adb4" name="Repair" hidden="false">
+        <rule id="be83-bde2-e827-de1e" name="Self-repair" book="Index: Imperium 2" page="102" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>If a Rhino is Immobilised then in susequent turns it may attempt to repair itself instead of shooting.  Roll a D6 in the Shooting phase.  On a roll of a 6+ the vehicle is no longer immobilized.</description>
+          <description>Roll a D6 at the start of each of your turns; on a 6, this model regains one lost wound.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink id="7af1-e922-f394-0699" hidden="false" targetId="102846c2-5cb2-a2bc-5273-7fb66aceaca7" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="69cc-6eec-d069-a69b" name="New InfoLink" hidden="false" targetId="4b04-2a83-8ae7-d134" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3510,42 +3802,107 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
+        <infoLink id="3de1-4e9a-6ff2-7407" name="New InfoLink" hidden="false" targetId="3541-94a7-a138-358b" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
       </infoLinks>
       <modifiers/>
       <constraints/>
-      <categoryLinks/>
-      <selectionEntries>
-        <selectionEntry id="bade-7f7a-c0f3-11c2" name="Storm Bolter" hidden="false" collective="false" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0511-a326-ff4e-c8dc" name="New CategoryLink" hidden="false" targetId="b57d-c2a9-2713-8872" primary="false">
           <profiles/>
           <rules/>
-          <infoLinks>
-            <infoLink id="b989-33d6-706f-f839" name="" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
+          <infoLinks/>
           <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="8790-1ae4-c2b1-b3ec" name="New CategoryLink" hidden="false" targetId="9324-1e8e-5e8e-d7c0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="62b4-cf8c-b00b-5e17" name="New CategoryLink" hidden="false" targetId="76ae-cee8-24fc-5d25" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="20c8-4b38-0288-2b23" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="b2b7-d551-3173-10c2" name="New CategoryLink" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="3e49-4e6c-3773-0d76" name="New CategoryLink" hidden="false" targetId="eb08-85be-1032-4bf7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="8682-57ae-7c84-50f1" name="New CategoryLink" hidden="false" targetId="c8fd-783f-3230-493e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="ce7a-e723-1a12-fcba" name="New EntryLink" hidden="false" targetId="32bf-b117-4ecf-5165" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="6">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a510-ebb4-5823-8ed6" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d40b-8ef8-80ea-5b4c" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d837-1ca1-7549-26b8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98e3-ce4a-d68e-ac93" type="max"/>
           </constraints>
           <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="0.0"/>
-            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
-      <entryLinks/>
+        </entryLink>
+        <entryLink id="1bab-5a2a-fe04-1c3f" name="New EntryLink" hidden="false" targetId="2b03-8d64-3711-f300" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="4">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af88-bb91-625a-3dca" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d17-3c87-b181-78dd" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="40.0"/>
-        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="73.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="4.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ae8b-9ac4-3879-4300" name="Condemnor Boltgun" book="Index: Imperium 2" page="157" hidden="false" collective="false" type="upgrade">
