@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0b5b-819c-5db6-561e" name="Grey Knights" book="" page="" revision="49" battleScribeVersion="2.01" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0b5b-819c-5db6-561e" name="Grey Knights" book="" page="" revision="3" battleScribeVersion="2.01" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -2880,7 +2880,7 @@
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3f8f-6619-355b-2f65" name="Grey Knight Interceptors" hidden="false" collective="false">
+        <selectionEntryGroup id="3f8f-6619-355b-2f65" name="Grey Knight Interceptors" hidden="false" collective="false" defaultSelectionEntryId="1e5a-33d1-1c6d-0dbd">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4585,7 +4585,7 @@
                 <modifier type="increment" field="87aa-4079-206c-680f" value="2">
                   <repeats/>
                   <conditions>
-                    <condition field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a313-e2fe-afb2-600a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a313-e2fe-afb2-600a" type="atLeast"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -5096,7 +5096,15 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
+      <modifiers>
+        <modifier type="increment" field="e356-c769-5920-6e14" value="7">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e25c-9b4b-78d9-e6f3" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
         <categoryLink id="cd6e-15a8-f854-b46e" name="New CategoryLink" hidden="false" targetId="4c7d-8833-ad8f-9b89" primary="false">
@@ -5136,19 +5144,335 @@
         </categoryLink>
       </categoryLinks>
       <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="81af-f95e-954d-373f" name="New EntryLink" hidden="false" targetId="de01-bf66-20aa-6628" type="selectionEntry">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e25c-9b4b-78d9-e6f3" name="Purgators" hidden="false" collective="true" defaultSelectionEntryId="b934-08dd-bdb3-905d">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b52-dc20-bf6f-90fd" type="min"/>
-            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34c8-cc64-8f93-a6d4" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df8f-bd5e-8bec-7aad" type="min"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e78f-c4a2-3508-8b9e" type="max"/>
           </constraints>
           <categoryLinks/>
-        </entryLink>
+          <selectionEntries>
+            <selectionEntry id="655c-38f1-2f6c-8fdb" name="Purgator (Daemon Hammer)" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="3622-70a3-8812-3e24" name="New InfoLink" hidden="false" targetId="4405-7328-bf03-8185" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afe1-890f-f137-bbf0" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="25ec-6680-d974-92d5" name="New EntryLink" hidden="false" targetId="fded-edb8-1d1e-99a5" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="1db1-8bb8-4603-9848" name="New EntryLink" hidden="false" targetId="e857-37b2-c0ef-e3d7" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" costTypeId="points" value="19.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="279e-6962-bb30-e9ee" name="Purgator (Falchion)" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="0336-d0ef-4d63-80e0" name="New InfoLink" hidden="false" targetId="4405-7328-bf03-8185" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="504a-d57b-c95d-c2c7" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="ac9e-45dc-ff08-6f86" name="New EntryLink" hidden="false" targetId="fded-edb8-1d1e-99a5" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="3aa9-4e05-e80a-98b7" name="New EntryLink" hidden="false" targetId="9beb-5ba2-8317-4b82" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" costTypeId="points" value="19.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4e74-c8e0-2e7f-2cd5" name="Purgator (Halbred)" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="6697-8793-90c7-75a4" name="New InfoLink" hidden="false" targetId="4405-7328-bf03-8185" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d396-cda9-99c8-9783" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="0d92-8b48-f962-3964" name="New EntryLink" hidden="false" targetId="fded-edb8-1d1e-99a5" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="e959-5d6c-938d-89cb" name="New EntryLink" hidden="false" targetId="bbe1-df34-13d0-7ed1" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" costTypeId="points" value="19.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b934-08dd-bdb3-905d" name="Purgator (Sword)" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="2505-4cc9-7de6-540a" name="New InfoLink" hidden="false" targetId="4405-7328-bf03-8185" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6e9-6e71-5e7b-b700" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="a00f-7614-36cc-dac3" name="New EntryLink" hidden="false" targetId="fded-edb8-1d1e-99a5" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="6a6f-86a4-57b6-7324" name="New EntryLink" hidden="false" targetId="9b71-6e0f-e71f-eacc" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" costTypeId="points" value="19.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f2aa-23f7-cbcd-25a6" name="Purgator (Warding Stave)" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="aed7-4e72-c8ee-1f4b" name="New InfoLink" hidden="false" targetId="4405-7328-bf03-8185" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="069b-9dac-468b-945e" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="6c0e-8dcb-aa56-3f57" name="New EntryLink" hidden="false" targetId="fded-edb8-1d1e-99a5" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="d664-f347-2821-fd31" name="New EntryLink" hidden="false" targetId="9dc6-e559-0099-005a" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" costTypeId="points" value="19.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="252a-7edd-51cf-d947" name="Special Weapons" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf39-bdcb-357e-b0b1" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries>
+                <selectionEntry id="4a0a-7990-9b22-b7e8" name="Purgator (Incinerator)" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="3655-8403-8b39-bd21" name="New InfoLink" hidden="false" targetId="4405-7328-bf03-8185" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64fb-29ad-5f02-d0b4" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks>
+                    <entryLink id="a492-da55-8b97-d33d" name="New EntryLink" hidden="false" targetId="6650-9429-ac09-255d" type="selectionEntry">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints/>
+                      <categoryLinks/>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="19.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="536e-4fa0-049e-412f" name="Purgator (Psycannon)" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="6571-2119-1d98-dd82" name="New InfoLink" hidden="false" targetId="4405-7328-bf03-8185" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c700-6ce3-e1eb-bb83" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks>
+                    <entryLink id="48de-fa11-e066-b231" name="New EntryLink" hidden="false" targetId="c047-6362-b1bb-1ffd" type="selectionEntry">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints/>
+                      <categoryLinks/>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="19.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f252-0678-cee1-c539" name="Purgator (Psilencer)" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="4170-2b20-6a6e-47a8" name="New InfoLink" hidden="false" targetId="4405-7328-bf03-8185" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="737b-58f8-c84d-de39" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks>
+                    <entryLink id="fae6-a957-67f8-79ca" name="New EntryLink" hidden="false" targetId="94c1-7cb5-a934-687a" type="selectionEntry">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints/>
+                      <categoryLinks/>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="19.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks/>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
         <entryLink id="0590-9810-cf09-ad4e" name="New EntryLink" hidden="false" targetId="64dc-131d-20be-6199" type="selectionEntry">
           <profiles/>
           <rules/>
@@ -5158,24 +5482,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23af-f022-6e74-150d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92ac-3367-a3ac-cd32" type="max"/>
           </constraints>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="4b3f-7d56-6216-7ba2" name="New EntryLink" hidden="false" targetId="cdda-0c45-77c5-dc59" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f05-28a7-0190-bf15" type="max"/>
-          </constraints>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="d175-4f53-84c8-e3b3" name="New EntryLink" hidden="false" targetId="4f3f-99d9-7834-82cc" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -6154,6 +6460,23 @@
       <modifiers/>
       <characteristics>
         <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="12&quot;"/>
+        <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="3+"/>
+        <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="3+"/>
+        <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="4"/>
+        <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="4"/>
+        <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="1"/>
+        <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="1"/>
+        <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="7"/>
+        <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="3+"/>
+      </characteristics>
+    </profile>
+    <profile id="4405-7328-bf03-8185" name="Purgator" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="6&quot;"/>
         <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="3+"/>
         <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="3+"/>
         <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="4"/>
