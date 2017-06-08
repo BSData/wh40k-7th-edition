@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b8ec-a4e0-1135-6051" name="Orks" book="Xenos 2" revision="3" battleScribeVersion="2.01" authorName="tag8833" authorContact="Github" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b8ec-a4e0-1135-6051" name="Orks" book="Xenos 2" revision="6" battleScribeVersion="2.01" authorName="tag8833" authorContact="Github" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1087,7 +1087,7 @@
             <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="x2"/>
             <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
             <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D3"/>
-            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="you must subtract 1 from the hit roll"/>
+            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="When attacking with this weapon, you must subtract 1 from the hit roll"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1127,7 +1127,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3511-0070-0667-abf2" name="Kombi-Rokkit" hidden="false" collective="false" type="upgrade">
-      <profiles/>
+      <profiles>
+        <profile id="3bd7-f97a-3df8-7cf6" name="Kombi-Rokkit" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="When using both profiles, -1 to hit roll."/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks>
         <infoLink id="f580-5cd8-e64b-bae5" name="New InfoLink" hidden="false" targetId="5a2b-0c64-8aa8-2f3e" type="profile">
@@ -1155,7 +1165,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b6c7-06c8-b7fb-05a7" name="Kombi-Skorcha" hidden="false" collective="false" type="upgrade">
-      <profiles/>
+      <profiles>
+        <profile id="ed3f-0d3e-14fa-cdfa" name="Kombi-Skorcha" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="When using both profiles, -1 to hit roll."/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks>
         <infoLink id="8c78-b79f-de1f-ef6f" name="New InfoLink" hidden="false" targetId="5a2b-0c64-8aa8-2f3e" type="profile">
@@ -1280,7 +1300,7 @@
             <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
             <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
             <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
-            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time a model with an attack squig fights, it makes 2 additional attacks with this weapon."/>
+            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time a model with an attack squig fights, it can make 2 additional attacks with this weapon."/>
           </characteristics>
         </profile>
       </profiles>
@@ -1496,7 +1516,7 @@
             <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="5+"/>
             <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="6"/>
             <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="6"/>
-            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="6"/>
+            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="7"/>
             <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="4"/>
             <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="8"/>
             <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="4+"/>
@@ -1688,7 +1708,7 @@
             <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This model can attempt to manifest one psychic power in each friendly Psychic phase, and attempt to deny one psychic power in each enemy Psychic phase.  It knows Smite and one psychic power from the Power of the Waaagh! discipline. "/>
           </characteristics>
         </profile>
-        <profile id="cc66-7ec4-b03a-8121" name="Waagh! Energy" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+        <profile id="cc66-7ec4-b03a-8121" name="Waaagh! Energy" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1707,6 +1727,12 @@
           <modifiers/>
         </infoLink>
         <infoLink id="7c64-2843-a19e-d14f" name="New InfoLink" hidden="false" targetId="ad32-a248-a392-3d4a" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="2876-9377-e25f-c886" name="New InfoLink" hidden="false" targetId="5821-6c45-8572-7e0e" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2475,6 +2501,40 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="739f-8937-bd1b-9af0" name="May Take Either" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b24a-a64d-3bb9-3ead" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="2c23-e80b-260a-0af2" name="New EntryLink" hidden="false" targetId="886c-c494-3fbb-e1ec" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="102b-fecf-70fb-6dee" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="b3e7-eeda-b441-175c" name="New EntryLink" hidden="false" targetId="4b5a-eb2a-9f60-d11d" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58df-953c-a678-6d08" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="4c0e-3f90-adca-bb79" name="New EntryLink" hidden="false" targetId="9459-87f3-a9a1-6840" type="selectionEntry">
@@ -2495,26 +2555,6 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b06c-bfe4-cde9-4b66" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c829-2ef9-be10-049e" type="max"/>
-          </constraints>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="a582-5c30-8493-7be1" name="New EntryLink" hidden="false" targetId="886c-c494-3fbb-e1ec" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17e9-fcd9-c398-5ccf" type="max"/>
-          </constraints>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="41a9-9e8e-12a9-cad5" name="New EntryLink" hidden="false" targetId="4b5a-eb2a-9f60-d11d" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2c0-b31a-de06-4de1" type="max"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -2551,7 +2591,7 @@
       <entryLinks/>
       <costs>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-        <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="11.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1387-57d0-6d81-dbcb" name="Big Mek on Bike" hidden="false" collective="false" type="unit">
@@ -2588,7 +2628,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="9adb-9422-2154-cbd5" name="New InfoLink" hidden="false" targetId="0a24-5217-fb9c-c81c" type="profile">
+        <infoLink id="9adb-9422-2154-cbd5" name="New InfoLink" hidden="false" targetId="9649-855b-5c2e-57da" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2835,16 +2875,6 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="939a-deb9-3a06-41bc" name="New EntryLink" hidden="false" targetId="9459-87f3-a9a1-6840" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd2b-c66d-5306-607e" type="max"/>
-          </constraints>
-          <categoryLinks/>
-        </entryLink>
         <entryLink id="0e45-0b00-3066-cc8a" name="New EntryLink" hidden="false" targetId="de10-70b3-ab64-990c" type="selectionEntry">
           <profiles/>
           <rules/>
@@ -2887,7 +2917,7 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Enemy units taking a Moral test within 6&quot; of boss Snikrot add 1 to the result. "/>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Enemy units taking a Morale test within 6&quot; of boss Snikrot add 1 to the result. "/>
           </characteristics>
         </profile>
         <profile id="b4d4-4d4b-a01f-cee7" name="Sneakiest Git" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
@@ -3244,7 +3274,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="55.0"/>
+        <cost name="pts" costTypeId="points" value="22.0"/>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="3.0"/>
       </costs>
     </selectionEntry>
@@ -3671,7 +3701,7 @@
             <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="8"/>
             <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="5"/>
             <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="8"/>
-            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="2+"/>
+            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="2+/4++"/>
           </characteristics>
         </profile>
         <profile id="f5eb-58eb-f0a1-6cee" name="Great Waagh!" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
@@ -3690,6 +3720,15 @@
           <modifiers/>
           <characteristics>
             <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If a ORK unit fails a Morale test within 6&quot; of Ghaz, he can restore order with a brutal display of violence.  If they do, the unit suffers D3 mortal wounds, but the Morale test is then considered to have been passed."/>
+          </characteristics>
+        </profile>
+        <profile id="bf8c-2628-fb11-0dd4" name="Prophet of Gork and Mork" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Ghazghkull Thraka has a 4+ invul save."/>
           </characteristics>
         </profile>
       </profiles>
@@ -4127,7 +4166,7 @@
           <characteristics>
             <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="12&quot;"/>
             <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="2+"/>
-            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="4+"/>
+            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="5+"/>
             <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="6"/>
             <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="4"/>
             <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="6"/>
@@ -4152,6 +4191,15 @@
           <modifiers/>
           <characteristics>
             <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Boss Zagstruk can Advance and charge in the same turn, but if he does so, roll a D6 after any Overwatch has been resolved.   On a roll of 1, he suffers a Mortal Wound. "/>
+          </characteristics>
+        </profile>
+        <profile id="4344-9570-6753-0234" name="Drill Boss" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Friendly units of GOFF STORMBOYZ within 6&quot; of Boss Zagstruk automatically pass Morale tests."/>
           </characteristics>
         </profile>
       </profiles>
@@ -4254,20 +4302,6 @@
                 <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
                 <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D3"/>
                 <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time the Bearer fights only 2 attacks can be made with this weapon"/>
-              </characteristics>
-            </profile>
-            <profile id="d846-e9d9-c136-f0a8" name="Da Rippa (Supercharge)" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
-                <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 3"/>
-                <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
-                <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
-                <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="3"/>
-                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="If you roll one or more hit rolls of 1, the bearer suffers D3 mortal wounds after all of this weapons&apos;s shots have been resolved."/>
               </characteristics>
             </profile>
           </profiles>
@@ -4462,6 +4496,17 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="782d-63d3-e17f-a413" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd92-dc9f-f212-9cba" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="57bb-92f9-97e5-5b9f" name="New EntryLink" hidden="false" targetId="d13b-ad69-e6a2-d485" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a052-f51c-05dc-e45d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3490-ab5f-2925-78fa" type="max"/>
           </constraints>
           <categoryLinks/>
         </entryLink>
@@ -5031,7 +5076,34 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4a86-9031-67e9-cb27" name="Runtherd" hidden="false" collective="false" type="unit">
-      <profiles/>
+      <profiles>
+        <profile id="64a4-6970-4032-59d5" name="Typo" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This unit has a typo.  On its dataslate it says it is 1 model.  On the points cost list, it says 1-3.  Please be aware of this."/>
+          </characteristics>
+        </profile>
+        <profile id="1afd-2533-77ec-aae8" name="Runtherd" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="5&quot;"/>
+            <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="3+"/>
+            <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="5+"/>
+            <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="4"/>
+            <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="4"/>
+            <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="4"/>
+            <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="3"/>
+            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="7"/>
+            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="6+"/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks>
         <infoLink id="9c22-e994-a1f4-f848" name="New InfoLink" hidden="false" targetId="de72-9941-3d27-44e9" type="rule">
@@ -5047,22 +5119,7 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers>
-        <modifier type="increment" field="e356-c769-5920-6e14" value="1">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="4a86-9031-67e9-cb27" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="increment" field="e356-c769-5920-6e14" value="1">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="4a86-9031-67e9-cb27" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <constraints/>
       <categoryLinks>
         <categoryLink id="5fcc-3536-d9c9-2f7b" name="New CategoryLink" hidden="false" targetId="ef18-746a-369f-43a4" primary="false">
@@ -5096,34 +5153,99 @@
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c758-7276-bdaa-3907" name="Mob" hidden="false" collective="false" defaultSelectionEntryId="43ec-ebb9-42ee-daae">
+        <selectionEntryGroup id="7944-038a-4666-d411" name="Herding Gear" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2c3-36fc-8679-2ffa" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d15a-cb8a-9f29-5675" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42db-3dbc-353a-c7f6" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries>
-            <selectionEntry id="43ec-ebb9-42ee-daae" name="Runtherd" hidden="false" collective="false" type="model">
+            <selectionEntry id="5c9f-95eb-1ec7-0af2" name="Squig Hound" hidden="false" collective="false" type="upgrade">
               <profiles>
-                <profile id="48e0-d804-c91e-7f73" name="Runtherd" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+                <profile id="de6a-d2eb-7c04-f353" name="Squig Hound" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="5&quot;"/>
-                    <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="3+"/>
-                    <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="5+"/>
-                    <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="4"/>
-                    <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="4"/>
-                    <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="4"/>
-                    <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="3"/>
-                    <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="7"/>
-                    <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="6+"/>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If a unit comprised entirely of GRETCHIN fails a Morale test and is within 3&quot; of any friendly Runtherds with a squig hound, ignore the result.  D3 models from the unit are slain instead."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="261e-9984-8d72-ed81" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6dce-0383-5b0e-b194" name="Grot Lash" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="86b3-61b3-0e79-de10" name="Grot Lash" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If a unit comprised entirely of GRETCHIN is within 3&quot; of any Runtherds with a grot lash, you can re-roll hit rolls of 1 for them in the Fight phase."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="912f-5195-08b9-1322" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7dfa-8517-487f-50ec" name="Melee Weapon" hidden="false" collective="false" defaultSelectionEntryId="e9b7-1d44-15d4-8dc5">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="128b-ddc1-ddcf-4f96" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e46d-65ce-9787-bbfe" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="e9b7-1d44-15d4-8dc5" name="Grabba Stikk" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="915c-deea-7576-056b" name="Grabba Stikk" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+                    <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+                    <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="+1"/>
+                    <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+                    <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time the bearer fights it can make 1 additional attack with this weapon"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5131,179 +5253,43 @@
               <infoLinks/>
               <modifiers/>
               <constraints/>
-              <categoryLinks>
-                <categoryLink id="92da-94d9-8859-1c83" name="New CategoryLink" hidden="false" targetId="2ab6-8d0f-494d-38e2" primary="false">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </categoryLink>
-                <categoryLink id="50c4-41a3-6f3e-636b" name="New CategoryLink" hidden="false" targetId="1c58-037f-7b58-1223" primary="false">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </categoryLink>
-              </categoryLinks>
-              <selectionEntries>
-                <selectionEntry id="21ee-450e-fc78-58cc" name="Squig Hound" hidden="false" collective="false" type="upgrade">
-                  <profiles>
-                    <profile id="43bf-dfc8-873a-ab4a" name="Squig Hound" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <characteristics>
-                        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If a unit comprised entirely of GRETCHIN fails a Morale test and is within 3&quot; of any friendly Runtherds with a squig hound, ignore the result.  D3 models from the unit are slain instead."/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b986-b076-99a4-4ed5" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="ba2f-a99c-4ed5-ad3c" name="Grot Lash" hidden="false" collective="false" type="upgrade">
-                  <profiles>
-                    <profile id="88b5-b934-46bd-9481" name="Grot Lash" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <characteristics>
-                        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If a unit comprised entirely of GRETCHIN is within 3&quot; of any Runtherds with a grot lash, you can re-roll hit rolls of 1 for them in the Fight phase."/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d49f-1f80-a9ad-b7f6" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="eb4b-bf2c-6164-b009" name="Melee Weapon" hidden="false" collective="false" defaultSelectionEntryId="1e86-e98d-97c2-009a">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be16-20f7-db4f-c1a9" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e541-7939-f9d5-b5c4" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries>
-                    <selectionEntry id="1e86-e98d-97c2-009a" name="Grabba Stikk" hidden="false" collective="false" type="upgrade">
-                      <profiles>
-                        <profile id="1b70-738d-7781-7968" name="Grabba Stikk" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <characteristics>
-                            <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
-                            <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
-                            <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="+1"/>
-                            <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
-                            <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
-                            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time the bearer fights it can make 1 additional attack with this weapon"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints/>
-                      <categoryLinks/>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-                        <cost name="pts" costTypeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="ae94-f69d-ba37-9496" name="Grot-Prod" hidden="false" collective="false" type="upgrade">
-                      <profiles>
-                        <profile id="e9a9-a5a1-55cd-965e" name="Grot-Prod" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <characteristics>
-                            <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
-                            <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
-                            <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="+2"/>
-                            <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
-                            <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
-                            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <constraints/>
-                      <categoryLinks/>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-                        <cost name="pts" costTypeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="67f0-fd57-6457-17fa" name="New EntryLink" hidden="false" targetId="d13b-ad69-e6a2-d485" type="selectionEntry">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2897-2ca3-1c38-de21" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5be4-70a9-5c09-70dc" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                </entryLink>
-                <entryLink id="f12b-89f7-eae6-f213" name="New EntryLink" hidden="false" targetId="6df7-0ee7-7e6d-b182" type="selectionEntry">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                  <categoryLinks/>
-                </entryLink>
-              </entryLinks>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="26.0"/>
                 <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e1e7-f5bb-c9f7-a9ba" name="Grot-Prod" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="81a7-7f36-3bde-d4af" name="Grot-Prod" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+                    <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+                    <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="+2"/>
+                    <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-1"/>
+                    <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+                    <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5311,10 +5297,30 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="3d97-d5d5-72df-f029" name="New EntryLink" hidden="false" targetId="6df7-0ee7-7e6d-b182" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2da7-e98d-c616-73af" name="New EntryLink" hidden="false" targetId="d13b-ad69-e6a2-d485" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2b5-5660-bcef-750c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edd0-eb6d-adb0-3fcc" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="1.0"/>
-        <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="26.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b4f7-fe86-812e-602c" name="Nobz" hidden="false" collective="false" type="unit">
@@ -5328,6 +5334,12 @@
           <modifiers/>
         </infoLink>
         <infoLink id="97f1-1b89-0847-aded" name="New InfoLink" hidden="false" targetId="ad32-a248-a392-3d4a" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="43e7-ca42-c248-f0ac" name="New InfoLink" hidden="false" targetId="3202-2878-7cb1-93a2" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5504,6 +5516,22 @@
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
+                <entryLink id="3192-e40e-1645-3b38" name="New EntryLink" hidden="false" targetId="f15a-fc8e-65b1-e4b8" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="9291-de75-c4f2-ed07" name="New EntryLink" hidden="false" targetId="5a1a-e62f-5896-dca6" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -5657,6 +5685,22 @@
                       <categoryLinks/>
                     </entryLink>
                     <entryLink id="dce6-6095-4abd-1f4f" name="New EntryLink" hidden="false" targetId="fe00-451f-6735-6fd9" type="selectionEntry">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints/>
+                      <categoryLinks/>
+                    </entryLink>
+                    <entryLink id="079c-4a50-fc72-78e2" name="New EntryLink" hidden="false" targetId="f15a-fc8e-65b1-e4b8" type="selectionEntry">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints/>
+                      <categoryLinks/>
+                    </entryLink>
+                    <entryLink id="ef7e-5db7-2418-d113" name="New EntryLink" hidden="false" targetId="5a1a-e62f-5896-dca6" type="selectionEntry">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -5982,6 +6026,12 @@
           <modifiers/>
         </infoLink>
         <infoLink id="5d9e-0988-a3c3-20fc" name="New InfoLink" hidden="false" targetId="ad32-a248-a392-3d4a" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="db9b-558b-4490-b403" name="New InfoLink" hidden="false" targetId="3202-2878-7cb1-93a2" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6760,6 +6810,12 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
+        <infoLink id="0eb5-c7c9-f26c-efe0" name="New InfoLink" hidden="false" targetId="3202-2878-7cb1-93a2" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
       </infoLinks>
       <modifiers/>
       <constraints/>
@@ -7297,7 +7353,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" costTypeId="points" value="6.0"/>
+                <cost name="pts" costTypeId="points" value="9.0"/>
                 <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -8024,6 +8080,15 @@
             <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="During deployment, you can set up a unit of Deffkoptas behind enemy lines instead of placing it on the battlefield.  At the end of any of your Movement phases, the Deffkoptas can swoop around to ambush the foe - set them up anywhere on the battlefield that is more than 9&quot; away from any enemy models and within 14&quot; of a battlefield edge."/>
           </characteristics>
         </profile>
+        <profile id="9d6e-b905-84be-f7da" name="Typo" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This unit has a typo.  On its dataslate it says it is 1-5 models.  On the points cost list, it says 1-3.  Please be aware of this."/>
+          </characteristics>
+        </profile>
       </profiles>
       <rules/>
       <infoLinks>
@@ -8103,7 +8168,7 @@
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e82a-0742-6791-95f4" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7b7-8b8e-42bb-ad8d" type="max"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7b7-8b8e-42bb-ad8d" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries>
@@ -8557,7 +8622,7 @@
           <modifiers/>
           <characteristics>
             <characteristic name="Wounds" characteristicTypeId="6ab3-1701-db9e-9417" value="7-12+"/>
-            <characteristic name="Move" characteristicTypeId="f07d-1cad-c2eb-16a8" value="20-60&quot;"/>
+            <characteristic name="Move" characteristicTypeId="f07d-1cad-c2eb-16a8" value="20-50&quot;"/>
             <characteristic name="BS" characteristicTypeId="5f83-5a93-75ac-9270" value="5+"/>
             <characteristic name="Attacks" characteristicTypeId="c4fd-ff8c-7114-2cc3" value="3"/>
           </characteristics>
@@ -8569,7 +8634,7 @@
           <modifiers/>
           <characteristics>
             <characteristic name="Wounds" characteristicTypeId="6ab3-1701-db9e-9417" value="4-6"/>
-            <characteristic name="Move" characteristicTypeId="f07d-1cad-c2eb-16a8" value="20-40&quot;"/>
+            <characteristic name="Move" characteristicTypeId="f07d-1cad-c2eb-16a8" value="20-30&quot;"/>
             <characteristic name="BS" characteristicTypeId="5f83-5a93-75ac-9270" value="6+"/>
             <characteristic name="Attacks" characteristicTypeId="c4fd-ff8c-7114-2cc3" value="D3"/>
           </characteristics>
@@ -8672,7 +8737,7 @@
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A Burna-bommer can drop one burna bomb as it flies over enemy units in its Movement phase.  After the Burna-bommer has moved, pick one enemy unit that it flew over and roll a D6 for each mdoel in the unit (up to a max of 10).   Add 1 to the dice rolls if the enemy unit is INFANTRY.  For each roll of a 5+, the unit being bombed suffers a mortal wound."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A Burna-bommer can drop one burna bomb as it flies over enemy units in its Movement phase.  After the Burna-bommer has moved, pick one enemy unit that it flew over and roll a D6 for each mdoel in the unit (up to a max of 10).   Add 1 to the dice rolls if the enemy unit is INFANTRY.  For each roll of a 5+, the unit being bombed suffers a mortal wound.  Each burna bomb can only be used once per battle."/>
               </characteristics>
             </profile>
           </profiles>
@@ -8692,9 +8757,9 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e2fb-13f7-01fc-81b6" name="Skorcha Missile" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e2fb-13f7-01fc-81b6" name="Skorcha Missiles" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="2c5e-6e29-e46c-723d" name="Skorcha Missile" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+            <profile id="2c5e-6e29-e46c-723d" name="Skorcha Missiles" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -8781,7 +8846,7 @@
           <modifiers/>
           <characteristics>
             <characteristic name="Wounds" characteristicTypeId="6ab3-1701-db9e-9417" value="7-12+"/>
-            <characteristic name="Move" characteristicTypeId="f07d-1cad-c2eb-16a8" value="20-60&quot;"/>
+            <characteristic name="Move" characteristicTypeId="f07d-1cad-c2eb-16a8" value="20-50&quot;"/>
             <characteristic name="BS" characteristicTypeId="5f83-5a93-75ac-9270" value="5+"/>
             <characteristic name="Attacks" characteristicTypeId="c4fd-ff8c-7114-2cc3" value="3"/>
           </characteristics>
@@ -8793,7 +8858,7 @@
           <modifiers/>
           <characteristics>
             <characteristic name="Wounds" characteristicTypeId="6ab3-1701-db9e-9417" value="4-6"/>
-            <characteristic name="Move" characteristicTypeId="f07d-1cad-c2eb-16a8" value="20-40&quot;"/>
+            <characteristic name="Move" characteristicTypeId="f07d-1cad-c2eb-16a8" value="20-30&quot;"/>
             <characteristic name="BS" characteristicTypeId="5f83-5a93-75ac-9270" value="6+"/>
             <characteristic name="Attacks" characteristicTypeId="c4fd-ff8c-7114-2cc3" value="D3"/>
           </characteristics>
@@ -8902,7 +8967,7 @@
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A Blitza-bommer can drop one boom bomb as it flies over enemy units in its Movement phase.  After the Blitza-bommer has moved, pick one enemy unit that it flew over and roll a D6 for each mdoel in the unit (up to a max of 10).  Roll 3 dice instead for each VEHICLE or MONSTER in the unit.  For each roll of a 4+, the unit being bombed suffers a mortal wound."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A Blitza-bommer can drop one boom bomb as it flies over enemy units in its Movement phase.  After the Blitza-bommer has moved, pick one enemy unit that it flew over and roll a D6 for each mdoel in the unit (up to a max of 10).  Roll 3 dice instead for each VEHICLE or MONSTER in the unit.  For each roll of a 4+, the unit being bombed suffers a mortal wound.  Each boom bomb can only be used once per battle."/>
               </characteristics>
             </profile>
           </profiles>
@@ -9104,9 +9169,9 @@
           </constraints>
           <categoryLinks/>
           <selectionEntries>
-            <selectionEntry id="35b1-2600-1851-a43c" name="2 Wazbom Mega-Kannons" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="35b1-2600-1851-a43c" name="2x Wazbom Mega-Kannons" hidden="false" collective="false" type="upgrade">
               <profiles>
-                <profile id="ea24-31f9-c2ad-b730" name="Wazbom Mega-Kannons" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+                <profile id="ea24-31f9-c2ad-b730" name="Wazbom Mega-Kannon" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -9134,7 +9199,7 @@
                 <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e194-664a-b46b-c575" name="2 Teleport Mega-Blasta" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e194-664a-b46b-c575" name="2x Teleport Mega-Blasta" hidden="false" collective="false" type="upgrade">
               <profiles>
                 <profile id="ee9e-9cb3-dc65-4453" name="Teleport Mega-Blasta" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
                   <profiles/>
@@ -9281,6 +9346,13 @@
           <repeats/>
           <conditions>
             <condition field="selections" scope="88f3-f1da-0592-9755" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="increment" field="e356-c769-5920-6e14" value="4">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="88f3-f1da-0592-9755" value="9.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -9554,7 +9626,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="98a5-e209-f687-1ee6" name="Wartrakk" hidden="false" collective="false" type="unit">
-      <profiles/>
+      <profiles>
+        <profile id="3de1-8f04-34f1-b1f0" name="Outriders" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="During deployment, you can set up a unit of Wartrakks on the army&apos;s flanks instead of on the battlefield. At the end of any of your Movement phases, the Wartrakks can race in to encircle the foe - set them up so that each model is touching a battlefield edge and is more than 9&quot; away from any enemy models."/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks>
         <infoLink id="9987-3fa8-8d6c-e961" name="New InfoLink" hidden="false" targetId="ad32-a248-a392-3d4a" type="rule">
@@ -9677,7 +9759,7 @@
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks>
-                    <entryLink id="5c2f-231a-0173-8afc" name="New EntryLink" hidden="false" targetId="6008-4737-d8e6-e63b" type="selectionEntry">
+                    <entryLink id="5c2f-231a-0173-8afc" name="New EntryLink" hidden="false" targetId="a4f1-6ccb-1c50-405b" type="selectionEntry">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -9744,7 +9826,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d5f1-6fff-d11b-0091" name="Skorcha Buggy" hidden="false" collective="false" type="unit">
-      <profiles/>
+      <profiles>
+        <profile id="8e47-5368-0170-63a5" name="Outriders" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="During deployment, you can set up a unit of Wartrakks on the army&apos;s flanks instead of on the battlefield. At the end of any of your Movement phases, the Wartrakks can race in to encircle the foe - set them up so that each model is touching a battlefield edge and is more than 9&quot; away from any enemy models."/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks>
         <infoLink id="7712-2b2e-e243-9451" name="New InfoLink" hidden="false" targetId="ad32-a248-a392-3d4a" type="rule">
@@ -9827,7 +9919,7 @@
           </constraints>
           <categoryLinks/>
           <selectionEntries>
-            <selectionEntry id="9e60-5bb2-a31f-a764" name="Skorcha" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9e60-5bb2-a31f-a764" name="Skorcha" hidden="false" collective="false" type="model">
               <profiles>
                 <profile id="7f88-fcc1-6943-e16f" name="Skorcha" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
                   <profiles/>
@@ -9852,21 +9944,35 @@
               <modifiers/>
               <constraints/>
               <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks>
-                <entryLink id="b150-ad42-510b-2309" name="New EntryLink" hidden="false" targetId="e05b-21b5-8727-ea9d" type="selectionEntry">
+              <selectionEntries>
+                <selectionEntry id="cfe7-0211-4582-6a3f" name="Skorcha" hidden="false" collective="true" type="upgrade">
                   <profiles/>
                   <rules/>
-                  <infoLinks/>
+                  <infoLinks>
+                    <infoLink id="6ebf-1543-3fa8-693b" name="New InfoLink" hidden="false" targetId="1123-0b30-9f1f-ca82" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
                   <modifiers/>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af29-1701-33e3-79ee" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="956b-cd05-3861-bf67" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f83b-478f-903f-2387" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ec-5a53-5d33-d444" type="max"/>
                   </constraints>
                   <categoryLinks/>
-                </entryLink>
-              </entryLinks>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="17.0"/>
+                    <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks/>
               <costs>
                 <cost name="pts" costTypeId="points" value="49.0"/>
                 <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
@@ -9884,7 +9990,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f7ee-37e2-efd6-a351" name="Warbuggies" hidden="false" collective="false" type="unit">
-      <profiles/>
+      <profiles>
+        <profile id="4c3b-4a1a-7e3b-28be" name="Outriders" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="During deployment, you can set up a unit of Wartrakks on the army&apos;s flanks instead of on the battlefield. At the end of any of your Movement phases, the Wartrakks can race in to encircle the foe - set them up so that each model is touching a battlefield edge and is more than 9&quot; away from any enemy models."/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks>
         <infoLink id="7604-18cf-da8f-7a9b" name="New InfoLink" hidden="false" targetId="ad32-a248-a392-3d4a" type="rule">
@@ -10139,7 +10255,7 @@
           <modifiers/>
           <characteristics>
             <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="36&quot;"/>
-            <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="1"/>
+            <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Heavy 1"/>
             <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
             <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-2"/>
             <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
@@ -10486,7 +10602,7 @@
                         <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="*"/>
                         <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="*"/>
                         <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="*"/>
-                        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Roll 4 dice each time you fire this weapon, then take it in turns with your opponent (starting with you) to allocate one value at a time to its Strenght, AP, Damage, and Number of Attacks.  Note that the dice assigned to AP is a negative number."/>
+                        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Roll 4 dice each time you fire this weapon, then take it in turns with your opponent (starting with you) to allocate one value at a time to its Strength, AP, Damage, and Number of Attacks.  Note that the dice assigned to AP is a negative number."/>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -10617,7 +10733,15 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="9c9f-9774-a358-3a39" value="8">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="f0b4-c759-e809-424e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b428-b799-c9c5-cab9" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="*"/>
             <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="5+"/>
@@ -10700,7 +10824,15 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="f0b4-c759-e809-424e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b428-b799-c9c5-cab9" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </infoLink>
       </infoLinks>
       <modifiers/>
@@ -10841,9 +10973,9 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bdaf-9d76-ed3f-1f64" name="Grabba Klaw" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="bdaf-9d76-ed3f-1f64" name="Grabbin&apos; Klaw" hidden="false" collective="false" type="upgrade">
           <profiles>
-            <profile id="1819-c806-3bba-c3f1" name="Grabba Klaw" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+            <profile id="1819-c806-3bba-c3f1" name="Grabbin&apos; Klaw" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -10861,7 +10993,9 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a71-df80-d2a3-13b8" type="max"/>
+          </constraints>
           <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -10958,7 +11092,7 @@
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="11.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="afdc-8903-044a-a42e" name="Wrecking Ball" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="afdc-8903-044a-a42e" name="Wreckin&apos; Ball" hidden="false" collective="false" type="upgrade">
       <profiles>
         <profile id="0f76-8b7f-293d-2e74" name="Wrecking Ball" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
           <profiles/>
@@ -11001,16 +11135,19 @@
             <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A unit of Deff Dreads must be deployed as a single group, with each model within 6&quot; of at least one other model from the unit.  From that point on, each Deff Dread acts as a single unit."/>
           </characteristics>
         </profile>
-      </profiles>
-      <rules/>
-      <infoLinks>
-        <infoLink id="72de-5112-a28c-cc5a" name="New InfoLink" hidden="false" targetId="de72-9941-3d27-44e9" type="rule">
+        <profile id="9f60-a131-70ff-5ee5" name="Explodes" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </infoLink>
-        <infoLink id="5222-311b-6f30-c324" name="New InfoLink" hidden="false" targetId="3541-94a7-a138-358b" type="rule">
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield and before any embarked models disembark.  On a 6 it explodes and each unit within 3&quot; suffer D3 mortal wounds."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="72de-5112-a28c-cc5a" name="New InfoLink" hidden="false" targetId="de72-9941-3d27-44e9" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -11095,7 +11232,7 @@
               <constraints/>
               <categoryLinks/>
               <selectionEntries>
-                <selectionEntry id="0e93-423b-5b69-e7a1" name="Klaw Arms" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="0e93-423b-5b69-e7a1" name="Pair of Klaw Arms" hidden="false" collective="false" type="upgrade">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -11129,8 +11266,8 @@
                     </entryLink>
                   </entryLinks>
                   <costs>
-                    <cost name="pts" costTypeId="points" value="15.0"/>
                     <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="pts" costTypeId="points" value="15.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -11414,20 +11551,20 @@
           <selectionEntries>
             <selectionEntry id="1c7c-6ff8-9ba9-9461" name="Killa Kan" hidden="false" collective="false" type="model">
               <profiles>
-                <profile id="9b6c-25ae-cad1-adbf" name="Deff Dread" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
+                <profile id="9b6c-25ae-cad1-adbf" name="Killa Kan" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
                     <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="6&quot;"/>
-                    <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="3+"/>
-                    <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="5+"/>
+                    <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="5+"/>
+                    <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="4+"/>
                     <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="5"/>
-                    <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="7"/>
-                    <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="8"/>
-                    <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="2"/>
-                    <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="7"/>
+                    <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="5"/>
+                    <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="5"/>
+                    <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="3"/>
+                    <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="6"/>
                     <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="3+"/>
                   </characteristics>
                 </profile>
@@ -11624,7 +11761,7 @@
             <characteristic name="Wounds" characteristicTypeId="778a-f7b8-2837-f763" value="10-18+"/>
             <characteristic name="Move" characteristicTypeId="32da-e7ed-b56d-4946" value="8&quot;"/>
             <characteristic name="WS" characteristicTypeId="fea1-f00e-c05b-191a" value="3+"/>
-            <characteristic name="Attacks" characteristicTypeId="bf02-925e-f13e-61d1" value="6"/>
+            <characteristic name="Attacks" characteristicTypeId="bf02-925e-f13e-61d1" value="4"/>
           </characteristics>
         </profile>
         <profile id="b0f3-9719-663d-2c04" name="Morkanaut2" hidden="false" profileTypeId="4f8f-111d-cdd9-6db0" profileTypeName="Naut Wound Track">
@@ -11636,7 +11773,7 @@
             <characteristic name="Wounds" characteristicTypeId="778a-f7b8-2837-f763" value="5-9"/>
             <characteristic name="Move" characteristicTypeId="32da-e7ed-b56d-4946" value="6&quot;"/>
             <characteristic name="WS" characteristicTypeId="fea1-f00e-c05b-191a" value="4+"/>
-            <characteristic name="Attacks" characteristicTypeId="bf02-925e-f13e-61d1" value="5"/>
+            <characteristic name="Attacks" characteristicTypeId="bf02-925e-f13e-61d1" value="3"/>
           </characteristics>
         </profile>
         <profile id="864b-f65c-2551-4eae" name="Morkanaut3" hidden="false" profileTypeId="4f8f-111d-cdd9-6db0" profileTypeName="Naut Wound Track">
@@ -11647,8 +11784,8 @@
           <characteristics>
             <characteristic name="Wounds" characteristicTypeId="778a-f7b8-2837-f763" value="1-4"/>
             <characteristic name="Move" characteristicTypeId="32da-e7ed-b56d-4946" value="4&quot;"/>
-            <characteristic name="WS" characteristicTypeId="fea1-f00e-c05b-191a" value="4+"/>
-            <characteristic name="Attacks" characteristicTypeId="bf02-925e-f13e-61d1" value="4"/>
+            <characteristic name="WS" characteristicTypeId="fea1-f00e-c05b-191a" value="5+"/>
+            <characteristic name="Attacks" characteristicTypeId="bf02-925e-f13e-61d1" value="2"/>
           </characteristics>
         </profile>
       </profiles>
@@ -11933,7 +12070,7 @@
           <characteristics>
             <characteristic name="Wounds" characteristicTypeId="778a-f7b8-2837-f763" value="1-4"/>
             <characteristic name="Move" characteristicTypeId="32da-e7ed-b56d-4946" value="4&quot;"/>
-            <characteristic name="WS" characteristicTypeId="fea1-f00e-c05b-191a" value="4+"/>
+            <characteristic name="WS" characteristicTypeId="fea1-f00e-c05b-191a" value="5+"/>
             <characteristic name="Attacks" characteristicTypeId="bf02-925e-f13e-61d1" value="4"/>
           </characteristics>
         </profile>
@@ -12503,7 +12640,38 @@
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
-          <selectionEntryGroups/>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="67a1-6b4a-d2c8-deae" name="Extra Weapon" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9345-a09d-67a0-f814" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="1c22-3b70-d40a-a0ed" name="New EntryLink" hidden="false" targetId="c4df-c43d-08a6-18ab" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="f08d-aeca-5088-46a2" name="New EntryLink" hidden="false" targetId="d13b-ad69-e6a2-d485" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="639e-dd6c-1d64-99b4" name="New EntryLink" hidden="false" targetId="0dc8-66e8-eb75-aa8a" type="selectionEntry">
               <profiles/>
@@ -12691,7 +12859,7 @@
             <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="8"/>
             <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="40"/>
             <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="4"/>
-            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="7"/>
+            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="8"/>
             <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="3+"/>
           </characteristics>
         </profile>
@@ -12922,7 +13090,7 @@
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="021e-64f7-a79c-5965" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba22-ded7-9c31-2b01" type="max"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba22-ded7-9c31-2b01" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -13135,9 +13303,17 @@
           </profiles>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="increment" field="93e9-9b12-42bf-0d75" value="2">
+              <repeats>
+                <repeat field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93e9-9b12-42bf-0d75" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93e9-9b12-42bf-0d75" type="max"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="3d20-c355-b182-f5f3" name="New CategoryLink" hidden="false" targetId="6997-d0c2-680e-fe18" primary="false">
@@ -13496,7 +13672,7 @@
               <modifiers>
                 <modifier type="increment" field="cbf2-58a6-d06c-74b6" value="1">
                   <repeats>
-                    <repeat field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="5bcd-2f69-1bb9-070d" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -13609,6 +13785,36 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5a1a-e62f-5896-dca6" name="Power Stabba" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="26e0-b01f-b3cc-173b" name="Power Stabba" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="Melee"/>
+            <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
+            <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="User"/>
+            <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-2"/>
+            <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+            <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="-"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="3.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="cb1c-c83b-5adb-5663" name="Power of the WAAAGH!" book="Xenos 2" hidden="false" collective="false">
@@ -13619,7 +13825,7 @@
       <constraints/>
       <categoryLinks/>
       <selectionEntries>
-        <selectionEntry id="fd8d-73b0-e0bf-903a" name="&apos;Eadbanger" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="fd8d-73b0-e0bf-903a" name="1. &apos;Eadbanger" hidden="false" collective="false" type="upgrade">
           <profiles>
             <profile id="469d-d92e-4b8c-0cd4" name="&apos;Eadbanger" book="Xenos 2" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
               <profiles/>
@@ -13649,7 +13855,7 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="24e8-a60a-d622-269b" name="Warpath" book="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="24e8-a60a-d622-269b" name="2. Warpath" book="" hidden="false" collective="false" type="upgrade">
           <profiles>
             <profile id="3013-8aa0-8c9d-fcfe" name="Warpath" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
               <profiles/>
@@ -13679,7 +13885,7 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3e56-50cf-0d84-dba5" name="Da Jump" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="3e56-50cf-0d84-dba5" name="3. Da Jump" hidden="false" collective="false" type="upgrade">
           <profiles>
             <profile id="5662-d24e-6029-6692" name="Da Jump" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
               <profiles/>
@@ -13689,7 +13895,7 @@
               <characteristics>
                 <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="7"/>
                 <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value=""/>
-                <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="9&quot;"/>
+                <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="6&quot;"/>
                 <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Select a friendly ORK INFANTRY unit within 6&quot; of the psyker.  Remove this unit from the battlefield, and then set it up anywhere on the battlefield more than 9&quot; from any enemy models.  This unit counts as having moved for the purposes of any rules (e.g. firing Heavy Weapons)."/>
               </characteristics>
             </profile>
@@ -13875,14 +14081,14 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="de72-9941-3d27-44e9" name="&apos;Ere We Go!" book="Xenos 2" hidden="false">
+    <rule id="de72-9941-3d27-44e9" name="&apos;Ere We Go!" book="Xenos 2" page="10" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit with this ability can re-rol failed charge rolls</description>
     </rule>
-    <rule id="ad32-a248-a392-3d4a" name="Mob Rule" book="Xenos 2" hidden="false">
+    <rule id="ad32-a248-a392-3d4a" name="Mob Rule" book="Xenos 2" page="10" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14023,7 +14229,7 @@
         <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="5&quot;"/>
         <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="3+"/>
         <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="5+"/>
-        <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="5"/>
+        <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="4"/>
         <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="4"/>
         <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="1"/>
         <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="2"/>
@@ -14054,7 +14260,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models embarked on this model can attack in their Shooting phase. Measure the range and draw line of sight from any point on this model.  When they do so, any restrictions or modifiers that apply to this model also apply to its passengers; for example, the passengers cannot shoot if this model has Fallen Back in the sam turn, cannot shoot (except with Pistols) if this model is within 1&quot; of an enemy unit, and so on."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models embarked on this model can attack in their Shooting phase. Measure the range and draw line of sight from any point on this model.  When they do so, any restrictions or modifiers that apply to this model also apply to its passengers; for example, the passengers cannot shoot if this model has Fallen Back in the same turn, cannot shoot (except with Pistols) if this model is within 1&quot; of an enemy unit, and so on."/>
       </characteristics>
     </profile>
     <profile id="b66c-48f7-6cfc-8217" name="Explodes" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
@@ -14072,7 +14278,7 @@
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Each time this model moves, first pivot it on the spot up to 90 degrees (this does not contribute to how far the model moves), and then move the model straight fowards, Note that it cannot pivot again after the initial pivot.  when the model Advances, instead increase its Move characteristic by 20&quot; until the end of the phase - do not roll a dice."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Each time this model moves, first pivot it on the spot up to 90 degrees (this does not contribute to how far the model moves), and then move the model straight fowards, Note that it cannot pivot again after the initial pivot.  when the model Advances, increase its Move characteristic by 20&quot; until the end of the phase - do not roll a dice."/>
       </characteristics>
     </profile>
     <profile id="0358-d920-32c7-3e8c" name="Artillery" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
@@ -14127,6 +14333,15 @@
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Friendly ORK INFANTRY units within 6&quot; of this model at the start of the Charge phase can charge even if they Advanced this turn."/>
+      </characteristics>
+    </profile>
+    <profile id="9649-855b-5c2e-57da" name="Big Bike Mekaniak" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="At the end of your Movement phase, if it didn&apos;t move more than 6&quot;, this model can repair a single friendly &lt;Clan&gt; VEHICLE (other than models that can FLY) within 1&quot;.  That model regains D3 wounds lost earlier in the battle.  A vehicle can only be repaired once each turn."/>
       </characteristics>
     </profile>
   </sharedProfiles>
