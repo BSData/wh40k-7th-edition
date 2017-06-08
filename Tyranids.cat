@@ -584,7 +584,7 @@
             <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="5"/>
             <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="6"/>
             <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="6"/>
-            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="1"/>
+            <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="10"/>
             <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="4+/5++"/>
           </characteristics>
         </profile>
@@ -848,17 +848,63 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="15d0-a1e4-5f68-4cb4" name="Arm Weapons" hidden="false" collective="false" defaultSelectionEntryId="8ce6-1125-1cbc-960e">
+            <selectionEntryGroup id="15d0-a1e4-5f68-4cb4" name="Arm Weapons" hidden="false" collective="false">
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="ddc8-2bd6-560c-0f67" value="1">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="ea64-43e5-1c8c-968c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47c8-9111-24e8-70f7" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="9d8c-40b8-33c6-7297" value="1">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="ea64-43e5-1c8c-968c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47c8-9111-24e8-70f7" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddc8-2bd6-560c-0f67" type="min"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d8c-40b8-33c6-7297" type="max"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="47c8-9111-24e8-70f7" name="2x Monstrous Scything Talons" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="121d-79c0-2bf0-a765" name="New InfoLink" hidden="false" targetId="50eb-e431-8604-7297" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" field="ecca-bbee-c34b-a43c" value="0.0">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecca-bbee-c34b-a43c" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="103d-a3ba-49bc-4dd6" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="41.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
                 <entryLink id="8ce6-1125-1cbc-960e" name="New EntryLink" hidden="false" targetId="086e-c796-ac9a-a766" type="selectionEntry">
@@ -867,7 +913,7 @@
                   <infoLinks/>
                   <modifiers/>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f50b-bda8-ecff-c845" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f50b-bda8-ecff-c845" type="max"/>
                   </constraints>
                   <categoryLinks/>
                 </entryLink>
@@ -2357,17 +2403,63 @@ Each time a spore mine launcher missed its target, set up a single Spore Mine mo
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5473-83d6-43bd-b72b" name="Weapons" hidden="false" collective="false" defaultSelectionEntryId="5243-0730-f957-9726">
+        <selectionEntryGroup id="5473-83d6-43bd-b72b" name="Weapons" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="38bc-9b1f-18f6-8679" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="add7-3535-a4cd-9ba5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c500-3538-0be8-e390" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="99f9-0f8d-9af8-3574" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="add7-3535-a4cd-9ba5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c500-3538-0be8-e390" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38bc-9b1f-18f6-8679" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99f9-0f8d-9af8-3574" type="max"/>
           </constraints>
           <categoryLinks/>
-          <selectionEntries/>
+          <selectionEntries>
+            <selectionEntry id="c500-3538-0be8-e390" name="2x Monstrous Scything Talons" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="55ce-1d6b-0d5b-0a90" name="New InfoLink" hidden="false" targetId="50eb-e431-8604-7297" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="e3bb-6d1d-c70c-ad50" value="0.0">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3bb-6d1d-c70c-ad50" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f7e-b620-b43e-36b5" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="41.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks>
             <entryLink id="5243-0730-f957-9726" name="New EntryLink" hidden="false" targetId="086e-c796-ac9a-a766" type="selectionEntry">
@@ -2376,7 +2468,7 @@ Each time a spore mine launcher missed its target, set up a single Spore Mine mo
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b51-371d-16ab-86df" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b51-371d-16ab-86df" type="max"/>
               </constraints>
               <categoryLinks/>
             </entryLink>
@@ -4499,7 +4591,7 @@ Each time a spore node misses its target, set up a single Mucolid Spore or a uni
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Remaining W" characteristicTypeId="b727-51df-e04a-19d7" value="8-14+"/>
+            <characteristic name="Remaining W" characteristicTypeId="b727-51df-e04a-19d7" value="4-7"/>
             <characteristic name="Movement" characteristicTypeId="d77f-9965-665b-2d01" value="6&quot;"/>
             <characteristic name="WS" characteristicTypeId="a29c-7b92-a163-2f4f" value="5+"/>
             <characteristic name="BS" characteristicTypeId="dad3-29bb-36d1-1a83" value="5+"/>
@@ -4547,7 +4639,7 @@ Each time a spore node misses its target, set up a single Mucolid Spore or a uni
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>At the end of your Movement phase, a Tervigon can spawn Termagants. If it does do add a new unit of 10 Termagants to your army and set it up on the battlefield so that it is wholly within 6&quot; of the Tervigon and more than 1&quot; from the enemy. All of these models are armed with fleshborers. Alternatively, you can replace up to 10 models lost earlier in the battle in an existing unit of Termagants from your army that is within 6&quot; of the Tervigon. Models placed in this way must be within 6&quot; of the Tervigon and more than 1&quot; from the enemy. You can only replace models armed with fleshborers. If you cannot place some of the models the excess is discarded.</description>
+          <description>At the end of your Movement phase, a Tervigon can spawn Termagants. If it does so add a new unit of 10 Termagants to your army and set it up on the battlefield so that it is wholly within 6&quot; of the Tervigon and more than 1&quot; from the enemy. All of these models are armed with fleshborers. Alternatively, you can replace up to 10 models lost earlier in the battle in an existing unit of Termagants from your army that is within 6&quot; of the Tervigon. Models placed in this way must be within 6&quot; of the Tervigon and more than 1&quot; from the enemy. You can only replace models armed with fleshborers. If you cannot place some of the models the excess is discarded.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -5481,7 +5573,20 @@ Each time a spore node misses its target, set up a single Mucolid Spore or a uni
     <selectionEntry id="8ffc-a0f3-766e-8ae4" name="Tyranid Warriors" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="11f3-5276-6020-0573" name="New InfoLink" hidden="false" targetId="dc08-d8b4-b54d-0a5d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6c9d-d6e4-7df6-0339" name="New InfoLink" hidden="false" targetId="d5cd-09ed-3e9a-6ab4" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers>
         <modifier type="increment" field="e356-c769-5920-6e14" value="5">
           <repeats/>
@@ -5727,7 +5832,7 @@ Each time a spore node misses its target, set up a single Mucolid Spore or a uni
           <characteristics>
             <characteristic name="Remaining W" characteristicTypeId="1a36-2b68-6e1d-4ecb" value="1-3"/>
             <characteristic name="Movement" characteristicTypeId="fe5a-59e4-1117-703b" value="2&quot;"/>
-            <characteristic name="Strength" characteristicTypeId="2385-0863-398c-7eb6" value="4"/>
+            <characteristic name="Strength" characteristicTypeId="2385-0863-398c-7eb6" value="3"/>
             <characteristic name="Attacks" characteristicTypeId="67e3-9763-92a9-3894" value="1"/>
           </characteristics>
         </profile>
@@ -6644,7 +6749,7 @@ Any models that are inside the Tyrannocyte must immediately disembark in the sam
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>During deployment, you can set up Deathleaper in hunt of a victim instead of placing iton the battlefield. If you do so, at the start of the first battle round but before the first turn begins, pick an enemy CHARACTER from the opposing army. At the end of any of your Movement phases Deathleaper can pounce upon it victim - set it up anywhere on the battlefield that is within 6&quot; of the enemy CHARACTER that you chose, but more than 1&quot; away from any enemy models.</description>
+          <description>During deployment, you can set up Deathleaper in hunt of a victim instead of placing iton the battlefield. If you do so, at the start of the first battle round but before the first turn begins, pick an enemy CHARACTER from the opposing army. At the end of any of your Movement phases Deathleaper can pounce upon its victim - set it up anywhere on the battlefield that is within 6&quot; of the enemy CHARACTER that you chose, but more than 1&quot; away from any enemy models.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -8585,33 +8690,17 @@ Each time a spore mine launcher missed its target, set up a single Spore Mine mo
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="increment" field="points" value="14">
+        <modifier type="set" field="points" value="14">
           <repeats/>
           <conditions>
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea64-43e5-1c8c-968c" type="instanceOf"/>
           </conditions>
           <conditionGroups/>
         </modifier>
-        <modifier type="decrement" field="points" value="4">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea64-43e5-1c8c-968c" type="instanceOf"/>
-            <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="086e-c796-ac9a-a766" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="increment" field="points" value="31">
+        <modifier type="set" field="points" value="31">
           <repeats/>
           <conditions>
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="add7-3535-a4cd-9ba5" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="decrement" field="points" value="10.5">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="add7-3535-a4cd-9ba5" type="instanceOf"/>
-            <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="086e-c796-ac9a-a766" type="equalTo"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -9207,17 +9296,32 @@ Each time a spore mine launcher missed its target, set up a single Spore Mine mo
       <modifiers/>
       <constraints/>
       <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="adbe-1c70-b952-de9a" name="New EntryLink" hidden="false" targetId="2b06-87d5-7b1e-8d82" type="selectionEntry">
+      <selectionEntries>
+        <selectionEntry id="21ef-1c96-dfff-4032" name="Scything Talons" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
-          <infoLinks/>
+          <infoLinks>
+            <infoLink id="406f-b820-1dc6-a613" name="New InfoLink" hidden="false" targetId="57c8-5ab6-1d28-8433" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
           <modifiers/>
           <constraints/>
           <categoryLinks/>
-        </entryLink>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
         <entryLink id="02ca-6071-40d0-e0b0" name="New EntryLink" hidden="false" targetId="42fd-353d-bc2a-ef69" type="selectionEntry">
           <profiles/>
           <rules/>
