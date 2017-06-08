@@ -1763,7 +1763,7 @@
       <modifiers>
         <modifier type="increment" field="e356-c769-5920-6e14" value="5">
           <repeats>
-            <repeat field="selections" scope="2372-6e48-e202-af38" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="true"/>
+            <repeat field="selections" scope="2372-6e48-e202-af38" value="10.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="true"/>
           </repeats>
           <conditions/>
           <conditionGroups/>
@@ -1771,7 +1771,7 @@
         <modifier type="decrement" field="e356-c769-5920-6e14" value="5">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="2372-6e48-e202-af38" value="9.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+            <condition field="selections" scope="2372-6e48-e202-af38" value="9.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -1822,7 +1822,7 @@
         </categoryLink>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="f433-dd3b-1c98-e863" name="Bloodletter" hidden="false" collective="true" type="model">
+        <selectionEntry id="f433-dd3b-1c98-e863" name="Bloodletter" hidden="false" collective="false" type="model">
           <profiles>
             <profile id="79e8-01d0-21c5-29ec" name="Bloodletter" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
               <profiles/>
@@ -1846,8 +1846,8 @@
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="29.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8123-6581-5244-69f4" type="max"/>
-            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6abe-9d8b-e7fb-0908" type="min"/>
+            <constraint field="selections" scope="parent" value="29.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8123-6581-5244-69f4" type="max"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6abe-9d8b-e7fb-0908" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -1891,8 +1891,8 @@
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb57-5cb0-f21d-32fc" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6d7-d047-6ca6-e07b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cb57-5cb0-f21d-32fc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d6d7-d047-6ca6-e07b" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -2221,15 +2221,7 @@
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks>
-        <categoryLink id="5635-2448-818b-8767" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -2262,15 +2254,7 @@
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks>
-        <categoryLink id="c004-7880-5a52-758f" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -2613,6 +2597,13 @@
           <conditions/>
           <conditionGroups/>
         </modifier>
+        <modifier type="decrement" field="e356-c769-5920-6e14" value="5">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="6c6c-e019-3c06-618d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
       <constraints/>
       <categoryLinks>
@@ -2735,7 +2726,7 @@
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
-        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2329-ec62-3a2f-2e14" name="Herald of Khorne" page="0" hidden="false" collective="false" type="model">
@@ -2863,7 +2854,7 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="10:"/>
+            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="10&quot;"/>
             <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="2+"/>
             <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="-"/>
             <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="5"/>
@@ -3530,15 +3521,7 @@
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks>
-        <categoryLink id="40a3-9679-f657-f0a9" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -4163,7 +4146,7 @@
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="147.0"/>
-        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="7.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="09e4-fd54-3f3a-418e" name="Skulltaker" page="0" hidden="false" collective="false" type="model">
@@ -7150,13 +7133,6 @@
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="3342-6496-47c9-32b1" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="1cc7-585f-b424-f890" name="New CategoryLink" hidden="false" targetId="ef18-746a-369f-43a4" primary="false">
           <profiles/>
           <rules/>
@@ -7221,6 +7197,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="6676-aa48-7bc5-975f" name="New CategoryLink" hidden="false" targetId="4407-2aa1-2a62-c1dc" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="626a-b042-a6f1-80d9" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7330,6 +7313,11 @@
           <infoLinks/>
           <modifiers>
             <modifier type="set" field="e356-c769-5920-6e14" value="0.0">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="points" value="0.0">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -7508,7 +7496,7 @@
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="11e5-62b4-7039-cf54" name="Plaguesword" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="11e5-62b4-7039-cf54" name="Plaguesword" hidden="false" collective="true" type="upgrade">
       <profiles>
         <profile id="c7e1-3b60-3e88-3674" name="Plaguesword" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
           <profiles/>
@@ -8041,7 +8029,7 @@
         </categoryLink>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1b58-8d3e-d92f-d660" name="Plaguebearer" hidden="false" collective="true" type="model">
+        <selectionEntry id="1b58-8d3e-d92f-d660" name="Plaguebearer" hidden="false" collective="false" type="model">
           <profiles>
             <profile id="8054-623c-6661-4d41" name="Plaguebearer" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
               <profiles/>
@@ -8219,13 +8207,6 @@
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="5232-9523-4feb-a3b9" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="3c5c-181f-b051-3dab" name="New CategoryLink" hidden="false" targetId="7892-58f7-e769-4d87" primary="false">
           <profiles/>
           <rules/>
@@ -8255,6 +8236,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="b0e6-7639-b0b3-520b" name="New CategoryLink" hidden="false" targetId="dfc5-aa04-9546-1b4c" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="a916-ccb8-d351-58b1" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10014,7 +10002,7 @@
         </categoryLink>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="5ccc-9c5a-bcac-46fe" name="Daemonette" hidden="false" collective="true" type="model">
+        <selectionEntry id="5ccc-9c5a-bcac-46fe" name="Daemonette" hidden="false" collective="false" type="model">
           <profiles>
             <profile id="808a-9dca-d9c3-958d" name="Daemonette" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
               <profiles/>
@@ -10211,13 +10199,6 @@
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="6437-d94e-7e0f-33bd" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="a4b1-1376-7d70-bc56" name="New CategoryLink" hidden="false" targetId="7892-58f7-e769-4d87" primary="false">
           <profiles/>
           <rules/>
@@ -10240,6 +10221,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="1969-3155-6629-f083" name="New CategoryLink" hidden="false" targetId="1da2-76db-f76f-6b6c" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="f342-4076-9ad9-0e28" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10783,7 +10771,7 @@
       <modifiers>
         <modifier type="increment" field="e356-c769-5920-6e14" value="5">
           <repeats>
-            <repeat field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="true"/>
+            <repeat field="selections" scope="2672-8419-33c0-5026" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="true"/>
           </repeats>
           <conditions/>
           <conditionGroups/>
@@ -10835,7 +10823,7 @@
         </categoryLink>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="b0d8-1449-c491-42c0" name="Seeker" hidden="false" collective="true" type="model">
+        <selectionEntry id="b0d8-1449-c491-42c0" name="Seeker" hidden="false" collective="false" type="model">
           <profiles>
             <profile id="695e-fb56-8f06-88e9" name="Seeker" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
               <profiles/>
@@ -10877,7 +10865,7 @@
           </entryLinks>
           <costs>
             <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-            <cost name="pts" costTypeId="points" value="20.0"/>
+            <cost name="pts" costTypeId="points" value="19.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c6c6-c362-73d3-267c" name="Heartseeker" hidden="false" collective="false" type="model">
