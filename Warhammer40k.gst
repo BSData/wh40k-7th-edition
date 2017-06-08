@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="86de-271f-f574-d94f" name="Warhammer 40,000 8th Edition" revision="7" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="86de-271f-f574-d94f" name="Warhammer 40,000 8th Edition" revision="8" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -6153,6 +6153,31 @@
         <cost name="pts" costTypeId="points" value="13.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="809c-0d19-bb12-fe94" name="Psyk-Out Grenades" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="1afc-16ed-8a41-930f" name="New InfoLink" hidden="false" targetId="9873-9487-e878-7e93" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4db-9bcd-56a2-4cc4" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f84-bcd0-733e-5a32" type="min"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="ad42-921f-358f-2970" name="Obstacles List" hidden="false" collective="false">
@@ -9338,6 +9363,20 @@ When charging a unit of the opposite side of a defence line, the charge is succe
         <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
         <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="3"/>
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="When a model attacks with this weapon, you must subtract 1 from the hitt roll."/>
+      </characteristics>
+    </profile>
+    <profile id="9873-9487-e878-7e93" name="Psyk-Out Grenades" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="6&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Grenade D3"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="2"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="0"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="Each time you roll a hit roll of 6+ for this weapon when targeting a PSYKER or DAEMON, the target suffers a mortal wound instead of the normal damage."/>
       </characteristics>
     </profile>
   </sharedProfiles>
