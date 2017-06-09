@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="86de-271f-f574-d94f" name="Warhammer 40,000 8th Edition" revision="9" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="86de-271f-f574-d94f" name="[Alpha] Warhammer 40,000 8th Edition" revision="9" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -307,6 +307,13 @@
       <constraints/>
     </categoryEntry>
     <categoryEntry id="3263-4233-4344-6228" name="Astra Militarum" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="298f-d173-2159-919f" name="Primarch" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
