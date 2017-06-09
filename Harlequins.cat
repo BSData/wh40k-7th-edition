@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6780-f411-7343-cdf2" name="Harlequins" revision="3" battleScribeVersion="2.01" authorName="Peter Zaitcev / USSX Hares" authorContact="USSX.Hares@yandex.ru" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6780-f411-7343-cdf2" name="Harlequins" revision="4" battleScribeVersion="2.01" authorName="Peter Zaitcev / USSX Hares" authorContact="USSX.Hares@yandex.ru" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -715,13 +715,13 @@
               <infoLinks/>
               <modifiers/>
             </infoLink>
-            <infoLink id="11ae-eecd-c33b-9b03" name="New InfoLink" hidden="false" targetId="86a8-5c65-d40b-d0a6" type="rule">
+            <infoLink id="11ae-eecd-c33b-9b03" name="New InfoLink" hidden="false" targetId="86a8-5c65-d40b-d0a6" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
             </infoLink>
-            <infoLink id="8c5b-bf96-9fb8-014f" name="New InfoLink" hidden="false" targetId="74fb-ab0a-0ef5-ce0d" type="rule">
+            <infoLink id="8c5b-bf96-9fb8-014f" name="New InfoLink" hidden="false" targetId="74fb-ab0a-0ef5-ce0d" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -898,24 +898,25 @@
             <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="6+/4++"/>
           </characteristics>
         </profile>
-      </profiles>
-      <rules>
-        <rule id="a6d4-97f4-e94d-42ef" name="Choreographer of War" book="Warhammer 40,000: Index: Xenos Vol 1" page="70" hidden="false">
+        <profile id="a6d4-97f4-e94d-42ef" name="Choreographer of War" book="Warhammer 40,000: Index: Xenos Vol 1" page="70" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>All friendly MASQUE units that are within 6&quot; of this model in the Fight phase can re-roll failed wound rolls</description>
-        </rule>
-      </rules>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="All friendly MASQUE units that are within 6&quot; of this model in the Fight phase can re-roll failed wound rolls"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
       <infoLinks>
-        <infoLink id="8077-2f8a-3977-aedf" name="New InfoLink" hidden="false" targetId="74fb-ab0a-0ef5-ce0d" type="rule">
+        <infoLink id="8077-2f8a-3977-aedf" name="New InfoLink" hidden="false" targetId="74fb-ab0a-0ef5-ce0d" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="59b3-4d1b-2448-6839" name="New InfoLink" hidden="false" targetId="86a8-5c65-d40b-d0a6" type="rule">
+        <infoLink id="59b3-4d1b-2448-6839" name="New InfoLink" hidden="false" targetId="86a8-5c65-d40b-d0a6" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1077,7 +1078,10 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1cc-e6be-4b3f-9ca8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36a7-11a1-1066-4037" type="max"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -1105,25 +1109,28 @@
             <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="6+/3++"/>
           </characteristics>
         </profile>
+        <profile id="d8e1-d702-5c4a-d0f0" name="Blitz" book="Warhammer 40,000: Index: Xenos Vol 1" page="71" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Once per battle, instead of making a normal move with the Solitaire, you can make a Blitz move with it. If you do so, add 2D6&quot; to the model&apos;s Move characteristic for this turn. In addition, the model&apos;s Attack characteristic is increased to 10 for the rest of the turn. This ability may not be used if the model has been selected as the target of the &quot;Twilight Pathways&quot; psychic power in the previous Psychic Phase."/>
+          </characteristics>
+        </profile>
+        <profile id="488e-748a-f100-134a" name="Impossible Form" book="Warhammer 40,000: Index: Xenos Vol 1" page="71" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="The Solitaire has a 3+ invulnerable save."/>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule id="d8e1-d702-5c4a-d0f0" name="Blitz" book="Warhammer 40,000: Index: Xenos Vol 1" page="71" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Once per battle, instead of making a normal move with the Solitaire, you can make a Blitz move with it. If you do so, add 2D6&quot; to the model&apos;s Move characteristic for this turn. In addition, the model&apos;s Attack characteristic is increased to 10 for the rest of the turn. This ability may not be used if the model has been selected as the target of the &quot;Twilight Pathways&quot; psychic power in the previous Psychic Phase.</description>
-        </rule>
-        <rule id="488e-748a-f100-134a" name="Impossible Form" book="Warhammer 40,000: Index: Xenos Vol 1" page="71" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>The Solitaire has a 3+ invulnerable save.</description>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks>
-        <infoLink id="cd04-63e2-61a5-3913" name="New InfoLink" hidden="false" targetId="74fb-ab0a-0ef5-ce0d" type="rule">
+        <infoLink id="cd04-63e2-61a5-3913" name="New InfoLink" hidden="false" targetId="74fb-ab0a-0ef5-ce0d" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1243,24 +1250,25 @@
             <characteristic name="Description" characteristicTypeId="5afb-9914-904b-d3b3" value="This model can attempt to manifest two psychic powers in each friendly Psychic phase, and attempt to deny one psychic power in each enemy Psychic phase. It knows &quot;Smite&quot; power and one psychic power from the Phantasmancy discipline (pg.68)."/>
           </characteristics>
         </profile>
-      </profiles>
-      <rules>
-        <rule id="40eb-d804-2b98-db00" name="Shield from Harm" book="Warhammer 40,000: Index: Xenos Vol 1" page="71" hidden="false">
+        <profile id="40eb-d804-2b98-db00" name="Shield from Harm" book="Warhammer 40,000: Index: Xenos Vol 1" page="71" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Your opponent must subtract 1 from the wound rolls for any attack made against this model, and for attacks against any friendly MASQUE INFANTRY units that are within 6&quot; of one or more models with this ability.</description>
-        </rule>
-      </rules>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Your opponent must subtract 1 from the wound rolls for any attack made against this model, and for attacks against any friendly MASQUE INFANTRY units that are within 6&quot; of one or more models with this ability."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
       <infoLinks>
-        <infoLink id="0d73-520c-38f2-26d8" name="New InfoLink" hidden="false" targetId="74fb-ab0a-0ef5-ce0d" type="rule">
+        <infoLink id="0d73-520c-38f2-26d8" name="New InfoLink" hidden="false" targetId="74fb-ab0a-0ef5-ce0d" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="7c88-af4b-ee5a-7d31" name="New InfoLink" hidden="false" targetId="86a8-5c65-d40b-d0a6" type="rule">
+        <infoLink id="7c88-af4b-ee5a-7d31" name="New InfoLink" hidden="false" targetId="86a8-5c65-d40b-d0a6" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1408,31 +1416,34 @@
             <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="6+/4++"/>
           </characteristics>
         </profile>
+        <profile id="b974-3c5b-f440-85ab" name="Deadly Hunter" book="Warhammer 40,000: Index: Xenos Vol 1" page="70" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This model may target a CHARACTER even if it is not the closest enemy unit."/>
+          </characteristics>
+        </profile>
+        <profile id="bdb0-7924-42e5-9a49" name="Death is Not Enough" book="Warhammer 40,000: Index: Xenos Vol 1" page="70" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If any models flee from a unit in the same turn that it has been attacked by this model, then you can choose the first model that flees instead of your opponent choosing."/>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule id="b974-3c5b-f440-85ab" name="Deadly Hunter" book="Warhammer 40,000: Index: Xenos Vol 1" page="70" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>This model may target a CHARACTER even if it is not the closest enemy unit.</description>
-        </rule>
-        <rule id="bdb0-7924-42e5-9a49" name="Death is Not Enough" book="Warhammer 40,000: Index: Xenos Vol 1" page="70" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>If any models flee from a unit in the same turn that it has been attacked by this model, then you can choose the first model flees instead of your opponent choosing.</description>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks>
-        <infoLink id="87e9-ee3d-85c3-34de" name="New InfoLink" hidden="false" targetId="74fb-ab0a-0ef5-ce0d" type="rule">
+        <infoLink id="87e9-ee3d-85c3-34de" name="New InfoLink" hidden="false" targetId="74fb-ab0a-0ef5-ce0d" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="4da4-b903-5a73-c3fe" name="New InfoLink" hidden="false" targetId="86a8-5c65-d40b-d0a6" type="rule">
+        <infoLink id="4da4-b903-5a73-c3fe" name="New InfoLink" hidden="false" targetId="86a8-5c65-d40b-d0a6" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1542,31 +1553,31 @@
       </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="4dbc-61d8-fa77-0d30" name="New InfoLink" hidden="false" targetId="847b-aed6-3531-adb1" type="rule">
+        <infoLink id="4dbc-61d8-fa77-0d30" name="New InfoLink" hidden="false" targetId="847b-aed6-3531-adb1" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="e8aa-e4af-31d9-8358" name="New InfoLink" hidden="false" targetId="8210-8f73-bf99-5b97" type="rule">
+        <infoLink id="e8aa-e4af-31d9-8358" name="New InfoLink" hidden="false" targetId="8210-8f73-bf99-5b97" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="7678-44d7-1e4e-824b" name="New InfoLink" hidden="false" targetId="cf69-4ca7-8cba-2f16" type="rule">
+        <infoLink id="7678-44d7-1e4e-824b" name="New InfoLink" hidden="false" targetId="cf69-4ca7-8cba-2f16" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="8da7-f96f-4c0c-9511" name="New InfoLink" hidden="false" targetId="046c-9565-b216-87c7" type="rule">
+        <infoLink id="8da7-f96f-4c0c-9511" name="New InfoLink" hidden="false" targetId="046c-9565-b216-87c7" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="8969-864f-f08f-e753" name="New InfoLink" hidden="false" targetId="1fde-5ed2-74f7-f766" type="rule">
+        <infoLink id="8969-864f-f08f-e753" name="New InfoLink" hidden="false" targetId="1fde-5ed2-74f7-f766" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1650,25 +1661,25 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="aa07-15a7-97a9-a7d1" name="New InfoLink" hidden="false" targetId="847b-aed6-3531-adb1" type="rule">
+        <infoLink id="aa07-15a7-97a9-a7d1" name="New InfoLink" hidden="false" targetId="847b-aed6-3531-adb1" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="dde4-9199-b077-4982" name="New InfoLink" hidden="false" targetId="8210-8f73-bf99-5b97" type="rule">
+        <infoLink id="dde4-9199-b077-4982" name="New InfoLink" hidden="false" targetId="8210-8f73-bf99-5b97" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="906c-e2d1-e42a-b701" name="New InfoLink" hidden="false" targetId="046c-9565-b216-87c7" type="rule">
+        <infoLink id="906c-e2d1-e42a-b701" name="New InfoLink" hidden="false" targetId="046c-9565-b216-87c7" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="ee3b-0a87-40d1-9831" name="New InfoLink" hidden="false" targetId="1fde-5ed2-74f7-f766" type="rule">
+        <infoLink id="ee3b-0a87-40d1-9831" name="New InfoLink" hidden="false" targetId="1fde-5ed2-74f7-f766" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1827,19 +1838,19 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="6f0d-4b64-2796-1200" name="New InfoLink" hidden="false" targetId="1fde-5ed2-74f7-f766" type="rule">
+        <infoLink id="6f0d-4b64-2796-1200" name="New InfoLink" hidden="false" targetId="1fde-5ed2-74f7-f766" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="565b-b162-3806-0c32" name="New InfoLink" hidden="false" targetId="046c-9565-b216-87c7" type="rule">
+        <infoLink id="565b-b162-3806-0c32" name="New InfoLink" hidden="false" targetId="046c-9565-b216-87c7" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="462f-aeae-4e09-0eca" name="New InfoLink" hidden="false" targetId="86a8-5c65-d40b-d0a6" type="rule">
+        <infoLink id="462f-aeae-4e09-0eca" name="New InfoLink" hidden="false" targetId="86a8-5c65-d40b-d0a6" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2020,20 +2031,6 @@
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups/>
   <sharedRules>
-    <rule id="8210-8f73-bf99-5b97" name="Explodes" book="Warhammer 40,000: Index: Xenos Vol 1" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield and before any embarked models disembark. On a 6 it explodes, and each unit within 6&quot; suffers 1 mortal wound.</description>
-    </rule>
-    <rule id="847b-aed6-3531-adb1" name="Holo-fields" book="Warhammer 40,000: Index: Xenos Vol 1" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Models in this unit have a 4+ Invulnerable save.</description>
-    </rule>
     <rule id="a32c-8b04-88f0-c716" name="Rising Cresendo" book="Warhammer 40,000: Index: Xenos Vol 1" page="68" hidden="false">
       <profiles/>
       <rules/>
@@ -2041,43 +2038,70 @@
       <modifiers/>
       <description>Units with this ability can Advance and charge in the same turn. In addition, they can Fall Back and then shoot and/or charge in the same turn.</description>
     </rule>
-    <rule id="74fb-ab0a-0ef5-ce0d" name="Flip Belt" book="Warhammer 40,000: Index: Xenos Vol 1" page="" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>This unit can move across models and terrain as if they were not there.</description>
-    </rule>
-    <rule id="86a8-5c65-d40b-d0a6" name="Holo-suit" book="Warhammer 40,000: Index: Xenos Vol 1" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Models in this unit have a 4+ Invulnerable save.</description>
-    </rule>
-    <rule id="046c-9565-b216-87c7" name="Mirage Launchers" book="Warhammer 40,000: Index: Xenos Vol 1" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Your opponent must subtract 1 from any hit rolls made against this unit in the Shooting phase</description>
-    </rule>
-    <rule id="1fde-5ed2-74f7-f766" name="Blur of Colour" book="Warhammer 40,000: Index: Xenos Vol 1" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>When this unit Advances, add 6&quot; to its Move characteristic for that Movement phase instead of rolling a dice.</description>
-    </rule>
-    <rule id="cf69-4ca7-8cba-2f16" name="Open-topped" book="Warhammer 40,000: Index: Xenos Vol 1" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Models embarked on this model can attack in their Shooting phase. Measure the range and draw line of sight from any point on this model. When they do so, any restrictions or modifiers that apply to this model also apply to its passengers; for example, the pasengers cannot shoot if this model has Fallen Back in the same turn and so on, cannot shoot (except with Pistols) if this model is within 1&quot; of an enemy unit, and so on. Note that the passengers cannot shoot if this model Falls Back, even though the vehicle itself can.
-
-</description>
-    </rule>
   </sharedRules>
-  <sharedProfiles/>
+  <sharedProfiles>
+    <profile id="8210-8f73-bf99-5b97" name="Explodes" book="Warhammer 40,000: Index: Xenos Vol 1" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield and before any embarked models disembark. On a 6 it explodes, and each unit within 6&quot; suffers 1 mortal wound."/>
+      </characteristics>
+    </profile>
+    <profile id="847b-aed6-3531-adb1" name="Holo-fields" book="Warhammer 40,000: Index: Xenos Vol 1" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models in this unit have a 4+ Invulnerable save."/>
+      </characteristics>
+    </profile>
+    <profile id="74fb-ab0a-0ef5-ce0d" name="Flip Belt" book="Warhammer 40,000: Index: Xenos Vol 1" page="" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This unit can move across models and terrain as if they were not there."/>
+      </characteristics>
+    </profile>
+    <profile id="86a8-5c65-d40b-d0a6" name="Holo-suit" book="Warhammer 40,000: Index: Xenos Vol 1" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models in this unit have a 4+ Invulnerable save."/>
+      </characteristics>
+    </profile>
+    <profile id="046c-9565-b216-87c7" name="Mirage Launchers" book="Warhammer 40,000: Index: Xenos Vol 1" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Your opponent must subtract 1 from any hit rolls made against this unit in the Shooting phase"/>
+      </characteristics>
+    </profile>
+    <profile id="1fde-5ed2-74f7-f766" name="Blur of Colour" book="Warhammer 40,000: Index: Xenos Vol 1" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="When this unit Advances, add 6&quot; to its Move characteristic for that Movement phase instead of rolling a dice."/>
+      </characteristics>
+    </profile>
+    <profile id="cf69-4ca7-8cba-2f16" name="Open-topped" book="Warhammer 40,000: Index: Xenos Vol 1" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models embarked on this model can attack in their Shooting phase. Measure the range and draw line of sight from any point on this model. When they do so, any restrictions or modifiers that apply to this model also apply to its passengers; for example, the pasengers cannot shoot if this model has Fallen Back in the same turn and so on, cannot shoot (except with Pistols) if this model is within 1&quot; of an enemy unit, and so on. Note that the passengers cannot shoot if this model Falls Back, even though the vehicle itself can."/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
