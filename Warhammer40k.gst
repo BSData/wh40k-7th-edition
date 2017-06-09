@@ -313,6 +313,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="298f-d173-2159-919f" name="Primarch" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="a0c7-2a71-bae0-215d" name="Patrol Detachment" hidden="false">
