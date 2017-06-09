@@ -4665,7 +4665,7 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8699-3820-0f9d-7bbc" name="Tactical Squad" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="8699-3820-0f9d-7bbc" name="Tactical Squad" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -4715,151 +4715,139 @@
           <constraints/>
         </categoryLink>
       </categoryLinks>
-      <selectionEntries/>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="9021-d405-33fa-fcf1" name="Space Marines" hidden="false" collective="false">
+      <selectionEntries>
+        <selectionEntry id="016b-7af9-7482-5348" name="Heavy Weapon Marine" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d56-5301-3440-e71d" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="c57e-c332-89cc-ce74" name="New EntryLink" hidden="false" targetId="026f-f4dc-9e33-cd9d" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bfc-761c-3bba-c436" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c66f-ed06-d4b3-c7ec" type="min"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="e1b3-2b9e-ea9d-9c63" name="New EntryLink" hidden="false" targetId="cddf-945e-1335-e681" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ec0-0d60-9052-5a61" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1829-8501-8949-453c" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="13.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d293-6e85-ee38-a1a7" name="Special Weapon Marine" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5c2-da30-7e1e-c651" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="6bb7-3845-ac80-8c58" name="New EntryLink" hidden="false" targetId="2c8f-1bfe-53a5-1fb3" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d33d-af25-1ece-cd77" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9cc-c883-b60a-0d8b" type="min"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="c675-dfae-e27b-6d56" name="New EntryLink" hidden="false" targetId="cddf-945e-1335-e681" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc55-43a9-20f2-48e8" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f75e-c90b-62c7-09a7" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="13.0"/>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="8433-c6ab-8636-6a38" name="New EntryLink" hidden="false" targetId="8813-4647-edd7-182c" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="decrement" field="dc77-2c0e-bcd5-e252" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="8699-3820-0f9d-7bbc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="016b-7af9-7482-5348" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="decrement" field="7017-06b0-8350-9c56" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="8699-3820-0f9d-7bbc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="016b-7af9-7482-5348" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="decrement" field="7017-06b0-8350-9c56" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="8699-3820-0f9d-7bbc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d293-6e85-ee38-a1a7" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="decrement" field="dc77-2c0e-bcd5-e252" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="8699-3820-0f9d-7bbc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d293-6e85-ee38-a1a7" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc77-2c0e-bcd5-e252" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7017-06b0-8350-9c56" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="bd5c-00f6-2f21-7923" name="New EntryLink" hidden="false" targetId="510a-162c-558b-6e18" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
           <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="736f-babe-b727-3bbf" name="Special Weapon Marine" hidden="false" collective="false" type="model">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b35c-2b1c-5fbc-b900" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks>
-                <entryLink id="7bb4-583f-e052-5d8c" name="New EntryLink" hidden="false" targetId="2c8f-1bfe-53a5-1fb3" type="selectionEntryGroup">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f333-7c74-8fb1-0cae" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd52-b8c0-d18f-7a7e" type="min"/>
-                  </constraints>
-                  <categoryLinks/>
-                </entryLink>
-                <entryLink id="e4e1-3ac3-a048-d89d" name="New EntryLink" hidden="false" targetId="cddf-945e-1335-e681" type="selectionEntry">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f519-1ab7-c392-fa46" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a12d-fa38-e64f-339d" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" costTypeId="points" value="13.0"/>
-                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9411-aa3a-9363-3e75" name="Heavy Weapon Marine" hidden="false" collective="false" type="model">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d08e-fed0-6c68-79d9" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks>
-                <entryLink id="f5e6-cf09-8f1f-9776" name="New EntryLink" hidden="false" targetId="026f-f4dc-9e33-cd9d" type="selectionEntryGroup">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28bf-6851-8813-a4cc" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4fe-4afa-e36f-08ba" type="min"/>
-                  </constraints>
-                  <categoryLinks/>
-                </entryLink>
-                <entryLink id="0fd4-f313-cfea-8119" name="New EntryLink" hidden="false" targetId="cddf-945e-1335-e681" type="selectionEntry">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b693-e320-ea4e-a167" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70ca-e3a1-a427-7663" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" costTypeId="points" value="13.0"/>
-                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="7f7d-f69a-65b7-85b0" name="New EntryLink" hidden="false" targetId="8813-4647-edd7-182c" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="decrement" field="cacc-5905-e256-150f" value="1">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="8699-3820-0f9d-7bbc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9411-aa3a-9363-3e75" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="decrement" field="cfec-d9b8-195b-c792" value="1">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="8699-3820-0f9d-7bbc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736f-babe-b727-3bbf" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="decrement" field="cacc-5905-e256-150f" value="1">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="8699-3820-0f9d-7bbc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="736f-babe-b727-3bbf" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="decrement" field="cfec-d9b8-195b-c792" value="1">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="8699-3820-0f9d-7bbc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9411-aa3a-9363-3e75" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfec-d9b8-195b-c792" type="max"/>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cacc-5905-e256-150f" type="min"/>
-              </constraints>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="2d55-d337-1f72-7f74" name="New EntryLink" hidden="false" targetId="510a-162c-558b-6e18" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="5.0"/>
         <cost name="pts" costTypeId="points" value="0.0"/>
@@ -9579,7 +9567,7 @@
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="When attacking with this weapon, choose on or both of the profiles. If you choose both, substract 1 from the hit roll for this weapon."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="When attacking with this weapon, choose one or both of the profiles. If you choose both, substract 1 from the hit roll for this weapon."/>
               </characteristics>
             </profile>
           </profiles>
@@ -10248,7 +10236,7 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="14&quot;"/>
+            <characteristic name="M" characteristicTypeId="0bdf-a96e-9e38-7779" value="16&quot;"/>
             <characteristic name="WS" characteristicTypeId="e7f0-1278-0250-df0c" value="2+"/>
             <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="2+"/>
             <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="4"/>
@@ -11163,7 +11151,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="6.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="7.0"/>
         <cost name="pts" costTypeId="points" value="117.0"/>
       </costs>
     </selectionEntry>
@@ -11886,7 +11874,10 @@
                   <categoryLinks/>
                 </entryLink>
               </entryLinks>
-              <costs/>
+              <costs>
+                <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -11953,6 +11944,7 @@
       </entryLinks>
       <costs>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f7d2-3349-5960-5356" name="Lighting Claws" hidden="false" collective="false" type="upgrade">
@@ -14052,7 +14044,6 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="6.0"/>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -15670,6 +15661,7 @@
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="50.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c640-9c93-4e48-1c91" name="Techmarine on Bike" hidden="false" collective="false" type="upgrade">
@@ -16547,9 +16539,9 @@
               <modifiers/>
               <characteristics>
                 <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="6"/>
-                <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value=""/>
-                <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
-                <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="typo typo tippy tippy"/>
+                <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Interomancy"/>
+                <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="12&quot;"/>
+                <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If manifested, select an enemy unit within 12&quot; of the psyker. That unit suffers a mortal wound and may only be chosen to attack in the Fight phase after all other eligible units have made their attacks. This effect lasts until the end of your turn."/>
               </characteristics>
             </profile>
           </profiles>
@@ -16577,9 +16569,9 @@
               <modifiers/>
               <characteristics>
                 <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="6"/>
-                <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Librarius"/>
-                <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="12&quot;"/>
-                <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="typo typo tippy tippy"/>
+                <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Interomancy"/>
+                <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+                <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If manifested, select an enemy unit within 24&quot; of the psyker. Until your next Psychic phase, your opponent must subtract 1 from all hit rolls made for that unit."/>
               </characteristics>
             </profile>
           </profiles>
@@ -16606,10 +16598,10 @@
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="8"/>
-                <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Librarius"/>
-                <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
-                <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="typo typo tippy tippy"/>
+                <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="6"/>
+                <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Interomancy"/>
+                <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="6&quot;"/>
+                <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If manifested, your opponent must roll 2 dice and discard the lowest result when taking Morale tests for any unit that is within 6&quot; of the psyker in the Morale phase."/>
               </characteristics>
             </profile>
           </profiles>
