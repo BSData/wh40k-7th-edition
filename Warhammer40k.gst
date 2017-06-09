@@ -7598,7 +7598,7 @@ When charging a unit of the opposite side of a defence line, the charge is succe
         <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Melee"/>
         <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="User"/>
         <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-2"/>
-        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="31"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="1"/>
         <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="You can re-roll failed wound rolls for this weapon. If a model is armed with two lightning claws, each time it fights it can make 1 additional attack with them."/>
       </characteristics>
     </profile>
