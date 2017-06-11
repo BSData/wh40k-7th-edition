@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="86de-271f-f574-d94f" name="[Alpha] Warhammer 40,000 8th Edition" revision="9" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="86de-271f-f574-d94f" name="[Alpha] Warhammer 40,000 8th Edition" revision="10" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -514,14 +514,14 @@
           <constraints/>
           <forceEntries/>
           <categoryLinks>
-             <categoryLink id="8ef3-97b6-69fc-bd6b" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false">
+            <categoryLink id="8ef3-97b6-69fc-bd6b" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-           <categoryLink id="b941-009e-b700-f512" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+            <categoryLink id="b941-009e-b700-f512" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -1005,14 +1005,14 @@
           <constraints/>
           <forceEntries/>
           <categoryLinks>
-             <categoryLink id="3120-2d38-2fe2-ca1a" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false">
+            <categoryLink id="3120-2d38-2fe2-ca1a" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-           <categoryLink id="fadb-d53e-8308-d517" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+            <categoryLink id="fadb-d53e-8308-d517" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -1441,14 +1441,14 @@
           <constraints/>
           <forceEntries/>
           <categoryLinks>
-             <categoryLink id="d689-19e3-5f4f-d9e5" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false">
+            <categoryLink id="d689-19e3-5f4f-d9e5" name="No Force Org Slot" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-           <categoryLink id="97d5-c11b-a1c8-2693" name="New CategoryLink" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="false">
+            <categoryLink id="97d5-c11b-a1c8-2693" name="New CategoryLink" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -7242,6 +7242,50 @@
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd87-854b-d284-184a" name="Lasgun" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="9bc7-673e-b74e-d6b3" name="New InfoLink" hidden="false" targetId="d174-eb55-aaa6-d032" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c10b-e1a4-c913-ae15" name="Laspistol" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="304c-655d-71ac-6b1a" name="New InfoLink" hidden="false" targetId="f2b7-768f-a270-de64" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
