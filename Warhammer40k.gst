@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="86de-271f-f574-d94f" name="[Alpha] Warhammer 40,000 8th Edition" revision="10" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="86de-271f-f574-d94f" name="[Alpha] Warhammer 40,000 8th Edition" revision="11" battleScribeVersion="2.01" authorName="BSData Organisation" authorContact="@BSData" authorUrl="http://battlescribedata.appspot.com/#/repo/wh40k" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -10574,7 +10574,7 @@ When charging a unit of the opposite side of a defence line, the charge is succe
         <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="5"/>
         <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad"/>
         <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
-        <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Smite has a warp charge value of 5. If manifested, the closet visible enemy unit within 18&quot; of the psyker suffers D3 mortal wounds (pg 181). If the result of the Psychic test was more than 10 the target suffers D6 mortal wounds instead."/>
+        <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Smite has a warp charge value of 5. If manifested, the closest visible enemy unit within 18&quot; of the psyker suffers D3 mortal wounds (pg 181). If the result of the Psychic test was more than 10 the target suffers D6 mortal wounds instead."/>
       </characteristics>
     </profile>
     <profile id="1797-9367-d9a5-1014" name="Condemnor Boltgun" book="Index: Imperium 2" page="157" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
