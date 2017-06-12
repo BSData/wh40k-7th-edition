@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="831c-8135-d680-1998" name="Craftworlds" book="Index Xenos 1" revision="7" battleScribeVersion="2.01" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="831c-8135-d680-1998" name="Craftworlds" book="Index Xenos 1" revision="8" battleScribeVersion="2.01" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1714,7 +1714,7 @@
                 <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="4"/>
                 <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
                 <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D3"/>
-                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="This weapon can target enemy CHARACTER even if they are not the closest enemy unit. This weapon wounds on a 2+, unless it is targetting a VEHICLE. Each time you roll a wound roll of 6+ for this weapon, it inflicts a mortal wound in addition to any other damage."/>
+                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="This weapon can target an enemy CHARACTER even if they are not the closest enemy unit. This weapon wounds on a 2+, unless it is targetting a VEHICLE. Each time you roll a wound roll of 6+ for this weapon, it inflicts a mortal wound in addition to any other damage."/>
               </characteristics>
             </profile>
           </profiles>
@@ -2495,7 +2495,7 @@
                 <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="User"/>
                 <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-3"/>
                 <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D3"/>
-                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="You can re-roll failed hit rolls for this weapon."/>
+                <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="You can re-roll failed wound rolls for this weapon."/>
               </characteristics>
             </profile>
           </profiles>
@@ -2604,20 +2604,37 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="b50c-18ec-9597-66ca" name="" hidden="false" targetId="af4b-d622-fbd4-168a" type="selectionEntry">
-          <profiles/>
+        <selectionEntry id="22ab-a3cd-51db-09d1" name="Banshee Mask" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="45df-fec4-d5dc-dbbc" name="Banshee Mask" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Jain Zar always fight first in the Fight phase, even if she didn&apos;t charge. If the enemy has units that have charged, or that have a similar ability, then alternate choosing units to fight with, starting with the player whose turn is taking place."/>
+              </characteristics>
+            </profile>
+          </profiles>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ea0-8d89-71f5-cbd9" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64c6-aa03-e46a-8e85" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b12-cce3-1687-637c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a40c-5f41-31d5-cba0" type="min"/>
           </constraints>
           <categoryLinks/>
-        </entryLink>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
         <entryLink id="a022-311a-e045-b59e" name="" hidden="false" targetId="d500-032f-3861-2d64" type="selectionEntry">
           <profiles/>
           <rules/>
@@ -2794,17 +2811,37 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="f62d-69c8-1048-612f" name="" hidden="false" targetId="001a-1c6b-9904-4983" type="selectionEntry">
-          <profiles/>
+        <selectionEntry id="06a4-6532-2ef1-cf1d" name="Master of Stealth" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="ac5d-f7c4-b8f3-569c" name="Master of Stealth" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="During deployment, you can set up Karandras in the shadows instead of placing him on the battlefield. If you do so, at the end of any of your Movement phases Karandras can stalk from his hiding place. When he does so set him up anywhere on the battlefield that is more than 9&quot; away from any enemy models."/>
+              </characteristics>
+            </profile>
+          </profiles>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3d6-f0fa-bc12-a2bd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5462-2b63-a16c-3e93" type="min"/>
+          </constraints>
           <categoryLinks/>
-        </entryLink>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
         <entryLink id="6b3f-bfec-a3f3-e7bf" name="" hidden="false" targetId="0426-196f-471c-301c" type="selectionEntry">
           <profiles/>
           <rules/>
@@ -2967,7 +3004,7 @@
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="You can re-roll hit rolls of 1 for Fuegan&apos;s ranged weapons, and for those of friendly FIRE DRAGON units within 6&quot;."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="You can re-roll hit rolls of 1 for Fuegan&apos;s ranged weapons, and for those of friendly FIRE DRAGONS units within 6&quot;."/>
               </characteristics>
             </profile>
           </profiles>
@@ -3076,17 +3113,37 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="82f9-6748-3dc6-b123" name="" hidden="false" targetId="1861-9e22-2610-0647" type="selectionEntry">
-          <profiles/>
+        <selectionEntry id="6487-4493-075d-ff9b" name="Assured Destruction" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="ca9f-abd8-421c-5372" name="Assured Destruction" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="You can re-roll wound rolls of 1 in the shooting phase for attacks Fuegan makes that target MONSTERS or VEHICLES."/>
+              </characteristics>
+            </profile>
+          </profiles>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c340-a7f2-abf1-3243" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7159-b801-5a75-8bef" type="min"/>
+          </constraints>
           <categoryLinks/>
-        </entryLink>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
         <entryLink id="26a8-a3d1-6524-f333" name="" hidden="false" targetId="e729-cfce-c61e-de3d" type="selectionEntry">
           <profiles/>
           <rules/>
@@ -3104,17 +3161,11 @@
           </constraints>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="0025-bd25-4fc3-cf51" name="" hidden="false" targetId="8ed2-3e2c-4d52-af79" type="selectionEntry">
+        <entryLink id="0025-bd25-4fc3-cf51" name="" hidden="false" targetId="42d9-2455-ab45-7c17" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="points" value="0.0">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <modifiers/>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -3423,7 +3474,10 @@
               <conditionGroups/>
             </modifier>
           </modifiers>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="204b-beb4-b3c0-0f01" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="860e-c9de-bf2f-854a" type="max"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -4749,7 +4803,7 @@
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Friendly ASURYANI units within 12&quot; of the Avatar of Khaine do not take Moreale test, and you can re-roll failed charge rolls for these units."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Friendly ASURYANI units within 12&quot; of the Avatar of Khaine do not take Morale tests, and you can re-roll failed charge rolls for these units."/>
               </characteristics>
             </profile>
           </profiles>
@@ -6690,7 +6744,7 @@
             <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="1"/>
             <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="1"/>
             <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="7"/>
-            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="3+"/>
+            <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="5+"/>
           </characteristics>
         </profile>
       </profiles>
@@ -10207,7 +10261,7 @@
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="When this unit moves in the Movement phase, they can do so normally or using their warp jump generators. If they use their warp jump generator they cannot Advance or Charge this turn, but their Move characteristic is increased by 4D6&quot; and it can FLY until the end of the phase."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="When this unit moves in the Movement phase, they can do so normally or using their warp jump generators. If they use their warp jump generator they cannot Advance or Charge this turn, but their Move characteristic is increased by 4D6&quot; and they can FLY until the end of the phase."/>
               </characteristics>
             </profile>
           </profiles>
@@ -10281,8 +10335,8 @@
                     <characteristic name="BS" characteristicTypeId="381b-eb28-74c3-df5f" value="3+"/>
                     <characteristic name="S" characteristicTypeId="2218-aa3c-265f-2939" value="3"/>
                     <characteristic name="T" characteristicTypeId="9c9f-9774-a358-3a39" value="3"/>
-                    <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="2"/>
-                    <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="2"/>
+                    <characteristic name="W" characteristicTypeId="f330-5e6e-4110-0978" value="1"/>
+                    <characteristic name="A" characteristicTypeId="13fc-b29b-31f2-ab9f" value="1"/>
                     <characteristic name="Ld" characteristicTypeId="00ca-f8b8-876d-b705" value="8"/>
                     <characteristic name="Save" characteristicTypeId="c0df-df94-abd7-e8d3" value="3+"/>
                   </characteristics>
@@ -10643,7 +10697,7 @@
                 <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="af9d-2ea2-bd2d-83f8" name="Shining Spear Exarch" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="af9d-2ea2-bd2d-83f8" name="Shining Spear Exarch" hidden="false" collective="false" type="model">
               <profiles>
                 <profile id="736c-7633-b642-e9f5" name="Shining Spear Exarch" hidden="false" profileTypeId="800f-21d0-4387-c943" profileTypeName="Unit">
                   <profiles/>
@@ -10759,7 +10813,7 @@
               </entryLinks>
               <costs>
                 <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
-                <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="24.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -11560,7 +11614,7 @@
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Enemy units within 12&quot; of any Hemloack Wraithfighters subtract 1 from their Leadership characteristic."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Enemy units within 12&quot; of any Hemlock Wraithfighters subtract 1 from their Leadership characteristic."/>
               </characteristics>
             </profile>
           </profiles>
@@ -11756,7 +11810,7 @@
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models in this unit always hit on a 3+ when firing a ranged wepaon, regardless of any modifiers (although they still only hit on rolls of 6 when firing Overwatch)."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models in this unit always hit on a 3+ when firing a ranged weapon, regardless of any modifiers (although they still only hit on rolls of 6 when firing Overwatch)."/>
               </characteristics>
             </profile>
           </profiles>
@@ -13592,7 +13646,7 @@
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield. On a 9 it collapses with catastrophic effect, and each unit within 2D6&quot; suffers D6 mortal wounds."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield. On a 6 it collapses with catastrophic effect, and each unit within 2D6&quot; suffers D6 mortal wounds."/>
               </characteristics>
             </profile>
           </profiles>
@@ -13620,7 +13674,7 @@
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A Wraithknight can Fall Back in the Movement phase and still shoot and/or charge during this turn. When a Wraithknight Falls Back, it can even move over enemy INFANTRY models, though at the end of its move it must be more than 1&quot; from all enemy units. In addition, a Wraithknight can move and fire Heavy weapons without suffering the penalty to its hit rolls. Finally, a Wraithknight only gains a bonus to its save in cover if at least half of the model is obsured from the firer."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A Wraithknight can Fall Back in the Movement phase and still shoot and/or charge during its turn. When a Wraithknight Falls Back, it can even move over enemy INFANTRY models, though at the end of its move it must be more than 1&quot; from all enemy units. In addition, a Wraithknight can move and fire Heavy weapons without suffering the penalty to its hit rolls. Finally, a Wraithknight only gains a bonus to its save in cover if at least half of the model is obsured from the firer."/>
               </characteristics>
             </profile>
           </profiles>
@@ -15513,7 +15567,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="bce2-e766-d40f-94c4" name="Melta bombs" hidden="false" targetId="df40-a3f4-91be-f0fe" type="profile">
+        <infoLink id="bce2-e766-d40f-94c4" name="Melta bombs" hidden="false" targetId="9d2f-abbc-dcbe-d030" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -16081,22 +16135,7 @@ Reveal: Choose an enemy unit within 18&quot; of the psyker - it does not gain an
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers>
-        <modifier type="set" field="0fa7-27d6-5bdc-4547" value="1">
-          <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="84c2-cb59-3691-823f" type="equalTo"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20f6-edcf-48b5-b56a" type="equalTo"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d862-9250-3238-8295" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fa7-27d6-5bdc-4547" type="max"/>
       </constraints>
@@ -16282,7 +16321,7 @@ Reveal: Choose an enemy unit within 18&quot; of the psyker - it does not gain an
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Roll a D6 each time a model with spirit stones suffers and unsaved wound or mortal wound: on a 6 the wound is ignored."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Roll a D6 each time a model with spirit stones suffers an unsaved wound or mortal wound: on a 6 the wound is ignored."/>
               </characteristics>
             </profile>
           </profiles>
@@ -16310,7 +16349,7 @@ Reveal: Choose an enemy unit within 18&quot; of the psyker - it does not gain an
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="When a model with star engines Advances, ad 2D6&quot; to that model&apos;s Move characteristic for that Movement phase instead of D6&quot;."/>
+                <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="When a model with star engines Advances, add 2D6&quot; to that model&apos;s Move characteristic for that Movement phase instead of D6&quot;."/>
               </characteristics>
             </profile>
           </profiles>
@@ -16399,7 +16438,7 @@ Reveal: Choose an enemy unit within 18&quot; of the psyker - it does not gain an
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>You can re-roll failed hit rolls in the Fight phase for this unit in a turn in which it charges or is charged by a SLAANESH unit. However, you must add 1 to Morale tests for this unit if it is within 3&quot; of any SLANNESH units.</description>
+      <description>You can re-roll failed hit rolls in the Fight phase for this unit in a turn in which it charges or is charged by a SLAANESH unit. However, you must add 1 to Morale tests for this unit if it is within 3&quot; of any SLAANESH units.</description>
     </rule>
     <rule id="ad4d-44c2-31b1-ddac" name="Battle Focus" hidden="false">
       <profiles/>
@@ -17303,7 +17342,7 @@ Reveal: Choose an enemy unit within 18&quot; of the psyker - it does not gain an
         <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="User"/>
         <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-4"/>
         <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="2"/>
-        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="If the bearercharged this turn, attacks with this weapon are made at Strength 6."/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="If the bearer charged this turn, attacks with this weapon are made at Strength 6."/>
       </characteristics>
     </profile>
     <profile id="da57-9289-3879-a5e6" name="Mirrorswords" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
@@ -17466,7 +17505,7 @@ Reveal: Choose an enemy unit within 18&quot; of the psyker - it does not gain an
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models in this unit always fight first on the Fight phase, even if they didn&apos;t charge. If the enemy has units that have charged, or that have a similar ability, then alternate choosing units to fight with, starting with the player whose turn is taking place."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="Models in this unit always fight first in the Fight phase, even if they didn&apos;t charge. If the enemy has units that have charged, or that have a similar ability, then alternate choosing units to fight with, starting with the player whose turn is taking place."/>
       </characteristics>
     </profile>
     <profile id="d3d6-cbbf-8707-4167" name="Forceshield" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
@@ -17475,7 +17514,7 @@ Reveal: Choose an enemy unit within 18&quot; of the psyker - it does not gain an
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This model has a 4+ Save"/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This model has a 4+ invulnerable save."/>
       </characteristics>
     </profile>
     <profile id="13bd-db0d-729c-fd40" name="Mandiblasters" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
@@ -17493,7 +17532,7 @@ Reveal: Choose an enemy unit within 18&quot; of the psyker - it does not gain an
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A model equipped with a scattershield has a 5+ invulnderable save."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="A model equipped with a scattershield has a 5+ invulnerable save."/>
       </characteristics>
     </profile>
     <profile id="5e0e-7a34-1406-fcc8" name="Shimmershield" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
@@ -17511,7 +17550,7 @@ Reveal: Choose an enemy unit within 18&quot; of the psyker - it does not gain an
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="You can re-roll hit rolls of 1 for friendly &lt;CRAFTWORLD&gt; units within 6&quot;."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="You can re-roll hit rolls of 1 for friendly &lt;CRAFTWORLD&gt; units within 6&quot; of this model."/>
       </characteristics>
     </profile>
     <profile id="32b0-fc54-e738-eef7" name="Ride the Wind" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
@@ -17641,7 +17680,7 @@ Reveal: Choose an enemy unit within 18&quot; of the psyker - it does not gain an
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="5afb-9914-904b-d3b3" value="If this unit has 1-3 models it can attempt to manifest one psychic power in each friendly Psychic phase, and attempt to deny one psychic power in each enemy Psychic phase. If this unit has 4-6 models it can attempt to manifest two powers and deny two powers, and if it has 7-10 models it can attempt to manifest three powers and deny three powers. This unit knows the Smite power and two psychic powers from the Runes of Battle discipline. If this unit has more than one model, when manifesting or denying a psychic power, first select a model in the unit - measure range, visibility, etc. from this model. If this unit suffers Perils of the Warp, it suffers D3 mortal wounds as described in the core rules, but untis within 6&quot; will only suffer damage if the Perils of the Warp causes the last model in the manifesting unit to be slain."/>
+        <characteristic name="Description" characteristicTypeId="5afb-9914-904b-d3b3" value="If this unit has 1-3 models it can attempt to manifest one psychic power in each friendly Psychic phase, and attempt to deny one psychic power in each enemy Psychic phase. If this unit has 4-6 models it can attempt to manifest two powers and deny two powers, and if it has 7-10 models it can attempt to manifest three powers and deny three powers. This unit knows the Smite power and two psychic powers from the Runes of Battle discipline. If this unit has more than one model, when manifesting or denying a psychic power, first select a model in the unit - measure range, visibility, etc. from this model. If this unit suffers Perils of the Warp, it suffers D3 mortal wounds as described in the core rules, but units within 6&quot; will only suffer damage if the Perils of the Warp causes the last model in the manifesting unit to be slain."/>
       </characteristics>
     </profile>
     <profile id="3cfc-2649-39a0-5b9a" name="Explodes (Hover Tank)" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
@@ -17695,7 +17734,7 @@ Reveal: Choose an enemy unit within 18&quot; of the psyker - it does not gain an
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This model cannot charge, can only be charged by units that can FLY, and can only attack or be attacked in the Fight phase by untis that can FLY."/>
+        <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="This model cannot charge, can only be charged by units that can FLY, and can only attack or be attacked in the Fight phase by units that can FLY."/>
       </characteristics>
     </profile>
     <profile id="f3e9-9fac-9428-54e1" name="Hard To Hit" hidden="false" profileTypeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" profileTypeName="Abilities">
@@ -17723,6 +17762,20 @@ Reveal: Choose an enemy unit within 18&quot; of the psyker - it does not gain an
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="21befb24-fc85-4f52-a745-64b2e48f8228" value="If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield. On a 6 it crashes in a fiery explosion and each unit within 6&quot; suffers D3 mortal wounds."/>
+      </characteristics>
+    </profile>
+    <profile id="9d2f-abbc-dcbe-d030" name="Melta bomb" book="" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="6&quot;"/>
+        <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Grenade 1"/>
+        <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="8"/>
+        <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-4"/>
+        <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D6"/>
+        <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="You can re-roll failed wound rolls for this weapon when targeting a VEHICLE."/>
       </characteristics>
     </profile>
   </sharedProfiles>
