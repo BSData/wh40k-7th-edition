@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6ab6-1f5d-542f-9e13" name="Chaos Space Marines" revision="2" battleScribeVersion="2.01" authorName=" BSData team" authorUrl="http://battlescribedata.appspot.com/#/repos" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6ab6-1f5d-542f-9e13" name="Chaos Space Marines" revision="3" battleScribeVersion="2.01" authorName=" BSData team" authorUrl="http://battlescribedata.appspot.com/#/repos" gameSystemId="86de-271f-f574-d94f" gameSystemRevision="2000" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -3027,8 +3027,8 @@
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7df0-6543-5e09-a8fb" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b20-c30d-bc3d-e955" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7df0-6543-5e09-a8fb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5b20-c30d-bc3d-e955" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -3076,8 +3076,8 @@
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa3f-ccfe-803e-b708" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28a9-e9ce-2473-71c0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa3f-ccfe-803e-b708" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="28a9-e9ce-2473-71c0" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -6206,7 +6206,7 @@ D3   Bonus
             <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="79da-fe9c-634a-e1f3" name="Swap chainsword for chainaxe" hidden="false" collective="true" type="upgrade">
+        <selectionEntry id="79da-fe9c-634a-e1f3" name="Swap bolt pistol or chainsword for chainaxe" hidden="false" collective="true" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks>
@@ -6227,7 +6227,7 @@ D3   Bonus
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a549-f6b3-f9f9-deb6" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a549-f6b3-f9f9-deb6" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -6257,7 +6257,7 @@ D3   Bonus
           </infoLinks>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bda-a936-50ba-7f2f" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4bda-a936-50ba-7f2f" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -8127,7 +8127,22 @@ D3   Bonus
           <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="0f3a-bf51-edf9-1e72" name="Replace Boltgun with Blight launcher" hidden="false" collective="false" type="upgrade">
-              <profiles/>
+              <profiles>
+                <profile id="a0e7-606d-48b8-c6c1" name="Blight launcher" hidden="false" profileTypeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" value="24&quot;"/>
+                    <characteristic name="Type" characteristicTypeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Assault 2"/>
+                    <characteristic name="S" characteristicTypeId="59b1-319e-ec13-d466" value="6"/>
+                    <characteristic name="AP" characteristicTypeId="75aa-a838-b675-6484" value="-2"/>
+                    <characteristic name="D" characteristicTypeId="ae8a-3137-d65b-4ca7" value="D3"/>
+                    <characteristic name="Abilities" characteristicTypeId="837d-5e63-aeb7-1410" value="You can re-roll wound rolls of 1 for this weapon."/>
+                  </characteristics>
+                </profile>
+              </profiles>
               <rules/>
               <infoLinks/>
               <modifiers/>
@@ -8249,8 +8264,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b49-99b2-2b32-3a1d" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21f4-9636-5cce-ee68" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b49-99b2-2b32-3a1d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="21f4-9636-5cce-ee68" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -8294,8 +8309,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8faa-f078-07c4-f732" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd98-0f08-0723-65e1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8faa-f078-07c4-f732" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd98-0f08-0723-65e1" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -9721,8 +9736,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcc9-70a4-97c3-b468" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5033-2d37-98da-8dd3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dcc9-70a4-97c3-b468" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5033-2d37-98da-8dd3" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -9770,8 +9785,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="079e-7ffc-a8e8-3248" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d56b-8160-2402-6a76" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="079e-7ffc-a8e8-3248" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d56b-8160-2402-6a76" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -10016,8 +10031,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5a9-373c-0494-c108" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3c8-f806-90c3-7c25" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f5a9-373c-0494-c108" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d3c8-f806-90c3-7c25" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -10065,8 +10080,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee73-4c94-bce9-8f3c" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47b4-3561-7381-9e9e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee73-4c94-bce9-8f3c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="47b4-3561-7381-9e9e" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -10278,8 +10293,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f717-e52e-d689-e707" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eafe-b11d-289a-3a75" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f717-e52e-d689-e707" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eafe-b11d-289a-3a75" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -10327,8 +10342,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e74e-5585-ee86-e18e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1f9-5e97-d28e-1dd6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e74e-5585-ee86-e18e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1f9-5e97-d28e-1dd6" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -10533,8 +10548,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aa4-7dba-03d3-8c88" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b535-bde2-2377-e0a7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7aa4-7dba-03d3-8c88" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b535-bde2-2377-e0a7" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -10582,8 +10597,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24ac-0cb3-79bf-3e62" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ec7-7172-2339-ba99" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="24ac-0cb3-79bf-3e62" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ec7-7172-2339-ba99" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -10795,8 +10810,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccc8-1979-48c7-f0af" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7261-1ca9-41bb-655a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ccc8-1979-48c7-f0af" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7261-1ca9-41bb-655a" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -10844,8 +10859,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3f9-6daa-c604-3cb9" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37e9-c23d-2004-337c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e3f9-6daa-c604-3cb9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="37e9-c23d-2004-337c" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -11022,8 +11037,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0bf-7d25-a369-5557" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23a3-6067-3b29-4c71" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0bf-7d25-a369-5557" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="23a3-6067-3b29-4c71" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -11069,8 +11084,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="870a-ce85-97c2-51f3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e60-7eb7-0937-e81f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="870a-ce85-97c2-51f3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e60-7eb7-0937-e81f" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -11470,8 +11485,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bb8-c767-cfc4-be1b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df42-f685-be87-56ee" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9bb8-c767-cfc4-be1b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df42-f685-be87-56ee" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -11511,8 +11526,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5e6-c7d1-109e-b5b0" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0503-cc48-5b2a-cb3d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a5e6-c7d1-109e-b5b0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0503-cc48-5b2a-cb3d" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -11686,8 +11701,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f126-19d9-6432-a18e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3f8-4835-733f-8bd8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f126-19d9-6432-a18e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e3f8-4835-733f-8bd8" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -11731,8 +11746,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a352-10da-114b-1e8f" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4f1-8553-770c-dcfe" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a352-10da-114b-1e8f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c4f1-8553-770c-dcfe" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -11980,8 +11995,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b941-4147-14c3-53a3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6786-5560-dd50-634a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b941-4147-14c3-53a3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6786-5560-dd50-634a" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -12025,8 +12040,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c4b-ca97-8d01-27f3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d5d-e713-d6d2-1441" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c4b-ca97-8d01-27f3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0d5d-e713-d6d2-1441" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -12233,8 +12248,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="046c-71b6-4199-152b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="830d-6aad-85e1-1866" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="046c-71b6-4199-152b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="830d-6aad-85e1-1866" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -12278,8 +12293,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c6f-7b6a-0470-99e5" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce15-2fde-eaf5-c6f1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c6f-7b6a-0470-99e5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce15-2fde-eaf5-c6f1" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -12494,8 +12509,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cfc-e068-82f8-fc0f" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a82-9fd1-cd3f-7955" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cfc-e068-82f8-fc0f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a82-9fd1-cd3f-7955" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -12539,8 +12554,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c873-8405-b72c-12b7" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49a7-99dd-1110-474b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c873-8405-b72c-12b7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49a7-99dd-1110-474b" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -12721,8 +12736,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f841-6400-1021-19fd" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a35f-86c6-2e03-1e44" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f841-6400-1021-19fd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a35f-86c6-2e03-1e44" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -12766,8 +12781,8 @@ D3   Bonus
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bad3-f734-3bf9-a397" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c23d-d143-666a-236b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bad3-f734-3bf9-a397" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c23d-d143-666a-236b" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -13921,8 +13936,8 @@ D3   Bonus
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb7b-e3e0-413a-efca" type="max"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee2f-0afc-66d4-937f" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb7b-e3e0-413a-efca" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee2f-0afc-66d4-937f" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries>
@@ -14073,6 +14088,36 @@ D3   Bonus
           <selectionEntryGroups/>
           <entryLinks>
             <entryLink id="b6ac-9186-b4e0-050f" name="New EntryLink" hidden="false" targetId="7603-6241-ab8b-4603" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="92a1-31e0-1692-a903" name="Replace one boltgun with..." hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5b9b-2333-a299-6a71" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="ee25-3ad2-0b2b-18e7" name="New EntryLink" hidden="false" targetId="d16e-f416-d268-b2b4" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="950a-d51a-30c9-8eab" name="New EntryLink" hidden="false" targetId="a44b-4b4d-46b5-d3a6" type="selectionEntryGroup">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -15951,7 +15996,7 @@ D3   Bonus
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dd6-a17a-acb4-af52" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0dd6-a17a-acb4-af52" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -16044,7 +16089,7 @@ D3   Bonus
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8236-2ee2-ff30-ea20" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8236-2ee2-ff30-ea20" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -17410,7 +17455,13 @@ D3   Bonus
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="26f5-f248-2126-fe15" value="2">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints/>
               <categoryLinks/>
             </entryLink>
