@@ -336,7 +336,7 @@
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="a0c7-2a71-bae0-215d" name="Patrol Detachment" hidden="false">
+    <forceEntry id="a0c7-2a71-bae0-215d" name="Patrol Detachment +1CP" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -498,7 +498,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="564e-55d5-79bc-a4d7" name="Battalion Detachment" hidden="false">
+    <forceEntry id="564e-55d5-79bc-a4d7" name="Battalion Detachment +3CP" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -660,7 +660,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="cccd-3d99-d4af-d668" name="Brigade Detachment" hidden="false">
+    <forceEntry id="cccd-3d99-d4af-d668" name="Brigade Detachment +9CP" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -825,7 +825,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="41af-75ce-79d2-ddff" name="Vanguard Detachment" hidden="false">
+    <forceEntry id="41af-75ce-79d2-ddff" name="Vanguard Detachment +1CP" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -986,7 +986,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="120c-9e15-1d3f-637e" name="Spearhead Detachment" hidden="false">
+    <forceEntry id="120c-9e15-1d3f-637e" name="Spearhead Detachment +1CP" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1148,7 +1148,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="3c85-9649-d2da-9bde" name="Outrider Detachment" hidden="false">
+    <forceEntry id="3c85-9649-d2da-9bde" name="Outrider Detachment +1CP" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1310,7 +1310,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="5baf-eed5-bb85-7325" name="Supreme Command Detachment" hidden="false">
+    <forceEntry id="5baf-eed5-bb85-7325" name="Supreme Command Detachment +1CP" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1420,7 +1420,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="d513-cbf5-9bfc-7270" name="Super-Heavy Detachment" hidden="false">
+    <forceEntry id="d513-cbf5-9bfc-7270" name="Super-Heavy Detachment +3CP" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1472,7 +1472,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="b7e3-6a38-7bbe-c7d2" name="Air Wing Detachment" hidden="false">
+    <forceEntry id="b7e3-6a38-7bbe-c7d2" name="Air Wing Detachment +1CP" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1603,7 +1603,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="8a87-f0e3-f2f2-ad1a" name="Auxiliary Support Detachment" hidden="false">
+    <forceEntry id="8a87-f0e3-f2f2-ad1a" name="Auxiliary Support Detachment -1CP" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -4172,7 +4172,7 @@
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0334-f487-8229-0c1a" name="Bolt pistol" hidden="false" collective="true" type="upgrade">
+    <selectionEntry id="0334-f487-8229-0c1a" name="Bolt pistol" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -7288,6 +7288,28 @@
       <costs>
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
         <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="37d3-7098-d596-9948" name="Bolt pistol" hidden="false" collective="true" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="113b-392d-19be-cffa" name="Bolt pistol" hidden="false" targetId="e6d5-677a-d8ed-f6a5" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
