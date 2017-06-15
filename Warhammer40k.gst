@@ -7312,6 +7312,72 @@
         <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5907-c64e-703e-5778" name="Bolt rifle" hidden="false" collective="true" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="bc79-7ee5-5056-9e56" name="Bolt rifle" hidden="false" targetId="cddb-d686-f7b9-ec39" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2b29-bc1f-cebc-3d95" name="Astartes shotgun" hidden="false" collective="true" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="0e5a-92dd-437d-b191" name="Astartes shotgun" hidden="false" targetId="961a-afdd-b0a9-f43d" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d3c0-0759-f387-630f" name="Combat knife" hidden="false" collective="true" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="03f8-2185-3487-32ad" name="Combat knife" hidden="false" targetId="397f-3a5d-7443-5144" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" PL" costTypeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="891c-fbf0-e426-2c15" name="Fallen Champion Equipment" hidden="false" collective="false">
