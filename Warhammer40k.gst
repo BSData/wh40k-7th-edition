@@ -358,49 +358,49 @@
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="9217-73a1-3624-1f7d" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+            <categoryLink id="9217-73a1-3624-1f7d" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="54ff-9b86-6104-b32c" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+            <categoryLink id="54ff-9b86-6104-b32c" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="277f-2488-2867-06fc" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+            <categoryLink id="277f-2488-2867-06fc" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="093d-d3a6-7a43-35b2" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+            <categoryLink id="093d-d3a6-7a43-35b2" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="37de-4b8c-3cf3-00f3" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+            <categoryLink id="37de-4b8c-3cf3-00f3" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="f494-d4ee-0846-773f" name="New CategoryLink" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+            <categoryLink id="f494-d4ee-0846-773f" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="e62c-d409-cb2b-4d75" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+            <categoryLink id="e62c-d409-cb2b-4d75" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -418,7 +418,7 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="b201-7a22-83be-fcd2" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+        <categoryLink id="b201-7a22-83be-fcd2" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -428,7 +428,7 @@
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d2f4-9572-bf17-f45e" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="701d-f8cf-a497-db95" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+        <categoryLink id="701d-f8cf-a497-db95" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -438,7 +438,7 @@
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="57c7-2337-eef8-a7d3" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="fddc-2c95-ab7e-05ed" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+        <categoryLink id="fddc-2c95-ab7e-05ed" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -447,7 +447,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="73fa-b4ab-fa31-5a83" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="1216-7505-893f-c142" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+        <categoryLink id="1216-7505-893f-c142" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -456,7 +456,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="08b0-f175-30f0-0de3" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="7059-67eb-1416-d1d4" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+        <categoryLink id="7059-67eb-1416-d1d4" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -465,7 +465,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0b3c-8105-4ba6-882e" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="decb-617f-93c1-c4aa" name="New CategoryLink" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+        <categoryLink id="decb-617f-93c1-c4aa" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -474,7 +474,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d855-0082-9aa5-b021" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="799b-fc66-7abf-a0c1" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+        <categoryLink id="799b-fc66-7abf-a0c1" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -520,49 +520,49 @@
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="b941-009e-b700-f512" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+            <categoryLink id="b941-009e-b700-f512" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="69a8-6416-9c97-27a5" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+            <categoryLink id="69a8-6416-9c97-27a5" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="30b0-63c8-a9d5-d86f" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+            <categoryLink id="30b0-63c8-a9d5-d86f" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="92b8-6537-f303-6ab4" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+            <categoryLink id="92b8-6537-f303-6ab4" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="c2f9-82ad-e4c6-bc61" name="New CategoryLink" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+            <categoryLink id="c2f9-82ad-e4c6-bc61" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="1d9c-2d5c-cea2-6bd0" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+            <categoryLink id="1d9c-2d5c-cea2-6bd0" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="1153-a2ee-cd37-9992" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+            <categoryLink id="1153-a2ee-cd37-9992" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -580,7 +580,7 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="dc98-c3a9-900b-5345" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+        <categoryLink id="dc98-c3a9-900b-5345" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -590,7 +590,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9d84-0125-d23f-786e" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="661b-1f7f-2072-c68b" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+        <categoryLink id="661b-1f7f-2072-c68b" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -600,7 +600,7 @@
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b397-7bc5-a7ef-0345" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="a2eb-3d38-65c9-7f8c" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+        <categoryLink id="a2eb-3d38-65c9-7f8c" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -609,7 +609,7 @@
             <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4137-b9ab-7541-4fab" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="bdc2-a72f-6142-ad2a" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+        <categoryLink id="bdc2-a72f-6142-ad2a" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -618,7 +618,7 @@
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bfea-6d49-c363-b5da" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="4aa4-d6f8-2d17-3d40" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+        <categoryLink id="4aa4-d6f8-2d17-3d40" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -627,7 +627,7 @@
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ef09-021e-4bc9-4715" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="9d2e-2da7-d87a-594e" name="New CategoryLink" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+        <categoryLink id="9d2e-2da7-d87a-594e" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -636,7 +636,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b188-b223-0281-a60d" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="461e-243a-a521-ed54" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+        <categoryLink id="461e-243a-a521-ed54" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -682,49 +682,49 @@
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="52dd-a45a-dd33-e109" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+            <categoryLink id="52dd-a45a-dd33-e109" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="2e30-b534-8d26-e6d7" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+            <categoryLink id="2e30-b534-8d26-e6d7" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="9d9f-64f3-f99a-6e23" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+            <categoryLink id="9d9f-64f3-f99a-6e23" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="6261-7f89-2a6a-7b08" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+            <categoryLink id="6261-7f89-2a6a-7b08" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="cb04-2f0d-3fcf-a1e8" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+            <categoryLink id="cb04-2f0d-3fcf-a1e8" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="b6e5-fe15-806b-2f33" name="New CategoryLink" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+            <categoryLink id="b6e5-fe15-806b-2f33" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="b07f-f4bc-532d-ab27" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+            <categoryLink id="b07f-f4bc-532d-ab27" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -742,7 +742,7 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="b656-705b-2154-356b" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+        <categoryLink id="b656-705b-2154-356b" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -752,7 +752,7 @@
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b292-bdd5-4643-fb35" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="c296-bcb4-c3e2-5d9b" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+        <categoryLink id="c296-bcb4-c3e2-5d9b" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -762,7 +762,7 @@
             <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6aaf-4a21-6ece-5f40" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="e010-a74e-f838-e69e" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+        <categoryLink id="e010-a74e-f838-e69e" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -772,7 +772,7 @@
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="26ad-d4af-1418-57e9" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="d151-d45a-2c2a-b9ba" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+        <categoryLink id="d151-d45a-2c2a-b9ba" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -782,7 +782,7 @@
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="baef-14a4-74e0-79ce" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="98d2-b315-2f7b-58ee" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+        <categoryLink id="98d2-b315-2f7b-58ee" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -792,7 +792,7 @@
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="86b7-1215-30a0-1035" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="df6d-11a9-c480-be2c" name="New CategoryLink" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+        <categoryLink id="df6d-11a9-c480-be2c" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -801,7 +801,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="40c0-d056-1edf-ece9" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="1008-da0a-7d30-ae3d" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+        <categoryLink id="1008-da0a-7d30-ae3d" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -847,35 +847,35 @@
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="50c7-e2c2-95f3-ffee" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+            <categoryLink id="50c7-e2c2-95f3-ffee" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="cce8-785d-5a88-5a90" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+            <categoryLink id="cce8-785d-5a88-5a90" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="3454-6e68-f1d5-8ab8" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+            <categoryLink id="3454-6e68-f1d5-8ab8" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="3ef6-bbd6-4973-b0cc" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+            <categoryLink id="3ef6-bbd6-4973-b0cc" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="0ef4-18ef-934a-1d58" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+            <categoryLink id="0ef4-18ef-934a-1d58" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -889,7 +889,7 @@
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="1466-b410-7bf3-3015" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+            <categoryLink id="1466-b410-7bf3-3015" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -907,7 +907,7 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="a158-6003-3ee2-5924" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+        <categoryLink id="a158-6003-3ee2-5924" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -917,7 +917,7 @@
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="abc2-8ad1-f686-0172" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="4068-9117-bd80-10fc" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+        <categoryLink id="4068-9117-bd80-10fc" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -926,7 +926,7 @@
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c1e7-468c-fe43-d580" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="93c3-802d-d4e3-b9d7" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+        <categoryLink id="93c3-802d-d4e3-b9d7" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -936,7 +936,7 @@
             <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9603-b2c6-9e1a-946a" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="c88f-aa81-d819-da77" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+        <categoryLink id="c88f-aa81-d819-da77" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -945,7 +945,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ca10-643a-ffaa-3342" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="ab1b-5f97-6328-4418" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+        <categoryLink id="ab1b-5f97-6328-4418" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -963,7 +963,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0d87-c6c3-1d60-e88f" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="2f97-4e01-2619-467f" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+        <categoryLink id="2f97-4e01-2619-467f" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1008,49 +1008,49 @@
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="fadb-d53e-8308-d517" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+            <categoryLink id="fadb-d53e-8308-d517" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="2d5a-69d3-eb5e-0c39" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+            <categoryLink id="2d5a-69d3-eb5e-0c39" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="5170-e172-b302-a93e" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+            <categoryLink id="74c8-5e08-977c-a44a" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="f779-910f-8f59-a042" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+            <categoryLink id="f779-910f-8f59-a042" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="74c8-5e08-977c-a44a" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+            <categoryLink id="5170-e172-b302-a93e" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="5eeb-2543-69d8-ca6f" name="New CategoryLink" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+            <categoryLink id="5eeb-2543-69d8-ca6f" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="51c8-aab8-02db-6836" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+            <categoryLink id="51c8-aab8-02db-6836" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -1068,7 +1068,7 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="a13f-7b3a-ceac-64f4" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+        <categoryLink id="a13f-7b3a-ceac-64f4" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1078,7 +1078,7 @@
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0b53-16a1-bdc7-cf5e" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="5862-f041-e42b-e6f8" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+        <categoryLink id="5862-f041-e42b-e6f8" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1087,7 +1087,7 @@
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6444-d07b-4ef9-8cec" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="9b17-44f6-5142-5e8e" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+        <categoryLink id="9b17-44f6-5142-5e8e" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1096,7 +1096,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7aac-c770-ee8a-adc4" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="0ee6-a712-57b5-5989" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+        <categoryLink id="0ee6-a712-57b5-5989" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1105,7 +1105,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="719a-f8e0-720d-3ede" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="77dd-9959-8bd0-2d1c" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+        <categoryLink id="77dd-9959-8bd0-2d1c" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1115,7 +1115,7 @@
             <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a987-dbff-cc58-ec1a" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="242b-b41b-6732-04f2" name="New CategoryLink" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+        <categoryLink id="242b-b41b-6732-04f2" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1124,7 +1124,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="16c8-245a-5afd-3074" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="70bc-5264-fd6d-0827" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+        <categoryLink id="70bc-5264-fd6d-0827" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1170,49 +1170,49 @@
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="0264-8ffd-31bc-2d30" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+            <categoryLink id="0264-8ffd-31bc-2d30" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="6426-b63b-64e2-2ff6" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+            <categoryLink id="6426-b63b-64e2-2ff6" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="3c24-fb50-3f0a-2d1d" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+            <categoryLink id="a107-162a-d1ae-e45f" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="a107-162a-d1ae-e45f" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+            <categoryLink id="3c24-fb50-3f0a-2d1d" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="5667-7ab6-831b-6bf9" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+            <categoryLink id="5667-7ab6-831b-6bf9" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="b48d-94da-807f-1dad" name="New CategoryLink" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+            <categoryLink id="b48d-94da-807f-1dad" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="e8c7-f93f-12cc-1a41" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+            <categoryLink id="e8c7-f93f-12cc-1a41" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -1230,7 +1230,7 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="b196-6b9f-fb28-4ca9" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+        <categoryLink id="b196-6b9f-fb28-4ca9" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1240,7 +1240,7 @@
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fc9e-6e21-855a-f620" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="dd58-b2cf-743f-684f" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+        <categoryLink id="dd58-b2cf-743f-684f" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1249,7 +1249,7 @@
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="aa4e-0058-e7ee-ffd5" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="8068-967b-3617-c99f" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+        <categoryLink id="8068-967b-3617-c99f" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1258,7 +1258,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c09a-c953-5d76-d7a3" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="22b3-8488-1b3d-b0d4" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+        <categoryLink id="22b3-8488-1b3d-b0d4" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1268,7 +1268,7 @@
             <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8068-4e51-e29a-c888" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="32ec-2287-21fd-6d05" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+        <categoryLink id="32ec-2287-21fd-6d05" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1277,7 +1277,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8c26-0eee-61de-e734" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="5eb3-6b2a-2229-6f3d" name="New CategoryLink" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+        <categoryLink id="5eb3-6b2a-2229-6f3d" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1286,7 +1286,7 @@
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="350d-c57a-5736-3a79" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="f5cc-af4b-11d5-0831" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+        <categoryLink id="f5cc-af4b-11d5-0831" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1332,28 +1332,28 @@
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="c631-e906-2086-fdf9" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+            <categoryLink id="c631-e906-2086-fdf9" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="08df-b76b-e405-c10a" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+            <categoryLink id="08df-b76b-e405-c10a" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="ead4-93ca-c5e6-a4f0" name="New CategoryLink" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="false">
+            <categoryLink id="ead4-93ca-c5e6-a4f0" name="Lord of War" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="12c8-6b62-f26a-239a" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+            <categoryLink id="12c8-6b62-f26a-239a" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -1371,7 +1371,7 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="8a3d-3602-7ef5-9ab1" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+        <categoryLink id="8a3d-3602-7ef5-9ab1" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1381,7 +1381,7 @@
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6a9-7171-c907-0e15" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="b448-138d-b4aa-5025" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+        <categoryLink id="b448-138d-b4aa-5025" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1390,7 +1390,7 @@
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1d59-1fea-8611-cf48" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="c6de-132c-1b7e-69d3" name="New CategoryLink" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="false">
+        <categoryLink id="c6de-132c-1b7e-69d3" name="Lord of War" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1399,7 +1399,7 @@
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b702-8fc0-cb44-1728" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="a514-61d3-6fd9-6e13" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+        <categoryLink id="a514-61d3-6fd9-6e13" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1442,7 +1442,7 @@
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="97d5-c11b-a1c8-2693" name="New CategoryLink" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="false">
+            <categoryLink id="97d5-c11b-a1c8-2693" name="Lord of War" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -1460,7 +1460,7 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="c0a7-80ba-6d10-0724" name="New CategoryLink" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="false">
+        <categoryLink id="c0a7-80ba-6d10-0724" name="Lord of War" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1539,7 +1539,7 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="fd86-521c-89cd-53b4" name="New CategoryLink" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="false">
+        <categoryLink id="fd86-521c-89cd-53b4" name="Lord of War" hidden="false" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1573,7 +1573,7 @@
               <modifiers/>
               <constraints/>
             </categoryLink>
-            <categoryLink id="5cfe-bc29-4cc8-a694" name="New CategoryLink" hidden="false" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a" primary="false">
+            <categoryLink id="5cfe-bc29-4cc8-a694" name="Fortification" hidden="false" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a" primary="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -1591,7 +1591,7 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="4fb0-8ba2-1ea6-973e" name="New CategoryLink" hidden="false" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a" primary="false">
+        <categoryLink id="4fb0-8ba2-1ea6-973e" name="Fortification" hidden="false" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1628,49 +1628,49 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="765e-ebad-7cd0-d952" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
+        <categoryLink id="765e-ebad-7cd0-d952" name="HQ" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="4251-29e5-bb48-d668" name="New CategoryLink" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
+        <categoryLink id="4251-29e5-bb48-d668" name="Troops" hidden="false" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="d2bf-84f3-f089-ae42" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
+        <categoryLink id="d2bf-84f3-f089-ae42" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="db20-7a0f-2a50-f1c7" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
+        <categoryLink id="db20-7a0f-2a50-f1c7" name="Fast Attack" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="9153-b8bd-1f8a-9f1f" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
+        <categoryLink id="9153-b8bd-1f8a-9f1f" name="Heavy Support" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="0960-9271-26d6-1831" name="New CategoryLink" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
+        <categoryLink id="0960-9271-26d6-1831" name="Flyer" hidden="false" targetId="e888-1504-aa61-95ff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="1d7c-3253-d90d-6e3a" name="New CategoryLink" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
+        <categoryLink id="1d7c-3253-d90d-6e3a" name="Dedicated Transport" hidden="false" targetId="1b66-3f5f-6705-079a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
