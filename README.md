@@ -1,13 +1,15 @@
-Warhammer 40,000
-================
+Warhammer 40,000 7th Edition
+============================
 
-## Important
+[![Join the chat at https://gitter.im/BSData/wh40k](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BSData/wh40k?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) <- talk to us!
 
-[![Join the chat at https://gitter.im/BSData/wh40k](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BSData/wh40k?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+## Important ##
 
-__BattleScribe v1.15 users Notice__: _However we don't support BattleScribe v1.15 any longer, all the files in their last revisions for that BattleScribe are available [here](https://github.com/BSData/wh40k/releases/tag/v4.18.7). Downloading .bsr file (one of the Downloads) and importing it in BattleScribe v1.15 will allow you to use these no-longer-maintained datafiles._
+### This repo is not actively maintained. 8th edition is hosted [here](https://github.com/BSData/wh40k) ###
 
-__6th ed users Notice__: _However we don't support the 6th Edition, all the files in their last revisions for 6th are available [here](https://github.com/BSData/wh40k/releases/tag/v3.1.4). Downloading .bsr file (green button) and importing it in BattleScribe_ __won't__ _mess with 7th ed files._
+__BattleScribe v1.15 users Notice__: _However we don't support BattleScribe v1.15 any longer, all the files in their last revisions for that BattleScribe are available [here](https://github.com/BSData/wh40k-7th-edition/releases/tag/v4.18.7). Downloading .bsr file (one of the Downloads) and importing it in BattleScribe v1.15 will allow you to use these no-longer-maintained datafiles._
+
+__6th ed users Notice__: _However we don't support the 6th Edition, all the files in their last revisions for 6th are available [here](https://github.com/BSData/wh40k-7th-edition/releases/tag/v3.1.4). Downloading .bsr file (green button) and importing it in BattleScribe_ __won't__ _mess with 7th ed files._
 
 #### Contents ####
 
@@ -42,8 +44,8 @@ __6th ed users Notice__: _However we don't support the 6th Edition, all the file
 * __I'd just like to contact you.__
 * _Cool, the easiest way is through issues mentioned above. We are a community and that's the only place we all have access to. We don't have any group e-mail. So if you want to stay anonymous, contact us by_ reporting bug _on Appspot (point 1 above)._
 
-[Report it on Appspot]: http://battlescribedata.appspot.com/#/repo/wh40k
-[Open Issue directly]: https://github.com/BSData/wh40k/issues
+[Report it on Appspot]: http://battlescribedata.appspot.com/#/repo/wh40k-7th-edition
+[Open Issue directly]: https://github.com/BSData/wh40k-7th-edition/issues
 
 ## Links ##
 
