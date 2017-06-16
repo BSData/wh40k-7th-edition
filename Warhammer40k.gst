@@ -336,7 +336,7 @@
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="a0c7-2a71-bae0-215d" name="Patrol Detachment +1CP" hidden="false">
+    <forceEntry id="a0c7-2a71-bae0-215d" name="Patrol Detachment" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
