@@ -5,7 +5,7 @@ Warhammer 40,000 7th Edition
 
 ## Important ##
 
-### This repo is not actively maintained. 8th edition is hosted [here](https://github.com/BSData/wh40k) ###
+### This repo is no longer maintained. 8th edition is hosted [here](https://github.com/BSData/wh40k) ###
 
 __BattleScribe v1.15 users Notice__: _However we don't support BattleScribe v1.15 any longer, all the files in their last revisions for that BattleScribe are available [here](https://github.com/BSData/wh40k-7th-edition/releases/tag/v4.18.7). Downloading .bsr file (one of the Downloads) and importing it in BattleScribe v1.15 will allow you to use these no-longer-maintained datafiles._
 
@@ -31,21 +31,6 @@ __6th ed users Notice__: _However we don't support the 6th Edition, all the file
 
 * __Okay, nice project. Is it actually working?__ _I just want those files..._
 * _Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]_
-
-
-## Reporting bugs & contact us ##
-
-* __I found a bug!__
-* _Great, thank you! Now you have two options:_
-
-  1. [Report it on Appspot][] - it's anonymous and no account is needed - on downside, you will need to manually check the progress of your issue.
-  2. [Open Issue directly][] (green ```New Issue``` in upper-right)- you need GitHub account and then can track progress (get notifications on it!), comment (ie answer our questions) and help us better!
-
-* __I'd just like to contact you.__
-* _Cool, the easiest way is through issues mentioned above. We are a community and that's the only place we all have access to. We don't have any group e-mail. So if you want to stay anonymous, contact us by_ reporting bug _on Appspot (point 1 above)._
-
-[Report it on Appspot]: http://battlescribedata.appspot.com/#/repo/wh40k-7th-edition
-[Open Issue directly]: https://github.com/BSData/wh40k-7th-edition/issues
 
 ## Links ##
 
