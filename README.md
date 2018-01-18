@@ -1,4 +1,4 @@
-Warhammer 40,000 7th Edition
+_Warhammer 40,000 7th Edition
 ============================
 
 [![Join the chat at https://gitter.im/BSData/wh40k](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BSData/wh40k?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) <- talk to us!
