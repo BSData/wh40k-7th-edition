@@ -1,4 +1,4 @@
-_Warhammer 40,000 7th Edition
+Warhammer 40,000 7th Edition
 ============================
 
 [![Join the chat at https://gitter.im/BSData/wh40k](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BSData/wh40k?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) <- talk to us!
@@ -26,7 +26,7 @@ __6th ed users Notice__: _All the files in their last revisions for 6th are avai
 
 * __What's this?__
   
-  _BSData organisation created this project. It's GitHub repository of datafiles. Created by community, in no way endorsed by BattleScribe.
+  _BSData organisation created this project. It's GitHub repository of datafiles. Created by community, in no way endorsed by BattleScribe._
 
 * __Okay, nice project. Is it actually working?__ I just want those files...
   
