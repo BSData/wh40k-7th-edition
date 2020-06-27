@@ -1,0 +1,18 @@
+name: CI
+
+on: [ push, pull_request ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install wham
+      run: dotnet tool install wham --version 0.7.0 --tool-path ../tools
+    - name: Publish snapshot.bsr
+      run: ../tools/wham publish -f snapshot -o artifacts/snapshot --verbosity detailed
+    - name: Upload snapshot.bsr as workflow artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: snapshot
+        path: artifacts/snapshot
